@@ -76,6 +76,12 @@ function useLoad<T>(path: string, deps: unknown[] = []) {
   return { data, error, loading, reload, setData };
 }
 
+const parseAdminTab = (): Tab => {
+  if (typeof window === 'undefined') return 'overview';
+  const slug = window.location.hash.replace(/^#\/?/, '').split('/')[1] || '';
+  return TABS.some((t) => t.id === slug) ? (slug as Tab) : 'overview';
+};
+
 export default function AdminApp() {
   // Admin panel follows the language chosen on the public site (Arabic fallback).
   useAdminLanguage();
@@ -83,7 +89,19 @@ export default function AdminApp() {
   const [authed, setAuthed] = useState(false);
   const [checking, setChecking] = useState(Boolean(token));
   const [loginError, setLoginError] = useState('');
-  const [tab, setTab] = useState<Tab>('overview');
+  const [tab, setTab] = useState<Tab>(parseAdminTab);
+
+  const selectTab = useCallback((next: Tab) => {
+    setTab(next);
+    const targetHash = next === 'overview' ? '#admin' : `#admin/${next}`;
+    if (window.location.hash !== targetHash) window.location.hash = targetHash;
+  }, []);
+
+  useEffect(() => {
+    const onHash = () => setTab(parseAdminTab());
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
 
   const login = useCallback(async (candidate: string) => {
     setChecking(true); setLoginError('');
@@ -124,7 +142,7 @@ export default function AdminApp() {
         <aside className="lg:w-60 bg-stone-900 text-stone-100 lg:min-h-screen p-3 flex lg:flex-col gap-1 overflow-x-auto shrink-0">
           <div className="hidden lg:flex items-center gap-2 px-2 py-3 mb-2 border-b border-stone-700"><Bot className="w-6 h-6 text-amber-400" /><div><p className="font-bold text-sm">Sham Core</p><p className="text-[10px] text-stone-400">{T('مركز إدارة المساعد والخدمات')}</p></div></div>
           {TABS.map((t) => (
-            <button key={t.id} type="button" onClick={() => setTab(t.id)} className={`flex items-center gap-2 rounded-xl px-3 py-2 text-sm whitespace-nowrap ${tab === t.id ? 'bg-amber-500 text-stone-950 font-bold' : 'hover:bg-white/10'}`}>{t.icon}{t.label}</button>
+            <button key={t.id} type="button" onClick={() => selectTab(t.id)} className={`flex items-center gap-2 rounded-xl px-3 py-2 text-sm whitespace-nowrap ${tab === t.id ? 'bg-amber-500 text-stone-950 font-bold' : 'hover:bg-white/10'}`}>{t.icon}{t.label}</button>
           ))}
           <div className="lg:mt-auto flex lg:flex-col gap-1">
             <a href="#home" className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm hover:bg-white/10 whitespace-nowrap"><ArrowRight className="w-4 h-4" />{T('الموقع')}</a>
@@ -133,16 +151,16 @@ export default function AdminApp() {
         </aside>
         <main className="flex-1 p-4 lg:p-6 min-w-0">
           <ErrorBoundary key={tab} area={`admin:${tab}`} compact ar>
-          {tab === 'overview' && <OverviewPanel go={setTab} />}
+          {tab === 'overview' && <OverviewPanel go={selectTab} />}
           {tab === 'community' && <CommunityPanel />}
-          {tab === 'agent' && <AgentPanel go={setTab} />}
+          {tab === 'agent' && <AgentPanel go={selectTab} />}
           {tab === 'quality' && <QualityPanel />}
           {tab === 'requests' && <RequestsPanel />}
           {tab === 'conversations' && <ConversationsPanel />}
           {tab === 'products' && <ProductsPanel />}
           {tab === 'knowledge' && <KnowledgePanel />}
           {tab === 'services' && <ServicesPanel />}
-          {tab === 'engines' && <EnginesPanel />}
+          {tab === 'engines' && <EnginesPanel go={selectTab} />}
           {tab === 'shaheen' && <ShaheenPanel />}
           {tab === 'emails' && <EmailsPanel />}
           {tab === 'doctor' && <DoctorPanel />}
@@ -1261,25 +1279,71 @@ function ServicesPanel() {
   );
 }
 
-function EnginesPanel() {
+function EnginesPanel({ go }: { go: (t: Tab) => void }) {
   const { data, error, loading, reload } = useLoad<SettingsView>('/settings');
   const [form, setForm] = useState<CoreSettings | null>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
+  const [probe, setProbe] = useState<ProbeResult[] | null>(null);
+  const [probing, setProbing] = useState(false);
+  const [probeError, setProbeError] = useState('');
   useEffect(() => { if (data) setForm(data.item); }, [data]);
+
   const policy = form?.enginePolicy || [];
+  const activeModels = policy.filter((id): id is ModelEngineId => id !== 'sham_local');
+
   const move = (id: EngineId, delta: number) => {
-    if (!form) return;
-    const list = [...policy]; const i = list.indexOf(id); const j = i + delta;
+    if (!form || id === 'sham_local') return;
+    const list = [...activeModels];
+    const i = list.indexOf(id as ModelEngineId);
+    const j = i + delta;
     if (i < 0 || j < 0 || j >= list.length) return;
-    [list[i], list[j]] = [list[j], list[i]]; setForm({ ...form, enginePolicy: list });
+    [list[i], list[j]] = [list[j], list[i]];
+    setForm({ ...form, enginePolicy: [...list, 'sham_local'] });
   };
-  const toggle = (id: EngineId) => form && setForm({ ...form, enginePolicy: policy.includes(id) ? policy.filter((x) => x !== id) : [...policy.filter((x) => x !== 'sham_local'), id, 'sham_local'] });
+  const toggle = (id: EngineId) => {
+    if (!form || id === 'sham_local') return;
+    const nextModels = activeModels.includes(id as ModelEngineId)
+      ? activeModels.filter((x) => x !== id)
+      : [...activeModels, id as ModelEngineId];
+    setForm({ ...form, enginePolicy: [...nextModels, 'sham_local'] });
+  };
   const save = async () => {
-    if (!form) return; setBusy(true); setMessage('');
+    if (!form) return;
+    setBusy(true); setMessage('');
     try { await adminRequest('/settings', send('PUT', { ...form, shaheen: undefined })); setMessage(T('تم الحفظ ✅')); reload(); }
     catch (e) { setMessage((e as Error).message); } finally { setBusy(false); }
   };
+  const syncShaheenOrder = async () => {
+    if (!form || !data) return;
+    setBusy(true); setMessage('');
+    try {
+      const nextShaheen: ShaheenSettings = { ...data.item.shaheen, engines: activeModels.length ? activeModels : data.item.shaheen.engines };
+      await adminRequest('/settings', send('PUT', { ...form, shaheen: nextShaheen }));
+      setMessage(T('تم تحديث ترتيب شاهين مع إعدادات المحركات ✅'));
+      reload();
+    } catch (e) { setMessage((e as Error).message); } finally { setBusy(false); }
+  };
+  const runProbe = async () => {
+    setProbing(true); setProbe(null); setProbeError('');
+    try {
+      const res = await adminRequest<{ results: ProbeResult[] }>('/shaheen/test', send('POST', { all: true }));
+      setProbe(res.results);
+    } catch (e) {
+      setProbeError((e as Error).message);
+    } finally {
+      setProbing(false);
+    }
+  };
+
+  const orderedEngines = data ? [
+    ...activeModels.map((id) => data.engines.find((e) => e.id === id)).filter((e): e is EngineStatus => Boolean(e)),
+    ...data.engines.filter((e) => e.id !== 'sham_local' && !activeModels.includes(e.id as ModelEngineId)),
+    ...data.engines.filter((e) => e.id === 'sham_local'),
+  ] : [];
+  const configuredModels = data ? data.engines.filter((e) => e.id !== 'sham_local' && e.configured) : [];
+  const probeById = new Map((probe || []).map((r) => [r.id, r]));
+
   return (
     <>
       <Header title={T('المحركات والإعدادات')} subtitle={T('سياسة اختيار المحرك مع التحويل التلقائي عند الفشل؛ محرك شام الذاتي هو خط الأمان الأخير دائماً')}
@@ -1292,24 +1356,82 @@ function EnginesPanel() {
       <Feedback error={error} loading={loading && !data} />
       {form && data && (
         <div className="grid lg:grid-cols-2 gap-4">
-          <div className={`${card} space-y-2`}>
-            <h2 className="font-bold text-sm">{T('ترتيب المحركات')}</h2>
+          <div className={`${card} space-y-2.5`}>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h2 className="font-bold text-sm">{T('ترتيب المحركات')}</h2>
+              <button type="button" disabled={probing || busy} onClick={() => void runProbe()} className={`${btn} border border-stone-300 bg-white text-xs py-1.5`}>
+                {probing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Activity className="w-3.5 h-3.5" />}
+                {T('تأكيد جاهزية مفاتيح API')}
+              </button>
+            </div>
             <p className="text-[11px] text-stone-500">{T('المفاتيح وعناوين الخوادم تُضبط في متغيرات بيئة الخادم فقط ولا تظهر هنا. المحرك غير المهيأ يُتخطى تلقائياً.')}</p>
-            {data.engines.map((engine) => {
-              const active = policy.includes(engine.id);
+            <div className={`rounded-xl border p-2.5 text-xs ${configuredModels.length >= 2 ? 'border-emerald-200 bg-emerald-50 text-emerald-900' : configuredModels.length === 1 ? 'border-amber-200 bg-amber-50 text-amber-900' : 'border-red-200 bg-red-50 text-red-900'}`}>
+              <p className="font-semibold">
+                {configuredModels.length === 0
+                  ? T('تنبيه: لا يوجد أي مفتاح AI مهيأ على الخادم بعد — أضف GEMINI_API_KEY أو DEEPSEEK_API_KEY أو OPENAI_API_KEY في متغيرات البيئة.')
+                  : configuredModels.length === 1
+                    ? TP('تنبيه: محرك واحد فقط مهيأ ({engine}) — أضف مفتاحاً ثانياً لضمان التحويل التلقائي عند التعطل.', { engine: ENGINE_LABEL[configuredModels[0].id] || configuredModels[0].name })
+                    : TP('جاهز: {ready} من {total} محرك ذكاء اصطناعي مهيأ بالخادم', { ready: configuredModels.length, total: data.engines.filter((e) => e.id !== 'sham_local').length })}
+              </p>
+              {probe && (
+                <p className="mt-1 text-[11px] font-medium">
+                  {TP('تم اختبار {ok} يعمل من أصل {configured} مهيأ', { ok: probe.filter((r) => r.ok).length, configured: probe.filter((r) => r.configured).length })}
+                </p>
+              )}
+              {probeError && <p className="mt-1 text-[11px] text-red-700">{probeError}</p>}
+            </div>
+
+            {orderedEngines.map((engine) => {
+              const isLocal = engine.id === 'sham_local';
+              const active = isLocal || activeModels.includes(engine.id as ModelEngineId);
+              const activeIdx = activeModels.indexOf(engine.id as ModelEngineId);
+              const probeRes = !isLocal ? probeById.get(engine.id as ModelEngineId) : undefined;
               return (
                 <div key={engine.id} className={`flex items-center gap-2 rounded-xl border p-2.5 ${active ? 'border-amber-300 bg-amber-50/50' : 'border-stone-200'}`}>
-                  <input type="checkbox" aria-label={engine.name} checked={active || engine.id === 'sham_local'} disabled={engine.id === 'sham_local'} onChange={() => toggle(engine.id)} />
+                  <input type="checkbox" aria-label={engine.name} checked={active} disabled={isLocal} onChange={() => toggle(engine.id)} />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold">{ENGINE_LABEL[engine.id]} <span className="text-[10px] text-stone-400" dir="ltr">{engine.model}</span></p>
-                    <p className={`text-[11px] ${engine.configured ? 'text-emerald-700' : 'text-stone-400'}`}>{engine.configured ? T('مهيأ (الإعداد موجود؛ لا يضمن صحة المفتاح)') : engine.id === 'self_hosted' ? T('غير مهيأ — اضبط SHAM_LLM_BASE_URL') : T('غير مهيأ — لا يوجد مفتاح')}</p>
+                    <p className={`text-[11px] ${isLocal || engine.configured ? 'text-emerald-700' : 'text-stone-400'}`}>
+                      {isLocal
+                        ? T('خط الأمان الأخير (يعمل دائماً بدون مفاتيح)')
+                        : engine.configured
+                          ? T('مهيأ (الإعداد موجود؛ لا يضمن صحة المفتاح)')
+                          : engine.id === 'self_hosted'
+                            ? T('غير مهيأ — اضبط SHAM_LLM_BASE_URL')
+                            : T('غير مهيأ — لا يوجد مفتاح')}
+                    </p>
+                    {probeRes && (
+                      <p className={`text-[11px] mt-0.5 font-medium ${probeRes.ok ? 'text-emerald-700' : probeRes.configured ? 'text-red-700' : 'text-stone-500'}`}>
+                        {probeRes.ok
+                          ? `${T('يعمل ✅')}${probeRes.ms ? TP(' · {n} ث', { n: (probeRes.ms / 1000).toFixed(1) }) : ''}${probeRes.usedModel ? ` (${probeRes.usedModel})` : ''}`
+                          : PROBE_ERROR[probeRes.error || ''] || T('لم يعمل')}
+                      </p>
+                    )}
                   </div>
-                  {active && engine.id !== 'sham_local' && <div className="flex flex-col"><button className="text-xs px-1" onClick={() => move(engine.id, -1)} aria-label={T('أعلى')}>▲</button><button className="text-xs px-1" onClick={() => move(engine.id, 1)} aria-label={T('أسفل')}>▼</button></div>}
-                  {active && <span className="text-[10px] font-bold text-amber-800">#{policy.indexOf(engine.id) + 1}</span>}
+                  {active && !isLocal && (
+                    <div className="flex flex-col">
+                      <button type="button" disabled={activeIdx <= 0} className="p-0.5 rounded hover:bg-amber-100 disabled:opacity-30" onClick={() => move(engine.id, -1)} aria-label={T('أعلى')}><ChevronUp className="w-4 h-4" /></button>
+                      <button type="button" disabled={activeIdx < 0 || activeIdx >= activeModels.length - 1} className="p-0.5 rounded hover:bg-amber-100 disabled:opacity-30" onClick={() => move(engine.id, 1)} aria-label={T('أسفل')}><ChevronDown className="w-4 h-4" /></button>
+                    </div>
+                  )}
+                  {active && <span className="text-[10px] font-bold text-amber-800">#{isLocal ? activeModels.length + 1 : activeIdx + 1}</span>}
                 </div>
               );
             })}
             <Field label={TP('درجة الإبداع (temperature): {value}', { value: form.temperature })}><input type="range" min={0} max={1} step={0.05} value={form.temperature} onChange={(e) => setForm({ ...form, temperature: Number(e.target.value) })} className="w-full" /></Field>
+
+            <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 space-y-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-xs font-bold flex items-center gap-1.5"><FlaskConical className="w-3.5 h-3.5 text-amber-700" />{T('استمرارية الخبير شاهين عند فشل أي محرك')}</p>
+                <button type="button" onClick={() => go('shaheen')} className="text-[11px] font-semibold text-amber-800 hover:underline">{T('إعدادات شاهين التفصيلية')}</button>
+              </div>
+              <p className="text-[11px] text-stone-600">{TP('ترتيب التحويل التلقائي الحالي لشاهين: {engines}', { engines: data.item.shaheen.engines.map((id) => ENGINE_LABEL[id] || id).join(' → ') })}</p>
+              <div className="flex flex-wrap gap-2">
+                <button type="button" disabled={busy || activeModels.length === 0} onClick={() => void syncShaheenOrder()} className={`${btn} bg-white border border-stone-300 text-xs py-1.5`}>
+                  <RefreshCw className="w-3.5 h-3.5" />{T('تطبيق نفس الترتيب على شاهين')}
+                </button>
+              </div>
+            </div>
           </div>
           <div className={`${card} space-y-2`}>
             <h2 className="font-bold text-sm">{T('هوية المساعد')}</h2>

@@ -25,5 +25,22 @@ function Root() {
   return <App />;
 }
 
+// Tier 1 Google Maps Platform quota / auth defense (Case A Demo Project):
+// surfaces a clean Arabic/English quota banner in App when demo limits or auth issues trigger.
+if (typeof window !== 'undefined') {
+  const dispatchQuotaNotice = () => {
+    window.dispatchEvent(new CustomEvent('gmp-quota-exceeded'));
+  };
+  (window as unknown as { gm_authFailure?: () => void }).gm_authFailure = dispatchQuotaNotice;
+  const origConsoleError = console.error.bind(console);
+  console.error = (...args: unknown[]) => {
+    const joined = args.map((a) => (typeof a === 'string' ? a : '')).join(' ');
+    if (/OverQuotaMapError|QuotaExceeded|ApiProjectMapError|RESOURCE_EXHAUSTED/i.test(joined)) {
+      dispatchQuotaNotice();
+    }
+    origConsoleError(...args);
+  };
+}
+
 // Never a blank page: a crash anywhere shows a message with a reload button instead.
 createRoot(document.getElementById('root')!).render(<ErrorBoundary area="site"><Root /></ErrorBoundary>);

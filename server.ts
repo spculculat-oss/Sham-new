@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import app from './server/app';
+import { attachLiveVoiceServer } from './server/liveVoice';
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 3000);
@@ -25,6 +26,7 @@ async function startServer() {
     const boundPort = typeof address === 'object' && address ? address.port : PORT;
     console.log(`Server started on http://0.0.0.0:${boundPort}`);
   });
+  attachLiveVoiceServer(server);
 }
 
 startServer().catch((error) => {

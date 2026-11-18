@@ -590,6 +590,17 @@ export const ADMIN_STRINGS: Record<string, AdminDict> = {
   '«الإعداد الدائم» لملف المستودع': { en: 'the “permanent configuration” for the repository file' },
   'إرسال البريد التجريبي الآن': { en: 'Send the test email now' },
   'دخول': { en: 'Log in' },
+  'تأكيد جاهزية مفاتيح API': { en: 'Verify API key readiness' },
+  'جاهز: {ready} من {total} محرك ذكاء اصطناعي مهيأ بالخادم': { en: 'Ready: {ready} of {total} AI engines configured on the server' },
+  'تنبيه: لا يوجد أي مفتاح AI مهيأ على الخادم بعد — أضف GEMINI_API_KEY أو DEEPSEEK_API_KEY أو OPENAI_API_KEY في متغيرات البيئة.': { en: 'Warning: no AI key is configured on the server yet — add GEMINI_API_KEY, DEEPSEEK_API_KEY or OPENAI_API_KEY in environment variables.' },
+  'تنبيه: محرك واحد فقط مهيأ ({engine}) — أضف مفتاحاً ثانياً لضمان التحويل التلقائي عند التعطل.': { en: 'Warning: only one engine is configured ({engine}) — add a second key to ensure automatic failover on outage.' },
+  'خط الأمان الأخير (يعمل دائماً بدون مفاتيح)': { en: 'Last line of safety (always works without keys)' },
+  'استمرارية الخبير شاهين عند فشل أي محرك': { en: 'Shaheen Expert continuity on engine failure' },
+  'ترتيب التحويل التلقائي الحالي لشاهين: {engines}': { en: 'Shaheen current failover order: {engines}' },
+  'تطبيق نفس الترتيب على شاهين': { en: 'Apply same order to Shaheen' },
+  'إعدادات شاهين التفصيلية': { en: 'Detailed Shaheen settings' },
+  'تم تحديث ترتيب شاهين مع إعدادات المحركات ✅': { en: 'Shaheen failover order updated with engine settings ✅' },
+  'تم اختبار {ok} يعمل من أصل {configured} مهيأ': { en: 'Tested: {ok} working out of {configured} configured' },
 };
 
 let currentLang: SupportedLanguage = 'ar';

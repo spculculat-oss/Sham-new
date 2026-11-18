@@ -17,6 +17,8 @@ import {
   Store,
   Users,
   BarChart3,
+  Box,
+  Flame,
 } from 'lucide-react';
 import { SupportedLanguage } from '../types/i18n';
 import { t } from '../لغات/i18n';
@@ -147,6 +149,9 @@ export const Header: React.FC<HeaderProps> = ({
       iconColor: 'text-amber-600',
       items: [
         { id: 'perfume_news', label: t('nav_news_short', currentLang, t('nav_news', currentLang)), fullLabel: t('nav_news', currentLang), icon: Newspaper, isNew: true },
+        { id: 'perfume_atlas', label: pickArEn(currentLang, 'أطلس الخرائط', 'Fragrance Atlas'), fullLabel: pickArEn(currentLang, 'أطلس العطور والخرائط التفاعلي', 'World Fragrance Atlas & Map'), icon: MapPin, isNew: true },
+        { id: 'studio_3d', label: pickArEn(currentLang, 'استوديو 3D', '3D Flacon Studio'), fullLabel: pickArEn(currentLang, 'استوديو الزجاجة الكريستالية 3D', '3D Crystal Flacon Studio'), icon: Box, isNew: true },
+        { id: 'perfumer_game', label: pickArEn(currentLang, 'تحدي المزج', 'Blending Game'), fullLabel: pickArEn(currentLang, 'تحدي قطّارة العطار السريع', 'Artisan Blending Challenge'), icon: Flame, isNew: true },
         { id: 'world_perfumes', label: t('nav_world_perfumes_short', currentLang, t('nav_world_perfumes', currentLang)), fullLabel: t('nav_world_perfumes', currentLang), icon: Compass },
         { id: 'perfumer_analytics', label: currentLang === 'ar' ? 'تحليلات العطار' : 'Perfumer Analytics', fullLabel: currentLang === 'ar' ? 'تحليلات العطار (D3.js)' : 'Perfumer Analytics (D3.js)', icon: BarChart3, isNew: true },
         { id: 'pyramid', label: t('nav_pyramid_short', currentLang, t('nav_pyramid', currentLang)), fullLabel: t('nav_pyramid', currentLang), icon: Compass },

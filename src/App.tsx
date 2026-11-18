@@ -26,6 +26,11 @@ import { NavigationBreadcrumbs } from './components/NavigationBreadcrumbs';
 import { CountryAndAddressModal } from './components/CountryAndAddressModal';
 import { AuthModal } from './components/AuthModal';
 import { DataPrivacyModal } from './components/DataPrivacyModal';
+import { PerfumeAtlasMap } from './components/PerfumeAtlasMap';
+import { ThreePerfumeStudio } from './components/ThreePerfumeStudio';
+import { PerfumerAtelierGame } from './components/PerfumerAtelierGame';
+import { ShaheenLiveVoiceModal } from './components/ShaheenLiveVoiceModal';
+import { AudioTranscribeStudio } from './components/AudioTranscribeStudio';
 import {
   FormulationState,
   PyramidNote,
@@ -173,6 +178,9 @@ export default function App() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isEnvironmentModalOpen, setIsEnvironmentModalOpen] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [isLiveVoiceOpen, setIsLiveVoiceOpen] = useState(false);
+  const [isAudioStudioOpen, setIsAudioStudioOpen] = useState(false);
+  const [gmpQuotaExceeded, setGmpQuotaExceeded] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Synchronous modal tracker ref for browser popstate
@@ -299,6 +307,20 @@ export default function App() {
     setActiveTab(tab);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const onQuota = () => setGmpQuotaExceeded(true);
+    const onLiveVoice = () => setIsLiveVoiceOpen(true);
+    const onAudioStudio = () => setIsAudioStudioOpen(true);
+    window.addEventListener('gmp-quota-exceeded', onQuota);
+    window.addEventListener('open-shaheen-live-voice', onLiveVoice);
+    window.addEventListener('open-audio-transcribe-studio', onAudioStudio);
+    return () => {
+      window.removeEventListener('gmp-quota-exceeded', onQuota);
+      window.removeEventListener('open-shaheen-live-voice', onLiveVoice);
+      window.removeEventListener('open-audio-transcribe-studio', onAudioStudio);
+    };
+  }, []);
 
   const handleGoBack = () => {
     const hasOpenModal =
@@ -893,6 +915,39 @@ export default function App() {
     <LanguageProvider initialLang={currentLang} onLanguageChange={handleSelectLanguage}>
       <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900 selection:bg-amber-200">
         
+        {/* Case A Google Maps Demo-Key Quota / Auth Banner */}
+        {gmpQuotaExceeded && (
+          <div
+            role="alert"
+            className="sticky top-0 z-50 bg-amber-950 text-amber-50 border-b border-amber-500/60 px-4 py-2.5 text-xs flex flex-wrap items-center justify-between gap-2 shadow-md"
+          >
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span>
+                {currentLang === 'ar'
+                  ? 'تم بلوغ حد الحصة المؤقت لمفاتيح خرائط Google Maps التجريبية. لاستخدام مفتاح مشروعك الخاص مع تفعيل الفوترة، تفضّل بزيارة'
+                  : 'Demo Google Maps quota temporarily reached. To configure your own billing-enabled project key, visit the'}
+              </span>
+              <a
+                href="https://developers.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-bold text-amber-300 hover:text-white"
+              >
+                maps developer site
+              </a>
+              <span>.</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setGmpQuotaExceeded(false)}
+              className="p-1 rounded-lg hover:bg-amber-900 text-amber-200 hover:text-white cursor-pointer"
+              aria-label="Dismiss"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+
         {/* Toast Notification */}
         {toastMessage && (
           <div className="fixed bottom-6 left-6 z-50 bg-stone-900 text-white px-5 py-3.5 rounded-2xl shadow-xl border border-stone-800 text-xs font-semibold flex items-center gap-2.5 animate-in fade-in slide-in-from-bottom-3">
@@ -1056,6 +1111,28 @@ export default function App() {
             onNavigateToTab={(tab) => navigateToTab(tab)}
             onOpenFormula={(f) => handleLoadFormula(f)}
           />
+        )}
+
+        {activeTab === 'perfume_atlas' && (
+          <PerfumeAtlasMap
+            currentLang={currentLang}
+            onAskShaheenPrompt={(prompt) => {
+              window.dispatchEvent(new CustomEvent('open-ai-chat-with-prompt', { detail: prompt }));
+            }}
+          />
+        )}
+
+        {activeTab === 'studio_3d' && (
+          <ThreePerfumeStudio
+            currentLang={currentLang}
+            formulaTitle={formulaTitle}
+            batchCode={batchCode}
+            formulation={formulation}
+          />
+        )}
+
+        {activeTab === 'perfumer_game' && (
+          <PerfumerAtelierGame currentLang={currentLang} />
         )}
 
         {activeTab === 'master_ai' && (
@@ -1355,6 +1432,32 @@ export default function App() {
           onUserDataWiped={handleUserDataWiped}
           onClose={handleClosePrivacyModal}
         />
+      )}
+
+      {/* Real-Time Voice Call Modal with Master Shahin */}
+      <ShaheenLiveVoiceModal
+        open={isLiveVoiceOpen}
+        onClose={() => setIsLiveVoiceOpen(false)}
+        currentLang={currentLang}
+      />
+
+      {/* Audio Transcription Studio Modal */}
+      {isAudioStudioOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4"
+          onClick={() => setIsAudioStudioOpen(false)}
+        >
+          <div className="w-full max-w-2xl" onClick={(e) => e.stopPropagation()}>
+            <AudioTranscribeStudio
+              lang={currentLang}
+              onClose={() => setIsAudioStudioOpen(false)}
+              onInsertText={(text) => {
+                setIsAudioStudioOpen(false);
+                window.dispatchEvent(new CustomEvent('open-ai-chat-with-prompt', { detail: text }));
+              }}
+            />
+          </div>
+        </div>
       )}
 
       </div>

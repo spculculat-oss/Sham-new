@@ -20,6 +20,9 @@ import {
   Bot,
   Users,
   BarChart3,
+  MapPin,
+  Box,
+  Flame,
 } from 'lucide-react';
 import { SupportedLanguage } from '../types/i18n';
 import { t } from '../لغات/i18n';
@@ -92,6 +95,9 @@ export const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = ({
   // Deep routes («community/messenger/<id>», «store/<slug>»…) show their section's name, never the raw route.
   tabConfigs.community = { label: currentLang === 'ar' ? 'مجتمع شام' : 'Sham Community', icon: Users };
   tabConfigs.perfumer_analytics = { label: currentLang === 'ar' ? 'تحليلات العطار' : 'Perfumer Analytics', icon: BarChart3 };
+  tabConfigs.perfume_atlas = { label: currentLang === 'ar' ? 'أطلس العطور والخرائط' : 'Fragrance Atlas', icon: MapPin };
+  tabConfigs.studio_3d = { label: currentLang === 'ar' ? 'استوديو الزجاجة 3D' : '3D Flacon Studio', icon: Box };
+  tabConfigs.perfumer_game = { label: currentLang === 'ar' ? 'تحدي المزج السريع' : 'Blending Challenge', icon: Flame };
   const configFor = (tab: string) => tabConfigs[tab] || tabConfigs[tab.split('/')[0]];
   const prettify = (tab: string) => tab.split('/')[0].replace(/_/g, ' ');
   const currentConfig = configFor(activeTab) || { label: prettify(activeTab), icon: Sparkles };
@@ -100,6 +106,9 @@ export const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = ({
   const quickLinks = [
     { id: 'concentration', label: L('ql_concentration'), icon: FlaskConical },
     { id: 'maceration_simulator', label: L('ql_maceration'), icon: Hourglass },
+    { id: 'perfume_atlas', label: currentLang === 'ar' ? 'أطلس الخرائط' : 'Atlas Map', icon: MapPin },
+    { id: 'studio_3d', label: currentLang === 'ar' ? 'استوديو 3D' : '3D Studio', icon: Box },
+    { id: 'perfumer_game', label: currentLang === 'ar' ? 'تحدي المزج' : 'Blending Game', icon: Flame },
     { id: 'perfumer_analytics', label: currentLang === 'ar' ? 'تحليلات العطار' : 'Perfumer Analytics', icon: BarChart3 },
     { id: 'pyramid', label: L('ql_pyramid'), icon: Layers },
     { id: 'alcohol', label: L('ql_alcohol'), icon: Hourglass },

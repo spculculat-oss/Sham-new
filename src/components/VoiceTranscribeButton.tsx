@@ -113,8 +113,8 @@ export function VoiceTranscribeButton({
       console.error('Transcription error:', err);
       setError(
         isAr
-          ? 'تعذر تحويل الصوت إلى نص عبر gemini-3.5-transcribe'
-          : 'Transcription error with gemini-3.5-transcribe'
+          ? 'تعذر تحويل الصوت إلى نص الآن'
+          : 'Unable to transcribe audio right now'
       );
     } finally {
       setTranscribing(false);
@@ -132,8 +132,8 @@ export function VoiceTranscribeButton({
                 ? 'إيقاف التسجيل وتحويل الصوت لنص'
                 : 'Stop & transcribe'
               : isAr
-              ? 'تحدث وسيقوم gemini-3.5-transcribe بتحويل صوتك لنص'
-              : 'Speak to transcribe with gemini-3.5-transcribe'
+              ? 'تحدث لتحويل صوتك إلى نص تلقائياً'
+              : 'Speak to transcribe automatically'
           }
           onClick={recording ? stopRecording : startRecording}
           disabled={transcribing}
@@ -163,7 +163,7 @@ export function VoiceTranscribeButton({
         {transcribing && (
           <span className="ms-1.5 text-[10px] text-amber-800 font-semibold flex items-center gap-1">
             <Sparkles className="h-3 w-3 animate-spin" />
-            <span>gemini-3.5-transcribe</span>
+            <span>{isAr ? 'جاري التفريغ' : 'Transcribing'}</span>
           </span>
         )}
 
@@ -198,8 +198,8 @@ export function VoiceTranscribeButton({
             <Loader2 className="h-4 w-4 animate-spin text-amber-700" />
             <span>
               {isAr
-                ? 'جاري التحويل بـ gemini-3.5-transcribe…'
-                : 'Transcribing via gemini-3.5-transcribe…'}
+                ? 'جاري تحويل الصوت لنص…'
+                : 'Transcribing audio…'}
             </span>
           </>
         ) : recording ? (

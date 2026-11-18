@@ -13,7 +13,7 @@ import { runAdminAgent } from './adminAgent';
 import { createStore, type Store } from './store';
 import { RateLimiter, clientKey } from './rateLimit';
 import { probeEngines } from '../shaheen';
-import { SHAHEEN_SITE_SETTINGS } from '../config/shaheen';
+import { SHAHEEN_ENGINES, SHAHEEN_SITE_SETTINGS } from '../config/shaheen';
 import { engineStatuses } from './engines';
 import { activeSeats, councilAvailable, publicTranscript } from './council';
 import type { CollectionName, RequestStatus, ServiceRequest } from './types';
@@ -468,7 +468,9 @@ export function createShamCore(options: CoreOptions = {}) {
   const probeLimiter = new RateLimiter(10, 10 * 60_000);
   admin.post('/shaheen/test', wrap(async (req, res) => {
     if (!probeLimiter.allow(clientKey(req))) throw new AssistantError(429, 'RATE_LIMITED', 'Too many tests, wait a few minutes');
-    res.json({ results: await probeEngines((await repo.settings()).shaheen, { env, fetch: options.fetch }) });
+    const { shaheen } = await repo.settings();
+    const target = req.body?.all === true ? { ...shaheen, engines: SHAHEEN_ENGINES } : shaheen;
+    res.json({ results: await probeEngines(target, { env, fetch: options.fetch }) });
   }));
 
   /** Sandbox: same pipeline as visitors, plus the full trace. */

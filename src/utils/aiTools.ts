@@ -79,6 +79,8 @@ export const AI_INFRASTRUCTURE = [
   'server/core/engines.ts', 'server/core/council.ts', 'scripts/doctor/agent.ts', 'scripts/doctor/run.mts', 'scripts/shaheen-supervisor/run.mts',
   // Shaheen's background agent (Manus): admin-only audits in GitHub Actions, never a visitor tool.
   'server/core/manus.ts', 'scripts/shaheen-manus/run.mts',
+  // Google Maps Grounding and Live Voice real-time audio bridge.
+  'server/maps.ts', 'server/liveVoice.ts',
 ];
 
 export const aiTool = (id: string) => AI_TOOLS.find((t) => t.id === id);

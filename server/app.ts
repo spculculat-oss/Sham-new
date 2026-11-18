@@ -13,6 +13,7 @@ import { createCommunity, createCommunityRouter } from './community/router';
 import { productsForCheckout, recordCheckout, markPaid } from './community/service';
 import { createAiToolsRouter } from './aiTools';
 import { createShaheenAgentRouter } from './shaheenAgent';
+import { createMapsRouter } from './maps';
 
 dotenv.config();
 
@@ -50,6 +51,7 @@ app.use('/api', createShaheenRouter({ repo: shamCore.repo, runtime: shamCore.run
 app.use('/api', createShaheenAgentRouter({ repo: shamCore.repo }));
 app.use('/api', createMediaRouter());
 app.use('/api', createAiToolsRouter());
+app.use('/api', createMapsRouter());
 // «اسأل شاهين» in «متجر شام»: POST /api/store/advise (server/store.ts).
 app.use('/api', createStoreRouter({ repo: shamCore.repo }));
 // «الدفع في متجر شام»: country, Kashier payment sessions and their verified results (server/checkout.ts).

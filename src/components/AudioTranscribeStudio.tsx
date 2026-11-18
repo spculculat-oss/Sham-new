@@ -128,8 +128,8 @@ export function AudioTranscribeStudio({ onClose, onInsertText, lang = 'ar' }: Pr
       console.error(err);
       setError(
         isAr
-          ? 'حدث خطأ أثناء الاتصال بنموذج gemini-3.5-transcribe'
-          : 'Error transcribing with gemini-3.5-transcribe'
+          ? 'حدث خطأ أثناء تحويل التسجيل الصوتي إلى نص'
+          : 'Error transcribing audio recording'
       );
     } finally {
       setTranscribing(false);
@@ -155,13 +155,13 @@ export function AudioTranscribeStudio({ onClose, onInsertText, lang = 'ar' }: Pr
             <h3 className="font-black text-stone-900 text-base sm:text-lg flex items-center gap-2">
               <span>{isAr ? 'استوديو الإملاء والتحويل الصوتي الذكي' : 'Audio Transcription Studio'}</span>
               <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900 border border-amber-300">
-                gemini-3.5-transcribe
+                {isAr ? 'تفريغ فوري' : 'Studio Dictation'}
               </span>
             </h3>
             <p className="text-xs text-stone-500">
               {isAr
                 ? 'تحدث عبر الميكروفون أو ارفع تسجيلاً ليتم تفريغه حرفياً بدقة عالية'
-                : 'Input audio with your mic to transcribe verbatim using gemini-3.5-transcribe'}
+                : 'Speak into your mic or upload an audio clip for high-accuracy transcription'}
             </p>
           </div>
         </div>
@@ -248,8 +248,8 @@ export function AudioTranscribeStudio({ onClose, onInsertText, lang = 'ar' }: Pr
           <Loader2 className="h-4 w-4 animate-spin text-amber-700" />
           <span>
             {isAr
-              ? 'يقوم نموذج gemini-3.5-transcribe بتفريغ الصوت وتحويله إلى نص دقيق…'
-              : 'Transcribing speech using gemini-3.5-transcribe model…'}
+              ? 'جاري تفريغ الصوت وتحويله إلى نص دقيق…'
+              : 'Transcribing speech into accurate text…'}
           </span>
         </div>
       )}
@@ -277,8 +277,8 @@ export function AudioTranscribeStudio({ onClose, onInsertText, lang = 'ar' }: Pr
           rows={6}
           placeholder={
             isAr
-              ? 'سيظهر هنا النص الصوتي المفرّغ بواسطة gemini-3.5-transcribe تلقائياً فور انتهائك من التحدث…'
-              : 'Transcribed speech text will appear here automatically via gemini-3.5-transcribe…'
+              ? 'سيظهر هنا النص الصوتي المفرّغ تلقائياً فور انتهائك من التحدث…'
+              : 'Transcribed speech text will appear here automatically once recording stops…'
           }
           className="w-full resize-none rounded-2xl border border-stone-200 bg-stone-50/70 p-4 text-sm text-stone-900 outline-none focus:border-amber-500 focus:bg-white focus:ring-2 focus:ring-amber-200 leading-relaxed font-sans"
         />

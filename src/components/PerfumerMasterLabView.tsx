@@ -22,6 +22,8 @@ import {
   ShieldCheck,
   AlertCircle,
   RotateCcw,
+  Phone,
+  Mic,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import perfumerImg from '../assets/images/master_perfumer_compounding_1791693212967.jpg';
@@ -484,6 +486,31 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
 
         {/* Workbench Quick Actions */}
         <div className="flex items-center gap-2">
+          {/* Live Voice Call & Audio Studio Launchers */}
+          {!isStaticHosting && (
+            <>
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new CustomEvent('open-shaheen-live-voice'))}
+                className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 cursor-pointer transition-colors shadow-2xs"
+                title={currentLang === 'ar' ? 'مكالمة صوتية مباشرة مع الخبير شاهين' : 'Start live voice call with Shahin'}
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">{currentLang === 'ar' ? 'مكالمة مباشرة' : 'Live Voice'}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new CustomEvent('open-audio-transcribe-studio'))}
+                className="px-3 py-1.5 bg-amber-900 hover:bg-stone-900 text-amber-100 rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors shadow-2xs"
+                title={currentLang === 'ar' ? 'استوديو الإملاء والتحويل الصوتي' : 'Open audio transcription studio'}
+              >
+                <Mic className="w-3.5 h-3.5 text-amber-300" />
+                <span className="hidden md:inline">{currentLang === 'ar' ? 'استوديو الصوت' : 'Audio Studio'}</span>
+              </button>
+            </>
+          )}
+
           {/* Scale Display */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 text-white rounded-lg text-xs font-mono-numbers">
             <span className="text-stone-400 text-[10px]">{L('scale')}</span>

@@ -23,6 +23,8 @@ import {
   Trash2,
   Clock,
   AlertCircle,
+  Phone,
+  Mic,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import perfumerImg from '../assets/images/master_perfumer_compounding_1791693212967.jpg';
@@ -1161,6 +1163,28 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
 
               {/* Action Controls in Header */}
               <div className="flex items-center gap-1.5">
+                {!isStaticHosting && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => window.dispatchEvent(new CustomEvent('open-shaheen-live-voice'))}
+                      className="px-2 py-1 bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg text-[11px] font-bold transition-colors flex items-center gap-1 cursor-pointer"
+                      title={currentLang === 'ar' ? 'مكالمة صوتية مباشرة' : 'Live Voice Call'}
+                    >
+                      <Phone className="w-3 h-3" />
+                      <span className="hidden sm:inline">{currentLang === 'ar' ? 'مكالمة' : 'Voice'}</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.dispatchEvent(new CustomEvent('open-audio-transcribe-studio'))}
+                      className="p-1.5 text-amber-300 hover:text-white rounded-lg transition-colors cursor-pointer"
+                      title={currentLang === 'ar' ? 'استوديو التحويل الصوتي' : 'Audio Transcription Studio'}
+                    >
+                      <Mic className="w-3.5 h-3.5" />
+                    </button>
+                  </>
+                )}
+
                 {/* Download Backup */}
                 <button
                   onClick={() => exportChatTranscriptToFile(messages, daysRemaining)}
