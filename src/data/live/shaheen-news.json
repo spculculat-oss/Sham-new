@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-18T13:17:43.417Z",
- "nextUpdateAt": "2026-11-19T01:17:43.417Z",
+ "updatedAt": "2026-11-18T14:21:29.313Z",
+ "nextUpdateAt": "2026-11-19T02:21:29.313Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -22,15 +22,11 @@
    "count": 1
   },
   {
-   "name": "MAP SPORT",
-   "count": 1
-  },
-  {
    "name": "Cosmetics Business",
    "count": 1
   },
   {
-   "name": "The Des Moines Register",
+   "name": "Detroit Free Press",
    "count": 1
   },
   {
@@ -42,19 +38,11 @@
    "count": 1
   },
   {
-   "name": "ihata",
+   "name": "Glossy",
    "count": 1
   },
   {
    "name": "GQ South Africa",
-   "count": 1
-  },
-  {
-   "name": "صحيفة الوطن",
-   "count": 1
-  },
-  {
-   "name": "الشرق الأوسط",
    "count": 1
   },
   {
@@ -63,10 +51,6 @@
   },
   {
    "name": "Journal du Luxe",
-   "count": 1
-  },
-  {
-   "name": "صحيفة المرصد",
    "count": 1
   },
   {
@@ -79,6 +63,46 @@
   },
   {
    "name": "The New York Times",
+   "count": 1
+  },
+  {
+   "name": "Youth Village",
+   "count": 1
+  },
+  {
+   "name": "The Economic Times",
+   "count": 1
+  },
+  {
+   "name": "Now Smell This",
+   "count": 1
+  },
+  {
+   "name": "Woman & Home",
+   "count": 1
+  },
+  {
+   "name": "WWD",
+   "count": 1
+  },
+  {
+   "name": "MAP SPORT",
+   "count": 1
+  },
+  {
+   "name": "ihata",
+   "count": 1
+  },
+  {
+   "name": "صحيفة الوطن",
+   "count": 1
+  },
+  {
+   "name": "الشرق الأوسط",
+   "count": 1
+  },
+  {
+   "name": "صحيفة المرصد",
    "count": 1
   },
   {
@@ -124,24 +148,6 @@
    }
   },
   {
-   "id": "n63mchg",
-   "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOYnRwNHczWnVwZms3UmpMRFo4VDVGUDJZOXZpd0lSTlhoX2Z0TjV6bG5PMFhfVmM0c2plcldsaTFiTG9NUlBOR3NUSEs4OGFhamZVN0R6dnN2VUJvM1lWb2xMMElxcEI2NldMazgxVVRNcDk0XzBBTVM5VjIxRGdkUHN2cG90ZTdlenVabFZ6S3dOUUZtUFpXS1FIR2FPYzhxcW1VNUpzbE9uOVZMZWNoSHRZOS1LLTcyVlhVU3Q5Si1LYUZpVjFDTlQ1X2FWUjRnd1hTTHRBcnE0ZjBiRDZ2TGgxdENnMlVKMHM2ODlJNnJ6VzhnN0RxVlB2cElJczUwUTlKMGJUemcwTkdPRWtWVHR0UDI3Y2JGdS1XOTJ0Umh2RklpNVVMSFMxTnJxdHNpbjM2c3VNY2FabWF5QjZHWDVCTGFQVmVrMzM3RzVnRXB0MUZ3RzRpRmlSdmE1Y0FFMktjaDR4YW5vRWw1aHNKeHhPbHR0b1d4QWo2QURtc3Rjc2VzTWFZM2pJeXdQc0NHN1dkT2RMcVVITVU?oc=5",
-   "source": "MAP SPORT",
-   "publishedAt": "2026-11-18T12:48:57.000Z",
-   "original": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
-    "en": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\""
-   },
-   "summary": {
-    "ar": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
-    "en": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\""
-   }
-  },
-  {
    "id": "n1flswpo",
    "url": "https://cosmeticsbusiness.com/david-beckham-s-company-db-ventures-sues",
    "source": "Cosmetics Business",
@@ -160,10 +166,10 @@
    }
   },
   {
-   "id": "n1umbbue",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPbElrQUpPaXkzaWlYcXhWcFlUdHlBdVRXdEQ0QWVGR2dteUZtZTRVQjlPMlFsNE1ZR2dMYmlRQjBodjNKbmh0N1pXS3JYNDcyNEZoM1NMRGt2RkVLRXlSc2pxM0tPQUdodmlhdFp3RnFfTHlNYW4zM2FQVmJQZEJRM0ZfZXE0dzkxa1JDbmNXbmFzVTVndF9IZDNCbERSRDVTdzMyMkdyWGhvN1VSem4yMmRYcEEtWFlWRDJUMFpQWjVTNlR2dlhZZUsyZFYzYVlVOFR4Um1RREJXNUE2dlJkOGJKZ3EzQzJMaUt4dWlIQTJUNjRfeHRIcWRTdjBXNXduV05hRXd2dGdKREE?oc=5",
-   "source": "The Des Moines Register",
-   "publishedAt": "2026-11-18T12:39:26.000Z",
+   "id": "nm6syn0",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdmRTTzBXRTdsNVl2TUs4SzU0ZE1NY09NNWRwaHBsTTFacW1YcTA3cUZBdXM5TXQwQVZROUpHTnFZeUExTWxnWXBnLWYwOWJrMnpKVm9IcEszeUtyOFVwU2R2ZFRCT0JESk1LS2FGcGN6bFRGRU0zd3FleGVicDRGQlRQaUNWYTY5RGFRMGNZdWs1Z3Z2SzhfWDB5ekUwWENUazN2WFRQSS00MmMzMGZhRXBiWjBVUUJ4bURfQWRHLVFXN0sxZ25vZzBSc3lIMFVCdFhBRmdCaFJucVdNT0FzNE5FVEZjczRxcl9McU5nbEo4UUVaM1pBbjZXMA?oc=5",
+   "source": "Detroit Free Press",
+   "publishedAt": "2026-11-18T12:38:08.000Z",
    "original": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives",
    "lang": "en",
    "category": "launch",
@@ -214,21 +220,21 @@
    }
   },
   {
-   "id": "nnsntxd",
-   "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQb0xKZnl6UmJpTFdwN1lqR3l4Mmt6SE5XRkpmNzJkRGpsSUJkYUhfcDEwUzJGUGczQU4zSjhDZndUNDZHNkl5ZndmZDI3b3hlbE9WUUF0ZEw2WEl2ZmRZd3E4bEMyU1Z1WF94amxGQ1FSeVZxc01BV2lVYU93RXNZa0RJMWkzQm1jeHlWVjRNZjJ0OTZYeU02OUNKbFhUVlBiUXFiY1lhdGJxT2o5U2lYdV9QVGpuOEhoUkRIX1ZSU0kteHVHcEYwZzV4NUZfcEYzTUZrZmV3UmhQQVYtdGxFVFVKcGQ0dlpvdURhQ3BnSllMWnVwbDk0dGVWUnlDT2lqbTZ6TjFBd2Y5U1pkeDB3Q2hRMlM4ZGIxVG1oUi1aWEVBTkoyWlJGdUxFemtzRDM5SUg2djVEMGxBSXl4Z0ZnYTdR?oc=5",
-   "source": "ihata",
-   "publishedAt": "2026-11-18T10:32:11.000Z",
-   "original": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
-   "lang": "ar",
-   "category": "culture",
+   "id": "nh49z9m",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQmJ2T3NhMXVsSmtPRTNTLVIyaDJlRTlpZXBtZVlRN1gwbHJHVHQ4U19ZazFMRk1Mb1RsdGRXT21aWUthUWtiQ1ZZV19mdUVfOUJycE5uQkdBN2JfQW5FSTBQM2dSLVhiOXdsUVZ4dDlXNngySUt5bjYyNnVjZFEyM0RnSTVUbmM?oc=5",
+   "source": "Glossy",
+   "publishedAt": "2026-11-18T11:03:45.000Z",
+   "original": "Why Express is betting on Y2K fragrance nostalgia",
+   "lang": "en",
+   "category": "industry",
    "importance": 2,
    "title": {
-    "ar": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
-    "en": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026"
+    "ar": "Why Express is betting on Y2K fragrance nostalgia",
+    "en": "Why Express is betting on Y2K fragrance nostalgia"
    },
    "summary": {
-    "ar": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
-    "en": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026"
+    "ar": "Why Express is betting on Y2K fragrance nostalgia",
+    "en": "Why Express is betting on Y2K fragrance nostalgia"
    }
   },
   {
@@ -250,46 +256,10 @@
    }
   },
   {
-   "id": "n1d1fjcv",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByR0huekxrMnBNd3NVUXFFQzB5TFl6b1J0Q0tUQUE0MjFzZzFHeFdBbnV1VERNcmFYbmkweFFFUWhXVHQtMEEweG5iWEV4WkI0Z1cwWdIBVEFVX3lxTFByR0huekxrMnBNd3NVUXFFQzB5TFl6b1J0Q0tUQUE0MjFzZzFHeFdBbnV1VERNcmFYbmkweFFFUWhXVHQtMEEweG5iWEV4WkI0Z1cwWQ?oc=5",
-   "source": "صحيفة الوطن",
-   "publishedAt": "2026-11-18T10:24:26.000Z",
-   "original": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
-   "lang": "ar",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
-    "en": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض"
-   },
-   "summary": {
-    "ar": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
-    "en": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض"
-   }
-  },
-  {
-   "id": "n1hfcsxk",
-   "url": "https://news.google.com/rss/articles/CBMingRBVV95cUxQSjNPWDQ1a21TekpweVpLbW4yTVg0VTBhT2ROV1pqbGk0RkNjdmJLSzJodXAzNW11X3hodUFwLXlwWWFYeTB1X09MaDk1NkFYRlBQUVpOSHZzMmZFbkI4NHE0RW5aNV9MVl9Za0RIUGhFbFNlaFpqVzh5cVN6Q1Z4Vjd0aEhEUjkyM3d2Rlp1Qnd3TTNCUkUtZjdvZHJCSGwxOHVfcUxicEdKSS04eUMteWtYUlZRTWpvdWJ3Yi04cVBWZGI5STM1THBTalVLV0lNQjlkdXdVaXNXR3A2S1h0ZmN0MmlPTlp5YlJqWGdfUVFNR214THZxT3ZhQjE3QTJsc2NCVVFKakZJUmFzYll3NjRBSGg2dmdibXEyaHhlZGlVZzlDSmFYZzY0YkdyYk5UcWVEM1kwRmpKWmFBVGRPc3h5R2FOTjhwMjZyMUx2aERGaHFFeFZUbTZ1NVhQRkJLcUVkQTRXVU1sN1VYYmJMUjlVMDFHRlZLdUp1OFAyT1lrMms5LU9DZWxhZ3BQVjZ6RDRwZks4WVNZR0gybFZRc2t2QzRDSGo1N1FPSldEd0ZXN05jU0M4eXVFdmVtdGdRNk9faDNUdnJZTHhpRklWMkkxX0tkQTNGWVFiMFFNVHctR0NWQTdYNnZpSFpPTjM2M0pXd285SWQ4bnpic0MzejU4OHpkSm1xWExsYWdXUUllb0FtR2NwQlF2OU56QQ?oc=5",
-   "source": "الشرق الأوسط",
-   "publishedAt": "2026-11-18T08:54:11.000Z",
-   "original": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
-    "en": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟"
-   },
-   "summary": {
-    "ar": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
-    "en": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟"
-   }
-  },
-  {
    "id": "n1sdmw4s",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSEtiblpLYVFHeFJtVExfZkFBZ09VSnRuNWtERlpJLW1fcWpzRGt1OWJKanVJeF9iVzJwYWpWTGVvMi0xblh0eC05S0NHZmc1RzVjQXgzc1hCUTkxWXVRMzlPNk1Udk5KQmxrZmstRDJDdkc3Z3dkM1BHXzQ4akl2VGozNVo2M2x0clRJWk4xREcyemhZRHREcGdoWmhTdFdDd0FzRVh0eDRYWEVaeGx3Rm1JYjFzRF8yMHZKNzJzS2x2NDZfTHBaMjNBR093VlZpNXNLMWdBTHRsMjhoVUNYS2JNVTVhNFlFNHc?oc=5",
    "source": "News24",
-   "publishedAt": "2026-11-18T07:46:09.000Z",
+   "publishedAt": "2026-11-18T07:55:30.000Z",
    "original": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected",
    "lang": "en",
    "category": "launch",
@@ -319,24 +289,6 @@
    "summary": {
     "ar": "Parfum de prestige : le pouvoir de prescription des passionnés",
     "en": "Parfum de prestige : le pouvoir de prescription des passionnés"
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-18T05:15:51.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
    }
   },
   {
@@ -427,6 +379,186 @@
    "summary": {
     "ar": "Palais Royal - Serge Lutens, parfumerie de niche à Paris",
     "en": "Palais Royal - Serge Lutens, parfumerie de niche à Paris"
+   }
+  },
+  {
+   "id": "ngp9ovp",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPc19pQ1FrUFVVMXhSc3p0OVk0UUhnTDduSFRNNm03Q0xjT0N2N1c4cTVtdkh0ZTdCUE1YQ2llVGlTdlNpckJLYjc2VjNISU9sejVpZC1FRWNWSW9oN3pIZ1ZrcTF2dlBELVlXMjZYOEhxcWtvQWtybm54RE5FUEhCbHhNZWpzendlSllpVXlZN2N6aF93bFgtQTlrSUk?oc=5",
+   "source": "Youth Village",
+   "publishedAt": "2026-11-17T20:17:34.000Z",
+   "original": "Bonang Matheba Introduces Her New Comfort South Africa Scent",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Bonang Matheba Introduces Her New Comfort South Africa Scent",
+    "en": "Bonang Matheba Introduces Her New Comfort South Africa Scent"
+   },
+   "summary": {
+    "ar": "Bonang Matheba Introduces Her New Comfort South Africa Scent",
+    "en": "Bonang Matheba Introduces Her New Comfort South Africa Scent"
+   }
+  },
+  {
+   "id": "nbpqrr5",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQVWlrRTBWU29aMUh0TXNDTTl0czVKc3dqVldlNDhlTHV6aHpzSWl0d0FnM0FyWExsU2t4M1hZV2pta2RUcmZBeHYtUG1Gc041OTBlY0lJb3l3d25BZkhPaTBHZWloRmtYdEl5RE5SWktGd0U2aWtTeVVoNklaUFA2VmlUd2I2OS1HdjlwSloyM2NWNFhoeVV1MHRnOGNiVW9iSmZTZ3dMLXZTQ0k1WDF4bXhiNjJXMFFwY0ZxdjhjdXNwZUNtUGlacWhNcUpVdmFmR3V4X1hqOUt4WXBuWlVSNFpWQ0RZYXgteU9Gd21Bd2hkX2N5U1BzcU03Y0lST3pYVkVBZtIBigJBVV95cUxQMmpWQUlXNDIzem5qWERpajFwbDgwTG5iOVBSV0VsRjdPMFFFM2pTYjIzdGttZHF0SWM0UUZtcnByRWJNOFY0RWdqMGk2SUdIWHd3cHBVZGViRm5scl9ZNS1iV1B6VHNMeWxZbThwZ2hyUE9KN0dUcG5wV0d3U0c4Rmw4NXgyS2EzUTdhZW1McXNRRlVDcG81UWV4aC14WkJfSE1McDJlamdFNmtJUl94RGlLdUVwdzd5Nmp0X2R0NUFpZE9PdjNzT2p0N29wX3Z1Uk9Iem1ENXRZdFNMMlJtN0wzN1pHSVpTdnYteXhydGRQLXBUWmE4THVEWWc0UkJKVFpJS01LYjluQQ?oc=5",
+   "source": "The Economic Times",
+   "publishedAt": "2026-11-17T19:07:34.000Z",
+   "original": "Selena Gomez's rare beauty expanded beyond makeup into fragrance; what went into developing its first perf",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Selena Gomez's rare beauty expanded beyond makeup into fragrance; what went into developing its first perf",
+    "en": "Selena Gomez's rare beauty expanded beyond makeup into fragrance; what went into developing its first perf"
+   },
+   "summary": {
+    "ar": "Selena Gomez's rare beauty expanded beyond makeup into fragrance; what went into developing its first perf",
+    "en": "Selena Gomez's rare beauty expanded beyond makeup into fragrance; what went into developing its first perf"
+   }
+  },
+  {
+   "id": "n86ynzz",
+   "url": "https://nstperfume.com/2026/11/17/aftelier-citrus-cordial-new-fragrance/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-17T18:10:27.000Z",
+   "original": "Aftelier Citrus Cordial ~ new fragrance",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Aftelier Citrus Cordial ~ new fragrance",
+    "en": "Aftelier Citrus Cordial ~ new fragrance"
+   },
+   "summary": {
+    "ar": "Indie natural line Aftelier has launched Citrus Cordial, a new fragrance...",
+    "en": "Indie natural line Aftelier has launched Citrus Cordial, a new fragrance..."
+   }
+  },
+  {
+   "id": "n1f6j7ek",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5GV21KOU5MNlVCVHd6cmVyYlVjeFJZZDl3YzVUbzBLdjliblVOSnlmU2plRUhZcWVGR0RKZFZIVVlHV25tMUd5elhXTkp3LV9yTm9URHlTN2VYRWp5WDRXR3k4ck1QeXZWWHZxRDN3dm9FYXY1RDZpSjAxcw?oc=5",
+   "source": "Woman & Home",
+   "publishedAt": "2026-11-17T18:00:00.000Z",
+   "original": "Susan Sarandon 'loves' this fresh, sophisticated scent from a beloved British fragrance house",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Susan Sarandon 'loves' this fresh, sophisticated scent from a beloved British fragrance house",
+    "en": "Susan Sarandon 'loves' this fresh, sophisticated scent from a beloved British fragrance house"
+   },
+   "summary": {
+    "ar": "Susan Sarandon 'loves' this fresh, sophisticated scent from a beloved British fragrance house",
+    "en": "Susan Sarandon 'loves' this fresh, sophisticated scent from a beloved British fragrance house"
+   }
+  },
+  {
+   "id": "nniych0",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQS3d2YUw2VHZ6LXNIbFctcGdObzVjaXAtaHF5em1jUlJzUkNxbXpDLUJiUC1lOUtvd3hvN0lxcktUMFBtbnlDeXVSaGF4NnNUbFZyRVo3cC1keTNoM05GVnVYRlR3cGRPVHZFTXNxMDZKZDZpd0huVmFPUUlfQnM2SEJBTEFUa3JmSDQ3VmdGdnp5Y2Y1TnBvbHFJdTJYdy12NG9XUFdhRTFyUFBlblFheU5RN21aRkhE?oc=5",
+   "source": "WWD",
+   "publishedAt": "2026-11-17T16:29:42.000Z",
+   "original": "Is Puig Poised to Acquire Parfums de Marly?",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Is Puig Poised to Acquire Parfums de Marly?",
+    "en": "Is Puig Poised to Acquire Parfums de Marly?"
+   },
+   "summary": {
+    "ar": "Is Puig Poised to Acquire Parfums de Marly?",
+    "en": "Is Puig Poised to Acquire Parfums de Marly?"
+   }
+  },
+  {
+   "id": "n63mchg",
+   "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOYnRwNHczWnVwZms3UmpMRFo4VDVGUDJZOXZpd0lSTlhoX2Z0TjV6bG5PMFhfVmM0c2plcldsaTFiTG9NUlBOR3NUSEs4OGFhamZVN0R6dnN2VUJvM1lWb2xMMElxcEI2NldMazgxVVRNcDk0XzBBTVM5VjIxRGdkUHN2cG90ZTdlenVabFZ6S3dOUUZtUFpXS1FIR2FPYzhxcW1VNUpzbE9uOVZMZWNoSHRZOS1LLTcyVlhVU3Q5Si1LYUZpVjFDTlQ1X2FWUjRnd1hTTHRBcnE0ZjBiRDZ2TGgxdENnMlVKMHM2ODlJNnJ6VzhnN0RxVlB2cElJczUwUTlKMGJUemcwTkdPRWtWVHR0UDI3Y2JGdS1XOTJ0Umh2RklpNVVMSFMxTnJxdHNpbjM2c3VNY2FabWF5QjZHWDVCTGFQVmVrMzM3RzVnRXB0MUZ3RzRpRmlSdmE1Y0FFMktjaDR4YW5vRWw1aHNKeHhPbHR0b1d4QWo2QURtc3Rjc2VzTWFZM2pJeXdQc0NHN1dkT2RMcVVITVU?oc=5",
+   "source": "MAP SPORT",
+   "publishedAt": "2026-11-18T12:48:57.000Z",
+   "original": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
+    "en": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\""
+   },
+   "summary": {
+    "ar": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\"",
+    "en": "كأس العالم لأقل من 17 سنة (قطر 2026).. باها ، الرباج والعود، الأوراق الرابحة في هجوم \"أشبال الأطلس\""
+   }
+  },
+  {
+   "id": "nnsntxd",
+   "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQb0xKZnl6UmJpTFdwN1lqR3l4Mmt6SE5XRkpmNzJkRGpsSUJkYUhfcDEwUzJGUGczQU4zSjhDZndUNDZHNkl5ZndmZDI3b3hlbE9WUUF0ZEw2WEl2ZmRZd3E4bEMyU1Z1WF94amxGQ1FSeVZxc01BV2lVYU93RXNZa0RJMWkzQm1jeHlWVjRNZjJ0OTZYeU02OUNKbFhUVlBiUXFiY1lhdGJxT2o5U2lYdV9QVGpuOEhoUkRIX1ZSU0kteHVHcEYwZzV4NUZfcEYzTUZrZmV3UmhQQVYtdGxFVFVKcGQ0dlpvdURhQ3BnSllMWnVwbDk0dGVWUnlDT2lqbTZ6TjFBd2Y5U1pkeDB3Q2hRMlM4ZGIxVG1oUi1aWEVBTkoyWlJGdUxFemtzRDM5SUg2djVEMGxBSXl4Z0ZnYTdR?oc=5",
+   "source": "ihata",
+   "publishedAt": "2026-11-18T10:32:11.000Z",
+   "original": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
+    "en": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026"
+   },
+   "summary": {
+    "ar": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026",
+    "en": "بقيادة أحمد القنطاري.. باها والرباج والعود يقودون هجوم أشبال الأطلس في مونديال قطر 2026"
+   }
+  },
+  {
+   "id": "n1d1fjcv",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByR0huekxrMnBNd3NVUXFFQzB5TFl6b1J0Q0tUQUE0MjFzZzFHeFdBbnV1VERNcmFYbmkweFFFUWhXVHQtMEEweG5iWEV4WkI0Z1cwWdIBVEFVX3lxTFByR0huekxrMnBNd3NVUXFFQzB5TFl6b1J0Q0tUQUE0MjFzZzFHeFdBbnV1VERNcmFYbmkweFFFUWhXVHQtMEEweG5iWEV4WkI0Z1cwWQ?oc=5",
+   "source": "صحيفة الوطن",
+   "publishedAt": "2026-11-18T10:24:26.000Z",
+   "original": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
+   "lang": "ar",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
+    "en": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض"
+   },
+   "summary": {
+    "ar": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض",
+    "en": "معرض الجواهر العربية والعطور العربية يقدمان تجربة ذكية وسلسة للزوار بمركز البحرين العالمي للمعارض"
+   }
+  },
+  {
+   "id": "n1hfcsxk",
+   "url": "https://news.google.com/rss/articles/CBMingRBVV95cUxQSjNPWDQ1a21TekpweVpLbW4yTVg0VTBhT2ROV1pqbGk0RkNjdmJLSzJodXAzNW11X3hodUFwLXlwWWFYeTB1X09MaDk1NkFYRlBQUVpOSHZzMmZFbkI4NHE0RW5aNV9MVl9Za0RIUGhFbFNlaFpqVzh5cVN6Q1Z4Vjd0aEhEUjkyM3d2Rlp1Qnd3TTNCUkUtZjdvZHJCSGwxOHVfcUxicEdKSS04eUMteWtYUlZRTWpvdWJ3Yi04cVBWZGI5STM1THBTalVLV0lNQjlkdXdVaXNXR3A2S1h0ZmN0MmlPTlp5YlJqWGdfUVFNR214THZxT3ZhQjE3QTJsc2NCVVFKakZJUmFzYll3NjRBSGg2dmdibXEyaHhlZGlVZzlDSmFYZzY0YkdyYk5UcWVEM1kwRmpKWmFBVGRPc3h5R2FOTjhwMjZyMUx2aERGaHFFeFZUbTZ1NVhQRkJLcUVkQTRXVU1sN1VYYmJMUjlVMDFHRlZLdUp1OFAyT1lrMms5LU9DZWxhZ3BQVjZ6RDRwZks4WVNZR0gybFZRc2t2QzRDSGo1N1FPSldEd0ZXN05jU0M4eXVFdmVtdGdRNk9faDNUdnJZTHhpRklWMkkxX0tkQTNGWVFiMFFNVHctR0NWQTdYNnZpSFpPTjM2M0pXd285SWQ4bnpic0MzejU4OHpkSm1xWExsYWdXUUllb0FtR2NwQlF2OU56QQ?oc=5",
+   "source": "الشرق الأوسط",
+   "publishedAt": "2026-11-18T08:54:11.000Z",
+   "original": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
+    "en": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟"
+   },
+   "summary": {
+    "ar": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟",
+    "en": "هل يطوي الذكاء الاصطناعي الخبرة البشرية في عالم العطور؟"
+   }
+  },
+  {
+   "id": "n1dpyye0",
+   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
+   "source": "صحيفة المرصد",
+   "publishedAt": "2026-11-18T05:15:51.000Z",
+   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   },
+   "summary": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
    }
   },
   {
