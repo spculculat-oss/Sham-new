@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-18T13:18:42.204Z",
+ "updatedAt": "2026-11-18T22:20:53.930Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 513,
-  "warn": 601,
+  "ok": 516,
+  "warn": 598,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-18T13:17:37.687Z",
+  "at": "2026-11-18T22:18:56.752Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -25,7 +25,7 @@
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1037,
+    "listingProducts": 1013,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 64557
+  "durationMs": 117208
  },
  "items": [
   {
@@ -3699,16 +3699,6 @@
    "page": "p/nexa-immortal-by-rue-broca-100ml-edp-men-652.html"
   },
   {
-   "sku": "MAI-653",
-   "id": 653,
-   "name": "Victorioso by Maison Alhambra 100ml EDP Men",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/victorioso-by-maison-alhambra-100ml-edp-men-653.html"
-  },
-  {
    "sku": "ZIM-654",
    "id": 654,
    "name": "Reflect by Zimaya 100ml EDP Unisex",
@@ -3728,16 +3718,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/armaf-club-de-nuit-intense-man-parfum-150ml-655.html"
-  },
-  {
-   "sku": "VOL-656",
-   "id": 656,
-   "name": "Amara by Volare 100ml EDP",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/amara-by-volare-100ml-edp-656.html"
   },
   {
    "sku": "AFN-657",
@@ -3821,16 +3801,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/my-party-maison-alhambra-100ml-edp-woman-673.html"
-  },
-  {
-   "sku": "RUE-675",
-   "id": 675,
-   "name": "Exotic Heritage by Rue Broca 100ml EDP Men",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/exotic-heritage-by-rue-broca-100ml-edp-men-675.html"
   },
   {
    "sku": "MAI-679",
