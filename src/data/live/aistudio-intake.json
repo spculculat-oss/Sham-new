@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-18T09:51:46.407Z",
+ "updatedAt": "2026-11-18T13:19:59.416Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -7,11 +7,1207 @@
   "lint": "success",
   "test": "success",
   "build": "success",
-  "pages": "success",
-  "at": "2026-10-18T09:51:46.407Z",
-  "sha": "7177e86f8a2ba32af955f7c754aae936a1f5897e"
+  "pages": "failure",
+  "at": "2026-11-18T13:19:59.416Z",
+  "sha": "ee82d2348436d121bacb9d1827a0a8f899416fbb"
  },
  "commits": [
+  {
+   "sha": "ee82d2348436d121bacb9d1827a0a8f899416fbb",
+   "date": "2026-11-18T15:17:17+02:00",
+   "title": "chore: configure CI/CD and environment workflows",
+   "summary": "Add CI/CD pipelines for deployment, live smoke testing, product inspection, and AI intake. Include a comprehensive .env example for server-side secrets and configuration.",
+   "files": 464,
+   "additions": 205419,
+   "deletions": 6,
+   "added": [
+    ".env.example",
+    ".github/workflows/aistudio-intake.yml",
+    ".github/workflows/live-smoke.yml",
+    ".github/workflows/pages.yml",
+    ".github/workflows/product-pages-check.yml",
+    ".github/workflows/shaheen-doctor.yml",
+    ".github/workflows/shaheen-import.yml",
+    ".github/workflows/shaheen-inspect.yml",
+    ".github/workflows/shaheen-keys.yml",
+    ".github/workflows/shaheen-manus.yml",
+    ".github/workflows/shaheen-news.yml",
+    ".gitignore"
+   ],
+   "deleted": [],
+   "modified": 1,
+   "flags": [
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/botanical_harvest_raw_1791968832488-C_DDWksx.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/fragrance_summit_expo_1791968814926-m3rLoYr6.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/grasse_rose_harvest_1791696039244-CC_-oiIS.jpg",
+     "text": "صورة/ملف تقيل 1.1 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/hero_luxury_perfume_1791692409081-C8dJ93N6.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/luxury_perfume_exhibition_1791696134494-3PNUL9ri.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/master_perfumer_compounding_1791693212967-CLU_XTfT.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/niche_perfume_reveal_1791968798991-D2b6BgQc.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_art_spray_man_1792313195183-CC3i9tNY.jpg",
+     "text": "صورة/ملف تقيل 0.6 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_art_spray_woman_1792313196930-DqFoo_oq.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_ingredients_pyramid_1791692429360-mdwbeceO.jpg",
+     "text": "صورة/ملف تقيل 0.9 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_lab_compounding_1791692420116-C7s8SWwZ.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_mist_cinematic_1792313197406-C6O9uWBL.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "docs/assets/perfume_news_global_trends_1791696027070-B03NJeAD.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/botanical_harvest_raw_1791968832488.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/fragrance_summit_expo_1791968814926.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/grasse_rose_harvest_1791696039244.jpg",
+     "text": "صورة/ملف تقيل 1.1 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/hero_luxury_perfume_1791692409081.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/luxury_perfume_exhibition_1791696134494.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/master_perfumer_compounding_1791693212967.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/niche_perfume_reveal_1791968798991.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_art_spray_man_1792313195183.jpg",
+     "text": "صورة/ملف تقيل 0.6 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_art_spray_woman_1792313196930.jpg",
+     "text": "صورة/ملف تقيل 0.7 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_ingredients_pyramid_1791692429360.jpg",
+     "text": "صورة/ملف تقيل 0.9 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_lab_compounding_1791692420116.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_mist_cinematic_1792313197406.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "low",
+     "kind": "heavy",
+     "file": "src/assets/images/perfume_news_global_trends_1791696027070.jpg",
+     "text": "صورة/ملف تقيل 0.8 ميجا — بيبطّأ الموقع على الموبايل"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…15) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…56) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…90) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…90) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…25) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…71) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…73) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…52) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…27) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…34) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…13) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…87) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…06) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…80) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…45) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…64) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…38) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…21) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…66) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…89) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…71) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…29) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…22) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6438…51) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6085…12) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…89) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…99) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…70) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…72) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…64) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…14) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…27) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…38) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…07) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…49) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…75) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…06) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…72) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6266…99) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6438…44) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…91) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…04) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…96) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…65) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6435…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6432…04) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6254…40) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…05) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6445…00) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…91) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…19) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…14) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…09) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…68) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…97) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…60) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…28) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…80) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…63) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…98) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…78) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…95) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…56) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…25) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…79) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…18) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…75) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…79) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…60) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…66) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…77) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…01) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/assets/index-BFQh5D-2.js",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "docs/p/amara-by-volare-100ml-edp-656.html",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6445…00) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "secret",
+     "file": "firebase-applet-config.json",
+     "text": "مفتاح Google (Gemini / AI Studio) مكتوب في الكود (AIza…P0) — لازم يتشال ويتغيّر فوراً"
+    },
+    {
+     "level": "high",
+     "kind": "secret",
+     "file": "server/community/db.ts",
+     "text": "رابط قاعدة بيانات بكلمة سر مكتوب في الكود (post…}@) — لازم يتشال ويتغيّر فوراً"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/live/image-clean.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6445…00) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…15) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…56) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…90) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…90) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…25) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…71) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…73) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…52) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…27) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…34) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…13) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…87) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…06) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…80) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…45) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…64) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…38) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…21) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…66) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…89) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…71) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…29) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…22) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6438…51) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6085…12) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…89) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…99) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…70) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…72) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…64) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…14) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…27) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…38) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…07) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…49) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…75) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…06) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…72) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6266…99) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6438…44) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…91) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…04) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…96) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…65) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6435…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6432…04) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6254…40) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…05) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6445…00) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…91) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…19) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…14) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…09) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…68) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…97) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…60) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6294…28) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…80) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…63) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…98) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…78) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…95) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…56) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…25) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…79) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (5055…18) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…75) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…79) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…60) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…66) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6287…77) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6298…01) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6423…86) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6291…93) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "high",
+     "kind": "card",
+     "file": "src/data/products.json",
+     "text": "رقم بطاقة حقيقي شكله مكتوب في الكود (6290…17) — أرقام البطاقات مكانها بوابة الدفع بس"
+    },
+    {
+     "level": "low",
+     "kind": "card",
+     "file": "tests/aistudioIntake.test.ts",
+     "text": "رقم شكله بطاقة في ملف اختبار (4539…67) — غالباً رقم تجريبي، الأفضل يكون من أرقام الاختبار المعروفة"
+    },
+    {
+     "level": "high",
+     "kind": "secret",
+     "file": "tests/community.test.ts",
+     "text": "رابط قاعدة بيانات بكلمة سر مكتوب في الكود (post…s@) — لازم يتشال ويتغيّر فوراً"
+    },
+    {
+     "level": "low",
+     "kind": "card",
+     "file": "tests/customerPaymentVault.test.ts",
+     "text": "رقم شكله بطاقة في ملف اختبار (5888…90) — غالباً رقم تجريبي، الأفضل يكون من أرقام الاختبار المعروفة"
+    },
+    {
+     "level": "info",
+     "kind": "dependency",
+     "text": "مكتبات جديدة: @electric-sql/pglite، @google/genai، @tailwindcss/vite، @types/d3، @types/express، @types/leaflet، @types/node، @types/react، @types/react-dom، @vitejs/plugin-react، autoprefixer، d3، dotenv، esbuild، express، leaflet، lucide-react، motion، postgres، react، react-dom، recharts، tailwindcss، tsx، typescript، vite"
+    },
+    {
+     "level": "info",
+     "kind": "tests",
+     "text": "ضاف/حدّث 50 ملف اختبارات"
+    }
+   ],
+   "verdict": "attention"
+  },
   {
    "sha": "6271a804f4d5242ab1a01cfed2cbd7cb5b300638",
    "date": "2026-10-18T12:41:04+03:00",
@@ -166,6 +1362,7 @@
   }
  ],
  "reviewed": [
+  "ee82d2348436d121bacb9d1827a0a8f899416fbb",
   "46af362519b1c174cedbb72baebd36920d4e8283",
   "eef70b421e951b5bf6ae05d41e1f15dc0717918f",
   "89c6f944691ad79addfbb4f1a8db53cb908e9e6a",
@@ -174,5 +1371,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "7177e86f8a2ba32af955f7c754aae936a1f5897e"
+ "head": "ee82d2348436d121bacb9d1827a0a8f899416fbb"
 }
