@@ -1,0 +1,37 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Vercel build output and local project linking state
+.vercel/
+
+# Sham Core local data (conversations, requests, catalog) — never commit customer data
+.data/
+.community_data/
+
+# SQLite & embedded database binaries and WAL logs
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+sham_perfume.db
+
+# Build cache and temporary artifacts
+*.tsbuildinfo
+.vite/
+.vite-temp/
+.aistudio/
+
+# Tencent EdgeOne Makers local build output
+.edgeone/
+
+# Python cache & temporary scratch files
+__pycache__/
+*.pyc
+*.hm
+.git_token

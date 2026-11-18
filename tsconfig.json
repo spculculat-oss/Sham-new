@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ES2022"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": false,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": [
+    "server.ts",
+    "server/**/*.ts",
+    "server/**/*.cts",
+    "cloud-functions/**/*.ts",
+    "scripts/aistudio/**/*.ts",
+    "scripts/aistudio/**/*.mts",
+    "scripts/doctor/**/*.ts",
+    "scripts/doctor/**/*.mts",
+    "scripts/shaheen-news/**/*.ts",
+    "scripts/shaheen-news/**/*.mts",
+    "scripts/shaheen-supervisor/**/*.ts",
+    "scripts/shaheen-supervisor/**/*.mts",
+    "scripts/shaheen-store/**/*.ts",
+    "scripts/shaheen-store/**/*.mts",
+    "scripts/shaheen-import/**/*.ts",
+    "scripts/shaheen-import/**/*.mts",
+    "scripts/product-pages/**/*.ts",
+    "scripts/product-pages.mts"
+  ]
+}

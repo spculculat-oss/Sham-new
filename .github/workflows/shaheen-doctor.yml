@@ -1,0 +1,53 @@
+name: Shaheen Doctor (Automated Maintenance)
+
+on:
+  schedule:
+    # Every 10 minutes
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      check_type:
+        description: 'Type of check to perform'
+        required: false
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - products
+          - images
+          - store
+          - deploy
+
+jobs:
+  doctor-check:
+    name: Shaheen Doctor Check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          pip install requests --quiet
+          
+      - name: Run Shaheen Doctor
+        env:
+          DOCTOR_DAEMON: '0'
+          CHECK_TYPE: ${{ github.event.inputs.check_type || 'full' }}
+        run: |
+          python scripts/doctor/shaheen_doctor.py
+          
+      - name: Summary
+        run: |
+          echo "## Shaheen Doctor Results" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: ✅ Check completed" >> $GITHUB_STEP_SUMMARY
+          echo "- Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- Next check: in 10 minutes" >> $GITHUB_STEP_SUMMARY
