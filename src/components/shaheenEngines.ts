@@ -48,6 +48,7 @@ export const ENGINE_BADGE: Record<string, string> = {
   fast: 'bg-emerald-50 text-emerald-800 border-emerald-200',
   deep: 'bg-sky-50 text-sky-800 border-sky-200',
   council: 'bg-purple-50 text-purple-800 border-purple-200',
+  agent: 'bg-amber-100/80 text-amber-950 border-amber-300',
 };
 
 export interface EngineChip { id: ShaheenModelChoice; short: string; name: string; desc: string; color: string }
@@ -67,8 +68,12 @@ export function visibleEngines(engines: ShaheenEngine[], language: SupportedLang
  * Label of the mode that produced a reply. Anything else (e.g. messages saved by older versions
  * with an engine id) is shown simply as Shahin — never as a vendor.
  */
-export function modeBadge(id: string | undefined, language: SupportedLanguage): { label: string; mode?: ShaheenMode } {
+export function modeBadge(id: string | undefined, language: SupportedLanguage): { label: string; mode?: ShaheenMode | 'agent' } {
   const shahin = loc(language, { ar: 'شاهين', en: 'Shahin', fr: 'Shahin', es: 'Shahin', it: 'Shahin', de: 'Shahin', ru: 'Шахин', zh: 'Shahin', tr: 'Shahin', fa: 'شاهین' });
+  if (id === 'agent') {
+    const agentTxt = loc(language, { ar: 'الوكيل الذكي', en: 'AI Agent', fr: 'Agent IA', es: 'Agente IA', it: 'Agente IA', de: 'KI-Agent', ru: 'ИИ-агент', zh: 'AI 智能体', tr: 'YZ Ajanı', fa: 'عامل هوشمند' });
+    return { label: `${shahin} · ${agentTxt}`, mode: 'agent' };
+  }
   if (!isMode(id) || id === 'auto') return { label: shahin };
   return { label: `${shahin} · ${loc(language, MODE_TEXT[id].name)}`, mode: id };
 }

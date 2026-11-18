@@ -45,6 +45,18 @@ import { LText, makeT, fmt, LOCALE_MAP } from '../لغات/localize';
 import { isStaticHosting } from '../utils/api';
 import { copyChatText } from '../utils/clipboard';
 import { StaticHostingNotice } from './StaticHostingNotice';
+import type { AgentAction, LabContextSnapshot } from '../types/shaheenAgent';
+import { executeShaheenAgentAction } from '../utils/executeAgentAction';
+import {
+  fileToAgentAttachment,
+  MessageAttachmentsStrip,
+  QueuedAttachmentsPreviewBar,
+  ShaheenAgentConfigBar,
+  ShaheenAgentTimeline,
+  ShaheenMultimodalButtons,
+  useShaheenSpeech,
+  type QueuedAttachment,
+} from './ShaheenAgentHUD';
 
 
 const S = {
@@ -827,6 +839,8 @@ interface PerfumerAIChatbotProps {
   onPrintSpecSheet: (formula: ExtractedAIPerfume) => void;
   /** Opens a calculator (dilution, maceration, pyramid…) with the values from the conversation. */
   onOpenTool?: (link: ToolLink) => void;
+  /** Live lab state passed to Shaheen AI Agent for contextual engineering. */
+  labContext?: LabContextSnapshot;
   /** On the Shaheen lab page the same chat is already on screen: hide the floating copy (state is kept). */
   hidden?: boolean;
 }
@@ -840,6 +854,7 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
   onCalculateCosting,
   onPrintSpecSheet,
   onOpenTool,
+  labContext,
   hidden = false,
 }) => {
   const rtl = isRTL(currentLang);
@@ -857,14 +872,33 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
   const [isFullScreen, setIsFullScreen] = useState(false);
   useEffect(() => { if (hidden) setIsOpen(false); }, [hidden]);
 
-  const { messages, setMessages, daysRemaining, isLoading, busy, sendMessage, retryLast, clearHistory } = useShaheenChat();
+  const {
+    messages,
+    daysRemaining,
+    isLoading,
+    busy,
+    agentEnabled,
+    setAgentEnabled,
+    reasoningDepth,
+    setReasoningDepth,
+    autoWebSearch,
+    setAutoWebSearch,
+    autoApplyActions,
+    setAutoApplyActions,
+    markActionApplied,
+    sendMessage,
+    sendAgentMessage,
+    retryLast,
+    clearHistory,
+  } = useShaheenChat();
   const modelStatus = useShaheenModels();
   const selectedModel = modelStatus.selected;
   const setSelectedModel = modelStatus.setSelected;
 
   const [input, setInput] = useState('');
+  const [queuedAttachments, setQueuedAttachments] = useState<QueuedAttachment[]>([]);
   const [compoundingStep, setCompoundingStep] = useState(0);
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  const { speakingMsgId, speak: handleSpeech, stopSpeech } = useShaheenSpeech(currentLang);
 
   // Copy & Action tracking states
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -910,11 +944,25 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
     L('comp_4'),
   ];
 
+  const handleWorkspaceAction = (action: AgentAction, msgId?: string) => {
+    const ok = executeShaheenAgentAction(action, {
+      onApplyToConcentrationCalculator,
+      onApplyToPyramidCalculator,
+      onRecordToRecipeLibrary,
+      onCalculateCosting,
+      onPrintSpecSheet,
+      onOpenTool,
+    });
+    if (ok && msgId) markActionApplied(msgId, action.id);
+    if (ok && action.type !== 'save_recipe') setIsOpen(false);
+  };
+
   const handleSendMessage = async (
     textToSend?: string,
     overrideModel?: ShaheenModelChoice
   ) => {
     const text = (textToSend || input).trim();
+    const hasAtts = queuedAttachments.length > 0 && !textToSend;
     if (!text || isLoading || isStaticHosting) return;
 
     const activeModelChoice = overrideModel || selectedModel;
@@ -938,8 +986,34 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
     // Only clear the box when its own text was sent; a calculator consult or
     // "compare" must not wipe what the visitor is typing.
     if (!textToSend) setInput('');
+    const attachmentsToSend = hasAtts ? queuedAttachments : undefined;
+    if (hasAtts) setQueuedAttachments([]);
+
+    if ((agentEnabled && !overrideModel) || attachmentsToSend?.length) {
+      await sendAgentMessage({
+        text,
+        language: currentLang,
+        attachments: attachmentsToSend,
+        labContext,
+        onAction: (act) => handleWorkspaceAction(act),
+        errorText: (error) => chatErrorText(currentLang, error),
+      });
+      return;
+    }
+
     await sendMessage({ text, model: activeModelChoice, language: currentLang,
       errorText: (error) => chatErrorText(currentLang, error) });
+  };
+
+  const handleInputPaste = async (e: React.ClipboardEvent<HTMLInputElement>) => {
+    if (!agentEnabled || queuedAttachments.length >= 3) return;
+    const files = Array.from(e.clipboardData?.files || []).filter((f) => f.type.startsWith('image/'));
+    if (!files.length) return;
+    e.preventDefault();
+    for (const file of files.slice(0, 3 - queuedAttachments.length)) {
+      const att = await fileToAgentAttachment(file);
+      if (att) setQueuedAttachments((prev) => [...prev, att].slice(0, 3));
+    }
   };
 
   // Always use the current history/language/loading state when a calculator asks Shahin.
@@ -987,25 +1061,7 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
     setShowClearConfirm(false);
   };
 
-  useEffect(() => () => { window.speechSynthesis?.cancel(); }, []);
-
-  const handleSpeech = (text: string) => {
-    if ('speechSynthesis' in window) {
-      if (isSpeaking) {
-        window.speechSynthesis.cancel();
-        setIsSpeaking(false);
-        return;
-      }
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = LOCALE_MAP[currentLang] || 'ar-EG';
-      utterance.rate = 0.95;
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => setIsSpeaking(false);
-      setIsSpeaking(true);
-      window.speechSynthesis.speak(utterance);
-    }
-  };
+  useEffect(() => () => { stopSpeech(); }, []);
 
   return (
     <div style={{ display: hidden ? 'none' : 'contents' }} data-testid="floating-chat-root">
@@ -1199,6 +1255,19 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
               </div>
             </div>
 
+            <ShaheenAgentConfigBar
+              language={currentLang}
+              agentEnabled={agentEnabled}
+              setAgentEnabled={setAgentEnabled}
+              reasoningDepth={reasoningDepth}
+              setReasoningDepth={setReasoningDepth}
+              autoWebSearch={autoWebSearch}
+              setAutoWebSearch={setAutoWebSearch}
+              autoApplyActions={autoApplyActions}
+              setAutoApplyActions={setAutoApplyActions}
+              disabled={isLoading || isStaticHosting}
+            />
+
             {/* Connected AI Engines Matrix Panel */}
             {showAiMatrix && (
               <div className="p-3 bg-stone-900 text-stone-200 border-b border-stone-800 text-xs space-y-2 animate-in fade-in">
@@ -1314,11 +1383,28 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
                       )}
 
 
+                      {/* Uploaded Multimodal Attachments */}
+                      {msg.role === 'user' && <MessageAttachmentsStrip attachments={msg.attachments} />}
+
+                      {/* Live / Completed Agent Execution Timeline */}
+                      {msg.role === 'assistant' && !isError && (
+                        <ShaheenAgentTimeline
+                          language={currentLang}
+                          steps={msg.agentSteps}
+                          sources={msg.groundingSources}
+                          actions={msg.agentActions}
+                          isStreaming={msg.isStreaming}
+                          onExecuteAction={(act) => handleWorkspaceAction(act, msg.id)}
+                        />
+                      )}
+
                       {/* Text Payload */}
                       {msg.role === 'assistant' && !isError ? (
                         <>
-                          <ShaheenMarkdown text={activeDisplayContent} className="font-sans" />
-                          {mediaRequest && <ShaheenMedia request={mediaRequest} lang={currentLang} />}
+                          {(!msg.isStreaming || (msg.text && msg.text !== '…')) && (
+                            <ShaheenMarkdown text={activeDisplayContent} className="font-sans" />
+                          )}
+                          {mediaRequest && !msg.isStreaming && <ShaheenMedia request={mediaRequest} lang={currentLang} />}
                         </>
                       ) : (
                         <div className="whitespace-pre-line break-words font-sans space-y-2" dir="auto">
@@ -1328,7 +1414,7 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
 
                       {isError && isLastMessage && (
                         <button
-                          onClick={() => void retryLast({ model: selectedModel, language: currentLang, errorText: (error) => chatErrorText(currentLang, error) })}
+                          onClick={() => void retryLast({ model: selectedModel, language: currentLang, useAgent: agentEnabled, labContext, onAction: (act) => handleWorkspaceAction(act), errorText: (error) => chatErrorText(currentLang, error) })}
                           disabled={isLoading || isStaticHosting}
                           className="inline-flex items-center gap-1.5 rounded-lg bg-amber-800 px-3 py-1.5 text-[11px] font-bold text-white hover:bg-amber-900 disabled:opacity-50 cursor-pointer"
                         >
@@ -1529,8 +1615,10 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
                               </div>}
 
                               <button
-                                onClick={() => handleSpeech(stripFormulaBlock(activeDisplayContent))}
-                                className="p-1 hover:text-amber-800 transition-colors flex items-center gap-1 cursor-pointer"
+                                onClick={() => void handleSpeech(msg.id, stripFormulaBlock(activeDisplayContent))}
+                                className={`p-1 transition-colors flex items-center gap-1 cursor-pointer ${
+                                  speakingMsgId === msg.id ? 'text-amber-800 animate-pulse' : 'hover:text-amber-800'
+                                }`}
                                 title={L('speech_tooltip')}
                               >
                                 <Volume2 className="w-3.5 h-3.5" />
@@ -1544,8 +1632,8 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
                 );
               })}
 
-              {/* Compounding Indicator */}
-              {isLoading && (
+              {/* Compounding Indicator (hidden when live streaming Agent card is already active) */}
+              {isLoading && !messages[messages.length - 1]?.isStreaming && (
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full overflow-hidden border border-amber-600/50 shrink-0">
                     <img
@@ -1594,6 +1682,11 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
               ))}
             </div>
 
+            <QueuedAttachmentsPreviewBar
+              attachments={queuedAttachments}
+              onRemove={(attId) => setQueuedAttachments((prev) => prev.filter((a) => a.id !== attId))}
+            />
+
             {/* 4. Large Input Form */}
             <form
               onSubmit={(e) => {
@@ -1602,20 +1695,30 @@ export const PerfumerAIChatbot: React.FC<PerfumerAIChatbotProps> = ({
               }}
               className="p-3 bg-white border-t border-stone-200 flex items-center gap-2 shrink-0"
             >
+              <ShaheenMultimodalButtons
+                language={currentLang}
+                agentEnabled={agentEnabled}
+                disabled={isLoading || isStaticHosting}
+                attachmentsCount={queuedAttachments.length}
+                onAddAttachment={(att) => setQueuedAttachments((prev) => [...prev, att].slice(0, 3))}
+                onTranscribed={(transcribed) => setInput((prev) => (prev ? `${prev} ${transcribed}` : transcribed).slice(0, 4000))}
+              />
+
               <input
                 ref={inputRef}
                 type="text"
-            maxLength={4000}
+                maxLength={4000}
                 placeholder={L('input_placeholder')}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                disabled={isStaticHosting || modelStatus.isUnavailable(selectedModel)}
+                onPaste={(e) => void handleInputPaste(e)}
+                disabled={isStaticHosting || (!agentEnabled && modelStatus.isUnavailable(selectedModel))}
                 className="flex-1 px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs sm:text-sm text-stone-900 focus:outline-none focus:border-amber-700 focus:bg-white transition-all shadow-inner"
               />
 
               <button
                 type="submit"
-                disabled={!input.trim() || input.length > 4000 || isLoading || modelStatus.isUnavailable(selectedModel)}
+                disabled={!input.trim() || input.length > 4000 || isLoading || (!agentEnabled && modelStatus.isUnavailable(selectedModel))}
                 className="p-2.5 px-4 bg-amber-800 hover:bg-amber-900 disabled:opacity-40 text-white rounded-xl shadow-xs transition-all cursor-pointer flex items-center justify-center shrink-0 font-medium text-xs sm:text-sm gap-1"
                 title={L('send')}
               >

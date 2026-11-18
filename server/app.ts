@@ -12,6 +12,7 @@ import { corsMiddleware } from './cors';
 import { createCommunity, createCommunityRouter } from './community/router';
 import { productsForCheckout, recordCheckout, markPaid } from './community/service';
 import { createAiToolsRouter } from './aiTools';
+import { createShaheenAgentRouter } from './shaheenAgent';
 
 dotenv.config();
 
@@ -23,8 +24,8 @@ if (trustProxy) app.set('trust proxy', /^\d+$/.test(trustProxy) ? Number(trustPr
 
 // The GitHub Pages build calls this API cross-origin (see server/cors.ts). Must run before body parsing.
 app.use('/api', corsMiddleware(process.env.SHAM_CORS_ORIGINS));
-// «مجتمع شام» carries pictures and voice notes: a larger body limit only on its routes (parsed once).
-app.use(['/api/community', '/api/admin/community'], express.json({ limit: '3mb' }));
+// «مجتمع شام» carries pictures and voice notes; Shaheen AI Agent carries images & audio: allow larger payloads only on those routes.
+app.use(['/api/community', '/api/admin/community', '/api/shaheen/agent', '/api/ai'], express.json({ limit: '5mb' }));
 app.use(express.json({ limit: '128kb' }));
 app.use((error: any, _req: express.Request, res: express.Response, next: express.NextFunction) => {
   if (error?.type === 'entity.parse.failed' || error?.type === 'entity.too.large') {
@@ -46,6 +47,7 @@ app.get('/api/health', (_req, res) => {
 // «الخبير شاهين»: GET /api/models + POST /api/chat. Settings come from server/config/shaheen.ts and the
 // admin dashboard, so both sites (Vercel and GitHub Pages, which calls this API) behave the same.
 app.use('/api', createShaheenRouter({ repo: shamCore.repo, runtime: shamCore.runtime, memory: shamCore.memory }));
+app.use('/api', createShaheenAgentRouter({ repo: shamCore.repo }));
 app.use('/api', createMediaRouter());
 app.use('/api', createAiToolsRouter());
 // «اسأل شاهين» in «متجر شام»: POST /api/store/advise (server/store.ts).

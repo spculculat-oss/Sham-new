@@ -1,3 +1,11 @@
+import type {
+  AgentAction,
+  AgentGroundingSource,
+  AgentReasoningDepth,
+  AgentStep,
+  ChatAttachmentPreview,
+} from '../types/shaheenAgent';
+
 export type ShaheenProvider = 'gemini' | 'deepseek' | 'openai' | 'claude' | 'self_hosted' | 'openrouter';
 
 export interface ModelPerspective {
@@ -25,6 +33,12 @@ export interface ChatMessage {
   };
   perspectives?: ModelPerspective[];
   activePerspectiveTab?: string;
+  agentSteps?: AgentStep[];
+  groundingSources?: AgentGroundingSource[];
+  agentActions?: AgentAction[];
+  attachments?: ChatAttachmentPreview[];
+  reasoningDepth?: AgentReasoningDepth;
+  isStreaming?: boolean;
 }
 
 export interface StoredChatSession {
@@ -120,8 +134,17 @@ export function saveChatSession(messages: ChatMessage[]): void {
         expiresAt = existing.expiresAt;
       }
     } catch { /* Replace malformed storage. */ }
+    const sanitized = messages
+      .filter((m) => !m.isStreaming)
+      .filter(isChatMessage)
+      .slice(-200)
+      .map((m) =>
+        m.attachments?.length
+          ? { ...m, attachments: m.attachments.map(({ id, name, mimeType }) => ({ id, name, mimeType })) }
+          : m,
+      );
     localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify({ version: 1, createdAt, expiresAt,
-      lastUpdated: now, messages: messages.filter(isChatMessage).slice(-200) } satisfies StoredChatSession));
+      lastUpdated: now, messages: sanitized } satisfies StoredChatSession));
   } catch { /* The live chat remains usable if storage is unavailable. */ }
 }
 

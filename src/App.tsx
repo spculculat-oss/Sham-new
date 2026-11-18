@@ -651,6 +651,32 @@ export default function App() {
   // Perform core formulation calculation
   const calculationResult = calculatePerfumeFormulation(formulation);
 
+  // Live lab workbench snapshot shared with Shaheen AI Agent
+  const shaheenLabContext = {
+    activeTab,
+    formulaTitle,
+    formulation: {
+      bottleVolumeMl: formulation.bottleVolumeMl,
+      batchCount: formulation.batchCount,
+      concentrationPercent: formulation.concentrationPercent,
+      concentrationType: formulation.concentrationType,
+      alcoholPercentage: formulation.alcoholPercentage,
+      waterPercent: formulation.waterPercent,
+      fixativePercent: formulation.fixativePercent,
+      unitMode: formulation.unitMode,
+    },
+    pyramidNotes: pyramidNotes.map((n) => ({
+      nameAr: n.nameAr,
+      nameEn: n.nameEn,
+      category: n.category,
+      percentageOfOil: n.percentageOfOil,
+    })),
+    macerationDays,
+    savedCount: savedFormulas.length,
+    currencyCode: currentEnvironment.currencyCode,
+    countryName: pickArEn(currentLang, currentEnvironment.countryNameAr, currentEnvironment.countryNameEn),
+  };
+
   // ===================== INTERACTIVE CHATBOT BRIDGE HANDLERS =====================
 
   // 1. Transfer chat formula directly to Concentration Calculator
@@ -1041,6 +1067,7 @@ export default function App() {
             onCalculateCosting={handleCalculateCosting}
             onPrintSpecSheet={handlePrintSpecSheetForFormula}
             onOpenTool={handleOpenShaheenTool}
+            labContext={shaheenLabContext}
           />
         )}
 
@@ -1108,6 +1135,7 @@ export default function App() {
         onCalculateCosting={handleCalculateCosting}
         onPrintSpecSheet={handlePrintSpecSheetForFormula}
         onOpenTool={handleOpenShaheenTool}
+        labContext={shaheenLabContext}
         hidden={activeTab === 'master_ai'}
       />
 

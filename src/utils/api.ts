@@ -1,4 +1,5 @@
 import type { ChatMessage } from './chatStorage';
+import type { AgentRequestPayload, AgentStreamEvent } from '../types/shaheenAgent';
 
 /**
  * Where the API lives. Empty = same origin (Node/Vercel). A static build (GitHub Pages) can point
@@ -73,3 +74,75 @@ export async function requestApi<T>(endpoint: `/api/${string}`, options?: Reques
     options?.signal?.removeEventListener('abort', cancel);
   }
 }
+
+export async function streamShaheenAgent(
+  payload: AgentRequestPayload,
+  onEvent: (event: AgentStreamEvent) => void,
+  signal?: AbortSignal,
+  timeoutMs = 58_000,
+): Promise<void> {
+  if (isStaticHosting) throw new ApiUnavailableError();
+  const controller = new AbortController();
+  const cancel = () => controller.abort(signal?.reason);
+  if (signal?.aborted) cancel();
+  signal?.addEventListener('abort', cancel, { once: true });
+  const timer = setTimeout(() => controller.abort(new DOMException('Agent request timed out', 'TimeoutError')), timeoutMs);
+
+  try {
+    const response = await fetch(apiUrl('/api/shaheen/agent'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...payload, visitorId: payload.visitorId || visitorId() }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      let code: string | undefined;
+      try {
+        const data = await response.json();
+        if (typeof data?.code === 'string') code = data.code;
+      } catch {
+        /* ignore */
+      }
+      const retryAfter = Number(response.headers.get('retry-after'));
+      throw new ApiError(
+        response.status,
+        code,
+        Number.isFinite(retryAfter) && retryAfter > 0 ? Math.min(60, retryAfter) * 1000 : undefined,
+      );
+    }
+
+    if (!response.body) {
+      throw new Error('Agent stream body missing');
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const blocks = buffer.split('\n\n');
+      buffer = blocks.pop() || '';
+      for (const block of blocks) {
+        for (const line of block.split('\n')) {
+          if (!line.startsWith('data:')) continue;
+          const raw = line.slice(5).trim();
+          if (!raw) continue;
+          try {
+            const event = JSON.parse(raw) as AgentStreamEvent;
+            onEvent(event);
+          } catch {
+            /* ignore malformed partial frame */
+          }
+        }
+      }
+    }
+  } finally {
+    clearTimeout(timer);
+    signal?.removeEventListener('abort', cancel);
+  }
+}
+

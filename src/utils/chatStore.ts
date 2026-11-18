@@ -5,9 +5,17 @@ import { greetingKind, greetingReply } from './shaheenGreeting';
 import { quickAnswer } from './shaheenQuickApps';
 import { browserMemory, type OfflineMemory } from './browserMemory';
 import { offlineNote } from './shaheenMemory';
-import { ApiError, isStaticHosting, requestApi, visitorId, type ChatResponse } from './api';
+import { ApiError, isStaticHosting, requestApi, streamShaheenAgent, visitorId, type ChatResponse } from './api';
 import { CHAT_STORAGE_KEY, clearChatSession, DEFAULT_WELCOME_MESSAGE, isChatMessage,
   loadStoredChatSession, saveChatSession, type ChatMessage, type ShaheenProvider } from './chatStorage';
+import type {
+  AgentAction,
+  AgentAttachmentInput,
+  AgentGroundingSource,
+  AgentReasoningDepth,
+  AgentStep,
+  LabContextSnapshot,
+} from '../types/shaheenAgent';
 
 /** Visitor-facing response modes (engine ids are still accepted by the API but never shown). */
 export type ShaheenModelChoice = 'auto' | 'fast' | 'deep' | 'council' | ShaheenProvider;
@@ -31,7 +39,17 @@ export function compactTurn(text: string): string {
 }
 
 /** `busy`: the server asked to come back shortly (many visitors at once) and the store is retrying by itself. */
-interface Snapshot { messages: ChatMessage[]; isLoading: boolean; busy?: boolean; daysRemaining: number; expiresAt: number }
+interface Snapshot {
+  messages: ChatMessage[];
+  isLoading: boolean;
+  busy?: boolean;
+  daysRemaining: number;
+  expiresAt: number;
+  agentEnabled: boolean;
+  reasoningDepth: AgentReasoningDepth;
+  autoWebSearch: boolean;
+  autoApplyActions: boolean;
+}
 /** Automatic retries when Shaheen answers "busy" (503 SHAHEEN_BUSY), honouring Retry-After. */
 export const BUSY_RETRIES = 3;
 const busyDelay = (error: ApiError, attempt: number) =>
@@ -42,6 +60,14 @@ const wait = (ms: number, signal: AbortSignal) => new Promise<void>((resolve, re
 });
 interface SendOptions {
   text: string; model: ShaheenModelChoice; language: SupportedLanguage;
+  errorText: (error: unknown) => string;
+}
+export interface SendAgentOptions {
+  text: string;
+  language: SupportedLanguage;
+  attachments?: (AgentAttachmentInput & { previewUrl?: string })[];
+  labContext?: LabContextSnapshot;
+  onAction?: (action: AgentAction) => void;
   errorText: (error: unknown) => string;
 }
 
@@ -77,7 +103,15 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
   let generation = 0;
   let sequence = 0;
   const listeners = new Set<() => void>();
-  const getSnapshot = (): Snapshot => snapshot ??= { ...loadStoredChatSession(), isLoading: false };
+  const getSnapshot = (): Snapshot =>
+    snapshot ??= {
+      ...loadStoredChatSession(),
+      isLoading: false,
+      agentEnabled: true,
+      reasoningDepth: 'deep',
+      autoWebSearch: true,
+      autoApplyActions: false,
+    };
   const publish = (next: Snapshot, persist = true) => {
     next = { ...next, messages: next.messages.slice(-200) };
     snapshot = next;
@@ -91,14 +125,14 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
     // so the answer silently never came. While waiting, only a real clear (key removed) cancels it.
     if (controller && event.key === CHAT_STORAGE_KEY && typeof event.newValue === 'string') return;
     controller?.abort(); generation++;
-    publish({ ...loadStoredChatSession(), isLoading: false }, false);
+    publish({ ...getSnapshot(), ...loadStoredChatSession(), isLoading: false }, false);
   };
   const expire = () => {
     const current = getSnapshot();
     if (current.expiresAt <= Date.now()) {
       controller?.abort(); generation++;
       clearChatSession();
-      publish({ ...loadStoredChatSession(), isLoading: false }, false);
+      publish({ ...current, ...loadStoredChatSession(), isLoading: false }, false);
     } else {
       const daysRemaining = Math.ceil((current.expiresAt - Date.now()) / 86400000);
       if (daysRemaining !== current.daysRemaining) publish({ ...current, daysRemaining }, false);
@@ -130,10 +164,31 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
     clear() {
       controller?.abort(); generation++;
       clearChatSession();
-      publish({ ...loadStoredChatSession(), messages: [DEFAULT_WELCOME_MESSAGE], isLoading: false });
+      publish({ ...getSnapshot(), ...loadStoredChatSession(), messages: [DEFAULT_WELCOME_MESSAGE], isLoading: false });
+    },
+    setAgentEnabled(enabled: boolean) {
+      publish({ ...getSnapshot(), agentEnabled: enabled }, false);
+    },
+    setReasoningDepth(reasoningDepth: AgentReasoningDepth) {
+      publish({ ...getSnapshot(), reasoningDepth }, false);
+    },
+    setAutoWebSearch(autoWebSearch: boolean) {
+      publish({ ...getSnapshot(), autoWebSearch }, false);
+    },
+    setAutoApplyActions(autoApplyActions: boolean) {
+      publish({ ...getSnapshot(), autoApplyActions }, false);
+    },
+    markActionApplied(messageId: string, actionId: string) {
+      const current = getSnapshot();
+      const messages = current.messages.map((m) =>
+        m.id === messageId && m.agentActions
+          ? { ...m, agentActions: m.agentActions.map((a) => (a.id === actionId ? { ...a, applied: true } : a)) }
+          : m,
+      );
+      publish({ ...current, messages });
     },
     /** Re-asks the question behind a trailing error bubble (removes both, then sends again). */
-    async retry(options: Omit<SendOptions, 'text'>) {
+    async retry(options: Omit<SendOptions, 'text'> & { useAgent?: boolean; labContext?: LabContextSnapshot; onAction?: (action: AgentAction) => void }) {
       const current = getSnapshot();
       const last = current.messages[current.messages.length - 1];
       if (current.isLoading || !last || last.kind !== 'error') return false;
@@ -141,6 +196,15 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
       const question = current.messages[userIndex];
       if (!question || question.role !== 'user') return false;
       publish({ ...current, messages: current.messages.slice(0, userIndex) });
+      if (options.useAgent) {
+        return store.sendAgent({
+          text: question.text,
+          language: options.language,
+          labContext: options.labContext,
+          onAction: options.onAction,
+          errorText: options.errorText,
+        });
+      }
       return store.send({ ...options, text: question.text });
     },
     async send(options: SendOptions) {
@@ -217,6 +281,290 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
         publish({ ...getSnapshot(), isLoading: false, busy: false, messages: [...getSnapshot().messages, {
           id: id('bot-err'), role: 'assistant', kind: 'error', text: options.errorText(error), timestamp: timestamp(),
         }] });
+      } finally {
+        if (generation === token) controller = undefined;
+      }
+      return true;
+    },
+    async sendAgent(options: SendAgentOptions) {
+      expire();
+      const current = getSnapshot();
+      const text = options.text.trim();
+      if (!text || text.length > 4000 || current.isLoading) return false;
+      const timestamp = () => new Date().toLocaleTimeString(options.language, { hour: '2-digit', minute: '2-digit' });
+      const id = (role: string) => `${role}-${Date.now()}-${++sequence}`;
+      const hasAttachments = Boolean(options.attachments?.length);
+
+      if (!hasAttachments) {
+        const greeting = greetingKind(text);
+        if (greeting) {
+          publish({
+            ...current,
+            messages: [
+              ...current.messages,
+              { id: id('user'), role: 'user', text, timestamp: timestamp() },
+              {
+                id: id('bot'),
+                role: 'assistant',
+                text: greetingReply(greeting, options.language),
+                timestamp: timestamp(),
+                aiEngine: { id: 'auto', name: 'الخبير شاهين', badge: 'شاهين', provider: 'shaheen' },
+              },
+            ],
+          });
+          return true;
+        }
+        const quick = quickAnswer(text, options.language);
+        if (quick && !options.labContext?.activeTab) {
+          publish({
+            ...current,
+            messages: [
+              ...current.messages,
+              { id: id('user'), role: 'user', text, timestamp: timestamp() },
+              {
+                id: id('bot'),
+                role: 'assistant',
+                text: quick.reply,
+                timestamp: timestamp(),
+                aiEngine: { id: 'auto', name: 'الخبير شاهين', badge: 'شاهين', provider: 'shaheen' },
+              },
+            ],
+          });
+          return true;
+        }
+      }
+
+      if (isStaticHosting) return false;
+      const token = ++generation;
+      controller = new AbortController();
+      const signal = controller.signal;
+      const history = chatHistory(current.messages);
+      const userMsgId = id('user');
+      const botMsgId = id('bot');
+
+      const userAttachments = options.attachments?.map((a, idx) => ({
+        id: `att-${Date.now()}-${idx}`,
+        name: a.name,
+        mimeType: a.mimeType,
+        previewUrl: a.previewUrl,
+      }));
+
+      const initialBotMessage: ChatMessage = {
+        id: botMsgId,
+        role: 'assistant',
+        text: '…',
+        timestamp: timestamp(),
+        isStreaming: true,
+        reasoningDepth: current.reasoningDepth,
+        agentSteps: [],
+        groundingSources: [],
+        agentActions: [],
+        aiEngine: {
+          id: 'agent',
+          name: options.language === 'ar' || options.language === 'fa' ? 'الخبير شاهين · الوكيل الذكي' : 'Master Shahin · AI Agent',
+          badge: options.language === 'ar' || options.language === 'fa' ? '🤖 الوكيل الذكي' : '🤖 AI Agent',
+          provider: 'shaheen',
+        },
+      };
+
+      publish(
+        {
+          ...current,
+          isLoading: true,
+          messages: [
+            ...current.messages,
+            {
+              id: userMsgId,
+              role: 'user',
+              text,
+              timestamp: timestamp(),
+              ...(userAttachments?.length ? { attachments: userAttachments } : {}),
+            },
+            initialBotMessage,
+          ],
+        },
+        false,
+      );
+
+      let accumulatedText = '';
+      let liveSteps: AgentStep[] = [];
+      let liveSources: AgentGroundingSource[] = [];
+      let liveActions: AgentAction[] = [];
+
+      const updateBotMessage = (patch: Partial<ChatMessage>, persist = false) => {
+        if (generation !== token) return;
+        const snap = getSnapshot();
+        const messages = snap.messages.map((m) => (m.id === botMsgId ? { ...m, ...patch } : m));
+        publish({ ...snap, messages }, persist);
+      };
+
+      try {
+        let streamError: { code: string; message: string } | undefined;
+
+        await streamShaheenAgent(
+          {
+            message: text,
+            language: options.language,
+            reasoningDepth: current.reasoningDepth,
+            autoWebSearch: current.autoWebSearch,
+            conversationHistory: history,
+            attachments: options.attachments?.map(({ name, mimeType, data }) => ({ name, mimeType, data })),
+            labContext: options.labContext,
+          },
+          (event) => {
+            if (generation !== token) return;
+            switch (event.type) {
+              case 'thought': {
+                liveSteps = [
+                  ...liveSteps,
+                  {
+                    id: event.stepId,
+                    kind: 'thought',
+                    label: options.language === 'ar' || options.language === 'fa' ? 'تحليل وتخطيط مخبري' : 'Lab Reasoning & Planning',
+                    status: 'done',
+                    detail: event.text,
+                  },
+                ];
+                updateBotMessage({ agentSteps: liveSteps });
+                break;
+              }
+              case 'tool_call': {
+                liveSteps = [
+                  ...liveSteps,
+                  {
+                    id: event.stepId,
+                    kind: event.tool === 'web_search' ? 'web' : event.tool === 'dispatch_app_action' ? 'action' : 'tool',
+                    tool: event.tool,
+                    label: event.label,
+                    status: 'running',
+                    detail: event.detail,
+                  },
+                ];
+                updateBotMessage({ agentSteps: liveSteps });
+                break;
+              }
+              case 'tool_result': {
+                liveSteps = liveSteps.map((s) =>
+                  s.id === event.stepId
+                    ? { ...s, status: event.status, detail: event.detail ?? s.detail, durationMs: event.durationMs }
+                    : s,
+                );
+                updateBotMessage({ agentSteps: liveSteps });
+                break;
+              }
+              case 'grounding': {
+                liveSources = event.sources;
+                updateBotMessage({ groundingSources: liveSources });
+                break;
+              }
+              case 'action': {
+                const actionObj = current.autoApplyActions ? { ...event.action, applied: true } : event.action;
+                liveActions = [...liveActions, actionObj];
+                updateBotMessage({ agentActions: liveActions });
+                if (current.autoApplyActions && options.onAction) {
+                  options.onAction(actionObj);
+                }
+                break;
+              }
+              case 'chunk': {
+                accumulatedText += event.text;
+                updateBotMessage({ text: accumulatedText });
+                break;
+              }
+              case 'done': {
+                const finalActions = event.actions.map((a) => {
+                  const existing = liveActions.find((la) => la.id === a.id);
+                  return existing ? { ...a, applied: existing.applied } : a;
+                });
+                const snap = getSnapshot();
+                const messages = snap.messages.map((m) =>
+                  m.id === botMsgId
+                    ? {
+                        ...m,
+                        text: event.reply,
+                        agentSteps: event.steps,
+                        groundingSources: event.sources,
+                        agentActions: finalActions,
+                        aiEngine: event.engine,
+                        isStreaming: false,
+                      }
+                    : m,
+                );
+                publish({ ...snap, messages, isLoading: false, busy: false }, true);
+                if (!history.length && event.reply) {
+                  memory.learn({ question: text, lang: options.language, mode: 'deep', answer: event.reply });
+                }
+                break;
+              }
+              case 'error': {
+                streamError = { code: event.code, message: event.message };
+                break;
+              }
+            }
+          },
+          signal,
+          58_000,
+        );
+
+        if (streamError) {
+          throw new ApiError(streamError.code === 'RATE_LIMITED' ? 429 : 503, streamError.code);
+        }
+
+        // Ensure streaming flag cleared if done event wasn't received for any reason
+        const after = getSnapshot();
+        const bot = after.messages.find((m) => m.id === botMsgId);
+        if (bot?.isStreaming) {
+          if (accumulatedText.trim()) {
+            const messages = after.messages.map((m) =>
+              m.id === botMsgId ? { ...m, text: accumulatedText.trim(), isStreaming: false } : m,
+            );
+            publish({ ...after, messages, isLoading: false, busy: false }, true);
+          } else {
+            throw new Error('Agent stream closed without final answer');
+          }
+        }
+      } catch (error) {
+        if (generation !== token) return false;
+        const snap = getSnapshot();
+        const withoutStreamingPlaceholder = snap.messages.filter((m) => m.id !== botMsgId);
+        const remembered =
+          !hasAttachments && canAnswerFromMemory(error)
+            ? await memory.recall(text, options.language).catch(() => undefined)
+            : undefined;
+        if (generation !== token) return false;
+        if (remembered) {
+          publish({
+            ...snap,
+            isLoading: false,
+            busy: false,
+            messages: [
+              ...withoutStreamingPlaceholder,
+              {
+                id: id('bot'),
+                role: 'assistant',
+                text: remembered.answer + offlineNote(options.language, remembered.exact),
+                timestamp: timestamp(),
+                aiEngine: { id: 'auto', name: 'الخبير شاهين', badge: 'شاهين', provider: 'shaheen' },
+              },
+            ],
+          });
+          return true;
+        }
+        publish({
+          ...snap,
+          isLoading: false,
+          busy: false,
+          messages: [
+            ...withoutStreamingPlaceholder,
+            {
+              id: id('bot-err'),
+              role: 'assistant',
+              kind: 'error',
+              text: options.errorText(error),
+              timestamp: timestamp(),
+            },
+          ],
+        });
       } finally {
         if (generation === token) controller = undefined;
       }
