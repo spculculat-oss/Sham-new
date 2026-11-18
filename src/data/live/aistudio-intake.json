@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T13:28:05.770Z",
+ "updatedAt": "2026-11-18T14:23:50.692Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,43 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-18T13:28:05.770Z",
-  "sha": "329ef3bd61d8c48e427b012a4ab54ac70d13837a"
+  "at": "2026-11-18T14:23:50.692Z",
+  "sha": "935c63311c02f14c6e4e49eeba92b62abd67d160"
  },
  "commits": [
+  {
+   "sha": "935c63311c02f14c6e4e49eeba92b62abd67d160",
+   "date": "2026-11-18T16:21:12+02:00",
+   "title": "feat: implement live voice server and map integration",
+   "summary": "- Integrate Live Voice service using Gemini multi-modal streaming",
+   "files": 24,
+   "additions": 3365,
+   "deletions": 38,
+   "added": [
+    "server/liveVoice.ts",
+    "server/maps.ts",
+    "src/components/PerfumeAtlasMap.tsx",
+    "src/components/PerfumerAtelierGame.tsx",
+    "src/components/ShaheenLiveVoiceModal.tsx",
+    "src/components/ThreePerfumeStudio.tsx",
+    "tests/newCapabilities.test.ts"
+   ],
+   "deleted": [],
+   "modified": 17,
+   "flags": [
+    {
+     "level": "info",
+     "kind": "dependency",
+     "text": "مكتبات جديدة: @types/three، @types/ws، @vis.gl/react-google-maps، three، ws"
+    },
+    {
+     "level": "info",
+     "kind": "tests",
+     "text": "ضاف/حدّث 1 ملف اختبارات"
+    }
+   ],
+   "verdict": "received"
+  },
   {
    "sha": "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
    "date": "2026-11-18T15:25:31+02:00",
@@ -1388,6 +1421,7 @@
   }
  ],
  "reviewed": [
+  "935c63311c02f14c6e4e49eeba92b62abd67d160",
   "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
   "ee82d2348436d121bacb9d1827a0a8f899416fbb",
   "46af362519b1c174cedbb72baebd36920d4e8283",
@@ -1398,5 +1432,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "329ef3bd61d8c48e427b012a4ab54ac70d13837a"
+ "head": "935c63311c02f14c6e4e49eeba92b62abd67d160"
 }
