@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T13:19:59.416Z",
+ "updatedAt": "2026-11-18T13:28:05.770Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,36 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-18T13:19:59.416Z",
-  "sha": "ee82d2348436d121bacb9d1827a0a8f899416fbb"
+  "at": "2026-11-18T13:28:05.770Z",
+  "sha": "329ef3bd61d8c48e427b012a4ab54ac70d13837a"
  },
  "commits": [
+  {
+   "sha": "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
+   "date": "2026-11-18T15:25:31+02:00",
+   "title": "feat(ai): integrate Shaheen agent and update GenAI SDK",
+   "summary": "- Upgrade `@google/genai` to v3.6.0.",
+   "files": 17,
+   "additions": 3076,
+   "deletions": 80,
+   "added": [
+    "server/shaheenAgent.ts",
+    "src/components/ShaheenAgentHUD.tsx",
+    "src/types/shaheenAgent.ts",
+    "src/utils/executeAgentAction.ts",
+    "tests/shaheenAgent.test.ts"
+   ],
+   "deleted": [],
+   "modified": 12,
+   "flags": [
+    {
+     "level": "info",
+     "kind": "tests",
+     "text": "ضاف/حدّث 1 ملف اختبارات"
+    }
+   ],
+   "verdict": "received"
+  },
   {
    "sha": "ee82d2348436d121bacb9d1827a0a8f899416fbb",
    "date": "2026-11-18T15:17:17+02:00",
@@ -1362,6 +1388,7 @@
   }
  ],
  "reviewed": [
+  "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
   "ee82d2348436d121bacb9d1827a0a8f899416fbb",
   "46af362519b1c174cedbb72baebd36920d4e8283",
   "eef70b421e951b5bf6ae05d41e1f15dc0717918f",
@@ -1371,5 +1398,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "ee82d2348436d121bacb9d1827a0a8f899416fbb"
+ "head": "329ef3bd61d8c48e427b012a4ab54ac70d13837a"
 }
