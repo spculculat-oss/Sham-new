@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-18T22:20:53.930Z",
+ "updatedAt": "2026-11-19T03:50:22.977Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
@@ -12,7 +12,7 @@
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-18T22:18:56.752Z",
+  "at": "2026-11-19T03:49:15.732Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,11 +21,11 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.1222,
+    "rate": 13.0661,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1013,
+    "listingProducts": 1038,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -37,7 +37,7 @@
     "gone": 0
    }
   ],
-  "rate": 13.1222,
+  "rate": 13.0661,
   "prices": {
    "count": 1063,
    "min": 750,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 117208
+  "durationMs": 67276
  },
  "items": [
   {
@@ -3813,14 +3813,14 @@
    "page": "p/narissa-poudree-100ml-by-maison-alhambra-679.html"
   },
   {
-   "sku": "MAI-683",
-   "id": 683,
-   "name": "Your Touch Women by Maison Alhambra – 100 ml",
+   "sku": "ZIM-682",
+   "id": 682,
+   "name": "Sharaf Blend by Zimaya 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
     "غير متوفر عند المورد"
    ],
-   "page": "p/your-touch-women-by-maison-alhambra-100-ml-683.html"
+   "page": "p/sharaf-blend-by-zimaya-100ml-extrait-de-parfum-682.html"
   },
   {
    "sku": "MAI-692",
