@@ -59,13 +59,15 @@ import {
   verifyCodeSnippet,
 } from '../src/utils/codeVerifier';
 import { liveStoreCatalog, newsContext, supervisorGuidance } from './core/liveData';
+import { callEngine, engineStatuses, GEMINI_DEFAULT_MODEL } from './core/engines';
+import type { ModelEngineId } from './core/types';
 import { RateLimiter, clientKey } from './core/rateLimit';
 import { VISITOR_ID } from './core/capacity';
 import type { Repository } from './core/repository';
 import { SHAHEEN_SITE_SETTINGS } from './config/shaheen';
 import { ChatError, systemInstruction } from './shaheen';
 import { sanitizeQuery, searchImages, searchPlace, searchVideos } from './media';
-import { arenaVoteStore, runShaheenArena, validateArenaVoteRequest } from './shaheenArena';
+import { arenaVoteStore, extractArtifactsFromText, runShaheenArena, validateArenaVoteRequest } from './shaheenArena';
 
 type Env = Record<string, string | undefined>;
 
@@ -1076,7 +1078,20 @@ export async function runShaheenAgent(
     };
   }
 
-  const ai = options.ai || createAgentAiClient(env);
+  let ai: GoogleGenAI | undefined = options.ai;
+  if (!ai) {
+    try {
+      ai = createAgentAiClient(env);
+    } catch {
+      ai = undefined;
+    }
+  }
+  const configuredSecondary: ModelEngineId[] = engineStatuses(env)
+    .filter((s) => s.configured && s.id !== 'gemini' && s.id !== 'sham_local')
+    .map((s) => s.id as ModelEngineId);
+  if (!ai && !configuredSecondary.length) {
+    throw new ChatError(503, 'PROVIDER_NOT_CONFIGURED', 'AI service key is not configured on server');
+  }
   const thinkingLevel = mapThinkingLevel(input.reasoningDepth || (input.agentMode === 'architect' ? 'max' : 'deep'));
   const enableWeb = input.autoWebSearch !== false;
 
@@ -1162,26 +1177,102 @@ You are operating in Autonomous Master Perfumer & Software Engineering Agent mod
 
   emit({ type: 'status', phase: 'planning' });
 
+  let activeModel = AGENT_MODEL;
+  let disableThinking = false;
+  let disableWebTool = false;
+
+  const fallbackViaSecondary = async (primaryError: unknown): Promise<AgentRunResult | null> => {
+    if (options.ai || !configuredSecondary.length) return null;
+    const ar = input.language === 'ar' || input.language === 'fa';
+    for (const engineId of configuredSecondary) {
+      try {
+        const raw = await callEngine(
+          engineId,
+          systemText,
+          [...(input.conversationHistory || []).slice(-12), { role: 'user', text: input.message }],
+          {
+            env,
+            fetch: fetchFn,
+            temperature: 0.55,
+            maxTokens: 3200,
+            signal: options.signal || AbortSignal.timeout(30_000),
+          },
+        );
+        if (!raw?.trim()) continue;
+        const cleanReply = normalizeMediaBlocks(stripOpeningGreeting(scrubVendorText(raw.trim()), input.message));
+        const extracted = extractArtifactsFromText(cleanReply, 'merged', input.language);
+        for (const art of extracted) emit({ type: 'artifact', artifact: art });
+        const stepId = `step-${++stepCounter}`;
+        const step: AgentStep = {
+          id: stepId,
+          kind: 'action',
+          label: ar ? 'تنفيذ عبر محرك بديل احتياطي' : 'Executed via failover engine',
+          status: 'done',
+        };
+        steps.push(step);
+        const resObj: AgentRunResult = {
+          reply: cleanReply,
+          steps,
+          sources: [...sourcesMap.values()],
+          actions: collectedActions,
+          ...(extracted.length ? { artifacts: extracted } : {}),
+          engine: {
+            id: input.agentMode === 'architect' ? 'architect' : 'agent',
+            name: ar ? 'الخبير شاهين · الوكيل الذكي' : 'Master Shahin · AI Agent',
+            badge: ar ? '🤖 الوكيل الذكي' : '🤖 AI Agent',
+            provider: 'shaheen',
+            accentColor: 'amber',
+          },
+        };
+        emit({
+          type: 'done',
+          reply: resObj.reply,
+          steps: resObj.steps,
+          sources: resObj.sources,
+          actions: resObj.actions,
+          ...(resObj.artifacts ? { artifacts: resObj.artifacts } : {}),
+          engine: resObj.engine,
+        });
+        return resObj;
+      } catch {
+        // try next configured engine
+      }
+    }
+    if (primaryError) return null;
+    return null;
+  };
+
+  if (!ai) {
+    const failoverResult = await fallbackViaSecondary(null);
+    if (failoverResult) return failoverResult;
+    throw new ChatError(503, 'PROVIDER_UNAVAILABLE', 'Configured AI engines did not return a valid answer');
+  }
+
   for (let turn = 0; turn < MAX_AGENT_TURNS; turn++) {
     if (options.signal?.aborted) {
       throw new ChatError(504, 'PROVIDER_TIMEOUT', 'Agent request was cancelled or timed out');
     }
 
     const useTools = turn < MAX_AGENT_TURNS - 1;
+    const activeTools: Tool[] = !useTools
+      ? []
+      : enableWeb && !disableWebTool
+        ? tools
+        : [{ functionDeclarations: AGENT_FUNCTION_DECLARATIONS }];
     let response;
     let lastErr: unknown;
-    for (let retry = 0; retry < 2; retry++) {
+    for (let retry = 0; retry < 3; retry++) {
       try {
         response = await ai.models.generateContent({
-          model: AGENT_MODEL,
+          model: activeModel,
           contents,
           config: {
             systemInstruction: systemText,
-            thinkingConfig: { thinkingLevel },
-            ...(useTools
+            ...(!disableThinking ? { thinkingConfig: { thinkingLevel } } : {}),
+            ...(activeTools.length
               ? {
-                  tools,
-                  ...(enableWeb ? { toolConfig: { includeServerSideToolInvocations: true } } : {}),
+                  tools: activeTools,
+                  ...(enableWeb && !disableWebTool ? { toolConfig: { includeServerSideToolInvocations: true } } : {}),
                 }
               : {}),
           },
@@ -1190,15 +1281,29 @@ You are operating in Autonomous Master Perfumer & Software Engineering Agent mod
       } catch (err: any) {
         lastErr = err;
         const msg = String(err?.message || err || '');
+        const isModelOrFeatureMismatch =
+          !options.ai && /404|400|NOT_FOUND|INVALID_ARGUMENT|not found|not supported|thinking/i.test(msg);
+        if (isModelOrFeatureMismatch && activeModel !== GEMINI_DEFAULT_MODEL) {
+          activeModel = GEMINI_DEFAULT_MODEL;
+          disableThinking = true;
+          disableWebTool = true;
+          continue;
+        }
         const transient = err?.status === 429 || err?.status === 503 || /RESOURCE_EXHAUSTED|UNAVAILABLE|429|503/i.test(msg);
         if (transient && retry === 0 && !options.signal?.aborted) {
           await new Promise((r) => setTimeout(r, 1200));
           continue;
         }
+        const failoverResult = await fallbackViaSecondary(err);
+        if (failoverResult) return failoverResult;
         throw err;
       }
     }
-    if (!response) throw lastErr || new Error('Empty agent response');
+    if (!response) {
+      const failoverResult = await fallbackViaSecondary(lastErr);
+      if (failoverResult) return failoverResult;
+      throw lastErr || new Error('Empty agent response');
+    }
 
     const candidate = response.candidates?.[0];
     const parts = candidate?.content?.parts || [];
@@ -1560,23 +1665,35 @@ export function createShaheenAgentRouter(options: {
       if (!res.writableEnded) res.end();
     } catch (error: any) {
       if (res.destroyed) return;
-      const status = error instanceof ChatError ? error.status : error?.status === 429 ? 429 : 500;
+      const errMsg = String(error?.message || error || '');
+      const status =
+        error instanceof ChatError
+          ? error.status
+          : error?.status === 429
+            ? 429
+            : /401|403|404|502|503|UNAVAILABLE|NOT_FOUND|PERMISSION_DENIED|fetch failed|ECONN/i.test(errMsg)
+              ? 503
+              : 500;
       const code =
         error instanceof ChatError
           ? error.code
-          : error?.status === 429 || /RESOURCE_EXHAUSTED/i.test(error?.message || '')
+          : error?.status === 429 || /RESOURCE_EXHAUSTED/i.test(errMsg)
             ? 'RATE_LIMITED'
-            : /API_KEY|configured/i.test(error?.message || '')
+            : /API_KEY|configured/i.test(errMsg)
               ? 'PROVIDER_NOT_CONFIGURED'
-              : 'AGENT_FAILED';
+              : status === 503
+                ? 'PROVIDER_UNAVAILABLE'
+                : 'AGENT_FAILED';
       const safeMessage =
         code === 'PROVIDER_NOT_CONFIGURED'
           ? 'AI service key is not configured on server'
-          : code === 'RATE_LIMITED'
-            ? 'Too many requests right now, please retry shortly'
-            : error instanceof ChatError
-              ? error.message
-              : 'Shaheen Agent failed to complete this task';
+          : code === 'PROVIDER_UNAVAILABLE'
+            ? 'The configured AI providers did not return a valid answer'
+            : code === 'RATE_LIMITED'
+              ? 'Too many requests right now, please retry shortly'
+              : error instanceof ChatError
+                ? error.message
+                : 'Shaheen Agent failed to complete this task';
 
       if (res.headersSent) {
         writeEvent({ type: 'error', code, message: safeMessage });

@@ -31,7 +31,7 @@ import {
 } from '../src/utils/codeVerifier';
 import { normalizeMediaBlocks } from '../src/utils/mediaBlock';
 import { stripOpeningGreeting } from '../src/utils/shaheenText';
-import { callEngine, engineStatuses } from './core/engines';
+import { callEngine, engineStatuses, GEMINI_DEFAULT_MODEL } from './core/engines';
 import { ChatError, systemInstruction } from './shaheen';
 import { supervisorGuidance } from './core/liveData';
 
@@ -277,49 +277,77 @@ export async function runShaheenArena(
       })),
       { role: 'user' as const, parts: [{ text: userPrompt }] },
     ];
-    const res = await ai.models.generateContent({
-      model: AGENT_MODEL,
+    try {
+      const res = await ai.models.generateContent({
+        model: AGENT_MODEL,
+        contents,
+        config: {
+          systemInstruction: system,
+          thinkingConfig: { thinkingLevel },
+        },
+      });
+      const parts = res.candidates?.[0]?.content?.parts || [];
+      const text =
+        parts
+          .filter((p) => !p.thought && typeof p.text === 'string')
+          .map((p) => p.text)
+          .join('')
+          .trim() || (res.text || '').trim();
+      if (text) return text;
+    } catch (err: any) {
+      const msg = String(err?.message || err || '');
+      const shouldFallbackModel = !options.ai && /404|400|NOT_FOUND|INVALID_ARGUMENT|not found|supported/i.test(msg);
+      if (!shouldFallbackModel) throw err;
+    }
+
+    const fallbackRes = await ai.models.generateContent({
+      model: GEMINI_DEFAULT_MODEL,
       contents,
-      config: {
-        systemInstruction: system,
-        thinkingConfig: { thinkingLevel },
-      },
+      config: { systemInstruction: system },
     });
-    const parts = res.candidates?.[0]?.content?.parts || [];
-    const text =
-      parts
+    const fallbackParts = fallbackRes.candidates?.[0]?.content?.parts || [];
+    const fallbackText =
+      fallbackParts
         .filter((p) => !p.thought && typeof p.text === 'string')
         .map((p) => p.text)
         .join('')
-        .trim() || (res.text || '').trim();
-    if (!text) throw new Error('Empty contender response');
-    return text;
+        .trim() || (fallbackRes.text || '').trim();
+    if (!fallbackText) throw new Error('Empty contender response');
+    return fallbackText;
+  };
+
+  const runViaSecondary = async (system: string): Promise<string> => {
+    for (const engineId of configuredSecondary) {
+      try {
+        const text = await callEngine(
+          engineId,
+          system,
+          [...history, { role: 'user', text: userPrompt }],
+          {
+            env,
+            fetch: fetchFn,
+            temperature: 0.55,
+            maxTokens: 2800,
+            signal: AbortSignal.any([
+              options.signal || AbortSignal.timeout(35_000),
+              AbortSignal.timeout(25_000),
+            ]),
+          },
+        );
+        if (text?.trim()) return text.trim();
+      } catch {
+        // try next engine
+      }
+    }
+    throw new Error('No secondary engine succeeded');
   };
 
   const runSecondaryTrack = async (system: string): Promise<string> => {
-    const useSecondaryEngine = !options.ai && configuredSecondary.length > 0;
-    if (useSecondaryEngine) {
-      for (const engineId of configuredSecondary) {
-        try {
-          const text = await callEngine(
-            engineId,
-            system,
-            [...history, { role: 'user', text: userPrompt }],
-            {
-              env,
-              fetch: fetchFn,
-              temperature: 0.55,
-              maxTokens: 2800,
-              signal: AbortSignal.any([
-                options.signal || AbortSignal.timeout(35_000),
-                AbortSignal.timeout(25_000),
-              ]),
-            },
-          );
-          if (text?.trim()) return text.trim();
-        } catch {
-          // try next engine or fall back to high-thinking primary
-        }
+    if (!options.ai && configuredSecondary.length > 0) {
+      try {
+        return await runViaSecondary(system);
+      } catch {
+        // fall through to primary high-thinking track if secondary engines fail
       }
     }
     return runGeminiTrack(system, ThinkingLevel.XHIGH);
@@ -329,7 +357,13 @@ export async function runShaheenArena(
   const [resA, resB] = await Promise.allSettled([
     (async () => {
       const t0 = Date.now();
-      const raw = ai ? await runGeminiTrack(sysA, ThinkingLevel.MEDIUM) : await runSecondaryTrack(sysA);
+      let raw: string;
+      try {
+        raw = ai ? await runGeminiTrack(sysA, ThinkingLevel.MEDIUM) : await runSecondaryTrack(sysA);
+      } catch (err) {
+        if (!options.ai && configuredSecondary.length > 0) raw = await runViaSecondary(sysA);
+        else throw err;
+      }
       const reply = stripOpeningGreeting(normalizeMediaBlocks(scrub(raw)), input.message);
       const artifacts = extractArtifactsFromText(reply, 'a', input.language);
       return { reply, artifacts, ms: Date.now() - t0 };

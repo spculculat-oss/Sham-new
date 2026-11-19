@@ -3,6 +3,45 @@
 /* «مجتمع شام» messenger: hide the site's floating helpers so they never cover the message box. */
 body[data-sham-focus='messenger'] .sham-floating { display: none !important; }
 
+/* Adaptive focus styling driven by body[data-sham-focus] */
+body[data-sham-focus] header,
+body[data-sham-focus] main,
+body[data-sham-focus] footer,
+body[data-sham-focus] .sham-floating {
+  transition: opacity 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+body[data-sham-focus='header'] main,
+body[data-sham-focus='header'] footer {
+  opacity: 0.9;
+}
+
+body[data-sham-focus='footer'] header,
+body[data-sham-focus='footer'] main {
+  opacity: 0.9;
+}
+
+body[data-sham-focus='floating'] header,
+body[data-sham-focus='floating'] main,
+body[data-sham-focus='floating'] footer {
+  opacity: 0.86;
+}
+
+body[data-sham-focus='modal'] .sham-floating {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+body[data-sham-focus^='main'] header,
+body[data-sham-focus^='main'] footer {
+  opacity: 0.94;
+}
+
+body[data-sham-focus] [data-sham-focused='true']:not(input):not(textarea):not(select) {
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.28);
+  border-radius: 0.75rem;
+}
+
 /* تأثير نبض ناعم ولطيف عند التمرير (Hover Soft Pulse Effect) */
 @keyframes soft-pulse {
   0%, 100% {

@@ -182,6 +182,8 @@ export default function App() {
   const [isAudioStudioOpen, setIsAudioStudioOpen] = useState(false);
   const [gmpQuotaExceeded, setGmpQuotaExceeded] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [activeFocus, setActiveFocus] = useState<string | null>(null);
+  const focusedElementRef = React.useRef<HTMLElement | null>(null);
 
   // Synchronous modal tracker ref for browser popstate
   const activeModalsRef = React.useRef({
@@ -191,6 +193,90 @@ export default function App() {
     env: false,
     privacy: false,
   });
+
+  const resolveFocusKey = useCallback((el: HTMLElement): string => {
+    const explicit = el.closest<HTMLElement>('[data-focus-id]')?.getAttribute('data-focus-id');
+    if (explicit) return explicit;
+    if (el.closest('.sham-floating')) return 'floating';
+    if (el.closest('[role="dialog"]')) return 'modal';
+    if (el.closest('header')) return 'header';
+    if (el.closest('footer')) return 'footer';
+    const idEl = el.closest<HTMLElement>('[id]');
+    if (el.closest('main')) {
+      if (idEl?.id && idEl.id !== 'root') return `main-${idEl.id}`;
+      const targetTag = el.closest('button, a, input, select, textarea, article, section')?.tagName.toLowerCase();
+      return targetTag ? `main-${targetTag}` : 'main';
+    }
+    if (idEl?.id && idEl.id !== 'root') return idEl.id;
+    return el.tagName.toLowerCase();
+  }, []);
+
+  const handleAppElementClick = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      const rawTarget = e.target as HTMLElement | null;
+      if (!rawTarget) return;
+      const target =
+        rawTarget.closest<HTMLElement>(
+          '[data-focus-id], button, a, input, select, textarea, article, section, header, nav, footer, .sham-floating, [role="dialog"]',
+        ) || rawTarget;
+      if (focusedElementRef.current && focusedElementRef.current !== target) {
+        focusedElementRef.current.removeAttribute('data-sham-focused');
+      }
+      target.setAttribute('data-sham-focused', 'true');
+      focusedElementRef.current = target;
+      setActiveFocus(resolveFocusKey(target));
+    },
+    [resolveFocusKey],
+  );
+
+  useEffect(() => {
+    const isModalOpen =
+      isSpecModalOpen ||
+      isSaveModalOpen ||
+      isAuthModalOpen ||
+      isEnvironmentModalOpen ||
+      isPrivacyModalOpen ||
+      isLiveVoiceOpen ||
+      isAudioStudioOpen;
+    const resolvedFocus =
+      activeTab === 'community/messenger'
+        ? 'messenger'
+        : isModalOpen
+          ? 'modal'
+          : activeFocus;
+    if (resolvedFocus) {
+      document.body.setAttribute('data-sham-focus', resolvedFocus);
+    } else {
+      document.body.removeAttribute('data-sham-focus');
+    }
+    return () => {
+      document.body.removeAttribute('data-sham-focus');
+    };
+  }, [
+    activeFocus,
+    activeTab,
+    isSpecModalOpen,
+    isSaveModalOpen,
+    isAuthModalOpen,
+    isEnvironmentModalOpen,
+    isPrivacyModalOpen,
+    isLiveVoiceOpen,
+    isAudioStudioOpen,
+  ]);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (focusedElementRef.current) {
+          focusedElementRef.current.removeAttribute('data-sham-focused');
+          focusedElementRef.current = null;
+        }
+        setActiveFocus(null);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -913,7 +999,10 @@ export default function App() {
 
   return (
     <LanguageProvider initialLang={currentLang} onLanguageChange={handleSelectLanguage}>
-      <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900 selection:bg-amber-200">
+      <div
+        onClickCapture={handleAppElementClick}
+        className="min-h-screen flex flex-col bg-stone-50 text-stone-900 selection:bg-amber-200"
+      >
         
         {/* Case A Google Maps Demo-Key Quota / Auth Banner */}
         {gmpQuotaExceeded && (
