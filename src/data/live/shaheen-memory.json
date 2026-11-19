@@ -1,7 +1,27 @@
 {
  "version": 1,
- "updatedAt": "2026-11-18T22:35:30.996Z",
+ "updatedAt": "2026-11-19T09:49:12.135Z",
  "entries": [
+  {
+   "id": "ar|auto|احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
+   "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "إجمالي كمية الزيت المطلوبة = 100 زجاجة × 50 مل × 20% = 1000 مل\nتكلفة الزيت = 1000 مل × ‏0.06 US$ = ‏56.50 US$\n\nإجمالي كمية الكحول المطلوبة = 100 زجاجة × 50 مل × 80% = 4000 مل\nتكلفة الكحول = 4000 مل × ‏0 US$ = ‏15 US$\n\nالتكلفة الإجمالية للزيوت والكحول = 3000 + 800 = ‏71.50 US$\nتكلفة الزجاجة الواحدة = 3800 ÷ 100 = ‏0.71 US$\n\nحبّك نضيف زجاجات وعبوات للحساب ولا كده التكلفة تمام؟",
+   "at": "2026-11-19T09:49:12.135Z",
+   "hits": 0,
+   "source": "probe"
+  },
+  {
+   "id": "en|auto|what fixative works best for a citrus cologne, and at what percentage",
+   "question": "What fixative works best for a citrus cologne, and at what percentage?",
+   "lang": "en",
+   "style": "auto",
+   "answer": "Ambroxan and Iso E Super work best for citrus colognes because they anchor the volatile top notes without altering the bright, fresh profile. Use them around 3% to 5% of the total formula to balance longevity and crispness.\n\n```sham-formula\n{\"title\":\"Citrus Cologne Fixation\",\"author\":\"Shahin — Experimental Guide\",\"concentrationPercent\":15,\"concentrationType\":\"edc\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":4,\"macerationDays\":21,\"summary\":\"Citrus cologne balanced with Ambroxan\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"برغموت\",\"nameEn\":\"Bergamot\",\"category\":\"top\",\"percentageOfOil\":40},{\"id\":\"note-2\",\"nameAr\":\"ليمون\",\"nameEn\":\"Lemon\",\"category\":\"top\",\"percentageOfOil\":30},{\"id\":\"note-3\",\"nameAr\":\"أمبروكسان\",\"nameEn\":\"Ambroxan\",\"category\":\"base\",\"percentageOfOil\":30}]}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"fixative\",\"guide\":\"synthetic fixatives for citrus\"}]}\n```",
+   "at": "2026-11-19T09:49:12.135Z",
+   "hits": 0,
+   "source": "probe"
+  },
   {
    "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
    "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
@@ -53,16 +73,6 @@
    "source": "probe"
   },
   {
-   "id": "ar|auto|احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-   "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "إليك حساب التكلفة الإجمالية لإنتاج 100 زجاجة عطر بناءً على المعطيات التي ذكرتها:\n\n### تفاصيل الزجاجة الواحدة (50 مل - تركيز 20%)\n* **حجم الزجاجة:** 50 مل\n* **كمية الزيت العطري (20%):** 50 × 0.20 = 10 مل\n* **كمية الكحول (80%):** 50 × 0.80 = 40 مل\n\n### حساب تكلفة الزجاجة الواحدة\n* **تكلفة الزيت:** 10 مل × 3 جنيه = 30 جنيه\n* **تكلفة الكحول:** 40 مل × 0.2 جنيه = 8 جنيه\n* **إجمالي تكلفة المكونات للزجاجة الواحدة:** 30 + 8 = 38 جنيه\n\n### حساب تكلفة الـ 100 زجاجة\n* **إجمالي التكلفة:** 38 جنيه × 100 زجاجة = 3800 جنيه\n\nهذه الحسابات تشمل تكلفة الزيت والكحول فقط للكمية المطلوبة. هل ترغب في إضافة أي تكاليف أخرى مثل العبوات الزجاجية أو التغليف لحساب السعر النهائي بدقة؟",
-   "at": "2026-10-17T03:29:29.777Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
    "id": "ar|auto|ايه افضل خلطة شتوية دافية",
    "question": "ايه أفضل خلطة شتوية دافية؟",
    "lang": "ar",
@@ -79,16 +89,6 @@
    "style": "auto",
    "answer": "```sham-media\n{\"images\":[\"agarwood\",\"Damask rose\"],\"videos\":[\"distillation of rose water and oil\"],\"places\":[\"Taif, Saudi Arabia\",\"Assam, India\"]}\n```\nإليك مقترحاً لتركيبة شرقية فاخرة تجمع بين دفء العود وعمق الورد الدمشقي، مصممة لحجم **50 مل** بتركيز **ماء عطر (EDP) بنسبة 20%**.\n\n### نسب المكونات الأساسية للزجاجة (50 مل)\n\n* **الزيت العطري الخام (20%):** 10 مل\n* **كحول عطور نقي (96%):** 40 مل\n* **فترة التعتيق المقترحة:** من 30 إلى 45 يوماً في مكان بارد ومظلم لاندماج النوتات الخشبية والزهرية.\n\n---\n\n### الهرم العطري وتوزيع الزيت العطري (100% من الزيت)\n\n| المرحلة العطرية | المكون | النسبة من الزيت العطري | الكمية الحجمية التقريبية |\n| :--- | :--- | :--- | :--- |\n| **القمة (Top)** | برغموت | 10% | 1.0 مل |\n| | زعفران | 5% | 0.5 مل |\n| **القلب (Heart)** | ورد دمشقي | 25% | 2.5 مل |\n| | جيرانيوم (إبرة الراعي) | 5% | 0.5 مل |\n| | خشب الأرز | 10% | 1.0 مل |\n| **القاعدة (Base)** | خشب العود | 20% | 2.0 مل |\n| | خشب الصندل | 10% | 1.0 مل |\n| | أكورد العنبر | 10% | 1.0 مل |\n| | مسك أبيض | 5% | 0.5 مل |\n| **المجموع** | | **100%** | **10.0 مل** |\n\n---\n\n### طابع التوليفة\n\n* **الافتتاحية:** انتعاش خفيف من البرغموت يكسر حدة البداية، مع لمسة تابلية دافئة وراقية من الزعفران.\n* **القلب:** ورد دمشقي غني ومكثف، مدعوم بالجيرانيوم لمنحه نضارة وثباتاً، وخشب الأرز لإعطاء عمق جاف يربط الورد بالقاعدة.\n* **القاعدة:** عود شرقي عميق ومتوازن بفعل نعومة خشب الصندل، مع حلاوة العنبر الدافئة ونقاء المسك الأبيض لتثبيت العطر ومنحه فوحاناً متزناً.\n\n*ملاحظة: هذه التركيبة تجريبية وتعتمد على مراجعة معايير السلامة والتوافق وفق إرشادات المورد ونسب أمان المواد المستخدمة، ويُفضل دائماً عمل عينة صغيرة واختبارها أولاً.*\n\n```sham-formula\n{\n  \"title\": \"سلطان الورد والعود\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 30,\n  \"summary\": \"مقترح تجريبي شرقي كلاسيكي يجمع بين فخامة العود وعبير الورد الدمشقي، يحتاج مراجعة السلامة والتوافق.\",\n  \"pyramidNotes\": [\n    {\"id\": \"note-1\", \"nameAr\": \"برغموت\", \"nameEn\": \"Bergamot\", \"category\": \"top\", \"percentageOfOil\": 10},\n    {\"id\": \"note-2\", \"nameAr\": \"زعفران\", \"nameEn\": \"Saffron\", \"category\": \"top\", \"percentageOfOil\": 5},\n    {\"id\": \"note-3\", \"nameAr\": \"ورد دمشقي\", \"nameEn\": \"Damask Rose\", \"category\": \"heart\", \"percentageOfOil\": 25},\n    {\"id\": \"note-4\", \"nameAr\": \"جيرانيوم\", \"nameEn\": \"Geranium\", \"category\": \"heart\", \"percentageOfOil\": 5},\n    {\"id\": \"note-5\", \"nameAr\": \"خشب الأرز\", \"nameEn\": \"Cedarwood\", \"category\": \"heart\", \"percentageOfOil\": 10},\n    {\"id\": \"note-6\", \"nameAr\": \"خشب العود\", \"nameEn\": \"Agarwood Oud\", \"category\": \"base\", \"percentageOfOil\": 20},\n    {\"id\": \"note-7\", \"nameAr\": \"خشب الصندل\", \"nameEn\": \"Sandalwood\", \"category\": \"base\", \"percentageOfOil\": 10},\n    {\"id\": \"note-8\", \"nameAr\": \"عنبر\", \"nameEn\": \"Amber\", \"category\": \"base\", \"percentageOfOil\": 10},\n    {\"id\": \"note-9\", \"nameAr\": \"مسك أبيض\", \"nameEn\": \"White Musk\", \"category\": \"base\", \"percentageOfOil\": 5}\n  ]\n}\n```\n\nهل تفضل العود بطابع بخوري مدخن أم بطابع خشبي بلسمي ناعم، لضبط نسب القاعدة وفق ذوقك؟\n\n```sham-tool\n{\"tools\":[{\"tool\":\"concentration\",\"bottleVolumeMl\":50,\"concentrationPercent\":20,\"concentrationType\":\"edp\",\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":0},{\"tool\":\"maceration\",\"macerationDays\":30}]}\n```",
    "at": "2026-10-17T03:29:29.777Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "en|auto|what fixative works best for a citrus cologne, and at what percentage",
-   "question": "What fixative works best for a citrus cologne, and at what percentage?",
-   "lang": "en",
-   "style": "auto",
-   "answer": "For a citrus cologne, fixatives that do not overpower the bright, volatile top notes work best. Excellent choices include Ambroxan, Iso E Super, and Triethyl Citrate, as they add subtle warmth, longevity, and blending power without masking the fresh citrus character.\n\n### Recommended Fixatives for Citrus Colognes\n\n| Fixative | Ideal Percentage (of Oil Concentrate) | Olfactory Profile & Role |\n| :--- | :--- | :--- |\n| **Ambroxan** | 5% to 15% | Clean, ambery, woody; provides exceptional modern longevity. |\n| **Iso E Super** | 10% to 30% | Velvety, cedar-like, transparent; boosts projection and smooths sharp edges. |\n| **Triethyl Citrate** | 5% to 10% | Mild, neutral; acts as an effective solvent and slow-release agent. |\n\nIn a standard citrus cologne (typically prepared at an Eau de Cologne concentration of 5% to 10% fragrance oils, or Eau de Parfum at 20% in a 50 ml bottle, using 96% alcohol), fixatives are generally kept at modest levels to maintain the refreshing character of the fragrance. These proposed formulations are experimental and require safety reviews, compatibility checks, and small-scale testing.\n\nWould you like to adjust the concentration or explore specific citrus notes like bergamot or lemon to pair with your fixative?",
-   "at": "2026-10-16T21:29:24.655Z",
    "hits": 0,
    "source": "probe"
   }
