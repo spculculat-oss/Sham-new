@@ -105,7 +105,7 @@ export async function connectPglite(dataDir?: string): Promise<Sql> {
   return wrap(db);
 }
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export const SCHEMA: string[] = [
   `CREATE TABLE IF NOT EXISTS community_meta (key text PRIMARY KEY, value text NOT NULL)`,
@@ -327,6 +327,21 @@ export const SCHEMA: string[] = [
     detail text NOT NULL DEFAULT '',
     created_at timestamptz NOT NULL DEFAULT now()
   )`,
+  `CREATE TABLE IF NOT EXISTS poll_votes (
+    post_id text NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    option_index integer NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (post_id, user_id)
+  )`,
+  `CREATE INDEX IF NOT EXISTS poll_votes_post ON poll_votes (post_id)`,
+  `CREATE TABLE IF NOT EXISTS bookmarks (
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    post_id text NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (user_id, post_id)
+  )`,
+  `CREATE INDEX IF NOT EXISTS bookmarks_user ON bookmarks (user_id, created_at DESC)`,
 ];
 
 /** Creates the tables (idempotent) and records the schema version. */

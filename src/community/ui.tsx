@@ -11,11 +11,13 @@ const PALETTE = ['from-amber-400 to-amber-700', 'from-rose-400 to-rose-700', 'fr
 const hash = (s: string) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 
 export function Avatar({ user, size = 40, ring = false }: { user: Pick<PublicUser, 'id' | 'name' | 'avatar'> & { online?: boolean }; size?: number; ring?: boolean }) {
+  const [failed, setFailed] = useState(false);
+  useEffect(() => { setFailed(false); }, [user.avatar]);
   const initials = user.name.trim().split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || '؟';
   return (
     <span className="relative inline-flex shrink-0" style={{ width: size, height: size }}>
-      {user.avatar
-        ? <img src={user.avatar} alt="" className={`h-full w-full rounded-full object-cover ${ring ? 'ring-2 ring-amber-400' : ''}`} />
+      {user.avatar && !failed
+        ? <img src={user.avatar} alt={user.name} referrerPolicy="no-referrer" onError={() => setFailed(true)} className={`h-full w-full rounded-full object-cover ${ring ? 'ring-2 ring-amber-400' : ''}`} />
         : <span className={`flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br ${PALETTE[hash(user.id) % PALETTE.length]} font-bold text-white ${ring ? 'ring-2 ring-amber-400' : ''}`} style={{ fontSize: size * 0.38 }}>{initials}</span>}
       {user.online && <span className="absolute bottom-0 end-0 h-3 w-3 rounded-full border-2 border-white bg-emerald-500" />}
     </span>
@@ -25,15 +27,15 @@ export function Avatar({ user, size = 40, ring = false }: { user: Pick<PublicUse
 type BtnProps = ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'primary' | 'ghost' | 'soft' | 'danger' | 'dark'; busy?: boolean; small?: boolean };
 export function Btn({ variant = 'primary', busy, small, className = '', children, disabled, ...rest }: BtnProps) {
   const look = {
-    primary: 'bg-amber-700 text-white hover:bg-amber-800 shadow-sm shadow-amber-900/20',
+    primary: 'bg-amber-800 text-white hover:bg-amber-900 shadow-xs shadow-amber-900/15',
     dark: 'bg-stone-900 text-white hover:bg-stone-800',
-    soft: 'bg-amber-50 text-amber-900 hover:bg-amber-100 border border-amber-200',
+    soft: 'bg-amber-50 text-amber-900 hover:bg-amber-100 border border-amber-200/80',
     ghost: 'bg-transparent text-stone-700 hover:bg-stone-100',
     danger: 'bg-rose-600 text-white hover:bg-rose-700',
   }[variant];
   return (
     <button type="button" {...rest} disabled={disabled || busy}
-      className={`inline-flex items-center justify-center gap-1.5 rounded-xl font-semibold transition disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer ${small ? 'px-2.5 py-1.5 text-xs' : 'px-4 py-2.5 text-sm'} ${look} ${className}`}>
+      className={`inline-flex items-center justify-center gap-1.5 rounded-xl font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer ${small ? 'px-2.5 py-1.5 text-xs' : 'px-4 py-2.5 text-sm'} ${look} ${className}`}>
       {busy && <Loader2 className="h-4 w-4 animate-spin" />}
       {children}
     </button>
@@ -41,7 +43,7 @@ export function Btn({ variant = 'primary', busy, small, className = '', children
 }
 
 export const Card = ({ children, className = '', ...rest }: React.HTMLAttributes<HTMLDivElement>) => (
-  <div className={`rounded-2xl border border-stone-200 bg-white shadow-sm ${className}`} {...rest}>{children}</div>
+  <div className={`rounded-2xl border border-stone-200/90 bg-white shadow-[0_1px_2px_rgba(24,20,18,0.04)] ${className}`} {...rest}>{children}</div>
 );
 
 export function Field({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {

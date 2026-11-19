@@ -1,8 +1,12 @@
 import type {
   AgentAction,
+  AgentArtifact,
   AgentGroundingSource,
+  AgentMode,
+  AgentPlan,
   AgentReasoningDepth,
   AgentStep,
+  ArenaBattleResult,
   ChatAttachmentPreview,
 } from '../types/shaheenAgent';
 
@@ -36,6 +40,10 @@ export interface ChatMessage {
   agentSteps?: AgentStep[];
   groundingSources?: AgentGroundingSource[];
   agentActions?: AgentAction[];
+  agentMode?: AgentMode;
+  agentPlan?: AgentPlan;
+  artifacts?: AgentArtifact[];
+  arenaBattle?: ArenaBattleResult;
   attachments?: ChatAttachmentPreview[];
   reasoningDepth?: AgentReasoningDepth;
   isStreaming?: boolean;
@@ -74,7 +82,7 @@ export function isChatMessage(value: unknown): value is ChatMessage {
   const message = value as ChatMessage;
   return typeof message.id === 'string' && message.id.length > 0 &&
     (message.role === 'user' || message.role === 'assistant') &&
-    typeof message.text === 'string' && message.text.trim().length > 0 && message.text.length <= 32000 &&
+    typeof message.text === 'string' && message.text.trim().length > 0 && message.text.length <= 64000 &&
     typeof message.timestamp === 'string' &&
     (message.kind === undefined || message.kind === 'error') &&
     (message.aiEngine === undefined || Boolean(message.aiEngine &&
@@ -138,11 +146,23 @@ export function saveChatSession(messages: ChatMessage[]): void {
       .filter((m) => !m.isStreaming)
       .filter(isChatMessage)
       .slice(-200)
-      .map((m) =>
-        m.attachments?.length
-          ? { ...m, attachments: m.attachments.map(({ id, name, mimeType }) => ({ id, name, mimeType })) }
-          : m,
-      );
+      .map((m) => {
+        const cleanedAtt = m.attachments?.length
+          ? m.attachments.map(({ id, name, mimeType }) => ({ id, name, mimeType }))
+          : undefined;
+        const cleanedArtifacts = m.artifacts?.length
+          ? m.artifacts.slice(-8).map((a) => ({
+              ...a,
+              code: a.code.slice(0, 24000),
+              previewHtml: a.previewHtml ? a.previewHtml.slice(0, 24000) : undefined,
+            }))
+          : undefined;
+        return {
+          ...m,
+          ...(cleanedAtt ? { attachments: cleanedAtt } : {}),
+          ...(cleanedArtifacts ? { artifacts: cleanedArtifacts } : {}),
+        };
+      });
     localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify({ version: 1, createdAt, expiresAt,
       lastUpdated: now, messages: sanitized } satisfies StoredChatSession));
   } catch { /* The live chat remains usable if storage is unavailable. */ }

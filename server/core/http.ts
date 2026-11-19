@@ -240,7 +240,32 @@ export function createShamCore(options: CoreOptions = {}) {
       if (m.role === 'assistant' && m.engine) engines[m.engine] = (engines[m.engine] || 0) + 1;
     }
     const revenue: Record<string, number> = {};
-    for (const r of requests) if (r.total !== undefined && r.currency && r.status !== 'cancelled') revenue[r.currency] = Math.round(((revenue[r.currency] || 0) + r.total) * 100) / 100;
+    for (const r of requests) if (r.total !== undefined && r.currency && r.status !== 'cancelled' && r.serviceId !== 'purchase-order') revenue[r.currency] = Math.round(((revenue[r.currency] || 0) + r.total) * 100) / 100;
+    const reorderThreshold = 5;
+    const openPoByProduct: Record<string, number> = {};
+    for (const r of requests) {
+      if (r.serviceId === 'purchase-order' && r.status !== 'cancelled' && r.status !== 'completed') {
+        for (const item of r.items || []) {
+          openPoByProduct[item.productId] = (openPoByProduct[item.productId] || 0) + 1;
+        }
+      }
+    }
+    const lowStockItems = products
+      .filter((p) => p.active && p.stock <= reorderThreshold)
+      .sort((a, b) => a.stock - b.stock)
+      .map((p) => ({
+        id: p.id,
+        sku: p.sku,
+        nameAr: p.nameAr,
+        nameEn: p.nameEn,
+        category: p.category,
+        stock: p.stock,
+        unit: p.unit,
+        price: p.price,
+        currency: p.currency,
+        reorderLevel: reorderThreshold,
+        openPoCount: openPoByProduct[p.id] || 0,
+      }));
     res.json({
       storage: { kind: store.kind, persistent: store.persistent, error: storeError },
       engines: engineStatuses(env), policy: settings.enginePolicy,
@@ -249,10 +274,11 @@ export function createShamCore(options: CoreOptions = {}) {
         conversations24h: conversations.filter((c) => Date.parse(c.updatedAt) >= since).length,
         handoffsOpen: conversations.filter((c) => c.status === 'handoff').length,
         requests: requests.length, requestsNew: byStatus.new || 0,
-        products: products.length, lowStock: products.filter((p) => p.active && p.stock <= 3).length,
+        products: products.length, lowStock: lowStockItems.length,
         knowledge: knowledge.length, services: services.length,
         gapsOpen: gaps.filter((g) => g.status === 'open').length, feedbackUp: up, feedbackDown: down,
       },
+      lowStockItems,
       notifications: { configured: notifier.configured },
       emailNotifications: {
         configured: Boolean(env.RESEND_API_KEY || env.SENDGRID_API_KEY || env.SHAM_WEBHOOK_URL),
@@ -261,6 +287,16 @@ export function createShamCore(options: CoreOptions = {}) {
       },
       byStatus, byType, intents, engineUsage: engines, pipelineValue: revenue,
     });
+  }));
+
+  admin.post('/purchase-orders', wrap(async (req, res) => {
+    const result = await repo.createPurchaseOrder(req.body || {});
+    await notifier.send(
+      'purchase_order.created',
+      `🛒 طلب شراء ${result.purchaseOrder.ref} — ${result.product.nameAr || result.product.nameEn} (${result.purchaseOrder.items?.[0]?.quantity || 0} ${result.product.unit})`,
+      { ref: result.purchaseOrder.ref, productId: result.product.id, sku: result.product.sku }
+    );
+    res.status(201).json(result);
   }));
 
   // Generic CRUD for managed collections

@@ -6,12 +6,12 @@ import {
   Send,
   FlaskConical,
   Smile,
-  ImagePlus,
-  Check,
   CheckCheck,
   Sparkles,
+  Loader2,
+  Wand2,
 } from 'lucide-react';
-import { cx, type Message, type PublicUser } from './api';
+import { cx, type AiReplyAssistResult, type Message, type PublicUser } from './api';
 import { Avatar, tx, type Lang } from './ui';
 
 interface Props {
@@ -40,16 +40,15 @@ export function FloatingMessengerDock({
   const [text, setText] = useState('');
   const [busy, setBusy] = useState(false);
   const [showEmoji, setShowEmoji] = useState(false);
+  const [aiBusy, setAiBusy] = useState(false);
+  const [aiSuggestions, setAiSuggestions] = useState<string[]>([]);
   const endRef = useRef<HTMLDivElement>(null);
 
-  // Load chat messages
   useEffect(() => {
     let active = true;
     const load = async () => {
       try {
-        const view = await cx<{ messages: Message[]; otherUser?: PublicUser }>(
-          `/community/chats/${chatId}`
-        );
+        const view = await cx<{ messages: Message[] }>(`/community/chats/${chatId}/messages`);
         if (active) {
           setMessages(view.messages || []);
           setLoading(false);
@@ -72,20 +71,43 @@ export function FloatingMessengerDock({
     }
   }, [messages, minimized]);
 
-  const send = async () => {
-    if (!text.trim() || busy) return;
-    const content = text.trim();
-    setText('');
+  const send = async (overrideText?: string) => {
+    const content = (overrideText ?? text).trim();
+    if (!content || busy) return;
+    if (!overrideText) setText('');
     setBusy(true);
     try {
       const msg = await cx<Message>(`/community/chats/${chatId}/messages`, {
         body: { kind: 'text', text: content },
       });
       setMessages((prev) => [...prev, msg]);
+      setAiSuggestions([]);
     } catch {
       toast(t('تعذر إرسال الرسالة', 'Failed to send message'));
     } finally {
       setBusy(false);
+    }
+  };
+
+  const askReplyAi = async (mode: 'suggest' | 'polish') => {
+    setAiBusy(true);
+    try {
+      const recentMessages = messages.slice(-4).map((m) => ({
+        sender: m.mine ? 'me' : recipientUser?.name || 'peer',
+        text: m.text || (m.kind === 'recipe' ? 'shared recipe' : ''),
+      }));
+      const res = await cx<AiReplyAssistResult>('/community/ai/reply-assist', {
+        body: { contextType: 'messenger', mode, draft: text, recentMessages, lang },
+      });
+      if (mode === 'polish' && res.polishedDraft) {
+        setText(res.polishedDraft);
+      } else {
+        setAiSuggestions(res.suggestions || []);
+      }
+    } catch {
+      toast(t('تعذر تشغيل مساعد الرد الذكي الآن', 'Smart reply unavailable right now'));
+    } finally {
+      setAiBusy(false);
     }
   };
 
@@ -95,17 +117,16 @@ export function FloatingMessengerDock({
     return (
       <div
         onClick={() => setMinimized(false)}
-        className="fixed bottom-4 end-6 z-50 flex cursor-pointer items-center gap-2.5 rounded-full border border-amber-200 bg-white p-2 shadow-xl transition hover:scale-105 hover:border-amber-400"
+        className="fixed bottom-4 end-6 z-50 flex cursor-pointer items-center gap-2.5 rounded-full border border-stone-200 bg-white p-2 shadow-xl transition hover:scale-[1.02] hover:border-amber-400"
       >
         <span className="relative">
           {recipientUser ? (
             <Avatar user={recipientUser} size={38} ring />
           ) : (
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-600 font-bold text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-800 font-bold text-white">
               💬
             </span>
           )}
-          <span className="absolute bottom-0 end-0 h-3 w-3 rounded-full border-2 border-white bg-emerald-500" />
         </span>
         <span className="pe-2 text-xs font-bold text-stone-900">{recipientName}</span>
         <button
@@ -114,7 +135,7 @@ export function FloatingMessengerDock({
             e.stopPropagation();
             onClose();
           }}
-          className="rounded-full p-1 text-stone-400 hover:bg-stone-100 hover:text-stone-700"
+          className="rounded-full p-1 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
         >
           <X className="h-3.5 w-3.5" />
         </button>
@@ -123,16 +144,15 @@ export function FloatingMessengerDock({
   }
 
   return (
-    <div className="fixed bottom-4 end-6 z-50 flex h-[440px] w-80 flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-2xl sm:w-[340px]">
+    <div className="fixed bottom-4 end-6 z-50 flex h-[470px] w-80 flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-2xl sm:w-[350px]">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-stone-100 bg-stone-900 px-3.5 py-2.5 text-white">
-        <div className="flex min-w-0 items-center gap-2">
+      <div className="flex items-center justify-between border-b border-stone-800 bg-stone-900 px-3.5 py-2.5 text-white">
+        <div className="flex min-w-0 items-center gap-2.5">
           {recipientUser && <Avatar user={recipientUser} size={32} />}
           <div className="min-w-0">
             <h4 className="truncate text-xs font-bold text-white">{recipientName}</h4>
-            <span className="flex items-center gap-1 text-[10px] text-emerald-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              {t('متصل الآن', 'Active now')}
+            <span className="text-[10px] text-stone-300">
+              {recipientUser?.online ? t('متصل الآن', 'Active now') : t('محادثة مشفّرة', 'Encrypted atelier chat')}
             </span>
           </div>
         </div>
@@ -142,7 +162,7 @@ export function FloatingMessengerDock({
             type="button"
             title={t('تكبير للماسنجر الكامل', 'Expand to full Messenger')}
             onClick={() => onExpand(chatId)}
-            className="rounded p-1 hover:bg-white/10 hover:text-white cursor-pointer"
+            className="rounded p-1.5 hover:bg-white/10 hover:text-white cursor-pointer"
           >
             <Maximize2 className="h-3.5 w-3.5" />
           </button>
@@ -150,7 +170,7 @@ export function FloatingMessengerDock({
             type="button"
             title={t('تصغير', 'Minimize')}
             onClick={() => setMinimized(true)}
-            className="rounded p-1 hover:bg-white/10 hover:text-white cursor-pointer"
+            className="rounded p-1.5 hover:bg-white/10 hover:text-white cursor-pointer"
           >
             <Minimize2 className="h-3.5 w-3.5" />
           </button>
@@ -158,7 +178,7 @@ export function FloatingMessengerDock({
             type="button"
             title={t('إغلاق', 'Close')}
             onClick={onClose}
-            className="rounded p-1 hover:bg-white/10 hover:text-white cursor-pointer"
+            className="rounded p-1.5 hover:bg-white/10 hover:text-white cursor-pointer"
           >
             <X className="h-3.5 w-3.5" />
           </button>
@@ -166,17 +186,19 @@ export function FloatingMessengerDock({
       </div>
 
       {/* Messages Scroll Area */}
-      <div className="flex-1 space-y-2.5 overflow-y-auto bg-stone-50/60 p-3 text-xs">
+      <div className="flex-1 space-y-2.5 overflow-y-auto bg-[#FBF9F5] p-3 text-xs">
         {loading ? (
-          <div className="py-12 text-center text-stone-400">...</div>
+          <div className="py-12 text-center text-stone-400">
+            <Loader2 className="mx-auto h-5 w-5 animate-spin text-amber-700" />
+          </div>
         ) : !messages.length ? (
-          <div className="py-12 text-center">
-            <Sparkles className="mx-auto h-8 w-8 text-amber-500 opacity-60" />
-            <p className="mt-2 text-xs font-bold text-stone-700">
-              {t('ابدأ المحادثة الآن', 'Say hello!')}
+          <div className="py-10 text-center">
+            <Sparkles className="mx-auto h-7 w-7 text-amber-700 opacity-70" />
+            <p className="mt-2 text-xs font-bold text-stone-800">
+              {t('ابدأ المحادثة الآن', 'Start the conversation')}
             </p>
-            <p className="mt-0.5 text-[11px] text-stone-400">
-              {t('تبادل الخبرات والتركيبات العطرية', 'Share fragrance advice & formulas')}
+            <p className="mt-0.5 text-[11px] text-stone-500">
+              {t('تبادل الخبرات والتركيبات العطرية مع مساعد الرد الذكي', 'Exchange formulas with AI reply assist')}
             </p>
           </div>
         ) : (
@@ -190,30 +212,30 @@ export function FloatingMessengerDock({
                 <div
                   className={`max-w-[82%] rounded-2xl px-3 py-2 text-xs leading-relaxed ${
                     isMe
-                      ? 'bg-amber-700 text-white rounded-ee-none shadow-sm shadow-amber-900/10'
-                      : 'bg-white text-stone-900 border border-stone-200/80 rounded-es-none shadow-sm'
+                      ? 'bg-amber-800 text-white rounded-ee-none shadow-xs'
+                      : 'bg-white text-stone-900 border border-stone-200/80 rounded-es-none shadow-xs'
                   }`}
                 >
                   {m.kind === 'recipe' ? (
                     <div className="space-y-1">
-                      <p className="flex items-center gap-1 font-bold text-amber-200">
+                      <p className={`flex items-center gap-1 font-bold ${isMe ? 'text-amber-200' : 'text-amber-900'}`}>
                         <FlaskConical className="h-3.5 w-3.5" />
                         {m.text}
                       </p>
                       <p className="text-[10px] opacity-80">
-                        {t('تركيبة عطرية مشاركة من المعمل', 'Shared fragrance formula')}
+                        {t('تركيبة عطرية مشاركة', 'Shared fragrance formula')}
                       </p>
                     </div>
                   ) : (
                     <p className="whitespace-pre-wrap break-words">{m.text}</p>
                   )}
                 </div>
-                <span className="mt-0.5 flex items-center gap-1 px-1 text-[9px] text-stone-400">
+                <span className="mt-0.5 flex items-center gap-1 px-1 text-[9px] tabular-nums text-stone-400">
                   {new Date(m.createdAt).toLocaleTimeString(lang === 'ar' ? 'ar-EG' : 'en-US', {
                     hour: '2-digit',
                     minute: '2-digit',
                   })}
-                  {isMe && <CheckCheck className="h-3 w-3 text-amber-600" />}
+                  {isMe && <CheckCheck className="h-3 w-3 text-amber-700" />}
                 </span>
               </div>
             );
@@ -221,6 +243,37 @@ export function FloatingMessengerDock({
         )}
         <div ref={endRef} />
       </div>
+
+      {/* Smart AI Suggestions Strip */}
+      {aiSuggestions.length > 0 && (
+        <div className="border-t border-amber-200/80 bg-amber-50/70 px-2.5 py-2 space-y-1">
+          <div className="flex items-center justify-between text-[10px] font-bold text-amber-950">
+            <span className="flex items-center gap-1">
+              <Sparkles className="h-3 w-3 text-amber-700" />
+              {t('اقتراحات شاهين للرد السريع', 'Smart reply suggestions')}
+            </span>
+            <button
+              type="button"
+              onClick={() => setAiSuggestions([])}
+              className="text-stone-400 hover:text-stone-700 cursor-pointer"
+            >
+              <X className="h-3 w-3" />
+            </button>
+          </div>
+          <div className="flex flex-col gap-1">
+            {aiSuggestions.map((s, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setText(s)}
+                className="rounded-lg border border-amber-200/80 bg-white px-2.5 py-1.5 text-start text-[11px] font-medium text-stone-800 hover:bg-amber-100/60 transition cursor-pointer line-clamp-2"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Emoji picker drawer */}
       {showEmoji && (
@@ -247,12 +300,21 @@ export function FloatingMessengerDock({
           e.preventDefault();
           void send();
         }}
-        className="flex items-center gap-1.5 border-t border-stone-100 bg-white p-2"
+        className="flex items-center gap-1 border-t border-stone-200 bg-white p-2"
       >
         <button
           type="button"
+          disabled={aiBusy}
+          onClick={() => void askReplyAi(text.trim() ? 'polish' : 'suggest')}
+          className="rounded-full p-1.5 text-amber-800 hover:bg-amber-50 cursor-pointer shrink-0 disabled:opacity-50"
+          title={text.trim() ? t('تحسين صياغة الرسالة بالذكاء', 'Polish draft with AI') : t('اقتراح ردود ذكية', 'Suggest smart replies')}
+        >
+          {aiBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : text.trim() ? <Wand2 className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
+        </button>
+        <button
+          type="button"
           onClick={() => setShowEmoji((v) => !v)}
-          className="rounded-full p-1.5 text-stone-500 hover:bg-stone-100 cursor-pointer"
+          className="rounded-full p-1.5 text-stone-500 hover:bg-stone-100 cursor-pointer shrink-0"
           title={t('إيموجي', 'Emoji')}
         >
           <Smile className="h-4 w-4" />
@@ -262,12 +324,12 @@ export function FloatingMessengerDock({
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder={t('اكتب رسالة…', 'Type a message…')}
-          className="flex-1 rounded-full border border-stone-200 bg-stone-50 px-3 py-1.5 text-xs text-stone-900 outline-none focus:border-amber-500 focus:bg-white"
+          className="flex-1 min-w-0 rounded-full border border-stone-200 bg-stone-50 px-3 py-1.5 text-xs text-stone-900 outline-none focus:border-amber-600 focus:bg-white"
         />
         <button
           type="submit"
           disabled={!text.trim() || busy}
-          className="flex h-7 w-7 items-center justify-center rounded-full bg-amber-700 text-white transition hover:bg-amber-800 disabled:opacity-40 cursor-pointer"
+          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-800 text-white transition hover:bg-amber-900 disabled:opacity-40 cursor-pointer"
         >
           <Send className="h-3.5 w-3.5" />
         </button>

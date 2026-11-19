@@ -210,6 +210,20 @@ function storeImportProbes(ctx: ProbeContext): Probe[] {
   return [{ tool: 'store_import', question: 'مستورد شاهين ومراجع الصفحات', answer, ms: 0, ok: true, findings }];
 }
 
+async function communityAiProbes(ctx: ProbeContext): Promise<Probe[]> {
+  const r = await timed(() => json<{ enabled?: boolean; store?: string }>(ctx.fetch, `${ctx.site}/api/community/status`));
+  const answer = r.value ? `المجتمع ${r.value.enabled ? 'مفعّل' : 'متوقف'} (${r.value.store || 'db'})` : '';
+  return [{
+    tool: 'community_ai',
+    question: 'GET /api/community/status (جاهزية ذكاء المجتمع)',
+    answer,
+    ms: r.ms,
+    ok: !r.error,
+    error: r.error,
+    findings: r.error ? [] : r.value?.enabled === false ? [{ severe: false, text: 'خدمة المجتمع غير مفعلة على هذا الخادم' }] : [],
+  }];
+}
+
 export const PROBES: Record<AiToolId, (ctx: ProbeContext) => Probe[] | Promise<Probe[]>> = {
   shaheen_chat: chatProbes,
   sham_assistant: assistantProbes,
@@ -221,4 +235,5 @@ export const PROBES: Record<AiToolId, (ctx: ProbeContext) => Probe[] | Promise<P
   store_advisor: storeAdvisorProbes,
   store_catalog: storeCatalogProbes,
   store_import: storeImportProbes,
+  community_ai: communityAiProbes,
 };

@@ -1,5 +1,10 @@
 import type { ChatMessage } from './chatStorage';
-import type { AgentRequestPayload, AgentStreamEvent } from '../types/shaheenAgent';
+import type {
+  AgentRequestPayload,
+  AgentStreamEvent,
+  ArenaVoteChoice,
+  ArenaVoteTotals,
+} from '../types/shaheenAgent';
 
 /**
  * Where the API lives. Empty = same origin (Node/Vercel). A static build (GitHub Pages) can point
@@ -145,4 +150,17 @@ export async function streamShaheenAgent(
     signal?.removeEventListener('abort', cancel);
   }
 }
+
+export async function voteShaheenArena(payload: {
+  battleId: string;
+  vote: ArenaVoteChoice;
+  prevVote?: ArenaVoteChoice;
+}): Promise<{ battleId: string; vote: ArenaVoteChoice; voteTotals: ArenaVoteTotals }> {
+  return requestApi('/api/shaheen/arena/vote', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  }, 15_000);
+}
+
 

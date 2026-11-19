@@ -36,17 +36,28 @@ import { normalizeMediaBlocks } from '../src/utils/mediaBlock';
 import { stripOpeningGreeting } from '../src/utils/shaheenText';
 import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../src/types/i18n';
 import type {
+  ActiveArtifactContext,
   AgentAction,
   AgentActionType,
+  AgentArtifact,
   AgentAttachmentInput,
   AgentGroundingSource,
+  AgentMode,
+  AgentPlan,
+  AgentPlanTask,
   AgentReasoningDepth,
   AgentStep,
   AgentStreamEvent,
+  ArenaBattleResult,
   LabContextSnapshot,
 } from '../src/types/shaheenAgent';
 import type { ConcentrationType, PyramidNote } from '../src/types/perfume';
 import type { ShaheenTool, ToolLink } from '../src/utils/shaheenTools';
+import {
+  defaultFilenameFor,
+  normalizeArtifactLanguage,
+  verifyCodeSnippet,
+} from '../src/utils/codeVerifier';
 import { liveStoreCatalog, newsContext, supervisorGuidance } from './core/liveData';
 import { RateLimiter, clientKey } from './core/rateLimit';
 import { VISITOR_ID } from './core/capacity';
@@ -54,6 +65,7 @@ import type { Repository } from './core/repository';
 import { SHAHEEN_SITE_SETTINGS } from './config/shaheen';
 import { ChatError, systemInstruction } from './shaheen';
 import { sanitizeQuery, searchImages, searchPlace, searchVideos } from './media';
+import { arenaVoteStore, runShaheenArena, validateArenaVoteRequest } from './shaheenArena';
 
 type Env = Record<string, string | undefined>;
 
@@ -118,6 +130,10 @@ function toolLabel(toolName: string, language: SupportedLanguage): string {
     plan_maceration_schedule: { ar: 'تصميم بروتوكول التعتيق والترشيح', en: 'Maceration & Filtration Planner' },
     lookup_perfumery_media: { ar: 'جلب صور ومواقع مرجعية موثقة', en: 'Verified Visual & Origin Lookup' },
     dispatch_app_action: { ar: 'تجهيز إجراء مباشر في معمل التطبيق', en: 'Dispatch Interactive App Action' },
+    plan_engineering_tasks: { ar: 'تخطيط المراحل والمهام الهندسية', en: 'Engineering Task Planner' },
+    generate_code_artifact: { ar: 'إنشاء وتجميع المكوّن البرمجي التفاعلي', en: 'Code & Interactive Artifact Builder' },
+    inspect_and_verify_code: { ar: 'فحص الشفرة والتحقق من صحة البناء والأمان', en: 'Static Code & Syntax Verifier' },
+    benchmark_solutions_matrix: { ar: 'مقارنة الحلول والمعايير الهندسية رقمياً', en: 'Solution Trade-off Matrix' },
     web_search: { ar: 'بحث الويب المعرفي المباشر', en: 'Live Web Research' },
   };
   const entry = labels[toolName];
@@ -301,6 +317,100 @@ export const AGENT_FUNCTION_DECLARATIONS: FunctionDeclaration[] = [
       required: ['actionType', 'label'],
     },
   },
+  {
+    name: 'plan_engineering_tasks',
+    description:
+      'Emit or update a structured multi-phase engineering/formulation execution plan rendered interactively in the agent workspace.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        goal: { type: Type.STRING, description: 'Concise objective summary in user language.' },
+        tasks: {
+          type: Type.ARRAY,
+          description: 'Ordered execution steps across phases: research, design, build, verify.',
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              id: { type: Type.STRING },
+              title: { type: Type.STRING },
+              phase: { type: Type.STRING, description: 'research, design, build, or verify' },
+              status: { type: Type.STRING, description: 'pending, in_progress, or done' },
+              detail: { type: Type.STRING },
+            },
+            required: ['title', 'phase', 'status'],
+          },
+        },
+      },
+      required: ['goal', 'tasks'],
+    },
+  },
+  {
+    name: 'generate_code_artifact',
+    description:
+      'Generate a clean, complete software artifact (interactive HTML/JS web app, UI widget, TypeScript/React module, Python computational script, SQL schema, Mermaid diagram, SVG, or JSON API spec) rendered live in Shaheen Arena Code Studio with automatic syntax verification.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        title: { type: Type.STRING, description: 'Human-readable artifact title in user language.' },
+        filename: { type: Type.STRING, description: 'Target filename with extension (e.g., dashboard.html, calculator.ts).' },
+        language: {
+          type: Type.STRING,
+          description: 'One of: html, react, typescript, javascript, python, sql, css, json, mermaid, svg.',
+        },
+        summary: { type: Type.STRING, description: 'Concise architectural note explaining what the artifact provides.' },
+        code: { type: Type.STRING, description: 'Complete source code (never truncated with placeholders).' },
+        previewHtml: {
+          type: Type.STRING,
+          description:
+            'Optional self-contained HTML5 document (CSS + Vanilla JS) so non-HTML artifacts (like react/typescript dashboards) also render a working interactive live preview in the sandbox iframe.',
+        },
+      },
+      required: ['title', 'language', 'code'],
+    },
+  },
+  {
+    name: 'inspect_and_verify_code',
+    description:
+      'Run deterministic static analysis, balanced delimiter checks, syntax parsing, and safety verification on source code before presenting it to the user.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        language: {
+          type: Type.STRING,
+          description: 'html, react, typescript, javascript, python, sql, css, json, mermaid, or svg.',
+        },
+        code: { type: Type.STRING, description: 'Source code to verify.' },
+      },
+      required: ['language', 'code'],
+    },
+  },
+  {
+    name: 'benchmark_solutions_matrix',
+    description:
+      'Evaluate 2 or 3 engineering or formulation candidates quantitatively across weighted criteria and compute normalized total scores and a recommendation.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        topic: { type: Type.STRING, description: 'Decision topic being evaluated.' },
+        options: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              name: { type: Type.STRING },
+              summary: { type: Type.STRING },
+              correctnessScore: { type: Type.NUMBER, description: 'Score 0-100' },
+              scalabilityScore: { type: Type.NUMBER, description: 'Score 0-100' },
+              maintainabilityScore: { type: Type.NUMBER, description: 'Score 0-100' },
+              speedScore: { type: Type.NUMBER, description: 'Score 0-100' },
+            },
+            required: ['name', 'correctnessScore', 'scalabilityScore', 'maintainabilityScore', 'speedScore'],
+          },
+        },
+      },
+      required: ['topic', 'options'],
+    },
+  },
 ];
 
 export interface AgentToolContext {
@@ -310,6 +420,10 @@ export interface AgentToolContext {
   fetchFn: typeof fetch;
   signal?: AbortSignal;
   collectedActions: AgentAction[];
+  collectedArtifacts?: AgentArtifact[];
+  collectedPlan?: AgentPlan;
+  onPlan?: (plan: AgentPlan) => void;
+  onArtifact?: (artifact: AgentArtifact) => void;
 }
 
 function clampNum(value: unknown, fallback: number, min: number, max: number): number {
@@ -742,6 +856,127 @@ export async function executeAgentTool(
       };
     }
 
+    case 'plan_engineering_tasks': {
+      const goal = scrubVendorText(String(args.goal || 'Execution Plan').slice(0, 220));
+      const rawTasks = Array.isArray(args.tasks) ? args.tasks : [];
+      const validPhases = new Set(['research', 'design', 'build', 'verify']);
+      const validStatuses = new Set(['pending', 'in_progress', 'done']);
+      const tasks: AgentPlanTask[] = rawTasks
+        .filter((t): t is Record<string, unknown> => Boolean(t && typeof t === 'object'))
+        .slice(0, 10)
+        .map((t, idx) => {
+          const phase = validPhases.has(String(t.phase)) ? (String(t.phase) as AgentPlanTask['phase']) : 'build';
+          const status = validStatuses.has(String(t.status)) ? (String(t.status) as AgentPlanTask['status']) : 'pending';
+          return {
+            id: String(t.id || `task-${idx + 1}`).slice(0, 32),
+            title: scrubVendorText(String(t.title || `Step ${idx + 1}`).slice(0, 140)),
+            phase,
+            status,
+            ...(typeof t.detail === 'string' && t.detail.trim()
+              ? { detail: scrubVendorText(t.detail.trim().slice(0, 180)) }
+              : {}),
+          };
+        });
+      const plan: AgentPlan = { goal, tasks };
+      ctx.collectedPlan = plan;
+      ctx.onPlan?.(plan);
+      return {
+        result: { planned: true, goal, taskCount: tasks.length },
+        summary: `Plan (${tasks.length} steps): ${goal.slice(0, 60)}`,
+      };
+    }
+
+    case 'generate_code_artifact': {
+      const language = normalizeArtifactLanguage(args.language);
+      const title = scrubVendorText(String(args.title || `${language.toUpperCase()} Artifact`).slice(0, 140));
+      const rawCode = String(args.code || '').slice(0, 80_000);
+      const code = scrubVendorText(rawCode);
+      const filename = String(args.filename || '').trim().slice(0, 90) || defaultFilenameFor(language, title);
+      const summary = scrubVendorText(String(args.summary || `${language.toUpperCase()} implementation`).slice(0, 240));
+      const previewHtml =
+        typeof args.previewHtml === 'string' && args.previewHtml.trim()
+          ? args.previewHtml.trim().slice(0, 80_000)
+          : language === 'html'
+            ? code
+            : undefined;
+      const verification = verifyCodeSnippet(language, code);
+      const artifacts = ctx.collectedArtifacts || (ctx.collectedArtifacts = []);
+      const artifact: AgentArtifact = {
+        id: `art-${Date.now()}-${artifacts.length + 1}`,
+        title,
+        filename,
+        language,
+        summary,
+        code,
+        ...(previewHtml ? { previewHtml } : {}),
+        runnable: Boolean(previewHtml) || language === 'html' || language === 'svg' || language === 'mermaid' || language === 'javascript',
+        verification,
+        createdAt: Date.now(),
+      };
+      artifacts.push(artifact);
+      ctx.onArtifact?.(artifact);
+      return {
+        result: {
+          created: true,
+          id: artifact.id,
+          filename: artifact.filename,
+          language: artifact.language,
+          runnable: artifact.runnable,
+          verification,
+        },
+        summary: `${artifact.filename} (${artifact.language}) · score ${verification.score}/100 (${verification.valid ? 'valid' : 'issues detected'})`,
+      };
+    }
+
+    case 'inspect_and_verify_code': {
+      const language = normalizeArtifactLanguage(args.language);
+      const code = String(args.code || '').slice(0, 80_000);
+      const report = verifyCodeSnippet(language, code);
+      return {
+        result: {
+          language,
+          valid: report.valid,
+          score: report.score,
+          diagnostics: report.diagnostics,
+          metrics: report.metrics,
+        },
+        summary: `${language.toUpperCase()} verification: ${report.valid ? 'PASSED' : 'ERRORS'} (score ${report.score}/100, ${report.metrics.lines} lines)`,
+      };
+    }
+
+    case 'benchmark_solutions_matrix': {
+      const topic = scrubVendorText(String(args.topic || 'Architecture Comparison').slice(0, 140));
+      const rawOptions = Array.isArray(args.options) ? args.options : [];
+      const evaluated = rawOptions
+        .filter((o): o is Record<string, unknown> => Boolean(o && typeof o === 'object'))
+        .slice(0, 5)
+        .map((o) => {
+          const correctness = clampNum(o.correctnessScore, 80, 0, 100);
+          const scalability = clampNum(o.scalabilityScore, 80, 0, 100);
+          const maintainability = clampNum(o.maintainabilityScore, 80, 0, 100);
+          const speed = clampNum(o.speedScore, 80, 0, 100);
+          const weighted = Math.round(correctness * 0.35 + scalability * 0.25 + maintainability * 0.25 + speed * 0.15);
+          return {
+            name: scrubVendorText(String(o.name || 'Option').slice(0, 80)),
+            summary: scrubVendorText(String(o.summary || '').slice(0, 200)),
+            scores: { correctness, scalability, maintainability, speed },
+            weightedTotal: weighted,
+          };
+        })
+        .sort((a, b) => b.weightedTotal - a.weightedTotal);
+
+      return {
+        result: {
+          topic,
+          winner: evaluated[0]?.name || null,
+          ranking: evaluated,
+        },
+        summary: evaluated.length
+          ? `${topic}: Winner "${evaluated[0].name}" (${evaluated[0].weightedTotal}/100)`
+          : `${topic}: no options supplied`,
+      };
+    }
+
     default:
       return {
         result: { error: `Unknown tool: ${name}` },
@@ -775,11 +1010,13 @@ export function formatLabContextBlock(lab?: LabContextSnapshot): string {
 export interface AgentRunInput {
   message: string;
   language: SupportedLanguage;
+  agentMode?: AgentMode;
   reasoningDepth?: AgentReasoningDepth;
   autoWebSearch?: boolean;
   conversationHistory?: { role: 'user' | 'assistant'; text: string }[];
   attachments?: AgentAttachmentInput[];
   labContext?: LabContextSnapshot;
+  activeArtifact?: ActiveArtifactContext;
 }
 
 export interface AgentRunResult {
@@ -787,6 +1024,9 @@ export interface AgentRunResult {
   steps: AgentStep[];
   sources: AgentGroundingSource[];
   actions: AgentAction[];
+  plan?: AgentPlan;
+  artifacts?: AgentArtifact[];
+  arena?: ArenaBattleResult;
   engine: {
     id: string;
     name: string;
@@ -809,34 +1049,71 @@ export async function runShaheenAgent(
   } = {},
 ): Promise<AgentRunResult> {
   const env = options.env || process.env;
-  const ai = options.ai || createAgentAiClient(env);
   const fetchFn = options.fetchFn || fetch;
   const catalogLoader = options.catalogLoader || (() => liveStoreCatalog(env, fetchFn));
   const emit = options.onEvent || (() => {});
 
-  const thinkingLevel = mapThinkingLevel(input.reasoningDepth);
+  const labContextBlock = formatLabContextBlock(input.labContext);
+
+  if (input.agentMode === 'arena') {
+    const arenaResult = await runShaheenArena(input, {
+      env,
+      ai: options.ai,
+      fetchFn,
+      signal: options.signal,
+      onEvent: emit,
+      extraInstruction: options.extraInstruction,
+      labContextBlock,
+    });
+    return {
+      reply: arenaResult.reply,
+      steps: arenaResult.steps,
+      sources: [],
+      actions: [],
+      artifacts: arenaResult.artifacts,
+      arena: arenaResult.arena,
+      engine: arenaResult.engine,
+    };
+  }
+
+  const ai = options.ai || createAgentAiClient(env);
+  const thinkingLevel = mapThinkingLevel(input.reasoningDepth || (input.agentMode === 'architect' ? 'max' : 'deep'));
   const enableWeb = input.autoWebSearch !== false;
 
   const baseSystem =
     systemInstruction(input.language, options.extraInstruction || '', 'deep') +
     (await newsContext(input.message, input.language, env).catch(() => '')) +
     (await supervisorGuidance('shaheen_chat', env).catch(() => '')) +
-    formatLabContextBlock(input.labContext);
+    labContextBlock;
+
+  const activeArtifactNote = input.activeArtifact
+    ? `\n\n[ACTIVE STUDIO ARTIFACT — user may ask to modify, debug, or upgrade this file]\nFilename: ${input.activeArtifact.filename} (${input.activeArtifact.language})\n\`\`\`${input.activeArtifact.language}\n${input.activeArtifact.code.slice(0, 12000)}\n\`\`\``
+    : '';
+
+  const architectDirective =
+    input.agentMode === 'architect'
+      ? `\n\n[SOFTWARE & CODE STUDIO ARCHITECT MODE — MANDATORY WORKFLOW]
+- You are acting as an Arena-grade Principal Software Engineer & Computational Perfumery Architect.
+- Step 1: Call plan_engineering_tasks first to map concrete phases (research -> design -> build -> verify).
+- Step 2: Build complete, production-ready code with ZERO placeholder comments ("// TODO", "...rest of code"). Call generate_code_artifact for every runnable script, web tool, React/TS component, SQL schema, Python calculator, or Mermaid architecture diagram.
+- Step 3: For interactive web widgets, dashboards, simulators, visualizations, or calculators, ALWAYS set language='html' OR supply a standalone 'previewHtml' bundle using clean HTML5 + modern CSS + Vanilla JS so the sandbox executes immediately offline!
+- Step 4: Call inspect_and_verify_code on critical scripts or inspect the returned verification diagnostics from generate_code_artifact. If any errors exist, fix and regenerate cleanly before concluding.`
+      : '';
 
   const agentDirective = `
 
-[AUTONOMOUS AI AGENT CAPABILITIES]
-You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
-- Plan your work silently and call your real executable tools BEFORE writing final answers whenever calculations, raw material data, IFRA notes, library presets, store inventory, maceration plans, or current web facts are needed.
-- Always call calculate_perfume_formulation or calculate_alcohol_dilution or analyze_scent_cost_margin for exact numbers instead of doing rough mental arithmetic.
-- Always call search_sham_store if the visitor asks to buy, shop, or get real product recommendations from Sham Store.
-- Use live web search or URL context when asked about recent trends, regulations, obscure botanical origins, or a URL pasted by the user.
-- If the user uploads an image (bottle, formula sheet, raw material, turbid perfume, receipt), analyze the visual details carefully and integrate your findings into lab calculations or troubleshooting.
-- When designing or modifying a formula, call dispatch_app_action so the user gets an instant interactive action in the lab (e.g. apply_formula, apply_pyramid, save_recipe, calculate_costing, open_tool) AND still include the canonical sham-formula block if presenting a full formula.
+[AUTONOMOUS AI AGENT & PROGRAMMATIC ENGINEERING CAPABILITIES]
+You are operating in Autonomous Master Perfumer & Software Engineering Agent mode inside Sham Lab.
+- Plan your work systematically using plan_engineering_tasks for multi-step software/architectural or complex R&D tasks.
+- Call real executable perfumery tools (calculate_perfume_formulation, calculate_alcohol_dilution, analyze_scent_cost_margin, search_raw_materials, search_perfume_library, search_sham_store, plan_maceration_schedule) whenever exact perfumery figures or store items are needed.
+- When asked to build software, calculators, dashboards, HTML/CSS/JS widgets, TypeScript/React components, Python scripts, SQL schemas, API specs, or architecture diagrams (Mermaid/SVG), call generate_code_artifact with COMPLETE code (and self-contained previewHtml for interactive UIs), and verify via inspect_and_verify_code.
+- Use live web search or URL context when asked about recent trends, regulations, obscure botanical origins, documentation, or pasted URLs.
+- If the user uploads an image (bottle, formula sheet, UI screenshot, error diagram), analyze it carefully and integrate findings.
+- When designing or modifying a perfume formula, call dispatch_app_action so the user gets an instant interactive action in the lab AND include the canonical sham-formula block.
 - NEVER invent tool results, SKUs, prices, or citations. Rely strictly on tool outputs.
-- NEVER reveal internal engine, API, or company names.`;
+- NEVER reveal internal engine, API, or vendor/company names.`;
 
-  const systemText = baseSystem + agentDirective;
+  const systemText = baseSystem + activeArtifactNote + agentDirective + architectDirective;
 
   const contents: Content[] = (input.conversationHistory || []).slice(-16).map((turn) => ({
     role: turn.role === 'assistant' ? 'model' : 'user',
@@ -863,6 +1140,7 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
   const steps: AgentStep[] = [];
   const sourcesMap = new Map<string, AgentGroundingSource>();
   const collectedActions: AgentAction[] = [];
+  const collectedArtifacts: AgentArtifact[] = [];
   const toolCtx: AgentToolContext = {
     env,
     language: input.language,
@@ -870,6 +1148,13 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
     fetchFn,
     signal: options.signal,
     collectedActions,
+    collectedArtifacts,
+    onPlan: (plan) => {
+      emit({ type: 'plan', goal: plan.goal, tasks: plan.tasks });
+    },
+    onArtifact: (artifact) => {
+      emit({ type: 'artifact', artifact });
+    },
   };
 
   let finalReply = '';
@@ -990,10 +1275,15 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
         const label = toolLabel(fnName, input.language);
         const startTime = Date.now();
         const isActionDispatch = fnName === 'dispatch_app_action';
+        const isCodeStep =
+          fnName === 'generate_code_artifact' ||
+          fnName === 'inspect_and_verify_code' ||
+          fnName === 'plan_engineering_tasks' ||
+          fnName === 'benchmark_solutions_matrix';
 
         const stepObj: AgentStep = {
           id: stepId,
-          kind: isActionDispatch ? 'action' : 'tool',
+          kind: isActionDispatch ? 'action' : isCodeStep ? 'code' : 'tool',
           tool: fnName,
           label,
           status: 'running',
@@ -1076,7 +1366,7 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
     throw new ChatError(503, 'PROVIDER_UNAVAILABLE', 'Agent could not complete a response');
   }
 
-  const normalizedReply = stripOpeningGreeting(normalizeMediaBlocks(finalReply), input.message);
+  const normalizedReply = scrubVendorText(stripOpeningGreeting(normalizeMediaBlocks(finalReply), input.message));
   // Emit progressive text chunks for smooth streaming rendering
   const chunkSize = 80;
   for (let i = 0; i < normalizedReply.length; i += chunkSize) {
@@ -1089,10 +1379,26 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
     steps,
     sources,
     actions: collectedActions,
+    ...(toolCtx.collectedPlan ? { plan: toolCtx.collectedPlan } : {}),
+    ...(collectedArtifacts.length ? { artifacts: collectedArtifacts } : {}),
     engine: {
-      id: 'agent',
-      name: input.language === 'ar' || input.language === 'fa' ? 'الخبير شاهين · الوكيل الذكي' : 'Master Shahin · AI Agent',
-      badge: input.language === 'ar' || input.language === 'fa' ? '🤖 الوكيل الذكي' : '🤖 AI Agent',
+      id: input.agentMode === 'architect' ? 'architect' : 'agent',
+      name:
+        input.language === 'ar' || input.language === 'fa'
+          ? input.agentMode === 'architect'
+            ? 'الخبير شاهين · استوديو الهندسة البرمجية'
+            : 'الخبير شاهين · الوكيل الذكي'
+          : input.agentMode === 'architect'
+            ? 'Master Shahin · Code Architect'
+            : 'Master Shahin · AI Agent',
+      badge:
+        input.language === 'ar' || input.language === 'fa'
+          ? input.agentMode === 'architect'
+            ? '⚡ استوديو البرمجة'
+            : '🤖 الوكيل الذكي'
+          : input.agentMode === 'architect'
+            ? '⚡ Code Studio'
+            : '🤖 AI Agent',
       provider: 'shaheen',
       accentColor: 'amber',
     },
@@ -1104,6 +1410,8 @@ You are operating in Autonomous Master Perfumer Agent mode inside Sham Lab.
     steps: result.steps,
     sources: result.sources,
     actions: result.actions,
+    ...(result.plan ? { plan: result.plan } : {}),
+    ...(result.artifacts ? { artifacts: result.artifacts } : {}),
     engine: result.engine,
   });
 
@@ -1117,11 +1425,13 @@ export function validateAgentRequest(body: unknown) {
   const {
     message,
     language = 'ar',
+    agentMode = 'agent',
     reasoningDepth = 'deep',
     autoWebSearch = true,
     conversationHistory = [],
     attachments = [],
     labContext,
+    activeArtifact,
   } = body as Record<string, unknown>;
 
   if (typeof message !== 'string' || !message.trim()) {
@@ -1133,6 +1443,8 @@ export function validateAgentRequest(body: unknown) {
   if (!SUPPORTED_LANGUAGES.some((l) => l.code === language)) {
     throw new ChatError(400, 'INVALID_LANGUAGE', 'Unsupported language');
   }
+  const mode: AgentMode =
+    agentMode === 'arena' || agentMode === 'architect' ? agentMode : 'agent';
   const depth: AgentReasoningDepth =
     reasoningDepth === 'standard' || reasoningDepth === 'max' ? reasoningDepth : 'deep';
 
@@ -1167,14 +1479,29 @@ export function validateAgentRequest(body: unknown) {
         }))
     : [];
 
+  const safeArtifact: ActiveArtifactContext | undefined =
+    activeArtifact &&
+    typeof activeArtifact === 'object' &&
+    typeof (activeArtifact as ActiveArtifactContext).code === 'string' &&
+    (activeArtifact as ActiveArtifactContext).code.trim()
+      ? {
+          id: String((activeArtifact as ActiveArtifactContext).id || 'art').slice(0, 64),
+          filename: String((activeArtifact as ActiveArtifactContext).filename || 'artifact.ts').slice(0, 90),
+          language: String((activeArtifact as ActiveArtifactContext).language || 'typescript').slice(0, 32),
+          code: String((activeArtifact as ActiveArtifactContext).code).slice(0, 32_000),
+        }
+      : undefined;
+
   return {
     message: message.trim(),
     language: language as SupportedLanguage,
+    agentMode: mode,
     reasoningDepth: depth,
     autoWebSearch: autoWebSearch !== false,
     conversationHistory: history,
     attachments: safeAttachments,
     labContext: labContext && typeof labContext === 'object' ? (labContext as LabContextSnapshot) : undefined,
+    activeArtifact: safeArtifact,
   };
 }
 
@@ -1259,6 +1586,23 @@ export function createShaheenAgentRouter(options: {
       }
     } finally {
       res.off('close', cancel);
+    }
+  });
+
+  router.post('/shaheen/arena/vote', (req, res) => {
+    try {
+      const ip = clientKey(req);
+      if (!ipLimiter.allow(ip)) {
+        res.status(429).json({ error: 'Too many requests', code: 'RATE_LIMITED' });
+        return;
+      }
+      const { battleId, vote, prevVote } = validateArenaVoteRequest(req.body);
+      const voteTotals = arenaVoteStore.record(battleId, vote, prevVote);
+      res.json({ battleId, vote, voteTotals });
+    } catch (error: any) {
+      const status = error instanceof ChatError ? error.status : 400;
+      const code = error instanceof ChatError ? error.code : 'INVALID_REQUEST';
+      res.status(status).json({ error: error?.message || 'Invalid vote payload', code });
     }
   });
 

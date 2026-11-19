@@ -20,10 +20,24 @@ import { parseDoctorIssue, type DoctorReport } from './doctorReport';
 
 type Tab = 'overview' | 'community' | 'agent' | 'quality' | 'requests' | 'conversations' | 'products' | 'knowledge' | 'services' | 'engines' | 'shaheen' | 'emails' | 'doctor' | 'supervisor' | 'sandbox' | 'updates';
 interface EngineStatus { id: EngineId; name: string; model: string; configured: boolean; kind: string }
+interface LowStockItem {
+  id: string;
+  sku: string;
+  nameAr: string;
+  nameEn: string;
+  category: Product['category'];
+  stock: number;
+  unit: string;
+  price: number;
+  currency: string;
+  reorderLevel: number;
+  openPoCount: number;
+}
 interface Overview {
   storage: { kind: string; persistent: boolean; error?: string };
   engines: EngineStatus[]; policy: EngineId[];
   counts: Record<string, number>;
+  lowStockItems?: LowStockItem[];
   byStatus: Record<string, number>; byType: Record<string, number>; intents: Record<string, number>; engineUsage: Record<string, number>; pipelineValue: Record<string, number>;
   notifications?: { configured: boolean };
   emailNotifications?: { configured: boolean; provider: string; sentCount: number };
@@ -212,6 +226,68 @@ function Bars({ data, labels }: { data: Record<string, number>; labels?: Record<
 
 function OverviewPanel({ go }: { go: (t: Tab) => void }) {
   const { data, error, loading, reload } = useLoad<Overview>('/overview');
+  const [stockFilter, setStockFilter] = useState<'all' | 'zero' | 'critical' | 'reorder'>('all');
+  const [poTarget, setPoTarget] = useState<LowStockItem | null>(null);
+  const [poQty, setPoQty] = useState(15);
+  const [poSupplier, setPoSupplier] = useState('');
+  const [poCost, setPoCost] = useState('');
+  const [poNote, setPoNote] = useState('');
+  const [poReceiveNow, setPoReceiveNow] = useState(false);
+  const [poBusy, setPoBusy] = useState(false);
+  const [poError, setPoError] = useState('');
+  const [poSuccess, setPoSuccess] = useState('');
+
+  const lowItems = data?.lowStockItems || [];
+  const zeroItems = lowItems.filter((i) => i.stock === 0);
+  const criticalItems = lowItems.filter((i) => i.stock > 0 && i.stock <= 2);
+  const reorderItems = lowItems.filter((i) => i.stock > 2);
+  const filteredLowItems = stockFilter === 'zero'
+    ? zeroItems
+    : stockFilter === 'critical'
+      ? criticalItems
+      : stockFilter === 'reorder'
+        ? reorderItems
+        : lowItems;
+
+  const openPoModal = (item: LowStockItem) => {
+    setPoTarget(item);
+    setPoQty(Math.max(10, 15 - item.stock));
+    setPoSupplier(T('مورد خامات وعطور معتمد'));
+    setPoCost(String(Math.round(item.price * 0.6 * 100) / 100));
+    setPoNote('');
+    setPoReceiveNow(false);
+    setPoError('');
+  };
+
+  const submitPurchaseOrder = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!poTarget) return;
+    setPoBusy(true);
+    setPoError('');
+    setPoSuccess('');
+    try {
+      const res = await adminRequest<{ purchaseOrder: ServiceRequest; product: Product }>('/purchase-orders', send('POST', {
+        productId: poTarget.id,
+        quantity: Number(poQty),
+        supplierName: poSupplier.trim(),
+        unitCost: poCost.trim() ? Number(poCost) : poTarget.price,
+        note: poNote.trim(),
+        receiveImmediately: poReceiveNow,
+      }));
+      setPoSuccess(
+        poReceiveNow
+          ? TP('تم إصدار {ref} وتحديث المخزون فوراً ✅', { ref: res.purchaseOrder.ref })
+          : TP('تم إصدار طلب الشراء {ref} بنجاح ✅', { ref: res.purchaseOrder.ref })
+      );
+      setPoTarget(null);
+      reload();
+    } catch (err) {
+      setPoError(err instanceof Error ? err.message : T('تعذّر الاتصال بالخادم.'));
+    } finally {
+      setPoBusy(false);
+    }
+  };
+
   return (
     <>
       <Header title={T('نظرة عامة')} subtitle={T('حالة المساعد والخدمات والطلبات')} actions={<button onClick={reload} className={`${btn} bg-white border border-stone-300`}><RefreshCw className="w-4 h-4" />{T('تحديث')}</button>} />
@@ -238,6 +314,144 @@ function OverviewPanel({ go }: { go: (t: Tab) => void }) {
               </button>
             ))}
           </div>
+
+          {/* Interactive Low-Stock Reorder Alert Panel */}
+          <section className={`rounded-2xl border p-4 shadow-sm ${lowItems.length ? 'border-amber-300 bg-gradient-to-br from-amber-50/70 via-white to-rose-50/40' : 'border-emerald-200 bg-emerald-50/40'}`}>
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-stone-200/70">
+              <div className="flex items-start gap-2.5">
+                <div className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${lowItems.length ? 'bg-amber-100 text-amber-800' : 'bg-emerald-100 text-emerald-700'}`}>
+                  {lowItems.length ? <TriangleAlert className="w-5 h-5" /> : <CheckCircle2 className="w-5 h-5" />}
+                </div>
+                <div>
+                  <h2 className="font-bold text-sm text-stone-900 flex items-center gap-2">
+                    {T('تنبيهات مخزون حد الطلب')}
+                    {lowItems.length > 0 && (
+                      <span className="rounded-md bg-rose-600 px-2 py-0.5 text-[11px] font-bold text-white">
+                        {lowItems.length}
+                      </span>
+                    )}
+                  </h2>
+                  <p className="text-xs text-stone-600 mt-0.5">
+                    {lowItems.length
+                      ? TP('منتجات وصل مخزونها إلى حد الطلب (≤ {level} وحدات) وتحتاج إعادة توريد', { level: lowItems[0]?.reorderLevel ?? 5 })
+                      : T('كل المنتجات النشطة فوق حد الطلب حالياً ✅')}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-1.5">
+                {lowItems.length > 0 && (
+                  <>
+                    {([
+                      ['all', TP('الكل ({n})', { n: lowItems.length })],
+                      ['zero', TP('نفد ({n})', { n: zeroItems.length })],
+                      ['critical', TP('حرج ({n})', { n: criticalItems.length })],
+                      ['reorder', TP('حد الطلب ({n})', { n: reorderItems.length })],
+                    ] as const).map(([key, label]) => (
+                      <button
+                        key={key}
+                        type="button"
+                        onClick={() => setStockFilter(key)}
+                        className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition cursor-pointer ${
+                          stockFilter === key
+                            ? 'bg-stone-900 text-amber-100'
+                            : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
+                        }`}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </>
+                )}
+                <button
+                  type="button"
+                  onClick={() => go('products')}
+                  className="rounded-lg border border-stone-300 bg-white px-2.5 py-1 text-xs font-semibold text-stone-700 hover:border-amber-500 cursor-pointer"
+                >
+                  {T('مراجعة الكتالوج')}
+                </button>
+              </div>
+            </div>
+
+            {poSuccess && (
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-xs text-emerald-900">
+                <span className="font-semibold">{poSuccess}</span>
+                <button
+                  type="button"
+                  onClick={() => go('requests')}
+                  className="font-bold underline hover:text-emerald-700 cursor-pointer"
+                >
+                  {T('عرض في الطلبات')}
+                </button>
+              </div>
+            )}
+
+            {lowItems.length > 0 && (
+              <div className="mt-3 grid gap-2.5 md:grid-cols-2">
+                {filteredLowItems.map((item) => {
+                  const isZero = item.stock === 0;
+                  const isCritical = item.stock > 0 && item.stock <= 2;
+                  const badgeCls = isZero
+                    ? 'bg-rose-100 text-rose-800 border-rose-200'
+                    : isCritical
+                      ? 'bg-orange-100 text-orange-800 border-orange-200'
+                      : 'bg-amber-100 text-amber-900 border-amber-200';
+                  const severityLabel = isZero ? T('نفد المخزون') : isCritical ? T('مخزون حرج') : T('وصل لحد الطلب');
+                  const ratio = Math.min(100, Math.round((item.stock / Math.max(1, item.reorderLevel)) * 100));
+
+                  return (
+                    <div key={item.id} className="flex flex-col justify-between gap-2.5 rounded-xl border border-stone-200 bg-white p-3 shadow-xs">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="min-w-0">
+                          <div className="flex flex-wrap items-center gap-1.5">
+                            <span className={`rounded-md border px-2 py-0.5 text-[10px] font-bold ${badgeCls}`}>
+                              {severityLabel}
+                            </span>
+                            <span className="font-mono text-[11px] text-stone-400" dir="ltr">{item.sku}</span>
+                            {item.openPoCount > 0 && (
+                              <span className="rounded-md bg-sky-100 px-2 py-0.5 text-[10px] font-bold text-sky-800">
+                                {TP('طلب شراء مفتوح ({n})', { n: item.openPoCount })}
+                              </span>
+                            )}
+                          </div>
+                          <p className="mt-1 truncate text-sm font-bold text-stone-900">
+                            {item.nameAr || item.nameEn}
+                          </p>
+                        </div>
+
+                        <div className="text-end shrink-0">
+                          <p className={`text-xs font-bold ${isZero ? 'text-rose-700' : isCritical ? 'text-orange-700' : 'text-amber-800'}`}>
+                            {TP('المتاح: {stock} {unit}', { stock: item.stock, unit: item.unit })}
+                          </p>
+                          <p className="text-[11px] text-stone-400">
+                            {item.price.toLocaleString(adminLocale())} {item.currency}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3">
+                        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-stone-100">
+                          <div
+                            className={`h-full rounded-full ${isZero ? 'bg-rose-600' : isCritical ? 'bg-orange-500' : 'bg-amber-500'}`}
+                            style={{ width: `${Math.max(4, ratio)}%` }}
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => openPoModal(item)}
+                          className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-stone-900 px-3 py-1.5 text-xs font-bold text-amber-100 hover:bg-stone-800 cursor-pointer transition"
+                        >
+                          <Plus className="w-3.5 h-3.5 text-amber-400" />
+                          {T('إضافة طلب شراء')}
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+
           <div className="grid md:grid-cols-3 gap-3">
             <div className={card}><h2 className="font-bold text-sm mb-3 flex items-center gap-1.5"><Activity className="w-4 h-4" />{T('نوايا الزوار')}</h2><Bars data={data.intents} labels={INTENT} /></div>
             <div className={card}><h2 className="font-bold text-sm mb-3">{T('الطلبات حسب الحالة')}</h2><Bars data={data.byStatus} labels={STATUS} /></div>
@@ -262,6 +476,118 @@ function OverviewPanel({ go }: { go: (t: Tab) => void }) {
               {data.notifications?.configured && <NotifyTest />}
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Quick Purchase Order Modal */}
+      {poTarget && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-xs">
+          <form onSubmit={submitPurchaseOrder} className="w-full max-w-md rounded-2xl border border-stone-200 bg-white p-5 shadow-2xl space-y-3.5">
+            <div className="flex items-center justify-between border-b border-stone-100 pb-3">
+              <div>
+                <h3 className="font-bold text-base text-stone-900">{T('طلب شراء سريع')}</h3>
+                <p className="text-xs text-stone-500 mt-0.5">{poTarget.nameAr || poTarget.nameEn} · <span dir="ltr">{poTarget.sku}</span></p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setPoTarget(null)}
+                className="rounded-lg p-1.5 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="rounded-xl bg-amber-50/70 border border-amber-200 px-3 py-2 flex items-center justify-between text-xs">
+              <span className="font-semibold text-stone-700">{T('المنتج المحدد')}</span>
+              <span className="font-bold text-amber-900">{TP('المتاح: {stock} {unit}', { stock: poTarget.stock, unit: poTarget.unit })}</span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <label className="block text-xs font-semibold text-stone-700">
+                {T('الكمية المطلوب توريدها')}
+                <input
+                  type="number"
+                  min={1}
+                  max={10000}
+                  required
+                  className={`${input} mt-1`}
+                  value={poQty}
+                  onChange={(e) => setPoQty(Math.max(1, Number(e.target.value) || 1))}
+                />
+              </label>
+
+              <label className="block text-xs font-semibold text-stone-700">
+                {TP('تكلفة الوحدة التقديرية ({currency})', { currency: poTarget.currency })}
+                <input
+                  type="number"
+                  min={0}
+                  step="0.01"
+                  className={`${input} mt-1`}
+                  value={poCost}
+                  onChange={(e) => setPoCost(e.target.value)}
+                />
+              </label>
+            </div>
+
+            <label className="block text-xs font-semibold text-stone-700">
+              {T('اسم المورد / المصنع')}
+              <input
+                type="text"
+                required
+                className={`${input} mt-1`}
+                value={poSupplier}
+                onChange={(e) => setPoSupplier(e.target.value)}
+              />
+            </label>
+
+            <label className="block text-xs font-semibold text-stone-700">
+              {T('ملاحظات طلب الشراء')}
+              <textarea
+                rows={2}
+                className={`${input} mt-1`}
+                value={poNote}
+                onChange={(e) => setPoNote(e.target.value)}
+                placeholder={T('توريد عاجل لتفادي نفاد المخزون…')}
+              />
+            </label>
+
+            <label className="flex items-center gap-2 rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 text-xs font-medium text-stone-800 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={poReceiveNow}
+                onChange={(e) => setPoReceiveNow(e.target.checked)}
+                className="h-4 w-4 rounded text-amber-600 focus:ring-amber-500"
+              />
+              <span>{T('إضافة الكمية للمخزون فوراً (استلام مباشر)')}</span>
+            </label>
+
+            <div className="flex items-center justify-between rounded-xl bg-stone-900 px-3.5 py-2.5 text-xs text-stone-100">
+              <span>{T('الإجمالي التقديري:')}</span>
+              <span className="font-bold text-amber-300">
+                {((Number(poCost) || 0) * (Number(poQty) || 0)).toLocaleString(adminLocale())} {poTarget.currency}
+              </span>
+            </div>
+
+            {poError && <p role="alert" className="text-xs text-red-700">{poError}</p>}
+
+            <div className="flex gap-2 pt-1">
+              <button
+                type="submit"
+                disabled={poBusy}
+                className={`${btn} flex-1 bg-amber-600 text-white hover:bg-amber-700 cursor-pointer`}
+              >
+                {poBusy ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+                {T('تأكيد وإصدار طلب الشراء')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setPoTarget(null)}
+                className={`${btn} border border-stone-300 bg-white text-stone-700 hover:bg-stone-50 cursor-pointer`}
+              >
+                {T('إلغاء')}
+              </button>
+            </div>
+          </form>
         </div>
       )}
     </>

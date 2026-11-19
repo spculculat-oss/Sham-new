@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronUp,
+  Code2,
   ExternalLink,
   Globe,
   ImagePlus,
@@ -14,6 +15,7 @@ import {
   Sliders,
   Sparkles,
   Square,
+  Swords,
   Wrench,
   X,
   Zap,
@@ -23,6 +25,7 @@ import type {
   AgentAction,
   AgentAttachmentInput,
   AgentGroundingSource,
+  AgentMode,
   AgentReasoningDepth,
   AgentStep,
   ChatAttachmentPreview,
@@ -45,6 +48,9 @@ const T: Record<string, LText> = {
   },
   agent_on: { ar: 'مُفعّل', en: 'Active', fr: 'Actif', es: 'Activo', it: 'Attivo', de: 'Aktiv', ru: 'Активен', zh: '已开启', tr: 'Aktif', fa: 'فعال' },
   agent_off: { ar: 'قياسي', en: 'Classic', fr: 'Classique', es: 'Clásico', it: 'Classico', de: 'Klassisch', ru: 'Обычный', zh: '标准模式', tr: 'Klasik', fa: 'معمولی' },
+  mode_agent: { ar: 'وكيل ذكي', en: 'Agent', fa: 'عامل هوشمند' },
+  mode_arena: { ar: 'حلبة التنافس', en: 'Arena Duel', fa: 'میدان رقابت' },
+  mode_architect: { ar: 'استوديو البرمجة', en: 'Code Studio', fa: 'استودیو کد' },
   depth_std: { ar: 'سريع', en: 'Balanced', fr: 'Équilibré', es: 'Equilibrado', it: 'Bilanciato', de: 'Ausgewogen', ru: 'Баланс', zh: '均衡', tr: 'Dengeli', fa: 'متعادل' },
   depth_deep: { ar: 'عميق', en: 'Deep', fr: 'Approfondi', es: 'Profundo', it: 'Profondo', de: 'Tief', ru: 'Глубокий', zh: '深度', tr: 'Derin', fa: 'عمیق' },
   depth_max: { ar: 'أقصى تفكير', en: 'Max Think', fr: 'Max réflexion', es: 'Máx. análisis', it: 'Max analisi', de: 'Max Denken', ru: 'Макс. анализ', zh: '极限推理', tr: 'Maks. Düşünce', fa: 'حداکثر تفکر' },
@@ -116,6 +122,8 @@ export function ShaheenAgentConfigBar({
   language,
   agentEnabled,
   setAgentEnabled,
+  agentMode = 'agent',
+  setAgentMode,
   reasoningDepth,
   setReasoningDepth,
   autoWebSearch,
@@ -127,6 +135,8 @@ export function ShaheenAgentConfigBar({
   language: SupportedLanguage;
   agentEnabled: boolean;
   setAgentEnabled: (v: boolean) => void;
+  agentMode?: AgentMode;
+  setAgentMode?: (v: AgentMode) => void;
   reasoningDepth: AgentReasoningDepth;
   setReasoningDepth: (v: AgentReasoningDepth) => void;
   autoWebSearch: boolean;
@@ -155,6 +165,33 @@ export function ShaheenAgentConfigBar({
             {loc(language, agentEnabled ? T.agent_on : T.agent_off)}
           </span>
         </button>
+
+        {agentEnabled && setAgentMode && (
+          <div className="flex items-center gap-1 bg-stone-950/80 p-0.5 rounded-lg border border-stone-800">
+            {(
+              [
+                ['agent', T.mode_agent, Bot],
+                ['arena', T.mode_arena, Swords],
+                ['architect', T.mode_architect, Code2],
+              ] as const
+            ).map(([id, label, Icon]) => (
+              <button
+                key={id}
+                type="button"
+                disabled={disabled}
+                onClick={() => setAgentMode(id)}
+                className={`px-2 py-0.5 rounded-md text-[10px] font-semibold transition-all flex items-center gap-1 cursor-pointer ${
+                  agentMode === id
+                    ? 'bg-amber-400 text-stone-950 font-bold'
+                    : 'text-stone-400 hover:text-stone-200'
+                }`}
+              >
+                <Icon className="w-3 h-3" />
+                <span>{loc(language, label)}</span>
+              </button>
+            ))}
+          </div>
+        )}
 
         {agentEnabled && (
           <div className="flex items-center gap-1 bg-stone-950/70 p-0.5 rounded-lg border border-stone-800">
@@ -290,6 +327,10 @@ export function ShaheenAgentTimeline({
                       <Brain className="w-3.5 h-3.5 text-purple-600" />
                     ) : step.kind === 'action' ? (
                       <Zap className="w-3.5 h-3.5 text-emerald-600" />
+                    ) : step.kind === 'arena' ? (
+                      <Swords className="w-3.5 h-3.5 text-amber-800" />
+                    ) : step.kind === 'code' ? (
+                      <Code2 className="w-3.5 h-3.5 text-stone-800" />
                     ) : (
                       <Wrench className="w-3.5 h-3.5 text-amber-700" />
                     )}

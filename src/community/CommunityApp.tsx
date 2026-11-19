@@ -1,11 +1,7 @@
 /**
- * «مجتمع شام» — Facebook-style community hub for fragrance artisans, master perfumers, and enthusiasts.
- * Features:
- * - Facebook-style top header with global search, central nav icons, notifications and messenger badges
- * - Public fragrance discussions salon (مجلس النقاش العام)
- * - Prestige Facebook-style user profile pages (صفحات المستخدمين)
- * - Full Messenger and floating docked instant chat (الماسنجر والدك العائم)
- * - Seamless friend networking, reactions, and formula sharing
+ * «مجتمع شام» — Luxury atelier social community hub for fragrance artisans, master perfumers, and enthusiasts.
+ * Surpasses traditional social networks with integrated Olfactory AI Intelligence across search, composition,
+ * post analysis, smart replies, salon synthesis, and artisan matchmaking.
  */
 import { useCallback, useEffect, useState } from 'react';
 import {
@@ -16,14 +12,15 @@ import {
   Store,
   User,
   Users,
-  Wrench,
   Search,
-  MessageSquare,
   Sparkles,
-  FlaskConical,
   Coffee,
-  Plus,
   Radio,
+  FlaskConical,
+  Loader2,
+  X,
+  ArrowUpRight,
+  Compass,
 } from 'lucide-react';
 import HubAuth from './HubAuth';
 import MerchantPortal from './MerchantPortal';
@@ -36,8 +33,14 @@ import { StoreDirectory, StorePage } from './Stores';
 import { GeneralNewsPeriodic } from './GeneralNewsPeriodic';
 import UserPortal from './UserPortal';
 import { signIn, signOut, useSession } from './session';
-import { Avatar, Badge, Btn, Card, Empty, Spinner, Toast, tx, type Lang } from './ui';
-import { cx, type PublicUser } from './api';
+import { Avatar, Btn, Card, Empty, Sheet, Spinner, Toast, tx, type Lang } from './ui';
+import {
+  cx,
+  type AiComposeResult,
+  type AiMatchmakingResult,
+  type AiSearchResult,
+  type PublicUser,
+} from './api';
 
 export default function CommunityApp({
   lang: siteLang,
@@ -55,14 +58,17 @@ export default function CommunityApp({
   const session = useSession();
   const [toast, setToast] = useState('');
 
-  // Global search state in top Facebook bar
+  // AI Smart Omnibar search state
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<PublicUser[] | null>(null);
+  const [searchResults, setSearchResults] = useState<AiSearchResult | null>(null);
   const [isSearching, setIsSearching] = useState(false);
 
   // Floating Messenger Dock state
   const [dockChatId, setDockChatId] = useState<string | null>(null);
   const [dockRecipient, setDockRecipient] = useState<PublicUser | null>(null);
+
+  // Community AI Concierge Sheet
+  const [showAiConcierge, setShowAiConcierge] = useState(false);
 
   const go = useCallback(
     (r: string) => {
@@ -80,29 +86,29 @@ export default function CommunityApp({
     if (member) onSignedIn?.();
   }, [member, onSignedIn]);
 
-  // Handle global search in Facebook bar
+  // Smart Omnibar Search (people + posts + recipes + AI synthesis)
   useEffect(() => {
-    if (searchQuery.trim().length < 2) {
+    const q = searchQuery.trim();
+    if (q.length < 2) {
       setSearchResults(null);
       setIsSearching(false);
       return;
     }
     setIsSearching(true);
     const timer = setTimeout(() => {
-      cx<PublicUser[]>(`/community/people?q=${encodeURIComponent(searchQuery.trim())}`)
+      cx<AiSearchResult>('/community/ai/search', { body: { query: q, lang } })
         .then((res) => {
-          setSearchResults(res || []);
+          setSearchResults(res || null);
           setIsSearching(false);
         })
         .catch(() => {
-          setSearchResults([]);
+          setSearchResults(null);
           setIsSearching(false);
         });
-    }, 250);
+    }, 280);
     return () => clearTimeout(timer);
-  }, [searchQuery]);
+  }, [searchQuery, lang]);
 
-  // Open docked instant chat with any user
   const openDockChat = async (userId: string) => {
     if (!member) {
       setToast(t('سجّل دخولك لتتمكن من استخدام الماسنجر والمراسلة', 'Please sign in to use Messenger'));
@@ -113,10 +119,9 @@ export default function CommunityApp({
       const res = await cx<{ id: string }>(`/community/chats/direct`, {
         body: { userId },
       });
-      // Look up user details
-      const targetUser = await cx<{ user: PublicUser }>(`/community/people?q=${userId}`).catch(() => null);
+      const matches = await cx<PublicUser[]>(`/community/people?q=${encodeURIComponent(userId)}`).catch(() => []);
       setDockChatId(res.id);
-      setDockRecipient(targetUser ? targetUser.user : null);
+      setDockRecipient(Array.isArray(matches) && matches[0] ? matches[0] : null);
     } catch {
       go('messenger');
     }
@@ -124,34 +129,29 @@ export default function CommunityApp({
 
   const pulse = session.pulse;
 
-  // Central Facebook-style navigation tabs
   const tabs = [
-    { id: 'social', label: t('الموجز', 'Feed'), icon: <Home className="h-5 w-5" /> },
+    { id: 'social', label: t('الموجز', 'Feed'), icon: <Home className="h-[18px] w-[18px]" /> },
     {
       id: 'general-news',
-      label: t('أخبار العامة', 'General News'),
-      icon: <Radio className="h-5 w-5 text-rose-600 animate-pulse" />,
-      badge: t('دورية', 'Live'),
+      label: t('الأخبار', 'News'),
+      icon: <Radio className="h-[18px] w-[18px] text-rose-600" />,
+      dot: true,
     },
-    {
-      id: 'discussions',
-      label: t('مجلس النقاش العام', 'Salon'),
-      icon: <Coffee className="h-5 w-5" />,
-    },
+    { id: 'discussions', label: t('الصالون', 'Salon'), icon: <Coffee className="h-[18px] w-[18px]" /> },
     {
       id: 'messenger',
       label: t('الماسنجر', 'Messenger'),
-      icon: <MessageCircle className="h-5 w-5" />,
+      icon: <MessageCircle className="h-[18px] w-[18px]" />,
       badge: pulse?.messages,
     },
     {
       id: 'friends',
       label: t('الأصدقاء', 'Friends'),
-      icon: <Users className="h-5 w-5" />,
+      icon: <Users className="h-[18px] w-[18px]" />,
       badge: pulse?.requests,
     },
-    { id: 'stores', label: t('متاجر شام', 'Stores'), icon: <Store className="h-5 w-5" /> },
-    { id: 'me', label: t('بوابتي', 'My Portal'), icon: <User className="h-5 w-5" /> },
+    { id: 'stores', label: t('المتاجر', 'Stores'), icon: <Store className="h-[18px] w-[18px]" /> },
+    { id: 'me', label: t('بوابتي', 'Portal'), icon: <User className="h-[18px] w-[18px]" /> },
   ];
 
   const active =
@@ -169,12 +169,11 @@ export default function CommunityApp({
       ? 'stores'
       : page;
 
-  // 1-Click Quick Demo Login for testing
   const handleQuickDemoLogin = async () => {
     try {
-      setToast(t('جاري تسجيل الدخول بحساب الكابتن أحمد شاهين…', 'Signing in as Ahmed Shaheen…'));
+      setToast(t('جاري تسجيل الدخول بحساب أحمد شاهين…', 'Signing in as Ahmed Shaheen…'));
       await signIn('ahmed@dar-sham.perfume', 'Sham123456');
-      setToast(t('أهلاً بك! تم تسجيل الدخول كصانع عطور في مجتمع شام 🎉', 'Welcome to Sham Community! 🎉'));
+      setToast(t('أهلاً بك في مجتمع دار شام العطري ✨', 'Welcome to Sham Atelier Community ✨'));
       go('');
     } catch {
       setToast(t('يرجى استخدام نموذج تسجيل الدخول', 'Please use the login form'));
@@ -236,77 +235,157 @@ export default function CommunityApp({
   }
 
   return (
-    <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="min-h-[85vh] bg-stone-100/70 pb-16">
-      {/* Facebook-style Top Navigation Header */}
-      <header className="sticky top-0 z-40 border-b border-stone-200 bg-white/95 backdrop-blur-md shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-2 sm:px-4">
-          {/* Left: Brand & Search */}
+    <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="min-h-[85vh] bg-[#FBF9F5] pb-16">
+      {/* Atelier Top Command Header */}
+      <header className="sticky top-0 z-40 border-b border-stone-200/90 bg-white/95 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-2 sm:px-5">
+          {/* Zone 1: Brand + Smart Omnibar */}
           <div className="flex items-center gap-3 shrink-0">
             <button
               type="button"
               onClick={() => go('')}
-              className="flex items-center gap-2 font-black text-stone-900 cursor-pointer"
+              className="flex items-center gap-2.5 text-stone-900 cursor-pointer shrink-0"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-600 to-amber-900 text-white shadow-sm shadow-amber-900/20">
-                <Users className="h-5 w-5" />
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-900 text-amber-300 shadow-xs">
+                <FlaskConical className="h-4.5 w-4.5" />
               </span>
-              <div className="hidden sm:block text-start leading-tight">
-                <span className="block text-sm font-black text-stone-900">
-                  {t('مجتمع دار شام', 'Sham Community')}
-                </span>
-                <span className="block text-[10px] font-semibold text-amber-800">
-                  {t('ملتقى صناع العطور', 'Perfumers Social Hub')}
-                </span>
-              </div>
+              <span className="hidden sm:block text-sm font-black tracking-tight text-stone-900 whitespace-nowrap">
+                {t('مجتمع دار شام', 'Sham Community')}
+              </span>
             </button>
 
-            {/* Global Search Bar */}
-            <div className="relative hidden md:block w-56 lg:w-72">
-              <Search className="absolute inset-y-0 start-3 my-auto h-4 w-4 text-stone-400" />
+            {/* AI Smart Omnibar Search */}
+            <div className="relative hidden md:block w-60 lg:w-80">
+              <Search className="pointer-events-none absolute inset-y-0 start-3 my-auto h-4 w-4 text-stone-400" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={t('بحث عن صانع عطور أو موضوع…', 'Search community…')}
-                className="w-full rounded-full border border-stone-200 bg-stone-100/80 py-2 ps-9 pe-4 text-xs text-stone-900 outline-none transition focus:border-amber-500 focus:bg-white focus:ring-2 focus:ring-amber-200"
+                placeholder={t('ابحث في العطور، التركيبات، أو اسأل الذكاء…', 'Search community or ask AI…')}
+                className="w-full rounded-xl border border-stone-200 bg-stone-50/90 py-2 ps-9 pe-8 text-xs text-stone-900 outline-none transition focus:border-amber-600 focus:bg-white focus:ring-2 focus:ring-amber-200"
               />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSearchResults(null);
+                  }}
+                  className="absolute inset-y-0 end-2.5 my-auto text-stone-400 hover:text-stone-700 cursor-pointer"
+                >
+                  {isSearching ? <Loader2 className="h-3.5 w-3.5 animate-spin text-amber-700" /> : <X className="h-3.5 w-3.5" />}
+                </button>
+              )}
 
-              {/* Search Autocomplete Dropdown */}
-              {searchResults && (
-                <div className="absolute top-full start-0 z-50 mt-1.5 w-80 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-2xl">
-                  <div className="p-2 space-y-1">
-                    {!searchResults.length ? (
-                      <p className="p-3 text-center text-xs text-stone-500">
-                        {t('لا توجد نتائج مطابقة', 'No perfumers found')}
-                      </p>
-                    ) : (
-                      searchResults.map((u) => (
-                        <button
-                          key={u.id}
-                          type="button"
-                          onClick={() => {
-                            go(`u/${u.handle}`);
-                            setSearchQuery('');
-                            setSearchResults(null);
-                          }}
-                          className="flex w-full items-center gap-2.5 rounded-xl p-2 text-start hover:bg-stone-50 cursor-pointer"
-                        >
-                          <Avatar user={u} size={34} />
-                          <div className="min-w-0 flex-1">
-                            <p className="truncate text-xs font-bold text-stone-900">{u.name}</p>
-                            <p className="truncate text-[10px] text-stone-400">@{u.handle}</p>
+              {/* Omnibar Dropdown with AI Synthesis */}
+              {searchQuery.trim().length >= 2 && (isSearching || searchResults) && (
+                <div className="absolute top-full start-0 z-50 mt-1.5 w-[360px] max-w-[92vw] overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-2xl">
+                  {isSearching && !searchResults ? (
+                    <div className="flex items-center justify-center gap-2 p-5 text-xs text-stone-500">
+                      <Loader2 className="h-4 w-4 animate-spin text-amber-700" />
+                      <span>{t('جاري البحث والتحليل الذكي…', 'Searching community knowledge…')}</span>
+                    </div>
+                  ) : searchResults ? (
+                    <div className="max-h-[420px] overflow-y-auto divide-y divide-stone-100">
+                      {searchResults.answer && (
+                        <div className="bg-amber-50/60 p-3 space-y-1">
+                          <div className="flex items-center gap-1.5 text-[11px] font-black text-amber-900">
+                            <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+                            <span>{t('خلاصة شاهين الذكية', 'Sham Smart Summary')}</span>
                           </div>
-                        </button>
-                      ))
-                    )}
-                  </div>
+                          <p className="text-xs leading-relaxed text-stone-800">{searchResults.answer}</p>
+                        </div>
+                      )}
+
+                      {searchResults.people.length > 0 && (
+                        <div className="p-2">
+                          <p className="px-2 py-1 text-[10px] font-bold text-stone-400">
+                            {t('صناع العطور والأعضاء', 'Artisans')}
+                          </p>
+                          {searchResults.people.map((u) => (
+                            <button
+                              key={u.id}
+                              type="button"
+                              onClick={() => {
+                                go(`u/${u.handle}`);
+                                setSearchQuery('');
+                                setSearchResults(null);
+                              }}
+                              className="flex w-full items-center gap-2.5 rounded-xl p-2 text-start hover:bg-stone-50 cursor-pointer"
+                            >
+                              <Avatar user={u} size={32} />
+                              <span className="min-w-0 flex-1">
+                                <span className="block truncate text-xs font-bold text-stone-900">{u.name}</span>
+                                <span className="block truncate text-[10px] text-stone-400">@{u.handle}</span>
+                              </span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      {searchResults.recipes.length > 0 && (
+                        <div className="p-2">
+                          <p className="px-2 py-1 text-[10px] font-bold text-stone-400">
+                            {t('تركيبات المعمل', 'Shared Formulas')}
+                          </p>
+                          {searchResults.recipes.map((r) => (
+                            <button
+                              key={r.id}
+                              type="button"
+                              onClick={() => {
+                                go(`u/${r.ownerHandle}`);
+                                setSearchQuery('');
+                                setSearchResults(null);
+                              }}
+                              className="flex w-full items-center justify-between gap-2 rounded-xl p-2 text-start hover:bg-stone-50 cursor-pointer"
+                            >
+                              <span className="flex items-center gap-2 min-w-0">
+                                <FlaskConical className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                                <span className="truncate text-xs font-semibold text-stone-800">{r.title}</span>
+                              </span>
+                              <span className="text-[10px] text-stone-400 shrink-0">{r.ownerName.split(' ')[0]}</span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      {searchResults.posts.length > 0 && (
+                        <div className="p-2">
+                          <p className="px-2 py-1 text-[10px] font-bold text-stone-400">
+                            {t('تدوينات ذات صلة', 'Related Posts')}
+                          </p>
+                          {searchResults.posts.slice(0, 3).map((p) => (
+                            <button
+                              key={p.id}
+                              type="button"
+                              onClick={() => {
+                                go(`u/${p.author.handle}`);
+                                setSearchQuery('');
+                                setSearchResults(null);
+                              }}
+                              className="block w-full rounded-xl p-2 text-start hover:bg-stone-50 cursor-pointer"
+                            >
+                              <p className="text-[11px] font-bold text-stone-900">{p.author.name}</p>
+                              <p className="line-clamp-2 text-[11px] text-stone-600">{p.body}</p>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      {!searchResults.people.length && !searchResults.recipes.length && !searchResults.posts.length && (
+                        <div className="p-3 text-center text-xs text-stone-500">
+                          {t('لم نعثر على منشورات مطابقة مباشرة، جرّب المساعد الذكي.', 'No direct matches — try the AI Concierge.')}
+                        </div>
+                      )}
+                    </div>
+                  ) : null}
                 </div>
               )}
             </div>
           </div>
 
-          {/* Center: Facebook-style Primary Navigation Icons */}
-          <div className="flex items-center gap-1 sm:gap-2">
+          {/* Zone 2: Clean Single-Line Nav Tabs */}
+          <nav className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto no-scrollbar">
             {tabs.map((tab) => {
               const isActive = active === tab.id;
               return (
@@ -315,47 +394,58 @@ export default function CommunityApp({
                   type="button"
                   title={tab.label}
                   onClick={() => go(tab.id === 'social' ? '' : tab.id)}
-                  className={`relative flex h-11 items-center justify-center rounded-xl px-3 transition cursor-pointer sm:px-5 ${
+                  className={`relative flex h-10 items-center justify-center gap-1.5 rounded-xl px-2.5 text-xs font-bold transition cursor-pointer whitespace-nowrap shrink-0 sm:px-3.5 ${
                     isActive
-                      ? 'border-b-2 border-amber-600 text-amber-900 bg-amber-50/60'
-                      : 'text-stone-500 hover:bg-stone-100 hover:text-stone-900'
+                      ? 'bg-stone-900 text-white shadow-xs'
+                      : 'text-stone-600 hover:bg-stone-100 hover:text-stone-900'
                   }`}
                 >
                   {tab.icon}
+                  <span className="hidden lg:inline">{tab.label}</span>
                   {Boolean(tab.badge) && (
-                    <span className="absolute top-1.5 end-1.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-rose-600 px-1 text-[9px] font-bold text-white shadow">
+                    <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-rose-600 px-1 text-[9px] font-bold text-white">
                       {tab.badge}
                     </span>
                   )}
                 </button>
               );
             })}
-          </div>
+          </nav>
 
-          {/* Right: User Profile, Notifications, Quick Actions */}
-          <div className="flex items-center gap-1.5 shrink-0 sm:gap-2">
+          {/* Zone 3: AI Copilot, Notifications, Profile */}
+          <div className="flex items-center gap-1.5 shrink-0">
+            <button
+              type="button"
+              onClick={() => setShowAiConcierge(true)}
+              className="inline-flex items-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 px-2.5 py-1.5 text-xs font-bold text-amber-950 hover:bg-amber-100 transition cursor-pointer whitespace-nowrap shrink-0"
+              title={t('مساعد شاهين الذكي للمجتمع', 'Sham AI Community Assistant')}
+            >
+              <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+              <span className="hidden sm:inline">{t('ذكاء المجتمع', 'Community AI')}</span>
+            </button>
+
             {member ? (
               <>
                 <button
                   type="button"
                   onClick={() => go('notifications')}
                   title={t('الإشعارات', 'Notifications')}
-                  className="relative rounded-full p-2 text-stone-600 hover:bg-stone-100 cursor-pointer"
+                  className="relative rounded-xl p-2 text-stone-600 hover:bg-stone-100 cursor-pointer"
                 >
-                  <Bell className="h-5 w-5" />
+                  <Bell className="h-4.5 w-4.5" />
                   {Boolean((pulse?.notifications || 0) + (pulse?.requests || 0)) && (
-                    <span className="absolute top-1 end-1 h-2.5 w-2.5 rounded-full bg-rose-600 ring-2 ring-white" />
+                    <span className="absolute top-1.5 end-1.5 h-2 w-2 rounded-full bg-rose-600 ring-2 ring-white" />
                   )}
                 </button>
 
                 <button
                   type="button"
                   onClick={() => go(`u/${member.handle}`)}
-                  className="flex items-center gap-2 rounded-full p-1 pe-2 hover:bg-stone-100 cursor-pointer"
+                  className="flex items-center gap-2 rounded-xl p-1 pe-2 hover:bg-stone-100 cursor-pointer"
                   title={member.name}
                 >
-                  <Avatar user={member} size={34} ring />
-                  <span className="hidden lg:inline text-xs font-bold text-stone-800">
+                  <Avatar user={member} size={32} ring />
+                  <span className="hidden xl:inline text-xs font-bold text-stone-800 whitespace-nowrap">
                     {member.name.split(' ')[0]}
                   </span>
                 </button>
@@ -364,7 +454,7 @@ export default function CommunityApp({
                   type="button"
                   title={t('تسجيل الخروج', 'Sign out')}
                   onClick={() => void signOut().then(() => go(''))}
-                  className="rounded-full p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
+                  className="rounded-xl p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
                 >
                   <LogOut className="h-4 w-4" />
                 </button>
@@ -374,14 +464,12 @@ export default function CommunityApp({
                 <button
                   type="button"
                   onClick={handleQuickDemoLogin}
-                  className="hidden sm:inline-flex items-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-900 hover:bg-amber-100 transition cursor-pointer shadow-sm"
-                  title={t('دخول سريع بحساب تجريبي كصانع عطور', 'Quick Demo Perfumer Login')}
+                  className="hidden sm:inline-flex items-center gap-1 rounded-xl border border-stone-200 bg-white px-2.5 py-1.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer whitespace-nowrap"
                 >
-                  <Sparkles className="h-3.5 w-3.5 text-amber-700" />
-                  <span>{t('تجربة بحساب صانع عطور', 'Demo Perfumer')}</span>
+                  <span>{t('دخول تجريبي', 'Demo')}</span>
                 </button>
                 <Btn small onClick={() => go('login')}>
-                  {t('تسجيل الدخول', 'Sign in')}
+                  {t('دخول', 'Sign in')}
                 </Btn>
               </div>
             )}
@@ -390,9 +478,9 @@ export default function CommunityApp({
       </header>
 
       {/* Main Container */}
-      <main className="mx-auto max-w-7xl px-2 py-4 sm:px-4">{body}</main>
+      <main className="mx-auto max-w-7xl px-2.5 py-4 sm:px-5">{body}</main>
 
-      {/* Floating Messenger Docked Chatbox (Facebook Chat Heads) */}
+      {/* Floating Messenger Dock */}
       {dockChatId && (
         <FloatingMessengerDock
           lang={lang}
@@ -410,8 +498,260 @@ export default function CommunityApp({
         />
       )}
 
+      {/* Community AI Concierge Sheet */}
+      {showAiConcierge && (
+        <CommunityAiConcierge
+          lang={lang}
+          onClose={() => setShowAiConcierge(false)}
+          onOpenProfile={(handle) => {
+            setShowAiConcierge(false);
+            go(`u/${handle}`);
+          }}
+          onOpenMessenger={(userId) => {
+            setShowAiConcierge(false);
+            void openDockChat(userId);
+          }}
+          onUseDraft={(text) => {
+            try {
+              localStorage.setItem('sham_composer_prefill', JSON.stringify({ content: text, tag: 'ai' }));
+              window.dispatchEvent(new Event('sham-composer-prefill'));
+            } catch {}
+            setShowAiConcierge(false);
+            go('');
+            setToast(t('تم إرسال المسودة إلى مربع النشر بنجاح ✨', 'Draft sent to your post composer ✨'));
+          }}
+        />
+      )}
+
       {toast && <Toast text={toast} onDone={() => setToast('')} />}
     </div>
+  );
+}
+
+/* ------------------------------------------- AI Concierge Modal ------------------------------------------- */
+
+function CommunityAiConcierge({
+  lang,
+  onClose,
+  onOpenProfile,
+  onOpenMessenger,
+  onUseDraft,
+}: {
+  lang: Lang;
+  onClose: () => void;
+  onOpenProfile: (handle: string) => void;
+  onOpenMessenger: (userId: string) => void;
+  onUseDraft: (text: string) => void;
+}) {
+  const t = tx(lang);
+  const [tab, setTab] = useState<'ask' | 'draft' | 'match'>('ask');
+
+  // Ask State
+  const [q, setQ] = useState('');
+  const [askLoading, setAskLoading] = useState(false);
+  const [askRes, setAskRes] = useState<AiSearchResult | null>(null);
+
+  // Draft State
+  const [topic, setTopic] = useState('');
+  const [tone, setTone] = useState<'luxury' | 'scientific' | 'warm'>('luxury');
+  const [draftLoading, setDraftLoading] = useState(false);
+  const [draftRes, setDraftRes] = useState<AiComposeResult | null>(null);
+
+  // Match State
+  const [matches, setMatches] = useState<AiMatchmakingResult | null>(null);
+  const [matchLoading, setMatchLoading] = useState(false);
+
+  useEffect(() => {
+    if (tab === 'match' && !matches && !matchLoading) {
+      setMatchLoading(true);
+      cx<AiMatchmakingResult>(`/community/ai/matchmaking?lang=${lang}`)
+        .then(setMatches)
+        .catch(() => {})
+        .finally(() => setMatchLoading(false));
+    }
+  }, [tab, matches, matchLoading, lang]);
+
+  const runSearch = async () => {
+    if (q.trim().length < 2) return;
+    setAskLoading(true);
+    try {
+      setAskRes(await cx<AiSearchResult>('/community/ai/search', { body: { query: q.trim(), lang } }));
+    } finally {
+      setAskLoading(false);
+    }
+  };
+
+  const runDraft = async () => {
+    if (!topic.trim()) return;
+    setDraftLoading(true);
+    try {
+      setDraftRes(
+        await cx<AiComposeResult>('/community/ai/compose', {
+          body: { mode: 'draft', topic: topic.trim(), tone, lang },
+        })
+      );
+    } finally {
+      setDraftLoading(false);
+    }
+  };
+
+  return (
+    <Sheet title={t('✨ المساعد الذكي لمجتمع دار شام', 'Sham Community AI Concierge')} onClose={onClose} wide>
+      <div className="space-y-4">
+        {/* Segmented Control */}
+        <div className="flex items-center gap-1 rounded-xl bg-stone-100 p-1">
+          {[
+            { id: 'ask', label: t('🔍 استشارة والبحث في المجتمع', 'Ask & Search Community') },
+            { id: 'draft', label: t('✍️ صياغة منشور احترافي', 'Draft Post') },
+            { id: 'match', label: t('🤝 توافق صانعي العطور', 'Artisan Matchmaking') },
+          ].map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => setTab(item.id as 'ask' | 'draft' | 'match')}
+              className={`flex-1 rounded-lg px-3 py-2 text-xs font-bold transition cursor-pointer whitespace-nowrap ${
+                tab === item.id ? 'bg-white text-stone-900 shadow-xs' : 'text-stone-600 hover:text-stone-900'
+              }`}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+
+        {tab === 'ask' && (
+          <div className="space-y-3">
+            <p className="text-xs text-stone-600">
+              {t(
+                'اسأل عن التعتيق، النوتات، دهن العود، أو ابحث عن خبرات الأعضاء والتركيبات المنشورة.',
+                'Ask about maceration, fragrance notes, or synthesize member posts & recipes.'
+              )}
+            </p>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') void runSearch(); }}
+                placeholder={t('مثال: كيف أثبّت نوتات الحمضيات مع العود؟', 'e.g. Oud and saffron blend tips')}
+                className="flex-1 rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600 focus:bg-white"
+              />
+              <Btn small busy={askLoading} disabled={q.trim().length < 2} onClick={() => void runSearch()}>
+                <Sparkles className="h-3.5 w-3.5" />
+                {t('تحليل والبحث', 'Search')}
+              </Btn>
+            </div>
+            {askRes && (
+              <div className="space-y-3 rounded-2xl border border-stone-200 bg-stone-50/70 p-4">
+                <p className="text-xs leading-relaxed text-stone-900 font-medium">{askRes.answer}</p>
+                {askRes.posts.length > 0 && (
+                  <div className="space-y-1.5 pt-2 border-t border-stone-200/80">
+                    <span className="text-[11px] font-bold text-stone-500">
+                      {t('مشاركات الأعضاء المرتبطة:', 'Relevant Member Posts:')}
+                    </span>
+                    {askRes.posts.slice(0, 3).map((p) => (
+                      <button
+                        key={p.id}
+                        type="button"
+                        onClick={() => onOpenProfile(p.author.handle)}
+                        className="flex w-full items-center justify-between gap-2 rounded-xl bg-white p-2.5 text-start border border-stone-200 hover:border-amber-400 cursor-pointer"
+                      >
+                        <div className="min-w-0">
+                          <span className="block text-[11px] font-bold text-stone-900">{p.author.name}</span>
+                          <span className="block truncate text-[11px] text-stone-600">{p.body}</span>
+                        </div>
+                        <ArrowUpRight className="h-4 w-4 text-amber-700 shrink-0" />
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {tab === 'draft' && (
+          <div className="space-y-3">
+            <div className="grid gap-2 sm:grid-cols-[1fr_auto]">
+              <input
+                type="text"
+                value={topic}
+                onChange={(e) => setTopic(e.target.value)}
+                placeholder={t('ما موضوع منشورك أو تجربتك المعملية؟', 'What is your post or trial about?')}
+                className="rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600 focus:bg-white"
+              />
+              <select
+                value={tone}
+                onChange={(e) => setTone(e.target.value as 'luxury' | 'scientific' | 'warm')}
+                className="rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs font-semibold text-stone-800 outline-none"
+              >
+                <option value="luxury">{t('أسلوب دار عطور فاخرة', 'Atelier Editorial')}</option>
+                <option value="scientific">{t('أسلوب علمي مخبري', 'Lab Scientific')}</option>
+                <option value="warm">{t('حواري ودود للمجتمع', 'Warm Community')}</option>
+              </select>
+            </div>
+            <Btn small busy={draftLoading} disabled={!topic.trim()} onClick={() => void runDraft()}>
+              <Sparkles className="h-3.5 w-3.5" />
+              {t('إنشاء المسودة الآن', 'Generate Draft')}
+            </Btn>
+            {draftRes?.result && (
+              <div className="space-y-3 rounded-2xl border border-amber-200 bg-amber-50/40 p-4">
+                <p className="whitespace-pre-wrap text-xs leading-relaxed text-stone-900">{draftRes.result}</p>
+                <div className="flex justify-end">
+                  <Btn small onClick={() => onUseDraft(draftRes.result)}>
+                    {t('نقل إلى محرر المنشورات', 'Send to Composer')}
+                  </Btn>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {tab === 'match' && (
+          <div className="space-y-3">
+            {matchLoading ? (
+              <Spinner />
+            ) : !matches?.matches.length ? (
+              <Empty
+                icon={<Compass className="h-9 w-9 text-stone-400" />}
+                title={t('جميع الصانعين المتاحين في شبكتك بالفعل', 'You are connected with available makers')}
+              />
+            ) : (
+              <div className="grid gap-3 sm:grid-cols-2">
+                {matches.matches.map((m) => (
+                  <div key={m.user.id} className="rounded-2xl border border-stone-200 bg-stone-50/60 p-3.5 space-y-2.5">
+                    <div className="flex items-center gap-2.5">
+                      <Avatar user={m.user} size={40} />
+                      <div className="min-w-0 flex-1">
+                        <button
+                          type="button"
+                          onClick={() => onOpenProfile(m.user.handle)}
+                          className="block truncate text-xs font-black text-stone-900 hover:text-amber-800 cursor-pointer"
+                        >
+                          {m.user.name}
+                        </button>
+                        <p className="truncate text-[11px] text-stone-500">{m.sharedCircle}</p>
+                      </div>
+                    </div>
+                    <p className="text-[11px] leading-relaxed text-stone-700">{m.reason}</p>
+                    <p className="text-[10px] font-medium text-amber-900">
+                      {m.sharedInterests.join(' · ')}
+                    </p>
+                    <div className="flex gap-1.5 pt-1">
+                      <Btn small variant="soft" className="flex-1" onClick={() => onOpenProfile(m.user.handle)}>
+                        {t('الملف الشخصي', 'Profile')}
+                      </Btn>
+                      <Btn small variant="dark" onClick={() => onOpenMessenger(m.user.id)}>
+                        <MessageCircle className="h-3.5 w-3.5" />
+                      </Btn>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </Sheet>
   );
 }
 
@@ -421,7 +761,7 @@ function NotReady({ lang, offline }: { lang: Lang; offline: boolean }) {
     <div className="mx-auto max-w-2xl px-3 py-10">
       <Card className="p-6 text-center">
         <Empty
-          icon={<Users className="h-12 w-12 text-amber-600" />}
+          icon={<Users className="h-12 w-12 text-amber-700" />}
           title={
             offline
               ? t('لا يوجد اتصال بالسيرفر حالياً', 'Cannot reach the server right now')

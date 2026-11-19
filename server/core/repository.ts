@@ -457,6 +457,89 @@ export class Repository {
     return request;
   }
 
+  /** Creates a supplier purchase order for a catalog product and optionally replenishes stock immediately. */
+  async createPurchaseOrder(body: {
+    productId?: unknown;
+    quantity?: unknown;
+    supplierName?: unknown;
+    unitCost?: unknown;
+    note?: unknown;
+    receiveImmediately?: unknown;
+  }): Promise<{ purchaseOrder: ServiceRequest; product: Product }> {
+    await this.ready();
+    const productId = str(body.productId, 80);
+    const product = productId ? await this.store.get('products', productId) : undefined;
+    if (!product) throw new ValidationError('NOT_FOUND', 'Product not found', 404);
+
+    const quantity = Number(body.quantity);
+    if (!Number.isInteger(quantity) || quantity < 1 || quantity > 10_000) {
+      throw new ValidationError('INVALID_QUANTITY', 'Quantity must be an integer between 1 and 10000');
+    }
+
+    const rawCost = body.unitCost === undefined || body.unitCost === '' ? product.price : Number(body.unitCost);
+    if (!Number.isFinite(rawCost) || rawCost < 0) {
+      throw new ValidationError('INVALID_COST', 'Unit cost must be a non-negative number');
+    }
+    const unitCost = Math.round(rawCost * 100) / 100;
+    const supplier = str(body.supplierName, 140) || 'مورد معتمد — دار شام';
+    const note = str(body.note, 1000);
+    const receiveImmediately = body.receiveImmediately === true;
+
+    const existingRefs = new Set((await this.requests()).map((r) => r.ref));
+    let ref = '';
+    do ref = `PO-${Array.from(randomBytes(6), (b) => REF_ALPHABET[b % REF_ALPHABET.length]).join('')}`; while (existingRefs.has(ref));
+
+    const t = new Date().toISOString();
+    const purchaseOrder: ServiceRequest = {
+      id: randomUUID(),
+      ref,
+      type: 'b2b_quote',
+      serviceId: 'purchase-order',
+      status: receiveImmediately ? 'completed' : 'new',
+      contact: { name: supplier },
+      fields: {
+        orderKind: 'purchase_order',
+        sku: product.sku,
+        supplier,
+        receiveImmediately: receiveImmediately ? 'yes' : 'no',
+      },
+      items: [
+        {
+          productId: product.id,
+          sku: product.sku,
+          name: product.nameAr || product.nameEn,
+          quantity,
+          unitPrice: unitCost,
+          currency: product.currency,
+        },
+      ],
+      total: Math.round(unitCost * quantity * 100) / 100,
+      currency: product.currency,
+      notes: [
+        {
+          at: t,
+          text: receiveImmediately
+            ? `طلب شراء سريع ${ref} (${quantity} ${product.unit}) — تم استلامه وإضافته للمخزون فوراً.${note ? ` ${note}` : ''}`
+            : `طلب شراء سريع ${ref} لطلب ${quantity} ${product.unit} من ${supplier}.${note ? ` ${note}` : ''}`,
+          by: 'admin',
+        },
+      ],
+      createdAt: t,
+      updatedAt: t,
+    };
+
+    await this.store.put('requests', purchaseOrder.id, purchaseOrder);
+
+    let updatedProduct = product;
+    if (receiveImmediately) {
+      updatedProduct = { ...product, stock: product.stock + quantity, updatedAt: t };
+      await this.store.put('products', product.id, updatedProduct);
+      this.index = undefined;
+    }
+
+    return { purchaseOrder, product: updatedProduct };
+  }
+
   private slug(value: string) {
     return value.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 48) || `item-${randomBytes(3).toString('hex')}`;
   }

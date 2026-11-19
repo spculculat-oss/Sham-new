@@ -1,24 +1,26 @@
 import { useState } from 'react';
 import {
   MessageSquare,
-  HelpCircle,
   Sparkles,
-  Flame,
   CheckCircle2,
   ThumbsUp,
-  Share2,
   Plus,
   Search,
-  Filter,
   X,
   Send,
-  FlaskConical,
   Coffee,
-  Bookmark,
   ChevronUp,
+  Loader2,
+  Wand2,
 } from 'lucide-react';
-import { Avatar, Btn, Card, tx, type Lang } from './ui';
-import type { PublicUser } from './api';
+import { Avatar, Card, tx, type Lang } from './ui';
+import { cx, type AiComposeResult, type AiReplyAssistResult, type PublicUser } from './api';
+
+import heroLuxuryImg from '../assets/images/hero_luxury_perfume_1791692409081.jpg';
+import grasseRoseImg from '../assets/images/grasse_rose_harvest_1791696039244.jpg';
+import nicheRevealImg from '../assets/images/niche_perfume_reveal_1791968798991.jpg';
+import botanicalHarvestImg from '../assets/images/botanical_harvest_raw_1791968832488.jpg';
+import labCompoundingImg from '../assets/images/perfume_lab_compounding_1791692420116.jpg';
 
 export interface DiscussionThread {
   id: string;
@@ -62,7 +64,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
       id: 'u_ahmed_shaheen',
       name: 'الكابتن أحمد شاهين — خبير العطور',
       handle: 'ahmed_shaheen',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
+      avatar: nicheRevealImg,
       craftLevel: 'perfumer',
       online: true,
     },
@@ -84,7 +86,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
           id: 'u_dar_sham',
           name: 'دار شام للعطور — الحساب الرسمي',
           handle: 'dar_sham',
-          avatar: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=200&auto=format&fit=crop&q=80',
+          avatar: heroLuxuryImg,
           craftLevel: 'master_lab',
         },
         content:
@@ -99,7 +101,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
           id: 'u_tariq_oud',
           name: 'الشيخ طارق العتيبي — خبير العود المعتق',
           handle: 'tariq_oud',
-          avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80',
+          avatar: botanicalHarvestImg,
           craftLevel: 'perfumer',
         },
         content:
@@ -115,7 +117,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
       id: 'u_nourhan',
       name: 'م. نورهان الكردي — خبيرة التقطير',
       handle: 'nourhan_lab',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=80',
+      avatar: grasseRoseImg,
       craftLevel: 'perfumer',
       online: true,
     },
@@ -137,7 +139,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
           id: 'u_layla_scents',
           name: 'ليلى الأندلسي',
           handle: 'layla_scents',
-          avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&auto=format&fit=crop&q=80',
+          avatar: labCompoundingImg,
           craftLevel: 'hobbyist',
         },
         content:
@@ -153,7 +155,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
       id: 'u_layla_scents',
       name: 'ليلى الأندلسي — هاوية تركيبات النيش',
       handle: 'layla_scents',
-      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&auto=format&fit=crop&q=80',
+      avatar: labCompoundingImg,
       craftLevel: 'hobbyist',
       online: false,
     },
@@ -176,7 +178,7 @@ const INITIAL_THREADS: DiscussionThread[] = [
       id: 'u_tariq_oud',
       name: 'الشيخ طارق العتيبي — خبير العود المعتق',
       handle: 'tariq_oud',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80',
+      avatar: botanicalHarvestImg,
       craftLevel: 'perfumer',
       online: false,
     },
@@ -219,8 +221,56 @@ export function DiscussionsPage({
   const [newCategory, setNewCategory] = useState('maceration');
   const [newTags, setNewTags] = useState('');
 
-  // Reply input
+  // Reply & AI state
   const [replyText, setReplyText] = useState('');
+  const [aiThreadAssist, setAiThreadAssist] = useState<AiReplyAssistResult | null>(null);
+  const [aiThreadBusy, setAiThreadBusy] = useState(false);
+  const [aiComposeBusy, setAiComposeBusy] = useState(false);
+
+  const runThreadAi = async (th: DiscussionThread) => {
+    setAiThreadBusy(true);
+    try {
+      const res = await cx<AiReplyAssistResult>('/community/ai/reply-assist', {
+        body: {
+          contextType: 'discussion',
+          threadTitle: th.title,
+          threadBody: th.content,
+          recentMessages: th.replies.map((r) => ({ sender: r.author.name, text: r.content })),
+          lang,
+        },
+      });
+      setAiThreadAssist(res);
+    } catch {
+      toast(t('تعذر تحليل النقاش الآن', 'Analysis unavailable'));
+    } finally {
+      setAiThreadBusy(false);
+    }
+  };
+
+  const runAiTopicDraft = async () => {
+    if (!newTitle.trim() && !newContent.trim()) {
+      toast(t('اكتب عنواناً مبدئياً أولاً', 'Enter a topic title first'));
+      return;
+    }
+    setAiComposeBusy(true);
+    try {
+      const res = await cx<AiComposeResult>('/community/ai/compose', {
+        body: {
+          mode: newContent.trim() ? 'polish' : 'draft',
+          topic: newTitle.trim(),
+          text: newContent.trim(),
+          tone: 'scientific',
+          lang,
+        },
+      });
+      if (res.result) setNewContent(res.result);
+      if (res.hashtags?.length && !newTags.trim()) {
+        setNewTags(res.hashtags.map((h) => h.replace(/^#/, '')).join(', '));
+      }
+    } finally {
+      setAiComposeBusy(false);
+    }
+  };
 
   const filtered = threads.filter((th) => {
     const matchCat = category === 'all' || th.category === category;
@@ -397,7 +447,10 @@ export function DiscussionsPage({
           filtered.map((th) => (
             <Card
               key={th.id}
-              onClick={() => setActiveThread(th)}
+              onClick={() => {
+                setActiveThread(th);
+                setAiThreadAssist(null);
+              }}
               className={`group flex cursor-pointer gap-4 p-4 transition hover:border-amber-300 hover:shadow-md ${
                 th.pinned ? 'border-amber-300/80 bg-amber-50/20' : ''
               }`}
@@ -537,16 +590,51 @@ export function DiscussionsPage({
                   {activeThread.content}
                 </p>
 
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {activeThread.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-800"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
+                  <div className="flex flex-wrap gap-2 text-xs text-amber-800 font-semibold">
+                    {activeThread.tags.map((tag) => (
+                      <span key={tag}>#{tag}</span>
+                    ))}
+                  </div>
+                  <button
+                    type="button"
+                    disabled={aiThreadBusy}
+                    onClick={() => void runThreadAi(activeThread)}
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-950 hover:bg-amber-100 transition cursor-pointer disabled:opacity-50"
+                  >
+                    {aiThreadBusy ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5 text-amber-700" />}
+                    <span>{t('تلخيص واستشارة شاهين', 'Sham AI Synthesis & Replies')}</span>
+                  </button>
                 </div>
+
+                {aiThreadAssist && (
+                  <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-4 space-y-2.5">
+                    {aiThreadAssist.summary && (
+                      <p className="text-xs leading-relaxed text-stone-800 font-medium">
+                        {aiThreadAssist.summary}
+                      </p>
+                    )}
+                    {aiThreadAssist.suggestions.length > 0 && (
+                      <div className="space-y-1.5 pt-1">
+                        <span className="text-[11px] font-bold text-amber-900">
+                          {t('مسودات ردود ذكية بنقرة واحدة:', 'One-click expert reply drafts:')}
+                        </span>
+                        <div className="flex flex-wrap gap-1.5">
+                          {aiThreadAssist.suggestions.map((s, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setReplyText(s)}
+                              className="rounded-xl border border-amber-200 bg-white px-2.5 py-1.5 text-start text-xs text-stone-800 hover:bg-amber-100/60 transition cursor-pointer"
+                            >
+                              {s}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Replies Section */}
@@ -696,9 +784,20 @@ export function DiscussionsPage({
               </div>
 
               <div>
-                <label className="mb-1 block font-bold text-stone-700">
-                  {t('تفاصيل الموضوع أو السؤال والخبرة المطلوب الاستفسار عنها', 'Details & Context')}
-                </label>
+                <div className="mb-1 flex items-center justify-between">
+                  <label className="block font-bold text-stone-700">
+                    {t('تفاصيل الموضوع أو السؤال والخبرة المطلوب الاستفسار عنها', 'Details & Context')}
+                  </label>
+                  <button
+                    type="button"
+                    disabled={aiComposeBusy}
+                    onClick={() => void runAiTopicDraft()}
+                    className="inline-flex items-center gap-1 rounded-lg border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100 cursor-pointer disabled:opacity-50"
+                  >
+                    {aiComposeBusy ? <Loader2 className="h-3 w-3 animate-spin" /> : <Wand2 className="h-3 w-3 text-amber-700" />}
+                    <span>{t('صياغة وتنسيق بالذكاء', 'AI Format')}</span>
+                  </button>
+                </div>
                 <textarea
                   value={newContent}
                   onChange={(e) => setNewContent(e.target.value)}

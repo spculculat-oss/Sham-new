@@ -6,7 +6,7 @@
  */
 export type AiToolId =
   | 'shaheen_chat' | 'sham_assistant' | 'news_articles' | 'news_bulletin' | 'assistant_training' | 'media' | 'admin_agent'
-  | 'store_advisor' | 'store_catalog' | 'store_import';
+  | 'store_advisor' | 'store_catalog' | 'store_import' | 'community_ai';
 
 export interface AiToolDef {
   id: AiToolId;
@@ -23,9 +23,9 @@ export interface AiToolDef {
 
 export const AI_TOOLS: AiToolDef[] = [
   {
-    id: 'shaheen_chat', nameAr: 'شات الخبير شاهين', nameEn: 'Master Shahin chat',
-    descriptionAr: 'المحادثة العائمة وصفحة خبير المعمل: تصميم التركيبات، الحسابات، التعتيق، التخفيف، مع روابط الأدوات والوسائط.',
-    sources: ['server/shaheen.ts'], routes: ['/api/chat'], acceptsGuidance: true,
+    id: 'shaheen_chat', nameAr: 'شات الخبير شاهين والوكيل البرمجي', nameEn: 'Master Shahin chat & Arena AI agent',
+    descriptionAr: 'المحادثة العائمة وصفحة خبير المعمل: تصميم التركيبات، الحسابات، حلبة التنافس الذكية، وإنشاء ومعاينة الأكواد والنماذج البرمجية.',
+    sources: ['server/shaheen.ts', 'server/shaheenAgent.ts', 'server/shaheenArena.ts'], routes: ['/api/chat', '/api/shaheen/agent', '/api/shaheen/arena/vote'], acceptsGuidance: true,
   },
   {
     id: 'sham_assistant', nameAr: 'مساعد شام للخدمات', nameEn: 'Sham services assistant',
@@ -71,6 +71,11 @@ export const AI_TOOLS: AiToolDef[] = [
     id: 'admin_agent', nameAr: 'المساعد الإداري', nameEn: 'Admin operations agent',
     descriptionAr: 'تقارير الإدارة الذكية من أدوات قراءة فقط (يحتاج رمز الإدارة للفحص).',
     sources: ['server/core/adminAgent.ts'], routes: [], acceptsGuidance: false,
+  },
+  {
+    id: 'community_ai', nameAr: 'ذكاء مجتمع شام', nameEn: 'Sham community intelligence',
+    descriptionAr: 'صياغة المنشورات والاستطلاعات، تحليل الهرم العطري، الردود الذكية، تلخيص النقاشات، البحث الدلالي وتوافق صانعي العطور.',
+    sources: ['server/community/ai.ts'], routes: ['/api/community/ai/compose', '/api/community/ai/analyze-post', '/api/community/ai/reply-assist', '/api/community/ai/search'], acceptsGuidance: false,
   },
 ];
 

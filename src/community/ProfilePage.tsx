@@ -22,13 +22,21 @@ import {
 } from 'lucide-react';
 import {
   cx,
+  type AiProfileInsight,
   type Post,
   type PublicUser,
-  type Recipe,
 } from './api';
 import { Avatar, Btn, Card, Empty, Spinner, errorText, timeAgo, tx, useLoad, type Lang } from './ui';
 import { PostCard, RecipeCard } from './SocialPortal';
 import { pulseNow } from './session';
+
+import heroLuxuryImg from '../assets/images/hero_luxury_perfume_1791692409081.jpg';
+import grasseRoseImg from '../assets/images/grasse_rose_harvest_1791696039244.jpg';
+import labCompoundingImg from '../assets/images/perfume_lab_compounding_1791692420116.jpg';
+import nicheRevealImg from '../assets/images/niche_perfume_reveal_1791968798991.jpg';
+import botanicalHarvestImg from '../assets/images/botanical_harvest_raw_1791968832488.jpg';
+import exhibitionImg from '../assets/images/luxury_perfume_exhibition_1791696134494.jpg';
+import pyramidImg from '../assets/images/perfume_ingredients_pyramid_1791692429360.jpg';
 
 interface ProfileData {
   user: PublicUser;
@@ -47,20 +55,24 @@ interface Props {
 }
 
 const PRESET_COVERS: Record<string, string> = {
-  u_dar_sham: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=1600&auto=format&fit=crop&q=80',
-  u_ahmed_shaheen: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=1600&auto=format&fit=crop&q=80',
-  u_nourhan: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=1600&auto=format&fit=crop&q=80',
-  u_tariq_oud: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=1600&auto=format&fit=crop&q=80',
-  u_layla_scents: 'https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=1600&auto=format&fit=crop&q=80',
+  u_dar_sham: heroLuxuryImg,
+  u_ahmed_shaheen: nicheRevealImg,
+  u_nourhan: grasseRoseImg,
+  u_tariq_oud: botanicalHarvestImg,
+  u_layla_scents: exhibitionImg,
 };
 
-const DEFAULT_COVER = 'https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=1600&auto=format&fit=crop&q=80';
+const DEFAULT_COVER = labCompoundingImg;
 
 export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props) {
   const t = tx(lang);
   const { data, setData, loading, error, reload } = useLoad(
     () => cx<ProfileData>(`/community/profile/${encodeURIComponent(handle)}`),
     [handle]
+  );
+  const aiInsight = useLoad(
+    () => cx<AiProfileInsight>(`/community/ai/profile/${encodeURIComponent(handle)}?lang=${lang}`),
+    [handle, lang]
   );
   const [activeTab, setActiveTab] = useState<'timeline' | 'about' | 'recipes' | 'friends' | 'photos'>('timeline');
 
@@ -305,23 +317,30 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
               </div>
             </Card>
 
-            {/* Signature Notes Badge */}
-            <Card className="p-4 space-y-2.5">
-              <h3 className="font-black text-stone-900 text-xs sm:text-sm">
-                {t('النوتات والعائلات المفضلة', 'Signature Olfactory Notes')}
-              </h3>
-              <div className="flex flex-wrap gap-1.5">
-                {['عود كمبودي معتق', 'برغموت إيطالي', 'ورد دمشقي', 'أمبروكسان', 'صندل ميسوري', 'خشب الأرز'].map(
-                  (note) => (
-                    <span
-                      key={note}
-                      className="rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-900"
-                    >
-                      🌿 {note}
-                    </span>
-                  )
-                )}
+            {/* AI Olfactory Signature Card */}
+            <Card className="p-4 space-y-2.5 border-amber-200/80 bg-amber-50/30">
+              <div className="flex items-center gap-1.5 font-black text-amber-950 text-xs sm:text-sm">
+                <Sparkles className="h-4 w-4 text-amber-700" />
+                <span>{t('البصمة العطرية بالذكاء', 'AI Olfactory Signature')}</span>
               </div>
+              {aiInsight.data ? (
+                <div className="space-y-2">
+                  <p className="text-xs font-bold text-stone-900">{aiInsight.data.headline}</p>
+                  <p className="text-xs leading-relaxed text-stone-700">{aiInsight.data.summary}</p>
+                  {aiInsight.data.topNotes.length > 0 && (
+                    <p className="text-[11px] font-semibold text-amber-900">
+                      {aiInsight.data.topNotes.join(' · ')}
+                    </p>
+                  )}
+                  <p className="pt-1 border-t border-amber-200/60 text-[11px] text-stone-600">
+                    {aiInsight.data.collabIdea}
+                  </p>
+                </div>
+              ) : (
+                <p className="text-xs text-stone-500">
+                  {t('عود كمبودي معتق · برغموت إيطالي · ورد دمشقي · أمبروكسان', 'Aged Cambodian Oud · Italian Bergamot · Damask Rose · Ambroxan')}
+                </p>
+              )}
             </Card>
 
             {/* Quick Mutual Friends Preview */}
@@ -527,17 +546,18 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
           </h3>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
             {[
-              'https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=600&auto=format&fit=crop&q=80',
-              'https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=600&auto=format&fit=crop&q=80',
-              'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&auto=format&fit=crop&q=80',
-              'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600&auto=format&fit=crop&q=80',
-              'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&auto=format&fit=crop&q=80',
-              'https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=600&auto=format&fit=crop&q=80',
+              heroLuxuryImg,
+              labCompoundingImg,
+              grasseRoseImg,
+              nicheRevealImg,
+              botanicalHarvestImg,
+              exhibitionImg,
+              pyramidImg,
             ].map((img, i) => (
               <div key={i} className="group relative aspect-square overflow-hidden rounded-2xl bg-stone-100">
                 <img
                   src={img}
-                  alt=""
+                  alt={t('صورة معمل عطور', 'Perfume atelier photo')}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 />
               </div>

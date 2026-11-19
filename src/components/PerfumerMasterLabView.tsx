@@ -24,6 +24,8 @@ import {
   RotateCcw,
   Phone,
   Mic,
+  Code2,
+  X,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import perfumerImg from '../assets/images/master_perfumer_compounding_1791693212967.jpg';
@@ -46,8 +48,10 @@ import type { ShaheenModelChoice } from '../utils/chatStore';
 import { useShaheenChat } from '../hooks/useShaheenChat';
 import { useShaheenModels } from '../hooks/useShaheenModels';
 import { copyChatText } from '../utils/clipboard';
-import type { AgentAction, LabContextSnapshot } from '../types/shaheenAgent';
+import type { ActiveArtifactContext, AgentAction, AgentArtifact, LabContextSnapshot } from '../types/shaheenAgent';
+import { defaultFilenameFor, normalizeArtifactLanguage, verifyCodeSnippet } from '../utils/codeVerifier';
 import { executeShaheenAgentAction } from '../utils/executeAgentAction';
+import { ShaheenArenaDuelCard, ShaheenCodeStudioPanel, ShaheenPlanCard } from './ShaheenArenaWorkspace';
 import {
   fileToAgentAttachment,
   MessageAttachmentsStrip,
@@ -224,6 +228,8 @@ const S = {
   prompt_3: { ar: 'كيف أصنع تركيبة تجميلية لمعطر جسم (Body Mist) ثابت ومستحلب؟', en: 'How do I make a stable emulsified Body Mist formula?', fr: 'Comment créer une formule de brume corporelle émulsionnée et stable ?', es: '¿Cómo creo una fórmula de Body Mist emulsionada y estable?', it: 'Come creo una formula di Body Mist emulsionata e stabile?', de: 'Wie erstelle ich eine stabile, emulgierte Body-Mist-Formel?', ru: 'Как сделать стабильную эмульгированную формулу Body Mist?', zh: '如何调制稳定乳化的身体喷雾（Body Mist）配方？', tr: 'Stabil, emülsifiye bir Body Mist formülü nasıl yapılır?', fa: 'چگونه فرمول اسپری بدن (Body Mist) پایدار و امولسیون‌شده بسازم؟' },
   prompt_4: { ar: 'العطر أصبح حليبياً ومتعكراً بعد إضافة الكحول، كيف أصفّيه بالمعمل؟', en: 'My perfume turned milky after adding alcohol — how do I clarify it?', fr: 'Mon parfum est devenu laiteux après l’alcool — comment le clarifier ?', es: 'Mi perfume se enturbió tras añadir alcohol, ¿cómo aclararlo?', it: 'Il mio profumo è diventato lattiginoso dopo l’alcol: come chiarificarlo?', de: 'Mein Parfüm wurde nach Alkoholzugabe milchig — wie kläre ich es?', ru: 'Духи помутнели после добавления спирта — как осветлить?', zh: '加酒精后香水变浑浊，如何在实验室澄清？', tr: 'Alkol ekledikten sonra parfümüm sütlüleşti, nasıl berraklaştırırım?', fa: 'عطرم بعد از افزودن الکل شیری و کدر شد؛ چگونه شفافش کنم؟' },
   prompt_5: { ar: 'ما المدة والشروط العلمية لتعتيق العطر (Maceration) للحصول على صفاء وثبات؟', en: 'What is the scientifically correct maceration duration & conditions for clarity and tenacity?', fr: 'Quelle durée et conditions de macération pour clarté et tenue ?', es: '¿Qué duración y condiciones de maceración para claridad y fijación?', it: 'Quale durata e condizioni di macerazione per chiarezza e tenacia?', de: 'Welche Mazerationstemperatur und -dauer für Klarheit und Haltbarkeit?', ru: 'Какова длительность и условия мацерации для ясности и стойкости?', zh: '获得清澈与持久所需的科学浸置时长与条件是什么？', tr: 'Berraklık ve kalıcılık için bilimsel maserasyon süresi ve koşulları nedir?', fa: 'مدت و شرایط علمی تعریف عطر (Maceration) برای شفافیت و ماندگاری چیست؟' },
+  prompt_6: { ar: 'ابنِ لي تطبيق ويب تفاعلي لحساب نسب الهرم العطري وتكلفة التشغيلة بواجهة فاخرة', en: 'Build an interactive HTML web calculator for fragrance pyramid ratios and batch costing', fa: 'یک برنامه وب تعاملی برای محاسبه هرم عطری و هزینه تولید بساز' },
+  prompt_7: { ar: 'صمّم معمارية قاعدة بيانات SQL ومخطط Mermaid لإدارة مخزون الزيوت العطرية والتعتيق', en: 'Design a PostgreSQL schema & Mermaid architecture diagram for fragrance oil & maceration tracking', fa: 'معماری پایگاه داده SQL و نمودار Mermaid برای مدیریت انبار اسانس‌ها طراحی کن' },
   comp_1: { ar: 'الخبير شاهين يقطر الزيوت الخام في المخبار بدقة الميزان...', en: 'Master Shahin drips raw oils into the flask with scale precision...', fr: 'Le Maître Shahin verse les huiles dans le ballon avec précision…', es: 'El Maestro Shahin gotea los aceites con precisión de balanza...', it: 'Il Maestro Shahin versa gli oli nel matraccio con precisione…', de: 'Meister Shahin tropft die Rohöle mit Waagenpräzision ein…', ru: 'Мастер Шахин капает масла в колбу с точностью весов…', zh: 'Shahin 大师正以天平精度将原精滴入烧瓶……', tr: 'Usta Shahin çiğ yağları terazi hassasiyetiyle damlatıyor…', fa: 'استاد شاهین روغن‌های خام را با دقت ترازو در بالن می‌چکاند...' },
   comp_2: { ar: 'يفحص الكثافة النوعية وتجانس النوتات العطرية...', en: 'Checking specific gravity and note homogeneity...', fr: 'Vérification de la densité et de l’homogénéité des notes…', es: 'Comprobando densidad y homogeneidad de notas...', it: 'Verifica di densità e omogeneità delle note…', de: 'Prüfung von Dichte und Homogenität der Noten…', ru: 'Проверка плотности и однородности нот…', zh: '正在检测比重与香气均匀度……', tr: 'Yoğunluk ve nota homojenliği kontrol ediliyor…', fa: 'بررسی چگالی و همگنی نت‌ها...' },
   comp_3: { ar: 'يمزج مركب العطر ويتحقق من توازن الهرم العطري...', en: 'Blending the concentrate and verifying pyramid balance...', fr: 'Assemblage du concentré et équilibre de la pyramide…', es: 'Mezclando el concentrado y verificando el equilibrio...', it: 'Fusione del concentrato e verifica dell’equilibrio…', de: 'Vermengung des Konzentrats und Pyramidenabgleich…', ru: 'Смешивание концентрата и проверка баланса пирамиды…', zh: '正在混合浓缩物并校验金字塔平衡……', tr: 'Konsantre harmanlanıyor ve piramit dengesi doğrulanıyor…', fa: 'اختلاط کنسانتره و بررسی تعادل هرم...' },
@@ -285,7 +291,7 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
 }) => {
   const rtl = isRTL(currentLang);
   const L = makeT(currentLang, S);
-  const masterPrompts: string[] = [L('prompt_1'), L('prompt_2'), L('prompt_3'), L('prompt_4'), L('prompt_5')];
+  const masterPrompts: string[] = [L('prompt_1'), L('prompt_2'), L('prompt_3'), L('prompt_4'), L('prompt_5'), L('prompt_6'), L('prompt_7')];
   // Same conversation store as the floating Shaheen window (one history, never overwritten by the other).
   const {
     messages,
@@ -294,6 +300,8 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
     busy,
     agentEnabled,
     setAgentEnabled,
+    agentMode,
+    setAgentMode,
     reasoningDepth,
     setReasoningDepth,
     autoWebSearch,
@@ -301,6 +309,7 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
     autoApplyActions,
     setAutoApplyActions,
     markActionApplied,
+    voteArena,
     sendMessage,
     sendAgentMessage,
     retryLast,
@@ -316,6 +325,12 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
   const [dripping, setDripping] = useState(false);
   const [compoundingStep, setCompoundingStep] = useState(0);
   const { speakingMsgId, speak: handleSpeech, stopSpeech } = useShaheenSpeech(currentLang);
+
+  // Code Studio & Arena Workbench State
+  const [studioOpen, setStudioOpen] = useState(false);
+  const [selectedArtifactId, setSelectedArtifactId] = useState<string | undefined>(undefined);
+  const [adHocArtifacts, setAdHocArtifacts] = useState<AgentArtifact[]>([]);
+  const [iteratingArtifact, setIteratingArtifact] = useState<ActiveArtifactContext | undefined>(undefined);
 
   // Multi-AI Model Orchestrator State
   const [comparingMsgId, setComparingMsgId] = useState<string | null>(null);
@@ -337,6 +352,47 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const allArtifacts = React.useMemo(() => {
+    const map = new Map<string, AgentArtifact>();
+    for (const msg of messages) {
+      for (const art of msg.artifacts || []) map.set(art.id, art);
+    }
+    for (const art of adHocArtifacts) map.set(art.id, art);
+    return [...map.values()];
+  }, [messages, adHocArtifacts]);
+
+  const prevArtifactCountRef = useRef(allArtifacts.length);
+  useEffect(() => {
+    if (allArtifacts.length > prevArtifactCountRef.current) {
+      const latest = allArtifacts[allArtifacts.length - 1];
+      if (latest) {
+        setSelectedArtifactId(latest.id);
+        setStudioOpen(true);
+      }
+    }
+    prevArtifactCountRef.current = allArtifacts.length;
+  }, [allArtifacts.length]);
+
+  const openCodeFenceInStudio = (fenceLang: string, code: string) => {
+    const norm = normalizeArtifactLanguage(fenceLang);
+    const verification = verifyCodeSnippet(norm, code);
+    const newArt: AgentArtifact = {
+      id: `adhoc-${Date.now()}`,
+      title: `${norm.toUpperCase()} Snippet`,
+      filename: defaultFilenameFor(norm, 'snippet'),
+      language: norm,
+      summary: `${norm.toUpperCase()} · ${verification.metrics.lines} lines`,
+      code,
+      ...(norm === 'html' ? { previewHtml: code } : {}),
+      runnable: norm === 'html' || norm === 'svg' || norm === 'mermaid' || norm === 'javascript',
+      verification,
+      createdAt: Date.now(),
+    };
+    setAdHocArtifacts((prev) => [...prev.slice(-5), newArt]);
+    setSelectedArtifactId(newArt.id);
+    setStudioOpen(true);
+  };
 
   useEffect(() => {
     scrollChatToEnd(messagesEndRef.current);
@@ -390,12 +446,17 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
     const attachmentsToSend = hasAtts ? queuedAttachments : undefined;
     if (hasAtts) setQueuedAttachments([]);
 
-    if ((agentEnabled && !overrideModel) || attachmentsToSend?.length) {
+    const activeArtifactPayload = iteratingArtifact;
+    if (iteratingArtifact) setIteratingArtifact(undefined);
+
+    if ((agentEnabled && !overrideModel) || attachmentsToSend?.length || activeArtifactPayload) {
       await sendAgentMessage({
         text,
         language: currentLang,
+        agentMode,
         attachments: attachmentsToSend,
         labContext,
+        activeArtifact: activeArtifactPayload,
         onAction: (act) => handleWorkspaceAction(act),
         errorText: (error) => chatErrorText(currentLang, error),
       });
@@ -635,6 +696,21 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
               <Layers className="w-3 h-3" />
               <span className="hidden md:inline">{L('ai_network_lbl')} ({enabledEngineCount})</span>
             </button>
+
+            {allArtifacts.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setStudioOpen((v) => !v)}
+                className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0 border tabular-nums ${
+                  studioOpen
+                    ? 'bg-emerald-500 text-stone-950 border-emerald-400'
+                    : 'bg-stone-900 text-emerald-300 border-emerald-700/60 hover:border-emerald-500'
+                }`}
+              >
+                <Code2 className="w-3.5 h-3.5" />
+                <span>{currentLang === 'ar' ? `الاستوديو (${allArtifacts.length})` : `Studio (${allArtifacts.length})`}</span>
+              </button>
+            )}
           </div>
         </div>
 
@@ -642,6 +718,8 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
           language={currentLang}
           agentEnabled={agentEnabled}
           setAgentEnabled={setAgentEnabled}
+          agentMode={agentMode}
+          setAgentMode={setAgentMode}
           reasoningDepth={reasoningDepth}
           setReasoningDepth={setReasoningDepth}
           autoWebSearch={autoWebSearch}
@@ -669,8 +747,10 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
         <ShaheenServiceStatus language={currentLang} models={modelStatus.models} failed={modelStatus.failed}
           enabled={modelStatus.enabled} selected={selectedModel} />
 
+        {/* Split Workbench Body: Chat Stream + Optional Live Code Studio */}
+        <div className="flex-1 min-h-0 flex flex-col lg:flex-row overflow-hidden">
         {/* Messages Stream Board */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 bg-stone-50/50">
+        <div className="flex-1 min-w-0 overflow-y-auto p-4 sm:p-6 space-y-6 bg-stone-50/50">
           {messages.map((m, msgIndex) => {
             const activeDisplayContent =
               m.id === 'welcome'
@@ -765,11 +845,53 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
                     />
                   )}
 
+                  {/* Engineering Plan & Parallel Arena Battle Comparison */}
+                  {m.role === 'assistant' && !isError && m.agentPlan && (
+                    <ShaheenPlanCard plan={m.agentPlan} language={currentLang} />
+                  )}
+                  {m.role === 'assistant' && !isError && m.arenaBattle && (
+                    <ShaheenArenaDuelCard
+                      arena={m.arenaBattle}
+                      language={currentLang}
+                      isStreaming={m.isStreaming}
+                      onOpenArtifact={(art) => {
+                        setSelectedArtifactId(art.id);
+                        setStudioOpen(true);
+                      }}
+                      onVote={(vote) => void voteArena(m.id, vote)}
+                    />
+                  )}
+
+                  {/* Quick Artifact Launch Strip on message */}
+                  {m.role === 'assistant' && !isError && m.artifacts && m.artifacts.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {m.artifacts.map((art) => (
+                        <button
+                          key={art.id}
+                          type="button"
+                          onClick={() => {
+                            setSelectedArtifactId(art.id);
+                            setStudioOpen(true);
+                          }}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-900 hover:bg-stone-800 text-amber-200 border border-stone-700 text-[11px] font-semibold cursor-pointer"
+                        >
+                          <Code2 className="w-3.5 h-3.5 text-amber-400" />
+                          <span>{art.title}</span>
+                          <span className="text-[9px] text-stone-400 font-mono" dir="ltr">({art.filename})</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
                   {/* Text Payload */}
                   {m.role === 'assistant' && !isError ? (
                     <>
                       {(!m.isStreaming || (m.text && m.text !== '…')) && (
-                        <ShaheenMarkdown text={activeDisplayContent} className="text-xs sm:text-sm leading-relaxed font-sans" />
+                        <ShaheenMarkdown
+                          text={activeDisplayContent}
+                          className="text-xs sm:text-sm leading-relaxed font-sans"
+                          onOpenCode={openCodeFenceInStudio}
+                        />
                       )}
                       {mediaRequest && !m.isStreaming && <ShaheenMedia request={mediaRequest} lang={currentLang} />}
                     </>
@@ -1016,6 +1138,26 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
           <div ref={messagesEndRef} />
         </div>
 
+        {/* Collapsible Split Code & Live Preview Studio */}
+        {studioOpen && allArtifacts.length > 0 && (
+          <div className="h-[46%] lg:h-auto lg:w-[48%] border-t lg:border-t-0 lg:border-s border-stone-200 bg-stone-900 p-2 shrink-0 flex flex-col">
+            <ShaheenCodeStudioPanel
+              artifacts={allArtifacts}
+              selectedArtifactId={selectedArtifactId}
+              onSelectArtifact={setSelectedArtifactId}
+              onClose={() => setStudioOpen(false)}
+              onIterateWithShaheen={(ctx) => {
+                setIteratingArtifact(ctx);
+                setAgentEnabled(true);
+                inputRef.current?.focus();
+              }}
+              language={currentLang}
+              className="flex-1 min-h-0"
+            />
+          </div>
+        )}
+        </div>
+
         {/* 3. Fast Suggestion Strip */}
         <div className="p-3 bg-stone-100 border-t border-stone-200 overflow-x-auto flex items-center gap-2 text-xs no-scrollbar shrink-0">
           <span className="text-[11px] font-bold text-stone-500 whitespace-nowrap">
@@ -1037,6 +1179,23 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
           attachments={queuedAttachments}
           onRemove={(attId) => setQueuedAttachments((prev) => prev.filter((a) => a.id !== attId))}
         />
+
+        {iteratingArtifact && (
+          <div className="px-3.5 py-1.5 bg-stone-900 text-amber-200 border-t border-stone-800 flex items-center justify-between text-[11px] shrink-0">
+            <span className="flex items-center gap-1.5">
+              <Code2 className="w-3.5 h-3.5 text-amber-400" />
+              <span>{currentLang === 'ar' ? `تعديل وتطوير الملف:` : `Iterating on:`}</span>
+              <strong dir="ltr" className="text-white">{iteratingArtifact.filename}</strong>
+            </span>
+            <button
+              type="button"
+              onClick={() => setIteratingArtifact(undefined)}
+              className="text-stone-400 hover:text-white cursor-pointer"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
 
         {/* 4. Large Interactive Input Bar */}
         <form

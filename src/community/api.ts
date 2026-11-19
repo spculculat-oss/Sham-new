@@ -63,7 +63,50 @@ export interface Me {
 export interface Post {
   id: string; body: string; image: string | null; visibility: 'public' | 'friends'; createdAt: string; editedAt: string | null;
   author: PublicUser; mine: boolean; comments: number; reactions: Record<string, number>; myReaction: string | null;
+  pollVotes?: Record<string, number>; myPollVote?: number | null; bookmarked?: boolean;
   recipe: { id: string; title: string; data: Record<string, unknown> } | null;
+}
+export interface AiComposeResult {
+  result: string;
+  hashtags: string[];
+  pollSuggestion?: { question: string; options: string[] };
+  storyMeta?: { title: string; scentTag: string; caption: string };
+  suggestedCircle?: string;
+}
+export interface AiPostAnalysis {
+  summary: string;
+  circle: string;
+  detectedNotes: { top: string[]; heart: string[]; base: string[] };
+  craftTip: string;
+  suggestedReplies: string[];
+}
+export interface AiReplyAssistResult {
+  suggestions: string[];
+  polishedDraft?: string;
+  summary?: string;
+}
+export interface AiSearchResult {
+  answer: string;
+  posts: Post[];
+  people: PublicUser[];
+  recipes: { id: string; title: string; ownerName: string; ownerHandle: string }[];
+  relatedTags: string[];
+}
+export interface AiMatchItem {
+  user: PublicUser;
+  sharedInterests: string[];
+  reason: string;
+  sharedCircle: string;
+}
+export interface AiMatchmakingResult {
+  matches: AiMatchItem[];
+  circleSpotlights: { id: string; nameAr: string; nameEn: string; reason: string }[];
+}
+export interface AiProfileInsight {
+  headline: string;
+  summary: string;
+  topNotes: string[];
+  collabIdea: string;
 }
 export interface Comment { id: string; body: string; createdAt: string; author: PublicUser; mine: boolean }
 export interface Notification { id: string; kind: string; ref: string; createdAt: string; read: boolean; actor: PublicUser | null }

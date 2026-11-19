@@ -4,8 +4,8 @@
  * new ones arrive by light polling (only what changed since the last look).
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, BellOff, Bell, Check, CheckCheck, Copy, FlaskConical, ImagePlus, LogOut, Mic, MoreVertical, Pencil, Plus, Reply, Search, Send, Smile, Square, Trash2, UserPlus, Users, X } from 'lucide-react';
-import { blobToDataUrl, cx, resizeImage, type ChatSummary, type ChatView, type Message, type PublicUser } from './api';
+import { ArrowLeft, ArrowRight, BellOff, Bell, Check, CheckCheck, Copy, FlaskConical, ImagePlus, Languages, Loader2, LogOut, Mic, MoreVertical, Pencil, Plus, Reply, Search, Send, Smile, Sparkles, Square, Trash2, UserPlus, Users, Wand2, X } from 'lucide-react';
+import { blobToDataUrl, cx, resizeImage, type AiReplyAssistResult, type ChatSummary, type ChatView, type Message, type PublicUser } from './api';
 import { pulseNow, setFastPulse, type SessionState } from './session';
 import { RecipeCard, RecipePicker } from './SocialPortal';
 import { Avatar, Badge, Btn, Card, Empty, Sheet, Spinner, clock, errorText, inputClass, timeAgo, tx, type Lang } from './ui';
@@ -261,7 +261,7 @@ function ChatPane({ id, lang, session, go, toast, onChanged }: { id: string; lan
         })}
       </div>
 
-      <Composer key={editing?.id || 'new'} lang={lang} chatId={id} reply={reply} replyName={reply ? (reply.mine ? t('أنت', 'You') : nameOf(reply.senderId)) : ''} editing={editing}
+      <Composer key={editing?.id || 'new'} lang={lang} chatId={id} recentMessages={view.messages.slice(-5)} reply={reply} replyName={reply ? (reply.mine ? t('أنت', 'You') : nameOf(reply.senderId)) : ''} editing={editing}
         onCancel={() => { setReply(null); setEditing(null); }} onSend={send} onEdit={edit} toast={toast} />
       {addPeople && <PeoplePicker lang={lang} title={t('إضافة أعضاء', 'Add members')} friendsOnly exclude={view.members.map((m) => m.id)} onClose={() => setAddPeople(false)}
         onDone={async (people) => { setAddPeople(false); await updateGroup({ add: people.map((p) => p.id) }, t('تمت الإضافة', 'Added')); }} />}
@@ -338,8 +338,8 @@ function Bubble({ m, lang, grouped, showName, name, sender, read, replyName, men
 
 /* ------------------------------------------------ composer ------------------------------------------------ */
 
-function Composer({ lang, chatId, reply, replyName, editing, onCancel, onSend, onEdit, toast }: {
-  lang: Lang; chatId: string; reply: Message | null; replyName: string; editing: Message | null; onCancel: () => void;
+function Composer({ lang, chatId, recentMessages, reply, replyName, editing, onCancel, onSend, onEdit, toast }: {
+  lang: Lang; chatId: string; recentMessages: Message[]; reply: Message | null; replyName: string; editing: Message | null; onCancel: () => void;
   onSend: (body: Record<string, unknown>) => Promise<void>; onEdit: (m: Message, text: string) => Promise<void>; toast: (s: string) => void;
 }) {
   const t = tx(lang);
@@ -349,9 +349,35 @@ function Composer({ lang, chatId, reply, replyName, editing, onCancel, onSend, o
   const [recipe, setRecipe] = useState(false);
   const [recording, setRecording] = useState<{ rec: MediaRecorder; started: number } | null>(null);
   const [elapsed, setElapsed] = useState(0);
+  const [aiBusy, setAiBusy] = useState(false);
+  const [aiSuggestions, setAiSuggestions] = useState<string[]>([]);
   const file = useRef<HTMLInputElement>(null);
   const box = useRef<HTMLTextAreaElement>(null);
   const lastTyping = useRef(0);
+
+  const askReplyAi = async (mode: 'suggest' | 'polish' | 'translate') => {
+    setAiBusy(true);
+    try {
+      const res = await cx<AiReplyAssistResult>('/community/ai/reply-assist', {
+        body: {
+          contextType: 'messenger',
+          mode,
+          draft: text,
+          recentMessages: recentMessages.map((m) => ({ sender: m.mine ? 'me' : 'peer', text: m.text })),
+          lang,
+        },
+      });
+      if ((mode === 'polish' || mode === 'translate') && res.polishedDraft) {
+        setText(res.polishedDraft);
+      } else {
+        setAiSuggestions(res.suggestions || []);
+      }
+    } catch {
+      toast(t('تعذر تشغيل المساعد الذكي الآن', 'Smart assist unavailable'));
+    } finally {
+      setAiBusy(false);
+    }
+  };
 
   useEffect(() => { box.current?.focus(); }, [reply, editing]);
   useEffect(() => {
@@ -412,6 +438,25 @@ function Composer({ lang, chatId, reply, replyName, editing, onCancel, onSend, o
           <button type="button" onClick={() => { onCancel(); if (editing) setText(''); }} className="text-stone-500 cursor-pointer"><X className="h-4 w-4" /></button>
         </div>
       )}
+      {aiSuggestions.length > 0 && (
+        <div className="mb-2 flex flex-wrap items-center gap-1.5 rounded-xl border border-amber-200 bg-amber-50/70 p-2">
+          <span className="text-[11px] font-bold text-amber-900 flex items-center gap-1">
+            <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+            {t('ردود شاهين:', 'Smart replies:')}
+          </span>
+          {aiSuggestions.map((s, idx) => (
+            <button
+              key={idx}
+              type="button"
+              onClick={() => { setText(s); setAiSuggestions([]); }}
+              className="rounded-lg border border-amber-200 bg-white px-2.5 py-1 text-xs text-stone-800 hover:bg-amber-100/60 transition cursor-pointer"
+            >
+              {s}
+            </button>
+          ))}
+          <button type="button" onClick={() => setAiSuggestions([])} className="ms-auto text-stone-400 hover:text-stone-700 cursor-pointer"><X className="h-3.5 w-3.5" /></button>
+        </div>
+      )}
       {emoji && <div className="mb-2 grid grid-cols-10 gap-1 rounded-xl border border-stone-200 p-2">{EMOJI.map((e) => <button key={e} type="button" onClick={() => setText((v) => v + e)} className="rounded p-1 text-xl hover:bg-stone-100 cursor-pointer">{e}</button>)}</div>}
       {recording ? (
         <div className="flex items-center gap-3 rounded-2xl bg-rose-50 px-3 py-2">
@@ -422,20 +467,31 @@ function Composer({ lang, chatId, reply, replyName, editing, onCancel, onSend, o
           <Btn small onClick={() => recording.rec.stop()}><Square className="h-3.5 w-3.5" />{t('إرسال', 'Send')}</Btn>
         </div>
       ) : (
-        <div className="flex items-end gap-1.5">
+        <div className="flex items-end gap-1">
           {!editing && (<>
             <input ref={file} type="file" accept="image/*" hidden onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ''; if (f) void photo(f); }} />
             <IconBtn title={t('صورة', 'Photo')} onClick={() => file.current?.click()}><ImagePlus className="h-5 w-5" /></IconBtn>
             <IconBtn title={t('تركيبة', 'Recipe')} onClick={() => setRecipe(true)}><FlaskConical className="h-5 w-5" /></IconBtn>
           </>)}
           <IconBtn title={t('إيموجي', 'Emoji')} onClick={() => setEmoji((v) => !v)}><Smile className="h-5 w-5" /></IconBtn>
+          <IconBtn
+            title={text.trim() ? t('تحسين الصياغة بالذكاء', 'Polish with AI') : t('اقتراح ردود ذكية', 'Smart reply ideas')}
+            onClick={() => { if (!aiBusy) void askReplyAi(text.trim() ? 'polish' : 'suggest'); }}
+          >
+            {aiBusy ? <Loader2 className="h-4.5 w-4.5 animate-spin" /> : text.trim() ? <Wand2 className="h-4.5 w-4.5" /> : <Sparkles className="h-4.5 w-4.5" />}
+          </IconBtn>
+          {text.trim() && (
+            <IconBtn title={t('ترجمة عربي/إنجليزي', 'Translate AR/EN')} onClick={() => { if (!aiBusy) void askReplyAi('translate'); }}>
+              <Languages className="h-4.5 w-4.5" />
+            </IconBtn>
+          )}
           <textarea ref={box} rows={1} value={text} maxLength={4000} placeholder={t('اكتب رسالة…', 'Type a message…')}
             onChange={(e) => { setText(e.target.value); typing(); e.target.style.height = 'auto'; e.target.style.height = `${Math.min(140, e.target.scrollHeight)}px`; }}
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); void submit(); } if (e.key === 'Escape') onCancel(); }}
             className="max-h-36 min-h-[42px] flex-1 resize-none rounded-2xl bg-stone-100 px-4 py-2.5 text-[15px] outline-none focus:bg-white focus:ring-2 focus:ring-amber-200" />
           {text.trim() || editing
-            ? <button type="button" disabled={busy || !text.trim()} onClick={() => void submit()} className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-amber-700 text-white disabled:opacity-50 cursor-pointer">{editing ? <Check className="h-5 w-5" /> : <Send className="h-5 w-5 rtl:-scale-x-100" />}</button>
-            : <button type="button" disabled={busy} title={t('رسالة صوتية', 'Voice note')} onClick={() => void record()} className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-amber-700 text-white disabled:opacity-50 cursor-pointer"><Mic className="h-5 w-5" /></button>}
+            ? <button type="button" disabled={busy || !text.trim()} onClick={() => void submit()} className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-amber-800 text-white disabled:opacity-50 cursor-pointer">{editing ? <Check className="h-5 w-5" /> : <Send className="h-5 w-5 rtl:-scale-x-100" />}</button>
+            : <button type="button" disabled={busy} title={t('رسالة صوتية', 'Voice note')} onClick={() => void record()} className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-full bg-amber-800 text-white disabled:opacity-50 cursor-pointer"><Mic className="h-5 w-5" /></button>}
         </div>
       )}
       {recipe && <RecipePicker lang={lang} onClose={() => setRecipe(false)} onPick={(r) => { setRecipe(false); void onSend({ kind: 'recipe', recipeId: r.id, text: text.trim() }); setText(''); }} />}

@@ -394,3 +394,73 @@ test('database setting: found under any name the dashboard gives it; status list
   assert.equal(databaseErrorKind(new Error('password authentication failed for user "x"')), 'auth');
   assert.equal(databaseErrorKind(Object.assign(new Error('getaddrinfo ENOTFOUND ep-x'), { code: 'ENOTFOUND' })), 'network');
 });
+
+test('community AI, interactive polls, and persistent bookmarks work end-to-end without external API keys', async () => {
+  await withApi({ SHAM_DATA_KEY: KEY }, async (base) => {
+    const a = await call(base, '/community/auth/register', { body: { name: 'سالم العطار', email: email('ai_a'), password: PASSWORD } });
+    const b = await call(base, '/community/auth/register', { body: { name: 'نورا الغراس', email: email('ai_b'), password: PASSWORD } });
+    const tokenA = a.data.token as string;
+    const tokenB = b.data.token as string;
+    await call(base, '/community/me', { method: 'PATCH', token: tokenA, body: { bio: 'متخصص دهن العود المعتق والورد الدمشقي' } });
+    await call(base, '/community/me', { method: 'PATCH', token: tokenB, body: { bio: 'خبيرة العود الملكي والعنبر والتركيبات الشرقية' } });
+
+    // 1. AI Compose (poll_ideas + draft + translate)
+    const composed = await call(base, '/community/ai/compose', { token: tokenA, body: { mode: 'poll_ideas', text: 'عود معتق', lang: 'ar' } });
+    assert.equal(composed.status, 200);
+    assert.ok(composed.data.pollSuggestion?.question);
+    assert.ok(composed.data.pollSuggestion?.options.length >= 2);
+    assert.doesNotMatch(JSON.stringify(composed.data), /gemini|openai|chatgpt|claude|deepseek|openrouter/i);
+
+    // 2. Post with interactive poll + voting + bookmarks
+    const pollPost = await call(base, '/community/posts', {
+      token: tokenA,
+      body: { body: `استطلاع اليوم\n[poll]${JSON.stringify({ q: 'أفضل افتتاحية للعود؟', options: ['برغموت', 'زعفران', 'ورد دمشقي'] })}[/poll]` },
+    });
+    assert.equal(pollPost.status, 200);
+
+    const voted = await call(base, `/community/posts/${pollPost.data.id}/vote`, { token: tokenB, body: { optionIndex: 1 } });
+    assert.equal(voted.status, 200);
+    assert.equal(voted.data.myPollVote, 1);
+    assert.equal(voted.data.pollVotes['1'], 1);
+
+    const bookmarked = await call(base, `/community/posts/${pollPost.data.id}/bookmark`, { token: tokenB, body: {} });
+    assert.equal(bookmarked.status, 200);
+    assert.equal(bookmarked.data.bookmarked, true);
+    const savedFeed = await call(base, '/community/feed?scope=bookmarks', { token: tokenB });
+    assert.ok(savedFeed.data.some((p: { id: string }) => p.id === pollPost.data.id));
+
+    // 3. AI Analyze Post, Reply Assist, Semantic Search, Matchmaking & Profile Insight
+    const analysis = await call(base, '/community/ai/analyze-post', {
+      token: tokenB,
+      body: { body: 'خلطت برغموت مع ورد دمشقي ودهن عود معتق وعنبر', lang: 'ar' },
+    });
+    assert.equal(analysis.status, 200);
+    assert.ok(analysis.data.detectedNotes.top.length > 0 && analysis.data.detectedNotes.base.length > 0);
+    assert.ok(analysis.data.suggestedReplies.length >= 2);
+
+    const replyAssist = await call(base, '/community/ai/reply-assist', {
+      token: tokenB,
+      body: { contextType: 'messenger', text: 'كم نسبة العود المناسبة؟', lang: 'ar' },
+    });
+    assert.equal(replyAssist.status, 200);
+    assert.ok(replyAssist.data.suggestions.length >= 2);
+
+    const search = await call(base, '/community/ai/search', {
+      token: tokenB,
+      body: { query: 'عود', lang: 'ar' },
+    });
+    assert.equal(search.status, 200);
+    assert.ok(search.data.answer);
+    assert.ok(search.data.people.length >= 1);
+
+    const match = await call(base, '/community/ai/matchmaking?lang=ar', { token: tokenA });
+    assert.equal(match.status, 200);
+    assert.ok(Array.isArray(match.data.matches) && match.data.matches.length >= 1);
+    assert.equal('score' in match.data.matches[0], false, 'no fabricated match percentages');
+
+    const profileAi = await call(base, `/community/ai/profile/${b.data.me.handle}?lang=ar`, { token: tokenA });
+    assert.equal(profileAi.status, 200);
+    assert.ok(profileAi.data.headline);
+  });
+});
+

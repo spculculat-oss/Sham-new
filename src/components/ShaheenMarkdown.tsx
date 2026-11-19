@@ -52,7 +52,20 @@ const lineBreaks = (text: string, keyBase: string): React.ReactNode[] =>
 
 const cells = (line: string) => line.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.trim());
 
-export function ShaheenMarkdown({ text, className = '' }: { text: string; className?: string }) {
+const PROG_FENCE = new Set([
+  'html', 'htm', 'react', 'tsx', 'ts', 'typescript', 'js', 'javascript', 'jsx',
+  'py', 'python', 'sql', 'css', 'scss', 'mermaid', 'mmd', 'svg', 'bash', 'sh', 'yaml', 'yml',
+]);
+
+export function ShaheenMarkdown({
+  text,
+  className = '',
+  onOpenCode,
+}: {
+  text: string;
+  className?: string;
+  onOpenCode?: (lang: string, code: string) => void;
+}) {
   const lines = plainMath(stripFormulaBlock(text)).split('\n');
   const blocks: React.ReactNode[] = [];
   let i = 0;
@@ -65,14 +78,36 @@ export function ShaheenMarkdown({ text, className = '' }: { text: string; classN
 
     const fence = trimmed.match(/^```(\S*)/);
     if (fence) {
+      const fenceLang = (fence[1] || '').toLowerCase();
       const body: string[] = [];
       i++;
       while (i < lines.length && !lines[i].trim().startsWith('```')) body.push(lines[i++]);
       i++;
       const content = body.join('\n').trim();
-      // Visitors never see an empty box or machine JSON. Anything else in a fence is almost always a
-      // calculation or a note, so it reads as text in a soft box — not as a black «code» panel.
+      // Visitors never see an empty box or machine JSON.
       if (!content || /^[[{]/.test(content)) continue;
+      if (PROG_FENCE.has(fenceLang)) {
+        blocks.push(
+          <div key={key} dir="ltr" className="my-2 overflow-hidden rounded-xl border border-stone-800 bg-stone-950 text-stone-100">
+            <div className="flex items-center justify-between border-b border-stone-800 bg-stone-900 px-3 py-1.5 text-[11px] font-mono">
+              <span className="font-bold uppercase text-amber-400">{fenceLang}</span>
+              {onOpenCode && (
+                <button
+                  type="button"
+                  onClick={() => onOpenCode(fenceLang, content)}
+                  className="rounded-md bg-stone-800 px-2 py-0.5 text-[10px] font-sans font-semibold text-amber-200 hover:bg-stone-700 cursor-pointer"
+                >
+                  Open in Studio
+                </button>
+              )}
+            </div>
+            <pre className="max-h-80 overflow-x-auto p-3 font-mono text-[12px] leading-relaxed text-stone-100">
+              <code>{content}</code>
+            </pre>
+          </div>,
+        );
+        continue;
+      }
       blocks.push(
         <div key={key} dir="auto" className="whitespace-pre-wrap rounded-xl border border-amber-100 bg-amber-50/60 px-3 py-2 text-stone-800 tabular-nums">
           {lineBreaks(content, key)}

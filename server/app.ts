@@ -63,7 +63,10 @@ const community = createCommunity({
     ...(communityDevDb ? { SHAM_COMMUNITY_DEV_DB: communityDevDb } : {}),
   },
 });
-app.use('/api', createCommunityRouter(community));
+app.use('/api', createCommunityRouter(community, {
+  env: process.env,
+  getEnginePolicy: async () => (await shamCore.repo.settings()).enginePolicy,
+}));
 app.use('/api', createCheckoutRouter({
   merchantProducts: async (skus) => { const ctx = await community.ready(); return ctx ? productsForCheckout(ctx, skus) : []; },
   onCheckout: async ({ ref, req, input, shippingUsd, total, currency, catalogLines }) => {

@@ -5,15 +5,42 @@ import { greetingKind, greetingReply } from './shaheenGreeting';
 import { quickAnswer } from './shaheenQuickApps';
 import { browserMemory, type OfflineMemory } from './browserMemory';
 import { offlineNote } from './shaheenMemory';
-import { ApiError, isStaticHosting, requestApi, streamShaheenAgent, visitorId, type ChatResponse } from './api';
-import { CHAT_STORAGE_KEY, clearChatSession, DEFAULT_WELCOME_MESSAGE, isChatMessage,
-  loadStoredChatSession, saveChatSession, type ChatMessage, type ShaheenProvider } from './chatStorage';
+import {
+  ApiError,
+  isStaticHosting,
+  requestApi,
+  streamShaheenAgent,
+  visitorId,
+  voteShaheenArena,
+  type ChatResponse,
+} from './api';
+import {
+  CHAT_STORAGE_KEY,
+  clearChatSession,
+  DEFAULT_WELCOME_MESSAGE,
+  isChatMessage,
+  loadStoredChatSession,
+  saveChatSession,
+  type ChatMessage,
+  type ShaheenProvider,
+} from './chatStorage';
+import {
+  defaultFilenameFor,
+  normalizeArtifactLanguage,
+  verifyCodeSnippet,
+} from './codeVerifier';
 import type {
+  ActiveArtifactContext,
   AgentAction,
+  AgentArtifact,
   AgentAttachmentInput,
   AgentGroundingSource,
+  AgentMode,
+  AgentPlan,
   AgentReasoningDepth,
   AgentStep,
+  ArenaBattleResult,
+  ArenaVoteChoice,
   LabContextSnapshot,
 } from '../types/shaheenAgent';
 
@@ -46,6 +73,7 @@ interface Snapshot {
   daysRemaining: number;
   expiresAt: number;
   agentEnabled: boolean;
+  agentMode: AgentMode;
   reasoningDepth: AgentReasoningDepth;
   autoWebSearch: boolean;
   autoApplyActions: boolean;
@@ -65,10 +93,42 @@ interface SendOptions {
 export interface SendAgentOptions {
   text: string;
   language: SupportedLanguage;
+  agentMode?: AgentMode;
   attachments?: (AgentAttachmentInput & { previewUrl?: string })[];
   labContext?: LabContextSnapshot;
+  activeArtifact?: ActiveArtifactContext;
   onAction?: (action: AgentAction) => void;
   errorText: (error: unknown) => string;
+}
+
+const CODE_FENCE_RE = /```([a-zA-Z0-9_-]+)\n([\s\S]*?)```/g;
+const IGNORED_BLOCK_LANGS = new Set(['sham-formula', 'sham-media', 'sham-tool', 'markdown', 'md', 'text', 'txt']);
+
+function extractFallbackCodeArtifacts(text: string, lang: SupportedLanguage): AgentArtifact[] {
+  const artifacts: AgentArtifact[] = [];
+  let idx = 0;
+  for (const m of text.matchAll(CODE_FENCE_RE)) {
+    const rawLang = (m[1] || '').trim().toLowerCase();
+    const code = (m[2] || '').trim();
+    if (!code || code.length < 24 || IGNORED_BLOCK_LANGS.has(rawLang)) continue;
+    if (rawLang === 'json' && /"concentrationPercent"|"pyramidNotes"/.test(code)) continue;
+    const norm = normalizeArtifactLanguage(rawLang);
+    const verification = verifyCodeSnippet(norm, code);
+    idx += 1;
+    artifacts.push({
+      id: `art-inline-${Date.now()}-${idx}`,
+      title: lang === 'ar' || lang === 'fa' ? `مكوّن برمجي (${norm.toUpperCase()}) #${idx}` : `${norm.toUpperCase()} Artifact #${idx}`,
+      filename: defaultFilenameFor(norm, `${norm}-${idx}`),
+      language: norm,
+      summary: `${norm.toUpperCase()} · ${verification.metrics.lines} lines · ${verification.score}/100`,
+      code,
+      ...(norm === 'html' ? { previewHtml: code } : {}),
+      runnable: norm === 'html' || norm === 'svg' || norm === 'mermaid' || norm === 'javascript',
+      verification,
+      createdAt: Date.now(),
+    });
+  }
+  return artifacts.slice(0, 4);
 }
 
 /**
@@ -108,6 +168,7 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
       ...loadStoredChatSession(),
       isLoading: false,
       agentEnabled: true,
+      agentMode: 'agent',
       reasoningDepth: 'deep',
       autoWebSearch: true,
       autoApplyActions: false,
@@ -169,6 +230,9 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
     setAgentEnabled(enabled: boolean) {
       publish({ ...getSnapshot(), agentEnabled: enabled }, false);
     },
+    setAgentMode(agentMode: AgentMode) {
+      publish({ ...getSnapshot(), agentMode }, false);
+    },
     setReasoningDepth(reasoningDepth: AgentReasoningDepth) {
       publish({ ...getSnapshot(), reasoningDepth }, false);
     },
@@ -186,6 +250,41 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
           : m,
       );
       publish({ ...current, messages });
+    },
+    async voteArena(messageId: string, vote: ArenaVoteChoice) {
+      const current = getSnapshot();
+      const target = current.messages.find((m) => m.id === messageId);
+      const battle = target?.arenaBattle;
+      if (!battle || battle.userVote === vote) return;
+      const prevVote = battle.userVote;
+      const optimisticTotals = { ...(battle.voteTotals || { a: 0, b: 0, tie: 0, merged: 0 }) };
+      if (prevVote && optimisticTotals[prevVote] > 0) optimisticTotals[prevVote] -= 1;
+      optimisticTotals[vote] += 1;
+
+      publish({
+        ...current,
+        messages: current.messages.map((m) =>
+          m.id === messageId && m.arenaBattle
+            ? { ...m, arenaBattle: { ...m.arenaBattle, userVote: vote, voteTotals: optimisticTotals } }
+            : m,
+        ),
+      });
+
+      if (isStaticHosting) return;
+      try {
+        const res = await voteShaheenArena({ battleId: battle.battleId, vote, prevVote });
+        const latest = getSnapshot();
+        publish({
+          ...latest,
+          messages: latest.messages.map((m) =>
+            m.id === messageId && m.arenaBattle
+              ? { ...m, arenaBattle: { ...m.arenaBattle, userVote: res.vote, voteTotals: res.voteTotals } }
+              : m,
+          ),
+        });
+      } catch {
+        /* keep local vote intact */
+      }
     },
     /** Re-asks the question behind a trailing error bubble (removes both, then sends again). */
     async retry(options: Omit<SendOptions, 'text'> & { useAgent?: boolean; labContext?: LabContextSnapshot; onAction?: (action: AgentAction) => void }) {
@@ -295,7 +394,9 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
       const id = (role: string) => `${role}-${Date.now()}-${++sequence}`;
       const hasAttachments = Boolean(options.attachments?.length);
 
-      if (!hasAttachments) {
+      const modeToRun: AgentMode = options.agentMode || current.agentMode || 'agent';
+
+      if (!hasAttachments && modeToRun === 'agent' && !options.activeArtifact) {
         const greeting = greetingKind(text);
         if (greeting) {
           publish({
@@ -355,14 +456,38 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
         text: '…',
         timestamp: timestamp(),
         isStreaming: true,
+        agentMode: modeToRun,
         reasoningDepth: current.reasoningDepth,
         agentSteps: [],
         groundingSources: [],
         agentActions: [],
+        artifacts: [],
         aiEngine: {
-          id: 'agent',
-          name: options.language === 'ar' || options.language === 'fa' ? 'الخبير شاهين · الوكيل الذكي' : 'Master Shahin · AI Agent',
-          badge: options.language === 'ar' || options.language === 'fa' ? '🤖 الوكيل الذكي' : '🤖 AI Agent',
+          id: modeToRun,
+          name:
+            options.language === 'ar' || options.language === 'fa'
+              ? modeToRun === 'arena'
+                ? 'الخبير شاهين · حلبة التنافس الذكية'
+                : modeToRun === 'architect'
+                  ? 'الخبير شاهين · استوديو الهندسة البرمجية'
+                  : 'الخبير شاهين · الوكيل الذكي'
+              : modeToRun === 'arena'
+                ? 'Master Shahin · Arena AI Agent'
+                : modeToRun === 'architect'
+                  ? 'Master Shahin · Code Architect'
+                  : 'Master Shahin · AI Agent',
+          badge:
+            options.language === 'ar' || options.language === 'fa'
+              ? modeToRun === 'arena'
+                ? '⚔️ حلبة شاهين'
+                : modeToRun === 'architect'
+                  ? '⚡ استوديو البرمجة'
+                  : '🤖 الوكيل الذكي'
+              : modeToRun === 'arena'
+                ? '⚔️ Arena AI'
+                : modeToRun === 'architect'
+                  ? '⚡ Code Studio'
+                  : '🤖 AI Agent',
           provider: 'shaheen',
         },
       };
@@ -390,6 +515,9 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
       let liveSteps: AgentStep[] = [];
       let liveSources: AgentGroundingSource[] = [];
       let liveActions: AgentAction[] = [];
+      let livePlan: AgentPlan | undefined;
+      let liveArtifacts: AgentArtifact[] = [];
+      let liveArena: ArenaBattleResult | undefined;
 
       const updateBotMessage = (patch: Partial<ChatMessage>, persist = false) => {
         if (generation !== token) return;
@@ -405,11 +533,13 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
           {
             message: text,
             language: options.language,
+            agentMode: modeToRun,
             reasoningDepth: current.reasoningDepth,
             autoWebSearch: current.autoWebSearch,
             conversationHistory: history,
             attachments: options.attachments?.map(({ name, mimeType, data }) => ({ name, mimeType, data })),
             labContext: options.labContext,
+            activeArtifact: options.activeArtifact,
           },
           (event) => {
             if (generation !== token) return;
@@ -428,12 +558,72 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
                 updateBotMessage({ agentSteps: liveSteps });
                 break;
               }
+              case 'plan': {
+                livePlan = { goal: event.goal, tasks: event.tasks };
+                updateBotMessage({ agentPlan: livePlan });
+                break;
+              }
+              case 'artifact': {
+                if (!liveArtifacts.some((a) => a.id === event.artifact.id)) {
+                  liveArtifacts = [...liveArtifacts, event.artifact];
+                  updateBotMessage({ artifacts: liveArtifacts });
+                }
+                break;
+              }
+              case 'arena_start': {
+                liveArena = {
+                  battleId: event.battleId,
+                  contenders: [],
+                  winner: 'tie',
+                  judgeSummary: '',
+                  synthesizedReply: '',
+                  synthesizedArtifacts: [],
+                };
+                updateBotMessage({ arenaBattle: liveArena });
+                break;
+              }
+              case 'arena_contender': {
+                if (liveArena) {
+                  liveArena = {
+                    ...liveArena,
+                    contenders: [...liveArena.contenders.filter((c) => c.id !== event.contender.id), event.contender],
+                  };
+                  updateBotMessage({ arenaBattle: liveArena });
+                }
+                break;
+              }
+              case 'arena_judge': {
+                if (liveArena) {
+                  liveArena = {
+                    ...liveArena,
+                    winner: event.winner,
+                    judgeSummary: event.judgeSummary,
+                  };
+                  updateBotMessage({ arenaBattle: liveArena });
+                }
+                break;
+              }
               case 'tool_call': {
+                const isCode =
+                  event.tool === 'generate_code_artifact' ||
+                  event.tool === 'inspect_and_verify_code' ||
+                  event.tool === 'plan_engineering_tasks' ||
+                  event.tool === 'benchmark_solutions_matrix';
+                const isArena = event.tool === 'arena_duel' || event.tool === 'arena_judge';
                 liveSteps = [
                   ...liveSteps,
                   {
                     id: event.stepId,
-                    kind: event.tool === 'web_search' ? 'web' : event.tool === 'dispatch_app_action' ? 'action' : 'tool',
+                    kind:
+                      event.tool === 'web_search'
+                        ? 'web'
+                        : event.tool === 'dispatch_app_action'
+                          ? 'action'
+                          : isArena
+                            ? 'arena'
+                            : isCode
+                              ? 'code'
+                              : 'tool',
                     tool: event.tool,
                     label: event.label,
                     status: 'running',
@@ -476,6 +666,12 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
                   const existing = liveActions.find((la) => la.id === a.id);
                   return existing ? { ...a, applied: existing.applied } : a;
                 });
+                const resolvedArtifacts =
+                  event.artifacts && event.artifacts.length > 0
+                    ? event.artifacts
+                    : liveArtifacts.length > 0
+                      ? liveArtifacts
+                      : extractFallbackCodeArtifacts(event.reply, options.language);
                 const snap = getSnapshot();
                 const messages = snap.messages.map((m) =>
                   m.id === botMsgId
@@ -485,6 +681,9 @@ export function createChatStore(request: typeof requestApi = requestApi, pause: 
                         agentSteps: event.steps,
                         groundingSources: event.sources,
                         agentActions: finalActions,
+                        agentPlan: event.plan || livePlan,
+                        artifacts: resolvedArtifacts,
+                        arenaBattle: event.arena || liveArena,
                         aiEngine: event.engine,
                         isStreaming: false,
                       }

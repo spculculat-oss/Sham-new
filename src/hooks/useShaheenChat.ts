@@ -14,10 +14,12 @@ export function useShaheenChat() {
     sendMessage: shaheenChatStore.send,
     sendAgentMessage: shaheenChatStore.sendAgent,
     setAgentEnabled: shaheenChatStore.setAgentEnabled,
+    setAgentMode: shaheenChatStore.setAgentMode,
     setReasoningDepth: shaheenChatStore.setReasoningDepth,
     setAutoWebSearch: shaheenChatStore.setAutoWebSearch,
     setAutoApplyActions: shaheenChatStore.setAutoApplyActions,
     markActionApplied: shaheenChatStore.markActionApplied,
+    voteArena: shaheenChatStore.voteArena,
     retryLast: shaheenChatStore.retry,
     clearHistory: shaheenChatStore.clear,
   };

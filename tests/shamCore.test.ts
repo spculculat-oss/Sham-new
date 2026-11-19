@@ -277,3 +277,33 @@ test('identity questions are answered by Sham itself, without calling any model 
   assert.equal(modelCalls, 0);
   assert.equal(route('عطر شغال على العود', defaultServices()).intent === 'identity', false, 'perfume talk is not an identity question');
 });
+
+test('admin overview highlights low-stock items and creates purchase orders with optional restock', async () => {
+  const core = createShamCore({ env: { SHAM_STORE: 'memory', SHAM_SEED_DEMO: 'true', SHAM_ADMIN_TOKEN: 'correct-horse-battery' } });
+  const app = express();
+  app.use(express.json());
+  app.use('/api/admin', core.admin);
+  const server = app.listen(0, '127.0.0.1');
+  await new Promise((r) => server.once('listening', r));
+  const base = `http://127.0.0.1:${(server.address() as AddressInfo).port}/api`;
+  const auth = { Authorization: 'Bearer correct-horse-battery', 'content-type': 'application/json' };
+  try {
+    const low = await core.repo.saveProduct({ nameAr: 'دهن عود نادر', nameEn: 'Rare Oud', stock: 3, price: 900, currency: 'EGP', unit: 'ml' });
+    const overview1 = await (await fetch(`${base}/admin/overview`, { headers: auth })).json();
+    assert.ok(overview1.lowStockItems.some((p: { id: string; stock: number }) => p.id === low.id && p.stock === 3));
+
+    const po = await (await fetch(`${base}/admin/purchase-orders`, {
+      method: 'POST',
+      headers: auth,
+      body: JSON.stringify({ productId: low.id, quantity: 10, supplierName: 'مورد غراس', receiveImmediately: true }),
+    })).json();
+    assert.match(po.purchaseOrder.ref, /^PO-/);
+    assert.equal(po.product.stock, 13);
+
+    const overview2 = await (await fetch(`${base}/admin/overview`, { headers: auth })).json();
+    assert.equal(overview2.lowStockItems.some((p: { id: string }) => p.id === low.id), false);
+  } finally {
+    server.close();
+  }
+});
+

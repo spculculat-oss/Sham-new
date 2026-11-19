@@ -23,6 +23,9 @@ const POST_SELECT = `
     (SELECT count(*) FROM comments c WHERE c.post_id = p.id AND c.status = 'visible')::int AS comments,
     (SELECT coalesce(json_object_agg(kind, n), '{}') FROM (SELECT kind, count(*)::int AS n FROM reactions r WHERE r.post_id = p.id GROUP BY kind) k) AS reaction_counts,
     (SELECT kind FROM reactions r WHERE r.post_id = p.id AND r.user_id = $1) AS my_reaction,
+    (SELECT coalesce(json_object_agg(option_index::text, n), '{}') FROM (SELECT option_index, count(*)::int AS n FROM poll_votes pv WHERE pv.post_id = p.id GROUP BY option_index) pk) AS poll_votes,
+    (SELECT option_index FROM poll_votes pv WHERE pv.post_id = p.id AND pv.user_id = $1) AS my_poll_vote,
+    EXISTS (SELECT 1 FROM bookmarks bk WHERE bk.post_id = p.id AND bk.user_id = $1) AS bookmarked,
     rc.title AS recipe_title, rc.data AS recipe_data, rc.visibility AS recipe_visibility
   FROM posts p JOIN users u ON u.id = p.author_id LEFT JOIN merchants m ON m.user_id = u.id LEFT JOIN recipes rc ON rc.id = p.recipe_id`;
 
@@ -32,12 +35,15 @@ const VISIBLE = `p.status = 'visible' AND u.status = 'active'
   AND (p.visibility = 'public' OR p.author_id = $1 OR EXISTS (
     SELECT 1 FROM friendships f WHERE f.status = 'accepted' AND ((f.user_a = $1 AND f.user_b = p.author_id) OR (f.user_b = $1 AND f.user_a = p.author_id))))`;
 
-function postView(row: Row, viewerId: string) {
+export function postView(row: Row, viewerId: string) {
   const recipeVisible = row.recipe_title && (row.recipe_visibility !== 'private' || row.author_id === viewerId);
   return {
     id: row.post_id, body: row.body, image: row.image || null, visibility: row.visibility, createdAt: iso(row.post_created), editedAt: iso(row.edited_at),
     author: publicUser(row), mine: row.author_id === viewerId, comments: row.comments,
     reactions: row.reaction_counts || {}, myReaction: row.my_reaction || null,
+    pollVotes: row.poll_votes || {},
+    myPollVote: row.my_poll_vote !== null && row.my_poll_vote !== undefined ? Number(row.my_poll_vote) : null,
+    bookmarked: Boolean(row.bookmarked),
     recipe: recipeVisible ? { id: row.recipe_id, title: row.recipe_title, data: row.recipe_data } : null,
   };
 }
@@ -48,6 +54,7 @@ export async function feed(ctx: Ctx, viewerId: string, options: { before?: unkno
   let where = VISIBLE;
   if (typeof options.before === 'string' && !Number.isNaN(Date.parse(options.before))) { params.push(options.before); where += ` AND p.created_at < $${params.length}`; }
   if (options.scope === 'friends') where += ` AND (p.author_id = $1 OR EXISTS (SELECT 1 FROM friendships f WHERE f.status = 'accepted' AND ((f.user_a = $1 AND f.user_b = p.author_id) OR (f.user_b = $1 AND f.user_a = p.author_id))))`;
+  if (options.scope === 'bookmarks') where += ` AND EXISTS (SELECT 1 FROM bookmarks bk WHERE bk.post_id = p.id AND bk.user_id = $1)`;
   const rows = await ctx.sql.query(`${POST_SELECT} WHERE ${where} ORDER BY p.created_at DESC LIMIT ${PAGE}`, params);
   return rows.map((r) => postView(r, viewerId));
 }
@@ -97,6 +104,29 @@ export async function react(ctx: Ctx, userId: string, postId: string, kind: unkn
     if (!REACTIONS.includes(kind as typeof REACTIONS[number])) fail(400, 'INVALID_REACTION');
     await ctx.sql.query(`INSERT INTO reactions (post_id, user_id, kind) VALUES ($1,$2,$3) ON CONFLICT (post_id, user_id) DO UPDATE SET kind = EXCLUDED.kind`, [postId, userId, kind]);
     if (!post.myReaction) await notify(ctx, post.author.id, 'reaction', userId, postId);
+  }
+  return getPost(ctx, userId, postId);
+}
+
+export async function votePoll(ctx: Ctx, userId: string, postId: string, optionIndex: unknown) {
+  await getPost(ctx, userId, postId);
+  const idx = Number(optionIndex);
+  if (!Number.isInteger(idx) || idx < 0 || idx > 5) fail(400, 'INVALID_FIELD', 'optionIndex');
+  await ctx.sql.query(
+    `INSERT INTO poll_votes (post_id, user_id, option_index) VALUES ($1, $2, $3)
+     ON CONFLICT (post_id, user_id) DO UPDATE SET option_index = EXCLUDED.option_index`,
+    [postId, userId, idx]
+  );
+  return getPost(ctx, userId, postId);
+}
+
+export async function toggleBookmark(ctx: Ctx, userId: string, postId: string) {
+  await getPost(ctx, userId, postId);
+  const [exists] = await ctx.sql.query(`SELECT 1 FROM bookmarks WHERE user_id = $1 AND post_id = $2`, [userId, postId]);
+  if (exists) {
+    await ctx.sql.query(`DELETE FROM bookmarks WHERE user_id = $1 AND post_id = $2`, [userId, postId]);
+  } else {
+    await ctx.sql.query(`INSERT INTO bookmarks (user_id, post_id) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [userId, postId]);
   }
   return getPost(ctx, userId, postId);
 }

@@ -9,17 +9,24 @@ import {
   validateAgentRequest,
   type AgentToolContext,
 } from '../server/shaheenAgent';
-import type { AgentStreamEvent } from '../src/types/shaheenAgent';
+import {
+  arenaVoteStore,
+  extractArtifactsFromText,
+  validateArenaVoteRequest,
+} from '../server/shaheenArena';
+import { buildArtifactPreviewHtml, verifyCodeSnippet } from '../src/utils/codeVerifier';
+import type { AgentArtifact, AgentStreamEvent } from '../src/types/shaheenAgent';
 
 const VENDORS = /gemini|deepseek|openai|chatgpt|gpt|claude|anthropic|openrouter|llama|qwen|google/i;
 
-function makeToolCtx(): AgentToolContext {
+function makeToolCtx(collectedArtifacts: AgentArtifact[] = []): AgentToolContext {
   return {
     env: {},
     language: 'ar',
     catalogLoader: async () => undefined,
     fetchFn: fetch,
     collectedActions: [],
+    collectedArtifacts,
   };
 }
 
@@ -93,21 +100,128 @@ test('dispatch_app_action collects validated lab action and sanitizes vendor nam
   assert.doesNotMatch(scrubVendorText('Gemini powered by Google'), VENDORS);
 });
 
-test('validateAgentRequest rejects invalid bodies and accepts valid multimodal payloads', () => {
+test('validateAgentRequest rejects invalid bodies and accepts multimodal, agentMode, and activeArtifact payloads', () => {
   assert.throws(() => validateAgentRequest(null));
   assert.throws(() => validateAgentRequest({ message: '   ' }));
   const valid = validateAgentRequest({
     message: 'صمم عطر عود',
     language: 'ar',
     reasoningDepth: 'max',
+    agentMode: 'architect',
+    activeArtifact: {
+      id: 'art-1',
+      title: 'Formula Calculator',
+      filename: 'calc.html',
+      language: 'html',
+      code: '<div><h1>Hello</h1></div>',
+    },
     attachments: [{ name: 'bottle.jpg', mimeType: 'image/jpeg', data: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD' }],
   });
   assert.equal(valid.reasoningDepth, 'max');
+  assert.equal(valid.agentMode, 'architect');
+  assert.equal(valid.activeArtifact?.filename, 'calc.html');
   assert.equal(valid.attachments.length, 1);
   assert.match(
     formatLabContextBlock({ activeTab: 'concentration', formulaTitle: 'عطر الشام', macerationDays: 35 }),
     /عطر الشام/,
   );
+});
+
+test('verifyCodeSnippet and buildArtifactPreviewHtml validate code, catch defects, and build offline previews', () => {
+  const goodHtml = verifyCodeSnippet('html', '<!DOCTYPE html><html><body><main><h1>Test</h1></main><script>const x = 1 + 2;</script></body></html>');
+  assert.equal(goodHtml.valid, true);
+  assert.ok(goodHtml.score >= 90);
+
+  const badJs = verifyCodeSnippet('javascript', 'function broken( { return 42;');
+  assert.equal(badJs.valid, false);
+  assert.ok(badJs.diagnostics.some((d) => d.level === 'error'));
+
+  const sqlWarn = verifyCodeSnippet('sql', 'DROP TABLE users;\nDELETE FROM orders;');
+  assert.ok(sqlWarn.diagnostics.some((d) => d.level === 'warning'));
+  assert.ok(sqlWarn.score < 100);
+
+  const jsonGood = verifyCodeSnippet('json', '{"status":"ok","items":[1,2,3]}');
+  assert.equal(jsonGood.valid, true);
+
+  const mermaidPreview = buildArtifactPreviewHtml({
+    id: 'm1',
+    title: 'Pipeline Flow',
+    filename: 'flow.mmd',
+    language: 'mermaid',
+    summary: 'flow',
+    code: 'flowchart TD\nA[Input] --> B[Verify]\nB --> C[Output]',
+    runnable: true,
+    createdAt: Date.now(),
+  });
+  assert.ok(mermaidPreview && mermaidPreview.includes('<svg') && mermaidPreview.includes('Verify'));
+
+  const jsPreview = buildArtifactPreviewHtml({
+    id: 'j1',
+    title: 'Calc',
+    filename: 'calc.js',
+    language: 'javascript',
+    summary: 'js',
+    code: 'console.log(2 + 2);',
+    runnable: true,
+    createdAt: Date.now(),
+  });
+  assert.ok(jsPreview && jsPreview.includes('console.log(2 + 2)'));
+});
+
+test('software engineering tools plan tasks, generate verified artifacts, inspect code, and benchmark matrices', async () => {
+  const collectedArtifacts: AgentArtifact[] = [];
+  const ctx = makeToolCtx(collectedArtifacts);
+
+  const planRes = await executeAgentTool(
+    'plan_engineering_tasks',
+    {
+      goal: 'بناء حاسبة تركيز عطور تفاعلية',
+      tasks: [
+        { title: 'تصميم واجهة المدخلات', phase: 'design', status: 'done' },
+        { title: 'برمجة معادلة التخفيف', phase: 'build', status: 'in_progress' },
+        { title: 'التحقق من الحالات الحدية', phase: 'verify', status: 'pending' },
+      ],
+    },
+    ctx,
+  );
+  assert.equal(planRes.result.planned, true);
+  assert.ok(ctx.collectedPlan && ctx.collectedPlan.tasks.length === 3);
+
+  const genRes = await executeAgentTool(
+    'generate_code_artifact',
+    {
+      title: 'Interactive Dilution Calculator',
+      filename: 'dilution-calc.html',
+      language: 'html',
+      summary: 'Single-file calculator with input guards',
+      code: '<!DOCTYPE html><html><body><section><h1>Dilution</h1></section><script>function calc(v,p){return (v*p)/100;}</script></body></html>',
+    },
+    ctx,
+  );
+  assert.equal(genRes.result.created, true);
+  assert.equal((genRes.result.verification as { valid: boolean }).valid, true);
+  assert.equal(collectedArtifacts.length, 1);
+  assert.equal(collectedArtifacts[0].runnable, true);
+
+  const inspectRes = await executeAgentTool(
+    'inspect_and_verify_code',
+    { language: 'javascript', code: 'const sum = (a, b) => a + b;\nconsole.log(sum(3, 4));' },
+    ctx,
+  );
+  assert.equal(inspectRes.result.valid, true);
+
+  const benchRes = await executeAgentTool(
+    'benchmark_solutions_matrix',
+    {
+      topic: 'Choose state storage for offline lab notes',
+      options: [
+        { name: 'IndexedDB', summary: 'Structured async DB', correctnessScore: 95, maintainabilityScore: 88, scalabilityScore: 96, speedScore: 90 },
+        { name: 'localStorage', summary: 'Sync KV store', correctnessScore: 72, maintainabilityScore: 90, scalabilityScore: 45, speedScore: 85 },
+      ],
+    },
+    ctx,
+  );
+  assert.equal(benchRes.result.winner, 'IndexedDB');
 });
 
 test('runShaheenAgent executes multi-step ReAct tool calls, preserves thought signatures, streams SSE events, and leaks zero vendor strings', async () => {
@@ -179,4 +293,70 @@ test('runShaheenAgent executes multi-step ReAct tool calls, preserves thought si
 
   // Verify visitor-facing engine metadata and step labels leak no AI vendor names
   assert.doesNotMatch(JSON.stringify({ engine: result.engine, steps: result.steps }), VENDORS);
+});
+
+test('runShaheenAgent in arena mode runs parallel contenders, extracts verified artifacts, produces judge verdict, and leaks zero vendor names', async () => {
+  let callIndex = 0;
+  const fakeAi = {
+    models: {
+      generateContent: async (req: { config?: { responseMimeType?: string } }) => {
+        callIndex += 1;
+        // Judge call requests application/json
+        if (req.config?.responseMimeType === 'application/json') {
+          return {
+            text: JSON.stringify({
+              winner: 'b',
+              verdictSummary: 'المسار ب قدّم بنية واجهة كاملة مع التحقق من المدخلات.',
+              synthesisMarkdown: '### الحل المدمج النهائي\n\nتم دمج سرعة المسار أ مع دقة المسار ب.',
+              scoreA: { accuracy: 86, architecture: 82, clarity: 88, completeness: 84, overall: 85 },
+              scoreB: { accuracy: 94, architecture: 95, clarity: 91, completeness: 93, overall: 93 },
+            }),
+          };
+        }
+        // Contender responses
+        if (callIndex === 1) {
+          return {
+            text: 'حل عملي سريع:\n```javascript\nfunction dilution(vol, pct) { return Number(((vol * pct) / 100).toFixed(2)); }\nconsole.log(dilution(100, 20));\n```',
+          };
+        }
+        return {
+          text: 'تصميم معماري متكامل:\n```html\n<!DOCTYPE html><html><body><div id="app"><h1>Lab Pro</h1></div><script>const ratio = 0.2; console.log(ratio);</script></body></html>\n```',
+        };
+      },
+    },
+  } as unknown as GoogleGenAI;
+
+  const events: AgentStreamEvent[] = [];
+  const result = await runShaheenAgent(
+    { message: 'ابني أداة لحساب تركيز العطور', language: 'ar', agentMode: 'arena', reasoningDepth: 'deep' },
+    { ai: fakeAi, env: { GEMINI_API_KEY: 'test-key' }, onEvent: (e) => events.push(e) },
+  );
+
+  assert.ok(result.arena, 'Arena battle result must be present');
+  assert.equal(result.arena!.contenders.length, 2);
+  assert.equal(result.arena!.winner, 'b');
+  assert.ok(result.artifacts && result.artifacts.length >= 2, 'Artifacts extracted from both contenders');
+  assert.ok(result.artifacts.every((a) => a.verification?.valid === true));
+  assert.ok(events.some((e) => e.type === 'arena_start'));
+  assert.ok(events.filter((e) => e.type === 'arena_contender').length === 2);
+  assert.ok(events.some((e) => e.type === 'artifact'));
+  assert.ok(events.some((e) => e.type === 'arena_judge'));
+  assert.ok(events.some((e) => e.type === 'done'));
+
+  assert.doesNotMatch(JSON.stringify({ reply: result.reply, arena: result.arena, steps: result.steps, engine: result.engine }), VENDORS);
+  assert.equal(extractArtifactsFromText('```sham-formula\n{"concentrationPercent":20}\n```', 'a').length, 0);
+});
+
+test('validateArenaVoteRequest and arenaVoteStore tally and switch votes cleanly', () => {
+  assert.throws(() => validateArenaVoteRequest({ battleId: 'x', vote: 'a' }));
+  assert.throws(() => validateArenaVoteRequest({ battleId: 'arena-abc123', vote: 'invalid' }));
+
+  const validVote = validateArenaVoteRequest({ battleId: 'arena-test-01', vote: 'b' });
+  const t1 = arenaVoteStore.record(validVote.battleId, validVote.vote);
+  assert.equal(t1.b, 1);
+
+  const switched = validateArenaVoteRequest({ battleId: 'arena-test-01', vote: 'merged', prevVote: 'b' });
+  const t2 = arenaVoteStore.record(switched.battleId, switched.vote, switched.prevVote);
+  assert.equal(t2.b, 0);
+  assert.equal(t2.merged, 1);
 });

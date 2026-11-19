@@ -5,7 +5,7 @@
  * - Center: Stories carousel, Composer with scent-feeling picker & formula attachment, filter tabs, rich posts with Facebook reaction bar & recipe cards
  * - Right: Online contacts with 1-click docked messenger, trending salon topics, friend suggestions, featured creation
  */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Bell,
   Check,
@@ -18,7 +18,6 @@ import {
   Search,
   Send,
   UserCheck,
-  UserMinus,
   UserPlus,
   Users,
   X,
@@ -26,17 +25,8 @@ import {
   Bookmark,
   Sparkles,
   Flame,
-  Award,
-  ChevronRight,
-  TrendingUp,
-  MessageSquare,
-  Smile,
-  Eye,
-  Sliders,
-  Store,
   Layers,
-  Heart,
-  ExternalLink,
+  Store,
   Radio,
   Maximize2,
   RefreshCw,
@@ -50,8 +40,28 @@ import {
   Palette,
   ChevronDown,
   RotateCcw,
+  Wand2,
+  BarChart2,
+  Languages,
+  Hash,
+  Compass,
+  Plus,
+  Loader2,
+  Lightbulb,
 } from 'lucide-react';
-import { cx, resizeImage, type Comment, type Notification, type Post, type PublicUser, type Recipe } from './api';
+import {
+  cx,
+  resizeImage,
+  type AiComposeResult,
+  type AiMatchmakingResult,
+  type AiPostAnalysis,
+  type AiReplyAssistResult,
+  type Comment,
+  type Notification,
+  type Post,
+  type PublicUser,
+  type Recipe,
+} from './api';
 import { pulseNow, type SessionState } from './session';
 import { Avatar, Btn, Card, Empty, Sheet, Spinner, errorText, inputClass, timeAgo, tx, useLoad, type Lang } from './ui';
 import { StoriesBar } from './StoriesBar';
@@ -94,9 +104,56 @@ interface Props {
 
 /* ------------------------------------------------- Feed ------------------------------------------------- */
 
+const OLFACTORY_CIRCLES: {
+  id: 'all' | 'oud' | 'floral' | 'lab' | 'niche';
+  ar: string;
+  en: string;
+  matcher?: RegExp;
+}[] = [
+  { id: 'all', ar: 'كل دوائر الصنعة', en: 'All Craft Circles' },
+  { id: 'oud', ar: 'عود وبخور', en: 'Oud & Incense', matcher: /عود|كمبودي|هندي|بخور|معتق|oud|agarwood|incense/i },
+  { id: 'floral', ar: 'ورد وتقطير نقي', en: 'Floral & Distillation', matcher: /ورد|ياسمين|زهر|غراس|تقطير|قطفة|rose|jasmine|distill/i },
+  { id: 'lab', ar: 'معمل وتعتيق', en: 'Lab & Maceration', matcher: /تعتيق|تركيز|مثبت|كحول|هيديون|أمبروكسان|maceration|concentration|hedione|ifra/i },
+  { id: 'niche', ar: 'نيش وتواقيع', en: 'Niche & Signatures', matcher: /نيش|توباكو|عنبر|فانيليا|جلود|صندل|مسك|niche|amber|tobacco|musk|signature/i },
+];
+
+function extractPollBlock(rawBody: string): { textBody: string; poll: { q: string; options: string[] } | null } {
+  const match = rawBody.match(/\[poll\]([\s\S]*?)\[\/poll\]/);
+  if (!match) return { textBody: rawBody, poll: null };
+  try {
+    const parsed = JSON.parse(match[1]) as { q?: string; options?: string[] };
+    const options = Array.isArray(parsed.options)
+      ? parsed.options.map((o) => String(o).trim()).filter(Boolean).slice(0, 4)
+      : [];
+    if (parsed.q && options.length >= 2) {
+      return {
+        textBody: rawBody.replace(match[0], '').trim(),
+        poll: { q: String(parsed.q).trim(), options },
+      };
+    }
+  } catch {
+    // Ignore malformed poll JSON
+  }
+  return { textBody: rawBody, poll: null };
+}
+
+function smartPostScore(p: Post): number {
+  const reactions = Object.values(p.reactions).reduce((s, n) => s + n, 0);
+  const pollTotal = p.pollVotes ? Object.values(p.pollVotes).reduce((s, n) => s + n, 0) : 0;
+  const ageHours = Math.max(1, (Date.now() - new Date(p.createdAt).getTime()) / 3_600_000);
+  const craftBoost =
+    (p.recipe ? 8 : 0) +
+    (/\[poll\]/.test(p.body) ? 5 : 0) +
+    (p.image ? 3 : 0) +
+    (p.author.craftLevel === 'master_lab' ? 4 : 0) +
+    (/[؟?]/.test(p.body) ? 3 : 0);
+  return (craftBoost + reactions * 2 + p.comments * 3 + pollTotal * 2) / Math.pow(ageHours + 2, 0.45);
+}
+
 export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props) {
   const t = tx(lang);
-  const [scope, setScope] = useState<'all' | 'friends' | 'recipes' | 'trending' | 'general-news'>('all');
+  const [scope, setScope] = useState<'all' | 'smart' | 'friends' | 'recipes' | 'polls' | 'trending' | 'bookmarks' | 'general-news'>('all');
+  const [circle, setCircle] = useState<'all' | 'oud' | 'floral' | 'lab' | 'niche'>('all');
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [more, setMore] = useState(true);
@@ -105,24 +162,14 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
   const me = session.me;
 
   const load = async (before?: string) => {
+    if (scope === 'general-news') return;
     setLoading(true);
     try {
-      const queryScope = scope === 'friends' ? 'friends' : 'all';
+      const queryScope = scope === 'friends' ? 'friends' : scope === 'bookmarks' ? 'bookmarks' : 'all';
       const list = await cx<Post[]>(
         `/community/feed?scope=${queryScope}${before ? `&before=${encodeURIComponent(before)}` : ''}`
       );
-      let filtered = list;
-      if (scope === 'recipes') {
-        filtered = list.filter((p) => Boolean(p.recipe));
-      } else if (scope === 'trending') {
-        filtered = [...list].sort(
-          (a, b) =>
-            Object.values(b.reactions).reduce((s, n) => s + n, 0) +
-            b.comments -
-            (Object.values(a.reactions).reduce((s, n) => s + n, 0) + a.comments)
-        );
-      }
-      setPosts((prev) => (before ? [...prev, ...filtered] : filtered));
+      setPosts((prev) => (before ? [...prev, ...list] : list));
       setMore(list.length >= 20);
       setError('');
     } catch (e) {
@@ -136,14 +183,42 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
     void load();
   }, [scope]);
 
+  const visiblePosts = useMemo(() => {
+    let list = [...posts];
+    if (scope === 'recipes') {
+      list = list.filter((p) => Boolean(p.recipe));
+    } else if (scope === 'polls') {
+      list = list.filter((p) => Boolean(extractPollBlock(p.body).poll));
+    } else if (scope === 'bookmarks') {
+      list = list.filter((p) => Boolean(p.bookmarked));
+    } else if (scope === 'trending') {
+      list.sort(
+        (a, b) =>
+          Object.values(b.reactions).reduce((s, n) => s + n, 0) +
+          b.comments -
+          (Object.values(a.reactions).reduce((s, n) => s + n, 0) + a.comments)
+      );
+    } else if (scope === 'smart') {
+      list.sort((a, b) => smartPostScore(b) - smartPostScore(a));
+    }
+
+    const activeCircle = OLFACTORY_CIRCLES.find((c) => c.id === circle);
+    if (activeCircle?.matcher) {
+      list = list.filter((p) => {
+        if (circle === 'lab' && p.recipe) return true;
+        return activeCircle.matcher!.test(`${p.body} ${p.recipe?.title || ''}`);
+      });
+    }
+    return list;
+  }, [posts, scope, circle]);
+
   const replace = (p: Post) => setPosts((list) => list.map((x) => (x.id === p.id ? p : x)));
   const remove = (id: string) => setPosts((list) => list.filter((x) => x.id !== id));
 
   return (
     <div className="grid grid-cols-1 gap-5 xl:grid-cols-[260px_minmax(0,1fr)_320px] lg:grid-cols-[minmax(0,1fr)_320px]">
-      {/* Left Column (Desktop Shortcuts & Navigation) */}
+      {/* Left Column (Atelier Profile, Navigation & Olfactory Circles) */}
       <aside className="hidden xl:block space-y-4">
-        {/* User Card */}
         {me && (
           <Card className="p-4 space-y-3">
             <button
@@ -153,53 +228,48 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             >
               <Avatar user={me} size={44} ring />
               <div className="min-w-0 flex-1">
-                <p className="truncate font-black text-sm text-stone-900 group-hover:text-amber-800">
+                <p className="truncate font-bold text-sm text-stone-900 group-hover:text-amber-800">
                   {me.name}
                 </p>
                 <p className="truncate text-xs text-stone-500">@{me.handle}</p>
               </div>
             </button>
-            <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-xs text-stone-600">
-              <span>{t('أصدقاء', 'Friends')} <b>{me.counts?.friends || 0}</b></span>
-              <span>·</span>
-              <span>{t('تركيبات', 'Formulas')} <b>{me.counts?.recipes || 0}</b></span>
+            <div className="pt-2.5 border-t border-stone-100 flex items-center justify-between text-xs text-stone-600 tabular-nums">
+              <span>{t('أصدقاء', 'Friends')} <strong className="text-stone-900">{me.counts?.friends || 0}</strong></span>
+              <span className="text-stone-300">·</span>
+              <span>{t('تركيبات', 'Formulas')} <strong className="text-stone-900">{me.counts?.recipes || 0}</strong></span>
             </div>
           </Card>
         )}
 
-        {/* Facebook-style Left Navigation Menu */}
+        {/* Navigation Menu */}
         <Card className="p-2 space-y-1">
           <button
             type="button"
-            onClick={() => go('')}
-            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-amber-900 bg-amber-50 cursor-pointer"
+            onClick={() => setScope('smart')}
+            className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold transition cursor-pointer ${
+              scope === 'smart'
+                ? 'bg-stone-900 text-amber-300'
+                : 'text-stone-800 bg-amber-50/70 hover:bg-amber-100/70'
+            }`}
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-200 text-amber-900">
-              📰
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-200/70 text-amber-950 shrink-0">
+              <Sparkles className="h-4 w-4" />
             </span>
-            <span>{t('الموجز العام (الأخبار)', 'News Feed')}</span>
+            <span className="flex-1 text-start">{t('الموجز الذكي لاهتماماتك', 'AI Smart Feed')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => go('general-news')}
-            className="flex w-full items-center gap-3 rounded-xl px-3 py-2 text-xs font-bold text-rose-950 bg-gradient-to-r from-rose-50 to-amber-50/50 border border-rose-200/60 hover:bg-rose-100/70 transition cursor-pointer shadow-2xs group"
+            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-rose-600 text-white shadow-xs">
-              <Radio className="h-4 w-4 animate-pulse" />
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-rose-100 text-rose-700 shrink-0">
+              <Radio className="h-4 w-4" />
             </span>
-            <div className="flex-1 text-start">
-              <div className="flex items-center gap-1.5">
-                <span className="text-stone-900 font-extrabold group-hover:text-rose-900">
-                  {t('أخبار العامة', 'General News')}
-                </span>
-                <span className="rounded-full bg-rose-600 px-1.5 py-0.2 text-[9px] text-white font-black animate-pulse">
-                  دورية
-                </span>
-              </div>
-              <p className="text-[10px] text-amber-900 font-medium">
-                {t('النشرة الدورية الحية للمجتمع', 'Periodic Bulletin')}
-              </p>
+            <div className="flex-1 text-start min-w-0">
+              <p className="font-bold text-stone-900 truncate">{t('أخبار العامة الدورية', 'General News')}</p>
+              <p className="text-[10px] text-stone-500 truncate">{t('النشرة العطرية الحية', 'Live industry bulletin')}</p>
             </div>
           </button>
 
@@ -208,13 +278,10 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             onClick={() => go('discussions')}
             className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-800">
-              💬
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-700 shrink-0">
+              <Users className="h-4 w-4" />
             </span>
-            <div className="flex-1 text-start">
-              <span>{t('مجلس النقاش العام', 'Public Discussions')}</span>
-            </div>
-            <span className="rounded-full bg-rose-500 px-1.5 text-[9px] text-white font-black">جديد</span>
+            <span className="flex-1 text-start">{t('مجلس النقاش العام', 'Public Salon')}</span>
           </button>
 
           <button
@@ -222,21 +289,23 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             onClick={() => go('messenger')}
             className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
-              ⚡
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-100 text-amber-800 shrink-0">
+              <MessageCircle className="h-4 w-4" />
             </span>
-            <span>{t('ماسنجر شام (المحادثات)', 'Messenger')}</span>
+            <span className="flex-1 text-start">{t('ماسنجر شام', 'Messenger')}</span>
           </button>
 
           <button
             type="button"
-            onClick={() => go('friends')}
-            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
+            onClick={() => setScope('bookmarks')}
+            className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold cursor-pointer transition ${
+              scope === 'bookmarks' ? 'bg-stone-900 text-amber-300' : 'text-stone-700 hover:bg-stone-50'
+            }`}
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-800">
-              👥
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-700 shrink-0">
+              <Bookmark className="h-4 w-4" />
             </span>
-            <span>{t('الأصدقاء والتواصل', 'Friends & Network')}</span>
+            <span className="flex-1 text-start">{t('المنشورات المحفوظة', 'Saved Bookmarks')}</span>
           </button>
 
           <button
@@ -244,10 +313,10 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             onClick={() => go('me/recipes')}
             className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-800">
-              🧪
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-700 shrink-0">
+              <FlaskConical className="h-4 w-4" />
             </span>
-            <span>{t('مكتبة التركيبات والوصفات', 'Perfume Recipes')}</span>
+            <span className="flex-1 text-start">{t('مكتبة التركيبات', 'Perfume Recipes')}</span>
           </button>
 
           <button
@@ -255,16 +324,54 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             onClick={() => go('stores')}
             className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-800">
-              🏪
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-700 shrink-0">
+              <Store className="h-4 w-4" />
             </span>
-            <span>{t('سوق ومتاجر شام', 'Stores Marketplace')}</span>
+            <span className="flex-1 text-start">{t('سوق ومتاجر شام', 'Marketplace')}</span>
           </button>
         </Card>
 
-        {/* Shortcuts to Lab Tools */}
+        {/* Interactive Olfactory Circles Filter */}
         <Card className="p-3.5 space-y-2.5">
-          <p className="text-[11px] font-black text-stone-500 uppercase tracking-wider">
+          <div className="flex items-center justify-between">
+            <p className="text-[11px] font-bold text-stone-500">
+              {t('دوائر الصنعة العطرية', 'Olfactory Circles')}
+            </p>
+            {circle !== 'all' && (
+              <button
+                type="button"
+                onClick={() => setCircle('all')}
+                className="text-[11px] font-bold text-amber-800 hover:underline cursor-pointer"
+              >
+                {t('عرض الكل', 'Reset')}
+              </button>
+            )}
+          </div>
+          <div className="space-y-1 text-xs">
+            {OLFACTORY_CIRCLES.map((c) => {
+              const active = circle === c.id;
+              return (
+                <button
+                  key={c.id}
+                  type="button"
+                  onClick={() => setCircle(c.id)}
+                  className={`flex w-full items-center justify-between rounded-xl px-2.5 py-2 text-start cursor-pointer transition font-semibold ${
+                    active
+                      ? 'bg-amber-900 text-white'
+                      : 'text-stone-700 hover:bg-stone-50'
+                  }`}
+                >
+                  <span>{lang === 'ar' ? c.ar : c.en}</span>
+                  {active && <Check className="h-3.5 w-3.5 shrink-0" />}
+                </button>
+              );
+            })}
+          </div>
+        </Card>
+
+        {/* Shortcuts to Lab Tools */}
+        <Card className="p-3.5 space-y-2">
+          <p className="text-[11px] font-bold text-stone-500">
             {t('اختصارات المعمل السريعة', 'Lab Quick Tools')}
           </p>
           <div className="space-y-1 text-xs">
@@ -273,7 +380,7 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
               onClick={() => go('../concentration')}
               className="flex w-full items-center gap-2 rounded-lg p-2 text-stone-700 hover:bg-stone-50 text-start cursor-pointer font-semibold"
             >
-              <FlaskConical className="h-4 w-4 text-amber-600" />
+              <FlaskConical className="h-4 w-4 text-amber-700 shrink-0" />
               <span>{t('حاسبة التراكيز والزيوت', 'Concentration Calculator')}</span>
             </button>
             <button
@@ -281,34 +388,31 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
               onClick={() => go('../maceration_simulator')}
               className="flex w-full items-center gap-2 rounded-lg p-2 text-stone-700 hover:bg-stone-50 text-start cursor-pointer font-semibold"
             >
-              <Sparkles className="h-4 w-4 text-emerald-600" />
-              <span>{t('محاكي التعتيق والمكيرولوجي', 'Maceration Simulator')}</span>
+              <Sparkles className="h-4 w-4 text-emerald-700 shrink-0" />
+              <span>{t('محاكي التعتيق والنضج', 'Maceration Simulator')}</span>
             </button>
             <button
               type="button"
               onClick={() => go('../pyramid')}
               className="flex w-full items-center gap-2 rounded-lg p-2 text-stone-700 hover:bg-stone-50 text-start cursor-pointer font-semibold"
             >
-              <Layers className="h-4 w-4 text-sky-600" />
-              <span>{t('الهرم العطري وتوزيع النوتات', 'Olfactory Pyramid')}</span>
+              <Layers className="h-4 w-4 text-sky-700 shrink-0" />
+              <span>{t('الهرم العطري والنوتات', 'Olfactory Pyramid')}</span>
             </button>
           </div>
         </Card>
       </aside>
 
-      {/* Center Column: Stories, Composer, Feed Filter, Posts */}
+      {/* Center Column: Ticker, Stories, AI Composer, Smart Tabs, Posts */}
       <div className="space-y-4 min-w-0">
-        {/* Periodic Live Ticker Banner ("تيتل دوري") */}
         <GeneralNewsPeriodic lang={lang} go={go} toast={toast} compactTickerOnly />
 
-        {/* Stories / Reels Carousel */}
         <StoriesBar
           lang={lang}
           currentUser={me || undefined}
           onOpenMessenger={onOpenMessenger}
         />
 
-        {/* Facebook-style Post Composer */}
         <Composer
           lang={lang}
           session={session}
@@ -317,29 +421,51 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
           go={go}
         />
 
-        {/* Feed Filter Tabs */}
+        {/* Feed Filter & AI Sort Tabs */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
           {[
-            { id: 'all', label: t('🌐 كل المجتمع', '🌐 Everyone') },
-            { id: 'general-news', label: t('📡 أخبار العامة (دورية)', '📡 General News (Periodic)') },
-            { id: 'friends', label: t('👥 الأصدقاء فقط', '👥 Friends') },
-            { id: 'recipes', label: t('🧪 تركيبات المعمل', '🧪 Recipes') },
-            { id: 'trending', label: t('🔥 الأكثر تفاعلاً', '🔥 Trending') },
+            { id: 'all', label: t('كل المجتمع', 'Everyone') },
+            { id: 'smart', label: t('الذكية لك ✨', 'For You ✨') },
+            { id: 'recipes', label: t('تركيبات المعمل', 'Formulas') },
+            { id: 'polls', label: t('استطلاعات الرأي', 'Polls') },
+            { id: 'friends', label: t('الأصدقاء', 'Friends') },
+            { id: 'bookmarks', label: t('المحفوظات', 'Saved') },
+            { id: 'trending', label: t('الأكثر تفاعلاً', 'Trending') },
+            { id: 'general-news', label: t('أخبار العامة', 'General News') },
           ].map((tab) => (
             <button
               key={tab.id}
               type="button"
-              onClick={() => setScope(tab.id as any)}
-              className={`rounded-full px-4 py-2 text-xs font-bold transition cursor-pointer shrink-0 ${
+              onClick={() => setScope(tab.id as typeof scope)}
+              className={`rounded-xl px-3.5 py-2 text-xs font-bold transition cursor-pointer whitespace-nowrap shrink-0 ${
                 scope === tab.id
-                  ? 'bg-amber-900 text-white shadow-sm'
-                  : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50'
+                  ? 'bg-stone-900 text-amber-300 shadow-xs'
+                  : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50 hover:text-stone-900'
               }`}
             >
               {tab.label}
             </button>
           ))}
         </div>
+
+        {/* Active Circle Indicator on mobile/desktop */}
+        {circle !== 'all' && scope !== 'general-news' && (
+          <div className="flex items-center justify-between rounded-xl border border-amber-200 bg-amber-50/70 px-3.5 py-2 text-xs">
+            <span className="font-bold text-amber-950">
+              {t('تصفية حسب الدائرة:', 'Filtered by circle:')}{' '}
+              {lang === 'ar'
+                ? OLFACTORY_CIRCLES.find((c) => c.id === circle)?.ar
+                : OLFACTORY_CIRCLES.find((c) => c.id === circle)?.en}
+            </span>
+            <button
+              type="button"
+              onClick={() => setCircle('all')}
+              className="font-bold text-amber-900 hover:underline cursor-pointer"
+            >
+              {t('إلغاء التصفية', 'Clear')}
+            </button>
+          </div>
+        )}
 
         {error && <p className="rounded-xl bg-rose-50 p-3 text-sm text-rose-700">{error}</p>}
 
@@ -348,7 +474,7 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
           <GeneralNewsPeriodic lang={lang} go={go} toast={toast} />
         ) : (
           <div className="space-y-4">
-            {posts.map((p) => (
+            {visiblePosts.map((p) => (
               <PostCard
                 key={p.id}
                 post={p}
@@ -365,20 +491,25 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
 
         {loading && scope !== 'general-news' && <Spinner />}
 
-        {!loading && scope !== 'general-news' && !posts.length && !error && (
+        {!loading && scope !== 'general-news' && !visiblePosts.length && !error && (
           <Card>
             <Empty
               icon={<Users className="h-10 w-10 text-stone-300" />}
-              title={t('لا توجد منشورات في هذا القسم حالياً', 'No posts in this section')}
-              body={t(
-                'شارك أول تجربة عطرية أو اطرح سؤالاً لزملائك في المعمل.',
-                'Share your first scent formulation or ask your peers.'
-              )}
+              title={
+                scope === 'bookmarks'
+                  ? t('لم تحفظ أي منشورات بعد', 'No saved posts yet')
+                  : t('لا توجد منشورات مطابقة حالياً', 'No matching posts right now')
+              }
+              body={
+                scope === 'bookmarks'
+                  ? t('اضغط على زر الحفظ في أي منشور لتكوين مرجعك العطري الخاص.', 'Bookmark posts to build your perfumery reference.')
+                  : t('شارك أول تجربة عطرية أو اطرح سؤالاً أو استطلاعاً لزملائك.', 'Share your first scent formulation, question, or poll.')
+              }
             />
           </Card>
         )}
 
-        {!loading && more && posts.length > 0 && (
+        {!loading && more && posts.length > 0 && scope !== 'general-news' && (
           <Btn
             variant="soft"
             className="w-full py-3 font-bold"
@@ -389,7 +520,7 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
         )}
       </div>
 
-      {/* Right Column: Online Contacts, Friend Requests, Trending Salon */}
+      {/* Right Column: Online Contacts, AI Matchmaking, Friend Requests, Trending Salon */}
       <aside className="space-y-4">
         <PeoplePanel
           lang={lang}
@@ -453,6 +584,68 @@ function Composer({
   const [showFeelings, setShowFeelings] = useState(false);
   const [busy, setBusy] = useState(false);
   const file = useRef<HTMLInputElement>(null);
+
+  // AI Studio & Poll Builder state
+  const [aiTone, setAiTone] = useState<'luxury' | 'scientific' | 'warm'>('luxury');
+  const [aiBusyMode, setAiBusyMode] = useState<string | null>(null);
+  const [suggestedCircle, setSuggestedCircle] = useState<string>('');
+  const [showPollBuilder, setShowPollBuilder] = useState(false);
+  const [pollQuestion, setPollQuestion] = useState('');
+  const [pollOptions, setPollOptions] = useState<string[]>(['', '']);
+
+  useEffect(() => {
+    const applyPrefill = () => {
+      try {
+        const raw = localStorage.getItem('sham_composer_prefill');
+        if (!raw) return;
+        const parsed = JSON.parse(raw) as { content?: string };
+        if (parsed?.content) {
+          setBody(parsed.content);
+        }
+        localStorage.removeItem('sham_composer_prefill');
+      } catch {
+        // Ignore storage errors
+      }
+    };
+    applyPrefill();
+    window.addEventListener('sham-composer-prefill', applyPrefill);
+    return () => window.removeEventListener('sham-composer-prefill', applyPrefill);
+  }, []);
+
+  const runAiCompose = async (mode: 'polish' | 'draft' | 'hashtags' | 'translate' | 'poll_ideas') => {
+    setAiBusyMode(mode);
+    try {
+      const res = await cx<AiComposeResult>('/community/ai/compose', {
+        body: {
+          mode,
+          text: body,
+          topic: body.trim() || undefined,
+          tone: aiTone,
+          lang,
+        },
+      });
+      if (mode === 'poll_ideas' && res.pollSuggestion) {
+        setShowPollBuilder(true);
+        setPollQuestion(res.pollSuggestion.question);
+        setPollOptions(res.pollSuggestion.options.slice(0, 4));
+        toast(t('اقترح شاهين استطلاعاً عطريةً جاهزاً للنقاش ✨', 'Sham crafted a perfumery poll ✨'));
+      } else if (res.result) {
+        setBody(res.result);
+        toast(
+          mode === 'translate'
+            ? t('تمت ترجمة المسودة بالذكاء العطري', 'Draft translated')
+            : mode === 'hashtags'
+            ? t('تمت إضافة الوسوم العطرية المناسبة', 'Curated hashtags appended')
+            : t('تمت الصياغة والتحسين عبر ذكاء شام ✨', 'Polished with Sham Intelligence ✨')
+        );
+      }
+      if (res.suggestedCircle) setSuggestedCircle(res.suggestedCircle);
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setAiBusyMode(null);
+    }
+  };
 
   if (!me) {
     return (
@@ -589,10 +782,17 @@ function Composer({
     });
   };
 
+  const cleanPollOptions = pollOptions.map((o) => o.trim()).filter(Boolean).slice(0, 4);
+  const hasValidPoll = showPollBuilder && Boolean(pollQuestion.trim()) && cleanPollOptions.length >= 2;
+
   const submit = async () => {
     setBusy(true);
     try {
-      const fullBody = feeling ? `[شعور: ${feeling}]\n\n${body}` : body;
+      let fullBody = feeling ? `[شعور: ${feeling}]\n\n${body}` : body;
+      if (hasValidPoll) {
+        const pollPayload = JSON.stringify({ q: pollQuestion.trim(), options: cleanPollOptions });
+        fullBody = `${fullBody.trim()}\n[poll]${pollPayload}[/poll]`.trim();
+      }
       const finalImage = image ? await bakeImageEdits(image) : null;
       const post = await cx<Post>('/community/posts', {
         body: { body: fullBody, image: finalImage, visibility, recipeId: recipe?.id },
@@ -607,6 +807,10 @@ function Composer({
       setRotation(0);
       setRecipe(null);
       setFeeling(null);
+      setShowPollBuilder(false);
+      setPollQuestion('');
+      setPollOptions(['', '']);
+      setSuggestedCircle('');
       setShowZoomModal(false);
       toast(t('تم نشر المنشور في مجتمع شام 🎉', 'Post published! 🎉'));
     } catch (e) {
@@ -903,6 +1107,143 @@ function Composer({
         </div>
       )}
 
+      {/* Interactive Poll Builder Drawer */}
+      {showPollBuilder && (
+        <div className="mt-3 rounded-2xl border border-amber-200 bg-amber-50/40 p-3.5 space-y-2.5">
+          <div className="flex items-center justify-between gap-2">
+            <span className="flex items-center gap-1.5 text-xs font-bold text-amber-950">
+              <BarChart2 className="h-4 w-4 text-amber-700" />
+              {t('استطلاع رأي تفاعلي لصانعي العطور', 'Interactive Perfumers Poll')}
+            </span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                disabled={Boolean(aiBusyMode)}
+                onClick={() => void runAiCompose('poll_ideas')}
+                className="inline-flex items-center gap-1 rounded-lg bg-stone-900 px-2.5 py-1 text-[11px] font-bold text-amber-300 hover:bg-stone-800 cursor-pointer disabled:opacity-50"
+              >
+                {aiBusyMode === 'poll_ideas' ? <Loader2 className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3" />}
+                {t('اقترح استطلاعاً بالذكاء', 'AI Poll Idea')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowPollBuilder(false)}
+                className="text-stone-400 hover:text-stone-700 cursor-pointer"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            value={pollQuestion}
+            onChange={(e) => setPollQuestion(e.target.value)}
+            placeholder={t('سؤال الاستطلاع (مثال: أفضل نسبة لتعتيق العود في الصيف؟)', 'Poll question…')}
+            className="w-full rounded-xl border border-amber-200 bg-white px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600"
+          />
+
+          <div className="grid gap-1.5 sm:grid-cols-2">
+            {pollOptions.map((opt, idx) => (
+              <div key={idx} className="flex items-center gap-1">
+                <input
+                  type="text"
+                  value={opt}
+                  onChange={(e) =>
+                    setPollOptions((prev) => prev.map((x, i) => (i === idx ? e.target.value : x)))
+                  }
+                  placeholder={t(`الخيار ${idx + 1}`, `Option ${idx + 1}`)}
+                  className="flex-1 rounded-xl border border-stone-200 bg-white px-2.5 py-1.5 text-xs text-stone-900 outline-none focus:border-amber-600"
+                />
+                {pollOptions.length > 2 && (
+                  <button
+                    type="button"
+                    onClick={() => setPollOptions((prev) => prev.filter((_, i) => i !== idx))}
+                    className="rounded-lg p-1 text-stone-400 hover:text-rose-600 cursor-pointer"
+                  >
+                    <X className="h-3.5 w-3.5" />
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {pollOptions.length < 4 && (
+            <button
+              type="button"
+              onClick={() => setPollOptions((prev) => [...prev, ''])}
+              className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 hover:underline cursor-pointer"
+            >
+              <Plus className="h-3.5 w-3.5" />
+              {t('إضافة خيار آخر', 'Add option')}
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* AI Writing Studio Bar */}
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-stone-200/80 bg-[#FBF9F5] px-3 py-2">
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="flex items-center gap-1 text-[11px] font-bold text-stone-800 me-1">
+            <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+            {t('مساعد الصياغة:', 'Sham AI:')}
+          </span>
+          <button
+            type="button"
+            disabled={Boolean(aiBusyMode)}
+            onClick={() => void runAiCompose('draft')}
+            className="inline-flex items-center gap-1 rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-bold text-stone-800 hover:border-amber-400 hover:bg-amber-50 cursor-pointer whitespace-nowrap shrink-0 disabled:opacity-50"
+          >
+            {aiBusyMode === 'draft' ? <Loader2 className="h-3 w-3 animate-spin" /> : <Wand2 className="h-3 w-3 text-amber-700" />}
+            {t('إنشاء مسودة', 'Draft')}
+          </button>
+          <button
+            type="button"
+            disabled={Boolean(aiBusyMode) || !body.trim()}
+            onClick={() => void runAiCompose('polish')}
+            className="inline-flex items-center gap-1 rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-bold text-stone-800 hover:border-amber-400 hover:bg-amber-50 cursor-pointer whitespace-nowrap shrink-0 disabled:opacity-40"
+          >
+            {aiBusyMode === 'polish' ? <Loader2 className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3 text-amber-700" />}
+            {t('تحسين وإثراء', 'Polish')}
+          </button>
+          <button
+            type="button"
+            disabled={Boolean(aiBusyMode)}
+            onClick={() => void runAiCompose('hashtags')}
+            className="inline-flex items-center gap-1 rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-bold text-stone-800 hover:border-amber-400 hover:bg-amber-50 cursor-pointer whitespace-nowrap shrink-0 disabled:opacity-50"
+          >
+            <Hash className="h-3 w-3 text-amber-700" />
+            {t('وسوم', 'Tags')}
+          </button>
+          <button
+            type="button"
+            disabled={Boolean(aiBusyMode) || !body.trim()}
+            onClick={() => void runAiCompose('translate')}
+            className="inline-flex items-center gap-1 rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-bold text-stone-800 hover:border-amber-400 hover:bg-amber-50 cursor-pointer whitespace-nowrap shrink-0 disabled:opacity-40"
+          >
+            <Languages className="h-3 w-3 text-amber-700" />
+            {t('ترجمة', 'Translate')}
+          </button>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {suggestedCircle && (
+            <span className="text-[10px] font-semibold text-amber-900 hidden sm:inline">
+              {suggestedCircle}
+            </span>
+          )}
+          <select
+            value={aiTone}
+            onChange={(e) => setAiTone(e.target.value as typeof aiTone)}
+            className="rounded-lg border border-stone-200 bg-white px-2 py-1 text-[11px] font-semibold text-stone-700 outline-none cursor-pointer"
+          >
+            <option value="luxury">{t('أسلوب دار فاخرة', 'Editorial')}</option>
+            <option value="scientific">{t('مخبري علمي', 'Scientific')}</option>
+            <option value="warm">{t('مجتمعي دافئ', 'Warm')}</option>
+          </select>
+        </div>
+      </div>
+
       {/* Scent feeling drawer */}
       {showFeelings && (
         <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 border-t border-stone-100 pt-3">
@@ -998,12 +1339,22 @@ function Composer({
           className={showSampleGallery ? 'text-amber-800 bg-amber-50' : ''}
         >
           <Camera className="h-4 w-4 text-amber-600" />
-          {t('صور المعمل الجاهزة', 'Lab Photos')}
+          {t('صور المعمل', 'Lab Photos')}
         </Btn>
 
         <Btn variant="ghost" small onClick={() => setPickRecipe(true)}>
           <FlaskConical className="h-4 w-4 text-amber-600" />
-          {t('شارك تركيبة', 'Recipe')}
+          {t('تركيبة', 'Recipe')}
+        </Btn>
+
+        <Btn
+          variant="ghost"
+          small
+          onClick={() => setShowPollBuilder((v) => !v)}
+          className={showPollBuilder ? 'text-amber-900 bg-amber-50 border border-amber-200' : ''}
+        >
+          <BarChart2 className="h-4 w-4 text-amber-700" />
+          {t('استطلاع', 'Poll')}
         </Btn>
 
         <Btn
@@ -1012,8 +1363,8 @@ function Composer({
           onClick={() => setShowFeelings((v) => !v)}
           className={feeling ? 'text-amber-800 bg-amber-50' : ''}
         >
-          <Smile className="h-4 w-4 text-rose-500" />
-          {t('شعور / نوتة اليوم', 'Scent Feeling')}
+          <Sparkles className="h-4 w-4 text-rose-600" />
+          {t('نوتة اليوم', 'Scent Note')}
         </Btn>
 
         <select
@@ -1021,15 +1372,15 @@ function Composer({
           onChange={(e) => setVisibility(e.target.value as 'public' | 'friends')}
           className="rounded-xl border border-stone-200 bg-white px-2.5 py-1.5 text-xs text-stone-700 outline-none"
         >
-          <option value="public">🌍 {t('عام للجميع', 'Public')}</option>
-          <option value="friends">👥 {t('الأصدقاء فقط', 'Friends only')}</option>
+          <option value="public">{t('عام للجميع', 'Public')}</option>
+          <option value="friends">{t('الأصدقاء فقط', 'Friends only')}</option>
         </select>
 
         <Btn
           className="ms-auto"
           small
           busy={busy}
-          disabled={!body.trim() && !image && !recipe && !feeling}
+          disabled={!body.trim() && !image && !recipe && !feeling && !hasValidPoll}
           onClick={() => void submit()}
         >
           <Send className="h-3.5 w-3.5" />
@@ -1214,10 +1565,17 @@ export function PostCard({
 }) {
   const t = tx(lang);
   const [showComments, setShowComments] = useState(false);
+  const [commentPrefill, setCommentPrefill] = useState('');
   const [menu, setMenu] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(post.body);
   const [picker, setPicker] = useState(false);
+
+  // AI Olfactory Analysis state
+  const [showAnalysis, setShowAnalysis] = useState(false);
+  const [analysis, setAnalysis] = useState<AiPostAnalysis | null>(null);
+  const [analyzing, setAnalyzing] = useState(false);
 
   const total = Object.values(post.reactions).reduce((s, n) => s + n, 0);
   const top = Object.entries(post.reactions)
@@ -1236,6 +1594,51 @@ export function PostCard({
     }
   };
 
+  const toggleBookmark = async () => {
+    try {
+      const updated = await cx<Post>(`/community/posts/${post.id}/bookmark`, { body: {} });
+      onChange(updated);
+      toast(
+        updated.bookmarked
+          ? t('تم حفظ المنشور في مراجعك العطرية', 'Saved to your references')
+          : t('تمت إزالة المنشور من المحفوظات', 'Removed from saved')
+      );
+    } catch (e) {
+      toast(errorText(e, lang));
+    }
+  };
+
+  const votePoll = async (optionIndex: number) => {
+    try {
+      const updated = await cx<Post>(`/community/posts/${post.id}/vote`, { body: { optionIndex } });
+      onChange(updated);
+      toast(t('تم تسجيل تصويتك في الاستطلاع', 'Vote recorded'));
+    } catch (e) {
+      toast(errorText(e, lang));
+    }
+  };
+
+  const runAnalysis = async () => {
+    if (showAnalysis && analysis) {
+      setShowAnalysis(false);
+      return;
+    }
+    setShowAnalysis(true);
+    if (analysis || analyzing) return;
+    setAnalyzing(true);
+    try {
+      const res = await cx<AiPostAnalysis>('/community/ai/analyze-post', {
+        body: { body: post.body, recipeTitle: post.recipe?.title, lang },
+      });
+      setAnalysis(res);
+    } catch (e) {
+      toast(errorText(e, lang));
+      setShowAnalysis(false);
+    } finally {
+      setAnalyzing(false);
+    }
+  };
+
   const save = async () => {
     try {
       onChange(
@@ -1248,7 +1651,6 @@ export function PostCard({
   };
 
   const del = async () => {
-    if (!confirm(t('حذف هذا المنشور نهائياً؟', 'Delete this post?'))) return;
     try {
       await cx(`/community/posts/${post.id}`, { method: 'DELETE' });
       onRemove(post.id);
@@ -1262,19 +1664,23 @@ export function PostCard({
     toast(t('تم نسخ رابط المنشور بنجاح 📋', 'Post link copied! 📋'));
   };
 
-  // Parse scent feeling tag if present at start of post
+  // Parse scent feeling & interactive poll if present
   const feelingMatch = post.body.match(/^\[شعور:\s*([^\]]+)\]\s*\n*/);
   const feelingTag = feelingMatch ? feelingMatch[1] : null;
-  const cleanBody = feelingMatch ? post.body.slice(feelingMatch[0].length) : post.body;
+  const bodyWithoutFeeling = feelingMatch ? post.body.slice(feelingMatch[0].length) : post.body;
+  const { textBody: cleanBody, poll } = extractPollBlock(bodyWithoutFeeling);
+  const pollTotalVotes = poll
+    ? poll.options.reduce((sum, _, idx) => sum + Number(post.pollVotes?.[String(idx)] || 0), 0)
+    : 0;
 
   return (
-    <Card className="overflow-hidden shadow-sm border-stone-200">
+    <Card className="overflow-hidden border-stone-200">
       {/* Post Header */}
       <div className="flex items-start gap-3 p-4 pb-2">
         <button
           type="button"
           onClick={() => go(`u/${post.author.handle}`)}
-          className="cursor-pointer"
+          className="cursor-pointer shrink-0"
         >
           <Avatar user={post.author} size={44} ring />
         </button>
@@ -1288,13 +1694,13 @@ export function PostCard({
               {post.author.name}
             </button>
             {post.author.craftLevel === 'master_lab' && (
-              <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900">
-                🏛️ {t('معمل معتمد', 'Master Lab')}
+              <span className="text-[11px] font-bold text-amber-800">
+                · {t('معمل معتمد', 'Master Lab')}
               </span>
             )}
             {post.author.merchant && (
-              <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-900">
-                🏪 {post.author.merchant.storeName}
+              <span className="text-[11px] font-bold text-emerald-800">
+                · {post.author.merchant.storeName}
               </span>
             )}
           </div>
@@ -1309,94 +1715,135 @@ export function PostCard({
           </p>
         </div>
 
-        {/* 3-dots Menu */}
-        <div className="relative">
+        {/* AI Analyze Button + Bookmark + 3-dots Menu */}
+        <div className="flex items-center gap-1 shrink-0">
           <button
             type="button"
-            onClick={() => setMenu((m) => !m)}
-            className="rounded-full p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
+            onClick={() => void runAnalysis()}
+            title={t('تحليل شاهين العطري والردود الذكية', 'Sham Olfactory AI Analysis')}
+            className={`inline-flex items-center gap-1 rounded-xl border px-2.5 py-1.5 text-[11px] font-bold transition cursor-pointer whitespace-nowrap ${
+              showAnalysis
+                ? 'border-stone-900 bg-stone-900 text-amber-300'
+                : 'border-amber-200 bg-amber-50/80 text-amber-900 hover:bg-amber-100'
+            }`}
           >
-            <MoreHorizontal className="h-5 w-5" />
+            {analyzing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />}
+            <span className="hidden sm:inline">{t('تحليل شاهين', 'Analyze')}</span>
           </button>
-          {menu && (
-            <div className="absolute end-0 z-20 mt-1 w-48 overflow-hidden rounded-2xl border border-stone-200 bg-white text-xs shadow-xl">
-              {post.mine ? (
-                <>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setEditing(true);
-                      setMenu(false);
-                    }}
-                    className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
-                  >
-                    {t('تعديل المنشور', 'Edit Post')}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      handleShare();
-                      setMenu(false);
-                    }}
-                    className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
-                  >
-                    {t('نسخ الرابط', 'Copy link')}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => void del()}
-                    className="block w-full px-4 py-2.5 text-start text-rose-600 hover:bg-rose-50 cursor-pointer font-semibold border-t border-stone-100"
-                  >
-                    {t('حذف المنشور', 'Delete')}
-                  </button>
-                </>
-              ) : (
-                <>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      handleShare();
-                      setMenu(false);
-                    }}
-                    className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
-                  >
-                    {t('نسخ الرابط', 'Copy link')}
-                  </button>
-                  {onOpenMessenger && (
+
+          <button
+            type="button"
+            onClick={() => void toggleBookmark()}
+            title={post.bookmarked ? t('إزالة من المحفوظات', 'Remove bookmark') : t('حفظ للمرجع', 'Save bookmark')}
+            className={`rounded-xl p-2 transition cursor-pointer ${
+              post.bookmarked
+                ? 'text-amber-700 bg-amber-50'
+                : 'text-stone-400 hover:bg-stone-100 hover:text-stone-700'
+            }`}
+          >
+            <Bookmark className={`h-4 w-4 ${post.bookmarked ? 'fill-amber-600' : ''}`} />
+          </button>
+
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => {
+                setMenu((m) => !m);
+                setConfirmDelete(false);
+              }}
+              className="rounded-xl p-2 text-stone-400 hover:bg-stone-100 hover:text-stone-700 cursor-pointer"
+            >
+              <MoreHorizontal className="h-4.5 w-4.5" />
+            </button>
+            {menu && (
+              <div className="absolute end-0 z-20 mt-1 w-48 overflow-hidden rounded-2xl border border-stone-200 bg-white text-xs shadow-xl">
+                {post.mine ? (
+                  <>
                     <button
                       type="button"
                       onClick={() => {
-                        onOpenMessenger(post.author.id);
+                        setEditing(true);
                         setMenu(false);
                       }}
                       className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
                     >
-                      {t('مراسلة الناشر في الماسنجر', 'Message author')}
+                      {t('تعديل المنشور', 'Edit Post')}
                     </button>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      toast(t('وصل البلاغ لإدارة المنصة، شكراً لحرصك', 'Report received'));
-                      setMenu(false);
-                    }}
-                    className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
-                  >
-                    {t('إبلاغ الإدارة', 'Report')}
-                  </button>
-                </>
-              )}
-            </div>
-          )}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        handleShare();
+                        setMenu(false);
+                      }}
+                      className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
+                    >
+                      {t('نسخ الرابط', 'Copy link')}
+                    </button>
+                    {confirmDelete ? (
+                      <button
+                        type="button"
+                        onClick={() => void del()}
+                        className="block w-full px-4 py-2.5 text-start bg-rose-600 text-white hover:bg-rose-700 cursor-pointer font-bold border-t border-stone-100"
+                      >
+                        {t('تأكيد الحذف نهائياً؟', 'Confirm Delete?')}
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => setConfirmDelete(true)}
+                        className="block w-full px-4 py-2.5 text-start text-rose-600 hover:bg-rose-50 cursor-pointer font-semibold border-t border-stone-100"
+                      >
+                        {t('حذف المنشور', 'Delete')}
+                      </button>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        handleShare();
+                        setMenu(false);
+                      }}
+                      className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
+                    >
+                      {t('نسخ الرابط', 'Copy link')}
+                    </button>
+                    {onOpenMessenger && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          onOpenMessenger(post.author.id);
+                          setMenu(false);
+                        }}
+                        className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
+                      >
+                        {t('مراسلة الناشر في الماسنجر', 'Message author')}
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        toast(t('وصل البلاغ لإدارة المنصة، شكراً لحرصك', 'Report received'));
+                        setMenu(false);
+                      }}
+                      className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
+                    >
+                      {t('إبلاغ الإدارة', 'Report')}
+                    </button>
+                  </>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      {/* Scent feeling banner if tagged */}
+      {/* Scent feeling note */}
       {feelingTag && (
-        <div className="mx-4 mb-2 inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-900 border border-amber-200/80">
-          <Sparkles className="h-3.5 w-3.5 text-amber-600" />
-          <span>{feelingTag}</span>
-        </div>
+        <p className="px-4 pb-1 text-xs font-semibold text-amber-800">
+          {feelingTag}
+        </p>
       )}
 
       {/* Post Text */}
@@ -1430,7 +1877,7 @@ export function PostCard({
             <p className="whitespace-pre-wrap break-words text-[14px] leading-relaxed text-stone-800">
               {cleanBody.split(/(#[^\s#]+)/g).map((part, i) =>
                 part.startsWith('#') ? (
-                  <span key={i} className="font-bold text-amber-800 hover:underline cursor-pointer">
+                  <span key={i} className="font-bold text-amber-800">
                     {part}
                   </span>
                 ) : (
@@ -1442,6 +1889,133 @@ export function PostCard({
         )}
       </div>
 
+      {/* Interactive Poll Block */}
+      {poll && (
+        <div className="mx-4 mt-3 rounded-2xl border border-stone-200 bg-[#FBF9F5] p-3.5 space-y-2">
+          <div className="flex items-center justify-between gap-2">
+            <p className="flex items-center gap-1.5 text-xs font-bold text-stone-900">
+              <BarChart2 className="h-4 w-4 text-amber-700 shrink-0" />
+              {poll.q}
+            </p>
+            <span className="text-[11px] font-semibold text-stone-500 tabular-nums shrink-0">
+              {pollTotalVotes} {t('صوت', 'votes')}
+            </span>
+          </div>
+          <div className="space-y-1.5">
+            {poll.options.map((opt, idx) => {
+              const votes = Number(post.pollVotes?.[String(idx)] || 0);
+              const pct = pollTotalVotes > 0 ? Math.round((votes / pollTotalVotes) * 100) : 0;
+              const selected = post.myPollVote === idx;
+              return (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => void votePoll(idx)}
+                  className={`relative w-full overflow-hidden rounded-xl border px-3 py-2 text-start transition cursor-pointer ${
+                    selected
+                      ? 'border-amber-600 bg-amber-50/70'
+                      : 'border-stone-200 bg-white hover:border-amber-300'
+                  }`}
+                >
+                  <span
+                    className={`absolute inset-y-0 start-0 transition-all duration-300 ${
+                      selected ? 'bg-amber-200/50' : 'bg-stone-100'
+                    }`}
+                    style={{ width: `${pct}%` }}
+                  />
+                  <span className="relative z-10 flex items-center justify-between gap-2 text-xs">
+                    <span className={`font-semibold ${selected ? 'text-amber-950 font-bold' : 'text-stone-800'}`}>
+                      {selected ? '✓ ' : ''}
+                      {opt}
+                    </span>
+                    <span className="font-mono text-[11px] font-bold text-stone-600 tabular-nums">
+                      {pct}% ({votes})
+                    </span>
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Sham Olfactory AI Post Analysis Drawer */}
+      {showAnalysis && (
+        <div className="mx-4 mt-3 rounded-2xl border border-amber-200 bg-amber-50/45 p-3.5 space-y-3">
+          {analyzing ? (
+            <div className="flex items-center gap-2 text-xs font-semibold text-amber-900 py-2">
+              <Loader2 className="h-4 w-4 animate-spin text-amber-700" />
+              {t('جاري قراءة الهرم العطري وصياغة التوصيات…', 'Analyzing olfactory profile & craft insights…')}
+            </div>
+          ) : analysis ? (
+            <>
+              <div className="flex items-center justify-between gap-2 border-b border-amber-200/60 pb-2">
+                <span className="flex items-center gap-1.5 text-xs font-bold text-amber-950">
+                  <Sparkles className="h-4 w-4 text-amber-700" />
+                  {t('قراءة شاهين العطرية', 'Sham Olfactory Reading')}
+                </span>
+                <span className="text-[11px] font-semibold text-amber-800">{analysis.circle}</span>
+              </div>
+
+              <p className="text-xs leading-relaxed text-stone-800">{analysis.summary}</p>
+
+              {(analysis.detectedNotes.top.length > 0 ||
+                analysis.detectedNotes.heart.length > 0 ||
+                analysis.detectedNotes.base.length > 0) && (
+                <div className="grid grid-cols-3 gap-2 rounded-xl border border-amber-200/70 bg-white/85 p-2.5 text-[11px]">
+                  <div>
+                    <p className="font-bold text-stone-500">{t('الافتتاحية', 'Top')}</p>
+                    <p className="mt-0.5 font-semibold text-stone-900">
+                      {analysis.detectedNotes.top.join(' · ') || '—'}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-stone-500">{t('القلب', 'Heart')}</p>
+                    <p className="mt-0.5 font-semibold text-stone-900">
+                      {analysis.detectedNotes.heart.join(' · ') || '—'}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-stone-500">{t('القاعدة', 'Base')}</p>
+                    <p className="mt-0.5 font-semibold text-stone-900">
+                      {analysis.detectedNotes.base.join(' · ') || '—'}
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              <div className="flex items-start gap-2 rounded-xl bg-white/80 p-2.5 text-xs text-stone-700 border border-stone-200/60">
+                <Lightbulb className="h-4 w-4 text-amber-700 shrink-0 mt-0.5" />
+                <span>{analysis.craftTip}</span>
+              </div>
+
+              {analysis.suggestedReplies.length > 0 && (
+                <div className="space-y-1.5">
+                  <p className="text-[11px] font-bold text-stone-600">
+                    {t('ردود ذكية جاهزة للتعليق:', 'One-click smart replies:')}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {analysis.suggestedReplies.map((reply, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => {
+                          setCommentPrefill(reply);
+                          setShowComments(true);
+                        }}
+                        className="rounded-xl border border-stone-200 bg-white px-2.5 py-1.5 text-[11px] font-semibold text-stone-800 hover:border-amber-500 hover:bg-amber-50 text-start cursor-pointer transition"
+                      >
+                        {reply}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          ) : null}
+        </div>
+      )}
+
       {/* Fragrance Recipe Card Attachment */}
       {post.recipe && (
         <div className="mx-4 mt-3">
@@ -1451,9 +2025,9 @@ export function PostCard({
               type="button"
               onClick={() => {
                 toast(t('تم تحميل التركيبة في حاسبة المعمل بنجاح ✨', 'Formula loaded in Lab! ✨'));
-                go('concentration');
+                go('../concentration');
               }}
-              className="flex items-center gap-1.5 rounded-xl bg-amber-700 px-3.5 py-1.5 text-xs font-bold text-white hover:bg-amber-800 cursor-pointer shadow-sm"
+              className="flex items-center gap-1.5 rounded-xl bg-stone-900 px-3.5 py-1.5 text-xs font-bold text-amber-300 hover:bg-stone-800 cursor-pointer shadow-xs"
             >
               <FlaskConical className="h-3.5 w-3.5" />
               {t('استيراد للآلة الحاسبة', 'Import into Lab')}
@@ -1480,11 +2054,11 @@ export function PostCard({
           {total > 0 && (
             <>
               <span className="flex -space-x-1 rtl:space-x-reverse">{top.join(' ')}</span>
-              <span className="font-semibold text-stone-700">{total}</span>
+              <span className="font-semibold text-stone-700 tabular-nums">{total}</span>
             </>
           )}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 tabular-nums">
           {post.comments > 0 && (
             <button
               type="button"
@@ -1500,8 +2074,8 @@ export function PostCard({
         </div>
       </div>
 
-      {/* Facebook Reactions Toolbar */}
-      <div className="relative grid grid-cols-3 text-xs font-bold text-stone-600">
+      {/* Reactions & Actions Toolbar */}
+      <div className="relative grid grid-cols-4 text-xs font-bold text-stone-600">
         {/* Like / React Button */}
         <div
           className="relative"
@@ -1519,9 +2093,8 @@ export function PostCard({
             <span>{mine ? (lang === 'ar' ? mine.ar : mine.en) : t('أعجبني', 'Like')}</span>
           </button>
 
-          {/* Facebook Emoji Hover Bar */}
           {picker && (
-            <div className="absolute -top-12 start-2 z-30 flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-3 py-1.5 shadow-2xl animate-in fade-in zoom-in-95">
+            <div className="absolute -top-12 start-2 z-30 flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-3 py-1.5 shadow-2xl">
               {REACTIONS.map((r) => (
                 <button
                   key={r.id}
@@ -1556,6 +2129,18 @@ export function PostCard({
           <Share2 className="h-4 w-4" />
           <span>{t('مشاركة', 'Share')}</span>
         </button>
+
+        {/* Bookmark Button */}
+        <button
+          type="button"
+          onClick={() => void toggleBookmark()}
+          className={`flex items-center justify-center gap-1.5 py-2.5 hover:bg-stone-50 cursor-pointer ${
+            post.bookmarked ? 'text-amber-800' : ''
+          }`}
+        >
+          <Bookmark className={`h-4 w-4 ${post.bookmarked ? 'fill-amber-600' : ''}`} />
+          <span>{post.bookmarked ? t('محفوظ', 'Saved') : t('حفظ', 'Save')}</span>
+        </button>
       </div>
 
       {/* Comments Drawer */}
@@ -1565,6 +2150,7 @@ export function PostCard({
           lang={lang}
           go={go}
           toast={toast}
+          prefillComment={commentPrefill}
           onCount={(n) => onChange({ ...post, comments: n })}
         />
       )}
@@ -1643,12 +2229,14 @@ function Comments({
   lang,
   go,
   toast,
+  prefillComment,
   onCount,
 }: {
   post: Post;
   lang: Lang;
   go: Go;
   toast: (s: string) => void;
+  prefillComment?: string;
   onCount: (n: number) => void;
 }) {
   const t = tx(lang);
@@ -1656,8 +2244,35 @@ function Comments({
     () => cx<Comment[]>(`/community/posts/${post.id}/comments`),
     [post.id]
   );
-  const [body, setBody] = useState('');
+  const [body, setBody] = useState(prefillComment || '');
   const [busy, setBusy] = useState(false);
+  const [aiReplies, setAiReplies] = useState<string[]>([]);
+  const [aiBusy, setAiBusy] = useState(false);
+
+  useEffect(() => {
+    if (prefillComment) {
+      setBody(prefillComment);
+    }
+  }, [prefillComment]);
+
+  const loadSmartReplies = async () => {
+    setAiBusy(true);
+    try {
+      const res = await cx<AiReplyAssistResult>('/community/ai/reply-assist', {
+        body: {
+          contextType: 'comment',
+          text: post.body,
+          recentMessages: (data || []).slice(-3).map((c) => c.body),
+          lang,
+        },
+      });
+      setAiReplies(res.suggestions || []);
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setAiBusy(false);
+    }
+  };
 
   const add = async () => {
     setBusy(true);
@@ -1685,7 +2300,7 @@ function Comments({
   };
 
   return (
-    <div className="space-y-3 border-t border-stone-100 bg-stone-50/50 p-4">
+    <div className="space-y-3 border-t border-stone-100 bg-[#FBF9F5] p-4">
       {loading ? (
         <Spinner />
       ) : (
@@ -1699,7 +2314,7 @@ function Comments({
               <Avatar user={c.author} size={34} />
             </button>
             <div className="min-w-0 flex-1">
-              <div className="inline-block max-w-full rounded-2xl bg-white border border-stone-200/80 px-3.5 py-2 shadow-sm">
+              <div className="inline-block max-w-full rounded-2xl bg-white border border-stone-200/80 px-3.5 py-2 shadow-2xs">
                 <button
                   type="button"
                   onClick={() => go(`u/${c.author.handle}`)}
@@ -1728,20 +2343,50 @@ function Comments({
         ))
       )}
 
+      {/* AI Smart Comment Suggestions */}
+      <div className="space-y-1.5 pt-1">
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            disabled={aiBusy}
+            onClick={() => void loadSmartReplies()}
+            className="inline-flex items-center gap-1 rounded-lg border border-amber-200 bg-white px-2.5 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-50 cursor-pointer disabled:opacity-50"
+          >
+            {aiBusy ? <Loader2 className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3 text-amber-700" />}
+            {t('اقترح رداً ذكياً ✨', 'Suggest Smart Reply ✨')}
+          </button>
+        </div>
+
+        {aiReplies.length > 0 && (
+          <div className="flex flex-wrap gap-1.5">
+            {aiReplies.map((s, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setBody(s)}
+                className="rounded-xl border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-semibold text-stone-800 hover:border-amber-500 hover:bg-amber-50 text-start cursor-pointer"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
       {/* Comment Input */}
       <form
-        className="flex gap-2 pt-2"
+        className="flex gap-2"
         onSubmit={(e) => {
           e.preventDefault();
           if (body.trim()) void add();
         }}
       >
         <input
-          className={`${inputClass} rounded-full text-xs py-2`}
+          className={`${inputClass} rounded-full text-xs py-2 bg-white`}
           value={body}
           onChange={(e) => setBody(e.target.value)}
           maxLength={2000}
-          placeholder={t('اكتب تعليقاً على منشور صانع العطور…', 'Write a comment…')}
+          placeholder={t('اكتب تعليقاً أو رأياً عطرياً…', 'Write a comment…')}
         />
         <Btn type="submit" small busy={busy} disabled={!body.trim()} className="rounded-full">
           <Send className="h-3.5 w-3.5" />
@@ -1769,6 +2414,10 @@ export function PeoplePanel({
     cx<{ friends: PublicUser[]; incoming: PublicUser[]; outgoing: PublicUser[] }>('/community/friends')
   );
   const suggestions = useLoad(() => cx<PublicUser[]>('/community/people/suggestions'));
+  const matchmaking = useLoad(
+    () => cx<AiMatchmakingResult>(`/community/ai/matchmaking?lang=${lang}`),
+    [lang]
+  );
   const [q, setQ] = useState('');
   const [found, setFound] = useState<PublicUser[] | null>(null);
 
@@ -1791,6 +2440,7 @@ export function PeoplePanel({
       toast(done);
       void friends.reload(true);
       void suggestions.reload(true);
+      void matchmaking.reload(true);
       void pulseNow();
     } catch (e) {
       toast(errorText(e, lang));
@@ -1821,14 +2471,70 @@ export function PeoplePanel({
         )}
       </Card>
 
-      {/* Online Contacts & Friends (Active right now with green dot) */}
+      {/* AI Artisan Matchmaking Card */}
+      {Boolean(matchmaking.data?.matches?.length) && (
+        <Card className="p-4 space-y-3 border-amber-200 bg-amber-50/35">
+          <div className="flex items-center justify-between border-b border-amber-200/60 pb-2">
+            <h3 className="font-bold text-xs text-amber-950 flex items-center gap-1.5">
+              <Compass className="h-4 w-4 text-amber-700" />
+              {t('توافق الأنوف العطرية ✨', 'AI Olfactory Matchmaking ✨')}
+            </h3>
+            <span className="text-[10px] font-bold text-amber-800">{t('شاهين', 'Sham')}</span>
+          </div>
+
+          <div className="space-y-2.5">
+            {matchmaking.data!.matches.slice(0, 3).map((m) => (
+              <div key={m.user.id} className="rounded-xl border border-amber-200/70 bg-white p-2.5 space-y-1.5">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="min-w-0 flex-1">
+                    <PersonRow u={m.user} lang={lang} go={go} />
+                  </div>
+                  <div className="flex items-center gap-1 shrink-0">
+                    <Btn
+                      small
+                      variant="soft"
+                      title={t('إضافة صديق', 'Add friend')}
+                      onClick={() =>
+                        void act(
+                          () => cx(`/community/friends/${m.user.id}`, { body: {} }),
+                          t('تم إرسال طلب الصداقة ✨', 'Request sent ✨')
+                        )
+                      }
+                    >
+                      <UserPlus className="h-3.5 w-3.5" />
+                    </Btn>
+                    {onOpenMessenger && (
+                      <Btn
+                        small
+                        variant="ghost"
+                        title={t('مراسلة', 'Message')}
+                        onClick={() => onOpenMessenger(m.user.id)}
+                      >
+                        <MessageCircle className="h-3.5 w-3.5" />
+                      </Btn>
+                    )}
+                  </div>
+                </div>
+                <p className="text-[11px] leading-snug text-stone-700">{m.reason}</p>
+                {m.sharedInterests.length > 0 && (
+                  <p className="text-[10px] font-semibold text-amber-900">
+                    {m.sharedCircle} · {m.sharedInterests.slice(0, 3).join(' · ')}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+
+      {/* Online Contacts & Friends */}
       <Card className="p-4 space-y-3">
         <div className="flex items-center justify-between border-b border-stone-100 pb-2">
-          <h3 className="font-black text-xs text-stone-900 uppercase tracking-wider flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+          <h3 className="font-bold text-xs text-stone-900 flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-emerald-600" />
             {t('جهات الاتصال المتصلة الآن', 'Contacts Online')}
           </h3>
-          <span className="text-[11px] text-stone-400">
+          <span className="text-[11px] font-semibold text-stone-400 tabular-nums">
             {(friends.data?.friends || []).filter((f) => f.online).length || (friends.data?.friends.length || 0)}
           </span>
         </div>
@@ -1848,7 +2554,7 @@ export function PeoplePanel({
                 <div className="flex items-center gap-2.5 min-w-0 flex-1">
                   <span className="relative">
                     <Avatar user={u} size={34} />
-                    <span className="absolute bottom-0 end-0 h-2.5 w-2.5 rounded-full border border-white bg-emerald-500" />
+                    <span className={`absolute bottom-0 end-0 h-2.5 w-2.5 rounded-full border border-white ${u.online ? 'bg-emerald-600' : 'bg-stone-300'}`} />
                   </span>
                   <div className="min-w-0">
                     <p className="truncate text-xs font-bold text-stone-900">{u.name}</p>
@@ -1876,9 +2582,9 @@ export function PeoplePanel({
       {/* Friend Requests */}
       {!!friends.data?.incoming.length && (
         <Card className="p-4 border-amber-300 bg-amber-50/30">
-          <p className="mb-3 font-black text-xs text-amber-950 flex items-center justify-between">
+          <p className="mb-3 font-bold text-xs text-amber-950 flex items-center justify-between">
             <span>{t('طلبات الصداقة الواردة', 'Friend requests')}</span>
-            <span className="rounded-full bg-rose-600 px-2 py-0.5 text-[10px] font-bold text-white">
+            <span className="rounded-full bg-rose-600 px-2 py-0.5 text-[10px] font-bold text-white tabular-nums">
               {friends.data.incoming.length}
             </span>
           </p>
@@ -1923,8 +2629,8 @@ export function PeoplePanel({
       {/* Trending Salon Topics */}
       <Card className="p-4 space-y-2.5">
         <div className="flex items-center justify-between border-b border-stone-100 pb-2">
-          <h3 className="font-black text-xs text-stone-900 uppercase tracking-wider flex items-center gap-1.5">
-            <Flame className="h-3.5 w-3.5 text-amber-600" />
+          <h3 className="font-bold text-xs text-stone-900 flex items-center gap-1.5">
+            <Flame className="h-3.5 w-3.5 text-amber-700" />
             {t('المناقشات الرائجة في الصالون', 'Trending Salon Topics')}
           </h3>
           <button
@@ -1948,7 +2654,7 @@ export function PeoplePanel({
               className="p-2 rounded-xl hover:bg-stone-50 transition cursor-pointer space-y-0.5"
             >
               <p className="font-bold text-stone-900 line-clamp-1">{topic.title}</p>
-              <p className="text-[10px] text-stone-400 flex items-center justify-between">
+              <p className="text-[10px] text-stone-400 flex items-center justify-between tabular-nums">
                 <span>#{topic.tag}</span>
                 <span>{topic.replies} {t('ردود', 'replies')}</span>
               </p>
@@ -1959,7 +2665,7 @@ export function PeoplePanel({
 
       {/* People You May Know */}
       <Card className="p-4 space-y-3">
-        <p className="font-black text-xs text-stone-900 uppercase tracking-wider">
+        <p className="font-bold text-xs text-stone-900">
           {t('صناع عطور قد تعرفهم', 'Perfumers you may know')}
         </p>
         {suggestions.loading ? (
@@ -1994,11 +2700,11 @@ export function PeoplePanel({
       </Card>
 
       {/* Featured Perfume House Spotlight */}
-      <Card className="overflow-hidden border-amber-300 bg-gradient-to-br from-amber-900 to-stone-900 p-4 text-white shadow-md">
-        <span className="text-[10px] font-bold uppercase tracking-widest text-amber-300">
-          ✨ {t('عطر الأسبوع المختار من دار شام', 'Curated Creation of the Week')}
+      <Card className="overflow-hidden border-amber-300 bg-gradient-to-br from-amber-950 to-stone-900 p-4 text-white">
+        <span className="text-[10px] font-bold text-amber-300">
+          {t('عطر الأسبوع المختار من دار شام', 'Curated Creation of the Week')}
         </span>
-        <h4 className="mt-1 text-sm font-black text-white">«سلطان العود والباتشولي الملكي»</h4>
+        <h4 className="mt-1 text-sm font-bold text-white">«سلطان العود والباتشولي الملكي»</h4>
         <p className="mt-1 text-[11px] leading-relaxed text-stone-300">
           {t(
             'تركيبة ملكية تعتمد على العود الكمبودي المعتق والباتشولي بتركيز 28% Extrait de Parfum.',
@@ -2008,7 +2714,7 @@ export function PeoplePanel({
         <button
           type="button"
           onClick={() => go('stores')}
-          className="mt-3 flex items-center gap-1.5 rounded-xl bg-amber-600 px-3 py-1.5 text-xs font-bold text-white shadow hover:bg-amber-500 cursor-pointer"
+          className="mt-3 flex items-center gap-1.5 rounded-xl bg-amber-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-amber-500 cursor-pointer"
         >
           <Store className="h-3.5 w-3.5" />
           {t('استكشف في متجر الدار', 'View in Store')}

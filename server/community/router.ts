@@ -20,6 +20,8 @@ import * as svc from './service';
 import * as social from './social';
 import * as chat from './messenger';
 import * as admin from './admin';
+import * as communityAi from './ai';
+import type { EngineId } from '../core/types';
 import { seedCommunity } from './seed';
 
 type Env = Record<string, string | undefined>;
@@ -120,8 +122,12 @@ function sendError(res: express.Response, error: unknown) {
   res.status(500).json({ error: 'Something went wrong, please try again', code: 'FAILED' });
 }
 
-export function createCommunityRouter(community: Community, options: { env?: Env } = {}) {
+export function createCommunityRouter(
+  community: Community,
+  options: { env?: Env; getEnginePolicy?: () => Promise<EngineId[]> } = {}
+) {
   const env = options.env || process.env;
+  const aiOpts: communityAi.CommunityAiOptions = { env, getEnginePolicy: options.getEnginePolicy };
   const router = express.Router();
   const authLimiter = new RateLimiter(Number(env.SHAM_AUTH_RATE_PER_MIN) || 10, 60_000);
   const memberLimiter = new RateLimiter(Number(env.SHAM_COMMUNITY_RATE_PER_MIN) || 300, 60_000);
@@ -237,9 +243,19 @@ export function createCommunityRouter(community: Community, options: { env?: Env
   router.patch('/community/posts/:id', member((ctx, u, req) => social.editPost(ctx, u.id, p(req, 'id'), req.body || {})));
   router.delete('/community/posts/:id', member(async (ctx, u, req) => { await social.deletePost(ctx, u.id, p(req, 'id')); }));
   router.post('/community/posts/:id/react', member((ctx, u, req) => social.react(ctx, u.id, p(req, 'id'), req.body?.kind ?? null)));
+  router.post('/community/posts/:id/vote', member((ctx, u, req) => social.votePoll(ctx, u.id, p(req, 'id'), req.body?.optionIndex)));
+  router.post('/community/posts/:id/bookmark', member((ctx, u, req) => social.toggleBookmark(ctx, u.id, p(req, 'id'))));
   router.get('/community/posts/:id/comments', optional((ctx, viewerId, req) => social.comments(ctx, viewerId, p(req, 'id'))));
   router.post('/community/posts/:id/comments', member((ctx, u, req) => social.addComment(ctx, u.id, p(req, 'id'), req.body?.body)));
   router.delete('/community/comments/:id', member(async (ctx, u, req) => { await social.deleteComment(ctx, u.id, p(req, 'id')); }));
+
+  /* ---------------------------------------------- community ai --------------------------------------------- */
+  router.post('/community/ai/compose', optional(async (_ctx, _v, req) => communityAi.aiCompose(req.body || {}, aiOpts)));
+  router.post('/community/ai/analyze-post', optional(async (_ctx, _v, req) => communityAi.aiAnalyzePost(req.body || {}, aiOpts)));
+  router.post('/community/ai/reply-assist', optional(async (_ctx, _v, req) => communityAi.aiReplyAssist(req.body || {}, aiOpts)));
+  router.post('/community/ai/search', optional((ctx, viewerId, req) => communityAi.aiSearch(ctx, viewerId, req.body?.query, req.body?.lang, aiOpts)));
+  router.get('/community/ai/matchmaking', optional((ctx, viewerId, req) => communityAi.aiMatchmaking(ctx, viewerId, req.query.lang, aiOpts)));
+  router.get('/community/ai/profile/:handle', optional((ctx, viewerId, req) => communityAi.aiProfileSummary(ctx, viewerId, p(req, 'handle'), req.query.lang, aiOpts)));
 
   router.get('/community/people', optional((ctx, viewerId, req) => social.searchPeople(ctx, viewerId, req.query.q)));
   router.get('/community/people/suggestions', optional((ctx, viewerId) => social.suggestions(ctx, viewerId)));
