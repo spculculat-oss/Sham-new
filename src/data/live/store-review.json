@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-19T13:52:09.900Z",
+ "updatedAt": "2026-11-19T22:27:23.191Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 516,
-  "warn": 598,
+  "ok": 517,
+  "warn": 597,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-19T13:51:00.878Z",
+  "at": "2026-11-19T22:26:15.493Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -25,7 +25,7 @@
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1037,
+    "listingProducts": 1041,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 69047
+  "durationMs": 67811
  },
  "items": [
   {
@@ -3914,16 +3914,6 @@
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/oud-al-turas-100ml-by-ard-al-zaafaran-732.html"
-  },
-  {
-   "sku": "MAI-733",
-   "id": 733,
-   "name": "Philos Opus Noir by Maison Alhambra 100ml EDP",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/philos-opus-noir-by-maison-alhambra-100ml-edp-733.html"
   },
   {
    "sku": "GRA-734",
