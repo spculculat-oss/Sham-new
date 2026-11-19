@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-19T09:47:51.951Z",
- "nextUpdateAt": "2026-11-19T21:47:51.951Z",
+ "updatedAt": "2026-11-19T11:29:55.861Z",
+ "nextUpdateAt": "2026-11-19T23:29:55.861Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -11,15 +11,35 @@
  "sources": [
   {
    "name": "Now Smell This",
-   "count": 5
+   "count": 3
+  },
+  {
+   "name": "Premium Beauty News",
+   "count": 2
   },
   {
    "name": "Grazia",
-   "count": 3
+   "count": 2
   },
   {
    "name": "CaFleureBon",
    "count": 2
+  },
+  {
+   "name": "Cosmetics Business",
+   "count": 1
+  },
+  {
+   "name": "Jamaloukimag",
+   "count": 1
+  },
+  {
+   "name": "TechRound",
+   "count": 1
+  },
+  {
+   "name": "EIN News",
+   "count": 1
   },
   {
    "name": "Weekend Vif",
@@ -31,6 +51,10 @@
   },
   {
    "name": "Hube magazine",
+   "count": 1
+  },
+  {
+   "name": "WWD",
    "count": 1
   },
   {
@@ -84,25 +108,117 @@
   {
    "name": "FashionNetwork USA",
    "count": 1
-  },
-  {
-   "name": "ladepeche.fr",
-   "count": 1
-  },
-  {
-   "name": "Arts in the City",
-   "count": 1
-  },
-  {
-   "name": "Who What Wear",
-   "count": 1
-  },
-  {
-   "name": "openPR.com",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "n1f98tzk",
+   "url": "https://cosmeticsbusiness.com/target-s-beauty-sales-grow-9-with-target-beauty",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-19T11:18:00.000Z",
+   "original": "Target’s beauty sales grow 9% with Target Beauty Studio debut",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Target’s beauty sales grow 9% with Target Beauty Studio debut",
+    "en": "Target’s beauty sales grow 9% with Target Beauty Studio debut"
+   },
+   "summary": {
+    "ar": "US retailer Target is strengthening its ‘position as a leading beauty destination’ with the launch of Target Beauty Studios at more than 600 stores, offering 90 new brands across skin care, fragrance and hair care",
+    "en": "US retailer Target is strengthening its ‘position as a leading beauty destination’ with the launch of Target Beauty Studios at more than 600 stores, offering 90 new brands across skin care, fragrance and hair care"
+   }
+  },
+  {
+   "id": "n1vdv366",
+   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQcmZ6S1kwZ21xaVVZVUcwLW1VTnI0YmVDbzljc1huMkpHRU9zMFBYOTlYQzQ5bEMwczJxTHl2LXczUkhGRXVaQW9yT0o0aWo0U1B0ck44Q1lWb0Q5TEYyU1lQTndIM25SQzQ3ZWtYQ2ZabVdsTGp1Y3pTYWJiYTJTcVRKbTNkUG1YbkZxX29ETjJ1bTVzZkdmNU42WDhKTXRYQmsyXzFPamQ5NHg3UTRSeUkzeU44M3lBUDhxWG8tRFh2bkx0ekRycFJsQzF4dlpndG4wNFphSnpsN3BrNDNsY1gxSlBPSk5COUdGSHluZC0yY21yZ09oZU1BZHlyengtWXRMN0w2eC1jaWZlaHFSX0l4d29sdE5MZXNDSzlYR0VOT2tB?oc=5",
+   "source": "Jamaloukimag",
+   "publishedAt": "2026-11-19T10:36:59.000Z",
+   "original": "Christelle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Christelle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
+    "en": "Christelle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات"
+   },
+   "summary": {
+    "ar": "Christelle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
+    "en": "Christelle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات"
+   }
+  },
+  {
+   "id": "nixicn0",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzRmYVotaVpEQU9Mc25LdXZvMDNvN1VrS2U1anVHLTBWZGkyNVdzMllESFZ3Y2tGdkE1TUtodkZhVVpYWkJteHdOMGtKZ0xBVk5VUVdCS0M0QjEzeHJVQnBpb2lmUlNXbXdneGh3QnJZOEhnWmJqdTNYUmtzNzRCcGZMam05NFlQQzlYVjRqWWVmVG1IZFMycndGcHU2Y3dkRld1a2d3Y01oSE0?oc=5",
+   "source": "TechRound",
+   "publishedAt": "2026-11-19T10:17:47.000Z",
+   "original": "Fancy A Whiff? Digital Perfume Sampling Could Transform The Fragrance Industry",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Fancy A Whiff? Digital Perfume Sampling Could Transform The Fragrance Industry",
+    "en": "Fancy A Whiff? Digital Perfume Sampling Could Transform The Fragrance Industry"
+   },
+   "summary": {
+    "ar": "Fancy A Whiff? Digital Perfume Sampling Could Transform The Fragrance Industry",
+    "en": "Fancy A Whiff? Digital Perfume Sampling Could Transform The Fragrance Industry"
+   }
+  },
+  {
+   "id": "n1qlsd7u",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQamJjRFAxa2pUdktrQ2MyMTMxeGoydjFxVDFBR1F1LVJVdUhiY2VsRU1RYWFwX1JjbmdGV3d6dnNzajd4RHB4cWNXY2w2ci1vaEp5UUlwdG9XOGRGNklpUngxYUtwZTFuZ1NLWi1MYWxhUE5rZDRmTTN4LVdkckZEam9PTWd3TDhYdjBFblNYZUdfak0wTGEyU2xpdlVXQWdudlV0NkFYQTM2QkxaY1NpMnRNZGlPUEQ1b0RKcE1HRlpEZW1UUm9BcHdGX0lHVW9sV2ZialFqb0o?oc=5",
+   "source": "EIN News",
+   "publishedAt": "2026-11-19T09:49:00.000Z",
+   "original": "Five Reputable Fragrance Oil Manufacturers in China 2026: Advancing Fragrance Innovation and Quality",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Five Reputable Fragrance Oil Manufacturers in China 2026: Advancing Fragrance Innovation and Quality",
+    "en": "Five Reputable Fragrance Oil Manufacturers in China 2026: Advancing Fragrance Innovation and Quality"
+   },
+   "summary": {
+    "ar": "Five Reputable Fragrance Oil Manufacturers in China 2026: Advancing Fragrance Innovation and Quality",
+    "en": "Five Reputable Fragrance Oil Manufacturers in China 2026: Advancing Fragrance Innovation and Quality"
+   }
+  },
+  {
+   "id": "n73b54a",
+   "url": "https://www.premiumbeautynews.com:8443/en/iff-opens-a-bioprospecting-lab-for,28563",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-19T09:42:12.000Z",
+   "original": "IFF opens a bioprospecting lab for fragrance and beauty in Brazil",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "IFF opens a bioprospecting lab for fragrance and beauty in Brazil",
+    "en": "IFF opens a bioprospecting lab for fragrance and beauty in Brazil"
+   },
+   "summary": {
+    "ar": "International Flavors & Fragrances (IFF) has inaugurated its first Forest Lab at Legado das Águas, Brazil's largest private Atlantic Forest reserve. The bioprospecting laboratory is dedicated to scientific research and innovation in perfumery and beauty. The lab is the next step in the bioprospecting partnership IFF announced in August 2025 with Reservas Votorantim (rV), the green economy division of Brazilian investment firm Votorantim SA, which manages the reserve. Spanning 31,000... - Industr",
+    "en": "International Flavors & Fragrances (IFF) has inaugurated its first Forest Lab at Legado das Águas, Brazil's largest private Atlantic Forest reserve. The bioprospecting laboratory is dedicated to scientific research and innovation in perfumery and beauty. The lab is the next step in the bioprospecting partnership IFF announced in August 2025 with Reservas Votorantim (rV), the green economy division of Brazilian investment firm Votorantim SA, which manages the reserve. Spanning 31,000... - Industr"
+   }
+  },
+  {
+   "id": "nzy3p12",
+   "url": "https://www.premiumbeautynews.com:8443/fr/iff-ouvre-au-bresil-un-laboratoire,28562",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-19T09:34:07.000Z",
+   "original": "IFF ouvre au Brésil un laboratoire de bioprospection en parfumerie et beauté",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "IFF ouvre au Brésil un laboratoire de bioprospection en parfumerie et beauté",
+    "en": "IFF ouvre au Brésil un laboratoire de bioprospection en parfumerie et beauté"
+   },
+   "summary": {
+    "ar": "International Flavors and Fragrances (IFF) a inauguré à Legado das Águas, la plus grande réserve privée de forêt atlantique du Brésil, son tout premier Forest Lab, un laboratoire de bioprospection dédié à la recherche scientifique et à l'innovation en parfumerie et en beauté. Ce laboratoire constitue une nouvelle étape du partenariat de bioprospection annoncé par IFF en août 2025 avec Reservas Votorantim (rV), la division « économie verte » du groupe d'investissement brésilien Votorantim... - Br",
+    "en": "International Flavors and Fragrances (IFF) a inauguré à Legado das Águas, la plus grande réserve privée de forêt atlantique du Brésil, son tout premier Forest Lab, un laboratoire de bioprospection dédié à la recherche scientifique et à l'innovation en parfumerie et en beauté. Ce laboratoire constitue une nouvelle étape du partenariat de bioprospection annoncé par IFF en août 2025 avec Reservas Votorantim (rV), la division « économie verte » du groupe d'investissement brésilien Votorantim... - Br"
+   }
+  },
   {
    "id": "ndlcv8t",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaV83Ql9Cb3ZxOTRJTmNMTlRrZUo1ay1uaGhqR1BBa05xRzVqVTNmOGZ2RHYtcTRpU0FEaF8xaFhpSGV3TVZkUVY3Z1FERGNqWk1iODFDUnR3TVhGZzV5TlduM3UtaWU0N20xMHRTSDVqUzZUbkpiLW1WQkl2UE1naV9uOS0zRDFOcjAyWTVKbE5yS0lIWjRtTXlUNE91aU9OeWMwRS1SXzFZZWc?oc=5",
@@ -176,8 +292,26 @@
    }
   },
   {
-   "id": "n1u6o0r0",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNLVc2YWdiX1VZdXFERl83SEwzTmFnM1JPb0g0SmU0Y1Z3dzRRal9rNkVsb0JkeGduRFl3T0hDZDlKQWx3ZzlWaW1OdGRFaUtRM0VJcUdjeC13UlQ2aS1JbmpPYzdVWmFpQ0hwUFQwNmFQX2ZsdUdWTVFUYnc5N1pISHVvb1NBcGJBX3F6LWVrcEpfWnhnLWdPRGs2X2F5UUU?oc=5",
+   "id": "n1df19q9",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYjVFS0tqbmZ0a09GdFZEbDNNTHhWdE9veXMwdkNjR1pMamJ5aFMtcWRUWU8tVEU0YVlFUUdJejFtRE84dnpQUENRYU1FRXZRTExnU241aVlnZ3lsTmVZTEgtdnZoSUtMR0I0UEx2WTNyY3VpY05VVkZIOE11OVd4VVh1bmw5bUpWTE5TTGtvT0FxcklldUpqdWJOTzdnaDdtS3N0dmJ4TWFkaXcxeld3SUdscGZmUQ?oc=5",
+   "source": "WWD",
+   "publishedAt": "2026-11-19T07:27:07.000Z",
+   "original": "Scentbird Is Leading the Charge In Personalized Fragrance",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Scentbird Is Leading the Charge In Personalized Fragrance",
+    "en": "Scentbird Is Leading the Charge In Personalized Fragrance"
+   },
+   "summary": {
+    "ar": "Scentbird Is Leading the Charge In Personalized Fragrance",
+    "en": "Scentbird Is Leading the Charge In Personalized Fragrance"
+   }
+  },
+  {
+   "id": "n1isino8",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNEM3SVN6bzdEbXctcDFPZE8tbk5tS2lnQlI2bTFMT0lvVnZFVnJEZE0tQWVzS1RpeFVQUHh4dnkyR1Nyb093MHBfSlZFaS1CR3JKbEZ0S2Q2aE5JVGdJa0YwVThYcTJYaWNiT1g5QUlLS2RnbVU3aWJYTUYyNkk0bnlOWmJyLWZzUFJXdnZ5b3hlVFQtQnNuSExLWllxa3Y2dGdJeWd2THBtXzlPWGlyeTdNcVhETUpiUDdF?oc=5",
    "source": "The Straits Times",
    "publishedAt": "2026-11-19T07:05:00.000Z",
    "original": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’",
@@ -284,8 +418,8 @@
    }
   },
   {
-   "id": "nxqkur",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5uMVpjLXAzbjB2dGRaaEZFaGt5bDFVVzNjNUZqTEc4RnZUMFg2ajRpS0FFbFJqQ1pvTFdmQzJrdDVMSXFIdFM0MXhEVQ?oc=5",
+   "id": "n1nmx6uu",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVDNwNHdGWXhicUNHMjBSNE51enZSV1JwR1JTZXgxVVZDRTRWUVlOZ0dLWklrTGpORzluckQ0YnNNOVdMdGZIWTBjQl90RFVjWFU3Y01FNFE0MS05TUh0OXhsUFBBLWZ6VXR3cnNpY3FQSmxSZmpuQTZhUXliaE8tNGVucEZXUHc0SkNFRkVGUWNkRHpuZ01aUzFCREd1RUtqVDhVQ1NQYjduZ1cwUVRUVTBudlAwdjVINF9uN3RyWQ?oc=5",
    "source": "AFP.com",
    "publishedAt": "2026-11-19T01:53:00.000Z",
    "original": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل",
@@ -515,132 +649,6 @@
    "summary": {
     "ar": "Hermès signs up one of Givaudan’s star perfumers",
     "en": "Hermès signs up one of Givaudan’s star perfumers"
-   }
-  },
-  {
-   "id": "n15dzjjf",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNbkZJc1FSblZPR0w2d0dnTnBCdGhlVjEwZ3d1VS1PS1Q4SFhiWEtnUFplelJod0pJMzBKOE1LUDhSSUlKOG84RlplcGpNWnZXUGhPWlJZeVFBcERXS0c2QW5rSnVEOGxEVXZNeTV6UVRJWU43SG5IM3cxWk9Kc0lubmpraUtmYzBiUjNsSnIydERiXzktdWJiS0lsQ0NHaUZleUNpNGxKTHJ1Yk4wZzdOa3VlTXFKMDV6N2IzMW84b3U4SWdJTS00b0RvaTI2c3lWeWItWXhHcFpsSmk5d05wRFBTb1RnQ3NwZUZGcWdmTElqeFFQV0R2Z01RdGFONFlQVXY4ZUd0bm0zcjJuQUFXNG40OA?oc=5",
-   "source": "ladepeche.fr",
-   "publishedAt": "2026-11-18T17:16:00.000Z",
-   "original": "\"Beaucoup de clientes attendaient ce lieu\" : après la fermeture d'Elysées Parfums, elle ouvre un magasin dédié aux fragrances rares à Toulouse",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Beaucoup de clientes attendaient ce lieu\" : après la fermeture d'Elysées Parfums, elle ouvre un magasin dédié aux fragrances rares à Toulouse",
-    "en": "\"Beaucoup de clientes attendaient ce lieu\" : après la fermeture d'Elysées Parfums, elle ouvre un magasin dédié aux fragrances rares à Toulouse"
-   },
-   "summary": {
-    "ar": "\"Beaucoup de clientes attendaient ce lieu\" : après la fermeture d'Elysées Parfums, elle ouvre un magasin dédié aux fragrances rares à Toulouse",
-    "en": "\"Beaucoup de clientes attendaient ce lieu\" : après la fermeture d'Elysées Parfums, elle ouvre un magasin dédié aux fragrances rares à Toulouse"
-   }
-  },
-  {
-   "id": "nk7axwn",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUjFnVFN3VThTOU05dmNDQUNBM29lSjM1RVo5VWJ5c2ZpUTEzdE1xNExLcFBrS2IwaWNSRzlxTVFsakU4bzA1SjRUOUJCNExqdGkyck5WcDBuRDRDOGZDNUg0WUdDQW9QbHNqMlNHaV95d1hzZ1VFVUxEak92bnF0NmJKa1llY2pIOUd2TVlaU19uejRjWl9udFZ2YWRSM2FhQ3JkTGdxd0pRV0RDNTNVdQ?oc=5",
-   "source": "Arts in the City",
-   "publishedAt": "2026-11-18T16:46:00.000Z",
-   "original": "Exposition Parfums d'Asie au Musée international de la Parfumerie, Grasse",
-   "lang": "fr",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Exposition Parfums d'Asie au Musée international de la Parfumerie, Grasse",
-    "en": "Exposition Parfums d'Asie au Musée international de la Parfumerie, Grasse"
-   },
-   "summary": {
-    "ar": "Exposition Parfums d'Asie au Musée international de la Parfumerie, Grasse",
-    "en": "Exposition Parfums d'Asie au Musée international de la Parfumerie, Grasse"
-   }
-  },
-  {
-   "id": "n1ihut8z",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcGZBNEdGVmlSUG5abkVJb19xUGl0Mk1vOTJoR2RHTF9NT2dZRFpaVF9JSk1FSlF1c2h0V2h5U1p5MHMxdUlIVmllRGVkZTRjQ1pVSTJRN3o2aDl2SVlzNnRoam1tOHhIRXdrSVFZUHZoMkk3SzB6Wk9rQjhQNVE2TzczaVF5TWtEV20yaEx4aEY4ZEVIR3JUTXJYZTNMSnNPLXdQTENTM0g3dTBOYXA0dU1HZ1EtVW5HeC10UnZJQm90c2lnZzRhTWZPeWluT1pOSnU3UlB0T2Y4UQ?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-18T16:44:06.000Z",
-   "original": "\"Il a marqué les années 1990\" : devenu introuvable, ce parfum Gucci se revend désormais à prix d'or",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Il a marqué les années 1990\" : devenu introuvable, ce parfum Gucci se revend désormais à prix d'or",
-    "en": "\"Il a marqué les années 1990\" : devenu introuvable, ce parfum Gucci se revend désormais à prix d'or"
-   },
-   "summary": {
-    "ar": "\"Il a marqué les années 1990\" : devenu introuvable, ce parfum Gucci se revend désormais à prix d'or",
-    "en": "\"Il a marqué les années 1990\" : devenu introuvable, ce parfum Gucci se revend désormais à prix d'or"
-   }
-  },
-  {
-   "id": "n1k33of7",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUnpnZFpDZDFCWjRrXzNpald3Rjl2UGlZMGU2Yy11ZHBVN0M0NEpHVWhaNjZkQWlwRFhHa0htNTJWNDlrdDJHOGFuVnZTaUpVNk1iWmRuZm4teUN4SGVvUmV3QS0ya0hscEwzcnRBTjY4elRyRzBKS2FaZXpyZzJwakw3M1JHUQ?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-18T15:37:06.000Z",
-   "original": "Why Max Mara's New Scent Makes My Everyday Outfits Feel More Elevated",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Why Max Mara's New Scent Makes My Everyday Outfits Feel More Elevated",
-    "en": "Why Max Mara's New Scent Makes My Everyday Outfits Feel More Elevated"
-   },
-   "summary": {
-    "ar": "Why Max Mara's New Scent Makes My Everyday Outfits Feel More Elevated",
-    "en": "Why Max Mara's New Scent Makes My Everyday Outfits Feel More Elevated"
-   }
-  },
-  {
-   "id": "n1pjx36e",
-   "url": "https://nstperfume.com/2026/11/18/wednesday-scent-of-the-day-11-18-2/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-18T15:36:40.000Z",
-   "original": "Wednesday scent of the day 11/18",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Wednesday scent of the day 11/18",
-    "en": "Wednesday scent of the day 11/18"
-   },
-   "summary": {
-    "ar": "Happy Hump Day! Birthdays today: Johnny Mercer , Alan Shephard , Margaret Atwood , Wilma Mankiller . What fragrance are you wearing? I love the painting shown above, and the only reason I did not include it on the Scent of the Day Community Project page for this week is that it's an early work and perhaps not a good representation of the themes that made Sonia Delaunay famous? All the same it's my choice for today, and for the color scheme and the geranium, I'm in Tauer Perfumes Au Coeur du Dése",
-    "en": "Happy Hump Day! Birthdays today: Johnny Mercer , Alan Shephard , Margaret Atwood , Wilma Mankiller . What fragrance are you wearing? I love the painting shown above, and the only reason I did not include it on the Scent of the Day Community Project page for this week is that it's an early work and perhaps not a good representation of the themes that made Sonia Delaunay famous? All the same it's my choice for today, and for the color scheme and the geranium, I'm in Tauer Perfumes Au Coeur du Dése"
-   }
-  },
-  {
-   "id": "ntb4yf9",
-   "url": "https://nstperfume.com/2026/11/18/overwhelming-stench/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-18T15:20:39.000Z",
-   "original": "Overwhelming stench",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Overwhelming stench",
-    "en": "Overwhelming stench"
-   },
-   "summary": {
-    "ar": "British Columbia's Civil Resolution Tribunal has rejected a Canadian condo owner's nuisance complaint seeking to stop her neighbors from using scented laundry products. She described the odor as an \"overwhelming stench.\" The owner wanted the strata council to treat her neighbors' use of scented laundry products as a nuisance and prohibit those products altogether, CTV […]",
-    "en": "British Columbia's Civil Resolution Tribunal has rejected a Canadian condo owner's nuisance complaint seeking to stop her neighbors from using scented laundry products. She described the odor as an \"overwhelming stench.\" The owner wanted the strata council to treat her neighbors' use of scented laundry products as a nuisance and prohibit those products altogether, CTV […]"
-   }
-  },
-  {
-   "id": "nfavxxn",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLVJqZjRjTFpBaXpGZThZQ2ExamNTS1lWSTdseGN2dzB5bHVETFVpYWpjUWpYaGJmYUlvNllnQVU4MV9mblFRMWFRMWphWkVZQmU5ck53WjZEcEUteW9hdDRnN016U01nRmV3NVlGS0R2VnJ1Z2N3RDVTM1dWd0t0M196RWxHVHFCTDdSOEdKNjhnakZHRWpNdlpvVzMzUQ?oc=5",
-   "source": "openPR.com",
-   "publishedAt": "2026-11-18T15:19:31.000Z",
-   "original": "AI-Generated Bespoke Fragrance Architecture Market Is Booming",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "AI-Generated Bespoke Fragrance Architecture Market Is Booming",
-    "en": "AI-Generated Bespoke Fragrance Architecture Market Is Booming"
-   },
-   "summary": {
-    "ar": "AI-Generated Bespoke Fragrance Architecture Market Is Booming",
-    "en": "AI-Generated Bespoke Fragrance Architecture Market Is Booming"
    }
   }
  ]
