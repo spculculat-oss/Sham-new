@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T09:49:48.017Z",
+ "updatedAt": "2026-11-19T10:03:58.829Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,24 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-19T09:49:48.017Z",
-  "sha": "6847891890fa19a8e1409369124dd17fa7db929e"
+  "at": "2026-11-19T10:03:58.829Z",
+  "sha": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b"
  },
  "commits": [
+  {
+   "sha": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b",
+   "date": "2026-11-19T12:01:50+02:00",
+   "title": "feat(agent,ui): implement model fallback and focus tracking",
+   "summary": "- Add AI model fallback mechanism to handle engine initialization failures.",
+   "files": 4,
+   "additions": 335,
+   "deletions": 56,
+   "added": [],
+   "deleted": [],
+   "modified": 4,
+   "flags": [],
+   "verdict": "received"
+  },
   {
    "sha": "6847891890fa19a8e1409369124dd17fa7db929e",
    "date": "2026-11-19T11:47:36+02:00",
@@ -1446,6 +1460,7 @@
   }
  ],
  "reviewed": [
+  "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b",
   "6847891890fa19a8e1409369124dd17fa7db929e",
   "935c63311c02f14c6e4e49eeba92b62abd67d160",
   "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
@@ -1458,5 +1473,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "6847891890fa19a8e1409369124dd17fa7db929e"
+ "head": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b"
 }
