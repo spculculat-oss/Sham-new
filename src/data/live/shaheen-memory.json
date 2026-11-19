@@ -1,14 +1,14 @@
 {
  "version": 1,
- "updatedAt": "2026-11-19T09:49:12.135Z",
+ "updatedAt": "2026-11-19T11:30:56.576Z",
  "entries": [
   {
    "id": "ar|auto|احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
    "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
    "lang": "ar",
    "style": "auto",
-   "answer": "إجمالي كمية الزيت المطلوبة = 100 زجاجة × 50 مل × 20% = 1000 مل\nتكلفة الزيت = 1000 مل × ‏0.06 US$ = ‏56.50 US$\n\nإجمالي كمية الكحول المطلوبة = 100 زجاجة × 50 مل × 80% = 4000 مل\nتكلفة الكحول = 4000 مل × ‏0 US$ = ‏15 US$\n\nالتكلفة الإجمالية للزيوت والكحول = 3000 + 800 = ‏71.50 US$\nتكلفة الزجاجة الواحدة = 3800 ÷ 100 = ‏0.71 US$\n\nحبّك نضيف زجاجات وعبوات للحساب ولا كده التكلفة تمام؟",
-   "at": "2026-11-19T09:49:12.135Z",
+   "answer": "تكلفة الـ 100 زجاجة بتتقسم على زيت وكحول بناءً على الحجم الكلي.\n\nإجمالي كمية العطر = 100 زجاجة × 50 مل = 5000 مل.\nكمية الزيت العطري بتركيز 20% = 5000 × 20 ÷ 100 = 1000 مل.\nكمية الكحول المتبقية = 5000 - 1000 = 4000 مل.\n\nتكلفة الزيت = 1000 مل × ‏0.06 US$ = ‏56.50 US$.\nتكلفة الكحول = 4000 مل × ‏0 US$ = ‏15 US$.\n\nإجمالي التكلفة للـ 100 زجاجة = 3000 + 800 = ‏71.50 US$.\nيعني تكلفة الزجاجة الواحدة بتطلع ‏0.71 US$.\n\nتحب نحسب تكلفة إضافية للزجاجات والعبوات الفارغة؟\n\n```sham-tool\n{\"tools\":[{\"tool\":\"costing\"}]}\n```",
+   "at": "2026-11-19T11:30:56.576Z",
    "hits": 0,
    "source": "probe"
   },
@@ -17,8 +17,8 @@
    "question": "What fixative works best for a citrus cologne, and at what percentage?",
    "lang": "en",
    "style": "auto",
-   "answer": "Ambroxan and Iso E Super work best for citrus colognes because they anchor the volatile top notes without altering the bright, fresh profile. Use them around 3% to 5% of the total formula to balance longevity and crispness.\n\n```sham-formula\n{\"title\":\"Citrus Cologne Fixation\",\"author\":\"Shahin — Experimental Guide\",\"concentrationPercent\":15,\"concentrationType\":\"edc\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":4,\"macerationDays\":21,\"summary\":\"Citrus cologne balanced with Ambroxan\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"برغموت\",\"nameEn\":\"Bergamot\",\"category\":\"top\",\"percentageOfOil\":40},{\"id\":\"note-2\",\"nameAr\":\"ليمون\",\"nameEn\":\"Lemon\",\"category\":\"top\",\"percentageOfOil\":30},{\"id\":\"note-3\",\"nameAr\":\"أمبروكسان\",\"nameEn\":\"Ambroxan\",\"category\":\"base\",\"percentageOfOil\":30}]}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"fixative\",\"guide\":\"synthetic fixatives for citrus\"}]}\n```",
-   "at": "2026-11-19T09:49:12.135Z",
+   "answer": "For a citrus cologne, Hedione or Ambroxan work best as fixatives. They extend the life of light citrus notes without changing their fresh profile.\n\nUse them at 1 percent to 3 percent of the total formula.\n\n```sham-formula\n{\n  \"title\": \"Citrus Cologne Base\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 15,\n  \"concentrationType\": \"edc\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 2,\n  \"macerationDays\": 14,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"برغموت\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 50\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"ليمون\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 30\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"هديون\",\n      \"nameEn\": \"Hedione\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 20\n    }\n  ]\n}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"guide\"},{\"tool\":\"pyramid\"}]}\n```",
+   "at": "2026-11-19T11:30:56.576Z",
    "hits": 0,
    "source": "probe"
   },
