@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-18T22:34:19.947Z",
- "nextUpdateAt": "2026-11-19T10:34:19.947Z",
+ "updatedAt": "2026-11-19T09:47:51.951Z",
+ "nextUpdateAt": "2026-11-19T21:47:51.951Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -9,6 +9,10 @@
   "en": "The fragrance industry sees major infrastructure investments led by Mane in Grasse, alongside expansions from DSM-Firmenich and Symrise focused on innovation and sustainable ingredients. Master perfumers Aurélien Guichard and Bertrand Duchaufour debut new niche creations, while dedicated fragrance clubs, cultural museums, and tobacco and spice notes shape current market trends."
  },
  "sources": [
+  {
+   "name": "Now Smell This",
+   "count": 5
+  },
   {
    "name": "Grazia",
    "count": 3
@@ -18,8 +22,44 @@
    "count": 2
   },
   {
-   "name": "Now Smell This",
-   "count": 2
+   "name": "Weekend Vif",
+   "count": 1
+  },
+  {
+   "name": "TradingView",
+   "count": 1
+  },
+  {
+   "name": "Hube magazine",
+   "count": 1
+  },
+  {
+   "name": "The Straits Times",
+   "count": 1
+  },
+  {
+   "name": "Fresh Mag Paris",
+   "count": 1
+  },
+  {
+   "name": "Investing.com",
+   "count": 1
+  },
+  {
+   "name": "الأيام البحرينية",
+   "count": 1
+  },
+  {
+   "name": "FashionNetwork - The World's Fashion Business News",
+   "count": 1
+  },
+  {
+   "name": "AFP.com",
+   "count": 1
+  },
+  {
+   "name": "36Kr",
+   "count": 1
   },
   {
    "name": "Quiver Quantitative",
@@ -35,6 +75,10 @@
   },
   {
    "name": "Business News Nigeria",
+   "count": 1
+  },
+  {
+   "name": "ET Retail",
    "count": 1
   },
   {
@@ -56,65 +100,261 @@
   {
    "name": "openPR.com",
    "count": 1
-  },
-  {
-   "name": "Numéro Magazine",
-   "count": 1
-  },
-  {
-   "name": "هذا اليوم",
-   "count": 1
-  },
-  {
-   "name": "جريدة البلاد",
-   "count": 1
-  },
-  {
-   "name": "Masrawy",
-   "count": 1
-  },
-  {
-   "name": "The Business of Fashion",
-   "count": 1
-  },
-  {
-   "name": "Cosmetics Business",
-   "count": 1
-  },
-  {
-   "name": "Detroit Free Press",
-   "count": 1
-  },
-  {
-   "name": "Business Wire",
-   "count": 1
-  },
-  {
-   "name": "Glossy",
-   "count": 1
-  },
-  {
-   "name": "GQ South Africa",
-   "count": 1
-  },
-  {
-   "name": "News24",
-   "count": 1
-  },
-  {
-   "name": "Journal du Luxe",
-   "count": 1
-  },
-  {
-   "name": "freeyork",
-   "count": 1
-  },
-  {
-   "name": "Popbee",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "ndlcv8t",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaV83Ql9Cb3ZxOTRJTmNMTlRrZUo1ay1uaGhqR1BBa05xRzVqVTNmOGZ2RHYtcTRpU0FEaF8xaFhpSGV3TVZkUVY3Z1FERGNqWk1iODFDUnR3TVhGZzV5TlduM3UtaWU0N20xMHRTSDVqUzZUbkpiLW1WQkl2UE1naV9uOS0zRDFOcjAyWTVKbE5yS0lIWjRtTXlUNE91aU9OeWMwRS1SXzFZZWc?oc=5",
+   "source": "Weekend Vif",
+   "publishedAt": "2026-11-19T09:02:00.000Z",
+   "original": "De la famille royale britannique aux stars, comment Penhaligon’s est devenu le parfumeur attitré des nez fins",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "De la famille royale britannique aux stars, comment Penhaligon’s est devenu le parfumeur attitré des nez fins",
+    "en": "De la famille royale britannique aux stars, comment Penhaligon’s est devenu le parfumeur attitré des nez fins"
+   },
+   "summary": {
+    "ar": "De la famille royale britannique aux stars, comment Penhaligon’s est devenu le parfumeur attitré des nez fins",
+    "en": "De la famille royale britannique aux stars, comment Penhaligon’s est devenu le parfumeur attitré des nez fins"
+   }
+  },
+  {
+   "id": "n76kx43",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-19T08:59:35.000Z",
+   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   },
+   "summary": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   }
+  },
+  {
+   "id": "n7pt87v",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdkpXa19nZE9fT29NazAzMjdSVEFvQ3h1Z2p4dkROa0xxdkk5cUdsdFdtYzhXaW83eHNRTDNqSHFwQ1k4UEYwUFVZcC0taFBwMDNraTFzUlhFdzRINEt6TGVPM01qVjZsSjRpTjdiZXlybjdnLUp2cTcxT2xRZE5fbk54QzBScWU4TVQ1R0ZnR0RPTVdZb25JR0N5RHVZWjJiWDM3RG9sQnZKR3hfMjVtZWYwa2Y1VHptYTRTRFRxcjUzQXo3bjVUcnh3Zk1BdTVjWXZBeG13Z3ZwQmNOWFpQNTNxcGh2V2MwdVl3d2pn?oc=5",
+   "source": "TradingView",
+   "publishedAt": "2026-11-19T08:31:28.000Z",
+   "original": "ITP: 2027 sales projected at ~€960m, led by an intensive fragrance launch plan",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "ITP: 2027 sales projected at ~€960m, led by an intensive fragrance launch plan",
+    "en": "ITP: 2027 sales projected at ~€960m, led by an intensive fragrance launch plan"
+   },
+   "summary": {
+    "ar": "ITP: 2027 sales projected at ~€960m, led by an intensive fragrance launch plan",
+    "en": "ITP: 2027 sales projected at ~€960m, led by an intensive fragrance launch plan"
+   }
+  },
+  {
+   "id": "nwepdeo",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZV9HY3pPcXgyZDYwUllPVVM1Qlp1TDBqTDFobHI1ZVNDemlFN3EweHFVME9uR0FCc1lGQ2NoQW1wM1BlNDFpMndTdFUxelU3WjlpT1hucFI1b0ZvbDZ4UDFaSk55a2gtNFhJUWQtSWx6YTNIdEZDLVYzOUhFOXJhclpydEdGVzR3UjN0ZEk5MjFYUENhNE5UOTFkYVE3Q0NwY04zbQ?oc=5",
+   "source": "Hube magazine",
+   "publishedAt": "2026-11-19T07:29:40.000Z",
+   "original": "Tant d’Avenir and Notes de Bas de Paje weave a fragrant story in silver and citrine",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Tant d’Avenir and Notes de Bas de Paje weave a fragrant story in silver and citrine",
+    "en": "Tant d’Avenir and Notes de Bas de Paje weave a fragrant story in silver and citrine"
+   },
+   "summary": {
+    "ar": "Tant d’Avenir and Notes de Bas de Paje weave a fragrant story in silver and citrine",
+    "en": "Tant d’Avenir and Notes de Bas de Paje weave a fragrant story in silver and citrine"
+   }
+  },
+  {
+   "id": "n1u6o0r0",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNLVc2YWdiX1VZdXFERl83SEwzTmFnM1JPb0g0SmU0Y1Z3dzRRal9rNkVsb0JkeGduRFl3T0hDZDlKQWx3ZzlWaW1OdGRFaUtRM0VJcUdjeC13UlQ2aS1JbmpPYzdVWmFpQ0hwUFQwNmFQX2ZsdUdWTVFUYnc5N1pISHVvb1NBcGJBX3F6LWVrcEpfWnhnLWdPRGs2X2F5UUU?oc=5",
+   "source": "The Straits Times",
+   "publishedAt": "2026-11-19T07:05:00.000Z",
+   "original": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’",
+    "en": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’"
+   },
+   "summary": {
+    "ar": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’",
+    "en": "AI helps cosmetic giants overcome perfume’s nasal ‘paradoxes’"
+   }
+  },
+  {
+   "id": "nlut33y",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWNXV1hIbHFjclZZbUhadHdTSFpmVUtWNUZOd0ZNeDdEeERVSmxSMGtwbzgwYTNSdzAtRVZIeWdDUzAyaFBlU2JGUk91ZFd4SjZpNHNzVDZWWVY4bGdqTF90WUpqa0s0SnJab2Rxekc4SFg2dFhmWFdqaDRyWDl3SXVlRXMtUVpZdjRhSi1jR0NGcE5pTUlUS0pJdmdJbVVwQjVRNTBpYV9CbFBoWkllWmRiSQ?oc=5",
+   "source": "Fresh Mag Paris",
+   "publishedAt": "2026-11-19T06:26:31.000Z",
+   "original": "Vega, ce parfum Guerlain lancé en 1930, se revend aujourd'hui près de 1500 euros sur eBay",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Vega, ce parfum Guerlain lancé en 1930, se revend aujourd'hui près de 1500 euros sur eBay",
+    "en": "Vega, ce parfum Guerlain lancé en 1930, se revend aujourd'hui près de 1500 euros sur eBay"
+   },
+   "summary": {
+    "ar": "Vega, ce parfum Guerlain lancé en 1930, se revend aujourd'hui près de 1500 euros sur eBay",
+    "en": "Vega, ce parfum Guerlain lancé en 1930, se revend aujourd'hui près de 1500 euros sur eBay"
+   }
+  },
+  {
+   "id": "nclrrju",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WRnpadzRsS0t0LXJSZWlCX3ZETDA3QXVxdUFHc200MTd1cmJZbkJwbXVDSWtUajdNdHM2VG1IbHN1NjlYMUVlSzZucVpESEwzZHYwdGJDTlV2RlZ5YmJYbmVtVWxaNE5xTHVSM3h4UjA?oc=5",
+   "source": "Investing.com",
+   "publishedAt": "2026-11-19T06:15:00.000Z",
+   "original": "Interparfums تتوقع نمو مبيعات بنسبة 6% للسنة المالية 2027",
+   "lang": "ar",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Interparfums تتوقع نمو مبيعات بنسبة 6% للسنة المالية 2027",
+    "en": "Interparfums تتوقع نمو مبيعات بنسبة 6% للسنة المالية 2027"
+   },
+   "summary": {
+    "ar": "Interparfums تتوقع نمو مبيعات بنسبة 6% للسنة المالية 2027",
+    "en": "Interparfums تتوقع نمو مبيعات بنسبة 6% للسنة المالية 2027"
+   }
+  },
+  {
+   "id": "n94g9qv",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQ1RnalduMEJ3cGJZamRVS0hXNG1UZjQ4YTBROVVsVEp3YTlDYzdQOFlvOTAycjM1ZlhubnpoOVYzYmowRFVvZklXZE4xM2FwM251RWdEZnluMlJqdUVoS1MzTnJEZ2QzRzEtX3VNYkctUWl4WF92Y1h4WnJGZnV3U25TVzhneWFwXy02UVd0TDU3TC04bGhzWVV6Q1Y3SGhSVUxDcWlCTEptWVV0TEVzZThVcWpoODAwbDh3MDRJS1Nzejd3c0hXX0w5TGd6N3BIWnpNQ0VobkxITXd2MDBTUHNGWlh0Z1U?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-19T06:01:02.000Z",
+   "original": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
+   },
+   "summary": {
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
+   }
+  },
+  {
+   "id": "ntsp2h5",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sZmkyM0NnYjJIQmZ1eS0xc21WV1dZMFpLSmxMSk5rQXo4ZmVuU0pkWXMzY1BQb1FBUFBJVndSMVZhblVOX2ZpNmlEN2ZMRk9VN2g3ZWFtSlNhczE0ZXFQakNqS3lLYVk?oc=5",
+   "source": "الأيام البحرينية",
+   "publishedAt": "2026-11-19T04:05:36.000Z",
+   "original": "معرضا الجواهر والعطور العربية يقدمان خدمات رقمية ومرافق متكاملة للزوار",
+   "lang": "ar",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "معرضا الجواهر والعطور العربية يقدمان خدمات رقمية ومرافق متكاملة للزوار",
+    "en": "معرضا الجواهر والعطور العربية يقدمان خدمات رقمية ومرافق متكاملة للزوار"
+   },
+   "summary": {
+    "ar": "معرضا الجواهر والعطور العربية يقدمان خدمات رقمية ومرافق متكاملة للزوار",
+    "en": "معرضا الجواهر والعطور العربية يقدمان خدمات رقمية ومرافق متكاملة للزوار"
+   }
+  },
+  {
+   "id": "n63urcj",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTXBxRkxFck1fcGtySmI2N1VHbmFOVWdMb2h1MjFBYldaUDR5b0czQkdUZnlqS2RRMUM3aHNPVlBNaDNTLWVwUG16eGFNdFpVN2M0SGE5UEk2ZjNqS2Vucmg5NnRtVUtOQTQ0NlpnZGJENERQdGhkLVIybUQzZ3NBNl85WGIwNG1aeFpIbTdGX3VKT3BqdzBqbVZITTNQOHVIYzk1S0ZkMEtCNjByM0dUaTZCSWFBS0E?oc=5",
+   "source": "FashionNetwork - The World's Fashion Business News",
+   "publishedAt": "2026-11-19T02:43:42.000Z",
+   "original": "IFF launches Brazil forest lab to discover new fragrance ingredients",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "IFF launches Brazil forest lab to discover new fragrance ingredients",
+    "en": "IFF launches Brazil forest lab to discover new fragrance ingredients"
+   },
+   "summary": {
+    "ar": "IFF launches Brazil forest lab to discover new fragrance ingredients",
+    "en": "IFF launches Brazil forest lab to discover new fragrance ingredients"
+   }
+  },
+  {
+   "id": "nxqkur",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5uMVpjLXAzbjB2dGRaaEZFaGt5bDFVVzNjNUZqTEc4RnZUMFg2ajRpS0FFbFJqQ1pvTFdmQzJrdDVMSXFIdFM0MXhEVQ?oc=5",
+   "source": "AFP.com",
+   "publishedAt": "2026-11-19T01:53:00.000Z",
+   "original": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل",
+    "en": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل"
+   },
+   "summary": {
+    "ar": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل",
+    "en": "افتتاح IFF لأول مختبر لها في غابات الأطلسي بالبرازيل لتعزيز الابتكار في مجال العطور ومستحضرات التجميل"
+   }
+  },
+  {
+   "id": "n1lz4xq3",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvZUlsdlFwZUZ1blpkZ1hvZUpoWlJQcUROUFpfTGliX0YxZ2R5Qi1YcVNJeUxmY1BuTzREbUY1VVl4RFF5VHVvYnV0VkFlbDV2NV9V?oc=5",
+   "source": "36Kr",
+   "publishedAt": "2026-11-19T01:52:56.000Z",
+   "original": "Is the 5-Billion-Yuan Domestic Fragrance Brand Undergoing Ownership Transfer?",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Is the 5-Billion-Yuan Domestic Fragrance Brand Undergoing Ownership Transfer?",
+    "en": "Is the 5-Billion-Yuan Domestic Fragrance Brand Undergoing Ownership Transfer?"
+   },
+   "summary": {
+    "ar": "Is the 5-Billion-Yuan Domestic Fragrance Brand Undergoing Ownership Transfer?",
+    "en": "Is the 5-Billion-Yuan Domestic Fragrance Brand Undergoing Ownership Transfer?"
+   }
+  },
+  {
+   "id": "nwsmglc",
+   "url": "https://nstperfume.com/2026/11/18/dolce-gabbana-the-one-elixir-new-fragrances/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-18T21:59:55.000Z",
+   "original": "Dolce & Gabbana The One Elixir ~ new fragrances",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Dolce & Gabbana The One Elixir ~ new fragrances",
+    "en": "Dolce & Gabbana The One Elixir ~ new fragrances"
+   },
+   "summary": {
+    "ar": "Dolce & Gabbana have launched The One Elixir and The One for Men Elixir, new flankers to 2006's The One for women and 2008's The One for Men respectively...",
+    "en": "Dolce & Gabbana have launched The One Elixir and The One for Men Elixir, new flankers to 2006's The One for women and 2008's The One for Men respectively..."
+   }
+  },
+  {
+   "id": "n19qzu52",
+   "url": "https://nstperfume.com/2026/11/18/the-daily-lemming-1972/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-18T21:44:57.000Z",
+   "original": "The daily lemming",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "The daily lemming",
+    "en": "The daily lemming"
+   },
+   "summary": {
+    "ar": "From Adlan Fragrances, a diffuser in Pins & Needles: \"Pins & Needles evokes a frosted evergreen forest, where fir needle and balsam release a cool, aromatic lift. Oak moss and petrichor unfold gradually, recalling fresh rain settling into the dark forest floor. Woody, green and fresh, it brings the stillness of winter woods into the room.\" […]",
+    "en": "From Adlan Fragrances, a diffuser in Pins & Needles: \"Pins & Needles evokes a frosted evergreen forest, where fir needle and balsam release a cool, aromatic lift. Oak moss and petrichor unfold gradually, recalling fresh rain settling into the dark forest floor. Woody, green and fresh, it brings the stillness of winter woods into the room.\" […]"
+   }
+  },
   {
    "id": "n1cdybfb",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNR205emxHaWZzR3lsVUlkOHZNREJialR3d0hUblRZV1YwZkN5ZWRGcHk0amNDQXhaQTlXeGdZMEtNeE9SeFlCZFc2R0tyTzMtcG4wZkFMVUJKZFlqNy1ienJEcTRJRVJISEtwUXJUUUFWYmVKU01tVkc1clBPWnRZSFljb1k0SGR0bW1DVFNsdTZad2oyNzhPd19ZQ0c0MXI5ZXZNUldBMzJ4cGdLcDh5a0Rrbm9xaldkajQ0N19UUDNGcHQ1Z09YbWdhTy1qaGpZ?oc=5",
@@ -131,6 +371,24 @@
    "summary": {
     "ar": "Interparfums Announces Initial 2027 Guidance for Sales Growth and Higher EPS on New Fragrance Launches",
     "en": "Interparfums Announces Initial 2027 Guidance for Sales Growth and Higher EPS on New Fragrance Launches"
+   }
+  },
+  {
+   "id": "n1pyecgz",
+   "url": "https://nstperfume.com/2026/11/18/carolina-herrera-good-girl-blush-delight-new-perfume/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-18T21:21:46.000Z",
+   "original": "Carolina Herrera Good Girl Blush Delight ~ new perfume",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Carolina Herrera Good Girl Blush Delight ~ new perfume",
+    "en": "Carolina Herrera Good Girl Blush Delight ~ new perfume"
+   },
+   "summary": {
+    "ar": "Carolina Herrera will launch Good Girl Blush Delight, a new fragrance for women. Good Girl Blush Delight is a flanker to 2023's Good Girl Blush , which was a flanker to 2016's Good Girl , and follows 2024's Good Girl Blush Elixir ...",
+    "en": "Carolina Herrera will launch Good Girl Blush Delight, a new fragrance for women. Good Girl Blush Delight is a flanker to 2023's Good Girl Blush , which was a flanker to 2016's Good Girl , and follows 2024's Good Girl Blush Elixir ..."
    }
   },
   {
@@ -152,21 +410,57 @@
    }
   },
   {
-   "id": "n76kx43",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-18T21:06:24.000Z",
-   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-   "lang": "fr",
+   "id": "n1ha6vs0",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE03Y3p0QURoWnZZT0RrMFFJa2NKMXdKdnJmekNrVEI1NHM3eTNRa3E2aDNuZ2JJYkFnRGZQSDV3ZzZoX181Z3c?oc=5",
+   "source": "الخلاصة نت",
+   "publishedAt": "2026-11-18T19:46:06.000Z",
+   "original": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
+    "en": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب"
+   },
+   "summary": {
+    "ar": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
+    "en": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب"
+   }
+  },
+  {
+   "id": "nmojt4v",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObmZtc2ZjNGtqbkFkZWxZYk9CaF9SamtSMnVrdGk4eWgwY0JPWGxka1p5Y3Q1NDJNSkdQeUV5RXg4VWptb1QydGdKWUFXTU4tZVBFV2lPNjR0eFhqQnB0S3p1MnYwU1ZDdjlWem4wcU94OUcxN0pweTVaal9MX3piU2dXWHdlODFFS1FPQ2NnZ2xYdmI4bmFqaVFiRHNYejE3dXhZUU9rZGF5RmdNMUppV2tiRnRKNzllR1NKb0ZzblE4NDhPcDA1OA?oc=5",
+   "source": "Business News Nigeria",
+   "publishedAt": "2026-11-18T17:50:01.000Z",
+   "original": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
+   "lang": "en",
    "category": "industry",
    "importance": 2,
    "title": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+    "ar": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
+    "en": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product"
    },
    "summary": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+    "ar": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
+    "en": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product"
+   }
+  },
+  {
+   "id": "n1x8atgv",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQd2Jxb1VTOVQ2MVNSWmJYUVRaYzlxTXBjTlpOc2lIcGZoVHZHNENhSXR3M2NBd1pqRGhYZzJXMjU5OWJqYlRMaFAxeGRlMzVvY28wQURlWVNWZ3hQcEVNRzY1ZkVrZW9wcEJveGM0OUxvUW01dk9UaTJ3Q3NjaTNIc29WT3M3dGljNjI0V1FIS1pzMkUzZjllSm5RakxueGxTb2V2aWM3SlA5dHVEUXVRbUpQdUFGX1BKWm9PLVY3TlZIZHhTMG15S3NJeHE4dVFad184Q1p1S2FVTnZ0OFJrSV9jRkQ4NmZJRnExXzBSNGZ1VmhDY3E1aWhHN1JsTUxuS3dQRUFVVGM3RDJnRndGcm5PUGI5QkNSbXdF0gGfAkFVX3lxTFBicmVfenVOOTBLX3hULU5yZ25kZk9kQUdaT0gtbkI4bW0wSnhBUnMtcmVMSFRWT0dKU0I3OGdRMjlTdElHdkNBZENmNi0tbklGMzVod192NVFSMWctTnkzM19pNE9MVkJDZ0ZfeEJLTlRhZF84QURyZm5HLXNsdmhMSktFQnRUYWozc0hOYWZuQkRpa29hbkpOWVN6OE1mT3ZCckI3UzYyQ1ZJckpBX3A1ZVVBTEtmZlJRQ20yODhVYWtTQl9xRkdsT2txV2VNT0kzeHp3SnBOTktpZThrTWx6eS1kTlRBSHo2UVhMbWNBVnk4bTJkTkxkMG1MYVRNVGk3SVBCaEt1V083a2xHNDczcG5QWWRFVV82S3BqS1dv?oc=5",
+   "source": "ET Retail",
+   "publishedAt": "2026-11-18T17:40:46.000Z",
+   "original": "Janhvi Kapoor joins ENVY as brand ambassador as fragrance brand expands perfume portfolio",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Janhvi Kapoor joins ENVY as brand ambassador as fragrance brand expands perfume portfolio",
+    "en": "Janhvi Kapoor joins ENVY as brand ambassador as fragrance brand expands perfume portfolio"
+   },
+   "summary": {
+    "ar": "Janhvi Kapoor joins ENVY as brand ambassador as fragrance brand expands perfume portfolio",
+    "en": "Janhvi Kapoor joins ENVY as brand ambassador as fragrance brand expands perfume portfolio"
    }
   },
   {
@@ -188,24 +482,6 @@
    }
   },
   {
-   "id": "n1ha6vs0",
-   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE03Y3p0QURoWnZZT0RrMFFJa2NKMXdKdnJmekNrVEI1NHM3eTNRa3E2aDNuZ2JJYkFnRGZQSDV3ZzZoX181Z3c?oc=5",
-   "source": "الخلاصة نت",
-   "publishedAt": "2026-11-18T19:46:06.000Z",
-   "original": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
-   "lang": "ar",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
-    "en": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب"
-   },
-   "summary": {
-    "ar": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب",
-    "en": "فشل إطلاق صاروخ باليستي حوثي وسقوطه على قرية سكنية في منطقة العود بمحافظة إب"
-   }
-  },
-  {
    "id": "naenq9s",
    "url": "https://cafleurebon.com/purple-trouble-by-juliette-has-a-gun-winner/?utm_source=rss&utm_medium=rss&utm_campaign=purple-trouble-by-juliette-has-a-gun-winner",
    "source": "CaFleureBon",
@@ -221,24 +497,6 @@
    "summary": {
     "ar": "The idea for Purple Trouble by Juliette Has A Gun is simple. Wild blackberry sits at the center, fresh and untamed rather than sweet. The post Purple Trouble by Juliette Has A Gun Winner appeared first on ÇaFleureBon Perfume Blog .",
     "en": "The idea for Purple Trouble by Juliette Has A Gun is simple. Wild blackberry sits at the center, fresh and untamed rather than sweet. The post Purple Trouble by Juliette Has A Gun Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "nnrgilt",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZXV3QmgtTGFmaHd3OWIyQk1NTVBjUFJFNGtzTHpsTU1ocUM1Y2VuMFhmcDFOQlZqaTdidkJjQ3JpV1hoeHRQdzAzendzbXFKNHJkSUZsNXlhdklzVk5nTVVDeFV1eWRRQkJ2TlNCSWY1S1RUSnpfNEd4aF8yYUxJczVHcHJNd1ZlR01uZjVuLU5hT3dNUlFfQkh0Y3FtTGtCQnl6eEh3NnZtUXZjazlQM1B5RVRrcGpMWWpKOWgzSHdIcFM1bzlNNjhXNG90UQ?oc=5",
-   "source": "Business News Nigeria",
-   "publishedAt": "2026-11-18T17:50:11.000Z",
-   "original": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
-    "en": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product"
-   },
-   "summary": {
-    "ar": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product",
-    "en": "Scentified expands into Nigeria’s growing luxury fragrance landscape with new product"
    }
   },
   {
@@ -383,276 +641,6 @@
    "summary": {
     "ar": "AI-Generated Bespoke Fragrance Architecture Market Is Booming",
     "en": "AI-Generated Bespoke Fragrance Architecture Market Is Booming"
-   }
-  },
-  {
-   "id": "n1b1nxr6",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ3BPZko5V1hiZzBNRWVjdVdZc0hYM2J0WHhScVJVeWJEQ05rdEgycE9xc3VldExTQ05SLXMyMWgtOThIRFNqM1VtZ3NtYWQyOGhOWEZBZmJiSXZTbVVpckstR1VzbWZ5aEpxbl9QRzJ3RDJuTFhmNEU2eWFkMjhIbQ?oc=5",
-   "source": "Numéro Magazine",
-   "publishedAt": "2026-11-18T15:00:54.000Z",
-   "original": "La marque de joaillerie Tant d'Avenir lance un premier parfum avec Notes de bas de paje et un pendentif en argent",
-   "lang": "fr",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "La marque de joaillerie Tant d'Avenir lance un premier parfum avec Notes de bas de paje et un pendentif en argent",
-    "en": "La marque de joaillerie Tant d'Avenir lance un premier parfum avec Notes de bas de paje et un pendentif en argent"
-   },
-   "summary": {
-    "ar": "La marque de joaillerie Tant d'Avenir lance un premier parfum avec Notes de bas de paje et un pendentif en argent",
-    "en": "La marque de joaillerie Tant d'Avenir lance un premier parfum avec Notes de bas de paje et un pendentif en argent"
-   }
-  },
-  {
-   "id": "nu4dcj3",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOVWJWMXE3ODUtYzU1WHY0UXhRdFBlMnQ0LUJha2NJUnluLUZDQlI2ZTJTQ2ZqX3VJUEtOMnNEVW5fQmdPOXZrb0VoRUZHd19pb1VJRVVQT3JyM296UW9MSW40bFhLczh5OVN6WmhNTm1HdVNNY1FqOTlsYnNydjBVbmlLUzdvbXk2bzhNLXYxYlUybVpuWDRLaERtWnN2YnlYYU5lSTZEZzFDWEdGdVR0Y1FtUHZwcER3Y1JqUFNTVm9nb0FwN3oxYXpiOHQ0N3B3TkdUQjk5bVhDcm4zaV9oTEd5NEJfTWc4a0wyZENqcFdlUHI4YVlVeUJuOU93aGhBdjYzUlVUZkstQ1ZTcWZ6T2lIZGRjcEphaXRJU1pwQUpMLTA4UHdmOTJaaXVadTQ?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-18T14:50:29.000Z",
-   "original": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
-   },
-   "summary": {
-    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
-   }
-  },
-  {
-   "id": "n2ssr2t",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBKdVJqOHppLVZ0SGJZUjd6MUFEZVJMZWVRLUtkVG0zT25LTzV3VXBDczBYMXJxWkl4X3lFVmJlcXZYWktHejNuSHZCakVxeXRC0gFKQVVfeXFMUHBHNGJ6LWxxNzJwSERrRDlVZmdkWjhCT2tzNkxrT2ZVM2dqZVljSmt5WXVBRTc5WVNrUUlwVUNUY09BTk5SSGpIN0E?oc=5",
-   "source": "هذا اليوم",
-   "publishedAt": "2026-11-18T13:33:57.000Z",
-   "original": "فيديو | عالم البخور.. أصالة المكونات وفنون صناعة الخلطات العطرية",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "فيديو | عالم البخور.. أصالة المكونات وفنون صناعة الخلطات العطرية",
-    "en": "فيديو | عالم البخور.. أصالة المكونات وفنون صناعة الخلطات العطرية"
-   },
-   "summary": {
-    "ar": "فيديو | عالم البخور.. أصالة المكونات وفنون صناعة الخلطات العطرية",
-    "en": "فيديو | عالم البخور.. أصالة المكونات وفنون صناعة الخلطات العطرية"
-   }
-  },
-  {
-   "id": "n1yrrfio",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZb0Q4aUV6U2xfOGZteE9RU2JFb2FPQnh5Q0RIQi1uNGlYZXVBOUlnZF82OW1WQVl5UmFpZWtFQ3o2cHVtTEFTZ3dkSDMxN0pvQ2h0OGN5V0F0eVg5bnBtNFIyUQ?oc=5",
-   "source": "جريدة البلاد",
-   "publishedAt": "2026-11-18T13:08:09.000Z",
-   "original": "كيف تكتشف عيوب العود قبل الشراء؟",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "كيف تكتشف عيوب العود قبل الشراء؟",
-    "en": "كيف تكتشف عيوب العود قبل الشراء؟"
-   },
-   "summary": {
-    "ar": "كيف تكتشف عيوب العود قبل الشراء؟",
-    "en": "كيف تكتشف عيوب العود قبل الشراء؟"
-   }
-  },
-  {
-   "id": "nhwzfz0",
-   "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxPWDZka3Z1RWRKMFdEMV9Pa0RuUy0yRFpXeTF1cENqMl84MUZsWDVFdXpNVi1vWG1lZUtLUDlxcDRHTDZlQ1pQaVdUOTRseWRBNDlMaHhaWDZzb29rUDAwOExHQWF0OVV6bFEzRUhkTmVldzVzTzRvX2UyNl8xWi0yeEJVQVM1aFlVTEViRUJ6eTlIa2pnanNxamQxVjU0MjhoMUNkb1pkQXExWUxZdHI0X0tNZWlkdTR5U1V0Vk0zbW5kbXB1UVpLcTcyZ0g4RVJ1WFBfeU9RZkFsRmREMXBnNDAyVzY4NllPbWJ5b0ZiaGVkZTI0RlJwWkpLd1dtUU81QTd2Q2JncUNwUG41R0Z0WXUzOTZuSS1GSDVURWpocV9qcmhJendJN3lLbzFmN0N3MmFCZ29JQXZuWTd0NkNHMFFCTzM4Sl82VkEyWmJ2TElDYXRBN2c0Sk0xcWRMclNGUGRyVGlpNTlxOGZmTndLZk5XeTZpeC1YSURVMWVPMVg1ODRHYkZzWkdHbnZZWFZCWVJyMjM0RUV6UlAtNmR1YUNjcHI4d9IBqwNBVV95cUxPOEJPamdKaElKX0h6Y2FwRUVwblRLRzc1WDMzbEp6YURYRmJkOUx2dGRlWkpNNkVMWGdYZjFOT19XYk8xRXl2NXo3V25kTHo0aVJhMkpMOXhNSjEyNXFHUVlMSURFMEQzMnREeXFVZWlMcDNkNjU5ellUbE1LSGk3bjNGX0dCbnRkMUNpV3pwWU1QeENzSXNOWWZmZmhNTUh5RVdVM1VFY1lland0dDlOMEpwYzdFYmtTQTA0all0b3oyb2pYYzZ5N2cwbmNLQjlaajdDYnZQVlZRY1o3aXZkOFBUZmdjQkVyX0p6elplZEFkczF1b1g1QWtIRWlQNGs0OFVOc1ZYeXM3VlJiYUZaTVcxVHpxVG82ZlkyeEg3UkhGNDNDUElYOERIeE1XaXQ4NnBGR1ktUHlkTzU2aDMwOEZKY2tBTmpUVVNSOU5sNHROQU5ZUmJXVE5GSGRFcEEyNnZ1SVJSZ2QydXpFNUNzT0ZrZm9OSHQwVzRmLXFVcWpLTXZ2cGNSaU1kclJRMmF0bHFGQmhFTW9vdC1BczAtMlUwbTAyUUdFbGdF?oc=5",
-   "source": "Masrawy",
-   "publishedAt": "2026-11-18T13:00:00.000Z",
-   "original": "من شانيل إلى باكو رابان.. أغلى 5 عطور في العالم",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "من شانيل إلى باكو رابان.. أغلى 5 عطور في العالم",
-    "en": "من شانيل إلى باكو رابان.. أغلى 5 عطور في العالم"
-   },
-   "summary": {
-    "ar": "من شانيل إلى باكو رابان.. أغلى 5 عطور في العالم",
-    "en": "من شانيل إلى باكو رابان.. أغلى 5 عطور في العالم"
-   }
-  },
-  {
-   "id": "nuqvatk",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTWdqNUY0WjVQeGtRM0JuZmtoM1JhYktjZ1JMd2ZqZkZDN3Vqa0tCTUJ2R0JzRnFpTmhzb05xNFZDdENzSmdEMUxvTW5pblNfM3dGWXE2UkdndUFIUm9oWFBCN0VfWWJya3hyOFdLOWpHelJBQU0zakFyRWljdzFSQmlzSUpCZEJVMGR1a1N4ZzdoRGhZQXd3?oc=5",
-   "source": "The Business of Fashion",
-   "publishedAt": "2026-11-18T13:00:00.000Z",
-   "original": "Perfumehead Names Olivier Rivard Cohen as CEO",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Perfumehead Names Olivier Rivard Cohen as CEO",
-    "en": "Perfumehead Names Olivier Rivard Cohen as CEO"
-   },
-   "summary": {
-    "ar": "Perfumehead Names Olivier Rivard Cohen as CEO",
-    "en": "Perfumehead Names Olivier Rivard Cohen as CEO"
-   }
-  },
-  {
-   "id": "n1flswpo",
-   "url": "https://cosmeticsbusiness.com/david-beckham-s-company-db-ventures-sues",
-   "source": "Cosmetics Business",
-   "publishedAt": "2026-11-18T12:40:00.000Z",
-   "original": "David Beckham’s company DB Ventures sues after fragrances allegedly found for sale in Poundland",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "David Beckham’s company DB Ventures sues after fragrances allegedly found for sale in Poundland",
-    "en": "David Beckham’s company DB Ventures sues after fragrances allegedly found for sale in Poundland"
-   },
-   "summary": {
-    "ar": "Coty has produced Beckham’s fragrances since 2005, under a licence with the ex-footballer’s company DB Ventures and Authentic Brands",
-    "en": "Coty has produced Beckham’s fragrances since 2005, under a licence with the ex-footballer’s company DB Ventures and Authentic Brands"
-   }
-  },
-  {
-   "id": "nm6syn0",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdmRTTzBXRTdsNVl2TUs4SzU0ZE1NY09NNWRwaHBsTTFacW1YcTA3cUZBdXM5TXQwQVZROUpHTnFZeUExTWxnWXBnLWYwOWJrMnpKVm9IcEszeUtyOFVwU2R2ZFRCT0JESk1LS2FGcGN6bFRGRU0zd3FleGVicDRGQlRQaUNWYTY5RGFRMGNZdWs1Z3Z2SzhfWDB5ekUwWENUazN2WFRQSS00MmMzMGZhRXBiWjBVUUJ4bURfQWRHLVFXN0sxZ25vZzBSc3lIMFVCdFhBRmdCaFJucVdNT0FzNE5FVEZjczRxcl9McU5nbEo4UUVaM1pBbjZXMA?oc=5",
-   "source": "Detroit Free Press",
-   "publishedAt": "2026-11-18T12:38:08.000Z",
-   "original": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives",
-    "en": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives"
-   },
-   "summary": {
-    "ar": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives",
-    "en": "The Pretty Smells Lab Launches AI Christmas Lifeline for Husbands Who Haven't a Clue What Fragrance to Buy Their Wives"
-   }
-  },
-  {
-   "id": "n1kbelpq",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNa3I5VGZfUHBzTjQtWGUwV0d1WlZ4ai1iVTJNd2kzMF9oaWVmYVpPZjV3ckVxaXVXZDlYNzZkWmNteS1IVk1oaDdXMXlzdHRQOGhxM3JvSkNkbW1HeHFKRkVRTHhWTUlxM080eU5KVm44XzhQeldRa0hGaURuZ2psUUNMYmxGY09YbllsY0x4LW9ud2sza1VEQ19iRDdpTndNa0VzbkJPbjBVbFRNN3BQNUR3MHZJNkVJSmR3SndyX1VLRzE0UjVQT2p4T3c3NDM2cTdDWlFlVUVnaC1ycFotdEdLaU9YQjRLVl9wc2xB?oc=5",
-   "source": "Business Wire",
-   "publishedAt": "2026-11-18T11:30:00.000Z",
-   "original": "IFF Opens Its First Forest Lab in Brazil's Atlantic Forest to Advance Fragrance and Beauty Innovation",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "IFF Opens Its First Forest Lab in Brazil's Atlantic Forest to Advance Fragrance and Beauty Innovation",
-    "en": "IFF Opens Its First Forest Lab in Brazil's Atlantic Forest to Advance Fragrance and Beauty Innovation"
-   },
-   "summary": {
-    "ar": "IFF Opens Its First Forest Lab in Brazil's Atlantic Forest to Advance Fragrance and Beauty Innovation",
-    "en": "IFF Opens Its First Forest Lab in Brazil's Atlantic Forest to Advance Fragrance and Beauty Innovation"
-   }
-  },
-  {
-   "id": "nh49z9m",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQmJ2T3NhMXVsSmtPRTNTLVIyaDJlRTlpZXBtZVlRN1gwbHJHVHQ4U19ZazFMRk1Mb1RsdGRXT21aWUthUWtiQ1ZZV19mdUVfOUJycE5uQkdBN2JfQW5FSTBQM2dSLVhiOXdsUVZ4dDlXNngySUt5bjYyNnVjZFEyM0RnSTVUbmM?oc=5",
-   "source": "Glossy",
-   "publishedAt": "2026-11-18T11:03:45.000Z",
-   "original": "Why Express is betting on Y2K fragrance nostalgia",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Why Express is betting on Y2K fragrance nostalgia",
-    "en": "Why Express is betting on Y2K fragrance nostalgia"
-   },
-   "summary": {
-    "ar": "Why Express is betting on Y2K fragrance nostalgia",
-    "en": "Why Express is betting on Y2K fragrance nostalgia"
-   }
-  },
-  {
-   "id": "n1d7bgo4",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUzZqckFjM3RPcHlFUjlVeEpQS05HQ1NsdC0tc3UycVF4WFlXMThaa0dKbV9QX01TQUNRSU84OVVaY3BQRDNjYXlsUjVjZ2diOUJmR09zTmk2cGozaUNKVm9ndzdJZEJSSGZTcEdOWEpPeUxpLWRLN3pwYmNzWWNJRlpaQ1dvZUhlZHdYYlZEN0dMcGxxSEFQMHdaOGxNcmRFYklFTjJlNkk4dw?oc=5",
-   "source": "GQ South Africa",
-   "publishedAt": "2026-11-18T10:27:53.000Z",
-   "original": "The biggest fragrance trends of 2026 you should know about",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "The biggest fragrance trends of 2026 you should know about",
-    "en": "The biggest fragrance trends of 2026 you should know about"
-   },
-   "summary": {
-    "ar": "The biggest fragrance trends of 2026 you should know about",
-    "en": "The biggest fragrance trends of 2026 you should know about"
-   }
-  },
-  {
-   "id": "n1sdmw4s",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSEtiblpLYVFHeFJtVExfZkFBZ09VSnRuNWtERlpJLW1fcWpzRGt1OWJKanVJeF9iVzJwYWpWTGVvMi0xblh0eC05S0NHZmc1RzVjQXgzc1hCUTkxWXVRMzlPNk1Udk5KQmxrZmstRDJDdkc3Z3dkM1BHXzQ4akl2VGozNVo2M2x0clRJWk4xREcyemhZRHREcGdoWmhTdFdDd0FzRVh0eDRYWEVaeGx3Rm1JYjFzRF8yMHZKNzJzS2x2NDZfTHBaMjNBR093VlZpNXNLMWdBTHRsMjhoVUNYS2JNVTVhNFlFNHc?oc=5",
-   "source": "News24",
-   "publishedAt": "2026-11-18T07:55:30.000Z",
-   "original": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected",
-    "en": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected"
-   },
-   "summary": {
-    "ar": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected",
-    "en": "Castle Lite Draught in a Bottle launches alongside a Room Scent collection nobody expected"
-   }
-  },
-  {
-   "id": "n1dwi2mx",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYmppVS1VZWtiTVhMNl9NSk1XeWpaT0YxY1B2WjF4ck9iZVpCX2ZFODdkV3lfd3dJUlRWZjNVeVktTDg1WEFCVjhFVXBfVGFtZm9oM0lINE5zNDVTb1A0R2hCeWRmaGQ0UzdOUmx6VFd5QUJYa1BELWtCZ2Z1bzRPaHdrMDdDSC1WVmdvN1AwenNPbkxSelIxb3g2Yk0wWVRxa3h3MUdYYktMQUwt0gGyAUFVX3lxTE5wQm11RDdKSXhjelJvemQ4U19yS1JkMl9RTlN1ZllLTzRCNnRua0ZpRjA5Y18yaFdZTHFVcDlvRXJZR053RXlsclNDU3BoNUYySjRMOWNWSGpVQS1fRUxaSUV3bWJJa282Q2RRVTZhVmI4VFhWc21Sa2MyckptN2FrblpzdDRDR1QxN0VKbmpzX1JobjlGa05UVWlhemlkNjRCcTlaNkJpOXRESTlZai1uWFE?oc=5",
-   "source": "Journal du Luxe",
-   "publishedAt": "2026-11-18T05:34:26.000Z",
-   "original": "Parfum de prestige : le pouvoir de prescription des passionnés",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Parfum de prestige : le pouvoir de prescription des passionnés",
-    "en": "Parfum de prestige : le pouvoir de prescription des passionnés"
-   },
-   "summary": {
-    "ar": "Parfum de prestige : le pouvoir de prescription des passionnés",
-    "en": "Parfum de prestige : le pouvoir de prescription des passionnés"
-   }
-  },
-  {
-   "id": "n9nwxd0",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmNHprMkVzeGUtbnh4MG5aUmlZUHFsLWItay1FbHpEV1Y4ZzNLNTc2OFYwTnVfcm9pZHBlZXc4Vi1kTVprQjJBX1NtMjBWWHhEU0lTQ09qeDBLU0hm?oc=5",
-   "source": "freeyork",
-   "publishedAt": "2026-11-18T04:37:06.000Z",
-   "original": "Perfume House Eryon Applies Strict Swiss Design Rules to Fleeting Scent",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Perfume House Eryon Applies Strict Swiss Design Rules to Fleeting Scent",
-    "en": "Perfume House Eryon Applies Strict Swiss Design Rules to Fleeting Scent"
-   },
-   "summary": {
-    "ar": "Perfume House Eryon Applies Strict Swiss Design Rules to Fleeting Scent",
-    "en": "Perfume House Eryon Applies Strict Swiss Design Rules to Fleeting Scent"
-   }
-  },
-  {
-   "id": "nanyfek",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVU5udWZOWVZnYW84cXdOdGdxYTZuaGZ5VkNmcEVjQmJQUTdGQkZXT3lHczFhTmFQeVdfSjVqZDJ1UGtyRnNoSUxZYi01VDVIU1BnUGREWTRvRlBmalR6MXpWMUMwT2VMZ0N3cTZLZkpKX3B0OFJNVm84cGVHSThGbkZuSTJYTDQ3UnJSM2o5RmRrZmVNZlY0azVQcldCT2U4ZUpXbWRBX1dSdHpJZko4NWxyVXZoYklma3d1V2pFNnZBbEVXdVE?oc=5",
-   "source": "Popbee",
-   "publishedAt": "2026-11-18T03:43:32.000Z",
-   "original": "69 Bees Hidden on a Perfume Bottle? From Empress's Custom Fragrance to Industry Firsts, These Guerlain Fun Facts Are Fascinating!",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "69 Bees Hidden on a Perfume Bottle? From Empress's Custom Fragrance to Industry Firsts, These Guerlain Fun Facts Are Fascinating!",
-    "en": "69 Bees Hidden on a Perfume Bottle? From Empress's Custom Fragrance to Industry Firsts, These Guerlain Fun Facts Are Fascinating!"
-   },
-   "summary": {
-    "ar": "69 Bees Hidden on a Perfume Bottle? From Empress's Custom Fragrance to Industry Firsts, These Guerlain Fun Facts Are Fascinating!",
-    "en": "69 Bees Hidden on a Perfume Bottle? From Empress's Custom Fragrance to Industry Firsts, These Guerlain Fun Facts Are Fascinating!"
    }
   }
  ]
