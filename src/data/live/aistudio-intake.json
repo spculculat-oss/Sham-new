@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T14:23:50.692Z",
+ "updatedAt": "2026-11-19T09:49:48.017Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,35 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-18T14:23:50.692Z",
-  "sha": "935c63311c02f14c6e4e49eeba92b62abd67d160"
+  "at": "2026-11-19T09:49:48.017Z",
+  "sha": "6847891890fa19a8e1409369124dd17fa7db929e"
  },
  "commits": [
+  {
+   "sha": "6847891890fa19a8e1409369124dd17fa7db929e",
+   "date": "2026-11-19T11:47:36+02:00",
+   "title": "feat(community): add support for polls and bookmarks",
+   "summary": "- Incremented DB schema to version 2",
+   "files": 37,
+   "additions": 6255,
+   "deletions": 623,
+   "added": [
+    "server/community/ai.ts",
+    "server/shaheenArena.ts",
+    "src/components/ShaheenArenaWorkspace.tsx",
+    "src/utils/codeVerifier.ts"
+   ],
+   "deleted": [],
+   "modified": 33,
+   "flags": [
+    {
+     "level": "info",
+     "kind": "tests",
+     "text": "ضاف/حدّث 3 ملف اختبارات"
+    }
+   ],
+   "verdict": "received"
+  },
   {
    "sha": "935c63311c02f14c6e4e49eeba92b62abd67d160",
    "date": "2026-11-18T16:21:12+02:00",
@@ -1421,6 +1446,7 @@
   }
  ],
  "reviewed": [
+  "6847891890fa19a8e1409369124dd17fa7db929e",
   "935c63311c02f14c6e4e49eeba92b62abd67d160",
   "329ef3bd61d8c48e427b012a4ab54ac70d13837a",
   "ee82d2348436d121bacb9d1827a0a8f899416fbb",
@@ -1432,5 +1458,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "935c63311c02f14c6e4e49eeba92b62abd67d160"
+ "head": "6847891890fa19a8e1409369124dd17fa7db929e"
 }
