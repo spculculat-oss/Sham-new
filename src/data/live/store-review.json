@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-20T03:43:39.591Z",
+ "updatedAt": "2026-11-20T21:58:10.730Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 518,
-  "warn": 596,
+  "ok": 519,
+  "warn": 595,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-20T03:42:32.375Z",
+  "at": "2026-11-20T21:57:01.542Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -25,7 +25,7 @@
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1037,
+    "listingProducts": 1038,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 67246
+  "durationMs": 69215
  },
  "items": [
   {
@@ -4070,16 +4070,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/shagaf-al-ward-by-al-wataniah-100ml-edp-women-769.html"
-  },
-  {
-   "sku": "MOO-774",
-   "id": 774,
-   "name": "Mood Naif For Her – 100 ml for Women",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/mood-naif-for-her-100-ml-for-women-774.html"
   },
   {
    "sku": "KHA-777",
