@@ -18,6 +18,7 @@ import { SupportedLanguage } from '../types/i18n';
 import { formatNum } from '../utils/calculations';
 import { isRTL } from '../لغات/localizedContent';
 import { LText, loc, makeT, fmt, pickArEn } from '../لغات/localize';
+import { ScaleBeakerAR3D } from './DesignSimulatorsAR3D';
 
 interface VisualScaleSimulatorProps {
   formulation: FormulationState;
@@ -656,6 +657,24 @@ export const VisualScaleSimulator: React.FC<VisualScaleSimulatorProps> = ({
           </button>
         </div>
       </div>
+
+      {/* 3D & AR Interactive Balance & Layered Beaker Stage */}
+      <ScaleBeakerAR3D
+        currentLang={currentLang}
+        bottleVolumeMl={formulation.bottleVolumeMl}
+        oilGrams={result.oilWeightGrams}
+        alcoholGrams={result.alcoholWeightGrams}
+        fixativeGrams={result.fixativeWeightGrams}
+        waterGrams={result.waterWeightGrams}
+        totalGrams={result.totalWeightGrams}
+        oilHeightPct={oilHeightPct}
+        fixativeHeightPct={fixativeHeightPct}
+        waterHeightPct={waterHeightPct}
+        alcoholHeightPct={alcoholHeightPct}
+        isTared={isTared}
+        onToggleTare={() => setIsTared((v) => !v)}
+        activeStepIndex={currentStep}
+      />
 
       {/* Main Interactive Stage: Scale LCD on Left, Glass Beaker on Right */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">

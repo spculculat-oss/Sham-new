@@ -201,8 +201,9 @@ export const Header: React.FC<HeaderProps> = ({
         
         {/* Zone 1: Brand wordmark: صمم عطرك مع شام */}
         <div className="flex items-center gap-2 sm:gap-3 min-w-0 sm:shrink-0">
-          <div className="w-9 h-9 shrink-0 rounded-xl bg-gradient-to-br from-stone-900 to-amber-950 text-amber-400 flex items-center justify-center font-serif-luxury font-bold text-lg shadow-md border border-amber-600/30">
-            شام
+          <div className="relative w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br from-stone-900 via-amber-950 to-stone-950 text-amber-300 flex items-center justify-center font-serif-luxury font-bold text-base shadow-md border border-amber-500/45 ring-1 ring-amber-400/20">
+            <span className="pointer-events-none absolute inset-[2.5px] rounded-[9px] border border-amber-200/20" />
+            <span className="relative z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">شام</span>
           </div>
           <button 
             onClick={() => setActiveTab('home')}
@@ -328,7 +329,13 @@ export const Header: React.FC<HeaderProps> = ({
                             }`}
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
-                              <item.icon className={`w-4 h-4 shrink-0 ${activeTab === item.id ? 'text-amber-700' : 'text-stone-500'}`} />
+                              <span className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border shadow-2xs ${
+                                activeTab === item.id
+                                  ? 'bg-gradient-to-br from-amber-500 to-amber-700 text-white border-amber-400'
+                                  : 'bg-gradient-to-br from-stone-900 to-stone-800 text-amber-300 border-amber-500/30'
+                              }`}>
+                                <item.icon className="w-3.5 h-3.5" />
+                              </span>
                               <span className="text-sm font-medium truncate">{item.fullLabel}</span>
                             </div>
                             {item.isNew && (
@@ -616,7 +623,13 @@ export const Header: React.FC<HeaderProps> = ({
                     }`}
                   >
                     <div className="flex items-center gap-2 min-w-0">
-                      <item.icon className={`w-3.5 h-3.5 shrink-0 ${activeTab === item.id ? 'text-amber-700' : 'text-stone-500'}`} />
+                      <span className={`w-6 h-6 rounded-lg flex items-center justify-center shrink-0 border ${
+                        activeTab === item.id
+                          ? 'bg-gradient-to-br from-amber-500 to-amber-700 text-white border-amber-400'
+                          : 'bg-gradient-to-br from-stone-900 to-stone-800 text-amber-300 border-amber-500/30'
+                      }`}>
+                        <item.icon className="w-3.5 h-3.5" />
+                      </span>
                       <span className="text-xs truncate">{item.fullLabel}</span>
                     </div>
                     {item.isNew && (

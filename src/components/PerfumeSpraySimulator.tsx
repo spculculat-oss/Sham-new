@@ -36,6 +36,7 @@ import {
   sortNotesByVolatilityOrder,
   generateCustomSprayScenario,
 } from '../utils/volatilityHelper';
+import { SprayKineticsAR3D } from './DesignSimulatorsAR3D';
 
 interface PerfumeSpraySimulatorProps {
   pyramidNotes: PyramidNote[];
@@ -472,6 +473,8 @@ export const PerfumeSpraySimulator: React.FC<PerfumeSpraySimulatorProps> = ({
   const [isAtomizerPressed, setIsAtomizerPressed] = useState<boolean>(false);
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
   const [isContinuous, setIsContinuous] = useState<boolean>(false);
+  const [visualEngine, setVisualEngine] = useState<'3d_ar' | '2d_canvas'>('3d_ar');
+  const [sprayBurstSeq, setSprayBurstSeq] = useState<number>(1);
 
   // Canvas Ref
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -552,6 +555,7 @@ export const PerfumeSpraySimulator: React.FC<PerfumeSpraySimulatorProps> = ({
   const triggerSprayBurst = useCallback(() => {
     setIsAtomizerPressed(true);
     setSprayCount((prev) => Math.min(5, prev + 1));
+    setSprayBurstSeq((prev) => prev + 1);
     playSprayAudio();
 
     setTimeout(() => {
@@ -1141,6 +1145,27 @@ export const PerfumeSpraySimulator: React.FC<PerfumeSpraySimulatorProps> = ({
             </button>
           </div>
 
+          <div className="inline-flex p-1 bg-stone-900 border border-stone-800 rounded-xl text-xs">
+            <button
+              type="button"
+              onClick={() => setVisualEngine('3d_ar')}
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer font-bold ${
+                visualEngine === '3d_ar' ? 'bg-amber-400 text-stone-950 shadow-xs' : 'text-stone-400 hover:text-white'
+              }`}
+            >
+              {pickArEn(effectiveLang, '3D / واقع معزز', '3D / AR')}
+            </button>
+            <button
+              type="button"
+              onClick={() => setVisualEngine('2d_canvas')}
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer font-bold ${
+                visualEngine === '2d_canvas' ? 'bg-stone-700 text-white shadow-xs' : 'text-stone-400 hover:text-white'
+              }`}
+            >
+              2D Canvas
+            </button>
+          </div>
+
           <button
             type="button"
             onClick={() => setSoundEnabled(!soundEnabled)}
@@ -1154,7 +1179,23 @@ export const PerfumeSpraySimulator: React.FC<PerfumeSpraySimulatorProps> = ({
         </div>
       </div>
 
-      {/* Main Interactive Stage: Simulation Canvas */}
+      {/* Main Interactive Stage: 3D/AR Spatial Engine or 2D Physics Canvas */}
+      {visualEngine === '3d_ar' ? (
+        <SprayKineticsAR3D
+          currentLang={effectiveLang}
+          activeView={activeView === 'panoramic' ? 'panorama' : activeView}
+          pulsePoint={pulsePoint}
+          skinTemp={skinTemp}
+          sprayCount={sprayCount}
+          sprayBurstSeq={sprayBurstSeq}
+          isContinuous={isContinuous}
+          sillageRadiusMeters={kinetics.sillageRadiusMeters}
+          alcoholRemainingPct={kinetics.alcoholRemainingPct}
+          oilRemainingOnSkinPct={kinetics.oilRemainingOnSkinPct}
+          onTriggerSpray={triggerSprayBurst}
+          onToggleContinuous={() => setIsContinuous((v) => !v)}
+        />
+      ) : (
       <div className="relative rounded-2xl overflow-hidden border border-amber-500/25 bg-stone-950 shadow-inner">
         <canvas
           ref={canvasRef}
@@ -1240,6 +1281,7 @@ export const PerfumeSpraySimulator: React.FC<PerfumeSpraySimulatorProps> = ({
           />
         </div>
       </div>
+      )}
 
       {/* 5-Column Live Telemetry Dashboard */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">

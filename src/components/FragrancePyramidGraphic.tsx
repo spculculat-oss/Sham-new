@@ -34,6 +34,7 @@ import {
   EvolutionScenarioStage,
 } from '../utils/volatilityHelper';
 import { PerfumeSpraySimulator } from './PerfumeSpraySimulator';
+import { FragrancePyramidAR3D } from './FragrancePyramidAR3D';
 
 
 const S = {
@@ -291,6 +292,7 @@ export const FragrancePyramidGraphic: React.FC<FragrancePyramidGraphicProps> = (
 
   // Selected tier for inspection
   const [selectedTier, setSelectedTier] = useState<'all' | 'top' | 'heart' | 'base'>('all');
+  const [pyramidViewMode, setPyramidViewMode] = useState<'3d_ar' | '2d_svg'>('3d_ar');
 
   // Simulation state: minutes elapsed (0 to 720)
   const [currentMinutes, setCurrentMinutes] = useState<number>(0);
@@ -656,27 +658,74 @@ export const FragrancePyramidGraphic: React.FC<FragrancePyramidGraphicProps> = (
             {/* THE VISUAL GRAPHIC PYRAMID STRUCTURE */}
             <div className="space-y-5">
 
-              {/* 3D Geometric Isometric Pyramid Diagram */}
-              <div className="bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 p-4 sm:p-5 rounded-2xl border border-amber-500/25 shadow-lg relative overflow-hidden text-center">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-stone-300 pb-3 mb-2 border-b border-stone-800">
-                  <span className="font-bold text-amber-300 flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5" />
+              {/* 3D / AR Olfactory Pyramid Showcase + Classic 2D Switch */}
+              <div className="space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <span className="font-bold text-stone-700 flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-600" />
                     <span>{L('layers_lbl')}</span>
                   </span>
-                  <span className="text-[11px] text-stone-400 font-mono-numbers">
-                    {fmt(L('active_phase_tpl'), { m: currentMinutes })}
-                    <span className="text-amber-400 font-bold">
-                      {isTopActive
-                        ? L('apex_lbl')
-                        : isHeartActive
-                        ? L('core_lbl')
-                        : L('deep_lbl')}
-                    </span>
-                  </span>
+                  <div className="inline-flex p-1 bg-stone-100 rounded-xl border border-stone-200 text-[11px] font-bold">
+                    <button
+                      type="button"
+                      onClick={() => setPyramidViewMode('3d_ar')}
+                      className={`px-3 py-1 rounded-lg cursor-pointer transition-colors ${
+                        pyramidViewMode === '3d_ar'
+                          ? 'bg-stone-900 text-amber-300 shadow-xs'
+                          : 'text-stone-600 hover:text-stone-900'
+                      }`}
+                    >
+                      {pickArEn(effectiveLang, 'هرم 3D / واقع معزز', '3D / AR Pyramid')}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPyramidViewMode('2d_svg')}
+                      className={`px-3 py-1 rounded-lg cursor-pointer transition-colors ${
+                        pyramidViewMode === '2d_svg'
+                          ? 'bg-amber-600 text-white shadow-xs'
+                          : 'text-stone-600 hover:text-stone-900'
+                      }`}
+                    >
+                      {pickArEn(effectiveLang, 'المخطط ثنائي الأبعاد', '2D Architecture')}
+                    </button>
+                  </div>
                 </div>
 
-                <div className="relative max-w-[340px] mx-auto py-2">
-                  <svg viewBox="0 0 320 230" className="w-full h-auto drop-shadow-2xl select-none">
+                {pyramidViewMode === '3d_ar' ? (
+                  <FragrancePyramidAR3D
+                    currentLang={effectiveLang}
+                    topPct={topPct}
+                    heartPct={heartPct}
+                    basePct={basePct}
+                    selectedTier={selectedTier}
+                    onSelectTier={setSelectedTier}
+                    isTopActive={isTopActive}
+                    isHeartActive={isHeartActive}
+                    isBaseActive={isBaseActive}
+                    activeSillagePercent={activeStage.sillagePercent}
+                    currentMinutes={currentMinutes}
+                  />
+                ) : (
+                  <div className="bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 p-4 sm:p-5 rounded-2xl border border-amber-500/25 shadow-lg relative overflow-hidden text-center">
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-stone-300 pb-3 mb-2 border-b border-stone-800">
+                      <span className="font-bold text-amber-300 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5" />
+                        <span>{L('layers_lbl')}</span>
+                      </span>
+                      <span className="text-[11px] text-stone-400 font-mono-numbers">
+                        {fmt(L('active_phase_tpl'), { m: currentMinutes })}
+                        <span className="text-amber-400 font-bold">
+                          {isTopActive
+                            ? L('apex_lbl')
+                            : isHeartActive
+                            ? L('core_lbl')
+                            : L('deep_lbl')}
+                        </span>
+                      </span>
+                    </div>
+
+                    <div className="relative max-w-[340px] mx-auto py-2">
+                      <svg viewBox="0 0 320 230" className="w-full h-auto drop-shadow-2xl select-none">
                     <defs>
                       <linearGradient id="apexGrad" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stopColor="#fbbf24" />
@@ -747,7 +796,9 @@ export const FragrancePyramidGraphic: React.FC<FragrancePyramidGraphicProps> = (
                       {formatNum(basePct, 1)}% · {L('base_notes_desc')}
                     </text>
                   </svg>
-                </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* TIER 1 LIST: TOP NOTES */}

@@ -22,6 +22,7 @@ import {
 import { SupportedLanguage } from '../types/i18n';
 import { isRTL } from '../لغات/localizedContent';
 import { LText, loc, makeT, fmt, localeDate } from '../لغات/localize';
+import { MacerationVesselAR3D } from './DesignSimulatorsAR3D';
 
 interface MacerationTimeSimulatorProps {
   currentLang?: SupportedLanguage;
@@ -1598,9 +1599,16 @@ ${calculation.isFinished ? L('tag_status_done') : fmt(L('tag_status_progress_tpl
 
         </div>
 
-        {/* Right Column: Live Forecast Showcase (5 cols) */}
+        {/* Right Column: 3D/AR Vessel + Live Forecast Showcase (5 cols) */}
         <div className="lg:col-span-5 space-y-4">
-          
+          <MacerationVesselAR3D
+            currentLang={currentLang}
+            storageType={storageType}
+            progressPercent={calculation.progressPercent}
+            macerationDays={macerationDays}
+            elapsedDays={calculation.elapsedDays}
+          />
+
           {/* HERO COMPLETION DATE CARD */}
           <div className="bg-gradient-to-br from-stone-900 via-amber-950 to-stone-950 text-white p-6 rounded-2xl border-2 border-amber-600/40 shadow-xl space-y-5 relative overflow-hidden">
             {/* Ambient background glow */}

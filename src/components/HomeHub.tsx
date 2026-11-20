@@ -54,7 +54,11 @@ import {
   SlidersHorizontal,
   Store,
   Gift,
+  Scan,
+  LayoutGrid,
 } from 'lucide-react';
+import { HomeARPortals, type ARPortalItem } from './HomeARPortals';
+import { LuxuryPortalIcon } from './LuxuryPortalIcon';
 
 import heroImg from '../assets/images/hero_luxury_perfume_1791692409081.jpg';
 import labImg from '../assets/images/perfume_lab_compounding_1791692420116.jpg';
@@ -144,6 +148,9 @@ const S = {
   zone5_p: { ar: 'استفد من الدمج بين ميزان المعمل التحليلي، حاسبة الكحول، ومكتبة الوصفات العالمية للحصول على تركيبة مطابقة لأعلى معايير الإيفرا العالمية.', en: 'Leverage the synergy between analytical scales, alcohol dilution calculators, and the iconic formula library for compliance with IFRA standards.', fr: 'Exploitez la synergie entre balances analytiques, dilution d’alcool et bibliothèque de formules pour une conformité IFRA.', es: 'Aprovecha la sinergia entre balanzas analíticas, dilución de alcohol y la biblioteca de fórmulas para cumplir las normas IFRA.', it: 'Sfrutta la sinergia tra bilance analitiche, diluizione dell’alcol e libreria di formule per la conformità IFRA.', de: 'Nutzen Sie die Synergie von Analysenwaagen, Alkoholverdünnung und Formelbibliothek für IFRA-Konformität.', ru: 'Используйте синергию аналитических весов, разбавления спирта и библиотеки формул для соответствия стандартам IFRA.', zh: '善用分析天平、酒精稀释计算器与经典配方库的协同，满足 IFRA 标准。', tr: 'Analitik teraziler, alkol seyreltme ve formül kütüphanesi sinerjisinden yararlanarak IFRA uyumluluğu sağlayın.', fa: 'از هم‌افزایی ترازوی تحلیلی، رقیق‌سازی الکل و کتابخانه فرمول‌ها برای انطباق با استانداردهای IFRA بهره ببرید.' },
   start_new: { ar: 'بدء تصميم عطر جديد', en: 'Start New Formulation', fr: 'Nouvelle formulation', es: 'Nueva formulación', it: 'Nuova formulazione', de: 'Neue Formulierung starten', ru: 'Новая формула', zh: '开始新配方', tr: 'Yeni formülasyona başla', fa: 'شروع فرمولاسیون جدید' },
   print_spec: { ar: 'طباعة بطاقة التصنيع', en: 'Print Manufacturing Spec Sheet', fr: 'Imprimer la fiche technique', es: 'Imprimir hoja de especificaciones', it: 'Stampa la scheda di produzione', de: 'Produktionsblatt drucken', ru: 'Печать производственной карты', zh: '打印生产规格表', tr: 'Üretim föyünü yazdır', fa: 'چاپ برگه مشخصات تولید' },
+  view_ar_both: { ar: 'الواقع المعزز + النوافذ', en: 'AR + Portals', fr: 'RA + Portails', es: 'RA + Portales', it: 'AR + Portali', de: 'AR + Portale', ru: 'AR + Порталы', zh: 'AR + 门户', tr: 'AR + Portallar', fa: 'AR + درگاه‌ها' },
+  view_ar_only: { ar: 'الواقع المعزز فقط', en: 'AR 3D Only', fr: 'RA 3D seul', es: 'Solo RA 3D', it: 'Solo AR 3D', de: 'Nur AR 3D', ru: 'Только AR 3D', zh: '仅 AR 3D', tr: 'Yalnızca AR 3D', fa: 'فقط AR سه‌بعدی' },
+  view_grid_only: { ar: 'النوافذ فقط', en: 'Cards Only', fr: 'Cartes seules', es: 'Solo tarjetas', it: 'Solo schede', de: 'Nur Karten', ru: 'Только карточки', zh: '仅卡片', tr: 'Yalnızca Kartlar', fa: 'فقط کارت‌ها' },
 } satisfies Record<string, LText>;
 
 interface HomeHubProps {
@@ -276,9 +283,10 @@ export const HomeHub: React.FC<HomeHubProps> = ({
     return fallback;
   };
 
-  // Global state for auto-rotation
+  // Global state for auto-rotation & AR portal view mode
   const [isAutoCycling, setIsAutoCycling] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'lab' | 'knowledge' | 'business' | 'ai_news'>('all');
+  const [portalViewMode, setPortalViewMode] = useState<'both' | 'ar' | 'grid'>('both');
   
   // Per-portal active news item and icon index
   const [portalIndexes, setPortalIndexes] = useState<Record<string, number>>({});
@@ -1107,6 +1115,43 @@ export const HomeHub: React.FC<HomeHubProps> = ({
     }
   };
 
+  const PORTAL_AR_PALETTE: Record<string, { hex: number; css: string }> = {
+    portal_concentration: { hex: 0xf59e0b, css: '#f59e0b' },
+    portal_news: { hex: 0xf97316, css: '#f97316' },
+    portal_world_perfumes: { hex: 0xeab308, css: '#eab308' },
+    portal_raw_materials: { hex: 0x10b981, css: '#10b981' },
+    portal_pyramid: { hex: 0xf43f5e, css: '#f43f5e' },
+    portal_alcohol: { hex: 0x06b6d4, css: '#06b6d4' },
+    portal_costing: { hex: 0x22c55e, css: '#22c55e' },
+    portal_master_ai: { hex: 0x34d399, css: '#34d399' },
+    portal_library: { hex: 0xd97706, css: '#d97706' },
+    portal_guide: { hex: 0xe11d48, css: '#e11d48' },
+    portal_maceration_simulator: { hex: 0xb45309, css: '#b45309' },
+    portal_country: { hex: 0x14b8a6, css: '#14b8a6' },
+    portal_privacy: { hex: 0x059669, css: '#059669' },
+    portal_store: { hex: 0xfb923c, css: '#fb923c' },
+  };
+
+  const arPortals: ARPortalItem[] = filteredPortals.map((portal) => {
+    const currentNewsIdx = portalIndexes[portal.id] || 0;
+    const rawNews = portal.news[currentNewsIdx] || portal.news[0];
+    const currentNews = localizePortalNews(portal.id, rawNews) || rawNews;
+    const palette = PORTAL_AR_PALETTE[portal.id] || { hex: 0xf59e0b, css: '#f59e0b' };
+    return {
+      id: portal.id,
+      targetTab: portal.targetTab,
+      category: portal.category,
+      title: localizedPortalTitle(portal.id, portal.titleAr, portal.titleEn),
+      subtitle: localizedPortalSubtitle(portal.id, portal.subtitleAr),
+      statsBadge: localizedStatsBadge(portal.id, portal.statsBadge),
+      metricLabel: currentNews?.metric || '',
+      actionHint: currentNews?.actionHint || '',
+      accentHex: palette.hex,
+      accentCssHex: palette.css,
+      onEnter: () => handleCardClick(portal),
+    };
+  });
+
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
       
@@ -1171,26 +1216,26 @@ export const HomeHub: React.FC<HomeHubProps> = ({
             <div className="flex flex-wrap items-center gap-3 pt-3">
               <button
                 onClick={() => onNavigate('concentration')}
-                className="flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-bold text-stone-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:from-amber-300 hover:to-amber-200 rounded-xl shadow-lg shadow-amber-900/30 transition-all hover:scale-[1.02] cursor-pointer"
+                className="group flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-bold text-stone-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:from-amber-300 hover:to-amber-200 rounded-xl shadow-lg shadow-amber-900/30 transition-all hover:scale-[1.02] cursor-pointer"
               >
-                <FlaskConical className="w-4 h-4 text-stone-900" />
+                <LuxuryPortalIcon portalId="portal_concentration" size="xs" active />
                 <span>{L('open_lab_calc')}</span>
                 {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
               </button>
 
               <button
                 onClick={() => onNavigate('perfume_news')}
-                className="flex items-center gap-2 px-4 py-2.5 text-xs sm:text-sm font-semibold text-stone-200 bg-stone-800/90 hover:bg-stone-700/90 border border-stone-700 rounded-xl transition-all cursor-pointer"
+                className="group flex items-center gap-2.5 px-3.5 py-2 text-xs sm:text-sm font-semibold text-stone-200 bg-stone-800/90 hover:bg-stone-700/90 border border-stone-700 rounded-xl transition-all cursor-pointer"
               >
-                <Newspaper className="w-4 h-4 text-amber-400" />
+                <LuxuryPortalIcon portalId="portal_news" size="xs" />
                 <span>{L('global_trends')}</span>
               </button>
 
               <button
                 onClick={() => onNavigate('master_ai')}
-                className="flex items-center gap-2 px-4 py-2.5 text-xs sm:text-sm font-semibold text-stone-200 bg-stone-800/90 hover:bg-stone-700/90 border border-stone-700 rounded-xl transition-all cursor-pointer"
+                className="group flex items-center gap-2.5 px-3.5 py-2 text-xs sm:text-sm font-semibold text-stone-200 bg-stone-800/90 hover:bg-stone-700/90 border border-stone-700 rounded-xl transition-all cursor-pointer"
               >
-                <Bot className="w-4 h-4 text-emerald-400" />
+                <LuxuryPortalIcon portalId="portal_master_ai" size="xs" />
                 <span>{L('consult_ai')}</span>
               </button>
             </div>
@@ -1294,31 +1339,64 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           </p>
         </div>
 
-        {/* Clean Segmented Filter Tabs (Zero-Pill discipline) */}
-        <div className="flex items-center gap-1 p-1 bg-stone-200/80 rounded-xl overflow-x-auto max-w-full">
-          {[
-            { id: 'all', label: L('cat_all') },
-            { id: 'lab', label: L('cat_lab') },
-            { id: 'knowledge', label: L('cat_knowledge') },
-            { id: 'business', label: L('cat_business') },
-            { id: 'ai_news', label: L('cat_ai') },
-          ].map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id as any)}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap cursor-pointer ${
-                selectedCategory === cat.id
-                  ? 'bg-white text-stone-900 shadow-xs'
-                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/50'
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
+        {/* Clean Segmented Filter Tabs + AR View Mode Switcher */}
+        <div className="flex flex-wrap items-center gap-2 max-w-full">
+          <div className="flex items-center gap-1 p-1 bg-stone-900 rounded-xl border border-stone-800">
+            {[
+              { id: 'both', label: L('view_ar_both'), icon: Scan },
+              { id: 'ar', label: L('view_ar_only'), icon: Scan },
+              { id: 'grid', label: L('view_grid_only'), icon: LayoutGrid },
+            ].map((mode) => {
+              const Icon = mode.icon;
+              return (
+                <button
+                  key={mode.id}
+                  type="button"
+                  onClick={() => setPortalViewMode(mode.id as 'both' | 'ar' | 'grid')}
+                  className={`px-2.5 py-1.5 text-[11px] font-semibold rounded-lg flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
+                    portalViewMode === mode.id
+                      ? 'bg-amber-400 text-stone-950 shadow-xs'
+                      : 'text-stone-300 hover:text-white hover:bg-stone-800'
+                  }`}
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  <span>{mode.label}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="flex items-center gap-1 p-1 bg-stone-200/80 rounded-xl overflow-x-auto max-w-full">
+            {[
+              { id: 'all', label: L('cat_all') },
+              { id: 'lab', label: L('cat_lab') },
+              { id: 'knowledge', label: L('cat_knowledge') },
+              { id: 'business', label: L('cat_business') },
+              { id: 'ai_news', label: L('cat_ai') },
+            ].map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id as any)}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+                  selectedCategory === cat.id
+                    ? 'bg-white text-stone-900 shadow-xs'
+                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/50'
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
+      {/* ===================== ZONE 3B: AUGMENTED REALITY 3D PORTALS STAGE ===================== */}
+      {portalViewMode !== 'grid' && (
+        <HomeARPortals currentLang={currentLang} portals={arPortals} />
+      )}
+
       {/* ===================== ZONE 4: THE 12 DYNAMIC PORTAL WINDOWS ===================== */}
+      {portalViewMode !== 'ar' && (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredPortals.map((portal) => {
           const currentNewsIdx = portalIndexes[portal.id] || 0;
@@ -1342,18 +1420,23 @@ export const HomeHub: React.FC<HomeHubProps> = ({
               <div className="p-5 pb-3">
                 <div className="flex items-start justify-between gap-3 mb-3">
                   
-                  {/* Dynamic Changing Icon Badge with Smooth Animated Rotation */}
+                  {/* Bespoke Luxury Medallion Emblem + Dynamic Orbital Sub-Badge */}
                   <div className="relative">
-                    <div
-                      className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-sm border border-stone-200/80 ${portal.accentColor} ${
-                        isAnimating ? 'scale-110 rotate-12 ring-4 ring-amber-400/30' : 'scale-100 rotate-0'
+                    <LuxuryPortalIcon
+                      portalId={portal.id}
+                      size="lg"
+                      active={Boolean(isAnimating)}
+                      className={isAnimating ? 'scale-105 rotate-3' : ''}
+                    />
+
+                    {/* Rotating Micro-Emblem Orbital Crest */}
+                    <span
+                      className={`absolute -bottom-1 -right-1 w-6 h-6 rounded-lg bg-stone-900 border border-amber-400/60 shadow-md flex items-center justify-center transition-transform duration-500 ${
+                        isAnimating ? 'rotate-45 scale-110' : 'rotate-0 scale-100'
                       }`}
                     >
-                      <ActiveIcon className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" />
-                    </div>
-
-                    {/* Mini live pulse indicator */}
-                    <span className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-emerald-500 border-2 border-white animate-pulse" />
+                      <ActiveIcon className="w-3.5 h-3.5 text-amber-300" />
+                    </span>
                   </div>
 
                   {/* Top Stats Tag & Portal Number */}
@@ -1454,6 +1537,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           );
         })}
       </div>
+      )}
 
       {/* ===================== ZONE 5: BOTTOM LUXURY PERFUMERY TIPS STRIP ===================== */}
       <section className="bg-gradient-to-r from-stone-900 via-stone-900 to-amber-950 text-white rounded-3xl p-6 sm:p-8 border border-amber-800/30 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">

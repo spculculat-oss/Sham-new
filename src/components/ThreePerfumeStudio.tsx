@@ -1,28 +1,301 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import {
+  Beaker,
+  BookOpen,
   Box,
+  Calculator,
   Camera,
+  CameraOff,
   ChevronDown,
   ChevronUp,
+  Coins,
   Droplets,
+  ExternalLink,
   EyeOff,
+  FlaskConical,
+  Globe,
+  Hourglass,
+  Info,
   Layers,
+  Leaf,
   RotateCw,
+  Scale,
   Sparkles,
 } from 'lucide-react';
 import { SupportedLanguage } from '../types/i18n';
 import { FormulationState } from '../types/perfume';
-import { pickArEn } from '../لغات/localize';
+import { LText, makeT, pickArEn } from '../لغات/localize';
 
 interface ThreePerfumeStudioProps {
   currentLang: SupportedLanguage;
   formulaTitle: string;
   batchCode: string;
   formulation: FormulationState;
+  onNavigate?: (tabId: string) => void;
 }
+
+type LabEquipmentId =
+  | 'scale'
+  | 'flask'
+  | 'pyramid'
+  | 'abacus'
+  | 'globe'
+  | 'mortar'
+  | 'vial_rack'
+  | 'hourglass'
+  | 'ledger';
+
+type EquipmentCategory = 'calculator' | 'info';
+
+interface LabEquipmentSpec {
+  id: LabEquipmentId;
+  targetTab: string;
+  category: EquipmentCategory;
+  nameAr: string;
+  nameEn: string;
+  descAr: string;
+  descEn: string;
+  accentHex: number;
+  position: [number, number, number];
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+const STUDIO_STRINGS = {
+  title: {
+    ar: 'استوديو تصميم الزجاجة ثلاثي الأبعاد',
+    en: '3D Crystal Flacon & Lab Workbench',
+    fr: 'Atelier Flacon 3D & Établi de Laboratoire',
+    es: 'Estudio 3D de Frasco y Mesa de Laboratorio',
+    it: 'Studio 3D Flacone e Banco di Laboratorio',
+    de: '3D-Flakon-Studio & Laborwerkbank',
+    ru: '3D-студия флакона и лабораторный стол',
+    zh: '3D 水晶香水瓶与实验台工作室',
+    tr: '3D Kristal Şişe ve Laboratuvar Tezgahı',
+    fa: 'استودیوی سه‌بعدی شیشه عطر و میز آزمایشگاه',
+  },
+  subtitle: {
+    ar: 'انقر على أي أداة مخبرية ثلاثية الأبعاد حول الزجاجة لفتح الحاسبة أو صفحة المعلومات المقابلة لها مباشرة.',
+    en: 'Click any surrounding 3D lab instrument to open its corresponding calculator or reference page directly.',
+    fr: 'Cliquez sur un instrument 3D pour ouvrir le calculateur ou la page d’information correspondante.',
+    es: 'Haz clic en cualquier instrumento 3D del laboratorio para abrir su calculadora o página informativa.',
+    it: 'Fai clic su qualsiasi strumento 3D per aprire il calcolatore o la scheda informativa corrispondente.',
+    de: 'Klicken Sie auf ein 3D-Laborgerät, um den zugehörigen Rechner oder die Infoseite zu öffnen.',
+    ru: 'Нажмите на любой 3D-прибор вокруг флакона, чтобы открыть нужный калькулятор или справочник.',
+    zh: '点击香水瓶周围任意 3D 实验仪器，即可直接打开对应的计算器或信息百科页面。',
+    tr: 'İlgili hesaplayıcıyı veya bilgi sayfasını açmak için herhangi bir 3D laboratuvar aracına tıklayın.',
+    fa: 'روی هر ابزار آزمایشگاهی سه‌بعدی اطراف شیشه کلیک کنید تا ماشین‌حساب یا صفحه اطلاعات مربوطه باز شود.',
+  },
+  cat_calculator: {
+    ar: 'حاسبة تفاعلية',
+    en: 'Lab Calculator',
+    fr: 'Calculateur',
+    es: 'Calculadora',
+    it: 'Calcolatore',
+    de: 'Laborrechner',
+    ru: 'Калькулятор',
+    zh: '实验室计算器',
+    tr: 'Hesaplayıcı',
+    fa: 'ماشین‌حساب',
+  },
+  cat_info: {
+    ar: 'موسوعة ومعلومات',
+    en: 'Info & Archive',
+    fr: 'Encyclopédie & Info',
+    es: 'Info y Archivo',
+    it: 'Info e Archivio',
+    de: 'Wissen & Archiv',
+    ru: 'Справочник',
+    zh: '信息与百科',
+    tr: 'Bilgi ve Arşiv',
+    fa: 'دانشنامه و اطلاعات',
+  },
+  click_to_open: {
+    ar: 'انقر على المجسم لفتح الصفحة',
+    en: 'Click 3D instrument to open',
+    fr: 'Cliquez sur l’objet 3D pour ouvrir',
+    es: 'Haz clic en el modelo 3D para abrir',
+    it: 'Clicca sul modello 3D per aprire',
+    de: '3D-Modell zum Öffnen anklicken',
+    ru: 'Нажмите на 3D-модель, чтобы открыть',
+    zh: '点击 3D 模型即可打开',
+    tr: 'Açmak için 3D araca tıklayın',
+    fa: 'برای باز کردن روی مدل سه‌بعدی کلیک کنید',
+  },
+  ar_start: {
+    ar: 'الواقع المعزز AR',
+    en: 'AR Camera',
+    fr: 'Caméra RA',
+    es: 'Cámara RA',
+    it: 'Fotocamera AR',
+    de: 'AR-Kamera',
+    ru: 'AR-камера',
+    zh: 'AR 实景相机',
+    tr: 'AR Kamera',
+    fa: 'دوربین AR',
+  },
+  ar_stop: {
+    ar: 'إيقاف AR',
+    en: 'Exit AR',
+    fr: 'Quitter RA',
+    es: 'Salir RA',
+    it: 'Esci da AR',
+    de: 'AR beenden',
+    ru: 'Выйти из AR',
+    zh: '退出 AR',
+    tr: 'AR Çıkış',
+    fa: 'خروج از AR',
+  },
+  show_controls: {
+    ar: 'إظهار التحكم',
+    en: 'Show Controls',
+    fr: 'Afficher',
+    es: 'Mostrar controles',
+    it: 'Mostra controlli',
+    de: 'Steuerung zeigen',
+    ru: 'Показать панель',
+    zh: '显示控制栏',
+    tr: 'Kontrolleri Göster',
+    fa: 'نمایش کنترل‌ها',
+  },
+  hide_controls: {
+    ar: 'طي التحكم (H)',
+    en: 'Hide Controls (H)',
+    fr: 'Masquer (H)',
+    es: 'Ocultar (H)',
+    it: 'Nascondi (H)',
+    de: 'Ausblenden (H)',
+    ru: 'Скрыть (H)',
+    zh: '收起控制栏 (H)',
+    tr: 'Gizle (H)',
+    fa: 'پنهان کردن (H)',
+  },
+  bench_equipment: {
+    ar: 'الأدوات المخبرية التفاعلية (انقر على المجسم أو الاختصار للفتح):',
+    en: 'Interactive 3D Lab Tools (click 3D model or shortcut):',
+    fr: 'Instruments 3D du laboratoire (cliquez pour ouvrir) :',
+    es: 'Instrumentos 3D del laboratorio (clic para abrir):',
+    it: 'Strumenti 3D di laboratorio (clicca per aprire):',
+    de: 'Interaktive 3D-Laborgeräte (klicken zum Öffnen):',
+    ru: 'Интерактивные 3D-инструменты (нажмите для открытия):',
+    zh: '交互式 3D 实验仪器（点击模型或快捷按钮打开）：',
+    tr: 'Etkileşimli 3D Laboratuvar Araçları (açmak için tıklayın):',
+    fa: 'ابزارهای سه‌بعدی آزمایشگاه (برای باز کردن کلیک کنید):',
+  },
+} satisfies Record<string, LText>;
+
+const LAB_EQUIPMENT: LabEquipmentSpec[] = [
+  {
+    id: 'scale',
+    targetTab: 'concentration',
+    category: 'calculator',
+    nameAr: 'الميزان التحليلي (0.01g)',
+    nameEn: 'Analytical Lab Scale',
+    descAr: 'فتح حاسبة التركيز وأوزان الزيت والكحول',
+    descEn: 'Open Formulation & Concentration Calculator',
+    accentHex: 0xf59e0b,
+    position: [-2.76, -0.78, 1.16],
+    icon: Scale,
+  },
+  {
+    id: 'flask',
+    targetTab: 'alcohol',
+    category: 'calculator',
+    nameAr: 'دورق تخفيف الكحول',
+    nameEn: 'Ethanol Dilution Flask',
+    descAr: 'فتح حاسبة تخفيف الكحول والماء المقطر',
+    descEn: 'Open Alcohol Dilution Calculator',
+    accentHex: 0x06b6d4,
+    position: [-3.04, -0.78, -0.18],
+    icon: Beaker,
+  },
+  {
+    id: 'pyramid',
+    targetTab: 'pyramid',
+    category: 'calculator',
+    nameAr: 'الهرم العطري الثلاثي',
+    nameEn: 'Fragrance Pyramid Stand',
+    descAr: 'فتح جرافيك الهرم العطري ومحاكي الرش',
+    descEn: 'Open Fragrance Pyramid & Evolution Simulator',
+    accentHex: 0xf43f5e,
+    position: [-2.57, -0.78, -1.48],
+    icon: Layers,
+  },
+  {
+    id: 'abacus',
+    targetTab: 'costing',
+    category: 'calculator',
+    nameAr: 'ميزان التسعير والتكلفة',
+    nameEn: 'Brass Costing Balance',
+    descAr: 'فتح حاسبة التكاليف والأرباح وهوامش البيع',
+    descEn: 'Open Costing & Profit Margin Calculator',
+    accentHex: 0x22c55e,
+    position: [-1.47, -0.78, -2.41],
+    icon: Coins,
+  },
+  {
+    id: 'globe',
+    targetTab: 'world_perfumes',
+    category: 'info',
+    nameAr: 'الكرة العطرية العالمية',
+    nameEn: 'World Perfumery Globe',
+    descAr: 'فتح موسوعة العطور العالمية وتركيباتها الشهيرة',
+    descEn: 'Open World Iconic Perfumes Encyclopedia',
+    accentHex: 0x38bdf8,
+    position: [0.0, -0.78, -2.75],
+    icon: Globe,
+  },
+  {
+    id: 'mortar',
+    targetTab: 'raw_materials',
+    category: 'info',
+    nameAr: 'هاون الخلاصات والمواد الخام',
+    nameEn: 'Raw Materials Mortar',
+    descAr: 'فتح موسوعة المواد الخام العطرية وأرقام CAS',
+    descEn: 'Open Raw Materials & CAS Encyclopedia',
+    accentHex: 0x10b981,
+    position: [1.47, -0.78, -2.41],
+    icon: Leaf,
+  },
+  {
+    id: 'vial_rack',
+    targetTab: 'guide',
+    category: 'info',
+    nameAr: 'حامل المثبتات والراتنجات',
+    nameEn: 'Fixatives Vial Rack',
+    descAr: 'فتح صفحة دليل المثبتات والتعتيق العلمي',
+    descEn: 'Open Fixatives & Aging Reference Guide',
+    accentHex: 0xa855f7,
+    position: [2.57, -0.78, -1.48],
+    icon: Info,
+  },
+  {
+    id: 'hourglass',
+    targetTab: 'maceration_simulator',
+    category: 'calculator',
+    nameAr: 'ساعة التعتيق الزمنية',
+    nameEn: 'Maceration Hourglass',
+    descAr: 'فتح محاكي التعتيق الزمني ونضوج العطر',
+    descEn: 'Open Maceration Time Simulator',
+    accentHex: 0xd97706,
+    position: [3.04, -0.78, -0.18],
+    icon: Hourglass,
+  },
+  {
+    id: 'ledger',
+    targetTab: 'library',
+    category: 'info',
+    nameAr: 'سجل ودفتر الوصفات',
+    nameEn: 'Atelier Formula Ledger',
+    descAr: 'فتح دفتر الوصفات وسجلات المعمل المحفوظة',
+    descEn: 'Open Formula Notebook & Recipe Archive',
+    accentHex: 0xeab308,
+    position: [2.76, -0.78, 1.16],
+    icon: BookOpen,
+  },
+];
 
 type ElixirPreset = {
   id: string;
@@ -40,10 +313,11 @@ const ELIXIR_PRESETS: ElixirPreset[] = [
   { id: 'night_musk', nameAr: 'مسك الليل واللبان', nameEn: 'Nocturnal Frankincense', liquidHex: 0x5c4b8a, metalHex: 0xc7ccd6, accentCss: 'bg-indigo-700' },
 ];
 
-type CameraPresetId = 'hero' | 'plaque' | 'crown' | 'nozzle';
+type CameraPresetId = 'hero' | 'workbench' | 'plaque' | 'crown' | 'nozzle';
 
 const CAMERA_PRESETS: Record<CameraPresetId, { pos: [number, number, number]; target: [number, number, number] }> = {
-  hero: { pos: [3.4, 2.2, 4.2], target: [0, 0.55, 0] },
+  hero: { pos: [4.1, 2.75, 5.2], target: [0, 0.35, -0.25] },
+  workbench: { pos: [0, 4.5, 6.9], target: [0, -0.1, -0.65] },
   plaque: { pos: [0, 0.5, 4.4], target: [0, 0.35, 0] },
   crown: { pos: [2.1, 3.9, 2.4], target: [0, 1.35, 0] },
   nozzle: { pos: [1.5, 1.85, 1.9], target: [0, 1.25, 0] },
@@ -62,7 +336,6 @@ function drawPlaqueTexture(
   const w = canvas.width;
   const h = canvas.height;
 
-  // Ivory satin background + double gold hairline border
   ctx.fillStyle = '#fcf8f0';
   ctx.fillRect(0, 0, w, h);
 
@@ -96,12 +369,26 @@ function drawPlaqueTexture(
   ctx.fillText(`BATCH: ${batch || 'SHM-001'}`, w / 2, 298);
 }
 
+function resolveEquipmentId(obj: THREE.Object3D | null): LabEquipmentId | null {
+  let curr: THREE.Object3D | null = obj;
+  while (curr) {
+    const eqId = curr.userData?.equipmentId as LabEquipmentId | undefined;
+    if (eqId) return eqId;
+    curr = curr.parent;
+  }
+  return null;
+}
+
 export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   currentLang,
   formulaTitle,
   batchCode,
   formulation,
+  onNavigate,
 }) => {
+  const L = makeT(currentLang, STUDIO_STRINGS);
+  const txt = (ar: string, en: string) => pickArEn(currentLang, ar, en);
+
   const mountRef = useRef<HTMLDivElement>(null);
   const [presetId, setPresetId] = useState<string>('oud_amber');
   const [exploded, setExploded] = useState<boolean>(false);
@@ -109,6 +396,19 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   const [cameraPreset, setCameraPreset] = useState<CameraPresetId>('hero');
   const [controlsCollapsed, setControlsCollapsed] = useState<boolean>(false);
   const [webglUnavailable, setWebglUnavailable] = useState<boolean>(false);
+  const [hoveredEquipmentId, setHoveredEquipmentId] = useState<LabEquipmentId | null>(null);
+  const [hoveredScreenPos, setHoveredScreenPos] = useState<{ x: number; y: number; visible: boolean }>({
+    x: 0,
+    y: 0,
+    visible: false,
+  });
+  const [arCameraActive, setArCameraActive] = useState<boolean>(false);
+  const [arCamError, setArCamError] = useState<string | null>(null);
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const arStreamRef = useRef<MediaStream | null>(null);
+  const arActiveRef = useRef<boolean>(false);
+  arActiveRef.current = arCameraActive;
 
   const explodedRef = useRef(exploded);
   explodedRef.current = exploded;
@@ -116,22 +416,107 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   autoRotateRef.current = autoRotate;
   const cameraPresetRef = useRef<CameraPresetId>(cameraPreset);
   const camTransitionRef = useRef<boolean>(false);
+  const onNavigateRef = useRef(onNavigate);
+  onNavigateRef.current = onNavigate;
+  const hoveredEquipmentRef = useRef<LabEquipmentId | null>(hoveredEquipmentId);
+  hoveredEquipmentRef.current = hoveredEquipmentId;
+
+  const openEquipmentDestination = useCallback((spec: LabEquipmentSpec) => {
+    if (onNavigateRef.current) {
+      onNavigateRef.current(spec.targetTab);
+      return;
+    }
+    try {
+      window.location.hash = `#${spec.targetTab}`;
+    } catch {
+      // ignore fallback error
+    }
+  }, []);
+
+  const openEquipmentRef = useRef(openEquipmentDestination);
+  openEquipmentRef.current = openEquipmentDestination;
+
+  const stopArCamera = () => {
+    if (arStreamRef.current) {
+      for (const track of arStreamRef.current.getTracks()) {
+        try {
+          track.stop();
+        } catch {
+          // ignore
+        }
+      }
+      arStreamRef.current = null;
+    }
+    if (videoRef.current) {
+      videoRef.current.srcObject = null;
+    }
+  };
+
+  useEffect(() => () => stopArCamera(), []);
+
+  const toggleArCamera = async () => {
+    if (arCameraActive) {
+      stopArCamera();
+      setArCameraActive(false);
+      setArCamError(null);
+      return;
+    }
+    setArCamError(null);
+    if (!navigator.mediaDevices || typeof navigator.mediaDevices.getUserMedia !== 'function') {
+      setArCamError(
+        pickArEn(
+          currentLang,
+          'الكاميرا غير متاحة؛ العرض ثلاثي الأبعاد نشط.',
+          'Camera unavailable; 3D studio remains active.',
+        ),
+      );
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } },
+        audio: false,
+      });
+      arStreamRef.current = stream;
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+        await videoRef.current.play().catch(() => {});
+      }
+      setArCameraActive(true);
+    } catch {
+      stopArCamera();
+      setArCameraActive(false);
+      setArCamError(
+        pickArEn(
+          currentLang,
+          'تعذّر الوصول للكاميرا؛ العرض ثلاثي الأبعاد نشط.',
+          'Camera access declined; 3D studio remains active.',
+        ),
+      );
+    }
+  };
+
+  const hoveredEquipment = useMemo(
+    () => LAB_EQUIPMENT.find((eq) => eq.id === hoveredEquipmentId) || null,
+    [hoveredEquipmentId],
+  );
 
   const activePreset = useMemo(
     () => ELIXIR_PRESETS.find((p) => p.id === presetId) || ELIXIR_PRESETS[0],
     [presetId],
   );
 
-  // References to dynamic scene objects updated on React state changes
   const dynamicRefs = useRef<{
     liquidMat?: THREE.MeshPhysicalMaterial;
     metalMat?: THREE.MeshStandardMaterial;
     plaqueCanvas?: HTMLCanvasElement;
     plaqueTex?: THREE.CanvasTexture;
     liquidMesh?: THREE.Mesh;
+    scene?: THREE.Scene;
+    renderer?: THREE.WebGLRenderer;
+    floorMesh?: THREE.Mesh;
+    arGrid?: THREE.GridHelper;
   }>({});
-
-  const txt = (ar: string, en: string) => pickArEn(currentLang, ar, en);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -172,6 +557,25 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   }, [activePreset, formulaTitle, batchCode, formulation]);
 
   useEffect(() => {
+    const refs = dynamicRefs.current;
+    if (!refs.scene || !refs.renderer) return;
+    if (arCameraActive) {
+      refs.scene.background = null;
+      refs.scene.fog = null;
+      refs.renderer.setClearColor(0x000000, 0);
+      if (refs.floorMesh) refs.floorMesh.visible = false;
+      if (refs.arGrid) refs.arGrid.visible = true;
+    } else {
+      const bgHex = 0x171412;
+      refs.scene.background = new THREE.Color(bgHex);
+      refs.scene.fog = new THREE.FogExp2(bgHex, 0.036);
+      refs.renderer.setClearColor(bgHex, 1);
+      if (refs.floorMesh) refs.floorMesh.visible = true;
+      if (refs.arGrid) refs.arGrid.visible = false;
+    }
+  }, [arCameraActive]);
+
+  useEffect(() => {
     cameraPresetRef.current = cameraPreset;
     camTransitionRef.current = true;
   }, [cameraPreset]);
@@ -184,6 +588,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     try {
       renderer = new THREE.WebGLRenderer({
         antialias: true,
+        alpha: true,
         powerPreference: 'high-performance',
       });
     } catch {
@@ -194,7 +599,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     const gl = renderer.getContext();
     const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
     const rendererName = debugInfo ? String(gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) || '') : '';
-    const isSoftwareGl = /SwiftShader|llvmpipe|Software/i.test(rendererName);
+    const isSoftwareGl = /SwiftShader|llvmpipe|softpipe|Software|Basic Render/i.test(rendererName);
 
     renderer.setPixelRatio(isSoftwareGl ? 1 : Math.min(window.devicePixelRatio || 1, 2));
     renderer.setSize(container.clientWidth, container.clientHeight);
@@ -218,7 +623,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     const scene = new THREE.Scene();
     const bgHex = 0x171412;
     scene.background = new THREE.Color(bgHex);
-    scene.fog = new THREE.FogExp2(bgHex, 0.042);
+    scene.fog = new THREE.FogExp2(bgHex, 0.036);
 
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
     const roomEnv = new RoomEnvironment();
@@ -231,15 +636,15 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       40,
       Math.max(1, container.clientWidth) / Math.max(1, container.clientHeight),
       0.1,
-      50,
+      55,
     );
     camera.position.set(...CAMERA_PRESETS.hero.pos);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
+    controls.enableDamping = !isSoftwareGl;
     controls.dampingFactor = 0.07;
     controls.minDistance = 2.1;
-    controls.maxDistance = 8.5;
+    controls.maxDistance = 11.5;
     controls.maxPolarAngle = Math.PI * 0.56;
     controls.target.set(...CAMERA_PRESETS.hero.target);
     const stopCamTransition = () => {
@@ -267,7 +672,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
 
     // 1. Display Stage & Pedestal
     const stageGroup = new THREE.Group();
-    const floorGeo = new THREE.CircleGeometry(7, isSoftwareGl ? 32 : 64);
+    const floorGeo = new THREE.CircleGeometry(8.5, isSoftwareGl ? 32 : 64);
     const floorMat = new THREE.MeshStandardMaterial({ color: 0x1c1917, roughness: 0.92, metalness: 0.08 });
     const floorMesh = new THREE.Mesh(floorGeo, floorMat);
     floorMesh.rotation.x = -Math.PI / 2;
@@ -293,7 +698,21 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     brassTrimMesh.rotation.x = Math.PI / 2;
     brassTrimMesh.position.y = -0.54;
     stageGroup.add(brassTrimMesh);
+
+    const arGrid = new THREE.GridHelper(9, 18, 0xf59e0b, 0x57534e);
+    arGrid.position.y = -0.77;
+    arGrid.visible = false;
+    stageGroup.add(arGrid);
+    disposables.push(arGrid.geometry);
+    if (!Array.isArray(arGrid.material)) {
+      disposables.push(arGrid.material);
+    }
     scene.add(stageGroup);
+
+    dynamicRefs.current.scene = scene;
+    dynamicRefs.current.renderer = renderer;
+    dynamicRefs.current.floorMesh = floorMesh;
+    dynamicRefs.current.arGrid = arGrid;
 
     // 2. Composite Perfume Flacon Root Group
     const flaconRoot = new THREE.Group();
@@ -315,8 +734,8 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     const bottleGeo = new THREE.LatheGeometry(outerPoints, latheSegments);
     const glassMat = new THREE.MeshPhysicalMaterial({
       color: 0xffffff,
-      transmission: isSoftwareGl ? 0.6 : 0.92,
-      opacity: 1,
+      transmission: isSoftwareGl ? 0 : 0.92,
+      opacity: isSoftwareGl ? 0.42 : 1,
       transparent: true,
       roughness: 0.06,
       ior: 1.52,
@@ -325,14 +744,15 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       clearcoatRoughness: 0.05,
     });
     const bottleMesh = new THREE.Mesh(bottleGeo, glassMat);
-    bottleMesh.castShadow = true;
+    bottleMesh.castShadow = !isSoftwareGl;
     flaconRoot.add(bottleMesh);
 
     // 2b. Heavy Crystal Punt Base
     const puntGeo = new THREE.CylinderGeometry(0.64, 0.6, 0.2, latheSegments);
     const puntMat = new THREE.MeshPhysicalMaterial({
       color: 0xf5efe6,
-      transmission: 0.78,
+      transmission: isSoftwareGl ? 0 : 0.78,
+      opacity: isSoftwareGl ? 0.5 : 1,
       transparent: true,
       roughness: 0.1,
       ior: 1.54,
@@ -353,7 +773,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     const liquidGeo = new THREE.LatheGeometry(liquidPoints, latheSegments);
     const liquidMat = new THREE.MeshPhysicalMaterial({
       color: activePreset.liquidHex,
-      transmission: 0.55,
+      transmission: isSoftwareGl ? 0 : 0.55,
       transparent: true,
       opacity: 0.92,
       roughness: 0.08,
@@ -395,7 +815,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     plaqueGroup.position.set(0, 0.22, 0.77);
     flaconRoot.add(plaqueGroup);
 
-    // 2e. Dip Tube (extending slightly diagonally inside)
+    // 2e. Dip Tube
     const tubeGeo = new THREE.CylinderGeometry(0.022, 0.022, 1.35, 12);
     const tubeMat = new THREE.MeshPhysicalMaterial({
       color: 0xe7e5e4,
@@ -456,7 +876,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       metalness: 0.42,
     });
     const capBodyMesh = new THREE.Mesh(capGeo, capMat);
-    capBodyMesh.castShadow = true;
+    capBodyMesh.castShadow = !isSoftwareGl;
 
     const capCrownRing = new THREE.Mesh(
       new THREE.CylinderGeometry(0.26, 0.3, 0.08, 24),
@@ -467,7 +887,15 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     capGroup.position.y = 1.46;
     flaconRoot.add(capGroup);
 
-    dynamicRefs.current = { liquidMat, metalMat, plaqueCanvas, plaqueTex, liquidMesh };
+    // Spread instead of overwriting so scene, renderer, floorMesh, arGrid are preserved!
+    dynamicRefs.current = {
+      ...dynamicRefs.current,
+      liquidMat,
+      metalMat,
+      plaqueCanvas,
+      plaqueTex,
+      liquidMesh,
+    };
 
     disposables.push(
       floorGeo, floorMat, plinthGeo, plinthMat, brassTrimGeo, metalMat,
@@ -476,6 +904,385 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       tubeGeo, tubeMat, collarMesh.geometry, sprayHeadMesh.geometry,
       nozzleMesh.geometry, nozzleInsertMat, capGeo, capMat, capCrownRing.geometry,
     );
+
+    // 3. Interactive 3D Lab Equipment Stations around the Workbench
+    const equipmentRoot = new THREE.Group();
+    scene.add(equipmentRoot);
+
+    type EquipmentHandle = {
+      id: LabEquipmentId;
+      targetTab: string;
+      accentHex: number;
+      baseColor: THREE.Color;
+      hoverColor: THREE.Color;
+      group: THREE.Group;
+      baseY: number;
+      haloMat: THREE.MeshBasicMaterial;
+      outerGlowMesh: THREE.Mesh;
+      outerGlowMat: THREE.MeshBasicMaterial;
+      accentMat: THREE.MeshStandardMaterial;
+      bodyMat: THREE.MeshStandardMaterial;
+    };
+
+    const hoverPointLight = new THREE.PointLight(0xfbbf24, 0, 3.8, 1.8);
+    hoverPointLight.position.set(0, 0.25, 0);
+    scene.add(hoverPointLight);
+    const targetLightPos = new THREE.Vector3();
+    const tmpColor = new THREE.Color();
+    const camTargetPos = new THREE.Vector3();
+    const camTargetLook = new THREE.Vector3();
+    const projVec = new THREE.Vector3();
+
+    const equipmentHandles: EquipmentHandle[] = [];
+    // Raycast targets include central flacon meshes + plinth for occlusion, plus equipment hit proxies & visible meshes
+    const raycastTargets: THREE.Object3D[] = [plinthMesh];
+    flaconRoot.traverse((child) => {
+      if ((child as THREE.Mesh).isMesh) {
+        raycastTargets.push(child);
+      }
+    });
+
+    const hitProxyMat = new THREE.MeshBasicMaterial({ visible: false });
+    const ringBaseGeo = new THREE.RingGeometry(0.5, 0.6, 32);
+    const outerGlowGeo = new THREE.RingGeometry(0.62, 0.76, 36);
+    const proxyBoxGeo = new THREE.BoxGeometry(1.15, 1.25, 1.15);
+    disposables.push(hitProxyMat, ringBaseGeo, outerGlowGeo, proxyBoxGeo);
+
+    for (const eq of LAB_EQUIPMENT) {
+      const g = new THREE.Group();
+      g.position.set(eq.position[0], eq.position[1], eq.position[2]);
+      g.lookAt(0, eq.position[1], 2.2);
+
+      const eqHaloMat = new THREE.MeshBasicMaterial({
+        color: eq.accentHex,
+        transparent: true,
+        opacity: 0.28,
+        side: THREE.DoubleSide,
+      });
+      const haloMesh = new THREE.Mesh(ringBaseGeo, eqHaloMat);
+      haloMesh.rotation.x = -Math.PI / 2;
+      haloMesh.position.y = 0.015;
+      g.add(haloMesh);
+
+      const outerGlowMat = new THREE.MeshBasicMaterial({
+        color: eq.accentHex,
+        transparent: true,
+        opacity: 0,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+        side: THREE.DoubleSide,
+      });
+      const outerGlowMesh = new THREE.Mesh(outerGlowGeo, outerGlowMat);
+      outerGlowMesh.rotation.x = -Math.PI / 2;
+      outerGlowMesh.position.y = 0.018;
+      g.add(outerGlowMesh);
+
+      const baseColor = new THREE.Color(eq.accentHex);
+      const hoverColor = baseColor.clone().lerp(new THREE.Color(0xfffbeb), 0.48);
+
+      const eqAccentMat = new THREE.MeshStandardMaterial({
+        color: baseColor.clone(),
+        roughness: 0.25,
+        metalness: 0.72,
+        emissive: baseColor.clone(),
+        emissiveIntensity: 0.14,
+      });
+
+      const eqBodyMat = new THREE.MeshStandardMaterial({
+        color: eq.id === 'ledger' || eq.id === 'vial_rack' || eq.id === 'abacus' ? 0x451a03 : 0x26211d,
+        roughness: eq.id === 'ledger' ? 0.55 : 0.62,
+        metalness: eq.id === 'ledger' ? 0.18 : 0.28,
+        emissive: baseColor.clone(),
+        emissiveIntensity: 0,
+      });
+
+      const eqSecondaryMat = new THREE.MeshStandardMaterial({
+        color: eq.id === 'ledger' ? 0xfef3c7 : 0xd6d3d1,
+        roughness: eq.id === 'ledger' ? 0.68 : 0.22,
+        metalness: eq.id === 'ledger' ? 0.06 : 0.88,
+        emissive: baseColor.clone(),
+        emissiveIntensity: 0,
+      });
+
+      disposables.push(eqHaloMat, outerGlowMat, eqAccentMat, eqBodyMat, eqSecondaryMat);
+
+      const eqMeshes: THREE.Mesh[] = [];
+
+      if (eq.id === 'scale') {
+        const bodyGeo = new THREE.BoxGeometry(0.86, 0.14, 0.72);
+        const panGeo = new THREE.CylinderGeometry(0.28, 0.28, 0.04, 24);
+        const screenGeo = new THREE.BoxGeometry(0.42, 0.03, 0.14);
+        const vialGeo = new THREE.CylinderGeometry(0.09, 0.1, 0.34, 16);
+        const body = new THREE.Mesh(bodyGeo, eqBodyMat);
+        body.position.y = 0.08;
+        body.castShadow = !isSoftwareGl;
+        const pan = new THREE.Mesh(panGeo, eqSecondaryMat);
+        pan.position.set(0, 0.18, -0.06);
+        const screen = new THREE.Mesh(screenGeo, eqAccentMat);
+        screen.position.set(0, 0.155, 0.24);
+        const vial = new THREE.Mesh(vialGeo, eqAccentMat);
+        vial.position.set(0, 0.37, -0.06);
+        g.add(body, pan, screen, vial);
+        eqMeshes.push(body, pan, screen, vial);
+        disposables.push(bodyGeo, panGeo, screenGeo, vialGeo);
+      } else if (eq.id === 'flask') {
+        const coneGeo = new THREE.CylinderGeometry(0.12, 0.42, 0.68, 22);
+        const liqGeo = new THREE.CylinderGeometry(0.24, 0.36, 0.34, 20);
+        const neckGeo = new THREE.CylinderGeometry(0.14, 0.14, 0.16, 18);
+        const flask = new THREE.Mesh(coneGeo, glassMat);
+        flask.position.y = 0.36;
+        flask.castShadow = !isSoftwareGl;
+        const liq = new THREE.Mesh(liqGeo, eqAccentMat);
+        liq.position.y = 0.2;
+        const neck = new THREE.Mesh(neckGeo, eqSecondaryMat);
+        neck.position.y = 0.72;
+        g.add(flask, liq, neck);
+        eqMeshes.push(flask, liq, neck);
+        disposables.push(coneGeo, liqGeo, neckGeo);
+      } else if (eq.id === 'pyramid') {
+        const tier1Geo = new THREE.CylinderGeometry(0.28, 0.42, 0.22, 4);
+        const tier2Geo = new THREE.CylinderGeometry(0.15, 0.27, 0.22, 4);
+        const tier3Geo = new THREE.ConeGeometry(0.14, 0.26, 4);
+        const t1 = new THREE.Mesh(tier1Geo, eqBodyMat);
+        t1.position.y = 0.12;
+        t1.castShadow = !isSoftwareGl;
+        const t2 = new THREE.Mesh(tier2Geo, eqAccentMat);
+        t2.position.y = 0.36;
+        const t3 = new THREE.Mesh(tier3Geo, eqAccentMat);
+        t3.position.y = 0.62;
+        g.add(t1, t2, t3);
+        eqMeshes.push(t1, t2, t3);
+        disposables.push(tier1Geo, tier2Geo, tier3Geo);
+      } else if (eq.id === 'abacus') {
+        const baseGeo = new THREE.BoxGeometry(0.78, 0.09, 0.42);
+        const pillarGeo = new THREE.CylinderGeometry(0.035, 0.045, 0.64, 14);
+        const beamGeo = new THREE.BoxGeometry(0.76, 0.045, 0.05);
+        const panGeo = new THREE.CylinderGeometry(0.18, 0.14, 0.05, 18);
+        const weightGeo = new THREE.CylinderGeometry(0.065, 0.075, 0.14, 14);
+        const base = new THREE.Mesh(baseGeo, eqBodyMat);
+        base.position.y = 0.05;
+        base.castShadow = !isSoftwareGl;
+        const pillar = new THREE.Mesh(pillarGeo, eqSecondaryMat);
+        pillar.position.y = 0.38;
+        const beam = new THREE.Mesh(beamGeo, eqAccentMat);
+        beam.position.y = 0.68;
+        beam.rotation.z = 0.08;
+        const leftPan = new THREE.Mesh(panGeo, eqAccentMat);
+        leftPan.position.set(-0.28, 0.42, 0);
+        const rightPan = new THREE.Mesh(panGeo, eqAccentMat);
+        rightPan.position.set(0.28, 0.48, 0);
+        const weight = new THREE.Mesh(weightGeo, eqSecondaryMat);
+        weight.position.set(-0.28, 0.52, 0);
+        g.add(base, pillar, beam, leftPan, rightPan, weight);
+        eqMeshes.push(base, pillar, beam, leftPan, rightPan, weight);
+        disposables.push(baseGeo, pillarGeo, beamGeo, panGeo, weightGeo);
+      } else if (eq.id === 'globe') {
+        const footGeo = new THREE.CylinderGeometry(0.22, 0.3, 0.12, 20);
+        const stemGeo = new THREE.CylinderGeometry(0.04, 0.05, 0.24, 12);
+        const meridianGeo = new THREE.TorusGeometry(0.36, 0.024, 12, 32);
+        const sphereGeo = new THREE.IcosahedronGeometry(0.28, 1);
+        const ringEqGeo = new THREE.TorusGeometry(0.33, 0.018, 10, 32);
+        const foot = new THREE.Mesh(footGeo, eqBodyMat);
+        foot.position.y = 0.07;
+        foot.castShadow = !isSoftwareGl;
+        const stem = new THREE.Mesh(stemGeo, eqSecondaryMat);
+        stem.position.y = 0.22;
+        const meridian = new THREE.Mesh(meridianGeo, eqSecondaryMat);
+        meridian.position.y = 0.56;
+        meridian.rotation.y = 0.35;
+        const sphere = new THREE.Mesh(sphereGeo, eqAccentMat);
+        sphere.position.y = 0.56;
+        const eqRing = new THREE.Mesh(ringEqGeo, eqSecondaryMat);
+        eqRing.position.y = 0.56;
+        eqRing.rotation.x = Math.PI / 2 - 0.28;
+        g.add(foot, stem, meridian, sphere, eqRing);
+        eqMeshes.push(foot, stem, meridian, sphere, eqRing);
+        disposables.push(footGeo, stemGeo, meridianGeo, sphereGeo, ringEqGeo);
+      } else if (eq.id === 'mortar') {
+        const bowlGeo = new THREE.CylinderGeometry(0.36, 0.24, 0.34, 18);
+        const rimGeo = new THREE.TorusGeometry(0.35, 0.04, 10, 24);
+        const pestleGeo = new THREE.CylinderGeometry(0.05, 0.075, 0.56, 14);
+        const herbGeo = new THREE.SphereGeometry(0.14, 14, 14);
+        const bowl = new THREE.Mesh(bowlGeo, eqBodyMat);
+        bowl.position.y = 0.18;
+        bowl.castShadow = !isSoftwareGl;
+        const rim = new THREE.Mesh(rimGeo, eqAccentMat);
+        rim.rotation.x = Math.PI / 2;
+        rim.position.y = 0.34;
+        const pestle = new THREE.Mesh(pestleGeo, eqSecondaryMat);
+        pestle.position.set(0.12, 0.38, 0);
+        pestle.rotation.z = -0.48;
+        const herb = new THREE.Mesh(herbGeo, eqAccentMat);
+        herb.position.set(-0.08, 0.28, 0.05);
+        g.add(bowl, rim, pestle, herb);
+        eqMeshes.push(bowl, rim, pestle, herb);
+        disposables.push(bowlGeo, rimGeo, pestleGeo, herbGeo);
+      } else if (eq.id === 'vial_rack') {
+        const trayGeo = new THREE.BoxGeometry(0.84, 0.12, 0.42);
+        const railGeo = new THREE.BoxGeometry(0.8, 0.04, 0.06);
+        const vialGeo = new THREE.CylinderGeometry(0.09, 0.095, 0.42, 16);
+        const capPipGeo = new THREE.CylinderGeometry(0.045, 0.06, 0.14, 12);
+        const tray = new THREE.Mesh(trayGeo, eqBodyMat);
+        tray.position.y = 0.07;
+        tray.castShadow = !isSoftwareGl;
+        const rail = new THREE.Mesh(railGeo, eqSecondaryMat);
+        rail.position.set(0, 0.28, -0.14);
+        g.add(tray, rail);
+        eqMeshes.push(tray, rail);
+        const offsets = [-0.24, 0, 0.24];
+        for (const ox of offsets) {
+          const vial = new THREE.Mesh(vialGeo, eqAccentMat);
+          vial.position.set(ox, 0.32, 0);
+          const pipCap = new THREE.Mesh(capPipGeo, eqSecondaryMat);
+          pipCap.position.set(ox, 0.58, 0);
+          g.add(vial, pipCap);
+          eqMeshes.push(vial, pipCap);
+        }
+        disposables.push(trayGeo, railGeo, vialGeo, capPipGeo);
+      } else if (eq.id === 'hourglass') {
+        const basePlateGeo = new THREE.CylinderGeometry(0.32, 0.34, 0.06, 20);
+        const coneTopGeo = new THREE.ConeGeometry(0.24, 0.36, 18);
+        const coneBotGeo = new THREE.ConeGeometry(0.24, 0.36, 18);
+        const pillarGeo = new THREE.CylinderGeometry(0.025, 0.025, 0.72, 10);
+        const botPlate = new THREE.Mesh(basePlateGeo, eqBodyMat);
+        botPlate.position.y = 0.04;
+        const topPlate = new THREE.Mesh(basePlateGeo, eqBodyMat);
+        topPlate.position.y = 0.78;
+        const coneBot = new THREE.Mesh(coneBotGeo, eqAccentMat);
+        coneBot.position.y = 0.23;
+        const coneTop = new THREE.Mesh(coneTopGeo, glassMat);
+        coneTop.rotation.x = Math.PI;
+        coneTop.position.y = 0.59;
+        const pL = new THREE.Mesh(pillarGeo, eqSecondaryMat);
+        pL.position.set(-0.26, 0.41, 0);
+        const pR = new THREE.Mesh(pillarGeo, eqSecondaryMat);
+        pR.position.set(0.26, 0.41, 0);
+        g.add(botPlate, topPlate, coneBot, coneTop, pL, pR);
+        eqMeshes.push(botPlate, topPlate, coneBot, coneTop, pL, pR);
+        disposables.push(basePlateGeo, coneTopGeo, coneBotGeo, pillarGeo);
+      } else {
+        const coverGeo = new THREE.BoxGeometry(0.74, 0.08, 0.56);
+        const pagesGeo = new THREE.BoxGeometry(0.66, 0.14, 0.5);
+        const sealGeo = new THREE.CylinderGeometry(0.1, 0.1, 0.03, 18);
+        const cover = new THREE.Mesh(coverGeo, eqBodyMat);
+        cover.position.y = 0.06;
+        cover.castShadow = !isSoftwareGl;
+        const pages = new THREE.Mesh(pagesGeo, eqSecondaryMat);
+        pages.position.y = 0.14;
+        const topCover = new THREE.Mesh(coverGeo, eqBodyMat);
+        topCover.position.y = 0.23;
+        const seal = new THREE.Mesh(sealGeo, eqAccentMat);
+        seal.position.set(0.14, 0.28, 0.1);
+        g.add(cover, pages, topCover, seal);
+        eqMeshes.push(cover, pages, topCover, seal);
+        disposables.push(coverGeo, pagesGeo, sealGeo);
+      }
+
+      const proxy = new THREE.Mesh(proxyBoxGeo, hitProxyMat);
+      proxy.position.y = 0.52;
+      proxy.userData.equipmentId = eq.id;
+      g.add(proxy);
+
+      for (const m of eqMeshes) {
+        m.userData.equipmentId = eq.id;
+        raycastTargets.push(m);
+      }
+      raycastTargets.push(proxy);
+      equipmentRoot.add(g);
+
+      equipmentHandles.push({
+        id: eq.id,
+        targetTab: eq.targetTab,
+        accentHex: eq.accentHex,
+        baseColor,
+        hoverColor,
+        group: g,
+        baseY: eq.position[1],
+        haloMat: eqHaloMat,
+        outerGlowMesh,
+        outerGlowMat,
+        accentMat: eqAccentMat,
+        bodyMat: eqBodyMat,
+      });
+    }
+
+    // Raycasting hover & click on 3D lab equipment (drag-safe, occlusion-aware, touch-friendly)
+    const raycaster = new THREE.Raycaster();
+    const pointerNdc = new THREE.Vector2();
+    let pointerDownInfo = { x: 0, y: 0, active: false };
+    let lastHoverTs = 0;
+
+    const updateNdc = (clientX: number, clientY: number) => {
+      const rect = renderer.domElement.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) return false;
+      pointerNdc.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+      pointerNdc.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+      return true;
+    };
+
+    const pickUnobstructedEquipment = (): LabEquipmentId | null => {
+      raycaster.setFromCamera(pointerNdc, camera);
+      const hits = raycaster.intersectObjects(raycastTargets, false);
+      if (hits.length === 0) return null;
+      return resolveEquipmentId(hits[0].object);
+    };
+
+    const onPointerDown = (e: PointerEvent) => {
+      if (e.isPrimary === false) return;
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pointerDownInfo = { x: e.clientX, y: e.clientY, active: true };
+    };
+
+    const onPointerMove = (e: PointerEvent) => {
+      const now = performance.now();
+      if (now - lastHoverTs < 35) return;
+      lastHoverTs = now;
+      if (!updateNdc(e.clientX, e.clientY)) return;
+      const eqId = pickUnobstructedEquipment();
+      if (eqId) {
+        if (hoveredEquipmentRef.current !== eqId) {
+          setHoveredEquipmentId(eqId);
+        }
+        renderer.domElement.style.cursor = 'pointer';
+      } else {
+        if (hoveredEquipmentRef.current !== null) {
+          setHoveredEquipmentId(null);
+        }
+        renderer.domElement.style.cursor = 'grab';
+      }
+    };
+
+    const onPointerLeaveOrCancel = () => {
+      pointerDownInfo.active = false;
+      if (hoveredEquipmentRef.current !== null) {
+        setHoveredEquipmentId(null);
+      }
+      renderer.domElement.style.cursor = 'grab';
+    };
+
+    const onPointerUp = (e: PointerEvent) => {
+      if (!pointerDownInfo.active) return;
+      pointerDownInfo.active = false;
+      if (e.isPrimary === false) return;
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      if (Math.hypot(e.clientX - pointerDownInfo.x, e.clientY - pointerDownInfo.y) > 8) {
+        return;
+      }
+      if (!updateNdc(e.clientX, e.clientY)) return;
+      const eqId = pickUnobstructedEquipment();
+      if (eqId) {
+        const spec = LAB_EQUIPMENT.find((item) => item.id === eqId);
+        if (spec) {
+          openEquipmentRef.current(spec);
+        }
+      }
+    };
+
+    renderer.domElement.addEventListener('pointerdown', onPointerDown);
+    renderer.domElement.addEventListener('pointermove', onPointerMove);
+    renderer.domElement.addEventListener('pointerup', onPointerUp);
+    renderer.domElement.addEventListener('pointerleave', onPointerLeaveOrCancel);
+    renderer.domElement.addEventListener('pointercancel', onPointerLeaveOrCancel);
 
     // Responsive ResizeObserver
     const ro = new ResizeObserver(() => {
@@ -491,6 +1298,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     // Animation loop with fixed-clamp dt + smooth MathUtils.damp transitions
     let rafId = 0;
     let lastTime = performance.now();
+    let lastProjState = { x: -999, y: -999, visible: false };
 
     const animate = (now: number) => {
       rafId = requestAnimationFrame(animate);
@@ -506,15 +1314,91 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
 
       if (camTransitionRef.current) {
         const preset = CAMERA_PRESETS[cameraPresetRef.current];
-        const targetPos = new THREE.Vector3(...preset.pos);
-        const targetLook = new THREE.Vector3(...preset.target);
-        camera.position.lerp(targetPos, 1 - Math.exp(-6 * dt));
-        controls.target.lerp(targetLook, 1 - Math.exp(-6 * dt));
-        if (camera.position.distanceTo(targetPos) < 0.02) {
+        camTargetPos.set(...preset.pos);
+        camTargetLook.set(...preset.target);
+        const camStep = 1 - Math.exp(-6 * dt);
+        camera.position.lerp(camTargetPos, camStep);
+        controls.target.lerp(camTargetLook, camStep);
+        if (camera.position.distanceTo(camTargetPos) < 0.02) {
           camTransitionRef.current = false;
         }
       } else if (autoRotateRef.current) {
         flaconRoot.rotation.y += dt * 0.28;
+      }
+
+      let hoveredHandle: EquipmentHandle | null = null;
+      const colorStep = 1 - Math.exp(-9 * dt);
+
+      for (let i = 0; i < equipmentHandles.length; i += 1) {
+        const eh = equipmentHandles[i];
+        const isHovered = eh.id === hoveredEquipmentRef.current;
+        if (isHovered) hoveredHandle = eh;
+
+        const targetY = eh.baseY + (isHovered ? 0.12 : 0);
+        eh.group.position.y = THREE.MathUtils.damp(eh.group.position.y, targetY, 8, dt);
+
+        const targetScale = isHovered ? 1.13 : 1.0;
+        const nextScale = THREE.MathUtils.damp(eh.group.scale.x, targetScale, 8, dt);
+        eh.group.scale.setScalar(nextScale);
+
+        eh.haloMat.opacity = THREE.MathUtils.damp(eh.haloMat.opacity, isHovered ? 0.92 : 0.24, 8, dt);
+        eh.outerGlowMat.opacity = THREE.MathUtils.damp(eh.outerGlowMat.opacity, isHovered ? 0.75 : 0, 8, dt);
+        const outerScale = THREE.MathUtils.damp(eh.outerGlowMesh.scale.x, isHovered ? 1.26 : 0.92, 8, dt);
+        eh.outerGlowMesh.scale.set(outerScale, outerScale, 1);
+
+        eh.accentMat.color.lerp(isHovered ? eh.hoverColor : eh.baseColor, colorStep);
+        eh.accentMat.emissiveIntensity = THREE.MathUtils.damp(
+          eh.accentMat.emissiveIntensity,
+          isHovered ? 1.15 : 0.14,
+          9,
+          dt,
+        );
+        eh.bodyMat.emissiveIntensity = THREE.MathUtils.damp(
+          eh.bodyMat.emissiveIntensity,
+          isHovered ? 0.38 : 0,
+          9,
+          dt,
+        );
+      }
+
+      if (hoveredHandle) {
+        targetLightPos.set(
+          hoveredHandle.group.position.x,
+          hoveredHandle.baseY + 0.95,
+          hoveredHandle.group.position.z,
+        );
+        hoverPointLight.position.lerp(targetLightPos, 1 - Math.exp(-12 * dt));
+        tmpColor.setHex(hoveredHandle.accentHex);
+        hoverPointLight.color.lerp(tmpColor, colorStep);
+        hoverPointLight.intensity = THREE.MathUtils.damp(hoverPointLight.intensity, 3.0, 9, dt);
+
+        // Project hovered 3D tool anchor to container-local 2D coordinates
+        projVec.set(
+          hoveredHandle.group.position.x,
+          hoveredHandle.group.position.y + 1.08,
+          hoveredHandle.group.position.z,
+        );
+        projVec.project(camera);
+        const vw = container.clientWidth;
+        const vh = container.clientHeight;
+        const sx = Math.max(120, Math.min(vw - 120, ((projVec.x + 1) * 0.5) * vw));
+        const sy = Math.max(58, Math.min(vh - 70, ((-projVec.y + 1) * 0.5) * vh));
+        const inFront = projVec.z < 1;
+        if (
+          !lastProjState.visible ||
+          Math.abs(lastProjState.x - sx) >= 2 ||
+          Math.abs(lastProjState.y - sy) >= 2 ||
+          lastProjState.visible !== inFront
+        ) {
+          lastProjState = { x: sx, y: sy, visible: inFront };
+          setHoveredScreenPos({ x: sx, y: sy, visible: inFront });
+        }
+      } else {
+        hoverPointLight.intensity = THREE.MathUtils.damp(hoverPointLight.intensity, 0, 9, dt);
+        if (lastProjState.visible) {
+          lastProjState = { x: 0, y: 0, visible: false };
+          setHoveredScreenPos({ x: 0, y: 0, visible: false });
+        }
       }
 
       controls.update();
@@ -528,6 +1412,11 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       ro.disconnect();
       controls.removeEventListener('start', stopCamTransition);
       controls.dispose();
+      renderer.domElement.removeEventListener('pointerdown', onPointerDown);
+      renderer.domElement.removeEventListener('pointermove', onPointerMove);
+      renderer.domElement.removeEventListener('pointerup', onPointerUp);
+      renderer.domElement.removeEventListener('pointerleave', onPointerLeaveOrCancel);
+      renderer.domElement.removeEventListener('pointercancel', onPointerLeaveOrCancel);
       renderer.domElement.removeEventListener('webglcontextlost', onContextLost);
       renderer.domElement.removeEventListener('webglcontextrestored', onContextRestored);
       for (const d of disposables) {
@@ -554,125 +1443,248 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
           </div>
           <div>
             <h2 className="text-lg sm:text-xl font-black text-stone-900 font-serif-luxury">
-              {txt('استوديو تصميم الزجاجة ثلاثي الأبعاد', '3D Crystal Flacon & Atomizer Studio')}
+              {L('title')}
             </h2>
             <p className="text-xs text-stone-500">
-              {txt(
-                'معاينة تفاعلية بالكريستال والضوء المعملي للزجاجة الحالية، التركيز، والتفكيك الهندسي.',
-                'Interactive glass-refraction inspection synced live to your bottle volume, concentration & batch ID.',
-              )}
+              {L('subtitle')}
             </p>
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setControlsCollapsed((c) => !c)}
-          className="px-3 py-1.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold flex items-center gap-1.5 border border-stone-200 cursor-pointer self-start sm:self-auto"
-          title={txt('إخفاء أو إظهار شريط التحكم (H)', 'Toggle controls (H)')}
-        >
-          {controlsCollapsed ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-          <span>{controlsCollapsed ? txt('إظهار التحكم', 'Show Controls') : txt('طي التحكم (H)', 'Hide Controls (H)')}</span>
-        </button>
+        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+          <button
+            type="button"
+            onClick={toggleArCamera}
+            className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
+              arCameraActive
+                ? 'bg-emerald-600 hover:bg-emerald-500 text-white border-emerald-400'
+                : 'bg-amber-400 hover:bg-amber-300 text-stone-950 border-amber-300'
+            }`}
+          >
+            {arCameraActive ? <CameraOff className="w-4 h-4" /> : <Camera className="w-4 h-4" />}
+            <span>{arCameraActive ? L('ar_stop') : L('ar_start')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setControlsCollapsed((c) => !c)}
+            className="px-3 py-1.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold flex items-center gap-1.5 border border-stone-200 cursor-pointer whitespace-nowrap shrink-0"
+            title={txt('إخفاء أو إظهار شريط التحكم (H)', 'Toggle controls (H)')}
+          >
+            {controlsCollapsed ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+            <span>{controlsCollapsed ? L('show_controls') : L('hide_controls')}</span>
+          </button>
+        </div>
       </div>
+
+      {arCamError && (
+        <div className="bg-amber-950 text-amber-200 px-4 py-2 rounded-2xl text-xs flex items-center justify-between gap-2">
+          <span>{arCamError}</span>
+          <button type="button" onClick={() => setArCamError(null)} className="font-bold px-2 cursor-pointer">
+            ✕
+          </button>
+        </div>
+      )}
 
       {/* Interactive 3D Viewport Stage */}
       <div className="relative rounded-3xl overflow-hidden border border-stone-800 bg-stone-950 shadow-2xl">
-        <div ref={mountRef} className="w-full h-[520px] sm:h-[580px]" />
+        <video
+          ref={videoRef}
+          autoPlay
+          playsInline
+          muted
+          className={`absolute inset-0 w-full h-full object-cover pointer-events-none transition-opacity duration-300 ${
+            arCameraActive ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+        <div className="relative">
+          <div ref={mountRef} className="relative z-10 w-full h-[520px] sm:h-[580px]" />
+
+          {/* Spatial Projected Floating Callout directly above the hovered 3D tool (solid surface, zero backdrop-blur) */}
+          {hoveredEquipment && hoveredScreenPos.visible && !webglUnavailable && (
+            <div
+              style={{
+                left: `${hoveredScreenPos.x}px`,
+                top: `${hoveredScreenPos.y}px`,
+                transform: 'translate(-50%, -100%)',
+              }}
+              className="absolute z-20 pointer-events-none max-w-[230px] rounded-2xl bg-stone-950 border border-amber-400/75 px-3 py-2 shadow-2xl text-white transition-transform duration-100"
+            >
+              <div className="flex items-center justify-between gap-2 text-[10px] text-stone-400 mb-0.5">
+                <span className="flex items-center gap-1 font-semibold text-amber-300">
+                  {hoveredEquipment.category === 'calculator' ? (
+                    <Calculator className="w-3 h-3 shrink-0" />
+                  ) : (
+                    <Info className="w-3 h-3 shrink-0" />
+                  )}
+                  <span>
+                    {hoveredEquipment.category === 'calculator' ? L('cat_calculator') : L('cat_info')}
+                  </span>
+                </span>
+                <ExternalLink className="w-3 h-3 text-emerald-400 shrink-0" />
+              </div>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-white">
+                <hoveredEquipment.icon className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                <span className="truncate">{txt(hoveredEquipment.nameAr, hoveredEquipment.nameEn)}</span>
+              </div>
+              <p className="text-[10px] text-stone-300 mt-0.5 leading-snug">
+                {txt(hoveredEquipment.descAr, hoveredEquipment.descEn)}
+              </p>
+              <div className="text-[10px] font-bold text-emerald-400 mt-1">
+                {L('click_to_open')}
+              </div>
+            </div>
+          )}
+
+          {/* Fallback corner readout when hovering from the bottom equipment dock bar */}
+          {hoveredEquipment && !hoveredScreenPos.visible && !webglUnavailable && (
+            <div className="absolute top-3 left-3 z-20 pointer-events-none max-w-xs rounded-2xl bg-stone-950 border border-amber-500/60 px-3.5 py-2.5 shadow-xl text-white">
+              <div className="flex items-center gap-2 text-xs font-bold text-amber-300">
+                <hoveredEquipment.icon className="w-4 h-4 shrink-0" />
+                <span>{txt(hoveredEquipment.nameAr, hoveredEquipment.nameEn)}</span>
+              </div>
+              <p className="text-[11px] text-stone-300 mt-0.5">
+                {txt(hoveredEquipment.descAr, hoveredEquipment.descEn)}
+              </p>
+              <div className="text-[10px] font-bold text-emerald-400 mt-1 flex items-center gap-1">
+                <ExternalLink className="w-3 h-3" />
+                <span>{L('click_to_open')}</span>
+              </div>
+            </div>
+          )}
+        </div>
 
         {/* Fallback overlay if WebGL fails */}
         {webglUnavailable && (
-          <div className="absolute inset-0 bg-stone-950/95 text-stone-200 flex flex-col items-center justify-center p-6 text-center space-y-2">
+          <div className="absolute inset-0 z-30 bg-stone-950 text-stone-200 flex flex-col items-center justify-center p-6 text-center space-y-2">
             <EyeOff className="w-8 h-8 text-amber-400" />
             <div className="font-bold text-sm">
               {txt('عرض ثلاثي الأبعاد غير مدعوم على هذا المتصفح حالياً', 'WebGL 3D context is unavailable on this browser')}
             </div>
             <p className="text-xs text-stone-400 max-w-md">
               {txt(
-                'يرجى تفعيل تسريع الرسوميات في المتصفح لمعاينة الزجاجة الكريستالية وتفكيكها.',
-                'Enable hardware acceleration in browser settings to inspect the 3D crystal flacon.',
+                'يمكنك استخدام شريط الأدوات المخبرية أدناه لفتح الحاسبات وصفحات المعلومات مباشرة.',
+                'Use the lab equipment bar below to open any calculator or information page directly.',
               )}
             </p>
           </div>
         )}
 
-        {/* Solid Collapsible Control Strip (no backdrop-blur over WebGL canvas) */}
-        {!controlsCollapsed && !webglUnavailable && (
-          <div className="bg-stone-900 border-t border-stone-800 px-4 py-3.5 text-xs text-stone-200 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-            {/* Scent Elixir Shade */}
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-[11px] font-bold text-amber-400 flex items-center gap-1">
-                <Droplets className="w-3.5 h-3.5" />
-                <span>{txt('لون الإكسير:', 'Elixir:')}</span>
+        {/* Solid Collapsible Bottom Control Dock (no backdrop-blur over WebGL canvas) */}
+        {!controlsCollapsed && (
+          <div className="bg-stone-900 border-t border-stone-800 px-4 py-3.5 text-xs text-stone-200 space-y-3">
+            {/* Clickable 3D Workbench Equipment Quick Bar */}
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+              <span className="text-[11px] font-bold text-amber-400 flex items-center gap-1 shrink-0 pe-1">
+                <FlaskConical className="w-3.5 h-3.5" />
+                <span>{L('bench_equipment')}</span>
               </span>
-              {ELIXIR_PRESETS.map((p) => (
-                <button
-                  key={p.id}
-                  type="button"
-                  onClick={() => setPresetId(p.id)}
-                  className={`px-2.5 py-1 rounded-lg border text-[11px] font-semibold flex items-center gap-1.5 cursor-pointer transition-colors ${
-                    presetId === p.id
-                      ? 'bg-stone-800 border-amber-400 text-white'
-                      : 'bg-stone-950 border-stone-800 text-stone-400 hover:text-white'
-                  }`}
-                >
-                  <span className={`w-2.5 h-2.5 rounded-full ${p.accentCss}`} />
-                  <span>{currentLang === 'ar' ? p.nameAr : p.nameEn}</span>
-                </button>
-              ))}
-            </div>
-
-            {/* Camera & Geometry Actions */}
-            <div className="flex flex-wrap items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setExploded((v) => !v)}
-                className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold flex items-center gap-1.5 cursor-pointer transition-colors ${
-                  exploded
-                    ? 'bg-amber-600 text-white border-amber-500'
-                    : 'bg-stone-950 text-stone-300 border-stone-700 hover:border-amber-500'
-                }`}
-              >
-                <Layers className="w-3.5 h-3.5" />
-                <span>{exploded ? txt('تجميع الزجاجة', 'Assemble Flacon') : txt('تفكيك هندسي', 'Exploded View')}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setAutoRotate((v) => !v)}
-                className={`px-3 py-1.5 rounded-xl border text-[11px] font-semibold flex items-center gap-1.5 cursor-pointer transition-colors ${
-                  autoRotate
-                    ? 'bg-stone-800 text-amber-300 border-amber-500/60'
-                    : 'bg-stone-950 text-stone-400 border-stone-700'
-                }`}
-              >
-                <RotateCw className="w-3.5 h-3.5" />
-                <span>{autoRotate ? txt('دوران تلقائي', 'Auto Orbit') : txt('تثبيت', 'Static')}</span>
-              </button>
-
-              <div className="flex items-center gap-1 bg-stone-950 border border-stone-800 rounded-xl p-1">
-                <Camera className="w-3.5 h-3.5 text-stone-400 mx-1" />
-                {(
-                  [
-                    ['hero', txt('منظور', 'Hero')],
-                    ['plaque', txt('اللوحة', 'Plaque')],
-                    ['crown', txt('الغطاء', 'Crown')],
-                    ['nozzle', txt('البخاخ', 'Nozzle')],
-                  ] as Array<[CameraPresetId, string]>
-                ).map(([cid, label]) => (
+              {LAB_EQUIPMENT.map((eq) => {
+                const EqIcon = eq.icon;
+                const isHover = hoveredEquipmentId === eq.id;
+                return (
                   <button
-                    key={cid}
+                    key={eq.id}
                     type="button"
-                    onClick={() => setCameraPreset(cid)}
-                    className={`px-2 py-0.5 rounded-lg text-[10px] font-bold cursor-pointer ${
-                      cameraPreset === cid ? 'bg-amber-700 text-white' : 'text-stone-400 hover:text-white'
+                    onMouseEnter={() => setHoveredEquipmentId(eq.id)}
+                    onMouseLeave={() => setHoveredEquipmentId(null)}
+                    onClick={() => openEquipmentDestination(eq)}
+                    title={txt(eq.descAr, eq.descEn)}
+                    className={`px-2.5 py-1.5 rounded-lg border text-[11px] font-semibold whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer transition-colors ${
+                      isHover
+                        ? 'bg-stone-800 border-amber-400 text-amber-300'
+                        : 'bg-stone-950 border-stone-800 text-stone-300 hover:border-amber-500/60 hover:text-white'
                     }`}
                   >
-                    {label}
+                    <EqIcon className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <span>{txt(eq.nameAr, eq.nameEn)}</span>
+                    <span className="text-[9px] text-stone-500">
+                      {eq.category === 'calculator' ? txt('حاسبة', 'Calc') : txt('معلومات', 'Info')}
+                    </span>
                   </button>
-                ))}
-              </div>
+                );
+              })}
             </div>
+
+            {!webglUnavailable && (
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+                {/* Scent Elixir Shade */}
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[11px] font-bold text-amber-400 flex items-center gap-1">
+                    <Droplets className="w-3.5 h-3.5" />
+                    <span>{txt('لون الإكسير:', 'Elixir:')}</span>
+                  </span>
+                  {ELIXIR_PRESETS.map((p) => (
+                    <button
+                      key={p.id}
+                      type="button"
+                      onClick={() => setPresetId(p.id)}
+                      className={`px-2.5 py-1 rounded-lg border text-[11px] font-semibold flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap shrink-0 ${
+                        presetId === p.id
+                          ? 'bg-stone-800 border-amber-400 text-white'
+                          : 'bg-stone-950 border-stone-800 text-stone-400 hover:text-white'
+                      }`}
+                    >
+                      <span className={`w-2.5 h-2.5 rounded-full ${p.accentCss}`} />
+                      <span>{txt(p.nameAr, p.nameEn)}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {/* Camera & Geometry Actions */}
+                <div className="flex flex-wrap items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setExploded((v) => !v)}
+                    className={`px-3 py-1.5 rounded-xl border text-[11px] font-bold flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap shrink-0 ${
+                      exploded
+                        ? 'bg-amber-600 text-white border-amber-500'
+                        : 'bg-stone-950 text-stone-300 border-stone-700 hover:border-amber-500'
+                    }`}
+                  >
+                    <Layers className="w-3.5 h-3.5" />
+                    <span>{exploded ? txt('تجميع الزجاجة', 'Assemble Flacon') : txt('تفكيك هندسي', 'Exploded View')}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setAutoRotate((v) => !v)}
+                    className={`px-3 py-1.5 rounded-xl border text-[11px] font-semibold flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap shrink-0 ${
+                      autoRotate
+                        ? 'bg-stone-800 text-amber-300 border-amber-500/60'
+                        : 'bg-stone-950 text-stone-400 border-stone-700'
+                    }`}
+                  >
+                    <RotateCw className="w-3.5 h-3.5" />
+                    <span>{autoRotate ? txt('دوران تلقائي', 'Auto Orbit') : txt('تثبيت', 'Static')}</span>
+                  </button>
+
+                  <div className="flex items-center gap-1 bg-stone-950 border border-stone-800 rounded-xl p-1">
+                    <Camera className="w-3.5 h-3.5 text-stone-400 mx-1" />
+                    {(
+                      [
+                        ['hero', txt('منظور', 'Hero')],
+                        ['workbench', txt('الطاولة', 'Bench')],
+                        ['plaque', txt('اللوحة', 'Plaque')],
+                        ['crown', txt('الغطاء', 'Crown')],
+                        ['nozzle', txt('البخاخ', 'Nozzle')],
+                      ] as Array<[CameraPresetId, string]>
+                    ).map(([cid, label]) => (
+                      <button
+                        key={cid}
+                        type="button"
+                        onClick={() => setCameraPreset(cid)}
+                        className={`px-2 py-0.5 rounded-lg text-[10px] font-bold cursor-pointer whitespace-nowrap shrink-0 ${
+                          cameraPreset === cid ? 'bg-amber-700 text-white' : 'text-stone-400 hover:text-white'
+                        }`}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -680,16 +1692,16 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       {/* Live Spec Footer Note */}
       <div className="bg-amber-50/70 border border-amber-200 rounded-2xl p-3.5 text-xs text-amber-950 flex flex-wrap items-center justify-between gap-2">
         <span className="flex items-center gap-1.5 font-semibold">
-          <Sparkles className="w-4 h-4 text-amber-700" />
+          <Sparkles className="w-4 h-4 text-amber-700 shrink-0" />
           <span>
             {txt(
-              `الزجاجة تعرض لوحة «${formulaTitle || 'عطر شام'}» بتركيز ${formulation.concentrationPercent}% (${formulation.bottleVolumeMl} مل) من معملك الحالي.`,
-              `Plaque reflects "${formulaTitle || 'Sham Signature'}" at ${formulation.concentrationPercent}% (${formulation.bottleVolumeMl} mL) from your active lab.`,
+              `الزجاجة تعرض لوحة «${formulaTitle || 'عطر شام'}» بتركيز ${formulation.concentrationPercent}% (${formulation.bottleVolumeMl} مل) — انقر على أي أداة معملية حولها لفتح حاسبتها أو صفحتها فوراً.`,
+              `Plaque reflects "${formulaTitle || 'Sham Signature'}" at ${formulation.concentrationPercent}% (${formulation.bottleVolumeMl} mL) — click any surrounding 3D tool to open its calculator or info page.`,
             )}
           </span>
         </span>
         <span className="text-[11px] text-amber-800">
-          {txt('اسحب للتدوير أو مرر للتقريب', 'Drag to orbit · Scroll to zoom')}
+          {txt('اسحب للتدوير · مرر للتقريب · انقر على أي أداة للفتح', 'Drag to orbit · Scroll to zoom · Click any 3D tool to open')}
         </span>
       </div>
     </section>

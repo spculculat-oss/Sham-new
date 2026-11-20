@@ -37,9 +37,31 @@ body[data-sham-focus^='main'] footer {
   opacity: 0.94;
 }
 
+body[data-sham-focus] [data-sham-focused='true'] {
+  transition: box-shadow 0.2s ease, outline-color 0.2s ease, border-color 0.2s ease;
+}
+
 body[data-sham-focus] [data-sham-focused='true']:not(input):not(textarea):not(select) {
-  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.28);
+  outline: 2px solid rgba(245, 158, 11, 0.72);
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 4px rgba(245, 158, 11, 0.2),
+    0 10px 24px -6px rgba(217, 119, 6, 0.28);
   border-radius: 0.75rem;
+}
+
+body[data-sham-focus] input[data-sham-focused='true'],
+body[data-sham-focus] textarea[data-sham-focused='true'],
+body[data-sham-focus] select[data-sham-focused='true'] {
+  outline: 2px solid rgba(217, 119, 6, 0.65);
+  outline-offset: 0;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-sham-focus] [data-sham-focused='true'] {
+    transition: none;
+  }
 }
 
 /* تأثير نبض ناعم ولطيف عند التمرير (Hover Soft Pulse Effect) */

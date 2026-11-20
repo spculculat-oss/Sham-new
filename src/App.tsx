@@ -1217,6 +1217,7 @@ export default function App() {
             formulaTitle={formulaTitle}
             batchCode={batchCode}
             formulation={formulation}
+            onNavigate={(tab) => navigateToTab(tab)}
           />
         )}
 
