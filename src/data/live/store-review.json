@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-19T22:27:23.191Z",
+ "updatedAt": "2026-11-20T03:43:39.591Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 517,
-  "warn": 597,
+  "ok": 518,
+  "warn": 596,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-19T22:26:15.493Z",
+  "at": "2026-11-20T03:42:32.375Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,11 +21,11 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.0661,
+    "rate": 13.088,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1041,
+    "listingProducts": 1037,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -37,7 +37,7 @@
     "gone": 0
    }
   ],
-  "rate": 13.0661,
+  "rate": 13.088,
   "prices": {
    "count": 1063,
    "min": 750,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 67811
+  "durationMs": 67246
  },
  "items": [
   {
@@ -4052,24 +4052,14 @@
    "page": "p/gallant-perfume-man-edp-100ml-for-him-grandeur-aromatic-757.html"
   },
   {
-   "sku": "MAI-763",
-   "id": 763,
-   "name": "Zeno by Maison Alhambra – 100 ml for Women",
+   "sku": "MAI-762",
+   "id": 762,
+   "name": "Vanguard by Maison Asrar 100ml EDP Unisex",
    "status": "warn",
    "issues": [
     "غير متوفر عند المورد"
    ],
-   "page": "p/zeno-by-maison-alhambra-100-ml-for-women-763.html"
-  },
-  {
-   "sku": "GRA-767",
-   "id": 767,
-   "name": "Cherry Luxe by Grandeur Tubbees For Her 50ml",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/cherry-luxe-by-grandeur-tubbees-for-her-50ml-767.html"
+   "page": "p/vanguard-by-maison-asrar-100ml-edp-unisex-762.html"
   },
   {
    "sku": "ALW-769",
