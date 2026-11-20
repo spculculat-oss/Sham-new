@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-20T11:25:23.046Z",
- "nextUpdateAt": "2026-11-20T23:25:23.046Z",
+ "updatedAt": "2026-11-20T22:14:17.525Z",
+ "nextUpdateAt": "2026-11-21T10:14:17.525Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -11,7 +11,71 @@
  "sources": [
   {
    "name": "Now Smell This",
-   "count": 3
+   "count": 2
+  },
+  {
+   "name": "Grazia",
+   "count": 2
+  },
+  {
+   "name": "Vietnam.vn",
+   "count": 2
+  },
+  {
+   "name": "Premium Beauty News",
+   "count": 2
+  },
+  {
+   "name": "صدى البلد",
+   "count": 1
+  },
+  {
+   "name": "News.com.au",
+   "count": 1
+  },
+  {
+   "name": "CaFleureBon",
+   "count": 1
+  },
+  {
+   "name": "lematinsports",
+   "count": 1
+  },
+  {
+   "name": "هبة سبور",
+   "count": 1
+  },
+  {
+   "name": "FashionNetwork - The World's Fashion Business News",
+   "count": 1
+  },
+  {
+   "name": "Site des Marques",
+   "count": 1
+  },
+  {
+   "name": "NEWS.am STYLE",
+   "count": 1
+  },
+  {
+   "name": "Auparfum",
+   "count": 1
+  },
+  {
+   "name": "كازا 24",
+   "count": 1
+  },
+  {
+   "name": "Personal Care Insights",
+   "count": 1
+  },
+  {
+   "name": "Exhibition News",
+   "count": 1
+  },
+  {
+   "name": "سكاي نيوز عربية",
+   "count": 1
   },
   {
    "name": "GlobeNewswire",
@@ -27,14 +91,6 @@
   },
   {
    "name": "بوابة أخبار اليوم الإلكترونية",
-   "count": 1
-  },
-  {
-   "name": "Vietnam.vn",
-   "count": 1
-  },
-  {
-   "name": "Grazia",
    "count": 1
   },
   {
@@ -56,73 +112,369 @@
   {
    "name": "SBS",
    "count": 1
-  },
-  {
-   "name": "adobo Magazine",
-   "count": 1
-  },
-  {
-   "name": "BeautyMatter",
-   "count": 1
-  },
-  {
-   "name": "Yahoo! Finance Canada",
-   "count": 1
-  },
-  {
-   "name": "الأيام البحرينية",
-   "count": 1
-  },
-  {
-   "name": "The Detroit News",
-   "count": 1
-  },
-  {
-   "name": "نمبر1 نيوز",
-   "count": 1
-  },
-  {
-   "name": "www.haveagood-holiday.com",
-   "count": 1
-  },
-  {
-   "name": "FASHION Magazine",
-   "count": 1
-  },
-  {
-   "name": "Wisevoter",
-   "count": 1
-  },
-  {
-   "name": "CaFleureBon",
-   "count": 1
-  },
-  {
-   "name": "stupidDOPE",
-   "count": 1
-  },
-  {
-   "name": "صدى البلد",
-   "count": 1
-  },
-  {
-   "name": "Millavois.com",
-   "count": 1
-  },
-  {
-   "name": "Who What Wear",
-   "count": 1
-  },
-  {
-   "name": "FashionNetwork - The World's Fashion Business News",
-   "count": 1
-  },
-  {
-   "name": "Yahoo Finance",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "n1al453l",
+   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBFODJvLXR4MWY0bldHU1ctOURQaGhpVzhPSVYzVmxZaGlFZTFFT0ZBVlRzTmVieHVTVVRqQWRDWTFpUm85ajk4?oc=5",
+   "source": "صدى البلد",
+   "publishedAt": "2026-11-20T21:33:00.000Z",
+   "original": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
+    "en": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد"
+   },
+   "summary": {
+    "ar": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
+    "en": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد"
+   }
+  },
+  {
+   "id": "n1cxt70z",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdWpTT1IzcUFTU1BQaXU5S19McHpVUkRndjJIdTg4azFXUi1vZjR4V3lvZjRVY251QjFUUzVfdnBnQWN1UHk3cEpGa3FyclFlczZDSURtMk5Pak5XeUUzQUxDcWNFakVVWHl3TzB3QVJDQVk0TlhwaDRaX3VZYXNHYktHZFpCc3djb2VlSHNqX1pxbl94R3dnQW84eVNJd0QxUF9PZzZRUTBVaXdzMnhoMGVWcjA3MmxKbldKZWhLdG9nNkVCc2pkTUVKUXNKU2NGUWtBZHh0ZlFwdXBmV3BrSjl2RFQydEMzRkdlQklhMFFxdDE4ZFHSAfsBQVVfeXFMTXhCZ05qMjh1djRpOG54WUJoYVdCcUEyMkpDQ1hNVzdlblNBYWE5LUhBdVlzSFROLXhwbWFmbV82aDVxX1JVSG41cG9qaHdYeWRvQU0xSjV5cWU2blc5d0pqUDBkUllmNzdwNmV0TXo2ZWxtLWdycFZaMjVtS0JKZkUwRzdIcHB0b3VyUk81bUY3TXNMTk9SekZmTUtnNVo5ZEdodURaQTI1d25IQ3FIMkZ2LWl0UzBma2xnX2k0VFh0TTB6R2V5b0VZSkxvNnJvYWNiQUNaMk5OTXM2Q1otU2xNdmJmRTFLYjRHYmZPdHVjMU42N0NIMGlONWs?oc=5",
+   "source": "News.com.au",
+   "publishedAt": "2026-11-20T21:04:05.000Z",
+   "original": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
+   },
+   "summary": {
+    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
+   }
+  },
+  {
+   "id": "nxwueff",
+   "url": "https://nstperfume.com/2026/11/20/the-daily-lemming-1974/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-20T20:17:18.000Z",
+   "original": "The daily lemming",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "The daily lemming",
+    "en": "The daily lemming"
+   },
+   "summary": {
+    "ar": "From Oriza L Legrand, a holiday soap trio: \"Pin de Jérusalem recalls the journey home from the market, pine branches carried through the snow, their woody, camphoraceous freshness filling the entrance hall. Saint-Nicolas evokes a kitchen door left ajar, a tray of biscuits still warm from the oven, and the scent of cinnamon drifting up […]",
+    "en": "From Oriza L Legrand, a holiday soap trio: \"Pin de Jérusalem recalls the journey home from the market, pine branches carried through the snow, their woody, camphoraceous freshness filling the entrance hall. Saint-Nicolas evokes a kitchen door left ajar, a tray of biscuits still warm from the oven, and the scent of cinnamon drifting up […]"
+   }
+  },
+  {
+   "id": "n7wn58x",
+   "url": "https://nstperfume.com/2026/11/20/nomenclature-cardamom-milk-liquid-cotton-melting-snow-new-fragrances/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-20T20:08:15.000Z",
+   "original": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances",
+    "en": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances"
+   },
+   "summary": {
+    "ar": "Niche line Nomenclature has introduced the Ligatures collection, a new trio of layerable fragrances developed by perfumer Frank Voelkl: Cardamom Milk, Liquid Cotton and Melting Snow...",
+    "en": "Niche line Nomenclature has introduced the Ligatures collection, a new trio of layerable fragrances developed by perfumer Frank Voelkl: Cardamom Milk, Liquid Cotton and Melting Snow..."
+   }
+  },
+  {
+   "id": "n1qm1pd7",
+   "url": "https://cafleurebon.com/aura-the-art-perfumery-showcase-2026-gift-bag-winner/?utm_source=rss&utm_medium=rss&utm_campaign=aura-the-art-perfumery-showcase-2026-gift-bag-winner",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-20T20:05:56.000Z",
+   "original": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner",
+    "en": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner"
+   },
+   "summary": {
+    "ar": "AURA The Art Perfumery Showcase 2026 event arrives at a defining moment of economic strength for Italian perfumery on the global stage. The post AURA The Art Perfumery Showcase 2026 Gift Bag Winner appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "AURA The Art Perfumery Showcase 2026 event arrives at a defining moment of economic strength for Italian perfumery on the global stage. The post AURA The Art Perfumery Showcase 2026 Gift Bag Winner appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "n1r477xz",
+   "url": "https://news.google.com/rss/articles/CBMinwRBVV95cUxNa1ZDN0tqc3pfVERFT0tLTlRFZk1URjJVOXRXTUVJcXEtVm5DeXVaQzZaeEtPVXU5elRvaXFiTVJjWk16TXYwTDhkT2FyUjBEdWRndkp6NkxWZS1oSHhOLUNPaWlXQVUyZ2twcjNlb2N3WlZxeEZ6VEppaUtDejBwaTlycEF2bWpTR05JM0Zsem5hdXFHb2xGbVdEaHhCNUUwMlB4eXlxemJST0dpYzZQWG9FVjk1SjktYVdXWEdNaEdUc2thR3lheXVlXzlQQ0h0Y25Id3VhaFFoSUc5cDIyN2VNWU14ckt4WXVraWs5aDRpY3BsUnViZXRRNVZBWXVIc0xKcTB4bENhcnZwWWE2ZC1nTXhhR2VFOEpSVWJQV3ZUVUU3Z2VfdG53cFNqTFFNekI4LTVpUWZuTFF6RlpXMmVYcll5T3ZidFlLZGxxaGRJRkszQWc2aTlEUXJTaGpJRXpxR09fckZBX0FhQnJHblN6UUtFLWk1V2N4bjk1NW83WXdnV3lYdG5kY0E4QmswaVRFZHFtcGxkZ1hlNVdnMlpsU1U2cHFKWXFYbFZDbGxPNWpTY045dE9hVjA0d2N6bmNNWHlnLUNtU1JHcTZfOXUyWlVDMGp1MFZLUnd4REpqN3ViaDMyZ01TTXVzOGpTQkxuSXdyNTV0amFoRnNBQVF3UkhvY0tTaGRlem5TaUZtTlFRMHk3Mi1QR1RBRkE?oc=5",
+   "source": "lematinsports",
+   "publishedAt": "2026-11-20T20:05:00.000Z",
+   "original": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
+    "en": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي"
+   },
+   "summary": {
+    "ar": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
+    "en": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي"
+   }
+  },
+  {
+   "id": "n76kx43",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-20T19:33:55.000Z",
+   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   },
+   "summary": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   }
+  },
+  {
+   "id": "n1elvg45",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYkl1aEVycnF1bHpTTmxKcGpobjB6SXpsU0VKZGdSczNaemJxREE2d003OFJYYVpkQlNWLU4tRVViRlhHNXF0ei1HYjNLaWpyVXg0Q3N0YlViQXctX0VCX2hjWjV6TkFmeXp5aGN2al9Xa3lZMzdaTzhiWnVLUnRnWTI2TTZVQTJzUkw2QQ?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-20T19:33:51.000Z",
+   "original": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
+    "en": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\"."
+   },
+   "summary": {
+    "ar": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
+    "en": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\"."
+   }
+  },
+  {
+   "id": "n282nvi",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE90aW5fVDNscVVwbjlndkQ4LWhKOHVIdXVMU3pKYWt1bldRRUZyWFcxeUZnTEN1RHU1TDlYbVlZUExiX1JOSVVWeFhuZk5SZWZsUE5mVWNxQUo?oc=5",
+   "source": "هبة سبور",
+   "publishedAt": "2026-11-20T19:32:34.000Z",
+   "original": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
+    "en": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية"
+   },
+   "summary": {
+    "ar": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
+    "en": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية"
+   }
+  },
+  {
+   "id": "n1j6qurz",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNenhDcDVzWXU5REU1NndSekFMSU8wY2FSWHd2SzhXOEtGeFZxbDhyUFd4bVVMSzdVLUwwUEJZdzNYS3A1Q09md0JxUks0dk5wOGdvU2cyYVY4ZFhIM290TjRSTFFGaUNrOVFJS3MwQWRPUTFLQ0N4MzZQbHRfMklmZGxZYVFuT0JnQzNhelNLVERrdlBpUElROEtnNmMtbjZhVVJVVjRhNDg?oc=5",
+   "source": "FashionNetwork - The World's Fashion Business News",
+   "publishedAt": "2026-11-20T18:25:29.000Z",
+   "original": "In Milan, Jil Sander fragrances blends scent, art, and music",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "In Milan, Jil Sander fragrances blends scent, art, and music",
+    "en": "In Milan, Jil Sander fragrances blends scent, art, and music"
+   },
+   "summary": {
+    "ar": "In Milan, Jil Sander fragrances blends scent, art, and music",
+    "en": "In Milan, Jil Sander fragrances blends scent, art, and music"
+   }
+  },
+  {
+   "id": "n6mx6nk",
+   "url": "https://www.premiumbeautynews.com:8443/en/interparfums-raises-2026-forecast,28570",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-20T18:23:07.000Z",
+   "original": "Interparfums raises 2026 forecast and expects strong growth in 2027",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Interparfums raises 2026 forecast and expects strong growth in 2027",
+    "en": "Interparfums raises 2026 forecast and expects strong growth in 2027"
+   },
+   "summary": {
+    "ar": "Interparfums SA, which manages global fragrance licenses for brands including Jimmy Choo, Montblanc, and Lacoste, as well as a portfolio of its own brands such as Rochas, Annick Goutal, and Solferino, announced on Thursday, November 19, that it had slightly raised its 2026 revenue target to EUR 880 million, up from EUR 870 million previously. The French company, a subsidiary of US-based Interparfums, Inc., also anticipates strong growth in 2027. \"After a mixed performance during the first... - I",
+    "en": "Interparfums SA, which manages global fragrance licenses for brands including Jimmy Choo, Montblanc, and Lacoste, as well as a portfolio of its own brands such as Rochas, Annick Goutal, and Solferino, announced on Thursday, November 19, that it had slightly raised its 2026 revenue target to EUR 880 million, up from EUR 870 million previously. The French company, a subsidiary of US-based Interparfums, Inc., also anticipates strong growth in 2027. \"After a mixed performance during the first... - I"
+   }
+  },
+  {
+   "id": "n1mi87mf",
+   "url": "https://www.premiumbeautynews.com:8443/fr/interparfums-releve-ses-previsions,28569",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-20T18:14:20.000Z",
+   "original": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027",
+   "lang": "en",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027",
+    "en": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027"
+   },
+   "summary": {
+    "ar": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè",
+    "en": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè"
+   }
+  },
+  {
+   "id": "n1u22dx0",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUnZUNnNQbmsyNFZ3RGF0djZHdkF2bjA4Qzh6bm5KQXBIbUlEVnNhbnNkRlJFTTRvOGhtRjVGWmt4bzhyelAxYjQxa0hBYllLSVB6OUlEYjRrX3l5TUFDTWxWNGM4UzFmR2RFb01sZWdLb3paNmYtakxMLVE1OFRkTHZVbWs4WHVDUmI3ZnZIRkx5cFFsMkxiWThaTzNfSUdhdktqU2ljM0wtemV1aF9lWi16X2ozanFZbnpTY2xkQUpJcklR?oc=5",
+   "source": "Site des Marques",
+   "publishedAt": "2026-11-20T18:02:00.000Z",
+   "original": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
+    "en": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes"
+   },
+   "summary": {
+    "ar": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
+    "en": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes"
+   }
+  },
+  {
+   "id": "ntt0h9k",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5JWUFBeG4xNlNRQTRiNVBCTWlHSHQ3dDZESlQ5N3ZuVVZJbkRoeTRZN2h3ZFgwcVpndTlWd2Y2eHp5bTAza3IxU2VpVURpUQ?oc=5",
+   "source": "NEWS.am STYLE",
+   "publishedAt": "2026-11-20T16:56:42.000Z",
+   "original": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
+    "en": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry"
+   },
+   "summary": {
+    "ar": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
+    "en": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry"
+   }
+  },
+  {
+   "id": "n94g9qv",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQ1RnalduMEJ3cGJZamRVS0hXNG1UZjQ4YTBROVVsVEp3YTlDYzdQOFlvOTAycjM1ZlhubnpoOVYzYmowRFVvZklXZE4xM2FwM251RWdEZnluMlJqdUVoS1MzTnJEZ2QzRzEtX3VNYkctUWl4WF92Y1h4WnJGZnV3U25TVzhneWFwXy02UVd0TDU3TC04bGhzWVV6Q1Y3SGhSVUxDcWlCTEptWVV0TEVzZThVcWpoODAwbDh3MDRJS1Nzejd3c0hXX0w5TGd6N3BIWnpNQ0VobkxITXd2MDBTUHNGWlh0Z1U?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-20T16:37:37.000Z",
+   "original": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
+   },
+   "summary": {
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
+   }
+  },
+  {
+   "id": "n53l08m",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
+   "source": "Auparfum",
+   "publishedAt": "2026-11-20T15:55:58.000Z",
+   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   },
+   "summary": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   }
+  },
+  {
+   "id": "n145pv89",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9Za3FhSmVrZkZpRlBKbExoYkJTVzZKRXhmR285NlNSN3ZVUFN5OHVVSzVYa3ZsUGhxczBubWdkWUJ6eWpyc1AzRkNxeHA?oc=5",
+   "source": "كازا 24",
+   "publishedAt": "2026-11-20T15:54:44.000Z",
+   "original": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
+    "en": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»"
+   },
+   "summary": {
+    "ar": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
+    "en": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»"
+   }
+  },
+  {
+   "id": "n1pfvlql",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX1IyaVhFUDBsYWtxVTIxWkFneHFTOVRZTW1fUWN5OUh5d0lpeVVvQWRYazRvUk5SUEpYbm1TSXF4Zjl4Q3FHb3FsSE9PZ3lfeTRLT3QyM2F6UVNJSzQ5bkZGMVlXM0V3bTZiTDlELVh4TGl1Sy1ZQWY4WC00eDhuMTBuM20?oc=5",
+   "source": "Personal Care Insights",
+   "publishedAt": "2026-11-20T15:44:21.000Z",
+   "original": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
+    "en": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery."
+   },
+   "summary": {
+    "ar": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
+    "en": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery."
+   }
+  },
+  {
+   "id": "n1mk76p6",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeldKelpOX2dzbjFiTkMtaEJZSzZqTGhhVzJFWF8waWZNVHNoOUYtclFpd2U1YUpwaHhGN1lmbGhOTkdGemJWZjVaa0sxQTgyckJOMl82X0Z5NklsOFBqYUV2dEN5bnA2X2NrS2xXSXIzZlEtVGFJMEpzek1NNXRKeU9zT0ViMlhUQ1RCUndydnNzVWI4cDZWOWI3VFV2cDRpWlN5X3hn?oc=5",
+   "source": "Exhibition News",
+   "publishedAt": "2026-11-20T15:43:53.000Z",
+   "original": "International Confex signs Equal Strategy as official scent partner for 2027",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "International Confex signs Equal Strategy as official scent partner for 2027",
+    "en": "International Confex signs Equal Strategy as official scent partner for 2027"
+   },
+   "summary": {
+    "ar": "International Confex signs Equal Strategy as official scent partner for 2027",
+    "en": "International Confex signs Equal Strategy as official scent partner for 2027"
+   }
+  },
+  {
+   "id": "nt5nk0n",
+   "url": "https://news.google.com/rss/articles/CBMirwNBVV95cUxPWjVvcGk4YXYyWDA4RFU4WVlGNDlhN1FaNkRzR2wzU3h0MkVQVjcwQjJhUm9oUHJhbGJSRi1Sb1hPbU1pZHYxNWlhdmFydXFqUnZQNlUtdF9KYThCT3hjR3Q5bWZmbnNMUldyQzA2NUJGUGdUYy1Fek5NWlR6MFJvTFY2TEJ4TGlGM1paeUx6Qk5sc3pXVzBodkRtY3g2VmUxLWRic05QR3NSUVdRUlBPVVAwZDVncEJybkRvTmgtdVJhR2VRdmFCUFR6LXhFOGtnNHJBanZyak4wYy1pY2lQajY0WTk3TXIwaFJZQ2dNODZTMEQxOGVPc1RGcUN6TjRuWnNEQWhrdHFBZ0ZQTDluZDJvb2k5aklpcDdQdGFaTS1XQ1BQdjVFb2dTVjlWbVgxMG1MbjQyRGkyWjdjZXhHVmIwdzBPYUU0Z2xhQWdWc2wxdnNaamxGd1R3bHhtWUU2NURpWDlNUHdWaFk1VGJ0M1M5dnVEdFB4dUpMdUVfM0VtNW9SYlc1blRCeEk1M0dEZ096dkFnZ2VJdXhDVFBJQWFjVnRFakItNXEzWlpCY9IBtANBVV95cUxNYy1PeG92UlhHT1loLUN4Nnd2eFRwSl9xd2hPd3E1RmFTTk9xSnFiaE83ZUZrTDAyVGplbk5MeFlVaEZ0SFVmQWpIOGdrSTRaTGxPZ0NWOS1ZV2d0emNEQVI5bUlmWU00RlhzaTg4OUp4VUZPX3pvVklTbnBrT21Kb1ZmT1l0V0VmTUhWVGVFQjRkUldEbXRTVm1uVzR0NjQwTk1Nb0FhanJRM0szTGVrMzd0eUUxUVJUQzNUZHhiOWg2Z2w4YWdqN2NfMmkzQThlYlRMMlE0cmNhN2phcWo1YnF1dzkycTYtVkRaZVc3OFc2Mm5TaTJJdGhodlNWdTB4RlFJTnlPY3lBTWVIaG9DS2RJblBRajBKSEVCVVotU0FpVkNWbWJjOEQ5UTMyNWFHdGxsYk1iNmlveG1lakhHUVhqZGlCRE44dDJDNmQ3REZEYTVVWFg2eUxRcEIxMFJhdVhvSjBacFJiYzRXTHljY0RpazVUaXBPWWZVM2sxTGV0NGY4YldFQ0cwZDdvOGVuRHA3aDdrWGhPUU13ekU1NWRsTWN5bmNRMXZOMTdBdV8wWUFp?oc=5",
+   "source": "سكاي نيوز عربية",
+   "publishedAt": "2026-11-20T14:55:46.000Z",
+   "original": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود"
+   },
+   "summary": {
+    "ar": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود"
+   }
+  },
   {
    "id": "n1smwbwr",
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM3B4YVBvM0IwcldJTWNETTk1Ympac010QjZjR21VYVV6ZkxsdUJQaEFfLURrUUZWNUdMTUhZbE9VdVFFd0ZPU1d0RTF6SXBBbkhrdmprdTJVLTA2Mk5zTjE3YU9TQkd4TFhaYXlQVllhcURtVVZxMjF4LUtrWmp5dXdiNWFhSl8yYklsYXZPbDJwc1YzSWphSHY1ZFBrNFhOZVFxUXNOVFpHMFZoUmVCQ05qNHM5N0pUZEJkZ0tER2FBSUR1aV9Qc3pxZXhtaFUyYUxfQnJodFN4dTg3cjNyYi1uWHB4V1FneENQOTR5b05RWDRG?oc=5",
@@ -214,24 +566,6 @@
    }
   },
   {
-   "id": "n76kx43",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-20T09:41:08.000Z",
-   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   },
-   "summary": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   }
-  },
-  {
    "id": "no9j0b9",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDJjZG5IMkdVYjdFWDJwUklqc0hybWZEenR5bFNkYzd5SzJJVFFLTEpJQ1pObWlnSm1jOE5ZZWFSclBFNHVud1l1Y3FfNk9mcVdMSF9SSXNjNkhCQ3ZVdk1aajdSMDJCc2U4TUgwRi1fM3J6V1BvSWQ3bG1uOFN2bW94enNjRkcxdVBjS043Vk9JNTNOdkdGZnlFOTdXSkJQcXNWUUhMTG54MW5fbDZPQmVua0dFdFdRR3RpOWZaRE8yQTlVLUpCQklYVdIB0AFBVV95cUxNZENNWDE1VFIxbW5qYU16a2xpT0RuRmhuamdUd2pHR0JrMXl3OFE1M1dteEgtd01PdGVpSTVQdDEySTN6ckVWZ2FSUUkxUzlESFJRbkx3dGw3aEVMaG1NVG0yai05VHBzZ2tCUFVqS2pWUmhkQzBkTDM4dUw2SWo5Q3c0dzZOMUpyY0ozZUhjYUVkamtMN093bnV6ajlCVF9JQTZub1pKTEdWN0hCeWdvUXdhaDhGRDdXQjRkRDNyeWc5bmxzSUJwSGx6Vmg0cHJv?oc=5",
    "source": "Prestige Online - Singapore",
@@ -319,348 +653,6 @@
    "summary": {
     "ar": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر",
     "en": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر"
-   }
-  },
-  {
-   "id": "nkg5y68",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVzJyVDE5RVZkcGRNclVDdWFkU25sRlMxZXB1VVdCWVZJTzhhZXpfTXZvT21xSnNrai0xSGNKaHVoZVpOSy1vc09KX0xTS2tRYkdNOFhZX1IybERUMzQ1NEdYaDlzRnNEWHBIcFJfdVJEbTJMU3pKSGhEZDFzdmhpU0xDa0E5SEVZdTBqRWhnMkxsaUx6eEhKeEUwYTdJby1L?oc=5",
-   "source": "adobo Magazine",
-   "publishedAt": "2026-11-20T03:45:11.000Z",
-   "original": "Exploring the art of everyday fragrance with La Craux",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Exploring the art of everyday fragrance with La Craux",
-    "en": "Exploring the art of everyday fragrance with La Craux"
-   },
-   "summary": {
-    "ar": "Exploring the art of everyday fragrance with La Craux",
-    "en": "Exploring the art of everyday fragrance with La Craux"
-   }
-  },
-  {
-   "id": "ntr3gd1",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPU29OSjhiVV9rODFzZF93OGd1YmRNczlnSmtHb0p2ZThtWFZRRHZBZFZXWGlEQ3ZHckk0V3ZDSGFxVG1pWjNaUDZ0M29wLTZTNmhray1HRzROQ25ELVB1aVdPVnNCOFBmWkVKbVhOOGhCNFRyaXM3V3dsNGhNeTE1NA?oc=5",
-   "source": "BeautyMatter",
-   "publishedAt": "2026-11-20T01:27:07.000Z",
-   "original": "How Chinese Fragrance Brands Are Moving Beyond MBTI Marketing",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "How Chinese Fragrance Brands Are Moving Beyond MBTI Marketing",
-    "en": "How Chinese Fragrance Brands Are Moving Beyond MBTI Marketing"
-   },
-   "summary": {
-    "ar": "How Chinese Fragrance Brands Are Moving Beyond MBTI Marketing",
-    "en": "How Chinese Fragrance Brands Are Moving Beyond MBTI Marketing"
-   }
-  },
-  {
-   "id": "nof6ry5",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9aNDlzNlBzS3JueFg4eWdXLXFtc2IyNDRUZ053dTF0aGNuNnVzWGg0bUdhUFViTWp4VS05bEItQ0dKTVJCbjJjcFNna1F5X3pw?oc=5",
-   "source": "Yahoo! Finance Canada",
-   "publishedAt": "2026-11-19T23:45:37.000Z",
-   "original": "International Flavors & Fragrances Inc. (IFF) Stock Price, News, Quote & History",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "International Flavors & Fragrances Inc. (IFF) Stock Price, News, Quote & History",
-    "en": "International Flavors & Fragrances Inc. (IFF) Stock Price, News, Quote & History"
-   },
-   "summary": {
-    "ar": "International Flavors & Fragrances Inc. (IFF) Stock Price, News, Quote & History",
-    "en": "International Flavors & Fragrances Inc. (IFF) Stock Price, News, Quote & History"
-   }
-  },
-  {
-   "id": "nbcmxvd",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3ZFVfeUdKamFJZWpGaWhDbGtSUjRHYTUwZkhDRFNDX1U2U3dNNktvU1NWLTNRRkJxNDNhLVZLbTkzTmFWQkZJdm1jV19Dck5QbHJHTHExQnNZSUZCRl9XMW05cHNPN0k?oc=5",
-   "source": "الأيام البحرينية",
-   "publishedAt": "2026-11-19T22:41:15.000Z",
-   "original": "مستحضرات التجميل تدخل «العطور العربية» لأول مرة بمشاركة 70 علامة",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "مستحضرات التجميل تدخل «العطور العربية» لأول مرة بمشاركة 70 علامة",
-    "en": "مستحضرات التجميل تدخل «العطور العربية» لأول مرة بمشاركة 70 علامة"
-   },
-   "summary": {
-    "ar": "مستحضرات التجميل تدخل «العطور العربية» لأول مرة بمشاركة 70 علامة",
-    "en": "مستحضرات التجميل تدخل «العطور العربية» لأول مرة بمشاركة 70 علامة"
-   }
-  },
-  {
-   "id": "npuzrje",
-   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTHZWc212SGY2QW90aUF4VEh0NWR5OHE5Z183aGFHT3VkNUpzb2ZmZktZZ0s1WnVweHM3aEVOQXM1Wm1VVmhoeUQtX1dzN05DY1cxNExkMXNEd2tyOUx0Vjh1SjIzWVkwNUpJRmFScXcyX0p6QU5WSmg2dzZWclk3RFRtN3NvYXlHdFdCR1VJdTdSNzNkNFdvOVpyYjlYVzEyUHdEbW5EUEtsMTJfdllsUE5KSG1sRjc4Tl9hQ2xfLWtUa25wWDZWSmRZYXJsNTRRODZGMzFzT3R1N29rVHd1ZnU3NTFPb1dxZVBsS18xSzJtYjY1dm5MOVljVjlaN28?oc=5",
-   "source": "The Detroit News",
-   "publishedAt": "2026-11-19T22:37:33.000Z",
-   "original": "At Annual Meeting, Fragrance Creators Association & Members Commit to Lead Together to Advance 2027 Policy Priorities",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "At Annual Meeting, Fragrance Creators Association & Members Commit to Lead Together to Advance 2027 Policy Priorities",
-    "en": "At Annual Meeting, Fragrance Creators Association & Members Commit to Lead Together to Advance 2027 Policy Priorities"
-   },
-   "summary": {
-    "ar": "At Annual Meeting, Fragrance Creators Association & Members Commit to Lead Together to Advance 2027 Policy Priorities",
-    "en": "At Annual Meeting, Fragrance Creators Association & Members Commit to Lead Together to Advance 2027 Policy Priorities"
-   }
-  },
-  {
-   "id": "nn3rhx6",
-   "url": "https://news.google.com/rss/articles/CBMi6wRBVV95cUxOY3ZQd0loOG5oVW1wTndTdF9aaXRrSWtkRlB5UWs2dG9DdUo0aWxYSjhDbXg4OHVoZUtBMmVLWFhrM3RXbnVFRWRiUzZteG5PNF9ZSzJuaU84bDVqREh0RWRXMWFIMi1Eb0F5UFh3cDUwaWMxU1kzZmRhM18xVDZUeFB3RUUtbkYxcFRvZ3pRYlZZNS0xLXYxakpkZU1mUkhsajhkNV9HN1hFSWZCWFFXdUFOOWE4ZV9aYVdPWXB1dHg2V1M4QnUwV1YxdXVEbVdCNW9feDhtN0ZZcC0yRWlTczY5d1ZKc2hPengzWEcyX3NkVkNtdDI0SXlidklibDQxbEtwN2dtSlNoU0FmWEJLWll6TjhnRThKT295cmpzYm1ncnZqN1k4UDdFSzlTcEdxUHNzM0FqYWRGcldCR1dsLXZiaVdtS1JJMU91OWJSdUJrVGUxSU9vclFNWGp4c2R0V003bExsZlVqVVRKeUw1SXY2V2lKQkJ1NVVTZV9zTGR5QXpFbW1HQm8taC12QVRMckhWclRMYjhFaWFZMnJBcDl0Q0NYdjJrN0VhWUh2TzJ5UXdKT3VPNkF1YU56MzZvcURYV0wzQUphYjNaWVlrLWNmYUNlVThyVEItOXZVQnZkak1teXd1LXhpNFBHQkpRcEpRZF95OEQwVzdsYTh3dFFPOU8wbm5ENUVLUW13dFNsSi11MWViY0ljcjQySWxfNzQtekE0S2JkTHFQRC1aWnFiWkdra1dQUHBFX3NKcEJEWHhPa28yV0MydE12VXBvc3NHZ2Zkb2lyaktKX0FPc3hrcmlLRkpTWTd3?oc=5",
-   "source": "نمبر1 نيوز",
-   "publishedAt": "2026-11-19T21:22:00.000Z",
-   "original": "بيت للعود وصالون ثقافي.. مدينة الفنون والثقافة تفتح أبوابها بعروض تعكس تاريخ مصر",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "بيت للعود وصالون ثقافي.. مدينة الفنون والثقافة تفتح أبوابها بعروض تعكس تاريخ مصر",
-    "en": "بيت للعود وصالون ثقافي.. مدينة الفنون والثقافة تفتح أبوابها بعروض تعكس تاريخ مصر"
-   },
-   "summary": {
-    "ar": "بيت للعود وصالون ثقافي.. مدينة الفنون والثقافة تفتح أبوابها بعروض تعكس تاريخ مصر",
-    "en": "بيت للعود وصالون ثقافي.. مدينة الفنون والثقافة تفتح أبوابها بعروض تعكس تاريخ مصر"
-   }
-  },
-  {
-   "id": "n16itca6",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWUxSeXpJVG1teEZlSExjb3Jzd0FGLW8zcmZLS0xJaG5vYmhVQ0ozMDhSM3drUHVsZ1loTnRGeFI1Q0FrS3lpQVZ5U2ZWTHV1Q2Q1eGVsTWQyQVdtbnZKUE1JbG43TVVJSHFweWxydzRoSUtCOUwxM0pFbU54aXh4ZEtpNC1nMHFxdEZXQ2FVdExjWTlI?oc=5",
-   "source": "www.haveagood-holiday.com",
-   "publishedAt": "2026-11-19T20:23:14.000Z",
-   "original": "MUCHA Releases Its First Eau de Parfum in Three Scents on November 19",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "MUCHA Releases Its First Eau de Parfum in Three Scents on November 19",
-    "en": "MUCHA Releases Its First Eau de Parfum in Three Scents on November 19"
-   },
-   "summary": {
-    "ar": "MUCHA Releases Its First Eau de Parfum in Three Scents on November 19",
-    "en": "MUCHA Releases Its First Eau de Parfum in Three Scents on November 19"
-   }
-  },
-  {
-   "id": "n18856xu",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nNDh0aUc0TEVUQ0s5SmswdHlpUU5uNUhqWEtCdHVUeGFpMHVteXg5NUpqVmNKSExlWHRTd0NucHk3V3pzdms5ei1pRnZndnd5WW5GYVBncS1Pa0tsN3AwTVdvQnZvbEhCTVFCWVlCMVVxZkE?oc=5",
-   "source": "FASHION Magazine",
-   "publishedAt": "2026-11-19T19:19:26.000Z",
-   "original": "Inside Dioriginals, Dior’s Mission to Restore Its Most Beloved Perfumes",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Inside Dioriginals, Dior’s Mission to Restore Its Most Beloved Perfumes",
-    "en": "Inside Dioriginals, Dior’s Mission to Restore Its Most Beloved Perfumes"
-   },
-   "summary": {
-    "ar": "Inside Dioriginals, Dior’s Mission to Restore Its Most Beloved Perfumes",
-    "en": "Inside Dioriginals, Dior’s Mission to Restore Its Most Beloved Perfumes"
-   }
-  },
-  {
-   "id": "n1u2026h",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZUpQWmM0Q1lxSy1vT1BmMGtvV2tDVjBmVVR6aFJGNkg1aEVwVmUyQ01lX3Q4NDRSQlI1WUxvenU4V1F5TWRLc05uZ2JwRUhyTGJYMFVUN08xbk5uNEc4MElMVHV6UjAyYkxqeFN0VlJ4WjZRSUJNYXNwNEl4YUJZNTBjQzZDVk5tU3lFQw?oc=5",
-   "source": "Wisevoter",
-   "publishedAt": "2026-11-19T18:37:50.000Z",
-   "original": "So-Le Studio Unveils Scented Leather Object Oracle",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "So-Le Studio Unveils Scented Leather Object Oracle",
-    "en": "So-Le Studio Unveils Scented Leather Object Oracle"
-   },
-   "summary": {
-    "ar": "So-Le Studio Unveils Scented Leather Object Oracle",
-    "en": "So-Le Studio Unveils Scented Leather Object Oracle"
-   }
-  },
-  {
-   "id": "noclag2",
-   "url": "https://cafleurebon.com/statik-olfactive-psychedelic-patchouli-review-michael-nordstrand-2026-plus-kaleidoscopic-patchouli-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=statik-olfactive-psychedelic-patchouli-review-michael-nordstrand-2026-plus-kaleidoscopic-patchouli-giveaway",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-19T21:06:28.000Z",
-   "original": "Statik Olfactive Psychedelic Patchouli Review (Michael Nordstrand) 2026+ Kaleidoscopic Patchouli Giveaway",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Statik Olfactive Psychedelic Patchouli Review (Michael Nordstrand) 2026+ Kaleidoscopic Patchouli Giveaway",
-    "en": "Statik Olfactive Psychedelic Patchouli Review (Michael Nordstrand) 2026+ Kaleidoscopic Patchouli Giveaway"
-   },
-   "summary": {
-    "ar": "Statik Olfactive Psychedelic Patchouli honors the rebellious energy of the counterculture era while reimagining patchouli for a new generation The post Statik Olfactive Psychedelic Patchouli Review (Michael Nordstrand) 2026+ Kaleidoscopic Patchouli Giveaway appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Statik Olfactive Psychedelic Patchouli honors the rebellious energy of the counterculture era while reimagining patchouli for a new generation The post Statik Olfactive Psychedelic Patchouli Review (Michael Nordstrand) 2026+ Kaleidoscopic Patchouli Giveaway appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "nmvuunx",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONEVLeWlWS3VObFoyUkxmX1Q4aHZrRmlSVGJKNTh6M3lvcWJpV0VnNDYxWmFEdTdTczJoVWdtTDdpS3ZnRl9jaUpjZ3B6RlU0WXRRd01GbkJITzA4dVFkV1VhNzBMeWc0QldoU3hITnhHdlJFWVJsQVhwdTQ2RGNKRnFDczZKR1R1YXZJQkJtQ2tIMXA5d0lnWVJjczNUX25MUUhiYXJHOEVYakdJLWppWWt4RzVnMExMdU1qUw?oc=5",
-   "source": "stupidDOPE",
-   "publishedAt": "2026-11-19T18:35:39.000Z",
-   "original": "Joe Jonas x Kenneth Cole Inspire Fragrance: Notes, Price and Where to Buy",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Joe Jonas x Kenneth Cole Inspire Fragrance: Notes, Price and Where to Buy",
-    "en": "Joe Jonas x Kenneth Cole Inspire Fragrance: Notes, Price and Where to Buy"
-   },
-   "summary": {
-    "ar": "Joe Jonas x Kenneth Cole Inspire Fragrance: Notes, Price and Where to Buy",
-    "en": "Joe Jonas x Kenneth Cole Inspire Fragrance: Notes, Price and Where to Buy"
-   }
-  },
-  {
-   "id": "n1ehmcuf",
-   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1sdWNCOUpBTkwzQmk0S2lLVnNCN1dEaUEtbmVLaUl0dXQ4enhjX2FGNkxaRHVGbms2NXZ6SWZwZ0hnS0pnVkFJ?oc=5",
-   "source": "صدى البلد",
-   "publishedAt": "2026-11-19T17:55:00.000Z",
-   "original": "مدينة الفنون والثقافة.. صرح عملاق يضم بيت العود وقاعات لتدريب الأوركسترا وصالون ثقافي",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "مدينة الفنون والثقافة.. صرح عملاق يضم بيت العود وقاعات لتدريب الأوركسترا وصالون ثقافي",
-    "en": "مدينة الفنون والثقافة.. صرح عملاق يضم بيت العود وقاعات لتدريب الأوركسترا وصالون ثقافي"
-   },
-   "summary": {
-    "ar": "مدينة الفنون والثقافة.. صرح عملاق يضم بيت العود وقاعات لتدريب الأوركسترا وصالون ثقافي",
-    "en": "مدينة الفنون والثقافة.. صرح عملاق يضم بيت العود وقاعات لتدريب الأوركسترا وصالون ثقافي"
-   }
-  },
-  {
-   "id": "n6urvcq",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOE5ZUHhxbFhjWVVYNE9wT2lUUEVRTnJuMkNEbklCUGJJY090NlZRMGNLUjdpWW1rclJfTmtoWG1FNElrUXotamwzc2pGRFYxTTZhVDh1cUlmVXRaOGducjM5OHNQYnVzaGF2Xy1SUTRBOFZTZjF1SnlNeV90RjFYMFZOZGxmRjIzSXFQb3ZQTWE2X1JEaTc0ag?oc=5",
-   "source": "Millavois.com",
-   "publishedAt": "2026-11-19T17:38:36.000Z",
-   "original": "Millau : la parfumerie Adopt ouvrira ses portes le 10 décembre",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Millau : la parfumerie Adopt ouvrira ses portes le 10 décembre",
-    "en": "Millau : la parfumerie Adopt ouvrira ses portes le 10 décembre"
-   },
-   "summary": {
-    "ar": "Millau : la parfumerie Adopt ouvrira ses portes le 10 décembre",
-    "en": "Millau : la parfumerie Adopt ouvrira ses portes le 10 décembre"
-   }
-  },
-  {
-   "id": "n1roknff",
-   "url": "https://nstperfume.com/2026/11/19/lush-christmas-eve-new-fragrance/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-19T17:33:18.000Z",
-   "original": "Lush Christmas Eve ~ new fragrance",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Lush Christmas Eve ~ new fragrance",
-    "en": "Lush Christmas Eve ~ new fragrance"
-   },
-   "summary": {
-    "ar": "Lush has launched Christmas Eve, a new* fragrance in a limited edition \"Lush Club\" collection. Reissues in the same collection include perfumes in Super Milk , Milky Bath and Old Songs are Waiting; and body sprays in Silky Underwear, Ponche and Winter Garden...",
-    "en": "Lush has launched Christmas Eve, a new* fragrance in a limited edition \"Lush Club\" collection. Reissues in the same collection include perfumes in Super Milk , Milky Bath and Old Songs are Waiting; and body sprays in Silky Underwear, Ponche and Winter Garden..."
-   }
-  },
-  {
-   "id": "n14jcv22",
-   "url": "https://nstperfume.com/2026/11/19/paco-rabanne-fame-pink-new-perfume/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-19T16:59:48.000Z",
-   "original": "Paco Rabanne Fame Pink ~ new perfume",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Paco Rabanne Fame Pink ~ new perfume",
-    "en": "Paco Rabanne Fame Pink ~ new perfume"
-   },
-   "summary": {
-    "ar": "Paco Rabanne will launch Fame Pink,* a new flanker to 2022's Fame ...",
-    "en": "Paco Rabanne will launch Fame Pink,* a new flanker to 2022's Fame ..."
-   }
-  },
-  {
-   "id": "nzoa8te",
-   "url": "https://nstperfume.com/2026/11/19/marc-jacobs-daisy-violet-x-4-new-fragrances/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-19T16:36:22.000Z",
-   "original": "Marc Jacobs Daisy Violet x 4 ~ new fragrances",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Marc Jacobs Daisy Violet x 4 ~ new fragrances",
-    "en": "Marc Jacobs Daisy Violet x 4 ~ new fragrances"
-   },
-   "summary": {
-    "ar": "Marc Jacobs has launched Daisy Violet, Daisy Love Violet, Daisy Eau So Fresh Violet and Daisy Wild Violet, a new quartet of limited edition flankers for women...",
-    "en": "Marc Jacobs has launched Daisy Violet, Daisy Love Violet, Daisy Eau So Fresh Violet and Daisy Wild Violet, a new quartet of limited edition flankers for women..."
-   }
-  },
-  {
-   "id": "ndq77lq",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMW5IQzVjMS1sR1dhUFdqT3RKOWZiNUtvTDBHc1JhaS1vdkZuOEdwN2ZjTDNnNWNDdTNpdm1VeUZ0RVp0YVlHNWU3Y0xGaU1ub0JObUNYeGVoMFJhVEVuQ25UVjZ4QTNzZUJiNEdLZzc4TjRyZnIzR1M4RXV6Nk1XMjlrMHA0aVVGZUZxeTdmSnBxVUE?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-19T16:24:09.000Z",
-   "original": "What Our Editors Really Think of This Perfume Inspired by a $1600 Cashmere Trench",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "What Our Editors Really Think of This Perfume Inspired by a $1600 Cashmere Trench",
-    "en": "What Our Editors Really Think of This Perfume Inspired by a $1600 Cashmere Trench"
-   },
-   "summary": {
-    "ar": "What Our Editors Really Think of This Perfume Inspired by a $1600 Cashmere Trench",
-    "en": "What Our Editors Really Think of This Perfume Inspired by a $1600 Cashmere Trench"
-   }
-  },
-  {
-   "id": "nfhx7x8",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNHg5N2ZsWFE4NWJEWWZGYkhJMlZ0VE1Ua1dsellJcjVhYzV2QWtnRmw0LS1LcS0zNmRTODFUTHZzUHBJTDlGREFFQkRRdk41OGtUVXF5ZHFMSFFEM2ZZdDRKYlFLSTJ0cXlSNzloLXQ3c2FrTVkzaHUxWEpncV9uaE5NeDc4cGhKMXdvbVdWSWIxbl9xc0ZvcGpzemhlbzNaUkZLbV9KcGxMMnNLUmcydXd2bWo3UW9jamp2aVZIZmV5Zw?oc=5",
-   "source": "FashionNetwork - The World's Fashion Business News",
-   "publishedAt": "2026-11-19T16:02:11.000Z",
-   "original": "Interparfums raises its forecasts for 2026, anticipates strong growth in 2027",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Interparfums raises its forecasts for 2026, anticipates strong growth in 2027",
-    "en": "Interparfums raises its forecasts for 2026, anticipates strong growth in 2027"
-   },
-   "summary": {
-    "ar": "Interparfums raises its forecasts for 2026, anticipates strong growth in 2027",
-    "en": "Interparfums raises its forecasts for 2026, anticipates strong growth in 2027"
-   }
-  },
-  {
-   "id": "n1794r2a",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOVRfZGRuTHZlSXF3ZmtRenBEZFVVZ1dRZzlBa3lDZkxHTFM1SURiZTZKSTh2dUlfdElzMldMRkV5dVgxV0oyX1BWV3dXbC1YenN0eEYwMHdZT0ZVS18ybHZDVlhpdVg0Y3dnSGtZcUlxV2E0RFlhQnJ3ZGpvRWtmOHh3cXE3VEdmbzJLQnBsdUJvZlRBRGxVbXdybXRWUU1mTWI0?oc=5",
-   "source": "Yahoo Finance",
-   "publishedAt": "2026-11-19T15:40:00.000Z",
-   "original": "Interparfums Eyes 2027 Growth on Strong Fragrance Launch Pipeline",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Interparfums Eyes 2027 Growth on Strong Fragrance Launch Pipeline",
-    "en": "Interparfums Eyes 2027 Growth on Strong Fragrance Launch Pipeline"
-   },
-   "summary": {
-    "ar": "Interparfums Eyes 2027 Growth on Strong Fragrance Launch Pipeline",
-    "en": "Interparfums Eyes 2027 Growth on Strong Fragrance Launch Pipeline"
    }
   }
  ]
