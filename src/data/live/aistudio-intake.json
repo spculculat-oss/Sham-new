@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T10:03:58.829Z",
+ "updatedAt": "2026-11-20T12:43:33.384Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,36 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-19T10:03:58.829Z",
-  "sha": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b"
+  "at": "2026-11-20T12:43:33.384Z",
+  "sha": "04b5f75530efeb0ce1ef0c6097c3e9fdf147cb64"
  },
  "commits": [
+  {
+   "sha": "04b5f75530efeb0ce1ef0c6097c3e9fdf147cb64",
+   "date": "2026-11-20T14:40:30+02:00",
+   "title": "feat(ui): add 3D/AR fragrance pyramid visualization",
+   "summary": "- Install @react-three/fiber and @react-three/drei",
+   "files": 16,
+   "additions": 5878,
+   "deletions": 180,
+   "added": [
+    "src/components/AR3DSpatialStage.tsx",
+    "src/components/DesignSimulatorsAR3D.tsx",
+    "src/components/FragrancePyramidAR3D.tsx",
+    "src/components/HomeARPortals.tsx",
+    "src/components/LuxuryPortalIcon.tsx"
+   ],
+   "deleted": [],
+   "modified": 11,
+   "flags": [
+    {
+     "level": "info",
+     "kind": "dependency",
+     "text": "مكتبات جديدة: @react-three/drei، @react-three/fiber"
+    }
+   ],
+   "verdict": "received"
+  },
   {
    "sha": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b",
    "date": "2026-11-19T12:01:50+02:00",
@@ -1460,6 +1486,7 @@
   }
  ],
  "reviewed": [
+  "04b5f75530efeb0ce1ef0c6097c3e9fdf147cb64",
   "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b",
   "6847891890fa19a8e1409369124dd17fa7db929e",
   "935c63311c02f14c6e4e49eeba92b62abd67d160",
@@ -1473,5 +1500,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b"
+ "head": "04b5f75530efeb0ce1ef0c6097c3e9fdf147cb64"
 }
