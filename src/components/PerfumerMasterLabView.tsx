@@ -26,8 +26,10 @@ import {
   Mic,
   Code2,
   X,
+  Activity,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { OlfactoryHarmonyAnalyzer } from './OlfactoryHarmonyAnalyzer';
 import perfumerImg from '../assets/images/master_perfumer_compounding_1791693212967.jpg';
 import { linkTools, type ToolLink } from '../utils/shaheenTools';
 import { ShaheenToolLinks } from './ShaheenToolLinks';
@@ -258,6 +260,7 @@ const S = {
   to_pyramid_lbl: { ar: 'الهرم العطري', en: 'Fragrance Pyramid', fr: 'Pyramide olfactive', es: 'Pirámide olfativa', it: 'Piramide olfattiva', de: 'Duftpyramide', ru: 'Пирамида', zh: '香调金字塔', tr: 'Koku piramidi', fa: 'هرم عطری' },
   to_lib_tooltip: { ar: 'تدوين وحفظ هذه الخلطة فوراً في مكتبة الوصفات والتشغيلات', en: 'Record this blend into the recipe library', fr: 'Enregistrer cette composition dans le carnet', es: 'Guardar esta mezcla en la biblioteca', it: 'Salva questa miscela nella libreria', de: 'Diese Mischung im Rezeptbuch speichern', ru: 'Сохранить эту смесь в книге рецептов', zh: '将此配方记入配方库', tr: 'Bu karışımı tarif kitaplığına kaydet', fa: 'ثبت این ترکیب در کتابخانه دستورها' },
   recorded_ok: { ar: 'تم التدوين!', en: 'Recorded!', fr: 'Enregistré !', es: '¡Guardado!', it: 'Salvato!', de: 'Gespeichert!', ru: 'Записано!', zh: '已记录！', tr: 'Kaydedildi!', fa: 'ثبت شد!' },
+  harmony_btn: { ar: 'تحليل التناسق', en: 'Harmony Check', fr: 'Analyse d’harmonie', es: 'Análisis de armonía', it: 'Analisi armonia', de: 'Harmonie-Check', ru: 'Анализ гармонии', zh: '和谐分析', tr: 'Uyum Analizi', fa: 'تحلیل هارمونی' },
   to_lib_lbl: { ar: 'تدوين الخلطة', en: 'Record Blend', fr: 'Enregistrer', es: 'Guardar mezcla', it: 'Salva miscela', de: 'Mischung speichern', ru: 'Записать смесь', zh: '记录配方', tr: 'Karışımı kaydet', fa: 'ثبت ترکیب' },
   to_cost_tooltip: { ar: 'حساب تكلفة إنتاج وسعر بيع هذه التركيبة', en: 'Calculate production cost and retail price', fr: 'Calculer coût de production et prix de vente', es: 'Calcular coste de producción y precio', it: 'Calcola costo di produzione e prezzo', de: 'Produktionskosten und Verkaufspreis berechnen', ru: 'Рассчитать себестоимость и цену', zh: '计算生产成本与售价', tr: 'Üretim maliyetini ve satış fiyatını hesapla', fa: 'محاسبه هزینه تولید و قیمت فروش' },
   to_cost_lbl: { ar: 'حساب التكلفة', en: 'Cost It', fr: 'Coûts', es: 'Costear', it: 'Costi', de: 'Kosten', ru: 'Себестоимость', zh: '成本计算', tr: 'Maliyet', fa: 'محاسبه هزینه' },
@@ -349,6 +352,7 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
   // A deep analysis may offer several alternative formulas: which one the toolbar acts on, per message.
   const [formulaPick, setFormulaPick] = useState<Record<string, number>>({});
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [showHarmonyAnalyzer, setShowHarmonyAnalyzer] = useState(true);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -572,6 +576,20 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
             </>
           )}
 
+          <button
+            type="button"
+            onClick={() => setShowHarmonyAnalyzer((v) => !v)}
+            aria-pressed={showHarmonyAnalyzer}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors border ${
+              showHarmonyAnalyzer
+                ? 'bg-stone-900 border-amber-500/60 text-amber-300'
+                : 'bg-stone-100 hover:bg-stone-200 border-stone-200 text-stone-700'
+            }`}
+          >
+            <Activity className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">{L('harmony_btn')}</span>
+          </button>
+
           {/* Scale Display */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 text-white rounded-lg text-xs font-mono-numbers">
             <span className="text-stone-400 text-[10px]">{L('scale')}</span>
@@ -650,6 +668,20 @@ export const PerfumerMasterLabView: React.FC<PerfumerMasterLabViewProps> = ({
             </button>
           </div>
         </div>
+      )}
+
+      {/* Olfactory Harmony AI Analyzer */}
+      {showHarmonyAnalyzer && (
+        <OlfactoryHarmonyAnalyzer
+          currentLang={currentLang}
+          labContext={labContext}
+          isStaticHosting={isStaticHosting}
+          onAskShaheenFollowUp={(prompt) => void handleSend(prompt)}
+          onOpenPyramidTool={() =>
+            onOpenTool?.({ tool: 'pyramid' })
+          }
+          onApplyToPyramidCalculator={onApplyToPyramidCalculator}
+        />
       )}
 
       {/* 2. Expanded Chat Board Container */}

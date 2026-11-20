@@ -69,6 +69,8 @@ import { getSessionToken } from './community/api';
 import { profileFromMember, saveCurrentUserProfile } from './utils/authStorage';
 import { useSessionPick } from './community/session';
 import { ErrorBoundary, lazyWithReload } from './utils/lazyRetry';
+import { PerfumerDesignerLab } from './components/PerfumerDesignerLab';
+import { isStaticHosting } from './utils/api';
 
 // «مجتمع شام» (social, messenger, member and merchant portals): its own bundle, loaded on the first #community visit.
 const CommunityApp = lazyWithReload(() => import('./community/CommunityApp'));
@@ -1126,6 +1128,25 @@ export default function App() {
               currencyCode={currentEnvironment.currencyCode}
               macerationDays={macerationDays}
               setMacerationDays={setMacerationDays}
+            />
+          )}
+
+          {activeTab === 'designer' && (
+            <PerfumerDesignerLab
+              currentLang={currentLang}
+              formulaTitle={formulaTitle}
+              setFormulaTitle={setFormulaTitle}
+              formulation={formulation}
+              setFormulation={setFormulation}
+              pyramidNotes={pyramidNotes}
+              setPyramidNotes={setPyramidNotes}
+              macerationDays={macerationDays}
+              setMacerationDays={setMacerationDays}
+              isStaticHosting={isStaticHosting}
+              onSyncNotice={(msg) => showToast(msg)}
+              onOpenSaveModal={handleOpenSaveModal}
+              onOpenSpecModal={handleOpenSpecModal}
+              onNavigateToTab={(tab) => navigateToTab(tab)}
             />
           )}
 

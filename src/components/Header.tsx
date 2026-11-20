@@ -127,6 +127,14 @@ export const Header: React.FC<HeaderProps> = ({
       iconColor: 'text-amber-700',
     },
     {
+      id: 'designer',
+      type: 'single',
+      label: pickArEn(currentLang, 'مصمم العطور', 'Designer Lab'),
+      fullLabel: pickArEn(currentLang, 'مصمم العطور — معمل التجارب الحية والمحاكاة', 'Perfume Designer — Live Simulation Lab'),
+      icon: Compass,
+      iconColor: 'text-amber-600',
+    },
+    {
       id: 'tools',
       type: 'dropdown',
       label: t('nav_tools_short', currentLang, t('nav_tools', currentLang)),

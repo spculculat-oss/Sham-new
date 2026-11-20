@@ -120,6 +120,7 @@ const S = {
   user_lbl: { ar: 'المستخدم:', en: 'User:', fr: 'Utilisateur :', es: 'Usuario:', it: 'Utente:', de: 'Benutzer:', ru: 'Пользователь:', zh: '用户：', tr: 'Kullanıcı:', fa: 'کاربر:' },
   guest: { ar: 'ضيف المعمل', en: 'Lab Guest', fr: 'Invité du laboratoire', es: 'Invitado del laboratorio', it: 'Ospite del laboratorio', de: 'Laborgast', ru: 'Гость лаборатории', zh: '实验室访客', tr: 'Laboratuvar konuğu', fa: 'مهمان آزمایشگاه' },
   open_lab_calc: { ar: 'دخول حاسبة المعمل الفورية', en: 'Open Lab Calculator', fr: 'Ouvrir le calculateur', es: 'Abrir la calculadora', it: 'Apri il calcolatore', de: 'Rechner öffnen', ru: 'Открыть калькулятор', zh: '打开实验室计算器', tr: 'Hesaplayıcıyı aç', fa: 'باز کردن ماشین‌حساب آزمایشگاه' },
+  open_designer_lab: { ar: 'معمل مصمم العطور (محاكاة حية)', en: 'Perfume Designer Live Lab', fr: 'Laboratoire Concepteur', es: 'Laboratorio Diseñador', it: 'Laboratorio Designer', de: 'Parfüm-Designer-Labor', ru: 'Лаборатория дизайнера', zh: '调香设计师实验室', tr: 'Parfüm Tasarımcı Labı', fa: 'آزمایشگاه طراح عطر' },
   global_trends: { ar: 'أحدث أخبار العطور بالعالم', en: 'Global Fragrance Trends', fr: 'Tendances mondiales de la parfumerie', es: 'Tendencias globales del perfume', it: 'Tendenze globali del profumo', de: 'Globale Dufttrends', ru: 'Мировые тренды парфюмерии', zh: '全球香水潮流', tr: 'Küresel parfüm trendleri', fa: 'ترندهای جهانی عطر' },
   consult_ai: { ar: 'استشر الخبير شاهين', en: 'Consult Master Shahin', fr: 'Consulter Maître Shahin', es: 'Consultar al Maestro Shahin', it: 'Consulta il Maestro Shahin', de: 'Meister Shahin fragen', ru: 'Спросить мастера Шахина', zh: '咨询 Shahin 大师', tr: 'Usta Shahin’e danış', fa: 'مشورت با استاد شاهین' },
   alt_hero: { ar: 'معمل صمم عطرك مع شام', en: 'Design Your Perfume with Sham lab', fr: 'Laboratoire — créez votre parfum avec Sham', es: 'Laboratorio — diseña tu perfume con Sham', it: 'Laboratorio — crea il tuo profumo con Sham', de: 'Labor — Gestalten Sie Ihr Parfüm mit Sham', ru: 'Лаборатория «Создай свой аромат с Sham»', zh: '与 Sham 一起设计香水的实验室', tr: 'Parfümünüzü Sham ile tasarlayın laboratuvarı', fa: 'آزمایشگاه ساخت عطر با شام' },
@@ -1221,6 +1222,14 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                 <LuxuryPortalIcon portalId="portal_concentration" size="xs" active />
                 <span>{L('open_lab_calc')}</span>
                 {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+              </button>
+
+              <button
+                onClick={() => onNavigate('designer')}
+                className="group flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-bold text-amber-100 bg-stone-900/95 hover:bg-stone-800 border border-amber-500/60 rounded-xl shadow-md transition-all hover:scale-[1.02] cursor-pointer"
+              >
+                <Compass className="w-4 h-4 text-amber-400" />
+                <span>{L('open_designer_lab')}</span>
               </button>
 
               <button

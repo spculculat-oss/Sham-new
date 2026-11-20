@@ -21,6 +21,8 @@ import {
   Info,
   Layers,
   Leaf,
+  Pause,
+  Play,
   RotateCw,
   Scale,
   Sparkles,
@@ -184,6 +186,42 @@ const STUDIO_STRINGS = {
     tr: 'Etkileşimli 3D Laboratuvar Araçları (açmak için tıklayın):',
     fa: 'ابزارهای سه‌بعدی آزمایشگاه (برای باز کردن کلیک کنید):',
   },
+  blend_trigger: {
+    ar: 'دمج المكونات (تفاعل)',
+    en: 'Blend Ingredients',
+    fr: 'Mélanger (Réaction)',
+    es: 'Mezclar ingredientes',
+    it: 'Miscela ingredienti',
+    de: 'Zutaten mischen',
+    ru: 'Смешать компоненты',
+    zh: '混合反应特效',
+    tr: 'Bileşenleri Karıştır',
+    fa: 'ترکیب مواد (واکنش)',
+  },
+  reaction_live: {
+    ar: 'فقاعات التفاعل: نشطة',
+    en: 'Bubbles: Active',
+    fr: 'Bulles : Actives',
+    es: 'Burbujas: Activas',
+    it: 'Bolle: Attive',
+    de: 'Blasen: Aktiv',
+    ru: 'Пузырьки: Вкл',
+    zh: '气泡反应：开启',
+    tr: 'Kabarcıklar: Aktif',
+    fa: 'حباب‌ها: فعال',
+  },
+  reaction_paused: {
+    ar: 'فقاعات التفاعل: متوقفة',
+    en: 'Bubbles: Paused',
+    fr: 'Bulles : En pause',
+    es: 'Burbujas: Pausadas',
+    it: 'Bolle: In pausa',
+    de: 'Blasen: Pausiert',
+    ru: 'Пузырьки: Пауза',
+    zh: '气泡反应：暂停',
+    tr: 'Kabarcıklar: Duraklatıldı',
+    fa: 'حباب‌ها: متوقف',
+  },
 } satisfies Record<string, LText>;
 
 const LAB_EQUIPMENT: LabEquipmentSpec[] = [
@@ -302,15 +340,16 @@ type ElixirPreset = {
   nameAr: string;
   nameEn: string;
   liquidHex: number;
+  reactionHex: number;
   metalHex: number;
   accentCss: string;
 };
 
 const ELIXIR_PRESETS: ElixirPreset[] = [
-  { id: 'oud_amber', nameAr: 'عنبر وعود ملكي', nameEn: 'Royal Oud Amber', liquidHex: 0xc26d1f, metalHex: 0xd4af37, accentCss: 'bg-amber-600' },
-  { id: 'taif_rose', nameAr: 'ورد طائفي ياقوتي', nameEn: 'Ruby Taif Rose', liquidHex: 0xa63a50, metalHex: 0xe6c17a, accentCss: 'bg-rose-700' },
-  { id: 'neroli_mist', nameAr: 'نيرولي وبرغموت', nameEn: 'Calabrian Bergamot', liquidHex: 0x3b8a6b, metalHex: 0xd6d3d1, accentCss: 'bg-emerald-700' },
-  { id: 'night_musk', nameAr: 'مسك الليل واللبان', nameEn: 'Nocturnal Frankincense', liquidHex: 0x5c4b8a, metalHex: 0xc7ccd6, accentCss: 'bg-indigo-700' },
+  { id: 'oud_amber', nameAr: 'عنبر وعود ملكي', nameEn: 'Royal Oud Amber', liquidHex: 0xc26d1f, reactionHex: 0xfbbf24, metalHex: 0xd4af37, accentCss: 'bg-amber-600' },
+  { id: 'taif_rose', nameAr: 'ورد طائفي ياقوتي', nameEn: 'Ruby Taif Rose', liquidHex: 0xa63a50, reactionHex: 0xfb7185, metalHex: 0xe6c17a, accentCss: 'bg-rose-700' },
+  { id: 'neroli_mist', nameAr: 'نيرولي وبرغموت', nameEn: 'Calabrian Bergamot', liquidHex: 0x3b8a6b, reactionHex: 0x34d399, metalHex: 0xd6d3d1, accentCss: 'bg-emerald-700' },
+  { id: 'night_musk', nameAr: 'مسك الليل واللبان', nameEn: 'Nocturnal Frankincense', liquidHex: 0x5c4b8a, reactionHex: 0xa78bfa, metalHex: 0xc7ccd6, accentCss: 'bg-indigo-700' },
 ];
 
 type CameraPresetId = 'hero' | 'workbench' | 'plaque' | 'crown' | 'nozzle';
@@ -404,6 +443,8 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   });
   const [arCameraActive, setArCameraActive] = useState<boolean>(false);
   const [arCamError, setArCamError] = useState<string | null>(null);
+  const [liveReaction, setLiveReaction] = useState<boolean>(true);
+  const [blendPulseCount, setBlendPulseCount] = useState<number>(0);
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const arStreamRef = useRef<MediaStream | null>(null);
@@ -414,12 +455,21 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
   explodedRef.current = exploded;
   const autoRotateRef = useRef(autoRotate);
   autoRotateRef.current = autoRotate;
+  const liveReactionRef = useRef(liveReaction);
+  liveReactionRef.current = liveReaction;
+  const blendBoostRef = useRef<number>(0.75);
   const cameraPresetRef = useRef<CameraPresetId>(cameraPreset);
   const camTransitionRef = useRef<boolean>(false);
   const onNavigateRef = useRef(onNavigate);
   onNavigateRef.current = onNavigate;
   const hoveredEquipmentRef = useRef<LabEquipmentId | null>(hoveredEquipmentId);
   hoveredEquipmentRef.current = hoveredEquipmentId;
+
+  const triggerBlendReaction = useCallback(() => {
+    setLiveReaction(true);
+    blendBoostRef.current = 1.0;
+    setBlendPulseCount((c) => c + 1);
+  }, []);
 
   const openEquipmentDestination = useCallback((spec: LabEquipmentSpec) => {
     if (onNavigateRef.current) {
@@ -506,6 +556,9 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     [presetId],
   );
 
+  const activePresetRef = useRef<ElixirPreset>(activePreset);
+  activePresetRef.current = activePreset;
+
   const dynamicRefs = useRef<{
     liquidMat?: THREE.MeshPhysicalMaterial;
     metalMat?: THREE.MeshStandardMaterial;
@@ -529,9 +582,10 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  // Update dynamic materials / CanvasTexture plaque without recreating the WebGL context
+  // Update dynamic materials, trigger aromatic reaction surge & refresh plaque CanvasTexture
   useEffect(() => {
     const refs = dynamicRefs.current;
+    blendBoostRef.current = 1.0;
     if (refs.liquidMat) {
       refs.liquidMat.color.setHex(activePreset.liquidHex);
       refs.liquidMat.attenuationColor.setHex(activePreset.liquidHex);
@@ -934,6 +988,14 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
     const projVec = new THREE.Vector3();
 
     const equipmentHandles: EquipmentHandle[] = [];
+    const equipmentById = new Map<LabEquipmentId, EquipmentHandle>();
+    let flaskLiqMat: THREE.MeshPhysicalMaterial | null = null;
+    let scaleVialMat: THREE.MeshPhysicalMaterial | null = null;
+    let mortarEssenceMat: THREE.MeshPhysicalMaterial | null = null;
+    let mortarPestleMesh: THREE.Mesh | null = null;
+    let hourglassChamberMat: THREE.MeshPhysicalMaterial | null = null;
+    const rackVialMats: THREE.MeshPhysicalMaterial[] = [];
+
     // Raycast targets include central flacon meshes + plinth for occlusion, plus equipment hit proxies & visible meshes
     const raycastTargets: THREE.Object3D[] = [plinthMesh];
     flaconRoot.traverse((child) => {
@@ -1013,6 +1075,15 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         const panGeo = new THREE.CylinderGeometry(0.28, 0.28, 0.04, 24);
         const screenGeo = new THREE.BoxGeometry(0.42, 0.03, 0.14);
         const vialGeo = new THREE.CylinderGeometry(0.09, 0.1, 0.34, 16);
+        scaleVialMat = new THREE.MeshPhysicalMaterial({
+          color: 0xf59e0b,
+          emissive: 0xd97706,
+          emissiveIntensity: 0.28,
+          roughness: 0.12,
+          transparent: true,
+          opacity: 0.88,
+          clearcoat: 1,
+        });
         const body = new THREE.Mesh(bodyGeo, eqBodyMat);
         body.position.y = 0.08;
         body.castShadow = !isSoftwareGl;
@@ -1020,25 +1091,34 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         pan.position.set(0, 0.18, -0.06);
         const screen = new THREE.Mesh(screenGeo, eqAccentMat);
         screen.position.set(0, 0.155, 0.24);
-        const vial = new THREE.Mesh(vialGeo, eqAccentMat);
+        const vial = new THREE.Mesh(vialGeo, scaleVialMat);
         vial.position.set(0, 0.37, -0.06);
         g.add(body, pan, screen, vial);
         eqMeshes.push(body, pan, screen, vial);
-        disposables.push(bodyGeo, panGeo, screenGeo, vialGeo);
+        disposables.push(bodyGeo, panGeo, screenGeo, vialGeo, scaleVialMat);
       } else if (eq.id === 'flask') {
         const coneGeo = new THREE.CylinderGeometry(0.12, 0.42, 0.68, 22);
         const liqGeo = new THREE.CylinderGeometry(0.24, 0.36, 0.34, 20);
         const neckGeo = new THREE.CylinderGeometry(0.14, 0.14, 0.16, 18);
+        flaskLiqMat = new THREE.MeshPhysicalMaterial({
+          color: 0x06b6d4,
+          emissive: 0x0891b2,
+          emissiveIntensity: 0.32,
+          roughness: 0.08,
+          transparent: true,
+          opacity: 0.86,
+          clearcoat: 1,
+        });
         const flask = new THREE.Mesh(coneGeo, glassMat);
         flask.position.y = 0.36;
         flask.castShadow = !isSoftwareGl;
-        const liq = new THREE.Mesh(liqGeo, eqAccentMat);
+        const liq = new THREE.Mesh(liqGeo, flaskLiqMat);
         liq.position.y = 0.2;
         const neck = new THREE.Mesh(neckGeo, eqSecondaryMat);
         neck.position.y = 0.72;
         g.add(flask, liq, neck);
         eqMeshes.push(flask, liq, neck);
-        disposables.push(coneGeo, liqGeo, neckGeo);
+        disposables.push(coneGeo, liqGeo, neckGeo, flaskLiqMat);
       } else if (eq.id === 'pyramid') {
         const tier1Geo = new THREE.CylinderGeometry(0.28, 0.42, 0.22, 4);
         const tier2Geo = new THREE.CylinderGeometry(0.15, 0.27, 0.22, 4);
@@ -1102,7 +1182,16 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         const bowlGeo = new THREE.CylinderGeometry(0.36, 0.24, 0.34, 18);
         const rimGeo = new THREE.TorusGeometry(0.35, 0.04, 10, 24);
         const pestleGeo = new THREE.CylinderGeometry(0.05, 0.075, 0.56, 14);
-        const herbGeo = new THREE.SphereGeometry(0.14, 14, 14);
+        const herbGeo = new THREE.SphereGeometry(0.16, 14, 14);
+        mortarEssenceMat = new THREE.MeshPhysicalMaterial({
+          color: 0x10b981,
+          emissive: 0x059669,
+          emissiveIntensity: 0.3,
+          roughness: 0.14,
+          transparent: true,
+          opacity: 0.9,
+          clearcoat: 1,
+        });
         const bowl = new THREE.Mesh(bowlGeo, eqBodyMat);
         bowl.position.y = 0.18;
         bowl.castShadow = !isSoftwareGl;
@@ -1112,11 +1201,13 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         const pestle = new THREE.Mesh(pestleGeo, eqSecondaryMat);
         pestle.position.set(0.12, 0.38, 0);
         pestle.rotation.z = -0.48;
-        const herb = new THREE.Mesh(herbGeo, eqAccentMat);
-        herb.position.set(-0.08, 0.28, 0.05);
+        mortarPestleMesh = pestle;
+        const herb = new THREE.Mesh(herbGeo, mortarEssenceMat);
+        herb.position.set(-0.04, 0.26, 0.03);
+        herb.scale.set(1.15, 0.72, 1.15);
         g.add(bowl, rim, pestle, herb);
         eqMeshes.push(bowl, rim, pestle, herb);
-        disposables.push(bowlGeo, rimGeo, pestleGeo, herbGeo);
+        disposables.push(bowlGeo, rimGeo, pestleGeo, herbGeo, mortarEssenceMat);
       } else if (eq.id === 'vial_rack') {
         const trayGeo = new THREE.BoxGeometry(0.84, 0.12, 0.42);
         const railGeo = new THREE.BoxGeometry(0.8, 0.04, 0.06);
@@ -1130,8 +1221,21 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         g.add(tray, rail);
         eqMeshes.push(tray, rail);
         const offsets = [-0.24, 0, 0.24];
-        for (const ox of offsets) {
-          const vial = new THREE.Mesh(vialGeo, eqAccentMat);
+        const baseVialColors = [0xa855f7, 0xd97706, 0x0ea5e9];
+        for (let vi = 0; vi < offsets.length; vi += 1) {
+          const ox = offsets[vi];
+          const vMat = new THREE.MeshPhysicalMaterial({
+            color: baseVialColors[vi],
+            emissive: baseVialColors[vi],
+            emissiveIntensity: 0.28,
+            roughness: 0.1,
+            transparent: true,
+            opacity: 0.86,
+            clearcoat: 1,
+          });
+          rackVialMats.push(vMat);
+          disposables.push(vMat);
+          const vial = new THREE.Mesh(vialGeo, vMat);
           vial.position.set(ox, 0.32, 0);
           const pipCap = new THREE.Mesh(capPipGeo, eqSecondaryMat);
           pipCap.position.set(ox, 0.58, 0);
@@ -1144,11 +1248,20 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         const coneTopGeo = new THREE.ConeGeometry(0.24, 0.36, 18);
         const coneBotGeo = new THREE.ConeGeometry(0.24, 0.36, 18);
         const pillarGeo = new THREE.CylinderGeometry(0.025, 0.025, 0.72, 10);
+        hourglassChamberMat = new THREE.MeshPhysicalMaterial({
+          color: 0xd97706,
+          emissive: 0xb45309,
+          emissiveIntensity: 0.28,
+          roughness: 0.14,
+          transparent: true,
+          opacity: 0.9,
+          clearcoat: 1,
+        });
         const botPlate = new THREE.Mesh(basePlateGeo, eqBodyMat);
         botPlate.position.y = 0.04;
         const topPlate = new THREE.Mesh(basePlateGeo, eqBodyMat);
         topPlate.position.y = 0.78;
-        const coneBot = new THREE.Mesh(coneBotGeo, eqAccentMat);
+        const coneBot = new THREE.Mesh(coneBotGeo, hourglassChamberMat);
         coneBot.position.y = 0.23;
         const coneTop = new THREE.Mesh(coneTopGeo, glassMat);
         coneTop.rotation.x = Math.PI;
@@ -1159,7 +1272,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         pR.position.set(0.26, 0.41, 0);
         g.add(botPlate, topPlate, coneBot, coneTop, pL, pR);
         eqMeshes.push(botPlate, topPlate, coneBot, coneTop, pL, pR);
-        disposables.push(basePlateGeo, coneTopGeo, coneBotGeo, pillarGeo);
+        disposables.push(basePlateGeo, coneTopGeo, coneBotGeo, pillarGeo, hourglassChamberMat);
       } else {
         const coverGeo = new THREE.BoxGeometry(0.74, 0.08, 0.56);
         const pagesGeo = new THREE.BoxGeometry(0.66, 0.14, 0.5);
@@ -1190,7 +1303,7 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
       raycastTargets.push(proxy);
       equipmentRoot.add(g);
 
-      equipmentHandles.push({
+      const handle: EquipmentHandle = {
         id: eq.id,
         targetTab: eq.targetTab,
         accentHex: eq.accentHex,
@@ -1203,8 +1316,87 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
         outerGlowMat,
         accentMat: eqAccentMat,
         bodyMat: eqBodyMat,
+      };
+      equipmentHandles.push(handle);
+      equipmentById.set(eq.id, handle);
+    }
+
+    // 4. GPU-Instanced Aromatic Blending Bubbles across Flacon & Reactive 3D Lab Vessels
+    const BUBBLE_COUNT = 144;
+    const bubbleGeo = new THREE.SphereGeometry(0.022, isSoftwareGl ? 6 : 10, isSoftwareGl ? 6 : 10);
+    const bubbleMat = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      emissive: 0xfef3c7,
+      emissiveIntensity: 0.42,
+      roughness: 0.08,
+      metalness: 0.08,
+      clearcoat: 1.0,
+      iridescence: isSoftwareGl ? 0 : 0.85,
+      transparent: true,
+      opacity: 0.84,
+      depthWrite: false,
+    });
+    const bubblesMesh = new THREE.InstancedMesh(bubbleGeo, bubbleMat, BUBBLE_COUNT);
+    bubblesMesh.frustumCulled = false;
+    bubblesMesh.renderOrder = 4;
+    scene.add(bubblesMesh);
+    disposables.push(bubbleGeo, bubbleMat);
+
+    type BubbleVessel = 'flacon' | 'flask' | 'scale' | 'mortar' | 'vial_0' | 'vial_1' | 'vial_2';
+    interface BubbleSeed {
+      vessel: BubbleVessel;
+      phase: number;
+      speed: number;
+      radius: number;
+      angleOffset: number;
+      swirlRate: number;
+      size: number;
+    }
+
+    const bubbleSeeds: BubbleSeed[] = [];
+    for (let i = 0; i < BUBBLE_COUNT; i += 1) {
+      let vessel: BubbleVessel = 'flacon';
+      if (i < 48) vessel = 'flacon';
+      else if (i < 84) vessel = 'flask';
+      else if (i < 102) vessel = 'scale';
+      else if (i < 124) vessel = 'mortar';
+      else if (i < 131) vessel = 'vial_0';
+      else if (i < 138) vessel = 'vial_1';
+      else vessel = 'vial_2';
+
+      // Deterministic quasi-random distribution for clean natural effervescence
+      const s1 = ((i * 73 + 19) % 97) / 97;
+      const s2 = ((i * 41 + 7) % 89) / 89;
+      const s3 = ((i * 59 + 31) % 83) / 83;
+      bubbleSeeds.push({
+        vessel,
+        phase: (i / BUBBLE_COUNT + s1 * 0.25) % 1,
+        speed: 0.24 + s2 * 0.34,
+        radius: 0.18 + s3 * 0.82,
+        angleOffset: s1 * Math.PI * 2,
+        swirlRate: (s2 > 0.5 ? 1 : -1) * (1.2 + s3 * 1.8),
+        size: 0.65 + s1 * 0.85,
       });
     }
+
+    // Zero-GC scratch helpers for per-frame reaction & bubble simulation
+    const _bubbleMat4 = new THREE.Matrix4();
+    const _bubblePos = new THREE.Vector3();
+    const _bubbleQuat = new THREE.Quaternion();
+    const _bubbleScale = new THREE.Vector3();
+    const _bubbleColor = new THREE.Color();
+    const _elixirTargetCol = new THREE.Color();
+    const _reactionPulseCol = new THREE.Color();
+    const _flaskBaseCol = new THREE.Color(0x06b6d4);
+    const _scaleBaseCol = new THREE.Color(0xf59e0b);
+    const _mortarBaseCol = new THREE.Color(0x10b981);
+    const _hourglassBaseCol = new THREE.Color(0xfbbf24);
+    const _whiteSparkCol = new THREE.Color(0xfffbeb);
+    const _vialPhaseColors = [
+      new THREE.Color(0xa855f7),
+      new THREE.Color(0xd97706),
+      new THREE.Color(0x0ea5e9),
+    ];
 
     // Raycasting hover & click on 3D lab equipment (drag-safe, occlusion-aware, touch-friendly)
     const raycaster = new THREE.Raycaster();
@@ -1399,6 +1591,168 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
           lastProjState = { x: 0, y: 0, visible: false };
           setHoveredScreenPos({ x: 0, y: 0, visible: false });
         }
+      }
+
+      // 5. Aromatic Blending Reaction: vessel color transitions & 144 rising instanced 3D bubbles
+      const tSec = now * 0.001;
+      const reactionOn = liveReactionRef.current;
+      blendBoostRef.current = THREE.MathUtils.damp(blendBoostRef.current, 0, 0.55, dt);
+      const boost = blendBoostRef.current;
+      const activeActivity = reactionOn ? 0.35 + boost * 0.65 : boost * 0.85;
+
+      const curPreset = activePresetRef.current;
+      _elixirTargetCol.setHex(curPreset.liquidHex);
+      _reactionPulseCol.setHex(curPreset.reactionHex);
+
+      // Central Flacon liquid color wave & gentle swirl
+      const flaconWave = 0.5 + 0.5 * Math.sin(tSec * (1.8 + boost * 4.5));
+      _bubbleColor.copy(_elixirTargetCol).lerp(_reactionPulseCol, (0.18 + boost * 0.55) * flaconWave);
+      liquidMat.color.lerp(_bubbleColor, 1 - Math.exp(-6 * dt));
+      liquidMat.attenuationColor.copy(liquidMat.color);
+      liquidMat.emissive.copy(_reactionPulseCol);
+      liquidMat.emissiveIntensity = THREE.MathUtils.damp(
+        liquidMat.emissiveIntensity,
+        reactionOn ? 0.12 + boost * 0.42 : 0.04,
+        6,
+        dt,
+      );
+      if (activeActivity > 0.05) {
+        liquidMesh.rotation.y += dt * (0.25 + boost * 2.1);
+      }
+
+      // Reactive 3D Lab Vessels color transition & pestle blending motion
+      const blendWaveA = 0.5 + 0.5 * Math.sin(tSec * 2.1);
+      const blendWaveB = 0.5 + 0.5 * Math.cos(tSec * 1.7 + 1.1);
+      const blendStep = 1 - Math.exp(-5.5 * dt);
+
+      if (flaskLiqMat) {
+        const emMix = reactionOn ? 0.25 + 0.45 * blendWaveA + boost * 0.25 : 0.05;
+        _bubbleColor.copy(_flaskBaseCol).lerp(_elixirTargetCol, emMix).lerp(_reactionPulseCol, boost * 0.35);
+        flaskLiqMat.color.lerp(_bubbleColor, blendStep);
+        flaskLiqMat.emissive.copy(flaskLiqMat.color);
+        flaskLiqMat.emissiveIntensity = 0.24 + activeActivity * 0.55;
+      }
+
+      if (scaleVialMat) {
+        const sMix = reactionOn ? 0.2 + 0.45 * blendWaveB + boost * 0.3 : 0.05;
+        _bubbleColor.copy(_scaleBaseCol).lerp(_reactionPulseCol, sMix);
+        scaleVialMat.color.lerp(_bubbleColor, blendStep);
+        scaleVialMat.emissive.copy(scaleVialMat.color);
+        scaleVialMat.emissiveIntensity = 0.22 + activeActivity * 0.5;
+      }
+
+      if (mortarEssenceMat) {
+        const mMix = reactionOn ? 0.22 + 0.5 * blendWaveA + boost * 0.28 : 0.05;
+        _bubbleColor.copy(_mortarBaseCol).lerp(_elixirTargetCol, mMix).lerp(_reactionPulseCol, boost * 0.32);
+        mortarEssenceMat.color.lerp(_bubbleColor, blendStep);
+        mortarEssenceMat.emissive.copy(mortarEssenceMat.color);
+        mortarEssenceMat.emissiveIntensity = 0.22 + activeActivity * 0.55;
+      }
+
+      if (mortarPestleMesh) {
+        const grindRadius = activeActivity > 0.08 ? 0.09 + boost * 0.05 : 0.02;
+        const grindAngle = tSec * (2.2 + boost * 3.8);
+        mortarPestleMesh.position.x = 0.08 + Math.cos(grindAngle) * grindRadius;
+        mortarPestleMesh.position.z = Math.sin(grindAngle) * grindRadius;
+        mortarPestleMesh.rotation.z = -0.45 + Math.cos(grindAngle) * 0.14 * activeActivity;
+      }
+
+      if (hourglassChamberMat) {
+        const hMix = reactionOn ? 0.3 + 0.45 * blendWaveB + boost * 0.25 : 0.15;
+        _bubbleColor.copy(_hourglassBaseCol).lerp(_elixirTargetCol, hMix);
+        hourglassChamberMat.color.lerp(_bubbleColor, blendStep);
+        hourglassChamberMat.emissive.copy(hourglassChamberMat.color);
+        hourglassChamberMat.emissiveIntensity = 0.22 + activeActivity * 0.42;
+      }
+
+      for (let vi = 0; vi < rackVialMats.length; vi += 1) {
+        const vMat = rackVialMats[vi];
+        const vWave = 0.5 + 0.5 * Math.sin(tSec * 1.9 + vi * 1.4);
+        _bubbleColor.copy(_vialPhaseColors[vi]).lerp(_reactionPulseCol, (0.28 + boost * 0.52) * vWave);
+        vMat.color.lerp(_bubbleColor, blendStep);
+        vMat.emissive.copy(vMat.color);
+        vMat.emissiveIntensity = 0.24 + activeActivity * 0.48;
+      }
+
+      // Update all 144 GPU-instanced bubbles
+      const flaskHandle = equipmentById.get('flask');
+      const scaleHandle = equipmentById.get('scale');
+      const mortarHandle = equipmentById.get('mortar');
+      const rackHandle = equipmentById.get('vial_rack');
+      const bubbleSpeedMul = reactionOn ? 0.85 + boost * 1.65 : boost * 1.1;
+
+      for (let i = 0; i < BUBBLE_COUNT; i += 1) {
+        const b = bubbleSeeds[i];
+        const p = (b.phase + tSec * b.speed * bubbleSpeedMul) % 1;
+        const fadeEnv = activeActivity < 0.02 ? 0 : Math.sin(p * Math.PI);
+        const angle = b.angleOffset + tSec * b.swirlRate * (1 + boost * 1.3);
+
+        let localScale = b.size * (0.45 + 0.75 * fadeEnv) * (0.65 + activeActivity * 0.6);
+
+        if (b.vessel === 'flacon') {
+          const maxR = 0.52 * b.radius * (1 - p * 0.15);
+          _bubblePos.set(
+            Math.cos(angle) * maxR,
+            -0.22 + p * 0.94 + liquidMesh.position.y,
+            Math.sin(angle) * maxR,
+          );
+          _bubbleColor.copy(_elixirTargetCol).lerp(_whiteSparkCol, 0.48 + 0.35 * fadeEnv);
+        } else if (b.vessel === 'flask' && flaskHandle) {
+          const isVesselHover = hoveredEquipmentRef.current === 'flask';
+          const taper = 0.28 - p * 0.19;
+          const r = taper * b.radius;
+          _bubblePos.set(Math.cos(angle) * r, 0.1 + p * 0.58, Math.sin(angle) * r);
+          _bubblePos.applyQuaternion(flaskHandle.group.quaternion);
+          _bubblePos.multiplyScalar(flaskHandle.group.scale.x);
+          _bubblePos.add(flaskHandle.group.position);
+          _bubbleColor.copy(flaskLiqMat ? flaskLiqMat.color : _flaskBaseCol).lerp(_whiteSparkCol, 0.55);
+          if (isVesselHover) localScale *= 1.28;
+        } else if (b.vessel === 'scale' && scaleHandle) {
+          const isVesselHover = hoveredEquipmentRef.current === 'scale';
+          const r = 0.058 * b.radius;
+          _bubblePos.set(Math.cos(angle) * r, 0.23 + p * 0.3, -0.06 + Math.sin(angle) * r);
+          _bubblePos.applyQuaternion(scaleHandle.group.quaternion);
+          _bubblePos.multiplyScalar(scaleHandle.group.scale.x);
+          _bubblePos.add(scaleHandle.group.position);
+          _bubbleColor.copy(scaleVialMat ? scaleVialMat.color : _scaleBaseCol).lerp(_whiteSparkCol, 0.52);
+          if (isVesselHover) localScale *= 1.25;
+        } else if (b.vessel === 'mortar' && mortarHandle) {
+          const isVesselHover = hoveredEquipmentRef.current === 'mortar';
+          const r = (0.08 + p * 0.16) * b.radius;
+          _bubblePos.set(
+            -0.02 + Math.cos(angle) * r,
+            0.27 + p * 0.55,
+            0.02 + Math.sin(angle) * r,
+          );
+          _bubblePos.applyQuaternion(mortarHandle.group.quaternion);
+          _bubblePos.multiplyScalar(mortarHandle.group.scale.x);
+          _bubblePos.add(mortarHandle.group.position);
+          _bubbleColor.copy(mortarEssenceMat ? mortarEssenceMat.color : _mortarBaseCol).lerp(_reactionPulseCol, 0.45);
+          if (isVesselHover) localScale *= 1.3;
+        } else if (rackHandle) {
+          const isVesselHover = hoveredEquipmentRef.current === 'vial_rack';
+          const vIdx = b.vessel === 'vial_0' ? 0 : b.vessel === 'vial_1' ? 1 : 2;
+          const ox = vIdx === 0 ? -0.24 : vIdx === 1 ? 0 : 0.24;
+          const r = 0.055 * b.radius;
+          _bubblePos.set(ox + Math.cos(angle) * r, 0.14 + p * 0.36, Math.sin(angle) * r);
+          _bubblePos.applyQuaternion(rackHandle.group.quaternion);
+          _bubblePos.multiplyScalar(rackHandle.group.scale.x);
+          _bubblePos.add(rackHandle.group.position);
+          const refMat = rackVialMats[vIdx];
+          _bubbleColor.copy(refMat ? refMat.color : _whiteSparkCol).lerp(_whiteSparkCol, 0.5);
+          if (isVesselHover) localScale *= 1.25;
+        } else {
+          localScale = 0;
+        }
+
+        _bubbleScale.setScalar(Math.max(0.0001, localScale));
+        _bubbleMat4.compose(_bubblePos, _bubbleQuat, _bubbleScale);
+        bubblesMesh.setMatrixAt(i, _bubbleMat4);
+        bubblesMesh.setColorAt(i, _bubbleColor);
+      }
+      bubblesMesh.instanceMatrix.needsUpdate = true;
+      if (bubblesMesh.instanceColor) {
+        bubblesMesh.instanceColor.needsUpdate = true;
       }
 
       controls.update();
@@ -1631,8 +1985,31 @@ export const ThreePerfumeStudio: React.FC<ThreePerfumeStudioProps> = ({
                   ))}
                 </div>
 
-                {/* Camera & Geometry Actions */}
+                {/* Camera & Aromatic Blending Reaction Actions */}
                 <div className="flex flex-wrap items-center gap-2">
+                  <button
+                    key={blendPulseCount}
+                    type="button"
+                    onClick={triggerBlendReaction}
+                    className="px-3 py-1.5 rounded-xl border text-[11px] font-bold flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap shrink-0 bg-amber-500 hover:bg-amber-400 text-stone-950 border-amber-300"
+                  >
+                    <FlaskConical className="w-3.5 h-3.5" />
+                    <span>{L('blend_trigger')}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setLiveReaction((v) => !v)}
+                    className={`px-3 py-1.5 rounded-xl border text-[11px] font-semibold flex items-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap shrink-0 ${
+                      liveReaction
+                        ? 'bg-emerald-950 text-emerald-300 border-emerald-500/60'
+                        : 'bg-stone-950 text-stone-400 border-stone-700'
+                    }`}
+                  >
+                    {liveReaction ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+                    <span>{liveReaction ? L('reaction_live') : L('reaction_paused')}</span>
+                  </button>
+
                   <button
                     type="button"
                     onClick={() => setExploded((v) => !v)}

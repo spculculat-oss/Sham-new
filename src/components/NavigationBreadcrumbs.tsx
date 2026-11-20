@@ -32,6 +32,7 @@ import { isRTL } from '../لغات/localizedContent';
 
 const S = {
   aging_sim_full: { ar: 'محاكي التعتيق الزمني', en: 'Maceration Simulator', fr: 'Simulateur de maturation', es: 'Simulador de maceración', it: 'Simulatore di maturazione', de: 'Mazerationssimulator', ru: 'Симулятор настаивания', zh: '熟成模拟器', tr: 'Maserasyon simülatörü', fa: 'شبیه‌ساز تعریف' },
+  ql_designer: { ar: 'مصمم العطور (محاكاة)', en: 'Perfume Designer', fr: 'Concepteur de Parfum', es: 'Diseñador de Perfumes', it: 'Designer di Profumi', de: 'Parfüm-Designer', ru: 'Дизайнер ароматов', zh: '调香设计师', tr: 'Parfüm Tasarımcısı', fa: 'طراح عطر' },
   ql_concentration: { ar: 'حاسبة التراكيز', en: 'Concentration', fr: 'Concentration', es: 'Concentración', it: 'Concentrazione', de: 'Konzentration', ru: 'Концентрация', zh: '浓度计算', tr: 'Konsantrasyon', fa: 'ماشین‌حساب غلظت' },
   ql_maceration: { ar: 'محاكي التعتيق', en: 'Aging Simulator', fr: 'Maturation', es: 'Maceración', it: 'Maturazione', de: 'Reifung', ru: 'Настаивание', zh: '熟成', tr: 'Maserasyon', fa: 'شبیه‌ساز تعریف' },
   ql_pyramid: { ar: 'الهرم العطري', en: 'Pyramid', fr: 'Pyramide', es: 'Pirámide', it: 'Piramide', de: 'Pyramide', ru: 'Пирамида', zh: '香调金字塔', tr: 'Piramit', fa: 'هرم عطری' },
@@ -93,6 +94,7 @@ export const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = ({
   };
 
   // Deep routes («community/messenger/<id>», «store/<slug>»…) show their section's name, never the raw route.
+  tabConfigs.designer = { label: L('ql_designer'), icon: Compass };
   tabConfigs.community = { label: currentLang === 'ar' ? 'مجتمع شام' : 'Sham Community', icon: Users };
   tabConfigs.perfumer_analytics = { label: currentLang === 'ar' ? 'تحليلات العطار' : 'Perfumer Analytics', icon: BarChart3 };
   tabConfigs.perfume_atlas = { label: currentLang === 'ar' ? 'أطلس العطور والخرائط' : 'Fragrance Atlas', icon: MapPin };
@@ -104,6 +106,7 @@ export const NavigationBreadcrumbs: React.FC<NavigationBreadcrumbsProps> = ({
   const TabIcon = currentConfig.icon;
 
   const quickLinks = [
+    { id: 'designer', label: L('ql_designer'), icon: Compass },
     { id: 'concentration', label: L('ql_concentration'), icon: FlaskConical },
     { id: 'maceration_simulator', label: L('ql_maceration'), icon: Hourglass },
     { id: 'perfume_atlas', label: currentLang === 'ar' ? 'أطلس الخرائط' : 'Atlas Map', icon: MapPin },
