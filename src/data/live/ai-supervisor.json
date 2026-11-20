@@ -1,10 +1,10 @@
 {
  "version": 1,
- "updatedAt": "2026-11-20T11:26:50.844Z",
- "nextReviewAt": "2026-11-20T23:26:50.844Z",
+ "updatedAt": "2026-11-20T22:15:09.691Z",
+ "nextReviewAt": "2026-11-21T10:15:09.691Z",
  "intervalHours": 12,
- "summaryAr": "أدوات تحتاج متابعة: مقالات مرصد العطور، نشرة شاهين للأخبار الحقيقية.",
- "overall": 9.2,
+ "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية.",
+ "overall": 9.5,
  "tools": {
   "shaheen_chat": {
    "nameAr": "شات الخبير شاهين والوكيل البرمجي",
@@ -12,28 +12,28 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "كم يوم أعتق عطر فيه مسك وعنبر وعود؟",
-     "excerpt": "المسك والعود والعنبر مكونات ثقيلة وزيتية وبتاخد وقت طويل عشان تمتزج كويس وتدّي ريحة ناعمة وثابتة، وأفضل فترة لتعتيق التركيبة دي هي من 6 لـ 8 أسابيع (يعني حوالي 40 إلى 60 يوم) في مكان ضالم وبارد.",
-     "ms": 2309,
+     "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
+     "excerpt": "الجلد الجاف بيشرب العطر وبيقضي على ريحته بسرعة، وطبيعة البشرة الدهنية بتحبس الزيوت العطرية وتخليها تعيش أطول.\n\nعلشان تثبت العطر لفترة أطول:\n1. رطّب بشرتك كويس بكريم مرطب عديم الرائحة أو فازلين قبل الرش.\n2. رش على أماكن النبض زي المعصمين ورا الودنين ورقبتك.\n3. بّخ العطر على الهدوم والأيشاربات، لأن ال",
+     "ms": 1814,
      "ok": true,
      "findings": []
     },
     {
-     "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
-     "excerpt": "الفرق بين EDP و EDT و Parfum بيكون في نسبة الزيت العطري اللي موجودة في كل نوع، وده بيأثر على قوة الريحة وثباتها.\n\n| النوع | نسبة الزيت العطري | الثبات التقريبي |\n|---|---|---|\n| **Parfum (خلاصة العطر)** | 20-40% | 6-8 ساعات أو أكتر |\n| **Eau de Parfum (EDP)** | 15-20% | 4-5 ساعات |\n| **Eau de Toilet",
-     "ms": 2221,
+     "question": "ايه آخر أخبار العطور؟",
+     "excerpt": "البحث على الإنترنت ماردش دلوقتي، جرب كمان شوية وتكون الأخبار الجديدة عندك.",
+     "ms": 11093,
      "ok": true,
      "findings": []
     },
     {
-     "question": "اقترح نوتات لعطر صيفي منعش للرجال",
-     "excerpt": "عشان نعمل عطر صيفي منعش للرجال بثبات ممتاز، هنعتمد على افتتاحية حمضيات حيوية مع قلب عطري وقاعدة خشبية خفيفة تظبط الأداء في الحر.\n\nإليك مقترح تجريبي بحجم 50 مل وتركيز 20 بالمئة (Eau de Parfum):\n\n### هرم العطر النُسبي\n- **المقدمة (افتتاحية منعشة):**\n  - برغمات: 45 بالمئة\n  - ليمون أصفر: 30 بالمئة\n  - ",
-     "ms": 2736,
+     "question": "What fixative works best for a citrus cologne, and at what percentage?",
+     "excerpt": "For a citrus cologne, Hedione or Ambroxan work best as fixatives. They blend smoothly with bright, volatile top notes without altering that clean, fresh character.\n\nUse Ambroxan at 1 to 2 percent of the total formula for a modern, airy lift, or Hedione at 3 to 5 percent to boost the natural floral f",
+     "ms": 1935,
      "ok": true,
      "findings": []
     }
@@ -126,6 +126,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -146,28 +150,28 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "ايه آخر أخبار العطور؟",
-     "excerpt": "أهلاً بيك! يقدر «الخبير شاهين» يجمع ليك أحدث أخبار وصيحات عالم العطور في تبويب «أخبار العطور» [perfume_news] من مصادر عامة ومحدثة باستمرار. تقدر تتابعها مباشرة من هناك وتستفيد منها في اختيار أو تصميم عطرك!",
-     "ms": 8015,
+     "question": "عايز أطلب عطر مخصص باسمي، أعمل ايه؟",
+     "excerpt": "منور يا فندم! عيوننا ليك، نعمل لك أحلى عطر مخصص باسمك وذوقك.\n\nالخطوات سهلة وبسيطة: بنسألك عن العائلة العطرية اللي تحبها (خشبي، زهري، شرقي..)، المناسبة، الحجم، والميزانية، وبعدين فريقنا بيبعت لك عرض سعر ومقترح للتركيبة، وقبل ما نبدأ في التحضير والتعتيق بتاخد موافقتك.\n\nعشان تبدأ، املأ الاستمارة اللي ت",
+     "ms": 2339,
      "ok": true,
      "findings": []
     },
     {
-     "question": "عايز أكلم حد من فريق شام",
-     "excerpt": "من عيوني يا غالي، أنا حولت محادثتك لفريق الدعم في شام 🙋 هيبصوا عليها ويردوا عليك هنا في أقرب وقت. \n\nلو حابب يتابعوا معاك بطريقة تانية، تقدر تملأ الاستمارة الظاهرة قدامك دي برقم الطلب وتفاصيل استفسارك عشان نسهل الموضوع عليك. أقدر أساعدك في حاجة تانية لحد ما يردوا؟",
-     "ms": 1505,
+     "question": "ازاي أحفظ العطر عشان مايبوظش؟",
+     "excerpt": "أهلاً بحضرتك! عشان تحافظ على العطر أطول فترة من غير ما تتغير ريحته أو يفسد، دي خطوات بسيطة وسهلة:\n\n1. **ابعده عن النور والحرارة:** خزّن العطر في مكان مظلم وبارد (زي الدولاب أو الدرج)، وابعده تماماً عن شمس الشباك أو حرارة الحمام.\n2. **اقفل الغطاء كويس:** عشان تمنع دخول الهوا اللي بيأكسد الزيوت العطري",
+     "ms": 1773,
      "ok": true,
      "findings": []
     },
     {
-     "question": "ايه الخدمات اللي عندكم؟",
-     "excerpt": "أهلاً بحضرتك يا فندم! دي الخدمات المتاحة عندنا في منصة شام:\n\n• **المتجر:** لشراء عطور جاهزة، زيوت عطرية، مواد خام، وعبوات، مع متابعة الطلبات.\n• **أدوات المنصة والحاسبات:** حاسبة التركيز، الهرم العطري، تخفيف الكحول، والتكاليف.\n• **تركيب عطر مخصص:** لتصميم عطر خاص حسب ذوقك وميزانيتك مع عرض سعر مسبق.\n•",
-     "ms": 1230,
+     "question": "عندكم عطور عود؟",
+     "excerpt": "أهلاً بحضرتك يا فندم، منورنا! طبعاً عندنا تشكيلة عود مميزة وجميلة جداً تناسب ذوقك وتديك فخامة وثبات عالي، ومنها:\n\n• **دهن العود أبييض (Afnan Perfumes)** بسعر ‏16.50 US$\n• **باريس عود (Afnan Perfumes)** بسعر ‏21 US$\n• **بديع العود 50 مل (Ard Al Zaafaran)** بسعر ‏22 US$\n\nبشحن لكل الدول والأسعار بتظهر ",
+     "ms": 1902,
      "ok": true,
      "findings": []
     }
@@ -260,6 +264,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -276,24 +284,20 @@
   },
   "news_articles": {
    "nameAr": "مقالات مرصد العطور",
-   "score": 7,
-   "autoScore": 7,
+   "score": 10,
+   "autoScore": 10,
    "judged": false,
-   "status": "warn",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "status": "ok",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
-   "issues": [
-    "الرد ليس بالعربية رغم أن السؤال بالعربية"
-   ],
+   "issues": [],
    "samples": [
     {
      "question": "GET /api/news (مقالات اليوم)",
-     "excerpt": "## Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection\nخبر عن صناعة العطور من «Grazia»، منشور بالفرنساوي. شاهين يقدر يشرحه لك بالعربي.\nخبر عن صناعة العطور من «Grazia»، منشور بالفرنساوي. شاهين يقدر يشرحه لك بالعربي.\n\nالمصدر: Grazia — https://news.google.co",
-     "ms": 412,
+     "excerpt": "## Interparfums ترفع توقعات عام 2026 وتتوقع تسارع النمو في 2027\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية مثل Jimmy Choo وMontblanc عن تعديل طفيف وزيادة في توقعاتها المالية لعام 2026 مع ترقب نمو قوي وقائمة إطلاقات جديدة في 2027.\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية م",
+     "ms": 188,
      "ok": true,
-     "findings": [
-      "الرد ليس بالعربية رغم أن السؤال بالعربية"
-     ]
+     "findings": []
     }
    ],
    "history": [
@@ -384,6 +388,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 7
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -394,7 +402,7 @@
    "autoScore": 6,
    "judged": false,
    "status": "warn",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [
     "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
@@ -403,7 +411,7 @@
    "samples": [
     {
      "question": "آخر نشرة (30 خبر، منذ 0 ساعة)",
-     "excerpt": "- Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays (GlobeNewswire)\n  Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays\n- Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957 (",
+     "excerpt": "- عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد (صدى البلد)\n  عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد\n- Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes (News.com.au)\n  Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes\n",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -500,6 +508,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 6
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 6
     }
    ],
    "lastEvent": "none"
@@ -510,13 +522,13 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "أحدث الدروس (22 درس)",
-     "excerpt": "## سلامة العطور: الحساسية ومعايير IFRA\nالسلامة أولاً في صناعة العطور. 1. معايير IFRA (المنظمة الدولية للعطور): تحدد النسب الآمنة للمكونات لتجنب الحساسية والتهيج. 2. اختبار الحساسية: ضع قطرة من العطر المخفف على الكوع الداخلي وانتظر 24 ساعة للتأكد من عدم وجود تفاعل تحسسي. 3. المواد المسببة للتحسس الشا",
+     "excerpt": "## أشهر المواد الخام العطرية واستخداماتها\nإليك أهم المواد الخام في صناعة العطور: 1. الورد الطائفي: يتميز بعبق زهري عميق وفخم، يمنح العطور طابعاً ملكياً شرقياً. 2. الياسمين: زهرة بيضاء غنية، تضفي دفئاً وإثارة في قلب العطور الزهرية. 3. الفانيليا: مستخلص حلاوة دافئة وثابتة تُستخدم كقاعدة تمنح الجاذبية ",
      "ms": 0,
      "ok": true,
      "findings": []
@@ -610,6 +622,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -620,21 +636,21 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "صور: agarwood",
      "excerpt": "Agarwood top grade · Highend Agarwood Kyara · Stamp of India Colnect Agarwood Perfume · Infected Agarwood Aquilaria Malaysia",
-     "ms": 809,
+     "ms": 719,
      "ok": true,
      "findings": []
     },
     {
      "question": "خريطة: Grasse, France",
      "excerpt": "Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France (43.6589, 6.92391)",
-     "ms": 624,
+     "ms": 672,
      "ok": true,
      "findings": []
     }
@@ -727,6 +743,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -737,21 +757,21 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "حاجة شبه سوفاج",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، أقترح عليك هذه الخيارات الرائعة ذات الطابع المنعش والحمضي القريب من عطور الأسلوب العصري.\n- IMP-1123: عطر رجالي بعائلة حمضية ومنعشة تناسب الأجواء اليومية وتمنحك شعوراً قريباً من الطابع المفضل لديك.\n- RAS-062: عطر رجالي مائي ومنعش بلمحات البرغموت والزنجبيل، مناسب جداً للا",
-     "ms": 1872,
+     "question": "ارخص عطر عندكم",
+     "excerpt": "أهلاً بك! بصفتي الخبير شاهين من متجر شام، يسعدني مساعدتك في العثور على الخيار الأنسب لميزانيتك. لقد قمنا بالاستعانة بالذكاء الاصطناعي لترشيح أرخص العطور المتوفرة لدينا حالياً.\n- AFN-1186: عطر أبييض مسك من أفنان بسعر 875 ج، وهو أحد أقل الأسعار لدينا، يناسب الاستخدام اليومي والعمل.\n- AFN-1187: عطر دهن",
+     "ms": 1952,
      "ok": true,
      "findings": []
     },
     {
-     "question": "A sweet vanilla perfume for winter evenings",
-     "excerpt": "Hello! As Shaheen, expert advisor at Sham Store, I used AI tools to match your request with our authentic inventory for a cozy sweet vanilla scent during winter evenings.\n- LAT-118: Features a rich blend of vanilla and amber, perfect for winter evenings.\n- ALR-108: A delightful and affordable unisex",
-     "ms": 1363,
+     "question": "عطر مسك ناعم للبنات",
+     "excerpt": "أهلاً بك في متجر شام! بصفتي الخبير شاهين، استخدمت نظام الذكاء الاصطناعي لأختار لك أفضل العطور التي تتميز برائحة المسك الناعمة والمناسبة للبنات.\n- AFN-1134: يتميز برائحة مسك ناعمة ونقية مناسبة للاستخدام اليومي والعمل.\n- KHA-773: يحتوي على المسك الأبيض والنفحات البودرية الناعمة ليمنحك إحساساً منعشاً و",
+     "ms": 1453,
      "ok": true,
      "findings": []
     }
@@ -836,6 +856,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -856,7 +880,7 @@
    "autoScore": 9,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [
     "83 منتج فيها ملاحظات بيانات للتاجر"
@@ -864,7 +888,7 @@
    "samples": [
     {
      "question": "كتالوج المتجر (1114/1114 راجعها شاهين)",
-     "excerpt": "## BUJ-1009 امبر إكليبس باي بجيرامي\nعطر دافئ للجنسين يرتكز على غنى العنبر والتوابل العطرة. يناسب الأمسيات الهادئة والمناسبات الخاصة.\nالعائلة: amber/spicy/musk — النوتات: Cinnamon, Cardamom, Spicy Notes, Amber, Musk\n\n## BUJ-1010 بوجي باي بجيرامي\nعطر نسائي أنيق ينبض بالحيوية والنفحات الزهرية والفواكه ",
+     "excerpt": "## BUJ-1012 إمبريال عود باي بجيرامي\nعطر ملكي للجنسين يمزج بين العود الأصيل والتوابل الدافئة بأسلوب راقٍ. يضفي هالة من الفخامة في المناسبات.\nالعائلة: oud/woody/spicy — النوتات: Spices, Frankincense, Ginger, Bergamot, May Rose, Licorice, Myrrh, Tonka Bean, Sandalwood, Patchouli, Oud\n\n## BUJ-1013 كارتي",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -952,6 +976,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 9
     }
    ],
    "guidance": {
@@ -972,13 +1000,13 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "مستورد شاهين ومراجع الصفحات",
-     "excerpt": "1114 منتج (1063 مستورد): 518 سليم، 596 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nLAT-104 Maharjan Gold by Lattafa Pride 100ml: المورد لم ينشر نوتات العطر\nLAT-105 Ana Abiyedh Leather 60ml by Lattafa Perfumes: المورد لم ينشر نوتات العطر\nLAT-106 Bayaan Eau De Parfum 100ml ",
+     "excerpt": "1114 منتج (1063 مستورد): 519 سليم، 595 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nMAI-580 Leyden by Maison Alhambra Eau De Parfum 100ml: المورد لم ينشر نوتات العطر، غير متوفر عند المورد\nMAI-581 Chic Velvet Pink Secret for Women 100ml: المورد لم ينشر نوتات العطر، غير متوف",
      "ms": 0,
      "ok": true,
      "findings": []
@@ -1060,6 +1088,10 @@
     {
      "at": "2026-11-20T11:26:50.844Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -1070,14 +1102,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-20T11:26:50.844Z",
+   "checkedAt": "2026-11-20T22:15:09.691Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/community/status (جاهزية ذكاء المجتمع)",
      "excerpt": "المجتمع مفعّل (postgres)",
-     "ms": 96,
+     "ms": 101,
      "ok": true,
      "findings": []
     }
@@ -1097,6 +1129,10 @@
     },
     {
      "at": "2026-11-20T11:26:50.844Z",
+     "score": 10
+    },
+    {
+     "at": "2026-11-20T22:15:09.691Z",
      "score": 10
     }
    ],
