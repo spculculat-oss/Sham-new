@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T12:59:37.785Z",
+ "updatedAt": "2026-11-21T20:41:14.479Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 519,
-  "warn": 595,
+  "ok": 521,
+  "warn": 593,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-21T12:58:37.022Z",
+  "at": "2026-11-21T20:40:06.210Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -25,7 +25,7 @@
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1035,
+    "listingProducts": 1038,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 60794
+  "durationMs": 68296
  },
  "items": [
   {
@@ -4381,16 +4381,6 @@
    "page": "p/exclusif-rose-maison-alhambra-100ml-edp-842.html"
   },
   {
-   "sku": "ZIM-845",
-   "id": 845,
-   "name": "Wameed by Zimaya 100ml Unisex EDP",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/wameed-by-zimaya-100ml-unisex-edp-845.html"
-  },
-  {
    "sku": "RUE-848",
    "id": 848,
    "name": "Pride Pour Femme Rue Broca 100ml EDP",
@@ -4420,16 +4410,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/kayaan-classic-by-al-wataniah-homme-intense-100ml-for-man-850.html"
-  },
-  {
-   "sku": "MAI-851",
-   "id": 851,
-   "name": "Versencia Noir by Maison Alhambra – 100 ml for Women",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/versencia-noir-by-maison-alhambra-100-ml-for-women-851.html"
   },
   {
    "sku": "MAI-852",
