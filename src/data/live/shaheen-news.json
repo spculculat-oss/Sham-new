@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T10:54:16.641Z",
- "nextUpdateAt": "2026-11-21T22:54:16.641Z",
+ "updatedAt": "2026-11-21T20:52:40.475Z",
+ "nextUpdateAt": "2026-11-22T08:52:40.475Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,7 +10,19 @@
  },
  "sources": [
   {
+   "name": "Now Smell This",
+   "count": 3
+  },
+  {
+   "name": "Vietnam.vn",
+   "count": 3
+  },
+  {
    "name": "Grazia",
+   "count": 2
+  },
+  {
+   "name": "CaFleureBon",
    "count": 2
   },
   {
@@ -18,19 +30,27 @@
    "count": 2
   },
   {
-   "name": "Now Smell This",
-   "count": 2
-  },
-  {
-   "name": "Vietnam.vn",
-   "count": 2
-  },
-  {
    "name": "Premium Beauty News",
    "count": 2
   },
   {
-   "name": "Madame Figaro",
+   "name": "lanouvellerepublique.fr",
+   "count": 1
+  },
+  {
+   "name": "https://inews.ma/",
+   "count": 1
+  },
+  {
+   "name": "صحيفة المرصد",
+   "count": 1
+  },
+  {
+   "name": "Le Parisien",
+   "count": 1
+  },
+  {
+   "name": "magazine GEO",
    "count": 1
   },
   {
@@ -46,23 +66,23 @@
    "count": 1
   },
   {
-   "name": "DW.com",
-   "count": 1
-  },
-  {
    "name": "The Impression",
    "count": 1
   },
   {
-   "name": "News.com.au",
-   "count": 1
-  },
-  {
-   "name": "CaFleureBon",
-   "count": 1
-  },
-  {
    "name": "lematinsports",
+   "count": 1
+  },
+  {
+   "name": "Madame Figaro",
+   "count": 1
+  },
+  {
+   "name": "DW.com",
+   "count": 1
+  },
+  {
+   "name": "News.com.au",
    "count": 1
   },
   {
@@ -76,38 +96,6 @@
   {
    "name": "FashionNetwork France",
    "count": 1
-  },
-  {
-   "name": "Site des Marques",
-   "count": 1
-  },
-  {
-   "name": "NEWS.am STYLE",
-   "count": 1
-  },
-  {
-   "name": "Auparfum",
-   "count": 1
-  },
-  {
-   "name": "كازا 24",
-   "count": 1
-  },
-  {
-   "name": "Personal Care Insights",
-   "count": 1
-  },
-  {
-   "name": "Exhibition News",
-   "count": 1
-  },
-  {
-   "name": "GlobeNewswire",
-   "count": 1
-  },
-  {
-   "name": "Fresh Mag Paris",
-   "count": 1
   }
  ],
  "items": [
@@ -115,7 +103,7 @@
    "id": "n76kx43",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
    "source": "Grazia",
-   "publishedAt": "2026-11-21T10:25:00.000Z",
+   "publishedAt": "2026-11-21T19:36:57.000Z",
    "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
    "lang": "fr",
    "category": "industry",
@@ -130,21 +118,165 @@
    }
   },
   {
-   "id": "nsgxkfd",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeDRaZVBSUl9PRUFEUUZYV2d3dXR6czZYUDdkWjBMRE1Qdmh6aU1nNWVxUk1Ga0JwSVhpNGJlMlBQc1hhQkhfQVdDT1hkTS1OS3B5VVJlcEFiaWlnRGhFRzk2NFNaY2Q5WkozLVR4R3RiWDc3Q3doTTA0c29LU1dacml1bXhLcFFjQmpWWGxyM09FRlFfV0pwdWt2RnRFVDYyMldpWUoyNDBzYWVmZjBhZzZON0hjRldTQjByOFVFUzhyTlVBY3FjdndOTFRGdw?oc=5",
-   "source": "Madame Figaro",
-   "publishedAt": "2026-11-21T08:30:00.000Z",
-   "original": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+   "id": "ncbu3h8",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOSE0taWhuQkxYeWJsSzJQaFJ5Yjd1bHhOTU9YM1VYbUFzSnB0ejBKc1ZJbjdNRHJNcWR4Q0JIR2J6S3dPWnlGODhERnBEZEpHT1hNZGxaRjBuVF9NenZteUt4VzA1U1JZS01mbDVPZ01aaFUxcUhSZzRhRWtSNkVFM0tEQXZ1MGplNXNwNmtfR3dSaFdhdmdpUWJhaWtGTjNaQWFVVHZHNWlycWZycS1QdEF6bnJ3ZlRzWl9WOU1WcmRBVk9KZnBmT2p0cXRuZmdQY3IzODNZcmVUME0zWGx3Q3NHMkZKQ3loYUFZZ1NabkNfZVpzREtqazVB?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-21T19:06:46.000Z",
+   "original": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
    "lang": "fr",
    "category": "industry",
    "importance": 2,
    "title": {
-    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
-    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
    },
    "summary": {
-    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
-    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
+   }
+  },
+  {
+   "id": "n5qw8u4",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZ1JWUnA1SWJDUFBEb1IzQjBKTENWdFdxemR2UkRpbnVJUzQtOUhZSllqbzIyc3YzVFJGVXlaWFlaLVdaVXJ0eXRveHhHUG5VTlBiUjRaTWpKSlFzTFJ0M05pVmVMQnNfVnQtc2ppM1BLV0MyU1RrUkoxQnpxdEJfVEh3d1F5Yk5QUm11WHlhbzJhR2tuWUd2WUpZTlB5ZTBpNTUzQ05pT2w5b2o3anBfazlGeGhiTmVUdFJSelBRU3FmTGZ1RDVvT0h3aUoxQ1hoMVZaMGtCNTBsa1dKcm9jZ21IYmVnSjlIVVE?oc=5",
+   "source": "lanouvellerepublique.fr",
+   "publishedAt": "2026-11-21T18:52:56.000Z",
+   "original": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
+   "lang": "fr",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
+    "en": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers"
+   },
+   "summary": {
+    "ar": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
+    "en": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers"
+   }
+  },
+  {
+   "id": "n1mv08ii",
+   "url": "https://nstperfume.com/2026/11/21/lazy-weekend-poll-open-thread-latish-november-2026/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-21T17:17:05.000Z",
+   "original": "Lazy weekend poll ~ open thread, latish-November 2026",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Lazy weekend poll ~ open thread, latish-November 2026",
+    "en": "Lazy weekend poll ~ open thread, latish-November 2026"
+   },
+   "summary": {
+    "ar": "It’s almost Thanksgiving and we’re relaxing before the holiday festivities with our usual open thread poll. Talk about anything you like — the fragrance you’re wearing today, any cooking or travel (or perfume shopping? just curling up with a good book?) plans you might have this week, whatever. Or, ask a question about fragrance, then see if anyone else has asked a question that you can answer…",
+    "en": "It’s almost Thanksgiving and we’re relaxing before the holiday festivities with our usual open thread poll. Talk about anything you like — the fragrance you’re wearing today, any cooking or travel (or perfume shopping? just curling up with a good book?) plans you might have this week, whatever. Or, ask a question about fragrance, then see if anyone else has asked a question that you can answer…"
+   }
+  },
+  {
+   "id": "nd60xv0",
+   "url": "https://cafleurebon.com/ambragio-by-puredistance-winner/?utm_source=rss&utm_medium=rss&utm_campaign=ambragio-by-puredistance-winner",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-21T16:53:05.000Z",
+   "original": "Ambragio by PUREDISTANCE Winner",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Ambragio by PUREDISTANCE Winner",
+    "en": "Ambragio by PUREDISTANCE Winner"
+   },
+   "summary": {
+    "ar": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "nfn6yir",
+   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE14aEtXeGdBa1NuR3FGRFo0a0V2U1NxSkd5YWJEb2R4dU9HZDdMLUoxRVpjWFEzaHFQRDVOTjZUd2F0VmM?oc=5",
+   "source": "https://inews.ma/",
+   "publishedAt": "2026-11-21T16:02:26.000Z",
+   "original": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
+    "en": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي"
+   },
+   "summary": {
+    "ar": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
+    "en": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي"
+   }
+  },
+  {
+   "id": "nswipvw",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMGxoUzh4S2hNc19KUjNCTXcwTk9mUFphNm9BQTliSGlpOW1KTzVxRXVmcE82TTBzZTU4b2JuNXRJUHRmZk9aOVFhazliODRoUGhCc2lvNmtSZnFJbHV4c21lSThoczVndHFhZEV1b0RBT0FNaFJoczEyN29WeG1CREl4dFVmTlhkRkFZYjI3WjlVRzdSdmhSM050TGRCT2pudi1DUHVBdi13UGJqZTlDeQ?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-21T12:26:15.000Z",
+   "original": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
+    "en": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026."
+   },
+   "summary": {
+    "ar": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
+    "en": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026."
+   }
+  },
+  {
+   "id": "n1dpyye0",
+   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
+   "source": "صحيفة المرصد",
+   "publishedAt": "2026-11-21T11:40:29.000Z",
+   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   },
+   "summary": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   }
+  },
+  {
+   "id": "n1pxlwj4",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUkxRazFBa2ZlMWJwMUs4bzRJdEJPMTRLWE9jMjQ1clp0elh5UWhyY19PVFhMQjhOWjg3YmktYjRRYkF6d2dRWW15YTYtNFNlRE9WbTFRdGtSTkg3dHBHcGVSTnhTZ0N6TldMdENlQl81LXh0aWpRb3c3WTcyT25FMEYzOFNGWWVSelVSQm9vUGdOX3dpQldubmo0OHYtTmd0UUdGd2M3RkhudnFPOG41Z1Y5UVFRU3JnSDRJUlI1OUJPc1RKdUlQNnRMMEZwX1lQUG1kVFVldUhHa1FGQTdzVHV5RWhqZDVCdWxyT2VCYlE?oc=5",
+   "source": "Le Parisien",
+   "publishedAt": "2026-11-21T11:39:00.000Z",
+   "original": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
+   "lang": "fr",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
+    "en": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !"
+   },
+   "summary": {
+    "ar": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
+    "en": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !"
+   }
+  },
+  {
+   "id": "n1agye4d",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ0IwT3FxY1I0WU8zSG5xZkNlbm1NR1BjUEhoWHd4MmFucG9XaFdZRUNILUZ4RlVwMW5XRkt1QjE5ZHFpTGs4b3dnb3VlaFFscnNFV0NzN29CMkZraXlXZHFVbDgwYi00S0dQS2k1Q0VVYXFmX0Z6ZTdXSVpjSVBwUnN5cnpOdzBlZ2RoMFVfb3VqMVFOQnlsVXRNclRES0M2SHdSWXlpbm0tMEt6OEJ1RmRCdFlCM2VnVlhCZk9uRHVQWUl1MnBrNVJPTUJJMWtwSGtN?oc=5",
+   "source": "magazine GEO",
+   "publishedAt": "2026-11-21T10:53:00.000Z",
+   "original": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
+   "lang": "fr",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
+    "en": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions"
+   },
+   "summary": {
+    "ar": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
+    "en": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions"
    }
   },
   {
@@ -202,24 +334,6 @@
    }
   },
   {
-   "id": "n1obdy8l",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HNllCQm1xc0NMeVJsaGFMcmRZdGRTYU1XQVU2aFBwME03NE9oblk2dHMxWHFyQXpVVXpmTVVhX056VVdSWlNRd0xpUTRJOGpTdjJlV3dJZXJHLXFGWWpjRmRYdG5kN3FxUmdzMlo5RkRtcXBwYk83ZC02dw?oc=5",
-   "source": "DW.com",
-   "publishedAt": "2026-11-21T00:47:14.000Z",
-   "original": "Chanel No. 5: the cult perfume turns 100",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Chanel No. 5: the cult perfume turns 100",
-    "en": "Chanel No. 5: the cult perfume turns 100"
-   },
-   "summary": {
-    "ar": "Chanel No. 5: the cult perfume turns 100",
-    "en": "Chanel No. 5: the cult perfume turns 100"
-   }
-  },
-  {
    "id": "nql86xz",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONWkwT2JXTFQ1cE9uc1E5VVhPS0IxLXBvOUdUaElSMkVBbHdUdHdHaHdFOVpmRk1fRzhGQmUwSWZuSXZqX2NxV1NFdk1ZY2NPMFRET1djeWhDU0Z1c0pWWktMSmExQXlHNDlnRWY4MTJ5MjhTQXpfTVR4bFI3RXU5MU8xNHFKdkhQdWdVMVloOW9BUQ?oc=5",
    "source": "The Impression",
@@ -271,24 +385,6 @@
    "summary": {
     "ar": "دخان البخور والجهاز التنفسي",
     "en": "دخان البخور والجهاز التنفسي"
-   }
-  },
-  {
-   "id": "n1cxt70z",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdWpTT1IzcUFTU1BQaXU5S19McHpVUkRndjJIdTg4azFXUi1vZjR4V3lvZjRVY251QjFUUzVfdnBnQWN1UHk3cEpGa3FyclFlczZDSURtMk5Pak5XeUUzQUxDcWNFakVVWHl3TzB3QVJDQVk0TlhwaDRaX3VZYXNHYktHZFpCc3djb2VlSHNqX1pxbl94R3dnQW84eVNJd0QxUF9PZzZRUTBVaXdzMnhoMGVWcjA3MmxKbldKZWhLdG9nNkVCc2pkTUVKUXNKU2NGUWtBZHh0ZlFwdXBmV3BrSjl2RFQydEMzRkdlQklhMFFxdDE4ZFHSAfsBQVVfeXFMTXhCZ05qMjh1djRpOG54WUJoYVdCcUEyMkpDQ1hNVzdlblNBYWE5LUhBdVlzSFROLXhwbWFmbV82aDVxX1JVSG41cG9qaHdYeWRvQU0xSjV5cWU2blc5d0pqUDBkUllmNzdwNmV0TXo2ZWxtLWdycFZaMjVtS0JKZkUwRzdIcHB0b3VyUk81bUY3TXNMTk9SekZmTUtnNVo5ZEdodURaQTI1d25IQ3FIMkZ2LWl0UzBma2xnX2k0VFh0TTB6R2V5b0VZSkxvNnJvYWNiQUNaMk5OTXM2Q1otU2xNdmJmRTFLYjRHYmZPdHVjMU42N0NIMGlONWs?oc=5",
-   "source": "News.com.au",
-   "publishedAt": "2026-11-20T21:04:05.000Z",
-   "original": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
-   },
-   "summary": {
-    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
    }
   },
   {
@@ -361,6 +457,60 @@
    "summary": {
     "ar": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
     "en": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي"
+   }
+  },
+  {
+   "id": "nsgxkfd",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeDRaZVBSUl9PRUFEUUZYV2d3dXR6czZYUDdkWjBMRE1Qdmh6aU1nNWVxUk1Ga0JwSVhpNGJlMlBQc1hhQkhfQVdDT1hkTS1OS3B5VVJlcEFiaWlnRGhFRzk2NFNaY2Q5WkozLVR4R3RiWDc3Q3doTTA0c29LU1dacml1bXhLcFFjQmpWWGxyM09FRlFfV0pwdWt2RnRFVDYyMldpWUoyNDBzYWVmZjBhZzZON0hjRldTQjByOFVFUzhyTlVBY3FjdndOTFRGdw?oc=5",
+   "source": "Madame Figaro",
+   "publishedAt": "2026-11-21T08:30:00.000Z",
+   "original": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+   },
+   "summary": {
+    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+   }
+  },
+  {
+   "id": "n1obdy8l",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HNllCQm1xc0NMeVJsaGFMcmRZdGRTYU1XQVU2aFBwME03NE9oblk2dHMxWHFyQXpVVXpmTVVhX056VVdSWlNRd0xpUTRJOGpTdjJlV3dJZXJHLXFGWWpjRmRYdG5kN3FxUmdzMlo5RkRtcXBwYk83ZC02dw?oc=5",
+   "source": "DW.com",
+   "publishedAt": "2026-11-21T00:47:14.000Z",
+   "original": "Chanel No. 5: the cult perfume turns 100",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Chanel No. 5: the cult perfume turns 100",
+    "en": "Chanel No. 5: the cult perfume turns 100"
+   },
+   "summary": {
+    "ar": "Chanel No. 5: the cult perfume turns 100",
+    "en": "Chanel No. 5: the cult perfume turns 100"
+   }
+  },
+  {
+   "id": "n1cxt70z",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdWpTT1IzcUFTU1BQaXU5S19McHpVUkRndjJIdTg4azFXUi1vZjR4V3lvZjRVY251QjFUUzVfdnBnQWN1UHk3cEpGa3FyclFlczZDSURtMk5Pak5XeUUzQUxDcWNFakVVWHl3TzB3QVJDQVk0TlhwaDRaX3VZYXNHYktHZFpCc3djb2VlSHNqX1pxbl94R3dnQW84eVNJd0QxUF9PZzZRUTBVaXdzMnhoMGVWcjA3MmxKbldKZWhLdG9nNkVCc2pkTUVKUXNKU2NGUWtBZHh0ZlFwdXBmV3BrSjl2RFQydEMzRkdlQklhMFFxdDE4ZFHSAfsBQVVfeXFMTXhCZ05qMjh1djRpOG54WUJoYVdCcUEyMkpDQ1hNVzdlblNBYWE5LUhBdVlzSFROLXhwbWFmbV82aDVxX1JVSG41cG9qaHdYeWRvQU0xSjV5cWU2blc5d0pqUDBkUllmNzdwNmV0TXo2ZWxtLWdycFZaMjVtS0JKZkUwRzdIcHB0b3VyUk81bUY3TXNMTk9SekZmTUtnNVo5ZEdodURaQTI1d25IQ3FIMkZ2LWl0UzBma2xnX2k0VFh0TTB6R2V5b0VZSkxvNnJvYWNiQUNaMk5OTXM2Q1otU2xNdmJmRTFLYjRHYmZPdHVjMU42N0NIMGlONWs?oc=5",
+   "source": "News.com.au",
+   "publishedAt": "2026-11-20T21:04:05.000Z",
+   "original": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
+   },
+   "summary": {
+    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
+    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
    }
   },
   {
@@ -487,168 +637,6 @@
    "summary": {
     "ar": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè",
     "en": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè"
-   }
-  },
-  {
-   "id": "n1u22dx0",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUnZUNnNQbmsyNFZ3RGF0djZHdkF2bjA4Qzh6bm5KQXBIbUlEVnNhbnNkRlJFTTRvOGhtRjVGWmt4bzhyelAxYjQxa0hBYllLSVB6OUlEYjRrX3l5TUFDTWxWNGM4UzFmR2RFb01sZWdLb3paNmYtakxMLVE1OFRkTHZVbWs4WHVDUmI3ZnZIRkx5cFFsMkxiWThaTzNfSUdhdktqU2ljM0wtemV1aF9lWi16X2ozanFZbnpTY2xkQUpJcklR?oc=5",
-   "source": "Site des Marques",
-   "publishedAt": "2026-11-20T18:02:00.000Z",
-   "original": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
-    "en": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes"
-   },
-   "summary": {
-    "ar": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes",
-    "en": "Parfums de Noël 2026 : les nouveautés qui sentent bon les fêtes"
-   }
-  },
-  {
-   "id": "ntt0h9k",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5JWUFBeG4xNlNRQTRiNVBCTWlHSHQ3dDZESlQ5N3ZuVVZJbkRoeTRZN2h3ZFgwcVpndTlWd2Y2eHp5bTAza3IxU2VpVURpUQ?oc=5",
-   "source": "NEWS.am STYLE",
-   "publishedAt": "2026-11-20T16:56:42.000Z",
-   "original": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
-    "en": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry"
-   },
-   "summary": {
-    "ar": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry",
-    "en": "Louis Vuitton’s Master Perfumer Reveals How Arab Culture Is Transforming the Global Fragrance Industry"
-   }
-  },
-  {
-   "id": "n94g9qv",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQ1RnalduMEJ3cGJZamRVS0hXNG1UZjQ4YTBROVVsVEp3YTlDYzdQOFlvOTAycjM1ZlhubnpoOVYzYmowRFVvZklXZE4xM2FwM251RWdEZnluMlJqdUVoS1MzTnJEZ2QzRzEtX3VNYkctUWl4WF92Y1h4WnJGZnV3U25TVzhneWFwXy02UVd0TDU3TC04bGhzWVV6Q1Y3SGhSVUxDcWlCTEptWVV0TEVzZThVcWpoODAwbDh3MDRJS1Nzejd3c0hXX0w5TGd6N3BIWnpNQ0VobkxITXd2MDBTUHNGWlh0Z1U?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-20T16:37:37.000Z",
-   "original": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
-   },
-   "summary": {
-    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
-   }
-  },
-  {
-   "id": "n53l08m",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
-   "source": "Auparfum",
-   "publishedAt": "2026-11-20T15:55:58.000Z",
-   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   },
-   "summary": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   }
-  },
-  {
-   "id": "n145pv89",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9Za3FhSmVrZkZpRlBKbExoYkJTVzZKRXhmR285NlNSN3ZVUFN5OHVVSzVYa3ZsUGhxczBubWdkWUJ6eWpyc1AzRkNxeHA?oc=5",
-   "source": "كازا 24",
-   "publishedAt": "2026-11-20T15:54:44.000Z",
-   "original": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
-    "en": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»"
-   },
-   "summary": {
-    "ar": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»",
-    "en": "الحي الحسني يحتفي بعيد الاستقلال بأمسية فنية مع مجموعة «عود كارافان»"
-   }
-  },
-  {
-   "id": "n1pfvlql",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX1IyaVhFUDBsYWtxVTIxWkFneHFTOVRZTW1fUWN5OUh5d0lpeVVvQWRYazRvUk5SUEpYbm1TSXF4Zjl4Q3FHb3FsSE9PZ3lfeTRLT3QyM2F6UVNJSzQ5bkZGMVlXM0V3bTZiTDlELVh4TGl1Sy1ZQWY4WC00eDhuMTBuM20?oc=5",
-   "source": "Personal Care Insights",
-   "publishedAt": "2026-11-20T15:44:21.000Z",
-   "original": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
-    "en": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery."
-   },
-   "summary": {
-    "ar": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery.",
-    "en": "IFF opens Forest Lab to bridge biodiversity conservation and fragrance discovery."
-   }
-  },
-  {
-   "id": "n1mk76p6",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeldKelpOX2dzbjFiTkMtaEJZSzZqTGhhVzJFWF8waWZNVHNoOUYtclFpd2U1YUpwaHhGN1lmbGhOTkdGemJWZjVaa0sxQTgyckJOMl82X0Z5NklsOFBqYUV2dEN5bnA2X2NrS2xXSXIzZlEtVGFJMEpzek1NNXRKeU9zT0ViMlhUQ1RCUndydnNzVWI4cDZWOWI3VFV2cDRpWlN5X3hn?oc=5",
-   "source": "Exhibition News",
-   "publishedAt": "2026-11-20T15:43:53.000Z",
-   "original": "International Confex signs Equal Strategy as official scent partner for 2027",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "International Confex signs Equal Strategy as official scent partner for 2027",
-    "en": "International Confex signs Equal Strategy as official scent partner for 2027"
-   },
-   "summary": {
-    "ar": "International Confex signs Equal Strategy as official scent partner for 2027",
-    "en": "International Confex signs Equal Strategy as official scent partner for 2027"
-   }
-  },
-  {
-   "id": "n1smwbwr",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM3B4YVBvM0IwcldJTWNETTk1Ympac010QjZjR21VYVV6ZkxsdUJQaEFfLURrUUZWNUdMTUhZbE9VdVFFd0ZPU1d0RTF6SXBBbkhrdmprdTJVLTA2Mk5zTjE3YU9TQkd4TFhaYXlQVllhcURtVVZxMjF4LUtrWmp5dXdiNWFhSl8yYklsYXZPbDJwc1YzSWphSHY1ZFBrNFhOZVFxUXNOVFpHMFZoUmVCQ05qNHM5N0pUZEJkZ0tER2FBSUR1aV9Qc3pxZXhtaFUyYUxfQnJodFN4dTg3cjNyYi1uWHB4V1FneENQOTR5b05RWDRG?oc=5",
-   "source": "GlobeNewswire",
-   "publishedAt": "2026-11-20T11:00:00.000Z",
-   "original": "Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays",
-    "en": "Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays"
-   },
-   "summary": {
-    "ar": "Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays",
-    "en": "Bath & Body Works and Pantone Launch a Limited-Edition Fragrance Collection for the Holidays"
-   }
-  },
-  {
-   "id": "n3jqp4g",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUFdIaXZTekxfTGJCU1hWN1VCRW5BZEJOVjhlNFc1NU4xcDJsbVk5UFBka2RMemEwWUlNZ3BqYUFwWTAzcDVLZWNIWXBXUmE3WDItLTBUX3h0T3lGZlJlSEhvRXdtaHVKVmhTVGpwOFdZd1k3Zk5BNmhnODZfXzNJdEE4aXBLN3hidVQ3REszMnhIbVh0ZF9UZ21KUElXNUc1M25iTVB6RGVuRkZRRGtTNnBCMG5lUQ?oc=5",
-   "source": "Fresh Mag Paris",
-   "publishedAt": "2026-11-20T10:56:01.000Z",
-   "original": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957",
-    "en": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957"
-   },
-   "summary": {
-    "ar": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957",
-    "en": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957"
    }
   }
  ]
