@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-20T22:14:17.525Z",
- "nextUpdateAt": "2026-11-21T10:14:17.525Z",
+ "updatedAt": "2026-11-21T10:54:16.641Z",
+ "nextUpdateAt": "2026-11-21T22:54:16.641Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,11 +10,15 @@
  },
  "sources": [
   {
-   "name": "Now Smell This",
+   "name": "Grazia",
    "count": 2
   },
   {
-   "name": "Grazia",
+   "name": "صدى البلد",
+   "count": 2
+  },
+  {
+   "name": "Now Smell This",
    "count": 2
   },
   {
@@ -26,7 +30,27 @@
    "count": 2
   },
   {
-   "name": "صدى البلد",
+   "name": "Madame Figaro",
+   "count": 1
+  },
+  {
+   "name": "Midi Libre",
+   "count": 1
+  },
+  {
+   "name": "سكاي نيوز عربية",
+   "count": 1
+  },
+  {
+   "name": "Revista Merca2.0",
+   "count": 1
+  },
+  {
+   "name": "DW.com",
+   "count": 1
+  },
+  {
+   "name": "The Impression",
    "count": 1
   },
   {
@@ -46,7 +70,11 @@
    "count": 1
   },
   {
-   "name": "FashionNetwork - The World's Fashion Business News",
+   "name": "TrendWatching",
+   "count": 1
+  },
+  {
+   "name": "FashionNetwork France",
    "count": 1
   },
   {
@@ -74,47 +102,141 @@
    "count": 1
   },
   {
-   "name": "سكاي نيوز عربية",
-   "count": 1
-  },
-  {
    "name": "GlobeNewswire",
    "count": 1
   },
   {
    "name": "Fresh Mag Paris",
    "count": 1
-  },
-  {
-   "name": "USA Today",
-   "count": 1
-  },
-  {
-   "name": "بوابة أخبار اليوم الإلكترونية",
-   "count": 1
-  },
-  {
-   "name": "Prestige Online - Singapore",
-   "count": 1
-  },
-  {
-   "name": "jamalouki.net",
-   "count": 1
-  },
-  {
-   "name": "PNN Digital",
-   "count": 1
-  },
-  {
-   "name": "صحيفة المرصد",
-   "count": 1
-  },
-  {
-   "name": "SBS",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "n76kx43",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-21T10:25:00.000Z",
+   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   },
+   "summary": {
+    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
+    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   }
+  },
+  {
+   "id": "nsgxkfd",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeDRaZVBSUl9PRUFEUUZYV2d3dXR6czZYUDdkWjBMRE1Qdmh6aU1nNWVxUk1Ga0JwSVhpNGJlMlBQc1hhQkhfQVdDT1hkTS1OS3B5VVJlcEFiaWlnRGhFRzk2NFNaY2Q5WkozLVR4R3RiWDc3Q3doTTA0c29LU1dacml1bXhLcFFjQmpWWGxyM09FRlFfV0pwdWt2RnRFVDYyMldpWUoyNDBzYWVmZjBhZzZON0hjRldTQjByOFVFUzhyTlVBY3FjdndOTFRGdw?oc=5",
+   "source": "Madame Figaro",
+   "publishedAt": "2026-11-21T08:30:00.000Z",
+   "original": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+   },
+   "summary": {
+    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
+    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
+   }
+  },
+  {
+   "id": "naz9uys",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSGRYQlU4RDNQd3RXWEJYcmFZbGtzbkY4bEVOMXJaeUxQd0FzVDlaZzJqbkFROEtsYkpPVGtPNEZEU2puX0lJQTlHSmhGSG80cWE0RXJPTzgzX2FUS3BSQUtTdHBsbzRrMk9TaElSWFJpR2JscDhneGpsRG41WExtaEh1ZTE1X2JjMWRnMHJuMDJOZEltZ0E?oc=5",
+   "source": "Midi Libre",
+   "publishedAt": "2026-11-21T04:06:00.000Z",
+   "original": "Mireille Pluchard et son \"Parfum d’interdits\"",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Mireille Pluchard et son \"Parfum d’interdits\"",
+    "en": "Mireille Pluchard et son \"Parfum d’interdits\""
+   },
+   "summary": {
+    "ar": "Mireille Pluchard et son \"Parfum d’interdits\"",
+    "en": "Mireille Pluchard et son \"Parfum d’interdits\""
+   }
+  },
+  {
+   "id": "n1dxgqw0",
+   "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPMWI0c2FDdFNEUkY5ZGtUalpFMnN1M0J6djhxVlpsVUN2X3VxSHhMaUI4clp1MEdOdHZfbkVMY20tbllBTVoyMENQb28zZVAyVXlDNHdWNVV3WWVuUWVuRmVXbW51MElVRUVaaWpadGg2c2tmeTlYYmE1alBOYk5jeGVLSGNXTklTQ216QmVZNktlOWN5SVpFY2E0dF9WS3Nrc1F3bG9waFV6RWZoOUhHWW5GX1p1S2tVYzNtZGJEN2lHejdLaTVzRDNhb2dkRWRldzhVRnJMNWZyNGVDN1Jfd0FMejJ3RTFiRXFJM3Z6SHY1bVdjdVhGb2tGdG52Z3l4X3gycEVFcFc2WXZaMkUyQ1RIV1dNUGVPX2I5azRGcHgwczNDc1gwZzdOdmFNTHMtaTFYMnlzVmU3YzFFYVlVa1JFRkNmdU0wQVo4M2RDNko3TGlvSXowOC1yY25OYlnSAeQCQVVfeXFMTV84eGNkSjN2S1QzbnVHU1VqY1d0VWhVV192OU05NEtXUTdTVTJpQlduVVZBcmE4djFXa1ZLMF9DQk5YdDBhMnlveUNkUDhnR2U5T25xYXFla0didms5TXMtVTdfOHVXczBjRTJKbG1MbE5ubkdJaDY4dVZ6c0JmWEFKR1dsRTZNQ2w0Q1pCRnhuQU9fWjBwOXI2dWkzVzA2WlRpMkVqQU9kMFNlclBiUjg1ZlBVb3kyaUpCRFJLdTdTY2xIaFE3RkREbk5yUmJzMGwxR1A2enN0SnBlWEl2a0FqN09pTTFTOEpocnZqay1CdWJOTGt1QTdFQnZ5SGhtT1ZvdzNZc01MejBrdVZZdmMxMExSb3JySVYxd1ZJMXQ1a216elZpX1JRQ1dZRFFnckptWHYtUUd4M3RtNHFicVJwN1RQclkzN25LbVVLQzBZLXpJQ05UMEFJM1E3aWltZFg5V0M?oc=5",
+   "source": "سكاي نيوز عربية",
+   "publishedAt": "2026-11-21T04:03:06.000Z",
+   "original": "عازف غزي يداوي وجع النزوح بأوتار العود",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
+   },
+   "summary": {
+    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
+   }
+  },
+  {
+   "id": "n1p8gue1",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObVBsLUdCUzZ1YU10LS1FTjVjUllYMFZLMHpDUGJua2tSZ1gyZ3VhLVRiOTkxUmlHOC1aWXQ1T2p5OWlZeGtpbDlYOGE0VV9IZVVFSEJjMGxtcXZlX0tvczNvRjctUFBUbHE4VHhkSkhMUm92YXgwc21ka0RpVTNaMkFLR01HNG5ZZEhPNUJDd1JWU2h3UEUtVjJoZjA5MWZUTUxVeEhDTHlSSVp5Qmo5UGxFcnU4MFZ2bUdRd2dWRTczWTBzNlRxb1hpU0NpcEE?oc=5",
+   "source": "Revista Merca2.0",
+   "publishedAt": "2026-11-21T02:39:38.000Z",
+   "original": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
+    "en": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers"
+   },
+   "summary": {
+    "ar": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
+    "en": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers"
+   }
+  },
+  {
+   "id": "n1obdy8l",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HNllCQm1xc0NMeVJsaGFMcmRZdGRTYU1XQVU2aFBwME03NE9oblk2dHMxWHFyQXpVVXpmTVVhX056VVdSWlNRd0xpUTRJOGpTdjJlV3dJZXJHLXFGWWpjRmRYdG5kN3FxUmdzMlo5RkRtcXBwYk83ZC02dw?oc=5",
+   "source": "DW.com",
+   "publishedAt": "2026-11-21T00:47:14.000Z",
+   "original": "Chanel No. 5: the cult perfume turns 100",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Chanel No. 5: the cult perfume turns 100",
+    "en": "Chanel No. 5: the cult perfume turns 100"
+   },
+   "summary": {
+    "ar": "Chanel No. 5: the cult perfume turns 100",
+    "en": "Chanel No. 5: the cult perfume turns 100"
+   }
+  },
+  {
+   "id": "nql86xz",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONWkwT2JXTFQ1cE9uc1E5VVhPS0IxLXBvOUdUaElSMkVBbHdUdHdHaHdFOVpmRk1fRzhGQmUwSWZuSXZqX2NxV1NFdk1ZY2NPMFRET1djeWhDU0Z1c0pWWktMSmExQXlHNDlnRWY4MTJ5MjhTQXpfTVR4bFI3RXU5MU8xNHFKdkhQdWdVMVloOW9BUQ?oc=5",
+   "source": "The Impression",
+   "publishedAt": "2026-11-20T22:44:24.000Z",
+   "original": "Loewe Celebrates New Crafted Fragrance Collection in New York",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Loewe Celebrates New Crafted Fragrance Collection in New York",
+    "en": "Loewe Celebrates New Crafted Fragrance Collection in New York"
+   },
+   "summary": {
+    "ar": "Loewe Celebrates New Crafted Fragrance Collection in New York",
+    "en": "Loewe Celebrates New Crafted Fragrance Collection in New York"
+   }
+  },
   {
    "id": "n1al453l",
    "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBFODJvLXR4MWY0bldHU1ctOURQaGhpVzhPSVYzVmxZaGlFZTFFT0ZBVlRzTmVieHVTVVRqQWRDWTFpUm85ajk4?oc=5",
@@ -131,6 +253,24 @@
    "summary": {
     "ar": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
     "en": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد"
+   }
+  },
+  {
+   "id": "n1tenrq7",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Rd2JJZml1Ti0tcy1IR3ViV0ZMV1hCTnFxZEhpVUE1WTB1NHQ1VFNJNFdVNTN2NVQ1UXMtWmk1YXQ3Sy1wYXpySWl5eHVFVmdYQUE?oc=5",
+   "source": "صدى البلد",
+   "publishedAt": "2026-11-20T21:33:00.000Z",
+   "original": "دخان البخور والجهاز التنفسي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "دخان البخور والجهاز التنفسي",
+    "en": "دخان البخور والجهاز التنفسي"
+   },
+   "summary": {
+    "ar": "دخان البخور والجهاز التنفسي",
+    "en": "دخان البخور والجهاز التنفسي"
    }
   },
   {
@@ -224,24 +364,6 @@
    }
   },
   {
-   "id": "n76kx43",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-20T19:33:55.000Z",
-   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   },
-   "summary": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   }
-  },
-  {
    "id": "n1elvg45",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYkl1aEVycnF1bHpTTmxKcGpobjB6SXpsU0VKZGdSczNaemJxREE2d003OFJYYVpkQlNWLU4tRVViRlhHNXF0ei1HYjNLaWpyVXg0Q3N0YlViQXctX0VCX2hjWjV6TkFmeXp5aGN2al9Xa3lZMzdaTzhiWnVLUnRnWTI2TTZVQTJzUkw2QQ?oc=5",
    "source": "Vietnam.vn",
@@ -278,10 +400,46 @@
    }
   },
   {
-   "id": "n1j6qurz",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNenhDcDVzWXU5REU1NndSekFMSU8wY2FSWHd2SzhXOEtGeFZxbDhyUFd4bVVMSzdVLUwwUEJZdzNYS3A1Q09md0JxUks0dk5wOGdvU2cyYVY4ZFhIM290TjRSTFFGaUNrOVFJS3MwQWRPUTFLQ0N4MzZQbHRfMklmZGxZYVFuT0JnQzNhelNLVERrdlBpUElROEtnNmMtbjZhVVJVVjRhNDg?oc=5",
-   "source": "FashionNetwork - The World's Fashion Business News",
-   "publishedAt": "2026-11-20T18:25:29.000Z",
+   "id": "nkav8dz",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMWxsYkFxVHFoZWJmZ3EyV2txU2NKc25JUXR5UE9vbnYwNElUbHVKUERxRTlRMXpvMldhVmwzRUZZb0FTMkNycFFOTG9oZXZJcVNzT2pLUHdkZVBkSVN5TUdBZWdTMGRKbGpYay12c2J3WVhtcmNCNEFZLThHc0Y3TjNCbkhCRUR3Wk5uR2ZkYV9SNV9UVWZiN0R1MFp0cG9mVjFv0gGzAUFVX3lxTE8xSDFWTnJRYzBiMHpHSlBDa0xpZnV4aEFYZE5HNjhwWU0yYWt1Y19yTWcxa2ZxZklWQ0pUOVM5SHRhajlFY250cU41TDFQeTZDUW4zZ3RSYTZvVWNLOWFoNHpJLVZjYllYNTFpSTI3V2ZvZldubFpyc0hvR2xoWTgzdFJPYkh3VWR4LU1rQjFIeG9RTHpJVHFoM1MxYVprTlVVR0hONFIzdW92eW1lNmtISk9V?oc=5",
+   "source": "TrendWatching",
+   "publishedAt": "2026-11-20T19:32:22.000Z",
+   "original": "Brands add taste, scent and movement to storytelling",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Brands add taste, scent and movement to storytelling",
+    "en": "Brands add taste, scent and movement to storytelling"
+   },
+   "summary": {
+    "ar": "Brands add taste, scent and movement to storytelling",
+    "en": "Brands add taste, scent and movement to storytelling"
+   }
+  },
+  {
+   "id": "n6c3koc",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaHVvNXZNMUhIMFk5ZVg1NHE5bFgyS2ZNMUZLQ28wT0xMZzRfd1hpeW1SWUxROEp5YThtYk1TNGFkdGUycFFOMzhQaDZCYXhTMzdNSU5zdnBVQTRsOEZjNktTYnItWUpmMURpc2Q2bTNIcGFkZ29ua2hEeGRqMnZ4NHZjT05ycWRHRndvbWhGTEpXd0dtRF9MbHBacw?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-20T19:15:01.000Z",
+   "original": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
+    "en": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
+   },
+   "summary": {
+    "ar": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
+    "en": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
+   }
+  },
+  {
+   "id": "n9s1ghr",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOblVVUlFjOEZCUktKSlNGX29mVUgyN2ZUbFM1cHczWUlNb3FlZHpJNkZRVWV1QlJSRWNxMXRmLVJjUFJQSG91SXBNVVY2VWJ4Z01BVktlUkxhZUZ6bHBqWDJzQThNSWtBZGVmVlBPZHVJTXJtZ0FabGZodnZPSzd1QmJ0cUhyWDhOZjA1ZFFLWTlodnJRZTR3NUhhRUY4TlVOSS1nTkhtOXI?oc=5",
+   "source": "FashionNetwork France",
+   "publishedAt": "2026-11-20T18:25:52.000Z",
    "original": "In Milan, Jil Sander fragrances blends scent, art, and music",
    "lang": "en",
    "category": "industry",
@@ -296,8 +454,8 @@
    }
   },
   {
-   "id": "n6mx6nk",
-   "url": "https://www.premiumbeautynews.com:8443/en/interparfums-raises-2026-forecast,28570",
+   "id": "n18n1fau",
+   "url": "https://www.premiumbeautynews.com:8443/~~themedata~~/en/interparfums-raises-2026-forecast,28570",
    "source": "Premium Beauty News",
    "publishedAt": "2026-11-20T18:23:07.000Z",
    "original": "Interparfums raises 2026 forecast and expects strong growth in 2027",
@@ -458,24 +616,6 @@
    }
   },
   {
-   "id": "nt5nk0n",
-   "url": "https://news.google.com/rss/articles/CBMirwNBVV95cUxPWjVvcGk4YXYyWDA4RFU4WVlGNDlhN1FaNkRzR2wzU3h0MkVQVjcwQjJhUm9oUHJhbGJSRi1Sb1hPbU1pZHYxNWlhdmFydXFqUnZQNlUtdF9KYThCT3hjR3Q5bWZmbnNMUldyQzA2NUJGUGdUYy1Fek5NWlR6MFJvTFY2TEJ4TGlGM1paeUx6Qk5sc3pXVzBodkRtY3g2VmUxLWRic05QR3NSUVdRUlBPVVAwZDVncEJybkRvTmgtdVJhR2VRdmFCUFR6LXhFOGtnNHJBanZyak4wYy1pY2lQajY0WTk3TXIwaFJZQ2dNODZTMEQxOGVPc1RGcUN6TjRuWnNEQWhrdHFBZ0ZQTDluZDJvb2k5aklpcDdQdGFaTS1XQ1BQdjVFb2dTVjlWbVgxMG1MbjQyRGkyWjdjZXhHVmIwdzBPYUU0Z2xhQWdWc2wxdnNaamxGd1R3bHhtWUU2NURpWDlNUHdWaFk1VGJ0M1M5dnVEdFB4dUpMdUVfM0VtNW9SYlc1blRCeEk1M0dEZ096dkFnZ2VJdXhDVFBJQWFjVnRFakItNXEzWlpCY9IBtANBVV95cUxNYy1PeG92UlhHT1loLUN4Nnd2eFRwSl9xd2hPd3E1RmFTTk9xSnFiaE83ZUZrTDAyVGplbk5MeFlVaEZ0SFVmQWpIOGdrSTRaTGxPZ0NWOS1ZV2d0emNEQVI5bUlmWU00RlhzaTg4OUp4VUZPX3pvVklTbnBrT21Kb1ZmT1l0V0VmTUhWVGVFQjRkUldEbXRTVm1uVzR0NjQwTk1Nb0FhanJRM0szTGVrMzd0eUUxUVJUQzNUZHhiOWg2Z2w4YWdqN2NfMmkzQThlYlRMMlE0cmNhN2phcWo1YnF1dzkycTYtVkRaZVc3OFc2Mm5TaTJJdGhodlNWdTB4RlFJTnlPY3lBTWVIaG9DS2RJblBRajBKSEVCVVotU0FpVkNWbWJjOEQ5UTMyNWFHdGxsYk1iNmlveG1lakhHUVhqZGlCRE44dDJDNmQ3REZEYTVVWFg2eUxRcEIxMFJhdVhvSjBacFJiYzRXTHljY0RpazVUaXBPWWZVM2sxTGV0NGY4YldFQ0cwZDdvOGVuRHA3aDdrWGhPUU13ekU1NWRsTWN5bmNRMXZOMTdBdV8wWUFp?oc=5",
-   "source": "سكاي نيوز عربية",
-   "publishedAt": "2026-11-20T14:55:46.000Z",
-   "original": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود"
-   },
-   "summary": {
-    "ar": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "من قلب الخيمة.. عازف غزي يداوي وجع النزوح بأوتار العود"
-   }
-  },
-  {
    "id": "n1smwbwr",
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM3B4YVBvM0IwcldJTWNETTk1Ympac010QjZjR21VYVV6ZkxsdUJQaEFfLURrUUZWNUdMTUhZbE9VdVFFd0ZPU1d0RTF6SXBBbkhrdmprdTJVLTA2Mk5zTjE3YU9TQkd4TFhaYXlQVllhcURtVVZxMjF4LUtrWmp5dXdiNWFhSl8yYklsYXZPbDJwc1YzSWphSHY1ZFBrNFhOZVFxUXNOVFpHMFZoUmVCQ05qNHM5N0pUZEJkZ0tER2FBSUR1aV9Qc3pxZXhtaFUyYUxfQnJodFN4dTg3cjNyYi1uWHB4V1FneENQOTR5b05RWDRG?oc=5",
    "source": "GlobeNewswire",
@@ -509,150 +649,6 @@
    "summary": {
     "ar": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957",
     "en": "Épuisé en quelques minutes, le premier parfum Dove reprend l'odeur de son savon né en 1957"
-   }
-  },
-  {
-   "id": "ndfo016",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XVDJjT3dWa21NdEQxcVk1TUFCQlFZZHRXSFlOVGVxbXc0dnBCd1QtWmJYajgycXlKRFlZNjlIWHhtUU9zUjdQa25WWHdvLXdDVEE?oc=5",
-   "source": "USA Today",
-   "publishedAt": "2026-11-20T10:44:29.000Z",
-   "original": "ScentBird promo codes, coupons, and deals for November 2026",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "ScentBird promo codes, coupons, and deals for November 2026",
-    "en": "ScentBird promo codes, coupons, and deals for November 2026"
-   },
-   "summary": {
-    "ar": "ScentBird promo codes, coupons, and deals for November 2026",
-    "en": "ScentBird promo codes, coupons, and deals for November 2026"
-   }
-  },
-  {
-   "id": "n1w1ztiw",
-   "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxQNnBSb0lSZC1TSmFVSnlBeV9UbGNIT1VOS01RZl9NcVNxOFFKZ0hkcjBxZlZuLUNNeFF6b2QtQXY1em1OTDQ4M19Nek00YlZmcE13eFhZZDJIZnJJZnhaYk5fRnBUNmxwV21kUTRTelhiTUd4dXVfQUl1NE5xUlFUaVZrNWk5cGczUjBjZWNZM0EzRzBDbmFnbkVVdHhkUTRvQ2FIUFdzUmRjbFUwSFh0WjU4WG44OVZYRU5DeWFCRzVXMG96WXhheFVIYkdNV2JPX3BFNUJ1T2NOUjdpSko4cHB5MWViZDdVVlpOTFlMQnd4aDlHakU1WXIxbmJHVUhBcTlqRUhRRk0yUHpENjVQMVdEVkVWYllSdkhyUmI0dmlLb244RHRuN19QZ0J1b3Z3RFd0NVl4V1A2elZjb2VIX240YXBrbU05bElON0M2TW1tQlQyZFpzUERadllkcllETDZoejIzdWVQQQ?oc=5",
-   "source": "بوابة أخبار اليوم الإلكترونية",
-   "publishedAt": "2026-11-20T10:10:31.000Z",
-   "original": "عادة يومية قد تهدد صحة أسرتك.. مخاطر خفية لدخان البخور داخل المنزل",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "عادة يومية قد تهدد صحة أسرتك.. مخاطر خفية لدخان البخور داخل المنزل",
-    "en": "عادة يومية قد تهدد صحة أسرتك.. مخاطر خفية لدخان البخور داخل المنزل"
-   },
-   "summary": {
-    "ar": "عادة يومية قد تهدد صحة أسرتك.. مخاطر خفية لدخان البخور داخل المنزل",
-    "en": "عادة يومية قد تهدد صحة أسرتك.. مخاطر خفية لدخان البخور داخل المنزل"
-   }
-  },
-  {
-   "id": "nci0h4l",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQmNzZ1JWT2pjbURjeXNGa0F5NTBXSW5NeGgyak9rSVBfWlI1bk9YUHBDWkNYRlJKM1haLXdYNDBZOGtWMHk1bnVKaFBER2NuVElQWGtDWjgxM0tGem1nM0ZkREhtdlBqbXlfMDlBaVJ6RWtONWFSOEJ4WVprQ3RyT3VlR3R0WGpTcUJ0VE1KZDRGbTVFZ1hROVBPVWx1UQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-20T09:51:24.000Z",
-   "original": "يقدم قادة مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "يقدم قادة مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-    "en": "يقدم قادة مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
-   },
-   "summary": {
-    "ar": "يقدم قادة مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-    "en": "يقدم قادة مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
-   }
-  },
-  {
-   "id": "no9j0b9",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDJjZG5IMkdVYjdFWDJwUklqc0hybWZEenR5bFNkYzd5SzJJVFFLTEpJQ1pObWlnSm1jOE5ZZWFSclBFNHVud1l1Y3FfNk9mcVdMSF9SSXNjNkhCQ3ZVdk1aajdSMDJCc2U4TUgwRi1fM3J6V1BvSWQ3bG1uOFN2bW94enNjRkcxdVBjS043Vk9JNTNOdkdGZnlFOTdXSkJQcXNWUUhMTG54MW5fbDZPQmVua0dFdFdRR3RpOWZaRE8yQTlVLUpCQklYVdIB0AFBVV95cUxNZENNWDE1VFIxbW5qYU16a2xpT0RuRmhuamdUd2pHR0JrMXl3OFE1M1dteEgtd01PdGVpSTVQdDEySTN6ckVWZ2FSUUkxUzlESFJRbkx3dGw3aEVMaG1NVG0yai05VHBzZ2tCUFVqS2pWUmhkQzBkTDM4dUw2SWo5Q3c0dzZOMUpyY0ozZUhjYUVkamtMN093bnV6ajlCVF9JQTZub1pKTEdWN0hCeWdvUXdhaDhGRDdXQjRkRDNyeWc5bmxzSUJwSGx6Vmg0cHJv?oc=5",
-   "source": "Prestige Online - Singapore",
-   "publishedAt": "2026-11-20T08:16:39.000Z",
-   "original": "From festive fragrances to new discoveries: What’s new at escentials this holiday season",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "From festive fragrances to new discoveries: What’s new at escentials this holiday season",
-    "en": "From festive fragrances to new discoveries: What’s new at escentials this holiday season"
-   },
-   "summary": {
-    "ar": "From festive fragrances to new discoveries: What’s new at escentials this holiday season",
-    "en": "From festive fragrances to new discoveries: What’s new at escentials this holiday season"
-   }
-  },
-  {
-   "id": "n140oyox",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQcmIzRkY5T1h0b29zVUJVaG1NRmFwX3hDVURVdEFPWEwwOGh0ZUtDN0xra2VCNkRaQ1M3aHNIdWhLUkhfZjRQQXNzV00ydGp2a3hsUkdfTWZJYllwRlFfd0taNGhZZzlSU0hrU1R5THEyVWEyY2dZbGRFS0FrOUR4c0JGYWVkTUJxUUVTWHNXa1o0VXVEbWlqYXZJdTNENEZoanV4bWtXLUhUNmdzdnlfaVl5TXhsVTBROGo2RC1FSzctRTJEU2ZaREw0Z2RQeUpzMm41TDMzVmszVWxQaUZpMVJVVnY2eEhDUW1fWTNMX2VlS2I4QlZ0OGZaZkljZDdiMC0tMzVzUnBZZ1dPRTlMVk1CdkNSQmZQVG9iOExGM1hsams?oc=5",
-   "source": "jamalouki.net",
-   "publishedAt": "2026-11-20T07:12:43.000Z",
-   "original": "Chriselle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Chriselle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
-    "en": "Chriselle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات"
-   },
-   "summary": {
-    "ar": "Chriselle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات",
-    "en": "Chriselle Lim تكشف لنا أسرار عطور Phlur وتفاصيل فنّ تنسيق النفحات"
-   }
-  },
-  {
-   "id": "n1sbu6ol",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQclBfTElTaE5QOC1BcEx0Qi1VS1hzWU8yUFNvNHA3MDlmaXhDSVlxeXhJX0xrdmdxeWlnbjRwSVUzV3FfRUdZeXQ3cmdRRWxiczVjYXc5eHNDT0p3WlVHTmlfTHJHSDhqSk1KRHNBNzViemlmcmN3WXhiRHhTLU5Ra00yNG9NRGlORi02TjZXQzVnWlhVM1V5NDlEWklXSXF0OGdGOFhLajhIVHRqT0lvYkxR?oc=5",
-   "source": "PNN Digital",
-   "publishedAt": "2026-11-20T06:47:08.000Z",
-   "original": "Building ISAK Fragrances: From a 170 Year Family Legacy to a Modern Luxury Brand",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Building ISAK Fragrances: From a 170 Year Family Legacy to a Modern Luxury Brand",
-    "en": "Building ISAK Fragrances: From a 170 Year Family Legacy to a Modern Luxury Brand"
-   },
-   "summary": {
-    "ar": "Building ISAK Fragrances: From a 170 Year Family Legacy to a Modern Luxury Brand",
-    "en": "Building ISAK Fragrances: From a 170 Year Family Legacy to a Modern Luxury Brand"
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-20T06:00:14.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   }
-  },
-  {
-   "id": "nzav4fr",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQS2NKOXVaZlFKSmNXaElVaHZYcnM4RjJGV0szUzBOdi1vVlFFZkVfZGxUUHp1NnBNVWd5bDFrWHlPaTNTQlZoUzM0eWt3NWhweGlGaDBBTDd0TDNRZDg0ODJjakNiX2dBNzR2NmJIUjhMY2pKUnVvTWZsZUVRQnVndWlXWUM2emJ1ZHNWMWVmSUloZEp1NEU3YllCMmJ1clRlM0pqTEpMVV9wWGFmbmp1UlhILUdicmM0bDA1Nld1NVpqLWFNcHlaYmFqbGVjM0NwMHpwTkdR?oc=5",
-   "source": "SBS",
-   "publishedAt": "2026-11-20T04:29:39.000Z",
-   "original": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر",
-    "en": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر"
-   },
-   "summary": {
-    "ar": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر",
-    "en": "تعلّم العود في الأربعين فعاد إلى الرسم… حكاية الفنان بسّام منير عسكر"
    }
   }
  ]
