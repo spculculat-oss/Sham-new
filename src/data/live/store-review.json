@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T03:28:29.205Z",
+ "updatedAt": "2026-11-21T12:59:37.785Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
@@ -12,7 +12,7 @@
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-21T03:27:20.319Z",
+  "at": "2026-11-21T12:58:37.022Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -25,7 +25,7 @@
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1041,
+    "listingProducts": 1035,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -76,12 +76,12 @@
      "sku": "AFN-824",
      "name": "Supremacy Incense by Afnan Perfumes – 100 ml (Unisex)",
      "price": 7245,
-     "supplierEgp": 4826.89,
+     "supplierEgp": 4829.47,
      "sizeMl": 100
     }
    ]
   },
-  "durationMs": 68927
+  "durationMs": 60794
  },
  "items": [
   {
