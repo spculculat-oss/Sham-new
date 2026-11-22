@@ -1,7 +1,27 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T20:53:26.821Z",
+ "updatedAt": "2026-11-22T11:11:10.694Z",
  "entries": [
+  {
+   "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
+   "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "جسمك ممكن يكون جاف أو بشرتك من النوع الدهني اللي بيمتص الزيوت العطرية بسرعة، وكمان طبيعة العطر نفسه (لو خفيف أو فيه نوتات حمضية طاغية) بتخليه يطير أسرع.\n\nعلشان تثبت العطر لفترة أطول:\n- رش العطر على بشرة مترطبة كويس بكريم مرطب بدون ريحة أو بفازلين قبل الرش.\n- رش في أماكن النبض زي الرقبة، المعصمين، وخلف الأذنين، لأن حرارة الجسم بتساعد العطر يفوح ويثبت.\n- رش العطر على الهدوم والأيشاربات لأن النسيج بيمسك الريحة أكتر بكتير من الجلد.\n- تجنب فرك المعصمين ببعض بعد الرش علشان ما تكسرش جزيئات العطر وتخليه يطير أسرع.\n\n### مقارنة طرق الثبات\n| الطريقة | التأثير | أفضل وقت للتنفيذ |\n|:--- |:--- |:--- |\n| **الترطيب بالمرطب** | يحبس الزيوت العطرية ويمنع امتصاصها | مباشرة قبل رش العطر |\n| **الرش على النبض** | يبرز الفوحان والثبات بالحرارة | بعد الاستحمام |\n| **الرش على الملابس** | يعطي أطول فترة ثبات للريحة | عند ارتداء الملابس |\n\nالعطر اللي بتستخدمه بيكون تركيزه إيه وعادة بيقعد معاك قد ايه؟",
+   "at": "2026-11-22T11:11:10.694Z",
+   "hits": 0,
+   "source": "probe"
+  },
+  {
+   "id": "ar|auto|اقترح نوتات لعطر صيفي منعش للرجال",
+   "question": "اقترح نوتات لعطر صيفي منعش للرجال",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "عطر صيفي منعش للرجال بيعتمد على حمضيات مبهجة فوق قاعدة خشبية ناعمة يدي ثبات وحيوية، وده مقترح تجريبي بحجم 50 مل وتركيز 20% (EDP):\n\n### النوتات العطرية\n- **القمة (افتتاحية العطر):** برغمات، ليمون، ونعناع (70 بالمئة من الزيت)\n- **القلب:** لافندر وإبرة الراعي (20 بالمئة من الزيت)\n- **القاعدة:** نجيل الهند وخشب الأرز (10 بالمئة من الزيت)\n\n### التركيبة (50 مل - EDP 20%)\n- كمية الزيت = 10 مل\n- الكحول (96%) = 39.6 مل\n- الماء المقطر = 0.4 مل\n- التعتيق = 30 يوم\n\n```sham-formula\n{\n  \"title\": \"عطر صيفي منعش للرجال\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0.8,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 30,\n  \"summary\": \"مقترح صيفي منعش يحتاج مراجعة السلامة واختبار التوافق\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"برغمات\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 40\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"ليمون\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 20\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"نعناع\",\n      \"nameEn\": \"Mint\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 10\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"لافندر\",\n      \"nameEn\": \"Lavender\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 15\n    },\n    {\n      \"id\": \"note-5\",\n      \"nameAr\": \"إبرة الراعي\",\n      \"nameEn\": \"Geranium\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 5\n    },\n    {\n      \"id\": \"note-6\",\n      \"nameAr\": \"نجيل الهند\",\n      \"nameEn\": \"Vetiver\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 5\n    },\n    {\n      \"id\": \"note-7\",\n      \"nameAr\": \"خشب الأرز\",\n      \"nameEn\": \"Cedarwood\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 5\n    }\n  ]\n}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"concentration\",\"bottleVolumeMl\":50,\"concentrationPercent\":20,\"concentrationType\":\"edp\",\"alcoholPercentage\":96,\"waterPercent\":0.8,\"fixativePercent\":0},{\"tool\":\"maceration\",\"macerationDays\":30}]}\n```\n\nحبّك تزود لمسة بحرية والا تفضلها خشبية أكتر؟",
+   "at": "2026-11-22T11:11:10.694Z",
+   "hits": 0,
+   "source": "probe"
+  },
   {
    "id": "ar|auto|ايه الفرق بين edp و edt و parfum في نسبة الزيت والثبات",
    "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
@@ -69,26 +89,6 @@
    "style": "auto",
    "answer": "For a citrus cologne, Hedione or Ambroxan work best as fixatives. They blend smoothly with bright, volatile top notes without altering that clean, fresh character.\n\nUse Ambroxan at 1 to 2 percent of the total formula for a modern, airy lift, or Hedione at 3 to 5 percent to boost the natural floral facets of the citrus oils while extending their longevity.\n\n```sham-formula\n{\n  \"title\": \"Citrus Cologne Fixative Guide\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 15,\n  \"concentrationType\": \"edc\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 3,\n  \"macerationDays\": 21,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 50\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 30\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameEn\": \"Ambroxan\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 20\n    }\n  ]\n}\n```\n\n```sham-tool\n{\n  \"tools\": [\n    {\n      \"tool\": \"concentration\",\n      \"bottleVolumeMl\": 50,\n      \"concentrationPercent\": 15,\n      \"concentrationType\": \"edc\",\n      \"alcoholPercentage\": 96,\n      \"waterPercent\": 0,\n      \"fixativePercent\": 3\n    },\n    {\n      \"tool\": \"guide\"\n    }\n  ]\n}\n```",
    "at": "2026-11-20T22:15:09.691Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
-   "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "الجلد الجاف بيشرب العطر وبيقضي على ريحته بسرعة، وطبيعة البشرة الدهنية بتحبس الزيوت العطرية وتخليها تعيش أطول.\n\nعلشان تثبت العطر لفترة أطول:\n1. رطّب بشرتك كويس بكريم مرطب عديم الرائحة أو فازلين قبل الرش.\n2. رش على أماكن النبض زي المعصمين ورا الودنين ورقبتك.\n3. بّخ العطر على الهدوم والأيشاربات، لأن القماش بيمسك الريحة أكتر بكتير من الجلد.\n4. ابعد عن فرك المعصمين ببعض بعد الرش علشان ما تكسرش جزيئات العطر.\n\nعشان أساعدك أكتر، بشرتك جافة ولا دهنية عادة؟",
-   "at": "2026-11-20T22:15:09.691Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|اقترح نوتات لعطر صيفي منعش للرجال",
-   "question": "اقترح نوتات لعطر صيفي منعش للرجال",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "عشان نعمل عطر صيفي منعش للرجال بثبات ممتاز، هنعتمد على افتتاحية حمضيات حيوية مع قلب عطري وقاعدة خشبية خفيفة تظبط الأداء في الحر.\n\nإليك مقترح تجريبي بحجم 50 مل وتركيز 20 بالمئة (Eau de Parfum):\n\n### هرم العطر النُسبي\n- **المقدمة (افتتاحية منعشة):**\n  - برغمات: 45 بالمئة\n  - ليمون أصفر: 30 بالمئة\n  - نكهة بحرية (Marine): 25 بالمئة\n- **القلب (نفحات عطرية):**\n  - لافندر: 60 بالمئة\n  - إكليل الجبل (روزماري): 40 بالمئة\n- **القاعدة (ثبات وخشونة خفيفة):**\n  - خشب الأرز: 65 بالمئة\n  - مسك أبيض: 35 بالمئة\n\n### تفاصيل التركيبة\n- حجم الزجاجة = 50 مل\n- نسبة الزيت العطري = 20 بالمئة (10 مل)\n- الكحول (إيثانول 96 بالمئة) = 80 بالمئة (40 مل)\n- كمية الكحول = 40 × 100 ÷ 96 ≈ 41.7 مل (ونكمل الباقي تقديراً للزيت)\n- فترة التعتيق المقترحة = 30 يوم\n\n```sham-formula\n{\n  \"title\": \"عطر صيفي منعش للرجال\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 30,\n  \"summary\": \"مقترح صيفي منعش يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"برغمات\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 45\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"ليمون أصفر\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 30\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"نكهة بحرية\",\n      \"nameEn\": \"Marine Accord\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 25\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"لافندر\",\n      \"nameEn\": \"Lavender\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 60\n    },\n    {\n      \"id\": \"note-5\",\n      \"nameAr\": \"إكليل الجبل\",\n      \"nameEn\": \"Rosemary\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 40\n    },\n    {\n      \"id\": \"note-6\",\n      \"nameAr\": \"خشب الأرز\",\n      \"nameEn\": \"Cedarwood\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 65\n    },\n    {\n      \"id\": \"note-7\",\n      \"nameAr\": \"مسك أبيض\",\n      \"nameEn\": \"White Musk\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 35\n    }\n  ]\n}\n```\n\nتحب نضيف لمسة خفيفة من النعناع في الافتتاحية عشان تزود الانتعاش؟",
-   "at": "2026-11-20T11:26:50.844Z",
    "hits": 0,
    "source": "probe"
   }
