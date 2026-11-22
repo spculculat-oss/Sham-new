@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-22T11:10:16.666Z",
- "nextUpdateAt": "2026-11-22T23:10:16.666Z",
+ "updatedAt": "2026-11-22T21:01:35.602Z",
+ "nextUpdateAt": "2026-11-23T09:01:35.602Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -11,23 +11,39 @@
  "sources": [
   {
    "name": "Grazia",
-   "count": 3
+   "count": 5
   },
   {
-   "name": "Now Smell This",
-   "count": 3
-  },
-  {
-   "name": "Auparfum",
+   "name": "Vietnam.vn",
    "count": 2
   },
   {
-   "name": "CaFleureBon",
-   "count": 2
+   "name": "Wisevoter",
+   "count": 1
   },
   {
-   "name": "صدى البلد",
-   "count": 2
+   "name": "لوسيت أنفو سبور",
+   "count": 1
+  },
+  {
+   "name": "Lepetitjournal.com",
+   "count": 1
+  },
+  {
+   "name": "https://capsulah.com/",
+   "count": 1
+  },
+  {
+   "name": "stupidDOPE",
+   "count": 1
+  },
+  {
+   "name": "femina.fr",
+   "count": 1
+  },
+  {
+   "name": "Harper's Bazaar India",
+   "count": 1
   },
   {
    "name": "هذا اليوم",
@@ -62,15 +78,15 @@
    "count": 1
   },
   {
+   "name": "Now Smell This",
+   "count": 1
+  },
+  {
    "name": "https://inews.ma/",
    "count": 1
   },
   {
    "name": "صحيفة الوطن",
-   "count": 1
-  },
-  {
-   "name": "Vietnam.vn",
    "count": 1
   },
   {
@@ -90,24 +106,34 @@
    "count": 1
   },
   {
-   "name": "The Impression",
-   "count": 1
-  },
-  {
-   "name": "lematinsports",
-   "count": 1
-  },
-  {
-   "name": "Madame Figaro",
+   "name": "Auparfum",
    "count": 1
   }
  ],
  "items": [
   {
+   "id": "nu4dcj3",
+   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOVWJWMXE3ODUtYzU1WHY0UXhRdFBlMnQ0LUJha2NJUnluLUZDQlI2ZTJTQ2ZqX3VJUEtOMnNEVW5fQmdPOXZrb0VoRUZHd19pb1VJRVVQT3JyM296UW9MSW40bFhLczh5OVN6WmhNTm1HdVNNY1FqOTlsYnNydjBVbmlLUzdvbXk2bzhNLXYxYlUybVpuWDRLaERtWnN2YnlYYU5lSTZEZzFDWEdGdVR0Y1FtUHZwcER3Y1JqUFNTVm9nb0FwN3oxYXpiOHQ0N3B3TkdUQjk5bVhDcm4zaV9oTEd5NEJfTWc4a0wyZENqcFdlUHI4YVlVeUJuOU93aGhBdjYzUlVUZkstQ1ZTcWZ6T2lIZGRjcEphaXRJU1pwQUpMLTA4UHdmOTJaaXVadTQ?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-22T19:58:09.000Z",
+   "original": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
+    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
+   },
+   "summary": {
+    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
+    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
+   }
+  },
+  {
    "id": "n76kx43",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
    "source": "Grazia",
-   "publishedAt": "2026-11-22T10:42:24.000Z",
+   "publishedAt": "2026-11-22T19:56:09.000Z",
    "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
    "lang": "fr",
    "category": "industry",
@@ -119,6 +145,150 @@
    "summary": {
     "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
     "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
+   }
+  },
+  {
+   "id": "naq5ixe",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0VRQVQ0U0JrRlNXUUFpQ3liZTRzUXVGUmFDVHhfUUlFV3F1eHhOYV9mTENwZjJsaDRSUklJZl9rYUFDX2FQY3ZnaVlzQzZMX0tHUFhCLVFTbXRlMFk3akhiX0YyRU1MRVVieDZhaVVzZVpCNW4yMFdQanNhbnBEMWlLX2RFc1lrazlEbkJVc085cEtp?oc=5",
+   "source": "Wisevoter",
+   "publishedAt": "2026-11-22T19:54:25.000Z",
+   "original": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
+    "en": "DB Ventures Sues Coty Over Beckham Fragrance Sales"
+   },
+   "summary": {
+    "ar": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
+    "en": "DB Ventures Sues Coty Over Beckham Fragrance Sales"
+   }
+  },
+  {
+   "id": "nq4ujyp",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQVkszMkdodTBEbmhSZWN4YkR3SVpZVkw2b2FSdTQtRFVrTkJtUmJiVmlkN0QycVlKYkdVTDhpLVNkaWVhcWtZX1VDYVpUZEhscFlqcFhrU3BpTDNPQ05qVGtsUDA?oc=5",
+   "source": "لوسيت أنفو سبور",
+   "publishedAt": "2026-11-22T17:02:16.000Z",
+   "original": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
+    "en": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم"
+   },
+   "summary": {
+    "ar": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
+    "en": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم"
+   }
+  },
+  {
+   "id": "npf2lht",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEc5NU9GcndmRUlocmRQT040VWNUeHV4Szd2aDQtWExTTVdDV0JUZ0Y3RnFBMjRDT1ZJeGlfRkEwdHAwS0thVFUtdTI3NE1sbGhvVVN3MkltbFlacGtDSFpVNW5xdzc1VjlzU1RrcUtjZG5OOFM4UHhvRm9JTGR0dzlPdG4zbWhySDhWMnFFWGo5UWsyZHdwVG80RkJvWWRKclAwWFhILVg?oc=5",
+   "source": "Lepetitjournal.com",
+   "publishedAt": "2026-11-22T15:01:36.000Z",
+   "original": "Dora Baghriche : l’art du parfum entre Orient et Occident",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Dora Baghriche : l’art du parfum entre Orient et Occident",
+    "en": "Dora Baghriche : l’art du parfum entre Orient et Occident"
+   },
+   "summary": {
+    "ar": "Dora Baghriche : l’art du parfum entre Orient et Occident",
+    "en": "Dora Baghriche : l’art du parfum entre Orient et Occident"
+   }
+  },
+  {
+   "id": "n181g33g",
+   "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBWT25XR0lIT1RqdDhsdjZNcThVeGJtR3hTaVE2eTNfQ3dGX1R6bzV0ZjdqdUh3SHh0LWhOMmVjY0JIenpT?oc=5",
+   "source": "https://capsulah.com/",
+   "publishedAt": "2026-11-22T14:30:00.000Z",
+   "original": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
+    "en": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة"
+   },
+   "summary": {
+    "ar": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
+    "en": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة"
+   }
+  },
+  {
+   "id": "no3p97q",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRllKM2tIejJRd1MyRmNpN1JFSHlvb2JsQWNBalZId2tWV2lKaXFXTWpkMDNLVWUzUFhwN1h2UjV4Q2xQdlA3ZjNIN3hVWFY0VFVsLWhoVWNnYmVGTlBMazJNN1JJUXlvXzk3ck9VamMzY1RtY0MzOC1VVERMREluc1BtRmxzNUFrcE4tXzZlMUxBVkljY3hpYVBBcHpQbXBvUk9jUnYyaWJYSjRDajdPR3ZZZktTM3FGbTVOYlJfRWRnaHdkNzR5a2hYbXFBUUNsMmRCM3FacW5LZUFlZ1JVdTh4bW43aWs?oc=5",
+   "source": "stupidDOPE",
+   "publishedAt": "2026-11-22T13:45:48.000Z",
+   "original": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
+    "en": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release"
+   },
+   "summary": {
+    "ar": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
+    "en": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release"
+   }
+  },
+  {
+   "id": "n10gk80b",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdUZIZENabGZRVWtkUmRGdlVIdm9VQjRMZHpBaEF4SFlFUG9UaHJYUEhBd25CMWEyUGVab0haSGxRalRVVGhrTnFoeVJQN05RTE1RN2RPTE91TGVTNEZ2YnlJM3NkZGxrOWMxZzE5LXZpWWZEQTlrc3dxN3JkaG1hcUotbjlndDRsajlFTTUtQUM4S1hJbmJXcGdsbU9mSXZUNFQ4RGZuNkRObnEyZm5OSUJ0X0doTjJlV3A5THRSVHQ1aE41cXhn?oc=5",
+   "source": "femina.fr",
+   "publishedAt": "2026-11-22T12:00:13.000Z",
+   "original": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
+    "en": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans"
+   },
+   "summary": {
+    "ar": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
+    "en": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans"
+   }
+  },
+  {
+   "id": "n12ppsln",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObE1RUFpEeVdvd2ZsN05MMXduWGRCcS1hb3NpLTQzdzFTVENEdTBPMVBYTFVzTzRxbmZ1MEdXa05uSFFmY09Vd1FST013b2k1dTk0UF9lYU5WUXdVSWM1Xy1fM2xxQ0Zrc3dpTzJoTkJ1VVAtQzgwSVlBaDJnZUxvTndOUThEMHg3S3VpMzZJby1TdWRjbmxZd1RPc2s4c3FZVFJjTk5xREdMTkxEZlFubjdEUHbSAboBQVVfeXFMTmI2R2VGcFJhYlBwYjJLZjByUklJdHAyY0NrZHdpSFlyQTlVU1RFalc2X2oyYy03VWNlTW9yS19QSjZlR3Z0c0RHcy13b1hkNzVuMlRMOEdXdWwyU0xwZnhqWmNRelhEdUszWGgyV3VOSTdtMWlFay1XWkJaeFl1dlZNYzJQb3pRVFYybU0weWdhcVJKUkVDN2NfaDVmZFoyRm95NTlhZWczUW14UHllM2Q5bHZKLWtXLU9R?oc=5",
+   "source": "Harper's Bazaar India",
+   "publishedAt": "2026-11-22T11:42:01.000Z",
+   "original": "The new language of luxury fragrance is experiential",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "The new language of luxury fragrance is experiential",
+    "en": "The new language of luxury fragrance is experiential"
+   },
+   "summary": {
+    "ar": "The new language of luxury fragrance is experiential",
+    "en": "The new language of luxury fragrance is experiential"
+   }
+  },
+  {
+   "id": "n1s4vsc7",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVmdKY3J2R3N4S0RoYkRtQW5Dc3l6X3RTWEdkZUMtVS1sZnJ0UTZBNXJtSnlUSU5MWFZxaG5aUFhTZk9Ya2M1bFU0Q0ctWGV0NGI3TXhfZjQyZE8yYmZPUDNBVlVUOXN6WDFIbkVDeEZPYW1VRzBfalVka1hiY2ZXN0JZWm1kVHdfZmZFTWs2MS0ySDRBd3RaNVhuODZJVE1Mck9WTHU1Q0dsU3BSbVNiWTRsenFOaE13azFZZC1RSy1pUnVpMXNiclJBV05mZ2ItaTB1WFhYZmtPTElYVnVYS09samc5aFVXc25kaUJEYUNySXM?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-22T11:37:35.000Z",
+   "original": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
+    "en": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros"
+   },
+   "summary": {
+    "ar": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
+    "en": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros"
    }
   },
   {
@@ -140,6 +310,24 @@
    }
   },
   {
+   "id": "nukm8so",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVDFtanBBM3JZTXMtNTdMRWMxMkN2a2NTUUl2MHZEbTgwaDJiV0J0YTM5OENUbTBWUXZWMjVwTVZHeGV0aHNsdElCUjRMQlRiRU4yc3RmQkNhZ3RicEljMWd2clhmSzhvbnpoYkxqQ25ZZFRYbi13cDRoR0lVWDhDLXVwX003VG12M3haUUE5M1preDdpRDdIUGZleWV1TXVMNkpIYQ?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-22T09:57:05.000Z",
+   "original": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
+    "en": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026."
+   },
+   "summary": {
+    "ar": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
+    "en": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026."
+   }
+  },
+  {
    "id": "nk9cxpm",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLTFETnFIc3RManB5YWQ2VFFtc0s2dDVyazNzalA0X3UtT05ENm9semVnWDJRMTF3NDExNjZZVjV5V3NDYU84T3JqZ09kZUNlQlVUOWFLdjAyUFlTQVdtU3U2ZG5acVRIaEczcEtWdUhZSkJxRVdYT0x2RUpPWnpfRE1lcVlDcGl5em9OYzFOU3dVaDJHY0xpR2dEelR4Q25VZWxmemY0bXBtNkZaOEFmOQ?oc=5",
    "source": "GQ India",
@@ -158,21 +346,21 @@
    }
   },
   {
-   "id": "ng4avjd",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSVVUX1ZDcHM2enFLWllhY0dlbGgtTHpXX1V3NVV0eTJUdmtaWEtHTnI1ZjJlZDdlT0lOWGNyeGlqaTRsbFdaanBoWERfOEM4QWsyYklGdHdPMzRtSGEwbXVNaHphdDNUQW5CNC0wMlR5aE4xT3B1ZElQT1E5RnFJdXpDdFhLRmNjMy1iam9ldUhaRWhpWFhGU2pVWUJPRDM4dm4yRmdLemtTU0Q3bHFobHBRdV91RmhqM0JCajNJY1ZITFlEMlRtRDhET2JXdHdEejFfdnR2QlpSMWdRdzhtRjFsQmlQZV9aNmdXWVRVcDJrUmtMQ3c?oc=5",
+   "id": "n94g9qv",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQ1RnalduMEJ3cGJZamRVS0hXNG1UZjQ4YTBROVVsVEp3YTlDYzdQOFlvOTAycjM1ZlhubnpoOVYzYmowRFVvZklXZE4xM2FwM251RWdEZnluMlJqdUVoS1MzTnJEZ2QzRzEtX3VNYkctUWl4WF92Y1h4WnJGZnV3U25TVzhneWFwXy02UVd0TDU3TC04bGhzWVV6Q1Y3SGhSVUxDcWlCTEptWVV0TEVzZThVcWpoODAwbDh3MDRJS1Nzejd3c0hXX0w5TGd6N3BIWnpNQ0VobkxITXd2MDBTUHNGWlh0Z1U?oc=5",
    "source": "Grazia",
-   "publishedAt": "2026-11-22T06:36:59.000Z",
-   "original": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+   "publishedAt": "2026-11-22T09:24:31.000Z",
+   "original": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
    "lang": "fr",
    "category": "industry",
    "importance": 2,
    "title": {
-    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
-    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
    },
    "summary": {
-    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
-    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
+    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
+    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
    }
   },
   {
@@ -281,6 +469,24 @@
    "summary": {
     "ar": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
     "en": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers"
+   }
+  },
+  {
+   "id": "ng4avjd",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSVVUX1ZDcHM2enFLWllhY0dlbGgtTHpXX1V3NVV0eTJUdmtaWEtHTnI1ZjJlZDdlT0lOWGNyeGlqaTRsbFdaanBoWERfOEM4QWsyYklGdHdPMzRtSGEwbXVNaHphdDNUQW5CNC0wMlR5aE4xT3B1ZElQT1E5RnFJdXpDdFhLRmNjMy1iam9ldUhaRWhpWFhGU2pVWUJPRDM4dm4yRmdLemtTU0Q3bHFobHBRdV91RmhqM0JCajNJY1ZITFlEMlRtRDhET2JXdHdEejFfdnR2QlpSMWdRdzhtRjFsQmlQZV9aNmdXWVRVcDJrUmtMQ3c?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-22T06:36:59.000Z",
+   "original": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
+   },
+   "summary": {
+    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
    }
   },
   {
@@ -443,204 +649,6 @@
    "summary": {
     "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
     "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   }
-  },
-  {
-   "id": "n1u4cte3",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LSFc1T1JWS3d3N3BxNkNKX25HbUtSNVVDY2pqNk1Sa21vemwwRmcxMmtXaVhSU25iTW40Qi1fSHREZ3EyTVFNSkJNdWE0aHVXS0dHRnh5Nk8zd083ZDV3a1k5cWUwSlU?oc=5",
-   "source": "Auparfum",
-   "publishedAt": "2026-11-21T00:15:10.000Z",
-   "original": "Original Musk de Kiehl’s : critique et avis",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Original Musk de Kiehl’s : critique et avis",
-    "en": "Original Musk de Kiehl’s : critique et avis"
-   },
-   "summary": {
-    "ar": "Original Musk de Kiehl’s : critique et avis",
-    "en": "Original Musk de Kiehl’s : critique et avis"
-   }
-  },
-  {
-   "id": "ncbu3h8",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOSE0taWhuQkxYeWJsSzJQaFJ5Yjd1bHhOTU9YM1VYbUFzSnB0ejBKc1ZJbjdNRHJNcWR4Q0JIR2J6S3dPWnlGODhERnBEZEpHT1hNZGxaRjBuVF9NenZteUt4VzA1U1JZS01mbDVPZ01aaFUxcUhSZzRhRWtSNkVFM0tEQXZ1MGplNXNwNmtfR3dSaFdhdmdpUWJhaWtGTjNaQWFVVHZHNWlycWZycS1QdEF6bnJ3ZlRzWl9WOU1WcmRBVk9KZnBmT2p0cXRuZmdQY3IzODNZcmVUME0zWGx3Q3NHMkZKQ3loYUFZZ1NabkNfZVpzREtqazVB?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-21T19:06:46.000Z",
-   "original": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
-    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
-   },
-   "summary": {
-    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
-    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
-   }
-  },
-  {
-   "id": "nd60xv0",
-   "url": "https://cafleurebon.com/ambragio-by-puredistance-winner/?utm_source=rss&utm_medium=rss&utm_campaign=ambragio-by-puredistance-winner",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-21T16:53:05.000Z",
-   "original": "Ambragio by PUREDISTANCE Winner",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Ambragio by PUREDISTANCE Winner",
-    "en": "Ambragio by PUREDISTANCE Winner"
-   },
-   "summary": {
-    "ar": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "nql86xz",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONWkwT2JXTFQ1cE9uc1E5VVhPS0IxLXBvOUdUaElSMkVBbHdUdHdHaHdFOVpmRk1fRzhGQmUwSWZuSXZqX2NxV1NFdk1ZY2NPMFRET1djeWhDU0Z1c0pWWktMSmExQXlHNDlnRWY4MTJ5MjhTQXpfTVR4bFI3RXU5MU8xNHFKdkhQdWdVMVloOW9BUQ?oc=5",
-   "source": "The Impression",
-   "publishedAt": "2026-11-20T22:44:24.000Z",
-   "original": "Loewe Celebrates New Crafted Fragrance Collection in New York",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Loewe Celebrates New Crafted Fragrance Collection in New York",
-    "en": "Loewe Celebrates New Crafted Fragrance Collection in New York"
-   },
-   "summary": {
-    "ar": "Loewe Celebrates New Crafted Fragrance Collection in New York",
-    "en": "Loewe Celebrates New Crafted Fragrance Collection in New York"
-   }
-  },
-  {
-   "id": "n1al453l",
-   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBFODJvLXR4MWY0bldHU1ctOURQaGhpVzhPSVYzVmxZaGlFZTFFT0ZBVlRzTmVieHVTVVRqQWRDWTFpUm85ajk4?oc=5",
-   "source": "صدى البلد",
-   "publishedAt": "2026-11-20T21:33:00.000Z",
-   "original": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
-    "en": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد"
-   },
-   "summary": {
-    "ar": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد",
-    "en": "عادة يومية تهدد صحة رئتيك.. دخان البخور ليس آمنًا كما تعتقد"
-   }
-  },
-  {
-   "id": "n1tenrq7",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Rd2JJZml1Ti0tcy1IR3ViV0ZMV1hCTnFxZEhpVUE1WTB1NHQ1VFNJNFdVNTN2NVQ1UXMtWmk1YXQ3Sy1wYXpySWl5eHVFVmdYQUE?oc=5",
-   "source": "صدى البلد",
-   "publishedAt": "2026-11-20T21:33:00.000Z",
-   "original": "دخان البخور والجهاز التنفسي",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "دخان البخور والجهاز التنفسي",
-    "en": "دخان البخور والجهاز التنفسي"
-   },
-   "summary": {
-    "ar": "دخان البخور والجهاز التنفسي",
-    "en": "دخان البخور والجهاز التنفسي"
-   }
-  },
-  {
-   "id": "nxwueff",
-   "url": "https://nstperfume.com/2026/11/20/the-daily-lemming-1974/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-20T20:17:18.000Z",
-   "original": "The daily lemming",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "The daily lemming",
-    "en": "The daily lemming"
-   },
-   "summary": {
-    "ar": "From Oriza L Legrand, a holiday soap trio: \"Pin de Jérusalem recalls the journey home from the market, pine branches carried through the snow, their woody, camphoraceous freshness filling the entrance hall. Saint-Nicolas evokes a kitchen door left ajar, a tray of biscuits still warm from the oven, and the scent of cinnamon drifting up […]",
-    "en": "From Oriza L Legrand, a holiday soap trio: \"Pin de Jérusalem recalls the journey home from the market, pine branches carried through the snow, their woody, camphoraceous freshness filling the entrance hall. Saint-Nicolas evokes a kitchen door left ajar, a tray of biscuits still warm from the oven, and the scent of cinnamon drifting up […]"
-   }
-  },
-  {
-   "id": "n7wn58x",
-   "url": "https://nstperfume.com/2026/11/20/nomenclature-cardamom-milk-liquid-cotton-melting-snow-new-fragrances/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-20T20:08:15.000Z",
-   "original": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances",
-    "en": "Nomenclature Cardamom Milk, Liquid Cotton & Melting Snow ~ new fragrances"
-   },
-   "summary": {
-    "ar": "Niche line Nomenclature has introduced the Ligatures collection, a new trio of layerable fragrances developed by perfumer Frank Voelkl: Cardamom Milk, Liquid Cotton and Melting Snow...",
-    "en": "Niche line Nomenclature has introduced the Ligatures collection, a new trio of layerable fragrances developed by perfumer Frank Voelkl: Cardamom Milk, Liquid Cotton and Melting Snow..."
-   }
-  },
-  {
-   "id": "n1qm1pd7",
-   "url": "https://cafleurebon.com/aura-the-art-perfumery-showcase-2026-gift-bag-winner/?utm_source=rss&utm_medium=rss&utm_campaign=aura-the-art-perfumery-showcase-2026-gift-bag-winner",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-20T20:05:56.000Z",
-   "original": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner",
-    "en": "AURA The Art Perfumery Showcase 2026 Gift Bag Winner"
-   },
-   "summary": {
-    "ar": "AURA The Art Perfumery Showcase 2026 event arrives at a defining moment of economic strength for Italian perfumery on the global stage. The post AURA The Art Perfumery Showcase 2026 Gift Bag Winner appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "AURA The Art Perfumery Showcase 2026 event arrives at a defining moment of economic strength for Italian perfumery on the global stage. The post AURA The Art Perfumery Showcase 2026 Gift Bag Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "n1r477xz",
-   "url": "https://news.google.com/rss/articles/CBMinwRBVV95cUxNa1ZDN0tqc3pfVERFT0tLTlRFZk1URjJVOXRXTUVJcXEtVm5DeXVaQzZaeEtPVXU5elRvaXFiTVJjWk16TXYwTDhkT2FyUjBEdWRndkp6NkxWZS1oSHhOLUNPaWlXQVUyZ2twcjNlb2N3WlZxeEZ6VEppaUtDejBwaTlycEF2bWpTR05JM0Zsem5hdXFHb2xGbVdEaHhCNUUwMlB4eXlxemJST0dpYzZQWG9FVjk1SjktYVdXWEdNaEdUc2thR3lheXVlXzlQQ0h0Y25Id3VhaFFoSUc5cDIyN2VNWU14ckt4WXVraWs5aDRpY3BsUnViZXRRNVZBWXVIc0xKcTB4bENhcnZwWWE2ZC1nTXhhR2VFOEpSVWJQV3ZUVUU3Z2VfdG53cFNqTFFNekI4LTVpUWZuTFF6RlpXMmVYcll5T3ZidFlLZGxxaGRJRkszQWc2aTlEUXJTaGpJRXpxR09fckZBX0FhQnJHblN6UUtFLWk1V2N4bjk1NW83WXdnV3lYdG5kY0E4QmswaVRFZHFtcGxkZ1hlNVdnMlpsU1U2cHFKWXFYbFZDbGxPNWpTY045dE9hVjA0d2N6bmNNWHlnLUNtU1JHcTZfOXUyWlVDMGp1MFZLUnd4REpqN3ViaDMyZ01TTXVzOGpTQkxuSXdyNTV0amFoRnNBQVF3UkhvY0tTaGRlem5TaUZtTlFRMHk3Mi1QR1RBRkE?oc=5",
-   "source": "lematinsports",
-   "publishedAt": "2026-11-20T20:05:00.000Z",
-   "original": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
-    "en": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي"
-   },
-   "summary": {
-    "ar": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي",
-    "en": "مايسترو أشبال الأطلس.. إسماعيل العود يتصدر تقييمات أمام فيجي"
-   }
-  },
-  {
-   "id": "nsgxkfd",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeDRaZVBSUl9PRUFEUUZYV2d3dXR6czZYUDdkWjBMRE1Qdmh6aU1nNWVxUk1Ga0JwSVhpNGJlMlBQc1hhQkhfQVdDT1hkTS1OS3B5VVJlcEFiaWlnRGhFRzk2NFNaY2Q5WkozLVR4R3RiWDc3Q3doTTA0c29LU1dacml1bXhLcFFjQmpWWGxyM09FRlFfV0pwdWt2RnRFVDYyMldpWUoyNDBzYWVmZjBhZzZON0hjRldTQjByOFVFUzhyTlVBY3FjdndOTFRGdw?oc=5",
-   "source": "Madame Figaro",
-   "publishedAt": "2026-11-21T08:30:00.000Z",
-   "original": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
-    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
-   },
-   "summary": {
-    "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
-    "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
    }
   }
  ]
