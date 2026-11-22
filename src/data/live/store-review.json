@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T20:41:14.479Z",
+ "updatedAt": "2026-11-22T02:39:18.404Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 521,
-  "warn": 593,
+  "ok": 523,
+  "warn": 591,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-21T20:40:06.210Z",
+  "at": "2026-11-22T02:38:09.832Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,7 +21,7 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.088,
+    "rate": 13.0854,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
@@ -37,7 +37,7 @@
     "gone": 0
    }
   ],
-  "rate": 13.088,
+  "rate": 13.0854,
   "prices": {
    "count": 1063,
    "min": 750,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 68296
+  "durationMs": 68596
  },
  "items": [
   {
@@ -4423,16 +4423,6 @@
    "page": "p/camille-by-maison-alhambra-100ml-edp-852.html"
   },
   {
-   "sku": "AFN-853",
-   "id": 853,
-   "name": "Turathi Brown by Afnan Perfumes – 100 ml for Men",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/turathi-brown-by-afnan-perfumes-100-ml-for-men-853.html"
-  },
-  {
    "sku": "MAI-854",
    "id": 854,
    "name": "Como Moiselle by Maison Alhambra 100ml for Her",
@@ -4471,16 +4461,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/odyssey-candee-special-edition-by-armaf-100-ml-for-women-860.html"
-  },
-  {
-   "sku": "MAI-862",
-   "id": 862,
-   "name": "Ebene by Maison Alhambra Perfume 90 ml EDP",
-   "status": "warn",
-   "issues": [
-    "غير متوفر عند المورد"
-   ],
-   "page": "p/ebene-by-maison-alhambra-perfume-90-ml-edp-862.html"
   },
   {
    "sku": "MAI-865",
