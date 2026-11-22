@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-22T12:50:56.283Z",
- "nextUpdateAt": "2026-11-23T00:50:56.283Z",
+ "updatedAt": "2026-11-22T20:51:14.150Z",
+ "nextUpdateAt": "2026-11-23T08:51:14.150Z",
  "editor": "shaheen",
  "entries": {
   "LAT-001": {
@@ -39299,16 +39299,641 @@
    ]
   },
   "MAI-877": {
-   "sourceHash": "gjlum8",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "جان لوي نوار من مايسون ألامبرا",
+   "sourceHash": "10hhp3a",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Jean Lowe Noir Maison Alhambra 100ml EDP",
    "nameEn": "Jean Lowe Noir Maison Alhambra 100ml EDP",
-   "descriptionAr": "عطر شرقي خشبي غامض يجمع بين نفحات العنبر الدافئة والفلفل والبخور ليخلق توليفة آسرة. يعد خياراً ممتازاً لمن يبحث عن التميز والجاذبية في الأمسيات الخاصة.",
-   "descriptionEn": "Jean Lowe Noir by Maison Alhambra – 100 ml Eau de Parfum featuring key notes of Amber, Pepper, Musk, Vanilla, Incense, and Woods in an oriental woody blend.",
+   "descriptionAr": "عطر Jean Lowe Noir Maison Alhambra 100ml EDP من Maison Alhambra للجنسين بطابع مسكي وعنبري وخشبي.",
+   "descriptionEn": "Jean Lowe Noir Maison Alhambra 100ml EDP by Maison Alhambra for unisex with a musky and amber and woody character.",
    "gender": "unisex",
    "families": [
+    "musk",
+    "amber",
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [],
+   "tags": []
+  },
+  "ZIM-878": {
+   "sourceHash": "pbsh4u",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Al Barari Shore by Zimaya 100 ml EDP",
+   "nameEn": "Al Barari Shore by Zimaya 100 ml EDP",
+   "descriptionAr": "عطر Al Barari Shore by Zimaya 100 ml EDP من Zimaya رجالي بطابع منعش ومائي.",
+   "descriptionEn": "Al Barari Shore by Zimaya 100 ml EDP by Zimaya for men with a fresh and aquatic character.",
+   "gender": "men",
+   "families": [
+    "fresh",
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "AFN-879": {
+   "sourceHash": "duxiov",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Lynked Forever by Afnan 100ml Eau De Parfum",
+   "nameEn": "Lynked Forever by Afnan 100ml Eau De Parfum",
+   "descriptionAr": "عطر Lynked Forever by Afnan 100ml Eau De Parfum من Afnan نسائي بطابع زهري وخشبي ومسكي.",
+   "descriptionEn": "Lynked Forever by Afnan 100ml Eau De Parfum – woody floral fragrance with mandarin, tuberose, coconut, sandalwood and musk notes.",
+   "gender": "women",
+   "families": [
+    "floral",
     "woody",
+    "musk"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening"
+   ],
+   "tags": []
+  },
+  "MAI-880": {
+   "sourceHash": "1vgetxu",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
+   "nameEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
+   "descriptionAr": "عطر La Charmante Eclatant by Maison Alhambra 100ml EDP من Maison Alhambra نسائي بطابع عنبري وشرقي.",
+   "descriptionEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP by Maison Alhambra for women with an amber and oriental character.",
+   "gender": "women",
+   "families": [
+    "amber",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening"
+   ],
+   "tags": []
+  },
+  "ALW-881": {
+   "sourceHash": "k4cfuv",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
+   "nameEn": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
+   "descriptionAr": "عطر Lazuli by Al Wataniah – 100ml Eau De Parfum من Al Wataniah للجنسين بطابع عنبري ومنعش وشرقي.",
+   "descriptionEn": "Lazuli by Al Wataniah – 100ml Eau De Parfum by Al Wataniah for unisex with an amber and fresh and oriental character.",
+   "gender": "unisex",
+   "families": [
+    "amber",
+    "fresh",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-882": {
+   "sourceHash": "1fluqp6",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Rose Origami by Maison Alhambra 100ml",
+   "nameEn": "Rose Origami by Maison Alhambra 100ml",
+   "descriptionAr": "عطر Rose Origami by Maison Alhambra 100ml من Maison Alhambra نسائي بطابع زهري وخشبي وشرقي.",
+   "descriptionEn": "Buy Rose Origami 100 ml by Maison Alhambra – rose, coffee & sandalwood in a luxury unisex EDP sophisticated. Accords with an oriental twist.",
+   "gender": "women",
+   "families": [
+    "floral",
+    "woody",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [],
+   "tags": []
+  },
+  "ZIM-883": {
+   "sourceHash": "16zhmxu",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
+   "nameEn": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
+   "descriptionAr": "عطر Tiramisu Coco by Zimaya 100 ml EDP Unisex من Zimaya للجنسين بطابع حلو وعنبري وشرقي.",
+   "descriptionEn": "Tiramisu Coco by Zimaya 100 ml EDP Unisex by Zimaya for unisex with a gourmand and amber and oriental character.",
+   "gender": "unisex",
+   "families": [
+    "gourmand",
+    "amber",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "ARD-884": {
+   "sourceHash": "8rebd7",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
+   "nameEn": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
+   "descriptionAr": "عطر Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP من Ard Al Zaafaran للجنسين بطابع زهري وعنبري وشرقي.",
+   "descriptionEn": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP by Ard Al Zaafaran for unisex with a floral and amber and oriental character.",
+   "gender": "unisex",
+   "families": [
+    "floral",
+    "amber",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-885": {
+   "sourceHash": "t5leew",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
+   "nameEn": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
+   "descriptionAr": "عطر Jean Lowe Immortel by Maison Alhambra 100ml EDP Men من Maison Alhambra رجالي بطابع عنبري وخشبي وتوابل.",
+   "descriptionEn": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men by Maison Alhambra for men with an amber and woody and spicy character.",
+   "gender": "men",
+   "families": [
+    "amber",
+    "woody",
+    "spicy"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "AFN-886": {
+   "sourceHash": "1rohwz0",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Afnan Supremacy Not Only Intense Extrait 100ml",
+   "nameEn": "Afnan Supremacy Not Only Intense Extrait 100ml",
+   "descriptionAr": "عطر Afnan Supremacy Not Only Intense Extrait 100ml من Afnan رجالي بطابع خشبي وفواكه وعنبري.",
+   "descriptionEn": "Buy Afnan Supremacy Not Only Intense 100ml – men’s extrait de parfum with black currant, saffron & ambergris. Bold scent.",
+   "gender": "men",
+   "families": [
+    "woody",
+    "fruity",
+    "amber"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "ALW-887": {
+   "sourceHash": "wz7nxa",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Alexandrite Nawal by Al Wataniah 100ml EDP",
+   "nameEn": "Alexandrite Nawal by Al Wataniah 100ml EDP",
+   "descriptionAr": "عطر Alexandrite Nawal by Al Wataniah 100ml EDP من Al Wataniah رجالي بطابع عنبري وخشبي وتوابل.",
+   "descriptionEn": "Alexandrite Nawal by Al Wataniah EDP 100 ml – rich unisex fragrance by Nawal with pepper, pineapple, coffee & vanilla woods. Bold and lasting.",
+   "gender": "men",
+   "families": [
+    "amber",
+    "woody",
+    "spicy"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "autumn"
+   ],
+   "occasions": [],
+   "tags": []
+  },
+  "ARM-888": {
+   "sourceHash": "vcuhl2",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Armaf Odyssey Aqua Edition 100ml EDP Men",
+   "nameEn": "Armaf Odyssey Aqua Edition 100ml EDP Men",
+   "descriptionAr": "عطر Armaf Odyssey Aqua Edition 100ml EDP Men من Armaf رجالي بطابع منعش وحمضي ومائي.",
+   "descriptionEn": "Armaf Odyssey Aqua Edition 100ml EDP Men by Armaf for men with a fresh and citrus and aquatic character.",
+   "gender": "men",
+   "families": [
+    "fresh",
+    "citrus",
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "GRA-889": {
+   "sourceHash": "eu9xg",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
+   "nameEn": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
+   "descriptionAr": "عطر Midnight Angel Deodorant Body Spray 200mL Grandeur Woman من Grandeur نسائي.",
+   "descriptionEn": "Buy Midnight Angel Deodorant is a safe and effective body perfume and deodorant that is designed to keep you smelling Perfume Store",
+   "gender": "women",
+   "families": [],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [],
+   "occasions": [],
+   "tags": []
+  },
+  "VOL-890": {
+   "sourceHash": "165wnhb",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Reload Gold by Volare Man – 100 ml for Him",
+   "nameEn": "Reload Gold by Volare Man – 100 ml for Him",
+   "descriptionAr": "عطر Reload Gold by Volare Man – 100 ml for Him من Volare رجالي بطابع عنبري وخشبي وتوابل.",
+   "descriptionEn": "Buy Reload Gold Boss Man Volare Fragrances, the ultimate EDP perfume for men. This scent captures confidence and style in every spray. Shop now!",
+   "gender": "men",
+   "families": [
+    "amber",
+    "woody",
+    "spicy"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-891": {
+   "sourceHash": "1rakkns",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
+   "nameEn": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
+   "descriptionAr": "عطر Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP من Maison Alhambra للجنسين.",
+   "descriptionEn": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP by Maison Alhambra for unisex.",
+   "gender": "unisex",
+   "families": [],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "evening"
+   ],
+   "tags": []
+  },
+  "LAT-892": {
+   "sourceHash": "1bo4n6u",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Hayaati Men by Lattafa Perfumes100ml EDP",
+   "nameEn": "Hayaati Men by Lattafa Perfumes100ml EDP",
+   "descriptionAr": "عطر Hayaati Men by Lattafa Perfumes100ml EDP من Lattafa رجالي بطابع عنبري ومنعش وخشبي.",
+   "descriptionEn": "Hayaati Men by Lattafa Perfumes100ml EDP by Lattafa for men with an amber and fresh and woody character.",
+   "gender": "men",
+   "families": [
+    "amber",
+    "fresh",
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-893": {
+   "sourceHash": "rcctqy",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
+   "nameEn": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
+   "descriptionAr": "عطر Kismet Magic by Maison Alhambra 100ml EDP Unisex من Maison Alhambra للجنسين بطابع حلو وعنبري وشرقي.",
+   "descriptionEn": "Buy Kismet Magic 100ml EDP by Maison Alhambra. An oriental amber and rose, vanilla fragrance for men and women elegant, and",
+   "gender": "unisex",
+   "families": [
+    "gourmand",
+    "amber",
+    "oriental"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-894": {
+   "sourceHash": "1e7mhyc",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "L'Impressio Pour Femme by Maison Alhambra 100ml",
+   "nameEn": "L'Impressio Pour Femme by Maison Alhambra 100ml",
+   "descriptionAr": "عطر L'Impressio Pour Femme by Maison Alhambra 100ml من Maison Alhambra نسائي بطابع زهري وفواكه.",
+   "descriptionEn": "L'Impressio Pour Femme by Maison Alhambra 100ml by Maison Alhambra for women with a floral and fruity character.",
+   "gender": "women",
+   "families": [
+    "floral",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring"
+   ],
+   "occasions": [
+    "daily",
+    "work"
+   ],
+   "tags": []
+  },
+  "MAI-895": {
+   "sourceHash": "1qbya4w",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Avant by Maison Alhambra 100ml EDP Men",
+   "nameEn": "Avant by Maison Alhambra 100ml EDP Men",
+   "descriptionAr": "عطر Avant by Maison Alhambra 100ml EDP Men من Maison Alhambra رجالي بطابع خشبي.",
+   "descriptionEn": "Avant by Maison Alhambra 100ml EDP Men by Maison Alhambra for men with a woody character.",
+   "gender": "men",
+   "families": [
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "GRA-896": {
+   "sourceHash": "1wcp1or",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Avento Perfume Man 100ml EDP Grandeur",
+   "nameEn": "Avento Perfume Man 100ml EDP Grandeur",
+   "descriptionAr": "عطر Avento Perfume Man 100ml EDP Grandeur من Grandeur رجالي بطابع حمضي وخشبي وفواكه.",
+   "descriptionEn": "Avento Perfume Man 100ml EDP Grandeur by Grandeur for men with a citrus and woody and fruity character.",
+   "gender": "men",
+   "families": [
+    "citrus",
+    "woody",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "GUL-897": {
+   "sourceHash": "15xjx8s",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
+   "nameEn": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
+   "descriptionAr": "عطر Sham Perfume Woman Gulf Orchid – Her 100 ml من Gulf Orchid نسائي بطابع زهري وحلو وفواكه.",
+   "descriptionEn": "Sham Perfume Woman Gulf Orchid – Her 100 ml by Gulf Orchid for women with a floral and gourmand and fruity character.",
+   "gender": "women",
+   "families": [
+    "floral",
+    "gourmand",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "VOL-898": {
+   "sourceHash": "188rxqw",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Amazon Rainfall by Volare 100ml EDP Men",
+   "nameEn": "Amazon Rainfall by Volare 100ml EDP Men",
+   "descriptionAr": "عطر Amazon Rainfall by Volare 100ml EDP Men من Volare رجالي بطابع منعش وحمضي ومائي.",
+   "descriptionEn": "Amazon Rainfall by Volare 100ml EDP Men by Volare for men with a fresh and citrus and aquatic character.",
+   "gender": "men",
+   "families": [
+    "fresh",
+    "citrus",
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily"
+   ],
+   "tags": []
+  },
+  "MAI-899": {
+   "sourceHash": "kl2zre",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Lava by Maison Alhambra 100ml EDP",
+   "nameEn": "Lava by Maison Alhambra 100ml EDP",
+   "descriptionAr": "عطر Lava by Maison Alhambra 100ml EDP من Maison Alhambra للجنسين بطابع حلو وعنبري وشرقي.",
+   "descriptionEn": "Lava by Maison Alhambra 100ml EDP by Maison Alhambra for unisex with a gourmand and amber and oriental character.",
+   "gender": "unisex",
+   "families": [
+    "gourmand",
     "amber",
     "oriental"
    ],
@@ -39322,1060 +39947,67 @@
     "autumn"
    ],
    "occasions": [
-    "evening",
-    "special"
+    "evening"
    ],
-   "tags": [
-    "مايسون ألامبرا",
-    "جان لوي نوار",
-    "عطر شرقي",
-    "عطور خشبية",
-    "عطر مسائي"
-   ]
-  },
-  "ZIM-878": {
-   "sourceHash": "x1wmuc",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "البدري شور من زيمايا",
-   "nameEn": "Al Barari Shore by Zimaya 100 ml EDP",
-   "descriptionAr": "عطر منعش يجسد روعة نسيم البحر وأخشاب السواحل ليمنحك شعوراً بالانتعاش والنقاء طوال اليوم. يجمع ببراعة بين نفحات الفواكه المشرقة وقاعدة من العنبر والمسك.",
-   "descriptionEn": "Al Barari Shore by Zimaya 100ml EDP, a refreshing Eau de Parfum capturing ocean air and coastal woods, with top notes of Bergamot, Lemon, Apple, heart of Lavender, Marine Notes, White Jasmine, and base of Ambergris, Musk, and Cedarwood.",
-   "gender": "men",
-   "families": [
-    "fresh",
-    "aquatic",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Bergamot",
-     "Lemon",
-     "Apple"
-    ],
-    "heart": [
-     "Lavender",
-     "Marine Notes",
-     "White Jasmine"
-    ],
-    "base": [
-     "Ambergris",
-     "Musk"
-    ]
-   },
-   "seasons": [
-    "summer",
-    "spring",
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "work",
-    "special"
-   ],
-   "tags": [
-    "زيمايا",
-    "البدري شور",
-    "عطر منعش",
-    "عطور بحرية",
-    "عطر رجالي"
-   ]
-  },
-  "AFN-879": {
-   "sourceHash": "4vsfw9",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "لينكيد فوريفير من أفنان",
-   "nameEn": "Lynked Forever by Afnan 100ml Eau De Parfum",
-   "descriptionAr": "عطر نسائي أنيق يفيض بالدفء والأنوثة من خلال توليفة كريمية من الزهور البيضاء وجوز الهند والأخشاب. يمنحك هذا العطر إشراقة يومية ناعمة وحضوراً ساحراً في المناسبات الخاصة.",
-   "descriptionEn": "Lynked Forever by Afnan 100ml Eau De Parfum is a woody floral fragrance for women with mandarin, berries, gardenia, tuberose, ylang, coconut, sandalwood, musk, and dry woods.",
-   "gender": "women",
-   "families": [
-    "floral",
-    "woody",
-    "musk"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "spring",
-    "summer",
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "أفنان",
-    "لينكيد فوريفير",
-    "عطر نسائي",
-    "عطور زهريّة",
-    "عطر كريمي"
-   ]
-  },
-  "MAI-880": {
-   "sourceHash": "cecnob",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "لا شارمانت إيكلاتان من مايسون ألامبرا",
-   "nameEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
-   "descriptionAr": "عطر شرقي فاخر يعكس الفخامة والجاذبية بتصميم أنيق يناسب الأذواق الرفيعة. يضفي لمسة من السحر والأناقة على إطلالتك في كل المناسبات.",
-   "descriptionEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP featuring an oriental character designed for sophisticated charm.",
-   "gender": "women",
-   "families": [
-    "oriental",
-    "floral"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "all",
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "مايسون ألامبرا",
-    "لا شارمانت إيكلاتان",
-    "عطر شرقي",
-    "عطر نسائي",
-    "عطور فاخرة"
-   ]
-  },
-  "ALW-881": {
-   "sourceHash": "1wsyzla",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "لازولي من الوطنّية",
-   "nameEn": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
-   "descriptionAr": "عطر يجمع بين انتعاش الحمضيات وبريق الأزهار ونعومة الفانيليا والمسك في تناغم فريد. يعد خياراً مثالياً لكل من يبحث عن التميز والانتعاش اليومي.",
-   "descriptionEn": "Lazuli by Al Wataniah – 100 ml Eau De Parfum Unisex with top notes of Bergamot, Citrus, Notes, heart of Amber, Jasmine, Woods, and base of Musk, Cedarwood, Vanilla.",
-   "gender": "unisex",
-   "families": [
-    "fresh",
-    "amber",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Bergamot",
-     "Citrus",
-     "Notes"
-    ],
-    "heart": [
-     "Amber",
-     "Jasmine",
-     "Woods"
-    ],
-    "base": [
-     "Musk",
-     "Cedarwood",
-     "Vanilla"
-    ]
-   },
-   "seasons": [
-    "summer",
-    "winter",
-    "spring",
-    "autumn"
-   ],
-   "occasions": [],
    "tags": []
   },
-  "MAI-882": {
-   "sourceHash": "1soi5g2",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "روز أوريغامي من مايسون ألامبرا",
-   "nameEn": "Rose Origami by Maison Alhambra 100ml",
-   "descriptionAr": "عطر فخم يمزج ببراعة بين عبير الورد الفاخر والقهوة العطرية الدافئة مع لمسات الأخشاب والبخور. يقدم تجربة عطرية شرقية فريدة ومصممة خصيصاً لمن يعشقون التميز.",
-   "descriptionEn": "Rose Origami by Maison Alhambra blends rich rose, aromatic coffee, warm woods, Turkish rose, Bulgarian rose, patchouli, cardamom, coriander, ylang-ylang, and incense (olibanum).",
-   "gender": "women",
-   "families": [
-    "floral",
-    "oriental",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Turkish Rose",
-     "Coffee"
-    ],
-    "heart": [
-     "Bulgarian Rose",
-     "Patchouli",
-     "Cardamom",
-     "Coriander",
-     "Ylang-Ylang"
-    ],
-    "base": [
-     "Incense (Olibanum)",
-     "kopi aromatik dan kayu hangat"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn",
-    "all"
-   ],
-   "occasions": [
-    "evening",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "مايسون ألامبرا",
-    "روز أوريغامي",
-    "عطر ورد",
-    "عطور شرقية",
-    "عطر نسائي"
-   ]
-  },
-  "ZIM-883": {
-   "sourceHash": "1x56mxy",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "تيراميسو كوكو من زيمايا",
-   "nameEn": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
-   "descriptionAr": "عطر شرقي غورماند دافئ يجمع بين نكهات القهوة والكاكاو وجوز الهند اللذيذة مع قاعدة من الكراميل. يمنحك شعوراً بالراحة والدفء ويضفي لمسة حلوة ومميزة على يومك.",
-   "descriptionEn": "Tiramisu Coco by Zimaya – 100ml Eau De Parfum Unisex with top notes of Coffee, Cocoa, heart notes of Coconut, Vanilla, and base notes of Caramel, Tonka Bean.",
-   "gender": "unisex",
-   "families": [
-    "gourmand",
-    "oriental",
-    "spicy"
-   ],
-   "notes": {
-    "top": [
-     "Coffee",
-     "Cocoa"
-    ],
-    "heart": [
-     "Coconut",
-     "Vanilla"
-    ],
-    "base": [
-     "Caramel",
-     "Tonka Bean"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn",
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "evening",
-    "gift"
-   ],
-   "tags": [
-    "زيمايا",
-    "تيراميسو كوكو",
-    "عطر غورماند",
-    "عطور حلوة",
-    "عطر للجنسين"
-   ]
-  },
-  "ARD-884": {
-   "sourceHash": "1697eb6",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "مراسم الملكي من أرض الزعفران",
-   "nameEn": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
-   "descriptionAr": "عطر شرقي ملكي يجمع بين عبق الورد والتوابل الفاخرة مع قاعدة دافئة من الأخشاب والعنبر والفانيليا. صُمم خصيصاً ليمنحك حضوراً فخماً ومليئاً بالجاذبية في المناسبات.",
-   "descriptionEn": "Maraseem Al Malaki by Ard Al Zaafaran – 100 ml Eau De Parfum Unisex featuring Rose, Spices, Floral Notes, Amber, Woods, Musk, Warm Woods, Vanilla, and Soft Amber.",
-   "gender": "unisex",
-   "families": [
-    "oriental",
-    "spicy",
-    "amber"
-   ],
-   "notes": {
-    "top": [
-     "Rose",
-     "Spices",
-     "Floral Notes"
-    ],
-    "heart": [
-     "Amber",
-     "Woods",
-     "Musk"
-    ],
-    "base": [
-     "Warm Woods",
-     "Vanilla",
-     "Soft Amber"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn",
-    "all"
-   ],
-   "occasions": [
-    "evening",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "أرض الزعفران",
-    "مراسم الملكي",
-    "عطر شرقي",
-    "عطور ملكية",
-    "عطر للجنسين"
-   ]
-  },
-  "MAI-885": {
-   "sourceHash": "tnwuqo",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "جان لوي إيمورتل من مايسون ألامبرا",
-   "nameEn": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
-   "descriptionAr": "عطر رجالي منعش ودافئ يبدأ بنفحات حيوية من البرغموت والجريب فروت وينتهي بقاعدة جلدية وعنبرية قوية. يعد الخيار الأمثل للرجل العصري الواثق من خطاه طوال اليوم.",
-   "descriptionEn": "Jean Lowe Immortel by Maison Alhambra – 100 ml Eau de Parfum for Men with top notes of Bergamot, Cardamom, Grapefruit, heart of Lavender, Vetiver, Patchouli, and base of Amber, Leather, Tonka Bean.",
-   "gender": "men",
-   "families": [
-    "woody",
-    "fresh",
-    "amber"
-   ],
-   "notes": {
-    "top": [
-     "Bergamot",
-     "Cardamom",
-     "Grapefruit"
-    ],
-    "heart": [
-     "Lavender",
-     "Vetiver",
-     "Patchouli"
-    ],
-    "base": [
-     "Amber",
-     "Leather",
-     "Tonka Bean"
-    ]
-   },
-   "seasons": [
-    "all",
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "work",
-    "evening"
-   ],
-   "tags": [
-    "مايسون ألامبرا",
-    "جان لوي إيمورتل",
-    "عطر رجالي",
-    "عطور خشبية",
-    "عطر منعش"
-   ]
-  },
-  "AFN-886": {
-   "sourceHash": "1a4bd15",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أفنان سوبرماسي نوت أونلي إنتنس إكستريت",
-   "nameEn": "Afnan Supremacy Not Only Intense Extrait 100ml",
-   "descriptionAr": "عطر رجالي جريء وفائق الثبات يجمع بين انتعاش الكشمش الأسود والبرغموت وقاعدة عميقة من التوابل والمسك. يعكس هذا العطر القوة والتميز للرجل الذي يفضل الحضور الطاغي.",
-   "descriptionEn": "Afnan Supremacy Not Only Intense Extrait de Parfum with Black Currant, Bergamot, Apple, Lavender, Patchouli, Oak Moss, Saffron, Musk, and Ambergris.",
-   "gender": "men",
-   "families": [
-    "fruity",
-    "woody",
-    "musk"
-   ],
-   "notes": {
-    "top": [
-     "Black Currant",
-     "Bergamot",
-     "Apple"
-    ],
-    "heart": [
-     "Lavender",
-     "Patchouli",
-     "Oak Moss"
-    ],
-    "base": [
-     "Saffron",
-     "Musk",
-     "bergamot dan apple"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "أفنان",
-    "سوبرماسي إنتنس",
-    "عطر رجالي",
-    "عطور فخمة",
-    "عطر إكستريت"
-   ]
-  },
-  "ALW-887": {
-   "sourceHash": "124ft46",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "ألكسندريت نوال من الوطنعية",
-   "nameEn": "Alexandrite Nawal by Al Wataniah 100ml EDP",
-   "descriptionAr": "عطر ألكسندريت نوال من الوطنعية يترك أثراً عطرياً جريئاً وفاخراً يناسب الأوقات المسائية. يجمع هذا العطر في تركيبته بين دفء التوابل والأخشاب العميقة ليمنحك حضوراً مميزاً.",
-   "descriptionEn": "Alexandrite Nawal by Al Wataniah is a bold fragrance crafted for those who want to leave a lasting fragrance style. The opening bursts with spicy black pepper, juicy pineapple and smoky tobacco, leading into a heart of rich coffee, smooth iris and deep patchouli.",
-   "gender": "men",
-   "families": [
-    "spicy",
-    "woody",
-    "amber"
-   ],
-   "notes": {
-    "top": [
-     "Black Pepper",
-     "Pineapple",
-     "Tobacco"
-    ],
-    "heart": [
-     "Coffee",
-     "Iris",
-     "Patchouli"
-    ],
-    "base": []
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "الوطنعية",
-    "ألكسندريت نوال",
-    "عطر رجالي",
-    "عطر مسائي",
-    "عطر فخم"
-   ]
-  },
-  "ARM-888": {
-   "sourceHash": "1cba4x2",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أرماف أوديسي أكوا إيديشن",
-   "nameEn": "Armaf Odyssey Aqua Edition 100ml EDP Men",
-   "descriptionAr": "عطر أرماف أوديسي أكوا إيديشن يمنحك شعوراً بالانتعاش والحيوية طوال اليوم. يتميز بتركيبة نظيفة ورياضية تجعله الخيار المثالي للنشاطات اليومية وأوقات العمل.",
-   "descriptionEn": "Armaf Odyssey Aqua Edition 100ml EDP for Men with fresh and clean notes designed for daily activities and sports.",
-   "gender": "men",
-   "families": [
-    "fresh",
-    "citrus",
-    "aquatic"
-   ],
-   "notes": {
-    "top": [
-     "Lemon",
-     "Grapefruit",
-     "Mint",
-     "Marine Notes"
-    ],
-    "heart": [
-     "Lavender",
-     "Spices",
-     "Aromatic Notes"
-    ],
-    "base": []
-   },
-   "seasons": [
-    "summer",
-    "spring"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "أرماف",
-    "أوديسي أكوا",
-    "عطر رجالي",
-    "عطر منعش",
-    "عطر صيفي"
-   ]
-  },
-  "GRA-889": {
-   "sourceHash": "1lr5zhc",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "بخاخ مزيل عرق ميدنايت أنجل من غراندور",
-   "nameEn": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
-   "descriptionAr": "بخاخ الجسم ميدنايت أنجل من غراندور يمنحك شعوراً بالانتعاش والنظافة طوال اليوم. تركيبة آلطيفة وفعالة تساعد على التحكم بالعرق وتمنحك رائحة مميزة تدوم.",
-   "descriptionEn": "Midnight Angel Deodorant is a safe and effective body perfume and deodorant designed to keep you smelling fresh and clean throughout the day.",
-   "gender": "women",
-   "families": [
-    "fresh",
-    "floral"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "all"
-   ],
-   "occasions": [
-    "daily"
-   ],
-   "tags": [
-    "غراندور",
-    "ميدنايت أنجل",
-    "مزيل عرق",
-    "بخاخ للجسم",
-    "عطر نسائي"
-   ]
-  },
-  "VOL-890": {
-   "sourceHash": "u8xwiq",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "ريلود جولد من فولاري للرجال",
-   "nameEn": "Reload Gold by Volare Man – 100 ml for Him",
-   "descriptionAr": "عطر ريلود جولد من فولاري للرجال يقدم توليفة عطرية تجمع بين الحمضيات الدافئة والتوابل الناعمة. يرتكز العطر على قاعدة غنية بالمسك وخشب الصندل والعنبر ليضفي لمسة من الجاذبية.",
-   "descriptionEn": "Reload Gold by Volare Man – 100 ml Eau De Parfum for Him featuring warm citrus, smooth spices, and a golden amber base.",
-   "gender": "men",
-   "families": [
-    "woody",
-    "amber",
-    "spicy"
-   ],
-   "notes": {
-    "top": [
-     "Warm Citrus",
-     "Smooth Spices"
-    ],
-    "heart": [
-     "Woody Amber",
-     "Soft Aromatics"
-    ],
-    "base": [
-     "Musk",
-     "Sandalwood",
-     "Golden Amber"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "daily"
-   ],
-   "tags": [
-    "فولاري",
-    "ريلود جولد",
-    "عطر رجالي",
-    "عطر دافئ",
-    "عطر خشبي"
-   ]
-  },
-  "MAI-891": {
-   "sourceHash": "t86rw7",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "شوغر مي دولسي دي ليشي من ميسون ألامبرا",
-   "nameEn": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
-   "descriptionAr": "عطر شوغر مي دولسي دي ليشي من ميسون ألامبرا يقدم تجربة عطرية فريدة تجمع بين النوتات العطرية الجذابة. يمنحك هذا العطر حضوراً عذباً ومميزاً يلفت الانتباه.",
-   "descriptionEn": "Sugar Me Dulce de Leche by Maison Alhambra – 100ml Eau de Parfum with an aromatic and delightful profile.",
-   "gender": "unisex",
-   "families": [
-    "gourmand",
-    "amber"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "ميسون ألامبرا",
-    "شوغر مي",
-    "دولسي دي ليشي",
-    "عطر مختلط",
-    "عطر حلو"
-   ]
-  },
-  "LAT-892": {
-   "sourceHash": "b4z40c",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "حياتي للرجال من لطافة",
-   "nameEn": "Hayaati Men by Lattafa Perfumes 100ml EDP",
-   "descriptionAr": "عطر حياتي للرجال من لطافة يجمع بين الانتعاش الخشبي ولمسات العنبر الدافئة. يتميز بتوليفة متوازنة من التفاح والبرغموت والقرفة تضفي حيوية متجددة.",
-   "descriptionEn": "Hayaati Man by Lattafa – 100 ml Eau de Parfum for Men. Fragrance Family: Woody • Fresh • Amber.",
-   "gender": "men",
-   "families": [
-    "woody",
-    "fresh",
-    "amber"
-   ],
-   "notes": {
-    "top": [
-     "Apple",
-     "Bergamot"
-    ],
-    "heart": [
-     "Cinnamon",
-     "Cedarwood"
-    ],
-    "base": [
-     "Amber",
-     "Musk",
-     "Vanilla"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer",
-    "autumn"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "لطافة",
-    "حياتي",
-    "عطر رجالي",
-    "عطر خشبي",
-    "عطر منعش"
-   ]
-  },
-  "MAI-893": {
-   "sourceHash": "19egzy5",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "قسمت ماجيك من ميسون ألامبرا",
-   "nameEn": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
-   "descriptionAr": "عطر قسمت ماجيك من ميسون ألامبرا يوفر تجربة عطرية ساحرة للجنسين بفضل تركيبته الغنية. يمزج بانسجام بين نفحات الكاكاو والعسل وقلب العنبر الدافئ.",
-   "descriptionEn": "Kismet Magic by Maison Alhambra – 100 ml Eau De Parfum (Unisex) featuring Cacao, Honey, Amber, and Vanilla.",
-   "gender": "unisex",
-   "families": [
-    "gourmand",
-    "amber",
-    "spicy"
-   ],
-   "notes": {
-    "top": [
-     "Cacao",
-     "Citrus",
-     "Honey"
-    ],
-    "heart": [
-     "Amber",
-     "Tonka Bean",
-     "Rose"
-    ],
-    "base": [
-     "Vanilla",
-     "Musk",
-     "Sandalwood"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "ميسون ألامبرا",
-    "قسمت ماجيك",
-    "عطر للجنسين",
-    "عطر شرقي",
-    "عطر فخم"
-   ]
-  },
-  "MAI-894": {
-   "sourceHash": "1qvk772",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "لإمبرسيو فور فيم من ميسون ألامبرا",
-   "nameEn": "L'Impressio Pour Femme by Maison Alhambra 100ml",
-   "descriptionAr": "عطر لإمبرسيو فور فيم من ميسون ألامبرا هو عطر نسائي نقي وحلو يمنحك شعوراً بالأنوثة الطاغية. يتميز برائحة خفيفة ومنعشة تناسب الاستخدام اليومي.",
-   "descriptionEn": "L'Impressio Pour Femme by Maison Alhambra 100ml EDP—a fresh, sweet & feminine fragrance that is clean and suitable for daily wear.",
-   "gender": "women",
-   "families": [
-    "floral",
-    "fruity",
-    "musk"
-   ],
-   "notes": {
-    "top": [
-     "Fruity Notes"
-    ],
-    "heart": [
-     "Soft Florals"
-    ],
-    "base": [
-     "Musk",
-     "Light Woods",
-     "Vanilla"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "ميسون ألامبرا",
-    "لإمبرسيو",
-    "عطر نسائي",
-    "عطر منعش",
-    "عطر يومي"
-   ]
-  },
-  "MAI-895": {
-   "sourceHash": "ghf8he",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أفانت من ميسون ألامبرا للرجال",
-   "nameEn": "Avant by Maison Alhambra 100ml EDP Men",
-   "descriptionAr": "عطر أفانت من ميسون ألامبرا للرجال يعكس القوة والأناقة من خلال توليفته الخشبية والتوابل الحيوية. يفتح بنفحات منعشة من البرغموي والليمون والفلفل الأسود.",
-   "descriptionEn": "Avant by Maison Alhambra – 100 ml Eau de Parfum for Men with top notes of bergamot, lemon, and black pepper.",
-   "gender": "men",
-   "families": [
-    "woody",
-    "fresh",
-    "spicy"
-   ],
-   "notes": {
-    "top": [
-     "Bergamot",
-     "Lemon",
-     "Black Pepper"
-    ],
-    "heart": [
-     "Lavender",
-     "Sage",
-     "Cedarwood"
-    ],
-    "base": [
-     "Amber",
-     "Musk",
-     "Vetiver"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer",
-    "autumn"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "ميسون ألامبرا",
-    "أفانت",
-    "عطر رجالي",
-    "عطر فخم",
-    "عطر عصري"
-   ]
-  },
-  "GRA-896": {
-   "sourceHash": "1nxq2iz",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أفينتو من غراندور للرجال",
-   "nameEn": "Avento Perfume Man 100ml EDP Grandeur",
-   "descriptionAr": "عطر أفينتو للرجال من غراندور إليت يجسد روح الثقة والأناقة العصرية. يترك انطباعاً ساحراً ومميزاً بفضل تركيبته الجذابة والفريدة.",
-   "descriptionEn": "Avento Perfume Man 100ml EDP Grandeur Elite designed to offer a captivating and long-lasting impression for men.",
-   "gender": "men",
-   "families": [
-    "woody",
-    "fresh",
-    "amber"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "غراندور",
-    "أفينتو",
-    "عطر رجالي",
-    "عطر فخم",
-    "عطر مميز"
-   ]
-  },
-  "GUL-897": {
-   "sourceHash": "wgqhi",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "عطر شام للنساء من جلف أوركيد",
-   "nameEn": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
-   "descriptionAr": "عطر شام للنساء من جلف أوركيد يمنحك تجربة عطرية غنية بنفحات الفواكه والزهور الحلوة. يجمع في قلبه بين الورد والياسمين والفانيليا ليضفي جاذبية لا تُقاوم.",
-   "descriptionEn": "Sham Perfume Woman – Her Cherry 100 ml Eau de Parfum. Fragrance Family: Fruity • Floral • Sweet.",
-   "gender": "women",
-   "families": [
-    "fruity",
-    "floral"
-   ],
-   "notes": {
-    "top": [
-     "Cherry",
-     "Raspberry",
-     "Peach"
-    ],
-    "heart": [
-     "Rose",
-     "Jasmine",
-     "Vanilla"
-    ],
-    "base": [
-     "Amber",
-     "Musk",
-     "Tonka Bean"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "evening",
-    "gift"
-   ],
-   "tags": [
-    "جلف أوركيد",
-    "عطر شام",
-    "عطر نسائي",
-    "عطر فواكه",
-    "عطر حلو"
-   ]
-  },
-  "VOL-898": {
-   "sourceHash": "15nv97p",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أمازون رينفول من فولاري للرجال",
-   "nameEn": "Amazon Rainfall by Volare 100ml EDP Men",
-   "descriptionAr": "عطر أمازون رينفول من فولاري للرجال يستوحى من انتعاش الطبيعة وهدوء نسمات البحر. تركيبة مميزة تجمع بين الحمضيات ونسيم البحر مع قاعدة خشبية دافئة.",
-   "descriptionEn": "Amazon Rainfall by Volare – 100 ml Eau de Parfum for Men featuring citrus, sea breeze, and watery notes.",
-   "gender": "men",
-   "families": [
-    "fresh",
-    "aquatic",
-    "citrus"
-   ],
-   "notes": {
-    "top": [
-     "Citrus",
-     "Sea Breeze"
-    ],
-    "heart": [
-     "Lavender",
-     "Jasmine",
-     "Watery Notes"
-    ],
-    "base": [
-     "Musk",
-     "Cedarwood",
-     "Amber"
-    ]
-   },
-   "seasons": [
-    "summer",
-    "spring"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "فولاري",
-    "أمازون رينفول",
-    "عطر رجالي",
-    "عطر منعش",
-    "عطر صيفي"
-   ]
-  },
-  "MAI-899": {
-   "sourceHash": "xe31rm",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "لافا من ميسون ألامبرا",
-   "nameEn": "Lava by Maison Alhambra 100ml EDP",
-   "descriptionAr": "عطر لافا من ميسون ألامبرا يمنحك شعوراً بالدفء والجرأة بفضل نفحاته الشرقية والتوابل الغنية. يعتبر عطراً عربياً مركزاً وثابتاً يلائم الأمسيات الباردة.",
-   "descriptionEn": "Lava by Maison Alhambra – 100 ml Eau de Parfum. Warm, spicy, smoky & bold Arabian perfume ideal for evenings.",
-   "gender": "unisex",
-   "families": [
-    "oriental",
-    "spicy",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Warm Spices"
-    ],
-    "heart": [
-     "Amber",
-     "Woody Notes"
-    ],
-    "base": [
-     "Smoky Woods",
-     "Musk",
-     "Vanilla"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "ميسون ألامبرا",
-    "لافا",
-    "عطر شرقي",
-    "عطر مسائي",
-    "عطر دافئ"
-   ]
-  },
   "ARM-900": {
-   "sourceHash": "1gh2r7b",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "أوديسي ماندارين سكاي من أرماف للرجال",
+   "sourceHash": "1cnlk9o",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
    "nameEn": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
-   "descriptionAr": "عطر أوديسي ماندارين سكاي من أرماف يمنحك انتعاشاً فريداً بفضل نفحات الماندرين والجريب فروت. يرتكز العطر على قاعدة غنية بالعنبر وحبوب التونكا ليترك أثراً منعشاً وجذاباً.",
-   "descriptionEn": "Odyssey Mandarin Sky by Armaf – 100 ml Eau de Parfum for Men with top notes of mandarin and grapefruit.",
+   "descriptionAr": "عطر Odyssey Mandarin Sky by Armaf 100ml EDP Men من Armaf للجنسين بطابع حمضي وخشبي.",
+   "descriptionEn": "Odyssey Mandarin Sky by Armaf 100ml EDP Men by Armaf for unisex with a citrus and woody character.",
    "gender": "unisex",
    "families": [
     "citrus",
-    "fresh",
-    "amber"
+    "woody"
    ],
    "notes": {
-    "top": [
-     "Mandarin",
-     "Grapefruit"
-    ],
-    "heart": [
-     "Lavender",
-     "Patchouli"
-    ],
-    "base": [
-     "Amber",
-     "Tonka Bean",
-     "Vetiver"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
+    "summer",
+    "winter",
     "spring",
-    "summer"
+    "autumn"
    ],
    "occasions": [
-    "daily",
-    "evening"
+    "daily"
    ],
-   "tags": [
-    "أرماف",
-    "أوديسي ماندارين سكاي",
-    "عطر رجالي",
-    "عطر حمضيات",
-    "عطر منعش"
-   ]
+   "tags": []
   },
   "ARM-901": {
-   "sourceHash": "1si5ps6",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "فيروس من أرماف",
+   "sourceHash": "10rdwee",
+   "editor": "rules",
+   "updatedAt": "2026-11-22T20:51:14.150Z",
+   "nameAr": "Feroce by Armaf 100ml EDP Women",
    "nameEn": "Feroce by Armaf 100ml EDP Women",
-   "descriptionAr": "عطر نسائي أنيق يجمع بين نفحات الفواكه المنعشة وباقة زهرية ناعمة. يترك خلفية دافئة ومميزة تضفي لمسة من الجاذبية.",
-   "descriptionEn": "Feroce by Armaf – 100 ml Eau de Parfum for Women. Top Notes: Mandarin, Peach, Pink Pepper. Heart Notes: Rose, Jasmine, Patchouli. Base Notes: Amber, Musk, Vanilla.",
+   "descriptionAr": "عطر Feroce by Armaf 100ml EDP Women من Armaf نسائي بطابع زهري وفواكه.",
+   "descriptionEn": "Feroce by Armaf 100ml EDP Women by Armaf for women with a floral and fruity character.",
    "gender": "women",
    "families": [
-    "fruity",
-    "floral"
+    "floral",
+    "fruity"
    ],
    "notes": {
-    "top": [
-     "Mandarin",
-     "Peach",
-     "Pink Pepper"
-    ],
-    "heart": [
-     "Rose",
-     "Jasmine",
-     "Patchouli"
-    ],
-    "base": [
-     "Amber",
-     "Musk",
-     "Vanilla"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
+    "summer",
+    "winter",
     "spring",
-    "summer"
+    "autumn"
    ],
    "occasions": [
-    "daily",
-    "evening"
+    "daily"
    ],
-   "tags": [
-    "أرماف",
-    "عطر نسائي",
-    "عطور الفواكه",
-    "عطور الزهور"
-   ]
+   "tags": []
   },
   "ZIM-902": {
    "sourceHash": "1ke0f56",
@@ -50380,7 +50012,109 @@
     ]
    },
    {
+    "sku": "MAI-877",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ZIM-878",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
     "sku": "MAI-880",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ALW-881",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ZIM-883",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ARD-884",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "MAI-885",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ARM-888",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "MAI-891",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-892",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "MAI-894",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "MAI-895",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "GRA-896",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "GUL-897",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "VOL-898",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "MAI-899",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ARM-900",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ARM-901",
     "issues": [
      "الوصف عام ولا يصف الرائحة"
     ]

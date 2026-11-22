@@ -44218,7 +44218,7 @@
       "brand": "Maison Alhambra",
       "supplierPrice": 1946.85,
       "ourPrice": 2925,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -44266,7 +44266,10 @@
       "barcode": "6291108730072",
       "importedAt": "2026-10-16T13:16:56.090Z",
       "refreshedAt": "2026-11-19T03:50:22.962Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 685,
@@ -57336,7 +57339,7 @@
       "nameAr": "Jean Lowe Noir Maison Alhambra 100ml EDP",
       "nameEn": "Jean Lowe Noir Maison Alhambra 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Jean Lowe Noir by Maison Alhambra – 100 ml Eau de Parfum\nFragrance Family: Woody • Amber • Oriental\nKey Notes: Amber, Pepper, Musk, Vanilla, Incense, Woods",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/jean-lowe-noir-maison-alhambra-perfume-lelaki-warm-amber-long-lasting-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/jean-lowe-noir-maison-alhambra-perfume-lelaki-warm-amber-long-lasting-100ml-edp.jpg",
@@ -57350,7 +57353,7 @@
       ],
       "category": "مختلط",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2289.17,
+      "supplierPrice": 2289.95,
       "ourPrice": 3435,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
@@ -57362,11 +57365,11 @@
       "supplierSku": "Jean-Lowe-808",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 175,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/jean-lowe-noir/",
       "slug": "jean-lowe-noir-maison-alhambra-100ml-edp-877",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
@@ -57375,12 +57378,8 @@
       "families": [
         "Woody",
         "Amber",
-        "Oriental Key Notes: Amber",
-        "Pepper",
-        "Musk",
-        "Vanilla",
-        "Incense",
-        "Woods"
+        "Oriental",
+        "Musky"
       ],
       "seasonsSource": [
         "Spring",
@@ -57391,9 +57390,10 @@
       "occasionsSource": [],
       "barcode": "6291108735534",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
@@ -57404,21 +57404,20 @@
       "nameAr": "Al Barari Shore by Zimaya 100 ml EDP",
       "nameEn": "Al Barari Shore by Zimaya 100 ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Al Barari Shore by Zimaya 100ml EDP\nAl Barari Shore by Zimaya is a refreshing unisex Eau de Parfum that captures the essence of ocean air and gentle coastal woods. It opens with sparkling bergamot, lemon and apple. The heart blends lavender, marine notes and white jasmine for a smooth aquatic freshness. The base rests on clean ambergris, musk and cedarwood, creating a crisp, elegant scent ideal for both men and women.\nFragrance Notes:\nTop: Bergamot, Lemon, Apple\nHeart: Lavender, Marine Notes, White Jasmine\nBase: Ambergris, Musk, Cedarwood\nHaruman Uniseks Segar & Laut\nAl Barari Shore oleh Zimaya ialah haruman uniseks yang diinspirasikan oleh udara laut dan aroma kayu pantai. Ia dibuka dengan bergamot, lemon dan epal hijau, diikuti oleh lavender, nota laut dan jasmine putih. Asasnya mengandungi ambergris, musk dan kayu cedar — haruman segar, elegan dan tahan lama untuk lelaki dan wanita.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-box.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-box.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-1.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-2.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-6.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-8.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-box.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/zimaya/zimaya-al-barari-shore-pour-homme-100ml-edp-8.jpg"
       ],
       "category": "رجالي",
       "brand": "Zimaya",
-      "supplierPrice": 3793.49,
-      "ourPrice": 5695,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 2289.95,
+      "ourPrice": 3435,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -57427,43 +57426,37 @@
       "supplierName": "Sham perfume",
       "supplierSku": "zimaya-al-barari-shore",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 290,
-      "supplierSalePrice": 175,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 175,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/zimaya/al-barari-shore/",
       "slug": "al-barari-shore-by-zimaya-100-ml-edp-878",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Lemon",
-          "Apple"
-        ],
-        "heart": [
-          "Lavender",
-          "Marine Notes",
-          "White Jasmine"
-        ],
-        "base": [
-          "Ambergris",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Aquatic",
+        "Fresh"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "6290171076018",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -57472,7 +57465,7 @@
       "nameAr": "Lynked Forever by Afnan 100ml Eau De Parfum",
       "nameEn": "Lynked Forever by Afnan 100ml Eau De Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Lynked Forever by Afnan 100ml Eau De Parfum is a woody floral fragrance designed for women who enjoy elegant creamy florals with smooth feminine warmth. The fragrance opens with juicy mandarin and sweet berries for a bright fruity introduction. The heart blooms with gardenia, tuberose and ylang, creating a rich white floral accord with a luxurious feminine character. The scent settles into coconut, sandalwood, musk and dry woods for a creamy woody dry down with performance suitable for daily wear and special occasions. Lynked Forever ni bau woody floral yang sangat feminine dan classy. Opening dia ada mandarin dan berries yang manis dan segar, kemudian masuk gardenia dan tuberose yang buat bau dia creamy dan elegant. Dry down dia ada coconut, sandalwood dan musk yang bagi vibe warm, soft dan tahan lama. Sangat sesuai untuk harian, dinner dan special occasion.",
+      "descriptionEn": "Lynked Forever by Afnan 100ml Eau De Parfum – woody floral fragrance with mandarin, tuberose, coconut, sandalwood and musk notes.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/lynked-forever-by-afnan-100ml-eau-de-parfum-6.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/lynked-forever-by-afnan-100ml-eau-de-parfum-6.jpg",
@@ -57486,8 +57479,8 @@
       ],
       "category": "نسائي",
       "brand": "Afnan",
-      "supplierPrice": 5219.32,
-      "ourPrice": 7830,
+      "supplierPrice": 5221.07,
+      "ourPrice": 7835,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57498,33 +57491,34 @@
       "supplierSku": "AFNAN-LYNKEDFOREVER-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 399,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/afnan/lynked-forever-by-afnan-100ml-eau-de-parfum/",
       "slug": "lynked-forever-by-afnan-100ml-eau-de-parfum-879",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
       "occasionsSource": [
-        "Office",
-        "Date Night",
-        "Special Event",
-        "Daily wear",
-        "Dinner"
+        "office",
+        "evening",
+        "daily"
       ],
       "barcode": "6290171077435",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -57536,22 +57530,22 @@
       "nameAr": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
       "nameEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/cde2598b-3a45-4453-7778-bc61d2312d00.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/cde2598b-3a45-4453-7778-bc61d2312d00.jpg",
-        "https://www.shamperfume.com/cdn/large/1595de27-a088-45ce-a54f-240ed3310e00.jpg",
-        "https://www.shamperfume.com/cdn/large/5161dc5f-70b8-4a7f-8352-4df842cc8800.jpg",
-        "https://www.shamperfume.com/cdn/large/fd6a0aa8-b023-4278-747f-cbaa23ec4900.jpg",
-        "https://www.shamperfume.com/cdn/large/acf6a49f-e268-4579-bbfd-f5c6e7826100.jpg",
-        "https://www.shamperfume.com/cdn/large/b0e231e2-d2d2-4a0b-e2f7-77f061b1c000.jpg",
-        "https://www.shamperfume.com/cdn/large/7174fe99-bb88-49c2-4d80-c91ab1d4f900.jpg",
-        "https://www.shamperfume.com/cdn/large/137d38eb-52bb-4537-ed7b-0ac1c07d3e00.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/la-charmante-eclatant-by-maison-alhambra-100ml-edp-8.jpg"
       ],
       "category": "نسائي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2171.45,
-      "ourPrice": 3260,
+      "supplierPrice": 1308.54,
+      "ourPrice": 1965,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57561,20 +57555,20 @@
       "supplierName": "Sham perfume",
       "supplierSku": "LA-CHARMANTE-ECLATANT",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 166,
-      "supplierSalePrice": 100,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 100,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/la-charmante-eclatant/",
       "slug": "la-charmante-eclatant-by-maison-alhambra-100ml-edp-880",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
+        "Amber",
         "Oriental"
       ],
       "seasonsSource": [
@@ -57582,13 +57576,13 @@
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office",
+        "evening"
       ],
       "barcode": "6290362340171",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
@@ -57601,7 +57595,7 @@
       "nameAr": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
       "nameEn": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Lazuli by Al Wataniah – 100 ml Eau De Parfum Unisex\nFragrance Notes:\nTop: Bergamot, Citrus, Notes\nHeart: Amber, Jasmine, Woods\nBase: Musk, Cedarwood, Vanilla",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/lazuli-al-wataniah-100ml-edp-perfume-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/lazuli-al-wataniah-100ml-edp-perfume-malaysia.jpg",
@@ -57615,8 +57609,8 @@
       ],
       "category": "مختلط",
       "brand": "Al Wataniah",
-      "supplierPrice": 2511.55,
-      "ourPrice": 3770,
+      "supplierPrice": 2028.24,
+      "ourPrice": 3045,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57626,42 +57620,39 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Lazuli-Al-677",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 192,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 155,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/al-wataniah/lazuli/",
       "slug": "lazuli-by-al-wataniah-100ml-eau-de-parfum-881",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Citrus",
-          "Notes"
-        ],
-        "heart": [
-          "Amber",
-          "Jasmine",
-          "Woods"
-        ],
-        "base": [
-          "Musk",
-          "Cedarwood",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fresh",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "5055810030124",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 882,
@@ -57669,7 +57660,7 @@
       "nameAr": "Rose Origami by Maison Alhambra 100ml",
       "nameEn": "Rose Origami by Maison Alhambra 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Rose Origami – Eau de Parfum 100 ml by Maison Alhambra\nRose Origami by Maison Alhambra is a luxurious unisex fragrance that artfully blends rich rose with aromatic coffee and warm woods. It opens with bold Turkish rose and freshly brewed coffee, then evolves into a heart of Bulgarian rose, patchouli, cardamom, coriander and ylang-ylang. The base finishes elegantly with smoky incense (olibanum) and creamy sandalwood, giving a and sophisticated trail. Ideal for both women and men who appreciate refined floral-woody accords with an oriental twist.\nFragrance Notes:\nTop: Turkish Rose, Coffee\nHeart: Bulgarian Rose, Patchouli, Cardamom, Coriander, Ylang-Ylang\nBase: Incense (Olibanum), Sandalwood\nHaruman Uniseks Mawar & Kayu\nRose Origami oleh Maison Alhambra ialah haruman uniseks mewah yang memadukan mawar besar, kopi aromatik dan kayu hangat. Pembukaannya dengan Turkish rose dan kopi, diikuti jantung nota Bulgarian rose, patchouli, cardamom, coriander & ylang-ylang. Akhirnya disempurnakan oleh olibanum dan sandalwood yang tahan lama dan elegan. Sesuai untuk lelaki atau wanita yang menghargai haruman gaya timur dengan sentuhan moden.",
+      "descriptionEn": "Buy Rose Origami 100 ml by Maison Alhambra – rose, coffee & sandalwood in a luxury unisex EDP sophisticated. Accords with an oriental twist.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/rose-origami-maison-alhambra-perfume-unisex-floral-rose-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/rose-origami-maison-alhambra-perfume-unisex-floral-rose-100ml-edp.jpg",
@@ -57683,9 +57674,9 @@
       ],
       "category": "نسائي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2616.2,
-      "ourPrice": 3925,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 968.32,
+      "ourPrice": 1455,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -57694,31 +57685,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Origami-Ro-1850",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 200,
-      "supplierSalePrice": 74,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 74,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/rose-origami/",
       "slug": "rose-origami-by-maison-alhambra-100ml-882",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Turkish Rose",
-          "Coffee"
-        ],
-        "heart": [
-          "Bulgarian Rose",
-          "Patchouli",
-          "Cardamom",
-          "Coriander",
-          "Ylang-Ylang"
-        ],
-        "base": [
-          "Incense (Olibanum)",
-          "kopi aromatik dan kayu hangat"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -57727,10 +57708,10 @@
       "occasionsSource": [],
       "barcode": "6290362340928",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -57739,7 +57720,7 @@
       "nameAr": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
       "nameEn": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Tiramisu Coco by Zimaya – 100ml Eau De Parfum Unisex\nTop Notes: Coffee, Cocoa\nHeart Notes: Coconut, Vanilla\nBase Notes: Caramel, Tonka Bean",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/zimaya/tiramisu-coco-zimaya-100ml-edp-unisex-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/tiramisu-coco-zimaya-100ml-edp-unisex-malaysia.jpg",
@@ -57753,8 +57734,8 @@
       ],
       "category": "مختلط",
       "brand": "Zimaya",
-      "supplierPrice": 3793.49,
-      "ourPrice": 5695,
+      "supplierPrice": 2159.09,
+      "ourPrice": 3240,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57764,28 +57745,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Tiramisu-Coco-Zimay-100ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 290,
-      "supplierSalePrice": 165,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 165,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/zimaya/tiramisu-coco/",
       "slug": "tiramisu-coco-by-zimaya-100-ml-edp-unisex-883",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Coffee",
-          "Cocoa"
-        ],
-        "heart": [
-          "Coconut",
-          "Vanilla"
-        ],
-        "base": [
-          "Caramel",
-          "Tonka Bean"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Gourmand",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -57793,12 +57768,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6290171075639",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 884,
@@ -57806,7 +57785,7 @@
       "nameAr": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
       "nameEn": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Maraseem Al Malaki by Ard Al Zaafaran – 100 ml Eau De Parfum Unisex\nFragrance Notes:\nTop: Rose, Spices, Floral Notes\nHeart: Amber, Woods, Musk\nBase: Warm Woods, Vanilla, Soft Amber",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseem-al-malaki-zaafaran-100ml-edp-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseem-al-malaki-zaafaran-100ml-edp-malaysia.jpg",
@@ -57815,12 +57794,11 @@
         "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseemmalaki-pavilion-centercourt-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseemmalaki-stregis-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseemmalaki-trx-premium-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseemmalaki-oneutama-garden-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/ard-al-zaafaran/maraseem-al-malaki-zaafaran-100ml-edp-malaysia.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/ard-al-zaafaran/maraseemmalaki-oneutama-garden-100ml-edp.jpg"
       ],
       "category": "مختلط",
       "brand": "Ard Al Zaafaran",
-      "supplierPrice": 1765.94,
+      "supplierPrice": 1766.53,
       "ourPrice": 2650,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
@@ -57832,41 +57810,37 @@
       "supplierSku": "Maraseem-A-7216",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 135,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/ard-al-zaafaran/maraseem-al-malaki/",
       "slug": "maraseem-al-malaki-by-ard-al-zaafaran-100ml-edp-884",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Rose",
-          "Spices",
-          "Floral Notes"
-        ],
-        "heart": [
-          "Amber",
-          "Woods",
-          "Musk"
-        ],
-        "base": [
-          "Warm Woods",
-          "Vanilla",
-          "Soft Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "6423080724859",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -57876,7 +57850,7 @@
       "nameAr": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
       "nameEn": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Jean Lowe Immortel by Maison Alhambra – 100 ml Eau de Parfum for Men\nTop Notes: Bergamot, Cardamom, Grapefruit\nHeart Notes: Lavender, Vetiver, Patchouli\nBase Notes: Amber, Leather, Tonka Bean",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/jean-lowe-immortel-maison-alhambra-100ml-edp-men-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/jean-lowe-immortel-maison-alhambra-100ml-edp-men-malaysia.jpg",
@@ -57890,8 +57864,8 @@
       ],
       "category": "رجالي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 1557.16,
+      "ourPrice": 2340,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57901,31 +57875,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Jean-Lowe-Immortal-00001A",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 169,
-      "supplierSalePrice": 119,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 119,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/jean-lowe-immortel/",
       "slug": "jean-lowe-immortel-by-maison-alhambra-100ml-edp-men-885",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Cardamom",
-          "Grapefruit"
-        ],
-        "heart": [
-          "Lavender",
-          "Vetiver",
-          "Patchouli"
-        ],
-        "base": [
-          "Amber",
-          "Leather",
-          "Tonka Bean"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Amber",
+        "Oriental",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -57933,12 +57899,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291108735541",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 886,
@@ -57946,7 +57916,7 @@
       "nameAr": "Afnan Supremacy Not Only Intense Extrait 100ml",
       "nameEn": "Afnan Supremacy Not Only Intense Extrait 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Afnan Supremacy Not Only Intense – Extrait de Parfum 100 ml\nSupremacy Not Only Intense by Afnan Perfumes is a bold masculine fragrance crafted for modern men who want to stand out. It opens with vibrant top notes of black currant, bergamot and apple. The heart transitions into lavender, patchouli and oakmoss. Finally, the base delivers an intense trail of saffron, musk and ambergris. Launched in 2021, this extrait delivers exceptional longevity and projection — ideal for evening wear or those who like commanding presence.\nFragrance Notes:\nTop: Black Currant, Bergamot, Apple\nHeart: Lavender, Patchouli, Oak Moss\nBase: Saffron, Musk, Ambergris\nHaruman Lelaki Berani & Tahan Lama\nSupremacy Not Only Intense oleh Afnan Perfumes dibuka dengan black currant, bergamot dan apple. Jantungnya mengandungi lavender, patchouli dan oakmoss. Asasnya pula menampilkan saffron, musk dan ambergris. Ideal untuk malam atau saat anda mahu kehadiran yang dominan.",
+      "descriptionEn": "Buy Afnan Supremacy Not Only Intense 100ml – men’s extrait de parfum with black currant, saffron & ambergris. Bold scent.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/afnan/afnan-malaysia-snoi-noi-not-only-intense2-100ml-extrait.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/afnan/afnan-malaysia-snoi-noi-not-only-intense2-100ml-extrait.jpg",
@@ -57960,8 +57930,8 @@
       ],
       "category": "رجالي",
       "brand": "Afnan",
-      "supplierPrice": 3780.41,
-      "ourPrice": 5675,
+      "supplierPrice": 3336.78,
+      "ourPrice": 5010,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -57971,31 +57941,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Supremacy-3401",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 289,
-      "supplierSalePrice": 255,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 255,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/afnan/afnan-supremacy-not-only/",
       "slug": "afnan-supremacy-not-only-intense-extrait-100ml-886",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
+      "concentration": "Extrait",
       "notes": {
-        "top": [
-          "Black Currant",
-          "Bergamot",
-          "Apple"
-        ],
-        "heart": [
-          "Lavender",
-          "Patchouli",
-          "Oak Moss"
-        ],
-        "base": [
-          "Saffron",
-          "Musk",
-          "bergamot dan apple"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Fruity"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -58003,12 +57963,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6290171070214",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 887,
@@ -58016,19 +57979,18 @@
       "nameAr": "Alexandrite Nawal by Al Wataniah 100ml EDP",
       "nameEn": "Alexandrite Nawal by Al Wataniah 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Alexandrite Nawal by Al Wataniah – Eau de Parfum / 100 ml (For Him/Unisex)\nAlexandrite Nawal by Al Wataniah Nawal is a bold fragrance crafted for those who want to leave a lasting fragrance style. The opening bursts with spicy black pepper, juicy pineapple and smoky tobacco, leading into a heart of rich coffee, smooth iris and deep patchouli. The base rests on warm vanilla, glowing amber, dry woods, benzoin and labdanum, creating a powerful, sophisticated trail. Ideal for evening wear, this 100 ml EDP offers both depth and versatility.\nFragrance Notes:\nTop: Black Pepper, Pineapple, Tobacco\nHeart: Coffee, Iris, Patchouli\nBase: Vanilla, Amber, Dry Woods, Benzoin, Labdanum\nDetails: Eau de Parfum (EDP) · 100 ml · For Him / Unisex · Spicy-Fruity-Woody",
+      "descriptionEn": "Alexandrite Nawal by Al Wataniah EDP 100 ml – rich unisex fragrance by Nawal with pepper, pineapple, coffee & vanilla woods. Bold and lasting.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-perfume-fresh-woody-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-perfume-fresh-woody-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-botol-wangian-woody-malaysia-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-perfume-citrus-spicy-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-fragrance-woody-amber-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-perfume-fresh-woody-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/alexandrite-nawal-wataniah-men-fragrance-woody-amber-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Al Wataniah",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
+      "supplierPrice": 1151.52,
+      "ourPrice": 1730,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58038,27 +58000,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "alexandrit-2300",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 135,
-      "supplierSalePrice": 88,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 88,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/al-wataniah/alexandrite-nawal/",
       "slug": "alexandrite-nawal-by-al-wataniah-100ml-edp-887",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Black Pepper",
-          "Pineapple",
-          "Tobacco"
-        ],
-        "heart": [
-          "Coffee",
-          "Iris",
-          "Patchouli"
-        ],
+        "top": [],
+        "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Fall",
         "Winter"
@@ -58066,8 +58024,11 @@
       "occasionsSource": [],
       "barcode": "5055810043025",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 888,
@@ -58075,7 +58036,7 @@
       "nameAr": "Armaf Odyssey Aqua Edition 100ml EDP Men",
       "nameEn": "Armaf Odyssey Aqua Edition 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Armaf Odyssey Aqua Edition 100ml EDP for Men\nTop Notes: Lemon, Grapefruit, Mint, Marine Notes\nHeart Notes: Lavender, Spices, Aromatic Notes\nBase Notes: Woods, Amber, Musk\nQ: Is Odyssey Aqua Edition ?\nQ: Is it suitable for gym or work?\nA: Yes, its clean and sporty profile makes it perfect for gym, office and daily activities.\nQ: Is this Armaf perfume Arabian?",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/armaf/odyssey-aqua-edition-armaf-perfume-lelaki-aquatic-fresh-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/odyssey-aqua-edition-armaf-perfume-lelaki-aquatic-fresh-100ml-edp.jpg",
@@ -58089,8 +58050,8 @@
       ],
       "category": "رجالي",
       "brand": "Armaf",
-      "supplierPrice": 2616.2,
-      "ourPrice": 3925,
+      "supplierPrice": 2617.08,
+      "ourPrice": 3930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58101,38 +58062,35 @@
       "supplierSku": "Aqua-Editi-49",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 200,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/armaf/armaf-odyssey-aqua-edition/",
       "slug": "armaf-odyssey-aqua-edition-100ml-edp-men-888",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Lemon",
-          "Grapefruit",
-          "Mint",
-          "Marine Notes"
-        ],
-        "heart": [
-          "Lavender",
-          "Spices",
-          "Aromatic Notes"
-        ],
+        "top": [],
+        "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Aquatic",
+        "Fresh",
+        "Citrus"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6294015166132",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -58142,15 +58100,14 @@
       "nameAr": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
       "nameEn": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
       "descriptionAr": "",
-      "descriptionEn": "Midnight Angel :\nMidnight Angel Deodorant is a safe and effective body perfume and deodorant that is designed to keep you smelling fresh and clean throughout the day. It is formulated with natural and gentle ingredients that are safe for use on the Soft personal scent. The perfume provides a pleasant scent, while the deodorant helps to control sweat and eliminate odor-causing bacteria. It is suitable for all Soft personal scent types and can be used daily without causing irritation or harm to the Soft personal scent. The product is also free from harsh chemicals and toxins, making it a healthier option for your body. With regular use, you can feel confident and comfortable knowing that you are using a safe and effective body perfume and deodorant.",
+      "descriptionEn": "Buy Midnight Angel Deodorant is a safe and effective body perfume and deodorant that is designed to keep you smelling Perfume Store",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/grandeur/midnight-angel-deodorant-body-spray-200ml-grandeur-woman-sham-perfume-store-deodorant-59883065-body%20spray.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/perfumes/grandeur/midnight-angel-deodorant-body-spray-200ml-grandeur-woman-sham-perfume-store-deodorant-59883065-body%20spray.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/grandeur/midnight-angel-deodorant-body-spray-200ml-grandeur-woman-sham-perfume-store-deodorant-59883065-body%20spray.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/grandeur/midnight-angel-deodorant-body-spray-200ml-grandeur-woman-sham-perfume-store-deodorant-59883065-body%20spray.jpg"
       ],
       "category": "نسائي",
       "brand": "Grandeur",
-      "supplierPrice": 497.08,
+      "supplierPrice": 497.25,
       "ourPrice": 750,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
@@ -58162,7 +58119,7 @@
       "supplierSku": "Midnight-Angel-200ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 38,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/grandeur/midnight-angel-200ml/",
       "slug": "midnight-angel-deodorant-body-spray-200ml-grandeur-woman-889",
       "sizeMl": 200,
@@ -58177,9 +58134,10 @@
       "occasionsSource": [],
       "barcode": "5055810038908",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "صورة واحدة فقط",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
@@ -58190,7 +58148,7 @@
       "nameAr": "Reload Gold by Volare Man – 100 ml for Him",
       "nameEn": "Reload Gold by Volare Man – 100 ml for Him",
       "descriptionAr": "",
-      "descriptionEn": "Reload Gold by Volare Man – 100 ml Eau De Parfum for Him\nFragrance Notes:\nTop: Warm Citrus, Smooth Spices\nHeart: Woody Amber, Soft Aromatics\nBase: Musk, Sandalwood, Golden Amber",
+      "descriptionEn": "Buy Reload Gold Boss Man Volare Fragrances, the ultimate EDP perfume for men. This scent captures confidence and style in every spray. Shop now!",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/volare/reload-gold-volare-boss-man-perfume-lelaki-fresh-woody-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/volare/reload-gold-volare-boss-man-perfume-lelaki-fresh-woody-100ml-edp.jpg",
@@ -58198,13 +58156,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/volare/reload-gold-boss-man-fragrance-fresh-spicy-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/volare/reloadgold-gym-treadmill-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/volare/reloadgold-gym-preworkout-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/volare/reloadgold-car-backseat-kl-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/volare/reload-gold-volare-boss-man-perfume-lelaki-fresh-woody-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/volare/reloadgold-car-backseat-kl-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Volare",
-      "supplierPrice": 2354.58,
-      "ourPrice": 3535,
+      "supplierPrice": 1439.39,
+      "ourPrice": 2160,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58214,29 +58171,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Reload-Gold-61",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 180,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/volare/reload-gold/",
       "slug": "reload-gold-by-volare-man-100-ml-for-him-890",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Warm Citrus",
-          "Smooth Spices"
-        ],
-        "heart": [
-          "Woody Amber",
-          "Soft Aromatics"
-        ],
-        "base": [
-          "Musk",
-          "Sandalwood",
-          "Golden Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -58244,12 +58195,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6294019023493",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 891,
@@ -58257,19 +58211,18 @@
       "nameAr": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
       "nameEn": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Sugar Me Dulce de Leche by Maison Alhambra – 100ml Eau de Parfum.",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/9717617a-56e7-4d17-4ab7-12b9879c1b00.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/9717617a-56e7-4d17-4ab7-12b9879c1b00.jpg",
-        "https://www.shamperfume.com/cdn/large/35526a22-d414-4afc-d55b-3b8050d47700.jpg",
-        "https://www.shamperfume.com/cdn/large/7651003f-1d62-45d3-fd99-163f90051c00.jpg",
-        "https://www.shamperfume.com/cdn/large/7d7e3c83-a733-4683-9ec4-600734c25400.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/9717617a-56e7-4d17-4ab7-12b9879c1b00.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2315.34,
-      "ourPrice": 3475,
+      "supplierPrice": 1504.82,
+      "ourPrice": 2260,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58279,13 +58232,12 @@
       "supplierName": "Sham perfume",
       "supplierSku": "SUGAR-ME-DULCE-DE-LECHE",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 177,
-      "supplierSalePrice": 115,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 115,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/sugar-me-dulce-de-leche/",
       "slug": "sugar-me-dulce-de-leche-by-maison-alhambra-100ml-edp-891",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
@@ -58299,14 +58251,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Daily",
-        "Casual"
+        "evening",
+        "daily"
       ],
       "barcode": "6290362349181",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -58316,7 +58269,7 @@
       "nameAr": "Hayaati Men by Lattafa Perfumes100ml EDP",
       "nameEn": "Hayaati Men by Lattafa Perfumes100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Hayaati Man by Lattafa – 100 ml Eau de Parfum for Men\nFragrance Family: Woody • Fresh • Amber\nKey Notes: Apple, Bergamot, Cinnamon, Cedarwood, Amber, Musk, Vanilla",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/hayaati-men-lattafa-perfume-lelaki-fresh-woody-aromatic-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/hayaati-men-lattafa-perfume-lelaki-fresh-woody-aromatic-100ml-edp.jpg",
@@ -58330,8 +58283,8 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1726.69,
-      "ourPrice": 2595,
+      "supplierPrice": 1112.26,
+      "ourPrice": 1670,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58341,28 +58294,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Hayaati-Ma-6031",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 132,
-      "supplierSalePrice": 85,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 85,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/lattafa/hayaati-men/",
       "slug": "hayaati-men-by-lattafa-perfumes100ml-edp-892",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody",
         "Fresh",
-        "Amber Key Notes: Apple",
-        "Bergamot",
-        "Cinnamon",
-        "Cedarwood",
+        "Woody",
         "Amber",
-        "Musk",
-        "Vanilla"
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -58371,13 +58318,14 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291107450193",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -58387,7 +58335,7 @@
       "nameAr": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
       "nameEn": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Kismet Magic by Maison Alhambra – 100 ml Eau De Parfum (Unisex)\nFragrance Notes:\nTop: Cacao, Citrus, Honey\nHeart: Amber, Tonka Bean, Rose\nBase: Vanilla, Musk, Sandalwood",
+      "descriptionEn": "Buy Kismet Magic 100ml EDP by Maison Alhambra. An oriental amber and rose, vanilla fragrance for men and women elegant, and",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/kismet-magic-maison-alhambra-perfume-unisex-amber-sweet-long-lasting-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/kismet-magic-maison-alhambra-perfume-unisex-amber-sweet-long-lasting-100ml-edp.jpg",
@@ -58401,8 +58349,8 @@
       ],
       "category": "مختلط",
       "brand": "Maison Alhambra",
-      "supplierPrice": 2092.96,
-      "ourPrice": 3140,
+      "supplierPrice": 1570.25,
+      "ourPrice": 2360,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58412,31 +58360,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Kismet-Magic",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 160,
-      "supplierSalePrice": 120,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 120,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/kismet-magic/",
       "slug": "kismet-magic-by-maison-alhambra-100ml-edp-unisex-893",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Cacao",
-          "Citrus",
-          "Honey"
-        ],
-        "heart": [
-          "Amber",
-          "Tonka Bean",
-          "Rose"
-        ],
-        "base": [
-          "Vanilla",
-          "Musk",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Gourmand"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -58444,12 +58383,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291108736579",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 894,
@@ -58457,21 +58399,20 @@
       "nameAr": "L'Impressio Pour Femme by Maison Alhambra 100ml",
       "nameEn": "L'Impressio Pour Femme by Maison Alhambra 100ml",
       "descriptionAr": "",
-      "descriptionEn": "L'Impressio Pour Femme by Maison Alhambra 100ml EDP\nL'Impressio Pour Femme by Maison Alhambra – 100 ml Eau de Parfum.\nL'Impressio Pour Femme ni bau dia fresh, sweet & feminine—clean, lembut dan sesuai untuk harian. Haruman ringan tapi tahan lama.\nTop Notes: Fruity Notes\nMiddle Notes: Soft Florals\nBase Notes: Musk, Light Woods, Vanilla",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/25fea0a1-ba7a-4c61-af9c-f9ccc1efd700.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/25fea0a1-ba7a-4c61-af9c-f9ccc1efd700.jpg",
-        "https://www.shamperfume.com/cdn/large/4e1e5df4-fd38-4d17-05c8-da73e72a5600.jpg",
-        "https://www.shamperfume.com/cdn/large/f4b1c7ac-c103-4c7d-e573-f4215c73a900.jpg",
-        "https://www.shamperfume.com/cdn/large/126b652e-609d-4128-61e3-63d392461700.jpg",
-        "https://www.shamperfume.com/cdn/large/fe551790-3f3c-4bb2-3fd2-f296849cc500.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/25fea0a1-ba7a-4c61-af9c-f9ccc1efd700.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/limpressio-pour-femme-by-maison-alhambra-100ml-5.jpg"
       ],
       "category": "نسائي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 1569.72,
-      "ourPrice": 2355,
-      "stockStatus": "in_stock",
+      "supplierPrice": 1570.25,
+      "ourPrice": 2360,
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -58481,40 +58422,38 @@
       "supplierSku": "L-IMPRESSIO-FEMME",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 120,
-      "supplierSalePrice": 90,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/l-impressio-pour/",
       "slug": "l-impressio-pour-femme-by-maison-alhambra-100ml-894",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Fruity Notes"
-        ],
-        "heart": [
-          "Soft Florals"
-        ],
-        "base": [
-          "Musk",
-          "Light Woods",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "barcode": "6291108730164",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 895,
@@ -58522,7 +58461,7 @@
       "nameAr": "Avant by Maison Alhambra 100ml EDP Men",
       "nameEn": "Avant by Maison Alhambra 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Avant by Maison Alhambra – 100 ml Eau de Parfum for Men\nTop Notes: Bergamot, Lemon, Black Pepper\nHeart Notes: Lavender, Sage, Cedarwood\nBase Notes: Amber, Musk, Vetiver",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/imgi13351yse0kwiolacuf10001000ql80-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/imgi13351yse0kwiolacuf10001000ql80-100ml-edp.jpg",
@@ -58536,7 +58475,7 @@
       ],
       "category": "رجالي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 1674.37,
+      "supplierPrice": 1674.93,
       "ourPrice": 2515,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
@@ -58548,42 +58487,35 @@
       "supplierSku": "Avant-00001A",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 128,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/avant/",
       "slug": "avant-by-maison-alhambra-100ml-edp-men-895",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Lemon",
-          "Black Pepper"
-        ],
-        "heart": [
-          "Lavender",
-          "Sage",
-          "Cedarwood"
-        ],
-        "base": [
-          "Amber",
-          "Musk",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Aromatic"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291107459110",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -58593,7 +58525,7 @@
       "nameAr": "Avento Perfume Man 100ml EDP Grandeur",
       "nameEn": "Avento Perfume Man 100ml EDP Grandeur",
       "descriptionAr": "",
-      "descriptionEn": "Avento Perfume Man 100ml EDP Grandeur Elite\nAvento Perfume Man 100ml EDP Grandeur Elite",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/grandeur/avento-perfume-100-ml-man-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/grandeur/avento-perfume-100-ml-man-box-edp.jpg",
@@ -58607,8 +58539,8 @@
       ],
       "category": "رجالي",
       "brand": "Grandeur",
-      "supplierPrice": 1687.45,
-      "ourPrice": 2535,
+      "supplierPrice": 1439.39,
+      "ourPrice": 2160,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58618,32 +58550,36 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Avento-MAn-27",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 129,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/grandeur/avento/",
       "slug": "avento-perfume-man-100ml-edp-grandeur-896",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Citrus",
+        "Fruity"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "5055810027902",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -58653,7 +58589,7 @@
       "nameAr": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
       "nameEn": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
       "descriptionAr": "",
-      "descriptionEn": "Sham Perfume Woman – Her Cherry 100 ml Eau de Parfum\nFragrance Family: Fruity • Floral • Sweet\nTop Notes: Cherry, Raspberry, Peach\nMiddle Notes: Rose, Jasmine, Vanilla\nBase Notes: Amber, Musk, Tonka Bean",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/gulf-orchid/sham-perfume-100ml-edp-women-perfume-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/gulf-orchid/sham-perfume-100ml-edp-women-perfume-malaysia.jpg",
@@ -58667,9 +58603,9 @@
       ],
       "category": "نسائي",
       "brand": "Gulf Orchid",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 1243.11,
+      "ourPrice": 1865,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -58678,34 +58614,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Sham-Attri-66",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 140,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/gulf-orchid/sham-perfume/",
       "slug": "sham-perfume-woman-gulf-orchid-her-100-ml-897",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Cherry",
-          "Raspberry",
-          "Peach"
-        ],
-        "heart": [
-          "Rose",
-          "Jasmine",
-          "Vanilla"
-        ],
-        "base": [
-          "Amber",
-          "Musk",
-          "Tonka Bean"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Fruity",
         "Floral",
-        "Sweet"
+        "Gourmand"
       ],
       "seasonsSource": [
         "Spring",
@@ -58713,14 +58636,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291107019734",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -58729,7 +58653,7 @@
       "nameAr": "Amazon Rainfall by Volare 100ml EDP Men",
       "nameEn": "Amazon Rainfall by Volare 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Amazon Rainfall by Volare – 100 ml Eau de Parfum for Men\nFragrance Notes:\nTop Notes: Citrus, Sea Breeze\nHeart Notes: Lavender, Jasmine, Watery Notes\nBase Notes: Musk, Cedarwood, Amber",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/volare/amazon-rainfall-volare-perfume-lelaki-fresh-green-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/volare/amazon-rainfall-volare-perfume-lelaki-fresh-green-100ml-edp.jpg",
@@ -58738,13 +58662,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/volare/amazonrainfall-gym-preworkout-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/volare/amazonrainfall-gym-bench-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/volare/amazonrainfall-gym-treadmill-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/volare/amazonrainfall-car-sunroof-night-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/volare/amazon-rainfall-volare-perfume-lelaki-fresh-green-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/volare/amazonrainfall-car-sunroof-night-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Volare",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 1570.25,
+      "ourPrice": 2360,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58754,30 +58677,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Amazone-Ra-21",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 169,
-      "supplierSalePrice": 120,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 120,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/volare/amazon-rainfall/",
       "slug": "amazon-rainfall-by-volare-100ml-edp-men-898",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Citrus",
-          "Sea Breeze"
-        ],
-        "heart": [
-          "Lavender",
-          "Jasmine",
-          "Watery Notes"
-        ],
-        "base": [
-          "Musk",
-          "Cedarwood",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Aquatic",
+        "Fresh",
+        "Citrus"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -58785,12 +58700,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6294019023752",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 899,
@@ -58798,21 +58717,20 @@
       "nameAr": "Lava by Maison Alhambra 100ml EDP",
       "nameEn": "Lava by Maison Alhambra 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Lava by Maison Alhambra – 100 ml Eau de Parfum.\nLava ni bau dia warm, spicy, smoky & bold—perfume Arab yang pekat, tahan lama dan sangat sesuai malam.\nTop Notes: Warm Spices\nMiddle Notes: Amber, Woody Notes\nBase Notes: Smoky Woods, Musk, Vanilla",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/ff97a0a5-369f-423f-cbd5-f7ee6b331300.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/ff97a0a5-369f-423f-cbd5-f7ee6b331300.jpg",
-        "https://www.shamperfume.com/cdn/large/bad39aba-cd6f-4cd8-ae0a-9312156c6800.jpg",
-        "https://www.shamperfume.com/cdn/large/f4febc4e-dea9-4d76-6ba8-43cfd46d4400.jpg",
-        "https://www.shamperfume.com/cdn/large/c1a4f93b-77c6-4cac-03fd-3f43582b2800.jpg",
-        "https://www.shamperfume.com/cdn/large/60236a92-ef3b-421d-ecf8-fd690601f100.jpg",
-        "https://www.shamperfume.com/cdn/large/15e9224d-ea6f-4b09-3eaf-900690cb1900.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/ff97a0a5-369f-423f-cbd5-f7ee6b331300.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/lava-by-maison-alhambra-100ml-edp-6.jpg"
       ],
       "category": "مختلط",
       "brand": "Maison Alhambra",
-      "supplierPrice": 1687.45,
-      "ourPrice": 2535,
+      "supplierPrice": 1177.69,
+      "ourPrice": 1770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58822,43 +58740,38 @@
       "supplierName": "Sham perfume",
       "supplierSku": "LAVA",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 129,
-      "supplierSalePrice": 90,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 90,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/lava/",
       "slug": "lava-by-maison-alhambra-100ml-edp-899",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Warm Spices"
-        ],
-        "heart": [
-          "Amber",
-          "Woody Notes"
-        ],
-        "base": [
-          "Smoky Woods",
-          "Musk",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Oriental Vanilla"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Special Event"
+        "evening"
       ],
       "barcode": "6290360599267",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 900,
@@ -58866,7 +58779,7 @@
       "nameAr": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
       "nameEn": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Odyssey Mandarin Sky by Armaf – 100 ml Eau de Parfum for Men\nTop Notes: Mandarin, Grapefruit\nHeart Notes: Lavender, Patchouli\nBase Notes: Amber, Tonka Bean, Vetiver",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/armaf/odyssey-mandarin-sky-armaf-perfume-lelaki-citrus-mandarin-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/odyssey-mandarin-sky-armaf-perfume-lelaki-citrus-mandarin-100ml-edp.jpg",
@@ -58880,8 +58793,8 @@
       ],
       "category": "مختلط",
       "brand": "Armaf",
-      "supplierPrice": 3139.44,
-      "ourPrice": 4710,
+      "supplierPrice": 3140.5,
+      "ourPrice": 4715,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -58892,27 +58805,20 @@
       "supplierSku": "Mandarin-S-4906",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 240,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/armaf/odyssey-mandarin-sky/",
       "slug": "odyssey-mandarin-sky-by-armaf-100ml-edp-men-900",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Mandarin",
-          "Grapefruit"
-        ],
-        "heart": [
-          "Lavender",
-          "Patchouli"
-        ],
-        "base": [
-          "Amber",
-          "Tonka Bean",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Citrus"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -58920,13 +58826,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6294015149371",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -58936,7 +58844,7 @@
       "nameAr": "Feroce by Armaf 100ml EDP Women",
       "nameEn": "Feroce by Armaf 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Feroce by Armaf – 100 ml Eau de Parfum for Women\nTop Notes: Mandarin, Peach, Pink Pepper\nHeart Notes: Rose, Jasmine, Patchouli\nBase Notes: Amber, Musk, Vanilla",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-perfume-wanita-floral-sweet-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-perfume-wanita-floral-sweet-100ml-edp.jpg",
@@ -58944,12 +58852,11 @@
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-minyak-wangi-wanita-fruity-floral-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-box-bottle-sweet-musky-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-gym-yogamat-pink-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-women-fragrance-floral-musky-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/armaf/feroce-armaf-perfume-wanita-floral-sweet-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/armaf/feroce-armaf-women-fragrance-floral-musky-100ml-edp.jpg"
       ],
       "category": "نسائي",
       "brand": "Armaf",
-      "supplierPrice": 3793.49,
+      "supplierPrice": 3794.77,
       "ourPrice": 5695,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
@@ -58961,41 +58868,36 @@
       "supplierSku": "Feroce-Arm-19",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 290,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.0854,
       "url": "https://www.shamperfume.com/perfumes/armaf/feroce-armaf/",
       "slug": "feroce-by-armaf-100ml-edp-women-901",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Mandarin",
-          "Peach",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Rose",
-          "Jasmine",
-          "Patchouli"
-        ],
-        "base": [
-          "Amber",
-          "Musk",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Fruity"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "6294015181326",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-22T20:49:55.489Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
