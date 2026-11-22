@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-21T20:52:40.475Z",
- "nextUpdateAt": "2026-11-22T08:52:40.475Z",
+ "updatedAt": "2026-11-22T11:10:16.666Z",
+ "nextUpdateAt": "2026-11-22T23:10:16.666Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,15 +10,15 @@
  },
  "sources": [
   {
+   "name": "Grazia",
+   "count": 3
+  },
+  {
    "name": "Now Smell This",
    "count": 3
   },
   {
-   "name": "Vietnam.vn",
-   "count": 3
-  },
-  {
-   "name": "Grazia",
+   "name": "Auparfum",
    "count": 2
   },
   {
@@ -30,8 +30,32 @@
    "count": 2
   },
   {
-   "name": "Premium Beauty News",
-   "count": 2
+   "name": "هذا اليوم",
+   "count": 1
+  },
+  {
+   "name": "GQ India",
+   "count": 1
+  },
+  {
+   "name": "صحيفة المرصد",
+   "count": 1
+  },
+  {
+   "name": "IndexBox",
+   "count": 1
+  },
+  {
+   "name": "The Express Tribune",
+   "count": 1
+  },
+  {
+   "name": "FZINE Singapore",
+   "count": 1
+  },
+  {
+   "name": "سكاي نيوز عربية",
+   "count": 1
   },
   {
    "name": "lanouvellerepublique.fr",
@@ -42,7 +66,11 @@
    "count": 1
   },
   {
-   "name": "صحيفة المرصد",
+   "name": "صحيفة الوطن",
+   "count": 1
+  },
+  {
+   "name": "Vietnam.vn",
    "count": 1
   },
   {
@@ -55,10 +83,6 @@
   },
   {
    "name": "Midi Libre",
-   "count": 1
-  },
-  {
-   "name": "سكاي نيوز عربية",
    "count": 1
   },
   {
@@ -76,26 +100,6 @@
   {
    "name": "Madame Figaro",
    "count": 1
-  },
-  {
-   "name": "DW.com",
-   "count": 1
-  },
-  {
-   "name": "News.com.au",
-   "count": 1
-  },
-  {
-   "name": "هبة سبور",
-   "count": 1
-  },
-  {
-   "name": "TrendWatching",
-   "count": 1
-  },
-  {
-   "name": "FashionNetwork France",
-   "count": 1
   }
  ],
  "items": [
@@ -103,7 +107,7 @@
    "id": "n76kx43",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
    "source": "Grazia",
-   "publishedAt": "2026-11-21T19:36:57.000Z",
+   "publishedAt": "2026-11-22T10:42:24.000Z",
    "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
    "lang": "fr",
    "category": "industry",
@@ -118,21 +122,147 @@
    }
   },
   {
-   "id": "ncbu3h8",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOSE0taWhuQkxYeWJsSzJQaFJ5Yjd1bHhOTU9YM1VYbUFzSnB0ejBKc1ZJbjdNRHJNcWR4Q0JIR2J6S3dPWnlGODhERnBEZEpHT1hNZGxaRjBuVF9NenZteUt4VzA1U1JZS01mbDVPZ01aaFUxcUhSZzRhRWtSNkVFM0tEQXZ1MGplNXNwNmtfR3dSaFdhdmdpUWJhaWtGTjNaQWFVVHZHNWlycWZycS1QdEF6bnJ3ZlRzWl9WOU1WcmRBVk9KZnBmT2p0cXRuZmdQY3IzODNZcmVUME0zWGx3Q3NHMkZKQ3loYUFZZ1NabkNfZVpzREtqazVB?oc=5",
+   "id": "n1vl8w3f",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85NTEtRTFDT2JRWWdjbktVa2pheFdFWkNVVmxRT29FeDJKV0xoX0dMTjAzMzFCbldMdlZnSGx0ZWVpTEtWOGRXZFVMVDljZDhR0gFKQVVfeXFMUGRRQVBKNjhJUGhVem5uOUU0RDZ3ZllkOG5sTk5rdlA0dFZCSmlaV2RhZWROSUtkQ0Z1S2Y1WTlmek9xcDF3NjMzaXc?oc=5",
+   "source": "هذا اليوم",
+   "publishedAt": "2026-11-22T10:18:59.000Z",
+   "original": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
+    "en": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية"
+   },
+   "summary": {
+    "ar": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
+    "en": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية"
+   }
+  },
+  {
+   "id": "nk9cxpm",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLTFETnFIc3RManB5YWQ2VFFtc0s2dDVyazNzalA0X3UtT05ENm9semVnWDJRMTF3NDExNjZZVjV5V3NDYU84T3JqZ09kZUNlQlVUOWFLdjAyUFlTQVdtU3U2ZG5acVRIaEczcEtWdUhZSkJxRVdYT0x2RUpPWnpfRE1lcVlDcGl5em9OYzFOU3dVaDJHY0xpR2dEelR4Q25VZWxmemY0bXBtNkZaOEFmOQ?oc=5",
+   "source": "GQ India",
+   "publishedAt": "2026-11-22T09:30:00.000Z",
+   "original": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
+    "en": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon"
+   },
+   "summary": {
+    "ar": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
+    "en": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon"
+   }
+  },
+  {
+   "id": "ng4avjd",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSVVUX1ZDcHM2enFLWllhY0dlbGgtTHpXX1V3NVV0eTJUdmtaWEtHTnI1ZjJlZDdlT0lOWGNyeGlqaTRsbFdaanBoWERfOEM4QWsyYklGdHdPMzRtSGEwbXVNaHphdDNUQW5CNC0wMlR5aE4xT3B1ZElQT1E5RnFJdXpDdFhLRmNjMy1iam9ldUhaRWhpWFhGU2pVWUJPRDM4dm4yRmdLemtTU0Q3bHFobHBRdV91RmhqM0JCajNJY1ZITFlEMlRtRDhET2JXdHdEejFfdnR2QlpSMWdRdzhtRjFsQmlQZV9aNmdXWVRVcDJrUmtMQ3c?oc=5",
    "source": "Grazia",
-   "publishedAt": "2026-11-21T19:06:46.000Z",
-   "original": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+   "publishedAt": "2026-11-22T06:36:59.000Z",
+   "original": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
    "lang": "fr",
    "category": "industry",
    "importance": 2,
    "title": {
-    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
-    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
+    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
    },
    "summary": {
-    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
-    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
+    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
+    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
+   }
+  },
+  {
+   "id": "n1dpyye0",
+   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
+   "source": "صحيفة المرصد",
+   "publishedAt": "2026-11-22T03:01:22.000Z",
+   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   },
+   "summary": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   }
+  },
+  {
+   "id": "n1kjojyk",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc1d0SnQ1aHdHaUtES2ozc1ZpaDFKRVNHYWpvbThZenYtYkk2QzVOQ1RmUHpXdUk3bjFWRGRpUy03eTNMSGRYNkNEQ2VhVHZjNWF6WDZXZXFLVHpGbVVBYVNEVHoyUXItWmEyVlByam5TVFNjby1KQ2w2YVJ4ZFVLVW84ZkpHR0xRQWMxRElDQXhVblR2b19ic2RBeF94TU03aXVpd0tvMTQtdUJ6cV9KbHJBUXFMSS1ldkVz?oc=5",
+   "source": "IndexBox",
+   "publishedAt": "2026-11-22T00:26:04.000Z",
+   "original": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
+    "en": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics"
+   },
+   "summary": {
+    "ar": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
+    "en": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics"
+   }
+  },
+  {
+   "id": "nntdl36",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONHJvNE45TGx6MFZnR0hQeWJTVF9NWFJ6WVVqMVhGd2JUTHdCUk9rSTN1R1gzVFdnSmttV1JQVnhWYmh4dkJ3Vklib0JvWUh5R0RLREhwVkJ1amVsY0JkRVZRelQ0ZjFMQWxsYk1RWkdCeHdoQ183RkY4YnNMSGYtVVhrUzVlRzBGdnFnTnZYbURsb2QzVV9ualVkdk3SAaQBQVVfeXFMT3N2SXptQkhjQWl3dE9VV2toeVpmelJqU2llYi1OYnZyNHBXUEVnenotdWMzX3M4dmdicmhQRGRFbWMxTDRONjFHbUltYkd2OVF6ZG1mVUJrTDdpWHlXUm5ZYTVYYjg1c0dXLTZlR3U2UlB6ZDlLRjlJZ0s0Qms4Zjd2UFJNTzQ2dXRBc1NXWGlBemdLM3VKZktPc3otWEI5M2FaN1E?oc=5",
+   "source": "The Express Tribune",
+   "publishedAt": "2026-11-21T23:20:19.000Z",
+   "original": "Artificial Intelligence makes inroads into perfume industry",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Artificial Intelligence makes inroads into perfume industry",
+    "en": "Artificial Intelligence makes inroads into perfume industry"
+   },
+   "summary": {
+    "ar": "Artificial Intelligence makes inroads into perfume industry",
+    "en": "Artificial Intelligence makes inroads into perfume industry"
+   }
+  },
+  {
+   "id": "n1xhqqp5",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LMGlVUkQ0ams3YzN6VWk0WGhuVHBsZVFhQ0ZuRkRZT01pYlF0QnpsMUpfcUFTUHJVODFIajBreVBTR2J4UEwyai1TSGpwc3ZBYXlkaExpVjUxSzlpdGxTSjctY0VjcmxNcUE?oc=5",
+   "source": "FZINE Singapore",
+   "publishedAt": "2026-11-21T23:00:00.000Z",
+   "original": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
+    "en": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know"
+   },
+   "summary": {
+    "ar": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
+    "en": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know"
+   }
+  },
+  {
+   "id": "n1dxgqw0",
+   "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPMWI0c2FDdFNEUkY5ZGtUalpFMnN1M0J6djhxVlpsVUN2X3VxSHhMaUI4clp1MEdOdHZfbkVMY20tbllBTVoyMENQb28zZVAyVXlDNHdWNVV3WWVuUWVuRmVXbW51MElVRUVaaWpadGg2c2tmeTlYYmE1alBOYk5jeGVLSGNXTklTQ216QmVZNktlOWN5SVpFY2E0dF9WS3Nrc1F3bG9waFV6RWZoOUhHWW5GX1p1S2tVYzNtZGJEN2lHejdLaTVzRDNhb2dkRWRldzhVRnJMNWZyNGVDN1Jfd0FMejJ3RTFiRXFJM3Z6SHY1bVdjdVhGb2tGdG52Z3l4X3gycEVFcFc2WXZaMkUyQ1RIV1dNUGVPX2I5azRGcHgwczNDc1gwZzdOdmFNTHMtaTFYMnlzVmU3YzFFYVlVa1JFRkNmdU0wQVo4M2RDNko3TGlvSXowOC1yY25OYlnSAeQCQVVfeXFMTV84eGNkSjN2S1QzbnVHU1VqY1d0VWhVV192OU05NEtXUTdTVTJpQlduVVZBcmE4djFXa1ZLMF9DQk5YdDBhMnlveUNkUDhnR2U5T25xYXFla0didms5TXMtVTdfOHVXczBjRTJKbG1MbE5ubkdJaDY4dVZ6c0JmWEFKR1dsRTZNQ2w0Q1pCRnhuQU9fWjBwOXI2dWkzVzA2WlRpMkVqQU9kMFNlclBiUjg1ZlBVb3kyaUpCRFJLdTdTY2xIaFE3RkREbk5yUmJzMGwxR1A2enN0SnBlWEl2a0FqN09pTTFTOEpocnZqay1CdWJOTGt1QTdFQnZ5SGhtT1ZvdzNZc01MejBrdVZZdmMxMExSb3JySVYxd1ZJMXQ1a216elZpX1JRQ1dZRFFnckptWHYtUUd4M3RtNHFicVJwN1RQclkzN25LbVVLQzBZLXpJQ05UMEFJM1E3aWltZFg5V0M?oc=5",
+   "source": "سكاي نيوز عربية",
+   "publishedAt": "2026-11-21T22:46:18.000Z",
+   "original": "عازف غزي يداوي وجع النزوح بأوتار العود",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
+   },
+   "summary": {
+    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
+    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
    }
   },
   {
@@ -172,28 +302,10 @@
    }
   },
   {
-   "id": "nd60xv0",
-   "url": "https://cafleurebon.com/ambragio-by-puredistance-winner/?utm_source=rss&utm_medium=rss&utm_campaign=ambragio-by-puredistance-winner",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-21T16:53:05.000Z",
-   "original": "Ambragio by PUREDISTANCE Winner",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Ambragio by PUREDISTANCE Winner",
-    "en": "Ambragio by PUREDISTANCE Winner"
-   },
-   "summary": {
-    "ar": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
    "id": "nfn6yir",
    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE14aEtXeGdBa1NuR3FGRFo0a0V2U1NxSkd5YWJEb2R4dU9HZDdMLUoxRVpjWFEzaHFQRDVOTjZUd2F0VmM?oc=5",
    "source": "https://inews.ma/",
-   "publishedAt": "2026-11-21T16:02:26.000Z",
+   "publishedAt": "2026-11-21T16:03:28.000Z",
    "original": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
    "lang": "ar",
    "category": "culture",
@@ -205,6 +317,24 @@
    "summary": {
     "ar": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
     "en": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي"
+   }
+  },
+  {
+   "id": "nftnu70",
+   "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxQc3NOUmpId1VSckRtbUVHdUNrTlAtQ25JX2ZfblVBX3JDbTYxbFNlNm91a1JoT1NHN0RzMldfek5QaTI0NVRvZTFJeGQxM2ZHUkMtRENmelN3UEhHaU41Mk5qTThkbnpkVG54dVVYdllpRTFNU1FlbnkwTTFWMExfRHRMMEJqcUxQMFNVeWhQOW94cHdZYXdwQVNnQnVnWlY3MWRRZnRBb1N5Rk5XR0hUZlZNUEM5SVkxaU9MT3Zsc2lVNE10Z0V0aGJ2bDFiSUVabW5sUzNINkJubmxhcmRtSENNZURQWFpVWHBiMnFNcGI1ek5mZU1sWTJmRWxTdjNiMFhrN2V4bDJUQjJmelhGNW1pdlZWQ2tnYkdzRDNmdVg0MjJNLWFHcHZiVHNzdUo0UGJKbXlrSWZhcDM0WVp6aGw2OGZpaDBmMVNHVUJBdmlQWlZUcWJZM2FvbEFNZmpsWTFCS0JMVGFtb2s1aV9PME5LRTVUSlFyZ0ZkcnFPZzBrQWVsSlg2UzJsbHpUWUVBQ2N6X0s2a2UzVmdBZEZTS19YX2dXcklwaU45QkhSSEpMelRrY1pkQWhpVU9OUklCYXFUOHBzTUFCTkZwbGlEd2VtLVhSWk1ZazhfZkliVWdfc0gtOUh1ZmphT2tCRDBmWDM3VjY0QWhmUHVtSGxlLW13OFdEbjNhSWtmTDUtcUgzVzREQzJrNmgzeG1qZXVfMk5sVkE5SHdtOXpUMXpabEZMSdIBVEFVX3lxTE41cnMtZlZ0NUpFVDB6OFZmd2tjMEJyUnMxNlpoa0M3a1FtNWg5MjQyWkFxcVE3NDk4UXZBTEE3Sm0xelVsbFpUS0sxd0FwaExJbmFMSQ?oc=5",
+   "source": "صحيفة الوطن",
+   "publishedAt": "2026-11-21T14:05:49.000Z",
+   "original": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
+   "lang": "ar",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
+    "en": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري"
+   },
+   "summary": {
+    "ar": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
+    "en": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري"
    }
   },
   {
@@ -223,24 +353,6 @@
    "summary": {
     "ar": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
     "en": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026."
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-21T11:40:29.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
    }
   },
   {
@@ -298,24 +410,6 @@
    }
   },
   {
-   "id": "n1dxgqw0",
-   "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPMWI0c2FDdFNEUkY5ZGtUalpFMnN1M0J6djhxVlpsVUN2X3VxSHhMaUI4clp1MEdOdHZfbkVMY20tbllBTVoyMENQb28zZVAyVXlDNHdWNVV3WWVuUWVuRmVXbW51MElVRUVaaWpadGg2c2tmeTlYYmE1alBOYk5jeGVLSGNXTklTQ216QmVZNktlOWN5SVpFY2E0dF9WS3Nrc1F3bG9waFV6RWZoOUhHWW5GX1p1S2tVYzNtZGJEN2lHejdLaTVzRDNhb2dkRWRldzhVRnJMNWZyNGVDN1Jfd0FMejJ3RTFiRXFJM3Z6SHY1bVdjdVhGb2tGdG52Z3l4X3gycEVFcFc2WXZaMkUyQ1RIV1dNUGVPX2I5azRGcHgwczNDc1gwZzdOdmFNTHMtaTFYMnlzVmU3YzFFYVlVa1JFRkNmdU0wQVo4M2RDNko3TGlvSXowOC1yY25OYlnSAeQCQVVfeXFMTV84eGNkSjN2S1QzbnVHU1VqY1d0VWhVV192OU05NEtXUTdTVTJpQlduVVZBcmE4djFXa1ZLMF9DQk5YdDBhMnlveUNkUDhnR2U5T25xYXFla0didms5TXMtVTdfOHVXczBjRTJKbG1MbE5ubkdJaDY4dVZ6c0JmWEFKR1dsRTZNQ2w0Q1pCRnhuQU9fWjBwOXI2dWkzVzA2WlRpMkVqQU9kMFNlclBiUjg1ZlBVb3kyaUpCRFJLdTdTY2xIaFE3RkREbk5yUmJzMGwxR1A2enN0SnBlWEl2a0FqN09pTTFTOEpocnZqay1CdWJOTGt1QTdFQnZ5SGhtT1ZvdzNZc01MejBrdVZZdmMxMExSb3JySVYxd1ZJMXQ1a216elZpX1JRQ1dZRFFnckptWHYtUUd4M3RtNHFicVJwN1RQclkzN25LbVVLQzBZLXpJQ05UMEFJM1E3aWltZFg5V0M?oc=5",
-   "source": "سكاي نيوز عربية",
-   "publishedAt": "2026-11-21T04:03:06.000Z",
-   "original": "عازف غزي يداوي وجع النزوح بأوتار العود",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
-   },
-   "summary": {
-    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
-   }
-  },
-  {
    "id": "n1p8gue1",
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObVBsLUdCUzZ1YU10LS1FTjVjUllYMFZLMHpDUGJua2tSZ1gyZ3VhLVRiOTkxUmlHOC1aWXQ1T2p5OWlZeGtpbDlYOGE0VV9IZVVFSEJjMGxtcXZlX0tvczNvRjctUFBUbHE4VHhkSkhMUm92YXgwc21ka0RpVTNaMkFLR01HNG5ZZEhPNUJDd1JWU2h3UEUtVjJoZjA5MWZUTUxVeEhDTHlSSVp5Qmo5UGxFcnU4MFZ2bUdRd2dWRTczWTBzNlRxb1hpU0NpcEE?oc=5",
    "source": "Revista Merca2.0",
@@ -331,6 +425,78 @@
    "summary": {
     "ar": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
     "en": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers"
+   }
+  },
+  {
+   "id": "n53l08m",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
+   "source": "Auparfum",
+   "publishedAt": "2026-11-21T00:48:00.000Z",
+   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   },
+   "summary": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   }
+  },
+  {
+   "id": "n1u4cte3",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LSFc1T1JWS3d3N3BxNkNKX25HbUtSNVVDY2pqNk1Sa21vemwwRmcxMmtXaVhSU25iTW40Qi1fSHREZ3EyTVFNSkJNdWE0aHVXS0dHRnh5Nk8zd083ZDV3a1k5cWUwSlU?oc=5",
+   "source": "Auparfum",
+   "publishedAt": "2026-11-21T00:15:10.000Z",
+   "original": "Original Musk de Kiehl’s : critique et avis",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Original Musk de Kiehl’s : critique et avis",
+    "en": "Original Musk de Kiehl’s : critique et avis"
+   },
+   "summary": {
+    "ar": "Original Musk de Kiehl’s : critique et avis",
+    "en": "Original Musk de Kiehl’s : critique et avis"
+   }
+  },
+  {
+   "id": "ncbu3h8",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOSE0taWhuQkxYeWJsSzJQaFJ5Yjd1bHhOTU9YM1VYbUFzSnB0ejBKc1ZJbjdNRHJNcWR4Q0JIR2J6S3dPWnlGODhERnBEZEpHT1hNZGxaRjBuVF9NenZteUt4VzA1U1JZS01mbDVPZ01aaFUxcUhSZzRhRWtSNkVFM0tEQXZ1MGplNXNwNmtfR3dSaFdhdmdpUWJhaWtGTjNaQWFVVHZHNWlycWZycS1QdEF6bnJ3ZlRzWl9WOU1WcmRBVk9KZnBmT2p0cXRuZmdQY3IzODNZcmVUME0zWGx3Q3NHMkZKQ3loYUFZZ1NabkNfZVpzREtqazVB?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-21T19:06:46.000Z",
+   "original": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
+   },
+   "summary": {
+    "ar": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines",
+    "en": "“Toute une génération l’a porté dans les années 80” : ce parfum Cacharel fait un retour remarqué ces dernières semaines"
+   }
+  },
+  {
+   "id": "nd60xv0",
+   "url": "https://cafleurebon.com/ambragio-by-puredistance-winner/?utm_source=rss&utm_medium=rss&utm_campaign=ambragio-by-puredistance-winner",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-21T16:53:05.000Z",
+   "original": "Ambragio by PUREDISTANCE Winner",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Ambragio by PUREDISTANCE Winner",
+    "en": "Ambragio by PUREDISTANCE Winner"
+   },
+   "summary": {
+    "ar": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Ambragio by PUREDISTANCE feels destined for cold weather, when it rises from the skin and slowly builds a cocoon of warmth. The post Ambragio by PUREDISTANCE Winner appeared first on ÇaFleureBon Perfume Blog ."
    }
   },
   {
@@ -475,168 +641,6 @@
    "summary": {
     "ar": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours",
     "en": "Parfum couture : ces fragrances qui s’inspirent du cachemire, de la soie et du velours"
-   }
-  },
-  {
-   "id": "n1obdy8l",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HNllCQm1xc0NMeVJsaGFMcmRZdGRTYU1XQVU2aFBwME03NE9oblk2dHMxWHFyQXpVVXpmTVVhX056VVdSWlNRd0xpUTRJOGpTdjJlV3dJZXJHLXFGWWpjRmRYdG5kN3FxUmdzMlo5RkRtcXBwYk83ZC02dw?oc=5",
-   "source": "DW.com",
-   "publishedAt": "2026-11-21T00:47:14.000Z",
-   "original": "Chanel No. 5: the cult perfume turns 100",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Chanel No. 5: the cult perfume turns 100",
-    "en": "Chanel No. 5: the cult perfume turns 100"
-   },
-   "summary": {
-    "ar": "Chanel No. 5: the cult perfume turns 100",
-    "en": "Chanel No. 5: the cult perfume turns 100"
-   }
-  },
-  {
-   "id": "n1cxt70z",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdWpTT1IzcUFTU1BQaXU5S19McHpVUkRndjJIdTg4azFXUi1vZjR4V3lvZjRVY251QjFUUzVfdnBnQWN1UHk3cEpGa3FyclFlczZDSURtMk5Pak5XeUUzQUxDcWNFakVVWHl3TzB3QVJDQVk0TlhwaDRaX3VZYXNHYktHZFpCc3djb2VlSHNqX1pxbl94R3dnQW84eVNJd0QxUF9PZzZRUTBVaXdzMnhoMGVWcjA3MmxKbldKZWhLdG9nNkVCc2pkTUVKUXNKU2NGUWtBZHh0ZlFwdXBmV3BrSjl2RFQydEMzRkdlQklhMFFxdDE4ZFHSAfsBQVVfeXFMTXhCZ05qMjh1djRpOG54WUJoYVdCcUEyMkpDQ1hNVzdlblNBYWE5LUhBdVlzSFROLXhwbWFmbV82aDVxX1JVSG41cG9qaHdYeWRvQU0xSjV5cWU2blc5d0pqUDBkUllmNzdwNmV0TXo2ZWxtLWdycFZaMjVtS0JKZkUwRzdIcHB0b3VyUk81bUY3TXNMTk9SekZmTUtnNVo5ZEdodURaQTI1d25IQ3FIMkZ2LWl0UzBma2xnX2k0VFh0TTB6R2V5b0VZSkxvNnJvYWNiQUNaMk5OTXM2Q1otU2xNdmJmRTFLYjRHYmZPdHVjMU42N0NIMGlONWs?oc=5",
-   "source": "News.com.au",
-   "publishedAt": "2026-11-20T21:04:05.000Z",
-   "original": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
-   },
-   "summary": {
-    "ar": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes",
-    "en": "Sick of sweet florals? Why everyone is suddenly wearing savoury perfumes"
-   }
-  },
-  {
-   "id": "n1elvg45",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYkl1aEVycnF1bHpTTmxKcGpobjB6SXpsU0VKZGdSczNaemJxREE2d003OFJYYVpkQlNWLU4tRVViRlhHNXF0ei1HYjNLaWpyVXg0Q3N0YlViQXctX0VCX2hjWjV6TkFmeXp5aGN2al9Xa3lZMzdaTzhiWnVLUnRnWTI2TTZVQTJzUkw2QQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-20T19:33:51.000Z",
-   "original": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
-    "en": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\"."
-   },
-   "summary": {
-    "ar": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\".",
-    "en": "يعيد الشباب الصيني اكتشاف الفن التقليدي \"لتقدير العطور\"."
-   }
-  },
-  {
-   "id": "n282nvi",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE90aW5fVDNscVVwbjlndkQ4LWhKOHVIdXVMU3pKYWt1bldRRUZyWFcxeUZnTEN1RHU1TDlYbVlZUExiX1JOSVVWeFhuZk5SZWZsUE5mVWNxQUo?oc=5",
-   "source": "هبة سبور",
-   "publishedAt": "2026-11-20T19:32:34.000Z",
-   "original": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
-    "en": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية"
-   },
-   "summary": {
-    "ar": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية",
-    "en": "مونديال الناشئين.. إسماعيل العود وإبراهيم الرباج يوقعان على ليلة مونديالية استثنائية"
-   }
-  },
-  {
-   "id": "nkav8dz",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMWxsYkFxVHFoZWJmZ3EyV2txU2NKc25JUXR5UE9vbnYwNElUbHVKUERxRTlRMXpvMldhVmwzRUZZb0FTMkNycFFOTG9oZXZJcVNzT2pLUHdkZVBkSVN5TUdBZWdTMGRKbGpYay12c2J3WVhtcmNCNEFZLThHc0Y3TjNCbkhCRUR3Wk5uR2ZkYV9SNV9UVWZiN0R1MFp0cG9mVjFv0gGzAUFVX3lxTE8xSDFWTnJRYzBiMHpHSlBDa0xpZnV4aEFYZE5HNjhwWU0yYWt1Y19yTWcxa2ZxZklWQ0pUOVM5SHRhajlFY250cU41TDFQeTZDUW4zZ3RSYTZvVWNLOWFoNHpJLVZjYllYNTFpSTI3V2ZvZldubFpyc0hvR2xoWTgzdFJPYkh3VWR4LU1rQjFIeG9RTHpJVHFoM1MxYVprTlVVR0hONFIzdW92eW1lNmtISk9V?oc=5",
-   "source": "TrendWatching",
-   "publishedAt": "2026-11-20T19:32:22.000Z",
-   "original": "Brands add taste, scent and movement to storytelling",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Brands add taste, scent and movement to storytelling",
-    "en": "Brands add taste, scent and movement to storytelling"
-   },
-   "summary": {
-    "ar": "Brands add taste, scent and movement to storytelling",
-    "en": "Brands add taste, scent and movement to storytelling"
-   }
-  },
-  {
-   "id": "n6c3koc",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaHVvNXZNMUhIMFk5ZVg1NHE5bFgyS2ZNMUZLQ28wT0xMZzRfd1hpeW1SWUxROEp5YThtYk1TNGFkdGUycFFOMzhQaDZCYXhTMzdNSU5zdnBVQTRsOEZjNktTYnItWUpmMURpc2Q2bTNIcGFkZ29ua2hEeGRqMnZ4NHZjT05ycWRHRndvbWhGTEpXd0dtRF9MbHBacw?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-20T19:15:01.000Z",
-   "original": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-    "en": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
-   },
-   "summary": {
-    "ar": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال.",
-    "en": "وقدّم الوفد القادم من مدينة هاي فونغ البخور لإحياء ذكرى الشهداء الأبطال."
-   }
-  },
-  {
-   "id": "n9s1ghr",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOblVVUlFjOEZCUktKSlNGX29mVUgyN2ZUbFM1cHczWUlNb3FlZHpJNkZRVWV1QlJSRWNxMXRmLVJjUFJQSG91SXBNVVY2VWJ4Z01BVktlUkxhZUZ6bHBqWDJzQThNSWtBZGVmVlBPZHVJTXJtZ0FabGZodnZPSzd1QmJ0cUhyWDhOZjA1ZFFLWTlodnJRZTR3NUhhRUY4TlVOSS1nTkhtOXI?oc=5",
-   "source": "FashionNetwork France",
-   "publishedAt": "2026-11-20T18:25:52.000Z",
-   "original": "In Milan, Jil Sander fragrances blends scent, art, and music",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "In Milan, Jil Sander fragrances blends scent, art, and music",
-    "en": "In Milan, Jil Sander fragrances blends scent, art, and music"
-   },
-   "summary": {
-    "ar": "In Milan, Jil Sander fragrances blends scent, art, and music",
-    "en": "In Milan, Jil Sander fragrances blends scent, art, and music"
-   }
-  },
-  {
-   "id": "n18n1fau",
-   "url": "https://www.premiumbeautynews.com:8443/~~themedata~~/en/interparfums-raises-2026-forecast,28570",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-20T18:23:07.000Z",
-   "original": "Interparfums raises 2026 forecast and expects strong growth in 2027",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Interparfums raises 2026 forecast and expects strong growth in 2027",
-    "en": "Interparfums raises 2026 forecast and expects strong growth in 2027"
-   },
-   "summary": {
-    "ar": "Interparfums SA, which manages global fragrance licenses for brands including Jimmy Choo, Montblanc, and Lacoste, as well as a portfolio of its own brands such as Rochas, Annick Goutal, and Solferino, announced on Thursday, November 19, that it had slightly raised its 2026 revenue target to EUR 880 million, up from EUR 870 million previously. The French company, a subsidiary of US-based Interparfums, Inc., also anticipates strong growth in 2027. \"After a mixed performance during the first... - I",
-    "en": "Interparfums SA, which manages global fragrance licenses for brands including Jimmy Choo, Montblanc, and Lacoste, as well as a portfolio of its own brands such as Rochas, Annick Goutal, and Solferino, announced on Thursday, November 19, that it had slightly raised its 2026 revenue target to EUR 880 million, up from EUR 870 million previously. The French company, a subsidiary of US-based Interparfums, Inc., also anticipates strong growth in 2027. \"After a mixed performance during the first... - I"
-   }
-  },
-  {
-   "id": "n1mi87mf",
-   "url": "https://www.premiumbeautynews.com:8443/fr/interparfums-releve-ses-previsions,28569",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-20T18:14:20.000Z",
-   "original": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027",
-   "lang": "en",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027",
-    "en": "Interparfums relève ses prévisions 2026 et anticipe une accélération en 2027"
-   },
-   "summary": {
-    "ar": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè",
-    "en": "Le groupe Interparfums SA, l'un des leaders de la parfumerie, qui gère les licences mondiales de marques comme Jimmy Choo, Montblanc ou Lacoste, ainsi qu'un portefeuille de marques propres incluant Rochas Annick Goutal et Solferino, a annoncé jeudi 19 novembre relever légèrement son objectif de chiffre d'affaires pour 2026, à 880 millions d'euros, contre 870 millions précédemment. Interparfums s'attend, par ailleurs, à une \"forte croissance\" l'année prochaine. \"Après un premier semestre... - Brè"
    }
   }
  ]
