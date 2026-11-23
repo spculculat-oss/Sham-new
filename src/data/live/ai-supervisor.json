@@ -1,10 +1,10 @@
 {
  "version": 1,
- "updatedAt": "2026-11-22T21:02:18.715Z",
- "nextReviewAt": "2026-11-23T09:02:18.715Z",
+ "updatedAt": "2026-11-23T12:20:19.019Z",
+ "nextReviewAt": "2026-11-24T00:20:19.019Z",
  "intervalHours": 12,
- "summaryAr": "كل الأدوات المفحوصة سليمة.",
- "overall": 9.8,
+ "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية، مستورد شاهين + مراجع الصفحات.",
+ "overall": 8.8,
  "tools": {
   "shaheen_chat": {
    "nameAr": "شات الخبير شاهين والوكيل البرمجي",
@@ -12,28 +12,28 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "What fixative works best for a citrus cologne, and at what percentage?",
-     "excerpt": "Ambroxan or Iso E Super works best for citrus colognes because they anchor the volatile citrus top notes without muddying the bright character. Use them at 2 to 5 percent of the total oil volume.\n\n\n\nWould you like to test Ambroxan or Iso E Super in your formula?",
-     "ms": 3840,
+     "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
+     "excerpt": "الفرق الأساسي بين التركيزات دي بيعتمد على نسبة الزيت العطري الخالص جوه الإزازة، وكل ما النسبة زادت، كل ما الثبات والفوحان زادوا.\n\nتعالي نبص على المقارنة دي:\n\n| نوع التركيز | نسبة الزيت العطري | الثبات التقريبي |\n|:--- |:--- |:--- |\n| **Parfum (بارفان)** | من 20% لـ 40% | من 8 ساعات لحد أكتر من يوم |",
+     "ms": 2955,
      "ok": true,
      "findings": []
     },
     {
-     "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-     "excerpt": "الزجاجة الواحدة هتحتاج 10 مل زيت (بـ ‏0.56 US$) و40 مل كحول (بـ ‏0.15 US$)، يعني إجمالي تكلفة المكونات للزجاجة الواحدة ‏0.71 US$.\n\nيبقوا 100 زجاجة هيكلفوا ‏71.50 US$.",
-     "ms": 1712,
+     "question": "اقترح نوتات لعطر صيفي منعش للرجال",
+     "excerpt": "عطر صيفي منعش للرجال محتاج تركيبة تفتح النفس وتثبت من غير ما تكون تقيلة في الحر.\n\nالمقترح التجريبي ده بحجم 50 مل وتركيز ماء عطر (EDP) بنسبة 20 بالمئة:\n\n| المكون | الفئة | النسبة من الزيت |\n|:--- |:--- |:--- |\n| زيت البرغموت الإيطالي | افتتاحية | 40 بالمئة |\n| نفحات البحر المنعشة | افتتاحية | 20 بالم",
+     "ms": 2195,
      "ok": true,
      "findings": []
     },
     {
-     "question": "ايه أفضل خلطة شتوية دافية؟",
-     "excerpt": "أفضل خلطة شتوية دافية بتعتمد على ذوقك طبعًا، بس لو عايز حاجة كلاسيكية ومحبوبة، أنصحك بتركيبة شرقية خشبية بتجمع بين دفء العود والفانيليا مع لمسة من التوابل.\n\nممكن نجرب التركيبة دي:\n\n*   **مقدمة العطر (Top Notes):** زعفران (Saffron) 5%، قرفة (Cinnamon) 5%\n*   **قلب العطر (Heart Notes):** ورد تركي (Tur",
-     "ms": 2844,
+     "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
+     "excerpt": "البشرة الجافة بتشرب العطر وبتخليه يطير بسرعة، وطبيعة جلدك الحامضية أو سخونة الجسم بتأثر كمان، وكمان تركيز العطر لو إدو تواليت أو كولونيا مش هيكمل كتير.\n\nعلشان تثبت العطر أطول فترة ممكنة، جرب الخطوات دي:\n- رطّب جسمك بكريم مرطب مرطّب خالي من الريحة أو بنقطة فازلين قبل ما ترش العطر على نبضات إيدك ورقبت",
+     "ms": 2138,
      "ok": true,
      "findings": []
     }
@@ -146,6 +146,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -166,28 +170,28 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
+     "question": "عندكم عطور عود؟",
+     "excerpt": "أهلاً بحضرتك! طبعاً، عندنا تشكيلة مميزة من عطور وعقود العود والشرقيات في المتجر، وبنشحن لأي دولة في العالم والأسعار بتظهر بعملتك المحلية في صفحة الدفع. من العروض المتاحة:\n• دهن العود أبييض (Afnan Perfumes) — ‏16.50 US$\n• باريس عود (Afnan Perfumes) — ‏21 US$\n• بديع العود (Ard Al Zaafaran) — ‏22 US$\n•",
+     "ms": 2307,
+     "ok": true,
+     "findings": []
+    },
+    {
+     "question": "ايه الفرق بين EDP و EDT؟",
+     "excerpt": "أهلاً بحضرتك يا فندم! \n\nالفرق الأساسي بيبان في نسبة الزيت العطري وثباته على الجلد أو الهدوم:\n\n• **EDP (أو دي بارفان):** تركيزه أعلى وثباته أقوى بكتير، ومناسب للسهرات والمناسبات أو لو بتحب الريحة تفضل مكملة معاك ساعات طويلة.\n• **EDT (أو دي تواليت):** تركيزه بيكون بين 5% إلى 15%، وثباته بيتراوح بين 4 ",
+     "ms": 1673,
+     "ok": true,
+     "findings": []
+    },
+    {
      "question": "How can I track my order?",
-     "excerpt": "To protect your data, enter your SH- reference and the phone or email used in the request below.",
-     "ms": 876,
-     "ok": true,
-     "findings": []
-    },
-    {
-     "question": "ايه آخر أخبار العطور؟",
-     "excerpt": "أهلاً بحضرتك! «نشرة شام للأخبار» بتجمع أحدث أخبار وصيحات عالم العطور من مصادر عامة عبر الخبير شاهين مع ذكر المصادر، وتستعرض الخبر الرئيسي وآخر العناوين مع روابطها. تقدر تتصفحها مباشرة من واجهة المجلة بالموقع. \n\nتحب أفتحلك صفحة أخبار العطور دلوقتي؟",
-     "ms": 2815,
-     "ok": true,
-     "findings": []
-    },
-    {
-     "question": "عايز أكلم حد من فريق شام",
-     "excerpt": "يا هلا بحضرتك يا فندم، منورنا. \n\nحوّلت محادثتك لفريق شام حالا 🙋، وهيراجعوها ويردوا عليك هنا في أقرب وقت. \n\nتقدر تكتب تفاصيل طلبك أو استفسارك في الاستمارة تحت لو تحب يتابعوا معاك.",
-     "ms": 1130,
+     "excerpt": "Welcome! You can track your order easily using its SH reference along with the email or phone number you used at checkout. Just enter them in the order tracking box on the store page. \n\nIf your order is running late or you need any further help, our team is right here to support you. Would you like ",
+     "ms": 1016,
      "ok": true,
      "findings": []
     }
@@ -300,6 +304,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -320,14 +328,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/news (مقالات اليوم)",
      "excerpt": "## Interparfums ترفع توقعات عام 2026 وتتوقع تسارع النمو في 2027\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية مثل Jimmy Choo وMontblanc عن تعديل طفيف وزيادة في توقعاتها المالية لعام 2026 مع ترقب نمو قوي وقائمة إطلاقات جديدة في 2027.\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية م",
-     "ms": 191,
+     "ms": 208,
      "ok": true,
      "findings": []
     }
@@ -440,29 +448,35 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
   },
   "news_bulletin": {
    "nameAr": "نشرة شاهين للأخبار الحقيقية",
-   "score": 9,
-   "autoScore": 9,
+   "score": 6,
+   "autoScore": 6,
    "judged": false,
-   "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "status": "warn",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [
-    "آخر نشرة بلا ملخصات شاهين (عناوين فقط)"
+    "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
+    "الرد ليس بالعربية رغم أن السؤال بالعربية"
    ],
    "samples": [
     {
      "question": "آخر نشرة (30 خبر، منذ 0 ساعة)",
-     "excerpt": "- \"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée (Grazia)\n  \"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birk",
+     "excerpt": "- AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain (Cosmetics Business)\n  Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than",
      "ms": 0,
      "ok": true,
      "findings": [
-      "آخر نشرة بلا ملخصات شاهين (عناوين فقط)"
+      "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
+      "الرد ليس بالعربية رغم أن السؤال بالعربية"
      ]
     }
    ],
@@ -574,6 +588,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 6
     }
    ],
    "lastEvent": "none"
@@ -584,13 +602,13 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "أحدث الدروس (22 درس)",
-     "excerpt": "## الفرق بين العطور النيش والتجارية\nيا مساعد، العطور التجارية تُصنع لإرضاء الأغلبية وتُنتج بكميات ضخمة عبر دور أزياء شهيرة، وغالباً ما تعتمد على التسويق الكثيف. أما عطور النيش (Niche) فتنتجها دور عطور مستقلة ومتخصصة في صناعة العطر بحد ذاته، وتعتمد على مكونات نادرة، فريدة، وجريئة لا تتبع بالضرورة صيح",
+     "excerpt": "## الزيوت العطرية المركزة مقابل العطور الكحولية\nيا بني، للمقارنة بين الزيوت العطرية المركزة والعطور الكحولية فوائد وعيوب. الزيوت المركزة تتميز بثباتها العالي جداً على الجلد وخلوها من الكحول، مما يجعلها لطيفة على البشرة الحساسة، لكن عيبها يكمن في محدودية انتشارها وضعف فوحانها مقارنة بالبخاخات. أما ال",
      "ms": 0,
      "ok": true,
      "findings": []
@@ -704,6 +722,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -714,21 +736,21 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "صور: agarwood",
      "excerpt": "Agarwood top grade · Highend Agarwood Kyara · Stamp of India Colnect Agarwood Perfume · Infected Agarwood Aquilaria Malaysia",
-     "ms": 523,
+     "ms": 745,
      "ok": true,
      "findings": []
     },
     {
      "question": "خريطة: Grasse, France",
      "excerpt": "Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France (43.6589, 6.92391)",
-     "ms": 437,
+     "ms": 659,
      "ok": true,
      "findings": []
     }
@@ -841,6 +863,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -851,21 +877,21 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "ارخص عطر عندكم",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين من متجر شام، يسعدني مساعدتك في العثور على الخيار الأنسب لميزانيتك. لقد استخدمت نظام الذكاء الاصطناعي في المتجر لترشيح أرخص العطور المتاحة لك بناءً على الأسعار المسجلة لدينا.\n- AFN-1186: يُعد من الخيارات الاقتصادية المتاحة بسعر 875 ج، ويتميز بعائلة مسكي/زهري ومناسب للاستخ",
-     "ms": 9144,
+     "question": "عود ثابت للسهرات تحت 300 جنيه",
+     "excerpt": "أهلاً بك معنا بصفتي الخبير شاهين من متجر شام، أود إفصاحك بأننا نعتمد على أنظمة ذكية لترشيح العطور بدقة. بالنسبة لطلبك عن عود ثابت للسهرات، نعتذر لعدم توفر عطور بهذا السعر (تحت ‏5.65 US$)، فجميع أسعار منتجاتنا بالجنيه وتفوق هذه الميزانية، لكننا نرشح لك خياراً شرقياً مميزاً وقريبًا من تطلعاتك للسهرات.",
+     "ms": 2210,
      "ok": true,
      "findings": []
     },
     {
-     "question": "عطر مسك ناعم للبنات",
-     "excerpt": "أهلاً بك في متجر شام! بصفتي الخبير شاهين، استخدمت أحدث أدوات الذكاء الاصطناعي لتحليل طلبك واختيار أفضل عطور المسك الناعمة المناسبة لك بكل عناية ودقة.\n- AFN-1134: عطر بيور مسك من أفنان يمنحك رائحة مسكية وزهرية ناعمة تناسب الاستخدام اليومي والعمل.\n- KHA-773: ستيلار مسك من خادلاج يجمع بين المسك الأبيض ",
-     "ms": 1696,
+     "question": "عطر منعش للجنسين للاستخدام اليومي",
+     "excerpt": "أهلاً بك! بصفتي الخبير شاهين في متجر شام، وبناءً على تحليل الذكاء الاصطناعي لطلبك، اخترت لك أفضل العطور المنعشة والمناسبة للاستخدام اليومي للجنسين.\n- IMP-1182: عطر منعش ومائي يناسب الاستخدام اليومي والعمل للجنسين.\n- ARM-667: عطر منعش وخشبي يجمع بين الحمضيات والمسك ليكون مثالياً لكل الأوقات.\n- ARD-47",
+     "ms": 1670,
      "ok": true,
      "findings": []
     }
@@ -970,6 +996,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -990,7 +1020,7 @@
    "autoScore": 9,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [
     "100 منتج فيها ملاحظات بيانات للتاجر"
@@ -998,7 +1028,7 @@
    "samples": [
     {
      "question": "كتالوج المتجر (1089/1114 راجعها شاهين)",
-     "excerpt": "## AFN-532 أفنان رير باشن\nعطر أنثوي متألق تتناغم فيه روائح الورد والبرتقال مع رقة زهر البرتقال والمسك. تضفي لمسات الأخشاب والعنبر والفانيليا عمقاً دافئاً يبرز سحركِ وأناقتكِ في كل مناسبة.\nالعائلة: floral/amber/woody — النوتات: Orange, Rose, Musk, Amber, Woods, Vanilla, Rose, Orange Blossom, Musk\n\n##",
+     "excerpt": "## MAI-538 أروماتك روج بواسطة ميشون ألامبرا\nعطر نسائي أنيق يجمع بين نفحات الزعفران وزهر البرتقال مع لمسات خشبية دافئة. يمنحكِ حضوراً جذاباً يناسب الأوقات الخاصة والمناسبات.\nالعائلة: amber/floral/woody — النوتات: Saffron, Orange Blossom, Jasmine, Amberwood, Musk, Cedarwood\n\n## ARD-539 تراب الذهب بواس",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -1106,6 +1136,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 9
     }
    ],
    "guidance": {
@@ -1122,20 +1156,28 @@
   },
   "store_import": {
    "nameAr": "مستورد شاهين + مراجع الصفحات",
-   "score": 10,
-   "autoScore": 10,
+   "score": 3,
+   "autoScore": 3,
    "judged": false,
-   "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "status": "fail",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
-   "issues": [],
+   "issues": [
+    "80 منتج مخفي لعيوب حرجة",
+    "80/80 صورة لا تفتح",
+    "خريطة موقع المورد shamperfume لم تُقرأ"
+   ],
    "samples": [
     {
      "question": "مستورد شاهين ومراجع الصفحات",
-     "excerpt": "1114 منتج (1063 مستورد): 512 سليم، 602 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nRAS-065 Hawas Thunder by Rasasi 100ml EDP: المورد لم ينشر نوتات العطر\nRAS-066 Hawas Viper by Rasasi 100ml EDP: المورد لم ينشر نوتات العطر\nRAS-067 Hawas Kobra by Rasasi 100ml EDP: المورد لم ",
+     "excerpt": "1114 منتج (1063 مستورد): 489 سليم، 545 بملاحظات، 80 مخفي.\nshamperfume: +0 جديد، 0 محدّث، 0 تعذر، 0 قرأها شاهين\nARD-578 Qaed Al Fursan by Ard Al Zaafaran 50ml: المورد لم ينشر نوتات العطر\nGRA-579 Instinct Noir Deodorant Body Spray 200mL Grandeur unisex: المورد لم ينشر نوتات العطر، غير متوفر عند المورد",
      "ms": 0,
      "ok": true,
-     "findings": []
+     "findings": [
+      "80 منتج مخفي لعيوب حرجة",
+      "80/80 صورة لا تفتح",
+      "خريطة موقع المورد shamperfume لم تُقرأ"
+     ]
     }
    ],
    "history": [
@@ -1234,6 +1276,10 @@
     {
      "at": "2026-11-22T21:02:18.715Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
+     "score": 3
     }
    ],
    "lastEvent": "none"
@@ -1244,14 +1290,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-22T21:02:18.715Z",
+   "checkedAt": "2026-11-23T12:20:19.019Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/community/status (جاهزية ذكاء المجتمع)",
      "excerpt": "المجتمع مفعّل (postgres)",
-     "ms": 269,
+     "ms": 96,
      "ok": true,
      "findings": []
     }
@@ -1291,6 +1337,10 @@
     },
     {
      "at": "2026-11-22T21:02:18.715Z",
+     "score": 10
+    },
+    {
+     "at": "2026-11-23T12:20:19.019Z",
      "score": 10
     }
    ],

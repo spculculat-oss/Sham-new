@@ -1,7 +1,37 @@
 {
  "version": 1,
- "updatedAt": "2026-11-22T21:02:18.715Z",
+ "updatedAt": "2026-11-23T12:20:19.019Z",
  "entries": [
+  {
+   "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
+   "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "البشرة الجافة بتشرب العطر وبتخليه يطير بسرعة، وطبيعة جلدك الحامضية أو سخونة الجسم بتأثر كمان، وكمان تركيز العطر لو إدو تواليت أو كولونيا مش هيكمل كتير.\n\nعلشان تثبت العطر أطول فترة ممكنة، جرب الخطوات دي:\n- رطّب جسمك بكريم مرطب مرطّب خالي من الريحة أو بنقطة فازلين قبل ما ترش العطر على نبضات إيدك ورقبتك.\n- رش العطر على هدومك أو شعرك بحذر، لأن الأقمشة بتمسك الريحة أكتر بكتير من الجلد.\n- بلاش تحك معصم ببعضه بعد الرش، لأن الاحتكاك بيسخّن الجلد وبيخلّي جزيئات العطر اللي فوق تطير أسرع.\n\nحبوب الجلد عندك جافة ولا دهنية في الغالب؟",
+   "at": "2026-11-23T12:20:19.019Z",
+   "hits": 0,
+   "source": "probe"
+  },
+  {
+   "id": "ar|auto|اقترح نوتات لعطر صيفي منعش للرجال",
+   "question": "اقترح نوتات لعطر صيفي منعش للرجال",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "عطر صيفي منعش للرجال محتاج تركيبة تفتح النفس وتثبت من غير ما تكون تقيلة في الحر.\n\nالمقترح التجريبي ده بحجم 50 مل وتركيز ماء عطر (EDP) بنسبة 20 بالمئة:\n\n| المكون | الفئة | النسبة من الزيت |\n|:--- |:--- |:--- |\n| زيت البرغموت الإيطالي | افتتاحية | 40 بالمئة |\n| نفحات البحر المنعشة | افتتاحية | 20 بالمئة |\n| زهر البرتقال | قلب العطر | 25 بالمئة |\n| خشب الأرز | قاعدة العطر | 15 بالمئة |\n\nطريقة التحضير باختصار: كمية الكحول (96 بالمئة) تقريباً 39 مل، ومعاها 10 مل من الزيت العطري المذكور في الجدول.\n\n```sham-formula\n{\n  \"title\": \"صيفي منعش رجالي\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 21,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة والتوافق\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"زيت البرغموت الإيطالي\",\n      \"nameEn\": \"Italian Bergamot Oil\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 40\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"نفحات البحر المنعشة\",\n      \"nameEn\": \"Marine Notes\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 20\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"زهر البرتقال\",\n      \"nameEn\": \"Neroli\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 25\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"خشب الأرز\",\n      \"nameEn\": \"Cedarwood\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 15\n    }\n  ]\n}\n```\n\n```sham-tool\n{\n  \"tools\": [\n    {\n      \"tool\": \"concentration\",\n      \"bottleVolumeMl\": 50,\n      \"concentrationPercent\": 20,\n      \"concentrationType\": \"edp\",\n      \"alcoholPercentage\": 96,\n      \"waterPercent\": 0,\n      \"fixativePercent\": 0\n    },\n    {\n      \"tool\": \"maceration\",\n      \"macerationDays\": 21\n    }\n  ]\n}\n```\n\nتحب نزود لمسة خفيفة من النعناع عشان نزود الانتعاش، ولا كده تمام؟",
+   "at": "2026-11-23T12:20:19.019Z",
+   "hits": 0,
+   "source": "probe"
+  },
+  {
+   "id": "ar|auto|ايه الفرق بين edp و edt و parfum في نسبة الزيت والثبات",
+   "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "الفرق الأساسي بين التركيزات دي بيعتمد على نسبة الزيت العطري الخالص جوه الإزازة، وكل ما النسبة زادت، كل ما الثبات والفوحان زادوا.\n\nتعالي نبص على المقارنة دي:\n\n| نوع التركيز | نسبة الزيت العطري | الثبات التقريبي |\n|:--- |:--- |:--- |\n| **Parfum (بارفان)** | من 20% لـ 40% | من 8 ساعات لحد أكتر من يوم |\n| **EDP (أو دو بارفان)** | من 15% لـ 20% | من 6 لـ 8 ساعات |\n| **EDT (أو دو تواليت)** | من 5% لـ 15% | من 4 لـ 6 ساعات |\n\nالـ Parfum هو الأثقل والأقوى وغالباً بيكون للمناسبات، الـ EDP هو الاختيار الأكثر طلباً عشان معتدل وينفع للاستخدام اليومي، والـ EDT بيكون خفيف ومنعش للصيف والخروجات السريعة.",
+   "at": "2026-11-23T12:20:19.019Z",
+   "hits": 0,
+   "source": "probe"
+  },
   {
    "id": "ar|auto|ايه افضل خلطة شتوية دافية",
    "question": "ايه أفضل خلطة شتوية دافية؟",
@@ -29,36 +59,6 @@
    "style": "auto",
    "answer": "Ambroxan or Iso E Super works best for citrus colognes because they anchor the volatile citrus top notes without muddying the bright character. Use them at 2 to 5 percent of the total oil volume.\n\n```sham-formula\n{\"title\":\"Citrus Cologne Fixative Guide\",\"author\":\"شاهين — مقترح تجريبي\",\"concentrationPercent\":15,\"concentrationType\":\"edc\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":3,\"macerationDays\":21,\"summary\":\"مقترح يحتاج مراجعة السلامة\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"الليمون\",\"nameEn\":\"Bergamot\",\"category\":\"top\",\"percentageOfOil\":70},{\"id\":\"note-2\",\"nameAr\":\"البرتقال المر\",\"nameEn\":\"Petitgrain\",\"category\":\"heart\",\"percentageOfOil\":25},{\"id\":\"note-3\",\"nameAr\":\"أمبروكسان\",\"nameEn\":\"Ambroxan\",\"category\":\"base\",\"percentageOfOil\":5}]}\n```\n\nWould you like to test Ambroxan or Iso E Super in your formula?",
    "at": "2026-11-22T21:02:18.715Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
-   "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "جسمك ممكن يكون جاف أو بشرتك من النوع الدهني اللي بيمتص الزيوت العطرية بسرعة، وكمان طبيعة العطر نفسه (لو خفيف أو فيه نوتات حمضية طاغية) بتخليه يطير أسرع.\n\nعلشان تثبت العطر لفترة أطول:\n- رش العطر على بشرة مترطبة كويس بكريم مرطب بدون ريحة أو بفازلين قبل الرش.\n- رش في أماكن النبض زي الرقبة، المعصمين، وخلف الأذنين، لأن حرارة الجسم بتساعد العطر يفوح ويثبت.\n- رش العطر على الهدوم والأيشاربات لأن النسيج بيمسك الريحة أكتر بكتير من الجلد.\n- تجنب فرك المعصمين ببعض بعد الرش علشان ما تكسرش جزيئات العطر وتخليه يطير أسرع.\n\n### مقارنة طرق الثبات\n| الطريقة | التأثير | أفضل وقت للتنفيذ |\n|:--- |:--- |:--- |\n| **الترطيب بالمرطب** | يحبس الزيوت العطرية ويمنع امتصاصها | مباشرة قبل رش العطر |\n| **الرش على النبض** | يبرز الفوحان والثبات بالحرارة | بعد الاستحمام |\n| **الرش على الملابس** | يعطي أطول فترة ثبات للريحة | عند ارتداء الملابس |\n\nالعطر اللي بتستخدمه بيكون تركيزه إيه وعادة بيقعد معاك قد ايه؟",
-   "at": "2026-11-22T11:11:10.694Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|اقترح نوتات لعطر صيفي منعش للرجال",
-   "question": "اقترح نوتات لعطر صيفي منعش للرجال",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "عطر صيفي منعش للرجال بيعتمد على حمضيات مبهجة فوق قاعدة خشبية ناعمة يدي ثبات وحيوية، وده مقترح تجريبي بحجم 50 مل وتركيز 20% (EDP):\n\n### النوتات العطرية\n- **القمة (افتتاحية العطر):** برغمات، ليمون، ونعناع (70 بالمئة من الزيت)\n- **القلب:** لافندر وإبرة الراعي (20 بالمئة من الزيت)\n- **القاعدة:** نجيل الهند وخشب الأرز (10 بالمئة من الزيت)\n\n### التركيبة (50 مل - EDP 20%)\n- كمية الزيت = 10 مل\n- الكحول (96%) = 39.6 مل\n- الماء المقطر = 0.4 مل\n- التعتيق = 30 يوم\n\n```sham-formula\n{\n  \"title\": \"عطر صيفي منعش للرجال\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0.8,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 30,\n  \"summary\": \"مقترح صيفي منعش يحتاج مراجعة السلامة واختبار التوافق\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"برغمات\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 40\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"ليمون\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 20\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"نعناع\",\n      \"nameEn\": \"Mint\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 10\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"لافندر\",\n      \"nameEn\": \"Lavender\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 15\n    },\n    {\n      \"id\": \"note-5\",\n      \"nameAr\": \"إبرة الراعي\",\n      \"nameEn\": \"Geranium\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 5\n    },\n    {\n      \"id\": \"note-6\",\n      \"nameAr\": \"نجيل الهند\",\n      \"nameEn\": \"Vetiver\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 5\n    },\n    {\n      \"id\": \"note-7\",\n      \"nameAr\": \"خشب الأرز\",\n      \"nameEn\": \"Cedarwood\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 5\n    }\n  ]\n}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"concentration\",\"bottleVolumeMl\":50,\"concentrationPercent\":20,\"concentrationType\":\"edp\",\"alcoholPercentage\":96,\"waterPercent\":0.8,\"fixativePercent\":0},{\"tool\":\"maceration\",\"macerationDays\":30}]}\n```\n\nحبّك تزود لمسة بحرية والا تفضلها خشبية أكتر؟",
-   "at": "2026-11-22T11:11:10.694Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|ايه الفرق بين edp و edt و parfum في نسبة الزيت والثبات",
-   "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "الفرق بين EDP و EDT و Parfum بيكون في نسبة الزيت العطري اللي موجودة في كل نوع، وده بيأثر بشكل مباشر على قوة الريحة وثباتها.\n\n| النوع      | نسبة الزيت العطري التقريبية | مدة الثبات التقريبية |\n|:-------- |:------------------------- |:----------------- |\n| **Parfum** | 20-40%                     | 6-8 ساعات أو أكتر    |\n| **EDP**    | 15-20%                     | 4-5 ساعات          |\n| **EDT**    | 5-15%                      | 2-3 ساعات          |\n\n*   **Parfum (أو Extrait de Parfum):** ده أعلى تركيز للزيت العطري، عشان كده بيكون أغلى وريحته أقوى وبتفضل ثابتة لفترة طويلة أوي.\n*   **Eau de Parfum (EDP):** ده تركيز كويس ومناسب للاستخدام اليومي، ريحته قوية وثابتة لفترة معقولة.\n*   **Eau de Toilette (EDT):** ده أخف تركيز فيهم، ريحته بتكون منعشة أكتر ومناسبة للنهار أو الأجواء الحارة، بس ثباته أقل.\n\nفيه كمان أنواع تانية بتركيزات أقل زي Eau de Cologne (EDC) و Eau Fraiche.",
-   "at": "2026-11-21T20:53:26.821Z",
    "hits": 0,
    "source": "probe"
   },
