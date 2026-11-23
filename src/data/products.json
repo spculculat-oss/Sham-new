@@ -58972,7 +58972,11 @@
       "barcode": "6290171071037",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 903,
@@ -59113,7 +59117,11 @@
       "barcode": "5055810035518",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 905,
@@ -59180,8 +59188,10 @@
       "refreshedAt": "2026-10-16T13:35:47.267Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 906,
@@ -59241,8 +59251,10 @@
       "refreshedAt": "2026-10-16T13:35:47.267Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 907,
@@ -59394,7 +59406,11 @@
       "barcode": "6290171073604",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 909,
@@ -59467,7 +59483,11 @@
       "barcode": "6290171074755",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 910,
@@ -59541,7 +59561,11 @@
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 911,
@@ -59614,7 +59638,11 @@
       "barcode": "6290171050216",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 912,
@@ -59692,7 +59720,11 @@
       "barcode": "6290171077237",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 913,
@@ -59914,7 +59946,11 @@
       "barcode": "6290171077268",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 916,
@@ -60060,7 +60096,11 @@
       "barcode": "6298463854641",
       "importedAt": "2026-10-16T13:35:47.267Z",
       "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 918,
@@ -60190,8 +60230,10 @@
       "refreshedAt": "2026-10-16T13:35:47.267Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 920,
@@ -60257,8 +60299,10 @@
       "refreshedAt": "2026-10-16T13:35:47.267Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 921,
@@ -60319,8 +60363,10 @@
       "refreshedAt": "2026-10-16T13:35:47.267Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 922,
@@ -60396,7 +60442,11 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 923,
@@ -60464,7 +60514,11 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 924,
@@ -60610,7 +60664,11 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 926,
@@ -60756,7 +60814,11 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 928,
@@ -60828,7 +60890,11 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 929,
@@ -60903,7 +60969,11 @@
       "barcode": "6290360375694",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 930,
@@ -60967,8 +61037,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 931,
@@ -61095,8 +61167,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 933,
@@ -61153,9 +61227,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 934,
@@ -61270,8 +61346,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 936,
@@ -61335,8 +61413,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 937,
@@ -61655,9 +61735,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 942,
@@ -61834,8 +61916,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 945,
@@ -62132,8 +62216,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 950,
@@ -62247,9 +62333,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 952,
@@ -62366,8 +62454,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 954,
@@ -62423,8 +62513,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 955,
@@ -62539,8 +62631,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 957,
@@ -62717,8 +62811,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 960,
@@ -62929,7 +63025,11 @@
       "barcode": "6293365212230",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 963,
@@ -63057,9 +63157,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 965,
@@ -63121,7 +63223,11 @@
       "barcode": "6291419205986",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 966,
@@ -63325,7 +63431,11 @@
       "barcode": "6423080726891",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 969,
@@ -63535,8 +63645,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 972,
@@ -63689,8 +63801,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 974,
@@ -63771,8 +63885,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 975,
@@ -63842,8 +63958,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 976,
@@ -63908,8 +64026,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 977,
@@ -64185,8 +64305,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 981,
@@ -64461,9 +64583,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 985,
@@ -64674,8 +64798,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 988,
@@ -65236,8 +65362,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 996,
@@ -65310,8 +65438,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 997,
@@ -65389,8 +65519,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 998,
@@ -65541,7 +65673,11 @@
       "barcode": "6297001571033",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 1000,
@@ -65614,7 +65750,11 @@
       "barcode": "6297001571125",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 1001,
@@ -66018,8 +66158,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1006,
@@ -66086,8 +66228,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1007,
@@ -66157,8 +66301,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1008,
@@ -66238,8 +66384,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1009,
@@ -66306,8 +66454,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1010,
@@ -66376,8 +66526,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1011,
@@ -66590,8 +66742,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1014,
@@ -66667,8 +66821,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1015,
@@ -66753,8 +66909,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1016,
@@ -66977,8 +67135,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1019,
@@ -67121,8 +67281,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1021,
@@ -67198,8 +67360,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1022,
@@ -67563,8 +67727,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1027,
@@ -67783,8 +67949,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1030,
@@ -67858,8 +68026,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1031,
@@ -67934,8 +68104,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1032,
@@ -68015,8 +68187,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1033,
@@ -68090,8 +68264,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1034,
@@ -68159,8 +68335,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1035,
@@ -68234,8 +68412,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1036,
@@ -69028,8 +69208,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1047,
@@ -69248,8 +69430,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1050,
@@ -69674,9 +69858,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1056,
@@ -69804,9 +69990,11 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1058,
@@ -70082,8 +70270,10 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1062,
@@ -71063,7 +71253,11 @@
       "barcode": "6290360591575",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 1077,
@@ -71139,7 +71333,11 @@
       "barcode": "6423080727102",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 1078,
@@ -71591,8 +71789,10 @@
       "refreshedAt": "2026-10-16T17:04:54.631Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1085,
@@ -72162,9 +72362,11 @@
       "refreshedAt": "2026-10-16T17:04:54.631Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ]
+      ],
+      "published": false
     },
     {
       "id": 1094,
@@ -73070,7 +73272,11 @@
       "barcode": "6291106068566",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "published": false,
+      "reviewIssues": [
+        "الصورة لا تفتح: تعذر الاتصال"
+      ]
     },
     {
       "id": 1108,
