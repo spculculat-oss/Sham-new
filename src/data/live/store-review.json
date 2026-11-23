@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-23T03:04:46.621Z",
+ "updatedAt": "2026-11-23T15:19:33.392Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 489,
-  "warn": 545,
-  "hidden": 80,
+  "ok": 499,
+  "warn": 615,
+  "hidden": 0,
   "imagesChecked": 80,
-  "brokenImages": 80
+  "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-23T03:04:25.436Z",
+  "at": "2026-11-23T15:18:51.274Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -23,14 +23,25 @@
     "currency": "MYR",
     "rate": 13.1765,
     "rateFrom": "open.er-api.com",
-    "sitemapProducts": 0
+    "sitemapProducts": 1062,
+    "listingPages": 45,
+    "listingProducts": 1062,
+    "listingOnly": 0,
+    "listingComplete": true,
+    "added": 0,
+    "refreshed": 25,
+    "failed": [],
+    "failedCount": 0,
+    "viaShaheen": 0,
+    "deferred": 0,
+    "gone": 1
    }
   ],
   "rate": 13.1765,
   "prices": {
-   "count": 1063,
+   "count": 983,
    "min": 750,
-   "median": 3340,
+   "median": 3320,
    "max": 7835,
    "top": [
     {
@@ -70,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 21208
+  "durationMs": 42143
  },
  "items": [
   {
@@ -733,6 +744,7 @@
    "name": "Hawas Reina by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-reina-by-rasasi-100ml-edp-57.html"
@@ -743,6 +755,7 @@
    "name": "Hawas Chrome For Him by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-chrome-for-him-by-rasasi-100ml-edp-58.html"
@@ -753,6 +766,7 @@
    "name": "Hawas Venom by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-venom-by-rasasi-100ml-edp-59.html"
@@ -763,6 +777,7 @@
    "name": "Hawas Nautilus by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-nautilus-by-rasasi-100ml-edp-60.html"
@@ -773,6 +788,7 @@
    "name": "Hawas Private Terra by Rasasi Extrait de Parfum 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-private-terra-by-rasasi-extrait-de-parfum-100ml-61.html"
@@ -4833,9 +4849,11 @@
    "sku": "ZIM-902",
    "id": 902,
    "name": "Brave Heart by Zimaya EDP 100ml Unisex",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/brave-heart-by-zimaya-edp-100ml-unisex-902.html"
   },
@@ -4845,7 +4863,8 @@
    "name": "Hercules by Maison Alhambra For Him 100ml",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hercules-by-maison-alhambra-for-him-100ml-903.html"
   },
@@ -4853,9 +4872,10 @@
    "sku": "ALW-904",
    "id": 904,
    "name": "Tiara by Al Wataniah – 100 ml for Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/tiara-by-al-wataniah-100-ml-for-women-904.html"
   },
@@ -4863,9 +4883,10 @@
    "sku": "MAI-905",
    "id": 905,
    "name": "Olivia by Maison Alhambra 80ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/olivia-by-maison-alhambra-80ml-edp-905.html"
@@ -4874,20 +4895,29 @@
    "sku": "OSM-906",
    "id": 906,
    "name": "Osma Ambry A Fresh & Fly 75ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/osma-ambry-a-fresh-and-fly-75ml-edp-906.html"
   },
   {
+   "sku": "TAD-907",
+   "id": 907,
+   "name": "Dynasty by TADangel 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/dynasty-by-tadangel-100ml-edp-men-907.html"
+  },
+  {
    "sku": "TAD-908",
    "id": 908,
    "name": "Pathway by TADangel 100ml EDP Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/pathway-by-tadangel-100ml-edp-men-908.html"
   },
@@ -4895,9 +4925,9 @@
    "sku": "TAD-909",
    "id": 909,
    "name": "Magic Blossom by TADangel 100ml EDP Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/magic-blossom-by-tadangel-100ml-edp-women-909.html"
   },
@@ -4905,9 +4935,9 @@
    "sku": "TAD-910",
    "id": 910,
    "name": "TADangel Pink Blossom 100ml EDP Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/tadangel-pink-blossom-100ml-edp-women-910.html"
   },
@@ -4915,9 +4945,9 @@
    "sku": "TAD-911",
    "id": 911,
    "name": "Status by TADangel 100ml EDP Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/status-by-tadangel-100ml-edp-men-911.html"
   },
@@ -4925,19 +4955,40 @@
    "sku": "TAD-912",
    "id": 912,
    "name": "Rose Divine by TADangel 100ml EDP Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/rose-divine-by-tadangel-100ml-edp-women-912.html"
+  },
+  {
+   "sku": "TAD-913",
+   "id": 913,
+   "name": "Fleur Blossom by TADangel 100ml EDP Women",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
+   ],
+   "page": "p/fleur-blossom-by-tadangel-100ml-edp-women-913.html"
+  },
+  {
+   "sku": "TAD-914",
+   "id": 914,
+   "name": "Intrigue Pour Homme by TADangel 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/intrigue-pour-homme-by-tadangel-100ml-edp-men-914.html"
   },
   {
    "sku": "TAD-915",
    "id": 915,
    "name": "Intrigue Aquatic by TADangel 100ml EDP Unisex",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/intrigue-aquatic-by-tadangel-100ml-edp-unisex-915.html"
   },
@@ -4947,6 +4998,7 @@
    "name": "Arsh Black Ice by French Avenue Man",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/arsh-black-ice-by-french-avenue-man-916.html"
@@ -4955,19 +5007,30 @@
    "sku": "PAR-917",
    "id": 917,
    "name": "Qissa Blue by Paris Corner 100ml EDP Unisex",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/qissa-blue-by-paris-corner-100ml-edp-unisex-917.html"
+  },
+  {
+   "sku": "KEN-918",
+   "id": 918,
+   "name": "Hawas Desire For Her by Kenz de Rasasi 100ml Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-918.html"
   },
   {
    "sku": "KEN-919",
    "id": 919,
    "name": "Hawas Desire First Look by Kenz de Rasasi 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-desire-first-look-by-kenz-de-rasasi-100ml-919.html"
@@ -4976,9 +5039,9 @@
    "sku": "KEN-920",
    "id": 920,
    "name": "Hawas Desire First Kiss by Kenz de Rasasi 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-desire-first-kiss-by-kenz-de-rasasi-100ml-920.html"
@@ -4987,80 +5050,19 @@
    "sku": "KEN-921",
    "id": 921,
    "name": "Hawas Ice Ultradose by Kenz de Rasasi 100ml Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-921.html"
   },
   {
-   "sku": "KEN-922",
-   "id": 922,
-   "name": "Hawas Apex GT by Kenz de Rasasi 100ml Unisex",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/hawas-apex-gt-by-kenz-de-rasasi-100ml-unisex-922.html"
-  },
-  {
-   "sku": "FRE-923",
-   "id": 923,
-   "name": "Vulcan Vox by French Avenue 100ml EDP Unisex",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/vulcan-vox-by-french-avenue-100ml-edp-unisex-923.html"
-  },
-  {
-   "sku": "KEN-925",
-   "id": 925,
-   "name": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/hawas-for-him-le-parfum-by-kenz-de-rasasi-100ml-men-925.html"
-  },
-  {
-   "sku": "KEN-927",
-   "id": 927,
-   "name": "Hawas Apex by Kenz de Rasasi",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/hawas-apex-by-kenz-de-rasasi-927.html"
-  },
-  {
-   "sku": "OSM-928",
-   "id": 928,
-   "name": "Romance by Osma Perfumes 150ml EDP Women",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/romance-by-osma-perfumes-150ml-edp-women-928.html"
-  },
-  {
-   "sku": "FRE-929",
-   "id": 929,
-   "name": "Liquid Brun French Avenue 100ml EDP Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/liquid-brun-french-avenue-100ml-edp-men-929.html"
-  },
-  {
    "sku": "PAR-930",
    "id": 930,
    "name": "Taskeen Caramel Cascade 100ml by Paris Corner",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/taskeen-caramel-cascade-100ml-by-paris-corner-930.html"
@@ -5079,9 +5081,8 @@
    "sku": "PAR-932",
    "id": 932,
    "name": "Autograph 100ml by Paris Corner",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/autograph-100ml-by-paris-corner-932.html"
@@ -5090,9 +5091,8 @@
    "sku": "PAR-933",
    "id": 933,
    "name": "Rich Santal Emir by Paris Corner 100 ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -5112,9 +5112,8 @@
    "sku": "OSM-935",
    "id": 935,
    "name": "Vanilla S Amber & Musk 75ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/vanilla-s-amber-and-musk-75ml-edp-935.html"
@@ -5123,9 +5122,8 @@
    "sku": "PAR-936",
    "id": 936,
    "name": "Atomise Intensive Men by Emir Paris Corner 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/atomise-intensive-men-by-emir-paris-corner-100ml-936.html"
@@ -5165,9 +5163,8 @@
    "sku": "OSM-941",
    "id": 941,
    "name": "Osma S – Pepper & Sandalwood EDP 150 ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -5197,9 +5194,8 @@
    "sku": "OSM-944",
    "id": 944,
    "name": "Amber S Rose Osma 75ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/amber-s-rose-osma-75ml-edp-944.html"
@@ -5249,9 +5245,8 @@
    "sku": "OSM-949",
    "id": 949,
    "name": "Osma Citrus F 75ml Eau de Parfum - Fruity & Rose",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/osma-citrus-f-75ml-eau-de-parfum-fruity-and-rose-949.html"
@@ -5270,9 +5265,8 @@
    "sku": "OSM-951",
    "id": 951,
    "name": "Amber A Amber & Leather 75ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -5292,9 +5286,8 @@
    "sku": "OSM-953",
    "id": 953,
    "name": "Rose P Berry & Rose 75ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/rose-p-berry-and-rose-75ml-edp-953.html"
@@ -5303,9 +5296,8 @@
    "sku": "OSM-954",
    "id": 954,
    "name": "Osma Portofino Summer Purity 150ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/osma-portofino-summer-purity-150ml-edp-954.html"
@@ -5324,9 +5316,8 @@
    "sku": "OSM-956",
    "id": 956,
    "name": "Cotton C Rose & Sandalwood 75ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/cotton-c-rose-and-sandalwood-75ml-956.html"
@@ -5355,54 +5346,22 @@
    "sku": "OSM-959",
    "id": 959,
    "name": "Osma Floral A Ginger Blossom 75ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/osma-floral-a-ginger-blossom-75ml-959.html"
   },
   {
-   "sku": "PAR-962",
-   "id": 962,
-   "name": "Marshmallow Blush by Paris Corner for Her 100ml",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/marshmallow-blush-by-paris-corner-for-her-100ml-962.html"
-  },
-  {
    "sku": "FRE-964",
    "id": 964,
    "name": "Axis by French Avenue 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/axis-by-french-avenue-100ml-964.html"
-  },
-  {
-   "sku": "PAR-965",
-   "id": 965,
-   "name": "Khair Fusion by Paris Corner 100ml",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/khair-fusion-by-paris-corner-100ml-965.html"
-  },
-  {
-   "sku": "PAR-968",
-   "id": 968,
-   "name": "Miss Dona by Paris Corner 100ml Women",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/miss-dona-by-paris-corner-100ml-women-968.html"
   },
   {
    "sku": "OSM-969",
@@ -5418,9 +5377,8 @@
    "sku": "FRE-971",
    "id": 971,
    "name": "Aromatix Magnetiq by French Avenue 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/aromatix-magnetiq-by-french-avenue-100ml-971.html"
@@ -5439,9 +5397,8 @@
    "sku": "FRE-973",
    "id": 973,
    "name": "Imperial Ocean French Avenue 100ml for Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/imperial-ocean-french-avenue-100ml-for-men-973.html"
@@ -5450,9 +5407,8 @@
    "sku": "PAR-974",
    "id": 974,
    "name": "Khair Pistachio by Paris Corner 100ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/khair-pistachio-by-paris-corner-100ml-edp-974.html"
@@ -5461,9 +5417,8 @@
    "sku": "PAR-975",
    "id": 975,
    "name": "The Blue by Paris Corner 100ml EDP Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/the-blue-by-paris-corner-100ml-edp-men-975.html"
@@ -5472,9 +5427,8 @@
    "sku": "PAR-976",
    "id": 976,
    "name": "Lueur D Espoir Ambre by Emir Paris Corner 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/lueur-d-espoir-ambre-by-emir-paris-corner-100ml-976.html"
@@ -5494,9 +5448,8 @@
    "sku": "PAR-980",
    "id": 980,
    "name": "Fayora Paris Corner EDP 100ml Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/fayora-paris-corner-edp-100ml-women-980.html"
@@ -5505,9 +5458,8 @@
    "sku": "PAR-984",
    "id": 984,
    "name": "Just Bergamot Emir Factory Edition 100ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -5528,9 +5480,8 @@
    "sku": "ASD-987",
    "id": 987,
    "name": "Sougha by Asdaaf 100ml EDP Women",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/sougha-by-asdaaf-100ml-edp-women-987.html"
@@ -5559,9 +5510,8 @@
    "sku": "RAY-995",
    "id": 995,
    "name": "Wolf by Rayhaan 100ml Eau de Parfum for Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/wolf-by-rayhaan-100ml-eau-de-parfum-for-men-995.html"
@@ -5570,9 +5520,8 @@
    "sku": "RAY-996",
    "id": 996,
    "name": "Adonis Icarus by Rayhaan 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/adonis-icarus-by-rayhaan-100ml-eau-de-parfum-996.html"
@@ -5581,9 +5530,8 @@
    "sku": "RAY-997",
    "id": 997,
    "name": "Imperia by Rayhaan 100ml Eau de Parfum for Men",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/imperia-by-rayhaan-100ml-eau-de-parfum-for-men-997.html"
@@ -5597,26 +5545,6 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/pacific-by-rayhaan-100ml-eau-de-parfum-for-men-998.html"
-  },
-  {
-   "sku": "RAY-999",
-   "id": 999,
-   "name": "Lion by Rayhaan 100ml Eau de Parfum for Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/lion-by-rayhaan-100ml-eau-de-parfum-for-men-999.html"
-  },
-  {
-   "sku": "RAY-1000",
-   "id": 1000,
-   "name": "Nocturno by Rayhaan 100ml Eau de Parfum for Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/nocturno-by-rayhaan-100ml-eau-de-parfum-for-men-1000.html"
   },
   {
    "sku": "RAY-1002",
@@ -5642,9 +5570,8 @@
    "sku": "BUJ-1005",
    "id": 1005,
    "name": "Mafia Boss by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/mafia-boss-by-bujairami-100ml-extrait-de-parfum-1005.html"
@@ -5653,9 +5580,8 @@
    "sku": "BUJ-1006",
    "id": 1006,
    "name": "Breathless by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/breathless-by-bujairami-100ml-extrait-de-parfum-1006.html"
@@ -5664,9 +5590,8 @@
    "sku": "BUJ-1007",
    "id": 1007,
    "name": "Billion Dollar by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/billion-dollar-by-bujairami-100ml-extrait-de-parfum-1007.html"
@@ -5675,9 +5600,8 @@
    "sku": "BUJ-1008",
    "id": 1008,
    "name": "Born Nomad by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/born-nomad-by-bujairami-100ml-extrait-de-parfum-1008.html"
@@ -5686,9 +5610,8 @@
    "sku": "BUJ-1009",
    "id": 1009,
    "name": "Amber Eclipse by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/amber-eclipse-by-bujairami-100ml-extrait-de-parfum-1009.html"
@@ -5697,9 +5620,8 @@
    "sku": "BUJ-1010",
    "id": 1010,
    "name": "Boujee by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/boujee-by-bujairami-100ml-eau-de-parfum-1010.html"
@@ -5728,9 +5650,8 @@
    "sku": "BUJ-1013",
    "id": 1013,
    "name": "Cartel by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/cartel-by-bujairami-100ml-extrait-de-parfum-1013.html"
@@ -5739,9 +5660,8 @@
    "sku": "BUJ-1014",
    "id": 1014,
    "name": "Sacred Skin by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/sacred-skin-by-bujairami-100ml-extrait-de-parfum-1014.html"
@@ -5750,9 +5670,8 @@
    "sku": "BUJ-1015",
    "id": 1015,
    "name": "Soul Fusion Intense by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/soul-fusion-intense-by-bujairami-100ml-eau-de-parfum-1015.html"
@@ -5781,9 +5700,8 @@
    "sku": "BUJ-1018",
    "id": 1018,
    "name": "Non Stop by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/non-stop-by-bujairami-100ml-extrait-de-parfum-1018.html"
@@ -5802,9 +5720,8 @@
    "sku": "BUJ-1020",
    "id": 1020,
    "name": "Silent Halo by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/silent-halo-by-bujairami-100ml-extrait-de-parfum-1020.html"
@@ -5813,9 +5730,8 @@
    "sku": "BUJ-1021",
    "id": 1021,
    "name": "Sugar Rush by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/sugar-rush-by-bujairami-100ml-eau-de-parfum-1021.html"
@@ -5864,9 +5780,8 @@
    "sku": "BUJ-1026",
    "id": 1026,
    "name": "Ya Habibi by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/ya-habibi-by-bujairami-100ml-extrait-de-parfum-1026.html"
@@ -5895,9 +5810,8 @@
    "sku": "BUJ-1029",
    "id": 1029,
    "name": "Vanilla Dream by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/vanilla-dream-by-bujairami-100ml-eau-de-parfum-1029.html"
@@ -5906,9 +5820,8 @@
    "sku": "BUJ-1030",
    "id": 1030,
    "name": "Vibration by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/vibration-by-bujairami-100ml-extrait-de-parfum-1030.html"
@@ -5917,9 +5830,8 @@
    "sku": "BUJ-1031",
    "id": 1031,
    "name": "Chroma by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/chroma-by-bujairami-100ml-eau-de-parfum-1031.html"
@@ -5928,9 +5840,8 @@
    "sku": "BUJ-1032",
    "id": 1032,
    "name": "Kingsman by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/kingsman-by-bujairami-100ml-extrait-de-parfum-1032.html"
@@ -5939,9 +5850,8 @@
    "sku": "BUJ-1033",
    "id": 1033,
    "name": "Executor by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/executor-by-bujairami-100ml-extrait-de-parfum-1033.html"
@@ -5950,9 +5860,8 @@
    "sku": "BUJ-1034",
    "id": 1034,
    "name": "Ibiza by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/ibiza-by-bujairami-100ml-extrait-de-parfum-1034.html"
@@ -5961,9 +5870,8 @@
    "sku": "BUJ-1035",
    "id": 1035,
    "name": "Hectic by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/hectic-by-bujairami-100ml-extrait-de-parfum-1035.html"
@@ -6073,9 +5981,8 @@
    "sku": "BUJ-1046",
    "id": 1046,
    "name": "Perfect Life by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/perfect-life-by-bujairami-100ml-eau-de-parfum-1046.html"
@@ -6104,9 +6011,8 @@
    "sku": "BUJ-1049",
    "id": 1049,
    "name": "Rizz by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/rizz-by-bujairami-100ml-extrait-de-parfum-1049.html"
@@ -6165,9 +6071,8 @@
    "sku": "BUJ-1055",
    "id": 1055,
    "name": "Ocean Eyes by Bujairami 100ml Extrait de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6187,9 +6092,8 @@
    "sku": "BUJ-1057",
    "id": 1057,
    "name": "Unforgettable by Bujairami 100ml Eau de Parfum",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6229,9 +6133,8 @@
    "sku": "PEN-1061",
    "id": 1061,
    "name": "Destined Red 100ml by Pendora Scents",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/destined-red-100ml-by-pendora-scents-1061.html"
@@ -6357,26 +6260,6 @@
    "page": "p/velixir-poseidon-100ml-edp-1075.html"
   },
   {
-   "sku": "ASD-1076",
-   "id": 1076,
-   "name": "Sa'ud by Asdaaf 100ml EDP Unisex",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/sa-ud-by-asdaaf-100ml-edp-unisex-1076.html"
-  },
-  {
-   "sku": "PEN-1077",
-   "id": 1077,
-   "name": "One Pendora Scents For Him – 100 ml for Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/one-pendora-scents-for-him-100-ml-for-men-1077.html"
-  },
-  {
    "sku": "VEL-1079",
    "id": 1079,
    "name": "Velixir Adonis 100ml EDP",
@@ -6423,9 +6306,8 @@
    "sku": "ASD-1084",
    "id": 1084,
    "name": "Ameerat Al Arab Prive Rose by Lattafa 100ml",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "غير متوفر عند المورد"
    ],
    "page": "p/ameerat-al-arab-prive-rose-by-lattafa-100ml-1084.html"
@@ -6478,9 +6360,8 @@
    "sku": "VEL-1093",
    "id": 1093,
    "name": "Velixir Helios 100ml EDP",
-   "status": "hidden",
+   "status": "warn",
    "issues": [
-    "الصورة لا تفتح: تعذر الاتصال",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6625,16 +6506,6 @@
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/au-soleil-by-rave-100ml-edp-1106.html"
-  },
-  {
-   "sku": "ASD-1107",
-   "id": 1107,
-   "name": "Shaghaf Man by Asdaaf (Lattafa) – 100 ml for Men",
-   "status": "hidden",
-   "issues": [
-    "الصورة لا تفتح: تعذر الاتصال"
-   ],
-   "page": "p/shaghaf-man-by-asdaaf-lattafa-100-ml-for-men-1107.html"
   },
   {
    "sku": "NIC-1111",

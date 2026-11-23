@@ -1496,7 +1496,7 @@
       "nameAr": "Hawas Reina by Rasasi 100ml EDP",
       "nameEn": "Hawas Reina by Rasasi 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Reina by Rasasi – 100ml\nApricot and pear make Hawas Reina fruity at the start, while cinnamon contributes a gentle spicy warmth. The heart is fuller and floral: jasmine, frangipani and orange blossom meet coconut and a coffee nuance. Vanilla, white musk, amber, sandalwood and sugar then create a creamy, sweet base. The composition moves from juicy stone fruit into tropical flowers before settling into soft woods and vanilla. Coffee adds depth rather than dominating the fragrance. Reina will appeal to those who enjoy floral vanilla scents with a fruity opening and a smooth gourmand touch. It comes in a 100ml Eau de Parfum presentation.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-reina-by-rasasi-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-reina-by-rasasi-100ml-edp-1.jpg",
@@ -1510,8 +1510,8 @@
       ],
       "category": "نسائي",
       "brand": "Rasasi",
-      "supplierPrice": 3387.98,
-      "ourPrice": 5085,
+      "supplierPrice": 3412.71,
+      "ourPrice": 5120,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -1522,33 +1522,34 @@
       "supplierSku": "RASASI-HAWAS-REINA-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 259,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/rasasi/hawas-reina-rasasi-100ml-edp/",
       "slug": "hawas-reina-by-rasasi-100ml-edp-57",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Oriental Vanilla"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Date Night",
-        "Special Event"
+        "evening"
       ],
       "importedAt": "2026-10-16T07:14:07.456Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -1558,7 +1559,7 @@
       "nameAr": "Hawas Chrome For Him by Rasasi 100ml EDP",
       "nameEn": "Hawas Chrome For Him by Rasasi 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Chrome For Him by Rasasi – 100ml EDP\nJuicy peach, yellow fruits and sweet orange introduce Hawas Chrome For Him, a 100ml Rasasi Eau de Parfum with a distinctly tropical direction. Mango and passion fruit then meet a watery accord in the heart, bringing freshness without turning the scent sharply green. Musk, amber and vanilla add softness underneath the fruit. Chrome is defined by the transition from bright yellow fruits to a smoother, musky finish while keeping the tropical character noticeable.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-1.jpg",
@@ -1567,13 +1568,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-4.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-5.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-8.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-chrome-for-him-by-rasasi-100ml-edp-1.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-chrome-for-him-by-rasasi-100ml-edp-8.jpg"
       ],
       "category": "رجالي",
       "brand": "Rasasi",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 3294.13,
+      "ourPrice": 4945,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -1584,12 +1584,12 @@
       "supplierSku": "RASASI-HAWAS-CHROME-FOR-HIM-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 250,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/rasasi/hawas-chrome-for-him-rasasi-100ml-edp/",
       "slug": "hawas-chrome-for-him-by-rasasi-100ml-edp-58",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
@@ -1597,21 +1597,22 @@
       },
       "families": [
         "Fruity",
-        "Amber"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Evening",
-        "Casual"
+        "daily",
+        "evening"
       ],
       "importedAt": "2026-10-16T07:14:07.456Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -1621,7 +1622,7 @@
       "nameAr": "Hawas Venom by Rasasi 100ml EDP",
       "nameEn": "Hawas Venom by Rasasi 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Venom by Rasasi – 100ml\nIncense defines Hawas Venom from the first impression, supported by the resinous warmth of labdanum. A leather note sits in the middle and keeps the composition dark rather than floral or fruity. Incense returns in the base alongside patchouli and vanilla, creating continuity between the smoky opening and the softer finish. The vanilla rounds the edges but does not erase the leathery, earthy character. Venom is built around few accords, which makes its direction clear: resin, leather and a touch of sweetness. Presented as a 100ml Eau de Parfum, it is a choice for anyone drawn to incense-led woody fragrances.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-2.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-2.jpg",
@@ -1630,13 +1631,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-8.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-4.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-5.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-7.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-venom-by-rasasi-100ml-edp-2.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-venom-by-rasasi-100ml-edp-7.jpg"
       ],
       "category": "رجالي",
       "brand": "Rasasi",
-      "supplierPrice": 3335.66,
-      "ourPrice": 5005,
+      "supplierPrice": 3360.01,
+      "ourPrice": 5045,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -1647,33 +1647,34 @@
       "supplierSku": "RASASI-HAWAS-VENOM-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 255,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/rasasi/hawas-venom-rasasi-100ml-edp/",
       "slug": "hawas-venom-by-rasasi-100ml-edp-59",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Oriental Woody"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Date Night",
-        "Special Event"
+        "evening"
       ],
       "importedAt": "2026-10-16T07:14:07.456Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -1683,7 +1684,7 @@
       "nameAr": "Hawas Nautilus by Rasasi 100ml EDP",
       "nameEn": "Hawas Nautilus by Rasasi 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Nautilus by Rasasi – 100ml\nHawas Nautilus centres on the smell of the coast. Seawater and ambergris introduce a salty, airy impression that sets the direction of this woody aquatic fragrance. Cypress and cedar create a drier, green-wooded middle, giving structure to the marine accords. Driftwood and sand shape the base with a weathered, shorelike character. There is little emphasis on syrupy fruit or heavy vanilla; the interest comes from the meeting of salt, timber and mineral textures. Its restrained profile makes it a practical option for daytime wear, particularly when a fresh yet distinctly woody fragrance is preferred. Presented in 100ml Eau de Parfum.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-10.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-10.jpg",
@@ -1692,13 +1693,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-2.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-5.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-9.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-nautilus-by-rasasi-100ml-edp-10.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-nautilus-by-rasasi-100ml-edp-9.jpg"
       ],
       "category": "رجالي",
       "brand": "Rasasi",
-      "supplierPrice": 3466.46,
-      "ourPrice": 5200,
+      "supplierPrice": 3491.77,
+      "ourPrice": 5240,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -1709,34 +1709,34 @@
       "supplierSku": "RASASI-HAWAS-NAUTILUS-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 265,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/rasasi/hawas-nautilus-rasasi-100ml-edp/",
       "slug": "hawas-nautilus-by-rasasi-100ml-edp-60",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody",
-        "Aquatic"
+        "Aquatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "importedAt": "2026-10-16T07:14:07.456Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -1746,7 +1746,7 @@
       "nameAr": "Hawas Private Terra by Rasasi Extrait de Parfum 100ml",
       "nameEn": "Hawas Private Terra by Rasasi Extrait de Parfum 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Private Terra by Rasasi – 100ml Extrait de Parfum\nHawas Private Terra Extrait de Parfum begins with saffron, jasmine and cardamom, combining floral detail with a dry spicy edge. Driftwood, cedarwood and iris give its heart a smooth but structured woody character. Oakmoss and cypriol shape a base that feels earthy, mossy, dry and subtly mineral. Unlike a sweet amber fragrance, Terra keeps its attention on woods, texture and restrained spice. Iris helps soften the sharper facets without removing the dry finish. The contrast of floral spice and moss-covered timber is the composition's defining feature. This 100ml Extrait de Parfum suits those seeking a woody fragrance with understated complexity.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-private-terra-by-rasasi-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-private-terra-by-rasasi-100ml-edp-1.jpg",
@@ -1760,8 +1760,8 @@
       ],
       "category": "مختلط",
       "brand": "Rasasi",
-      "supplierPrice": 3858.9,
-      "ourPrice": 5790,
+      "supplierPrice": 3887.07,
+      "ourPrice": 5835,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -1772,19 +1772,20 @@
       "supplierSku": "RASASI-HAWAS-PRIVATE-TERRA-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 295,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/rasasi/hawas-private-terra-rasasi-100ml/",
       "slug": "hawas-private-terra-by-rasasi-extrait-de-parfum-100ml-61",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Spicy"
+        "Woody",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -1792,14 +1793,13 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Date Night",
-        "Special Event"
+        "evening"
       ],
       "importedAt": "2026-10-16T07:14:07.456Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -58907,7 +58907,7 @@
       "nameAr": "Brave Heart by Zimaya EDP 100ml Unisex",
       "nameEn": "Brave Heart by Zimaya EDP 100ml Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Brave Heart by Zimaya (Afnan) – 100 ml Eau de Parfum (Unisex)\nFragrance Family: Warm • Spicy • Woody\nTop Notes: Black Pepper, Cardamom, Bergamot\nMiddle Notes: Leather, Cedarwood, Clary Sage\nBase Notes: Vanilla, Amber, Sandalwood, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/zimaya/brave-heart-zimaya-100ml-edp-unisex-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/zimaya/brave-heart-zimaya-100ml-edp-unisex-malaysia.jpg",
@@ -58921,9 +58921,9 @@
       ],
       "category": "مختلط",
       "brand": "Zimaya",
-      "supplierPrice": 2472.31,
-      "ourPrice": 3710,
-      "stockStatus": "in_stock",
+      "supplierPrice": 2490.36,
+      "ourPrice": 3740,
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -58933,34 +58933,21 @@
       "supplierSku": "brave-heart",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 189,
-      "supplierSalePrice": 120,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/zimaya/brave-heart/",
       "slug": "brave-heart-by-zimaya-edp-100ml-unisex-902",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Black Pepper",
-          "Cardamom",
-          "Bergamot"
-        ],
-        "heart": [
-          "Leather",
-          "Cedarwood",
-          "Clary Sage"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Sandalwood",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Warm",
-        "Spicy",
-        "Woody"
+        "Woody",
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -58968,14 +58955,17 @@
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "6290171071037",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -58984,7 +58974,7 @@
       "nameAr": "Hercules by Maison Alhambra For Him 100ml",
       "nameEn": "Hercules by Maison Alhambra For Him 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Hercules by Maison Alhambra – 100 ml Eau De Parfum for Him\nFragrance Notes:\nTop: Spices, Citrus, Aromatic Notes\nHeart: Amber, Woods, Tonka\nBase: Vanilla, Musk, Cedarwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-maison-alhambra-perfume-lelaki-woody-amber-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-maison-alhambra-perfume-lelaki-woody-amber-100ml-edp.jpg",
@@ -58992,14 +58982,13 @@
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-maison-alhambra-perfume-warm-amber-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-malay-office-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-malay-pavilion-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-malay-shadow-face-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/maison-alhambra/hercules-maison-alhambra-perfume-lelaki-woody-amber-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/hercules-malay-shadow-face-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 1739.77,
-      "ourPrice": 2610,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 1120,
+      "ourPrice": 1680,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -59008,44 +58997,37 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Hercules-H-127",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 133,
-      "supplierSalePrice": 85,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 85,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/hercules/",
       "slug": "hercules-by-maison-alhambra-for-him-100ml-903",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Spices",
-          "Citrus",
-          "Aromatic Notes"
-        ],
-        "heart": [
-          "Amber",
-          "Woods",
-          "Tonka"
-        ],
-        "base": [
-          "Vanilla",
-          "Musk",
-          "Cedarwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Spicy",
+        "Woody",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6291107459233",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59054,7 +59036,7 @@
       "nameAr": "Tiara by Al Wataniah – 100 ml for Women",
       "nameEn": "Tiara by Al Wataniah – 100 ml for Women",
       "descriptionAr": "",
-      "descriptionEn": "Tiara by Al Wataniah – 100 ml Eau de Parfum for Women\nFragrance Family: Sweet • Fruity • Floral\nTop Notes: Strawberry, Raspberry, Pear\nMiddle Notes: Rose, Jasmine, Vanilla Orchid\nBase Notes: Musk, Amber, Sandalwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/tiara-al-wataniah-100ml-women-perfume-malaysia-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/al-wataniah/tiara-al-wataniah-100ml-women-perfume-malaysia-edp.jpg",
@@ -59068,8 +59050,8 @@
       ],
       "category": "نسائي",
       "brand": "Al Wataniah",
-      "supplierPrice": 1569.72,
-      "ourPrice": 2355,
+      "supplierPrice": 1251.77,
+      "ourPrice": 1880,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59079,48 +59061,37 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Tiara-Al-W-6",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 120,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/al-wataniah/tiara/",
       "slug": "tiara-by-al-wataniah-100-ml-for-women-904",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Strawberry",
-          "Raspberry",
-          "Pear"
-        ],
-        "heart": [
-          "Rose",
-          "Jasmine",
-          "Vanilla Orchid"
-        ],
-        "base": [
-          "Musk",
-          "Amber",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Sweet",
         "Fruity",
-        "Floral"
+        "Floral",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "5055810035518",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59129,7 +59100,7 @@
       "nameAr": "Olivia by Maison Alhambra 80ml EDP",
       "nameEn": "Olivia by Maison Alhambra 80ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Olivia by Maison Alhambra – 80 ml Eau De Parfum for Women (Arabian)\nFragrance Notes:\nTop: Pear, Black Currant, Pink Pepper\nHeart: Rose, Jasmine\nBase: Vanilla, Musk, Cedarwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-maison-alhambra-perfume-wanita-floral-soft-long-lasting-80ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-maison-alhambra-perfume-wanita-floral-soft-long-lasting-80ml-edp.jpg",
@@ -59138,13 +59109,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-alhambra-cafe-pastel-smile-80ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-alhambra-soft-silk-bedtime-80ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-alhambra-pink-bouquet-surprise-80ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-alhambra-floral-garden-afternoon-80ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/maison-alhambra/olivia-maison-alhambra-perfume-wanita-floral-soft-long-lasting-80ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/maison-alhambra/olivia-alhambra-floral-garden-afternoon-80ml-edp.jpg"
       ],
       "category": "نسائي",
       "brand": "Maison Alhambra",
-      "supplierPrice": 1569.72,
-      "ourPrice": 2355,
+      "supplierPrice": 1581.18,
+      "ourPrice": 2375,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59155,43 +59125,37 @@
       "supplierSku": "Olivia-00001A",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 120,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/maison-alhambra/olivia/",
       "slug": "olivia-by-maison-alhambra-80ml-edp-905",
       "sizeMl": 80,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Pear",
-          "Black Currant",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Rose",
-          "Jasmine"
-        ],
-        "base": [
-          "Vanilla",
-          "Musk",
-          "Cedarwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "daily"
+      ],
       "barcode": "6291108733905",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 906,
@@ -59199,7 +59163,7 @@
       "nameAr": "Osma Ambry A Fresh & Fly 75ml EDP",
       "nameEn": "Osma Ambry A Fresh & Fly 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Osma Ambry A – Fresh and Fly / 75 ml Eau de Parfum\nOsma Ambry A is a refreshing unisex fragrance that captures the spirit of energy and elegance in one modern composition. Designed to uplift and inspire, it opens with bright, fresh accords that immediately energize the senses, leading into a smooth, refined heart that balances vitality with sophistication. The fragrance settles on a lasting base that feels both clean and warm, creating a scent profile suitable for any occasion. Perfect for women and men who appreciate versatile perfumes that highlight individuality with style.\nDetails: Eau de Parfum (EDP) · 75 ml · Unisex · Fresh-Modern",
+      "descriptionEn": "Buy Osma Ambry A 75 ml EDP — fresh, vibrant, and modern fragrance. A unisex scent balancing energy, elegance, appeal.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-ambry-fresh-fly-75ml-edp-unisex.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-ambry-fresh-fly-75ml-edp-unisex.jpg",
@@ -59213,8 +59177,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 3047.87,
-      "ourPrice": 4575,
+      "supplierPrice": 1976.48,
+      "ourPrice": 2965,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59224,13 +59188,12 @@
       "supplierName": "Sham perfume",
       "supplierSku": "ambry-a-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 233,
-      "supplierSalePrice": 150,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 150,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-ambry-a/",
       "slug": "osma-ambry-a-fresh-and-fly-75ml-edp-906",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
@@ -59244,17 +59207,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "daily"
       ],
       "barcode": "6287036281953",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 907,
@@ -59262,7 +59223,7 @@
       "nameAr": "Dynasty by TADangel 100ml EDP Men",
       "nameEn": "Dynasty by TADangel 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Dynasty by TADangel 100ml EDP Men\nDynasty by TADangel blends aromatic freshness with warm sweetness in a 100ml Eau de Parfum for men. Pink pepper, juniper and violet open with a lively mix of gentle spice and floral greenery. Cinnamon, lavender and sage develop in the heart, adding an aromatic layer that feels more textured than simple vanilla. The base brings vanilla, amber and tonka together for a smooth, softly sweet finish. Consider Dynasty for evening plans, dinners or times when you want a fragrance with both herbs and warmth. If strong citrus scents are not your favorite, its spicy aromatic direction makes Dynasty a worthwhile alternative to explore.\nFragrance Notes\nTop: Pink Pepper, Juniper, Violet\nMiddle: Cinnamon, Lavender, Sage\nBase: Vanilla, Amber, Tonka",
+      "descriptionEn": "TADangel Dynasty EDP 100ml for men layers pink pepper and juniper with cinnamon, lavender, vanilla and tonka. Explore its warm aromatic style at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/dynasty-by-tadangel-100ml-edp-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/dynasty-by-tadangel-100ml-edp-men-1.jpg",
@@ -59276,8 +59237,8 @@
       ],
       "category": "رجالي",
       "brand": "TADangel",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
+      "supplierPrice": 1844.71,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59288,33 +59249,22 @@
       "supplierSku": "TAD-ANGEL-DYNASTY-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/dynasty-by-tadangel-100ml/",
       "slug": "dynasty-by-tadangel-100ml-edp-men-907",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Pink Pepper",
-          "Juniper",
-          "Violet"
-        ],
-        "heart": [
-          "Cinnamon",
-          "Lavender",
-          "Sage"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Tonka"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Aromatic",
-        "Spicy",
-        "Oriental"
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -59322,16 +59272,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Evening",
-        "Date Night",
-        "Dinner"
+        "daily",
+        "office",
+        "evening"
       ],
       "barcode": "6290171077275",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 908,
@@ -59339,7 +59290,7 @@
       "nameAr": "Pathway by TADangel 100ml EDP Men",
       "nameEn": "Pathway by TADangel 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Pathway by TADangel 100ml EDP Men\nPathway by TADangel explores a cooler, greener direction for a men&#x27;s 100ml Eau de Parfum. Mint and lemon brighten the opening, with pink pepper and coriander adding an aromatic kick. Ginger and melon introduce an unusual contrast of spice and juicy freshness in the heart, alongside a measured incense note. Violet leaf, bergamot and patchouli shape the base into a slightly earthy finish. Try Pathway if your usual perfumes feel too heavy and you prefer mint, fruit and greenery over creamy vanilla. Its crisp style is worth considering for daytime outings, work or relaxed plans in warmer weather.\nFragrance Notes\nTop: Mint, Pink Pepper, Lemon, Coriander\nMiddle: Ginger, Melon, Incense\nBase: Violet Leaf, Bergamot, Patchouli",
+      "descriptionEn": "TADangel Pathway 100ml EDP pairs mint and lemon freshness with ginger, melon and incense, finishing green and earthy. Explore this men’s scent at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/pathway-by-tad-angel-100ml-edp-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/pathway-by-tad-angel-100ml-edp-men-1.jpg",
@@ -59353,8 +59304,8 @@
       ],
       "category": "رجالي",
       "brand": "TADangel",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
+      "supplierPrice": 1844.71,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59365,33 +59316,20 @@
       "supplierSku": "TAD-ANGEL-PATHWAY-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/pathway-tadangel/",
       "slug": "pathway-by-tadangel-100ml-edp-men-908",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Mint",
-          "Pink Pepper",
-          "Lemon",
-          "Coriander"
-        ],
-        "heart": [
-          "Ginger",
-          "Melon",
-          "Incense"
-        ],
-        "base": [
-          "Violet Leaf",
-          "Bergamot",
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Spicy",
-        "Fruity"
+        "Fruity",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -59399,17 +59337,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "barcode": "6290171073604",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59418,7 +59354,7 @@
       "nameAr": "Magic Blossom by TADangel 100ml EDP Women",
       "nameEn": "Magic Blossom by TADangel 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Magic Blossom by TADangel 100ml EDP Women\nMagic Blossom by TADangel suits fragrance lovers who like sweetness with an unexpected airy edge. Vanilla, salt and ozonic notes form an opening that feels creamy yet fresh rather than purely sugary. Rose and praline then introduce a floral, dessert-like heart, while amber, patchouli and another touch of vanilla deepen the finish. This 100ml Eau de Parfum for women is worth exploring if you want something between a soft floral and a warm gourmand. Consider it for dinner plans, evenings or moments when praline sweetness appeals, but you still want a light salty contrast to keep the composition interesting.\nFragrance Notes\nTop: Vanilla, Salt, Ozonic Notes\nMiddle: Rose, Praline\nBase: Amber, Patchouli, Vanilla",
+      "descriptionEn": "TADangel Magic Blossom EDP 100ml layers airy salt and vanilla with rose, praline and warm amber. Explore a floral gourmand perfume for women at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/magic-blossom-by-tadangel-100ml-edp-women-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/magic-blossom-by-tadangel-100ml-edp-women-1.jpg",
@@ -59432,8 +59368,8 @@
       ],
       "category": "نسائي",
       "brand": "TADangel",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
+      "supplierPrice": 1844.71,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59444,27 +59380,16 @@
       "supplierSku": "TADANGEL-MAGIC-BLOSSOM-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/magic-blossom/",
       "slug": "magic-blossom-by-tadangel-100ml-edp-women-909",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Vanilla",
-          "Salt",
-          "Ozonic Notes"
-        ],
-        "heart": [
-          "Rose",
-          "Praline"
-        ],
-        "base": [
-          "Amber",
-          "Patchouli",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Floral"
@@ -59475,18 +59400,14 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "evening"
       ],
       "barcode": "6290171074755",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59495,7 +59416,7 @@
       "nameAr": "TADangel Pink Blossom 100ml EDP Women",
       "nameEn": "TADangel Pink Blossom 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "TADangel Pink Blossom 100ml EDP Women\nTADangel Pink Blossom 100ml Eau de Parfum offers a cheerful fruity floral style for anyone who enjoys soft, easygoing scents. Raspberry and orange give the opening a juicy lift, while gentle floral notes keep it light. Jasmine, orange blossom and musk add a clean, smooth heart rather than heavy sweetness. As it settles, cedar, sandalwood and amber bring a comfortable woody warmth. Consider Pink Blossom for daytime plans, office wear or relaxed outings when you want berries and flowers in balance. If you prefer a fresh feminine fragrance over intense vanilla sweetness, this is a scent worth exploring at Sham perfume.\nFragrance Notes\nTop: Raspberry, Orange, Floral Notes\nMiddle: Jasmine, Orange Blossom, Musk\nBase: Cedar, Sandalwood, Amber",
+      "descriptionEn": "Looking for a fruity floral? TADangel Pink Blossom 100ml EDP pairs raspberry and orange with jasmine, musk and soft woody amber. Explore at Sham perfume.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/tadangel-pink-blossom-100ml-edp-women-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/tadangel-pink-blossom-100ml-edp-women-1.jpg",
@@ -59509,8 +59430,8 @@
       ],
       "category": "نسائي",
       "brand": "TADangel",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
+      "supplierPrice": 1778.83,
+      "ourPrice": 2670,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59521,31 +59442,20 @@
       "supplierSku": "TADANGEL-PINK-BLOSSOM-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 135,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/tadangel-pink-blossom/",
       "slug": "tadangel-pink-blossom-100ml-edp-women-910",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Raspberry",
-          "Orange",
-          "Floral Notes"
-        ],
-        "heart": [
-          "Jasmine",
-          "Orange Blossom",
-          "Musk"
-        ],
-        "base": [
-          "Cedar",
-          "Sandalwood",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Fruity"
+        "Fruity",
+        "Floral"
       ],
       "seasonsSource": [
         "Spring",
@@ -59553,18 +59463,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Date Night",
-        "Special Event",
-        "Casual"
+        "daily",
+        "office",
+        "evening"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59573,7 +59480,7 @@
       "nameAr": "Status by TADangel 100ml EDP Men",
       "nameEn": "Status by TADangel 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Status by TADangel 100ml EDP Men\nStatus by TADangel brings together juicy fruit, gentle spice and dry woods in a 100ml Eau de Parfum for men. Plum, bergamot and lemon give the first spray a bright opening that is more layered than simple citrus. Cinnamon, mahogany and carnation follow with a warm, slightly spicy heart. Sandalwood, cedar and olive complete the woody base and keep the overall style grounded. Choose Status if you enjoy fragrances that move from fruity freshness into a more mature, comfortable finish. It is worth considering for dinner plans, evening outings or days when a warm woody scent fits your mood.\nFragrance Notes\nTop: Plum, Bergamot, Lemon\nMiddle: Cinnamon, Mahogany, Carnation\nBase: Sandalwood, Cedar, Olive",
+      "descriptionEn": "TADangel Status EDP 100ml for men opens with plum and citrus, develops warm cinnamon and mahogany, and ends in smooth woods. Explore the notes at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/status-by-tadangel-100ml-edp-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/status-by-tadangel-100ml-edp-men-1.jpg",
@@ -59587,8 +59494,8 @@
       ],
       "category": "رجالي",
       "brand": "TADangel",
-      "supplierPrice": 1700.53,
-      "ourPrice": 2555,
+      "supplierPrice": 1712.95,
+      "ourPrice": 2570,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59599,31 +59506,20 @@
       "supplierSku": "TADANGEL-STATUS-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 130,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/status-tadangel/",
       "slug": "status-by-tadangel-100ml-edp-men-911",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Plum",
-          "Bergamot",
-          "Lemon"
-        ],
-        "heart": [
-          "Cinnamon",
-          "Mahogany",
-          "Carnation"
-        ],
-        "base": [
-          "Sandalwood",
-          "Cedar",
-          "Olive"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Citrus Aromatic"
+        "Citrus",
+        "Aromatic"
       ],
       "seasonsSource": [
         "Spring",
@@ -59631,17 +59527,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Evening",
-        "Date Night",
-        "Dinner"
+        "evening",
+        "daily"
       ],
       "barcode": "6290171050216",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59650,7 +59544,7 @@
       "nameAr": "Rose Divine by TADangel 100ml EDP Women",
       "nameEn": "Rose Divine by TADangel 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Rose Divine by TADangel 100ml EDP Women\nRose Divine by TADangel is a floral Eau de Parfum for women that gives rose a lively, modern contrast. Nutmeg, bergamot, grapefruit and rhubarb make the opening bright, tart and lightly spicy instead of purely sweet. Jasmine and rose sit at the center, bringing the floral character into focus. Musk, ambergris, vanilla, vetiver and woody accords then soften the finish with warmth and depth. Consider this 100ml fragrance if you enjoy rose perfumes but want citrus and woody notes alongside the flowers. Its balance can appeal for dinners, special gatherings or days when a more layered floral scent suits your style.\nFragrance Notes\nTop: Nutmeg, Bergamot, Grapefruit, Rhubarb\nMiddle: Jasmine, Rose\nBase: Musk, Ambergris, Vanilla, Vetiver, Woody Accords",
+      "descriptionEn": "Prefer rose with a twist? TADangel Rose Divine EDP 100ml balances grapefruit, rhubarb and jasmine with rose, soft vanilla and woody musk. See Sham perfume.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/rose-divine-by-tadangel-100ml-edp-women-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/rose-divine-by-tadangel-100ml-edp-women-1.jpg",
@@ -59664,8 +59558,8 @@
       ],
       "category": "نسائي",
       "brand": "TADangel",
-      "supplierPrice": 1896.75,
-      "ourPrice": 2850,
+      "supplierPrice": 1910.59,
+      "ourPrice": 2870,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59676,34 +59570,19 @@
       "supplierSku": "TADANGEL-ROSE-DIVINE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 145,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/rose-divine-tadangel/",
       "slug": "rose-divine-by-tadangel-100ml-edp-women-912",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Nutmeg",
-          "Bergamot",
-          "Grapefruit",
-          "Rhubarb"
-        ],
-        "heart": [
-          "Jasmine",
-          "Rose"
-        ],
-        "base": [
-          "Musk",
-          "Ambergris",
-          "Vanilla",
-          "Vetiver",
-          "Woody Accords"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral",
-        "Rose"
+        "Floral"
       ],
       "seasonsSource": [
         "Spring",
@@ -59711,19 +59590,16 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "daily",
+        "office",
+        "evening"
       ],
       "barcode": "6290171077237",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59732,7 +59608,7 @@
       "nameAr": "Fleur Blossom by TADangel 100ml EDP Women",
       "nameEn": "Fleur Blossom by TADangel 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Fleur Blossom by TADangel 100ml EDP Women\nFleur Blossom by TADangel is a 100ml Eau de Parfum for women who enjoy white flowers with a soft, warm finish. Orange blossom and bergamot give the opening a bright floral-citrus feel. Tuberose and jasmine form the heart, creating a fuller creamy floral character without needing a long list of notes. Musk, vanilla and cedar then add a smooth woody softness as the fragrance settles. Explore Fleur Blossom if jasmine and tuberose are the notes you usually look for in a perfume. Its approachable floral direction makes it worth considering for workdays, daytime gatherings or evenings when you want a gentle feminine scent.\nFragrance Notes\nTop: Orange Blossom, Bergamot\nMiddle: Tuberose, Jasmine\nBase: Musk, Vanilla, Cedar",
+      "descriptionEn": "Enjoy white florals? TADangel Fleur Blossom EDP 100ml opens with orange blossom and bergamot, then tuberose and jasmine over soft vanilla woods.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/fleur-blossom-by-tadangel-100ml-edp-women-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/fleur-blossom-by-tadangel-100ml-edp-women-1.jpg",
@@ -59746,9 +59622,9 @@
       ],
       "category": "نسائي",
       "brand": "TADangel",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
-      "stockStatus": "in_stock",
+      "supplierPrice": 1778.83,
+      "ourPrice": 2670,
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -59758,26 +59634,16 @@
       "supplierSku": "TAD-ANGEL-FLEUR-BLOSSOM-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 135,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/fleur-blossom-tadangel/",
       "slug": "fleur-blossom-by-tadangel-100ml-edp-women-913",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Orange Blossom",
-          "Bergamot"
-        ],
-        "heart": [
-          "Tuberose",
-          "Jasmine"
-        ],
-        "base": [
-          "Musk",
-          "Vanilla",
-          "Cedar"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Floral"
@@ -59788,16 +59654,18 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Date Night",
-        "Special Event",
-        "Casual"
+        "daily",
+        "office",
+        "evening"
       ],
       "barcode": "6290171074748",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 914,
@@ -59805,7 +59673,7 @@
       "nameAr": "Intrigue Pour Homme by TADangel 100ml EDP Men",
       "nameEn": "Intrigue Pour Homme by TADangel 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Intrigue Pour Homme by TADangel 100ml EDP Men\nIntrigue Pour Homme by TADangel is a 100ml Eau de Parfum for men built around crisp fruit, aromatic herbs and warm woods. Apple, ginger and bergamot start bright and lightly spicy. Juniper berries, sage and geranium then give the heart its green, clean character without relying on heavy sweetness. Amberwood, cedar, vetiver and olibanum provide a dry woody finish with a subtle resinous edge. Consider this scent if you want an everyday aromatic fragrance that feels different from vanilla-focused perfumes. It can suit office routines, casual outings or dinner plans when fresh herbs and polished woods fit your preferred style.\nFragrance Notes\nTop: Apple, Ginger, Bergamot\nMiddle: Juniper Berries, Sage, Geranium\nBase: Amberwood, Cedar, Vetiver, Olibanum",
+      "descriptionEn": "TADangel Intrigue Pour Homme 100ml EDP pairs crisp apple and ginger with sage, juniper, cedar and vetiver. Explore a green woody-spicy scent at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/intrigue-pour-homme-by-tadangel-100ml-edp-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/intrigue-pour-homme-by-tadangel-100ml-edp-men-1.jpg",
@@ -59819,8 +59687,8 @@
       ],
       "category": "رجالي",
       "brand": "TADangel",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
+      "supplierPrice": 1844.71,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59831,29 +59699,16 @@
       "supplierSku": "TAD-ANGEL-INTRIGUE-POUR-HOMME-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/intrigue-pour-homme-by-tadangel/",
       "slug": "intrigue-pour-homme-by-tadangel-100ml-edp-men-914",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Apple",
-          "Ginger",
-          "Bergamot"
-        ],
-        "heart": [
-          "Juniper Berries",
-          "Sage",
-          "Geranium"
-        ],
-        "base": [
-          "Amberwood",
-          "Cedar",
-          "Vetiver",
-          "Olibanum"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Aromatic",
@@ -59866,16 +59721,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Evening",
-        "Casual",
-        "Dinner"
+        "daily",
+        "office",
+        "evening"
       ],
       "barcode": "6290171077251",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 915,
@@ -59883,7 +59739,7 @@
       "nameAr": "Intrigue Aquatic by TADangel 100ml EDP Unisex",
       "nameEn": "Intrigue Aquatic by TADangel 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Intrigue Aquatic by TADangel 100ml EDP Unisex\nIntrigue Aquatic by TADangel offers a bright marine style in a 100ml Eau de Parfum for men and women. Orange and bergamot give the opening a cheerful citrus lift, while musk lends a soft clean touch. Apple appears in the heart, adding crisp fruit without making the scent feel like a dessert. Sea salt and ambergris form the listed base, giving the finish a distinctive mineral, ocean-inspired direction. Consider Intrigue Aquatic if you enjoy fresh scents for daytime routines, casual outings or warm-weather plans. It is a good fragrance to explore when heavy spices and creamy sweetness are not your preference.\nFragrance Notes\nTop: Orange, Musk, Bergamot\nMiddle: Apple\nBase: Sea Salt, Ambergris",
+      "descriptionEn": "Fresh marine fragrance? TADangel Intrigue Aquatic EDP 100ml combines orange and bergamot with crisp apple, sea salt and ambergris. Explore at Sham.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/intrigue-aquatic-by-tadangel-100ml-edp-unisex-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/intrigue-aquatic-by-tadangel-100ml-edp-unisex-1.jpg",
@@ -59897,8 +59753,8 @@
       ],
       "category": "مختلط",
       "brand": "TADangel",
-      "supplierPrice": 1831.34,
-      "ourPrice": 2750,
+      "supplierPrice": 1844.71,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59909,47 +59765,36 @@
       "supplierSku": "TAD-ANGEL-INTRIGUE-AQUATIC-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/tadangel/intrigue-aquatic-by-tadangel/",
       "slug": "intrigue-aquatic-by-tadangel-100ml-edp-unisex-915",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
-        "top": [
-          "Orange",
-          "Musk",
-          "Bergamot"
-        ],
-        "heart": [
-          "Apple"
-        ],
-        "base": [
-          "Sea Salt",
-          "Ambergris"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fresh Aquatic",
+        "Fresh",
         "Citrus",
-        "Fruity"
+        "Aquatic"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "barcode": "6290171077268",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -59958,7 +59803,7 @@
       "nameAr": "Arsh Black Ice by French Avenue Man",
       "nameEn": "Arsh Black Ice by French Avenue Man",
       "descriptionAr": "",
-      "descriptionEn": "Arsh Black Ice by French Avenue – Men's Fragrance\nArsh Black Ice by French Avenue is a 2026 aromatic fragrance for men with fresh citrus and woody facets. Its announced scent profile features bergamot, orange, lemon, almond, an icy accord, floral notes and woody notes. The overall character is cool, bright and aromatic, with citrus freshness balanced by soft almond, floral accents and a woody finish.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-man-7.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-man-7.jpg",
@@ -59967,13 +59812,12 @@
         "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-3.jpg",
         "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-4.jpg",
         "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-5.jpg",
-        "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-2.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/arsh-black-ice-by-french-avenue-man-7.jpg"
+        "https://www.shamperfume.com/cdn/large/arsh-black-ice-by-french-avenue-2.jpg"
       ],
       "category": "رجالي",
       "brand": "French Avenue",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 3425.89,
+      "ourPrice": 5140,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -59984,20 +59828,21 @@
       "supplierSku": "FRENCH-AVENUE-ARSH-BLACK-ICE",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 260,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/french-avenue/arsh-black-ice-french-avenue/",
       "slug": "arsh-black-ice-by-french-avenue-man-916",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
+        "Citrus",
         "Aromatic",
-        "Citrus Woody"
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -60005,14 +59850,14 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -60022,7 +59867,7 @@
       "nameAr": "Qissa Blue by Paris Corner 100ml EDP Unisex",
       "nameEn": "Qissa Blue by Paris Corner 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Qissa Blue by Paris Corner 100ml EDP Unisex\nQissa Blue brings a lively contrast of fresh citrus, aromatic spice and a warm amber finish to your fragrance collection. Bergamot and lemon give the opening its bright energy, while leather and incense add an unexpected smoky edge. As the scent develops, sweet orange, ginger, jasmine and magnolia soften the sharper notes without losing their character. Musk, oakmoss, saffron and amber create a grounded finish that feels polished rather than overly sweet. Choose this 100ml Eau de Parfum when you want something versatile for office days, casual outings or a change from simple citrus scents. Explore Qissa Blue at Sham perfume.\nFragrance Notes\nTop: Citrus, Bergamot, Lemon, Ylang-Ylang, Artemisia, Leather, Incense\nMiddle: Sweet Orange, Ginger, Jasmine, Magnolia, Patchouli\nBase: Musk, Oakmoss, Saffron, Amber",
+      "descriptionEn": "Paris Corner Qissa Blue EDP 100ml pairs bright citrus and florals with smoky leather, saffron and amber. Explore its fresh yet warm profile at Sham perfume.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/qissa-blue-by-paris-corner-100ml-edp-unisex-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/qissa-blue-by-paris-corner-100ml-edp-unisex-1.jpg",
@@ -60036,8 +59881,8 @@
       ],
       "category": "مختلط",
       "brand": "Paris Corner",
-      "supplierPrice": 1896.75,
-      "ourPrice": 2850,
+      "supplierPrice": 1120,
+      "ourPrice": 1680,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60047,41 +59892,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "PARIS-CORNER-QISSA-BLUE-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 145,
-      "supplierSalePrice": 85,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 85,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/qissa-blue-paris-corner/",
       "slug": "qissa-blue-by-paris-corner-100ml-edp-unisex-917",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Citrus",
-          "Bergamot",
-          "Lemon",
-          "Ylang-Ylang",
-          "Artemisia",
-          "Leather",
-          "Incense"
-        ],
-        "heart": [
-          "Sweet Orange",
-          "Ginger",
-          "Jasmine",
-          "Magnolia",
-          "Patchouli"
-        ],
-        "base": [
-          "Musk",
-          "Oakmoss",
-          "Saffron",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Floral",
-        "Amber"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -60089,17 +59915,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "barcode": "6298463854641",
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
-      "published": false,
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -60108,7 +59932,7 @@
       "nameAr": "Hawas Desire For Her by Kenz de Rasasi 100ml Women",
       "nameEn": "Hawas Desire For Her by Kenz de Rasasi 100ml Women",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Desire For Her by Kenz de Rasasi – 100ml for Women\nHawas Desire For Her by Kenz de Rasasi is a 2026 fragrance for women with a soft feminine profile built around floral notes, fruity accords and vanilla. The floral side gives the scent an elegant and polished character, fruity accords add a juicy modern touch, and vanilla brings a smooth, sweet and comforting finish.\nmenyerlah.\nFragrance Notes:\nTop: Floral Notes\nMiddle: Fruity Accords\nBase: Vanilla",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-8.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-8.jpg",
@@ -60116,13 +59940,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-4.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-6.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-8.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-5.jpg"
       ],
       "category": "نسائي",
       "brand": "Kenz de Rasasi",
-      "supplierPrice": 4185.92,
-      "ourPrice": 6280,
+      "supplierPrice": 4216.48,
+      "ourPrice": 6325,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60133,22 +59956,16 @@
       "supplierSku": "KENZ-DE-RASASI-HAWAS-DESIRE-FOR-HER-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 320,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/kenz-de-rasasi/hawas-desire-for-her/",
       "slug": "hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-918",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Floral Notes"
-        ],
-        "heart": [
-          "Fruity Accords"
-        ],
-        "base": [
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Gourmand"
@@ -60159,14 +59976,16 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "daily",
+        "evening"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 919,
@@ -60174,7 +59993,7 @@
       "nameAr": "Hawas Desire First Look by Kenz de Rasasi 100ml",
       "nameEn": "Hawas Desire First Look by Kenz de Rasasi 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Desire First Look by Kenz de Rasasi – 100ml for Women\nHawas Desire First Look by Kenz de Rasasi is a 2026 fragrance for women with a bright citrus, warm amber and woody scent profile. The currently supplied fragrance information describes citrus, amber and woody notes as its key accords.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-7.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-7.jpg",
@@ -60182,13 +60001,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-5.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-4.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-6.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-desire-first-look-by-rasasi-100ml-women-7.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-desire-first-look-by-rasasi-100ml-women-6.jpg"
       ],
       "category": "نسائي",
       "brand": "Kenz de Rasasi",
-      "supplierPrice": 4185.92,
-      "ourPrice": 6280,
+      "supplierPrice": 4216.48,
+      "ourPrice": 6325,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60199,12 +60017,12 @@
       "supplierSku": "RASASI-HAWAS-DESIRE-FIRST-LOOK-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 320,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/kenz-de-rasasi/hawas-desire-first-look/",
       "slug": "hawas-desire-first-look-by-kenz-de-rasasi-100ml-919",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
@@ -60212,8 +60030,9 @@
       },
       "families": [
         "Citrus",
+        "Woody",
         "Amber",
-        "Woody"
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -60221,19 +60040,17 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Date Night",
-        "Casual"
+        "daily",
+        "office",
+        "evening"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 920,
@@ -60241,7 +60058,7 @@
       "nameAr": "Hawas Desire First Kiss by Kenz de Rasasi 100ml",
       "nameEn": "Hawas Desire First Kiss by Kenz de Rasasi 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Desire First Kiss by Kenz de Rasasi – 100ml for Women\nHawas Desire First Kiss by Kenz de Rasasi is a women's fragrance with a fresh citrus, warm amber and smooth woody scent profile. The available profile highlights citrus, amber and woody notes. A detailed top, heart and base pyramid has not been published for this specific listing, so the note stages are intentionally left unspecified.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-11.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-11.jpg",
@@ -60250,13 +60067,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-2.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-4.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-9.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-desire-first-kiss-by-rasasi-100ml-women-11.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-desire-first-kiss-by-rasasi-100ml-women-9.jpg"
       ],
       "category": "نسائي",
       "brand": "Kenz de Rasasi",
-      "supplierPrice": 3911.22,
-      "ourPrice": 5870,
+      "supplierPrice": 3939.77,
+      "ourPrice": 5910,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60267,12 +60083,12 @@
       "supplierSku": "RASASI-HAWAS-DESIRE-FIRST-KISS-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 299,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/kenz-de-rasasi/hawas-desire-first-kiss/",
       "slug": "hawas-desire-first-kiss-by-kenz-de-rasasi-100ml-920",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
@@ -60280,8 +60096,9 @@
       },
       "families": [
         "Citrus",
+        "Woody",
         "Amber",
-        "Woody"
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -60289,20 +60106,17 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Evening",
-        "Date Night",
-        "Casual"
+        "daily",
+        "office",
+        "evening"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 921,
@@ -60310,7 +60124,7 @@
       "nameAr": "Hawas Ice Ultradose by Kenz de Rasasi 100ml Men",
       "nameEn": "Hawas Ice Ultradose by Kenz de Rasasi 100ml Men",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Ice Ultradose by Kenz de Rasasi – 100ml for Men\nHawas Ice Ultradose by Kenz de Rasasi is a 2026 men's fragrance with an aromatic profile shaped by citrus, minty and woody facets. The detailed fragrance-note pyramid has not yet been published, so this listing keeps the individual top, middle and base notes unspecified rather than borrowing notes from another Hawas release.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-1.jpg",
@@ -60318,13 +60132,12 @@
         "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-3.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-4.jpg",
         "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-6.jpg",
-        "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-1.jpg"
+        "https://www.shamperfume.com/cdn/large/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-5.jpg"
       ],
       "category": "رجالي",
       "brand": "Kenz de Rasasi",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 3425.89,
+      "ourPrice": 5140,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60335,38 +60148,37 @@
       "supplierSku": "KENZ-DE-RASASI-HAWAS-ICE-ULTRADOSE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 260,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1765,
       "url": "https://www.shamperfume.com/perfumes/kenz-de-rasasi/hawas-ice-ultradose-kenz-de-rasasi/",
       "slug": "hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-921",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
+        "Citrus",
         "Aromatic",
-        "Citrus Woody"
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily",
-        "Office",
-        "Casual"
+        "daily",
+        "office"
       ],
       "importedAt": "2026-10-16T13:35:47.267Z",
-      "refreshedAt": "2026-10-16T13:35:47.267Z",
+      "refreshedAt": "2026-11-23T15:19:33.377Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 922,
@@ -60442,11 +60254,7 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 923,
@@ -60514,11 +60322,7 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 924,
@@ -60664,11 +60468,7 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 926,
@@ -60814,11 +60614,7 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 928,
@@ -60890,11 +60686,7 @@
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 929,
@@ -60969,11 +60761,7 @@
       "barcode": "6290360375694",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 930,
@@ -61037,10 +60825,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 931,
@@ -61167,10 +60953,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 933,
@@ -61227,11 +61011,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 934,
@@ -61346,10 +61128,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 936,
@@ -61413,10 +61193,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 937,
@@ -61735,11 +61513,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 942,
@@ -61916,10 +61692,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 945,
@@ -62216,10 +61990,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 950,
@@ -62333,11 +62105,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 952,
@@ -62454,10 +62224,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 954,
@@ -62513,10 +62281,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 955,
@@ -62631,10 +62397,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 957,
@@ -62811,10 +62575,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 960,
@@ -63025,11 +62787,7 @@
       "barcode": "6293365212230",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 963,
@@ -63157,11 +62915,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 965,
@@ -63223,11 +62979,7 @@
       "barcode": "6291419205986",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 966,
@@ -63431,11 +63183,7 @@
       "barcode": "6423080726891",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 969,
@@ -63645,10 +63393,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 972,
@@ -63801,10 +63547,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 974,
@@ -63885,10 +63629,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 975,
@@ -63958,10 +63700,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 976,
@@ -64026,10 +63766,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 977,
@@ -64305,10 +64043,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 981,
@@ -64583,11 +64319,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 985,
@@ -64798,10 +64532,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 988,
@@ -65362,10 +65094,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 996,
@@ -65438,10 +65168,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 997,
@@ -65519,10 +65247,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 998,
@@ -65673,11 +65399,7 @@
       "barcode": "6297001571033",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 1000,
@@ -65750,11 +65472,7 @@
       "barcode": "6297001571125",
       "importedAt": "2026-10-16T15:06:39.969Z",
       "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 1001,
@@ -66158,10 +65876,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1006,
@@ -66228,10 +65944,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1007,
@@ -66301,10 +66015,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1008,
@@ -66384,10 +66096,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1009,
@@ -66454,10 +66164,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1010,
@@ -66526,10 +66234,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1011,
@@ -66742,10 +66448,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1014,
@@ -66821,10 +66525,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1015,
@@ -66909,10 +66611,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1016,
@@ -67135,10 +66835,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1019,
@@ -67281,10 +66979,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1021,
@@ -67360,10 +67056,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1022,
@@ -67727,10 +67421,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1027,
@@ -67949,10 +67641,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1030,
@@ -68026,10 +67716,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1031,
@@ -68104,10 +67792,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1032,
@@ -68187,10 +67873,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1033,
@@ -68264,10 +67948,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1034,
@@ -68335,10 +68017,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1035,
@@ -68412,10 +68092,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1036,
@@ -69208,10 +68886,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1047,
@@ -69430,10 +69106,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1050,
@@ -69858,11 +69532,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1056,
@@ -69990,11 +69662,9 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1058,
@@ -70270,10 +69940,8 @@
       "refreshedAt": "2026-10-16T15:06:39.969Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1062,
@@ -71253,11 +70921,7 @@
       "barcode": "6290360591575",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 1077,
@@ -71333,11 +70997,7 @@
       "barcode": "6423080727102",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 1078,
@@ -71789,10 +71449,8 @@
       "refreshedAt": "2026-10-16T17:04:54.631Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1085,
@@ -72362,11 +72020,9 @@
       "refreshedAt": "2026-10-16T17:04:54.631Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
-      ],
-      "published": false
+      ]
     },
     {
       "id": 1094,
@@ -73272,11 +72928,7 @@
       "barcode": "6291106068566",
       "importedAt": "2026-10-16T17:04:54.631Z",
       "refreshedAt": "2026-10-16T17:04:54.631Z",
-      "importedVia": "json-ld",
-      "published": false,
-      "reviewIssues": [
-        "الصورة لا تفتح: تعذر الاتصال"
-      ]
+      "importedVia": "json-ld"
     },
     {
       "id": 1108,
