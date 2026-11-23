@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-22T21:01:35.602Z",
- "nextUpdateAt": "2026-11-23T09:01:35.602Z",
+ "updatedAt": "2026-11-23T12:19:30.853Z",
+ "nextUpdateAt": "2026-11-24T00:19:30.853Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,12 +10,72 @@
  },
  "sources": [
   {
-   "name": "Grazia",
-   "count": 5
+   "name": "Vietnam.vn",
+   "count": 3
   },
   {
-   "name": "Vietnam.vn",
+   "name": "Grazia",
+   "count": 3
+  },
+  {
+   "name": "Cosmetics Business",
    "count": 2
+  },
+  {
+   "name": "Passionate In Marketing",
+   "count": 1
+  },
+  {
+   "name": "منصة مشيرب",
+   "count": 1
+  },
+  {
+   "name": "EIN News",
+   "count": 1
+  },
+  {
+   "name": "هسبورت",
+   "count": 1
+  },
+  {
+   "name": "Bollywood Hungama",
+   "count": 1
+  },
+  {
+   "name": "الاتحاد الاشتراكي",
+   "count": 1
+  },
+  {
+   "name": "Manila Bulletin",
+   "count": 1
+  },
+  {
+   "name": "Happi | Household And Personal Products Industry",
+   "count": 1
+  },
+  {
+   "name": "Beauty Independent",
+   "count": 1
+  },
+  {
+   "name": "Auparfum",
+   "count": 1
+  },
+  {
+   "name": "الأيام البحرينية",
+   "count": 1
+  },
+  {
+   "name": "Popbee",
+   "count": 1
+  },
+  {
+   "name": "CaFleureBon",
+   "count": 1
+  },
+  {
+   "name": "صحيفة المرصد",
+   "count": 1
   },
   {
    "name": "Wisevoter",
@@ -48,69 +108,351 @@
   {
    "name": "هذا اليوم",
    "count": 1
-  },
-  {
-   "name": "GQ India",
-   "count": 1
-  },
-  {
-   "name": "صحيفة المرصد",
-   "count": 1
-  },
-  {
-   "name": "IndexBox",
-   "count": 1
-  },
-  {
-   "name": "The Express Tribune",
-   "count": 1
-  },
-  {
-   "name": "FZINE Singapore",
-   "count": 1
-  },
-  {
-   "name": "سكاي نيوز عربية",
-   "count": 1
-  },
-  {
-   "name": "lanouvellerepublique.fr",
-   "count": 1
-  },
-  {
-   "name": "Now Smell This",
-   "count": 1
-  },
-  {
-   "name": "https://inews.ma/",
-   "count": 1
-  },
-  {
-   "name": "صحيفة الوطن",
-   "count": 1
-  },
-  {
-   "name": "Le Parisien",
-   "count": 1
-  },
-  {
-   "name": "magazine GEO",
-   "count": 1
-  },
-  {
-   "name": "Midi Libre",
-   "count": 1
-  },
-  {
-   "name": "Revista Merca2.0",
-   "count": 1
-  },
-  {
-   "name": "Auparfum",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "nfm6qc2",
+   "url": "https://cosmeticsbusiness.com/as-watson-ai-and-robotics-accelerate-supply-chain",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-23T11:52:00.000Z",
+   "original": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
+    "en": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain"
+   },
+   "summary": {
+    "ar": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally",
+    "en": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally"
+   }
+  },
+  {
+   "id": "n11tcgtf",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY1dqSUhNNmZhWWZLaTVqSkVXS0pId0l4S1ZqVFpYY0RRRko3Y2Y2ZWZzbmtEbTl6OUE5cXdoalB2RDQzT3NHY3NETzBzbHgxa3pDbVk5UnR6WllnSHN2T1oxS19uRHZHRlVVVDlqUFkyaVB0WUpmY0lJLWhrQ0NpUGlITHctTXlIbGM2Wm9ZNjNhQTlPN1l5eFpWUUQzX3JUcUozaGlyX2liWFlXRkdLT0JR?oc=5",
+   "source": "Passionate In Marketing",
+   "publishedAt": "2026-11-23T11:48:58.000Z",
+   "original": "Wildflower Naturals Enters Home Fragrance Market at Eight",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Wildflower Naturals Enters Home Fragrance Market at Eight",
+    "en": "Wildflower Naturals Enters Home Fragrance Market at Eight"
+   },
+   "summary": {
+    "ar": "Wildflower Naturals Enters Home Fragrance Market at Eight",
+    "en": "Wildflower Naturals Enters Home Fragrance Market at Eight"
+   }
+  },
+  {
+   "id": "n1umah9t",
+   "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxOTGliams5bTZYN0xITzVPZERrdHdCanl5dEsxenNSUjVrNnF5OFAtT3RoS2ZoWkozc0hZYktRdzdBTEItTXBIZUEzR01mbTBUSmxkTURLMGlzUVNwSWE0RkZ1VncwaEN3S1BVSkN0NDg2NHQwLWFuUTU3OVJmQV9FejFqeEdETnZZaTZqdTdzNXQwZHZZeWlYVFpXbjVoM1NaNnVQUVdkQjY1UUNQMjlPOXZQS1VCYW8yTFRUSEd2SWR6NHRmS0dsZ2k2S0FNVnBTbks5elRwV2ZrTWZTVXRSRzVVVS1aTFg3SGlPUW9uRGF5b2VNc2pDMW81WjdzT3NjYURrMERaeDk3aE1XOTc3OXFQd3U5VVNRWlN1eVhpd0E2YXkxVG5lMWl2WTUtSl9SN3MtbUpxcUpSNE13Ql9CZ19ILXhkdw?oc=5",
+   "source": "منصة مشيرب",
+   "publishedAt": "2026-11-23T11:48:54.000Z",
+   "original": "في قلب الدوحة.. \"طيب الحزم 14\" يكتب فصلا جديدا من سحر العود وفنون العطور المعاصرة",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "في قلب الدوحة.. \"طيب الحزم 14\" يكتب فصلا جديدا من سحر العود وفنون العطور المعاصرة",
+    "en": "في قلب الدوحة.. \"طيب الحزم 14\" يكتب فصلا جديدا من سحر العود وفنون العطور المعاصرة"
+   },
+   "summary": {
+    "ar": "في قلب الدوحة.. \"طيب الحزم 14\" يكتب فصلا جديدا من سحر العود وفنون العطور المعاصرة",
+    "en": "في قلب الدوحة.. \"طيب الحزم 14\" يكتب فصلا جديدا من سحر العود وفنون العطور المعاصرة"
+   }
+  },
+  {
+   "id": "n16cf4qz",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYmc1NEhuLXNTdzRaa1FrWVZ1NkVLQTVJT0VLRV91UTF4V0lxQ3BvdWVzTk5iOFl3bGFwdDhBNW5XdnpFWUMyS0hmQ1plN2kxMzNaN0RQX0FtX0hNT3pwNXpUZWtPUTdjX2lwVFhzYmd0NHQ4MHVwZEszdDRsbFNkalNDQlh6cnNvZ0R6ZFJpUzlTaXZXcVlhTmFDUndZUlZUTmZMMWFpRlBFZV8ya1hGc0ozd29xblBGUlV5VjJNVW9GaWc0UExjN2xwaUJIZFh4?oc=5",
+   "source": "EIN News",
+   "publishedAt": "2026-11-23T11:27:00.000Z",
+   "original": "AEIR INTRODUCES THE WORLD’S FIRST FULLY CIRCULAR PERFUME FOLLOWING BASIC.SPACE NEW YORK DEBUT",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "AEIR INTRODUCES THE WORLD’S FIRST FULLY CIRCULAR PERFUME FOLLOWING BASIC.SPACE NEW YORK DEBUT",
+    "en": "AEIR INTRODUCES THE WORLD’S FIRST FULLY CIRCULAR PERFUME FOLLOWING BASIC.SPACE NEW YORK DEBUT"
+   },
+   "summary": {
+    "ar": "AEIR INTRODUCES THE WORLD’S FIRST FULLY CIRCULAR PERFUME FOLLOWING BASIC.SPACE NEW YORK DEBUT",
+    "en": "AEIR INTRODUCES THE WORLD’S FIRST FULLY CIRCULAR PERFUME FOLLOWING BASIC.SPACE NEW YORK DEBUT"
+   }
+  },
+  {
+   "id": "n1vkktsm",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS2RIdTh2dTRzRkhYcFJEakVYRmJSLTctN0wyQzhILWs5THByZmdEbTM5dkxSLTNaazJBTjl3d09rU1R6Q3daekV4bXRiVkxKdHZBZ0Y5SVlCcXBTQWN2cUlfYWZYWk5yZmswclJsbUh5cHIycFY0dWUxYldraVBwOEIzeTdQeXhmU1Rz?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-23T11:12:43.000Z",
+   "original": "يقدم قادة كومونة دين خان البخور في المواقع التاريخية.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "يقدم قادة كومونة دين خان البخور في المواقع التاريخية.",
+    "en": "يقدم قادة كومونة دين خان البخور في المواقع التاريخية."
+   },
+   "summary": {
+    "ar": "يقدم قادة كومونة دين خان البخور في المواقع التاريخية.",
+    "en": "يقدم قادة كومونة دين خان البخور في المواقع التاريخية."
+   }
+  },
+  {
+   "id": "n1alkp3t",
+   "url": "https://cosmeticsbusiness.com/rabanne-marks-60th-anniversary-with-the-warehouse-project-club-night",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-23T11:12:00.000Z",
+   "original": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
+   "lang": "en",
+   "category": "regulation",
+   "importance": 2,
+   "title": {
+    "ar": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
+    "en": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'"
+   },
+   "summary": {
+    "ar": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black",
+    "en": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black"
+   }
+  },
+  {
+   "id": "n1qweics",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQUHNsZkRjT2xoeF9URGJjRDllSjh4WWRLT0Zuc1VpRjJaZmF2eHF5Q1E2RDhCR3Q2dXZrVWE4dDZDZ1B2VlVMdjVZOHQwZC1tU2I3MF80SWRfWnZCMF9uWThRakVkZHVZcmppaEtISXdqYzB4Y09KWndoa1JaT0ZiaUUyN21BZF9XU3pGUDMtUHhXbkplVzA2dUZDSVVwdlhnT0pKSVhGWExLTkxTbkVQb01UYTYxd05Fb1UzSThXNDFIbFJwWURucTFaYnBESEhxNVpib2Y2aUh2NFZ1TkFkUHVEcnc1S3BwMDRxN3pzYVJNUWNfQ1hZcDJaTVRxNW1Zd2RGQ01td1YzRnczSDhPelhtTGlxOFRzbzBBOHBadVBVcGhHVXFmUnhvMlhCNkdtQzNwRWczbU1GSFJmdkdvU2NhZkF1OGp0OEYw?oc=5",
+   "source": "هسبورت",
+   "publishedAt": "2026-11-23T11:01:50.000Z",
+   "original": "باها: هدفنا التتويج باللقب.. والعود: نشكر الجماهير المغربية على دعمها",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "باها: هدفنا التتويج باللقب.. والعود: نشكر الجماهير المغربية على دعمها",
+    "en": "باها: هدفنا التتويج باللقب.. والعود: نشكر الجماهير المغربية على دعمها"
+   },
+   "summary": {
+    "ar": "باها: هدفنا التتويج باللقب.. والعود: نشكر الجماهير المغربية على دعمها",
+    "en": "باها: هدفنا التتويج باللقب.. والعود: نشكر الجماهير المغربية على دعمها"
+   }
+  },
+  {
+   "id": "nf2hm9i",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUncySlI0T0g3UnlPWmNZTEptOWlpLXpNU2diRnIwbGtta3dVbmtQcnZaaW9oNEdhRC1BSmRyVDI0MVc5TUhUWkQ1dWpPNGNkMlFMV1dyRWdsTmZCOE1GeG5kQ2VRTTRUc19uU1NpZV83bVlmRjJ2Sm5KSy0taG8waUdTZGpyMkJTcW1Kek40dzlqRDdmNUYtWmJORFVGUklwRU9v?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-23T10:49:03.000Z",
+   "original": "يقدم قادة مقاطعة داك لاك البخور لإحياء الذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمية.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "يقدم قادة مقاطعة داك لاك البخور لإحياء الذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمية.",
+    "en": "يقدم قادة مقاطعة داك لاك البخور لإحياء الذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمية."
+   },
+   "summary": {
+    "ar": "يقدم قادة مقاطعة داك لاك البخور لإحياء الذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمية.",
+    "en": "يقدم قادة مقاطعة داك لاك البخور لإحياء الذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمية."
+   }
+  },
+  {
+   "id": "nhryp7p",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeV8yeEVkWEVKRkZqR3Y0OFNRZzdrSy1xNkh2WnhoTno4dDRsMUZyWVVhV3FXdTN0dW9aM0xWUDF5dUg1VjMyUzRFV05PSnVWUGVZTHlpZlJtWDFhYV95X0ZrTDh6a2JwUm9OTE9YMmZUeHBDMXNHY29kN0VTVEpKMWNCamFCdHRDVWNqX2dVek5SNklUaE9Zb3BRQXNMVWNVaU5XZ1Q0a0xBcC13cDRBSEdBdnFCakJIbXVfRDF1M2PSAcYBQVVfeXFMUG4wNzN4Z3V1X2RKU0JmQUQ3V1VvOWItRDB3ZXBqcW9jSEE1MlVsLVJhT251UG4tS2dQZUdfZEVtWlZKSVNhZG5WbmpzcXduUkJDbzkya3VpNkJNRGJ4U2traXdDdmlTNkFTSmZ6eloyLTU0VUJ1MUU1XzZfNU5MN25JWmNodDUzUlpBSzczVC1MdTU1dksxYzNtMjRiNXpGTC1iTWJDbG5EeGxDb01LUG8yakNWeUJRWWtvbVcwUlZELXpraW5B?oc=5",
+   "source": "Bollywood Hungama",
+   "publishedAt": "2026-11-23T10:40:12.000Z",
+   "original": "Nora Fatehi named brand ambassador for Saudi fragrance house Match Perfumes",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Nora Fatehi named brand ambassador for Saudi fragrance house Match Perfumes",
+    "en": "Nora Fatehi named brand ambassador for Saudi fragrance house Match Perfumes"
+   },
+   "summary": {
+    "ar": "Nora Fatehi named brand ambassador for Saudi fragrance house Match Perfumes",
+    "en": "Nora Fatehi named brand ambassador for Saudi fragrance house Match Perfumes"
+   }
+  },
+  {
+   "id": "nyyp9v3",
+   "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOVFlDWlBvSVhhelV0eC00U1FXVWFqMjZHdGdTWk5IYThZMFJFNFh1VmZlY3VEcWkxVGlleWIzMzZYV1lvTFJlMHplTWpvZzdWQ2Z2ZUFwT3hRWHQzMURtYmhKSXlhS0RaQW50SWxiSXNqYkdCLVBScmdHMVBUeWU2M2V6NHF0TmVyVlNHTTd1SW5kSGdCUE9PeFAzSmtoU0k2OHpLNjh0RFl3VmJXanVkUUh5ZnI5VGR3TFlqbnhxWUd3dkdCU3hGU0dfc3ZScGNLQ0V0LWpMOHFWZGN1enJETFhLRkRvei1TU3E1UFhmNlVZVWwzWjZ5b1NoaGpscEM4LThZcHI4MEpidDM2cjU3Y3VsTk4zSi1BdGVXdEdoN1F5QmRmTkFMVUcwblVCU3lkbDZpSW9ZcnRKc0JLLUdNaDQ4OGc?oc=5",
+   "source": "الاتحاد الاشتراكي",
+   "publishedAt": "2026-11-23T09:45:00.000Z",
+   "original": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة",
+    "en": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة"
+   },
+   "summary": {
+    "ar": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة",
+    "en": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة"
+   }
+  },
+  {
+   "id": "n1hckpfw",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmFkeWZwSWljWWJmdkxqWS1jQ2VRdWMzT3cxbXppWlRIdHVrdmZOaDEzdmxjY2FfSU1KYTRqRzhQY1N4MFVkNE55WWw3T1d5MGRIdnNOeWw3VUFSWmsyNzdDcHQ1UTB4Q2FqUzl0Y0Z0elpWdlJLblVEVk5qWDRWQ2ZGSEVXcWtSRHdBNExZSDFOMUk?oc=5",
+   "source": "Manila Bulletin",
+   "publishedAt": "2026-11-23T08:08:02.000Z",
+   "original": "Thai stars Perth and Santa talk fragrance and personal style",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Thai stars Perth and Santa talk fragrance and personal style",
+    "en": "Thai stars Perth and Santa talk fragrance and personal style"
+   },
+   "summary": {
+    "ar": "Thai stars Perth and Santa talk fragrance and personal style",
+    "en": "Thai stars Perth and Santa talk fragrance and personal style"
+   }
+  },
+  {
+   "id": "n1b75jw8",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb0ZMWnpxb1RqdmYtZ28yNWdWOVljSTZVRDdYZ2FabTJzTktTRkhXazFQOTQwZTJLVEI0MzEtalBDX1ZMdG1XTjJsbVdfMWlhZF9mNDhJZ3B2ZEFWNjZGblFJMnl1RUF6VW1paGUtNWRmeWFQTlNiRE5DUzlxV1Rrd3RONE9rVEVnNERPR3FqQVozVTVfajhFcjg4WENlZG9maG5KQ3NIN0FJcXlranVJ?oc=5",
+   "source": "Happi | Household And Personal Products Industry",
+   "publishedAt": "2026-11-23T07:00:00.000Z",
+   "original": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
+    "en": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers"
+   },
+   "summary": {
+    "ar": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
+    "en": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers"
+   }
+  },
+  {
+   "id": "n1dobik5",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOGg4MFN5UThlRnZGTXBoOW1KaG0yWTNYd2pMVTZZWFNEZmhYYm10OFh1WGJoNmZUU20xYUlXMXJZUjc0cVNPVGw5X3FtV01YQzBoNDFkbVRTWmxNc0hCQ0F4LXJaNnUxai1TbVpqZENxYmFIQ0U1M1dxMUQzUDl0UmxHeldXc29yT3dNdlNFTngzZG9jcy1xLWRqQzlfTVVYOG5oSXh1WEw?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-23T06:38:08.000Z",
+   "original": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
+    "en": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون."
+   },
+   "summary": {
+    "ar": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
+    "en": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون."
+   }
+  },
+  {
+   "id": "n1on7ege",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmNpM05kOGJiSWgybExYV214RGZHQmI0eDZOaUFwUHQ1OVBPMUxJalJlbFhjUDlDWUYxRFVpaWRKb0ZuTlJFVlFiUzVzMi1xdjdMUS11NVJ1VDhrTUFpUEREWjVZZ3VFUmdORVhzUzdmZFpsNVQtcHhGTXNDVnk2OGtKamVZVi1fVURFSm9nQXlRNFdRWERhLURiSTFkOHRoQk5yYw?oc=5",
+   "source": "Beauty Independent",
+   "publishedAt": "2026-11-23T05:01:38.000Z",
+   "original": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
+   "lang": "en",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
+    "en": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture"
+   },
+   "summary": {
+    "ar": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
+    "en": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture"
+   }
+  },
+  {
+   "id": "n185e3x8",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBYX21pWnl1WHp6aFRlWUxXY01ORHpvYkdRbnJLUmJ2N2Y1alpBNDRacnVrMjJwT0NKcHRQSHVjc3BJel9WOTkyZ3FjSHBLQVg3OFliTFJOTmwyZkRicWdvSGhubnprOTZSVWVtZHJWZlRZbWY5a2NlN3pn?oc=5",
+   "source": "Auparfum",
+   "publishedAt": "2026-11-23T03:17:44.000Z",
+   "original": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
+    "en": "Passage d'Enfer de L'Artisan parfumeur : critique et avis"
+   },
+   "summary": {
+    "ar": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
+    "en": "Passage d'Enfer de L'Artisan parfumeur : critique et avis"
+   }
+  },
+  {
+   "id": "n12dou3v",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4tdmRFVlhYcTB6cm94Q20ybzVfZkdXSGxqeTE0VXQ3dWJWRTNOUERKNXZDY19sNzl3cjZNdG9MVDlZdzZIaTR2S0IwVkpzVndMWFgzbDJhME9XWkcydzgxdnUwRQ?oc=5",
+   "source": "الأيام البحرينية",
+   "publishedAt": "2026-11-23T00:00:00.000Z",
+   "original": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
+   "lang": "ar",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
+    "en": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور"
+   },
+   "summary": {
+    "ar": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
+    "en": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور"
+   }
+  },
+  {
+   "id": "n10oh2ch",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE50akFYd00xT3R5YmJjcFJ2bVNmc0Nibnp5YV9EcERpREREbUdJQnA5S2VOY0tLOXdUS0xoWEM1TlhTN0ZCNkZHbHZTVWk1OS1JV01EenVsWDFnbV93ZEJNckZScXRnMHpDZE5wR1Uwb3lrU3JYaHpj?oc=5",
+   "source": "Popbee",
+   "publishedAt": "2026-11-22T23:00:51.000Z",
+   "original": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
+    "en": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents"
+   },
+   "summary": {
+    "ar": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
+    "en": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents"
+   }
+  },
+  {
+   "id": "n1u8ja2q",
+   "url": "https://cafleurebon.com/providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-22T21:08:24.000Z",
+   "original": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
+    "en": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway"
+   },
+   "summary": {
+    "ar": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "n1dpyye0",
+   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
+   "source": "صحيفة المرصد",
+   "publishedAt": "2026-11-22T20:12:03.000Z",
+   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   },
+   "summary": {
+    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
+    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
+   }
+  },
   {
    "id": "nu4dcj3",
    "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOVWJWMXE3ODUtYzU1WHY0UXhRdFBlMnQ0LUJha2NJUnluLUZDQlI2ZTJTQ2ZqX3VJUEtOMnNEVW5fQmdPOXZrb0VoRUZHd19pb1VJRVVQT3JyM296UW9MSW40bFhLczh5OVN6WmhNTm1HdVNNY1FqOTlsYnNydjBVbmlLUzdvbXk2bzhNLXYxYlUybVpuWDRLaERtWnN2YnlYYU5lSTZEZzFDWEdGdVR0Y1FtUHZwcER3Y1JqUFNTVm9nb0FwN3oxYXpiOHQ0N3B3TkdUQjk5bVhDcm4zaV9oTEd5NEJfTWc4a0wyZENqcFdlUHI4YVlVeUJuOU93aGhBdjYzUlVUZkstQ1ZTcWZ6T2lIZGRjcEphaXRJU1pwQUpMLTA4UHdmOTJaaXVadTQ?oc=5",
@@ -307,348 +649,6 @@
    "summary": {
     "ar": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
     "en": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية"
-   }
-  },
-  {
-   "id": "nukm8so",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVDFtanBBM3JZTXMtNTdMRWMxMkN2a2NTUUl2MHZEbTgwaDJiV0J0YTM5OENUbTBWUXZWMjVwTVZHeGV0aHNsdElCUjRMQlRiRU4yc3RmQkNhZ3RicEljMWd2clhmSzhvbnpoYkxqQ25ZZFRYbi13cDRoR0lVWDhDLXVwX003VG12M3haUUE5M1preDdpRDdIUGZleWV1TXVMNkpIYQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-22T09:57:05.000Z",
-   "original": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
-    "en": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026."
-   },
-   "summary": {
-    "ar": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026.",
-    "en": "ثلاثة أمور يجب ملاحظتها ووقتان مباركان لتقديم البخور في اليوم الخامس عشر من الشهر القمري العاشر في عام 2026."
-   }
-  },
-  {
-   "id": "nk9cxpm",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLTFETnFIc3RManB5YWQ2VFFtc0s2dDVyazNzalA0X3UtT05ENm9semVnWDJRMTF3NDExNjZZVjV5V3NDYU84T3JqZ09kZUNlQlVUOWFLdjAyUFlTQVdtU3U2ZG5acVRIaEczcEtWdUhZSkJxRVdYT0x2RUpPWnpfRE1lcVlDcGl5em9OYzFOU3dVaDJHY0xpR2dEelR4Q25VZWxmemY0bXBtNkZaOEFmOQ?oc=5",
-   "source": "GQ India",
-   "publishedAt": "2026-11-22T09:30:00.000Z",
-   "original": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
-   "lang": "en",
-   "category": "ingredients",
-   "importance": 2,
-   "title": {
-    "ar": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
-    "en": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon"
-   },
-   "summary": {
-    "ar": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon",
-    "en": "Oud mania: How an ancient Indian ingredient became a global fragrance phenomenon"
-   }
-  },
-  {
-   "id": "n94g9qv",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOQ1RnalduMEJ3cGJZamRVS0hXNG1UZjQ4YTBROVVsVEp3YTlDYzdQOFlvOTAycjM1ZlhubnpoOVYzYmowRFVvZklXZE4xM2FwM251RWdEZnluMlJqdUVoS1MzTnJEZ2QzRzEtX3VNYkctUWl4WF92Y1h4WnJGZnV3U25TVzhneWFwXy02UVd0TDU3TC04bGhzWVV6Q1Y3SGhSVUxDcWlCTEptWVV0TEVzZThVcWpoODAwbDh3MDRJS1Nzejd3c0hXX0w5TGd6N3BIWnpNQ0VobkxITXd2MDBTUHNGWlh0Z1U?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-22T09:24:31.000Z",
-   "original": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
-   },
-   "summary": {
-    "ar": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans",
-    "en": "\"Je porte toujours le même\" : Virginie Ledoyen ne jure plus que par ce parfum Chanel pour irradier à 50 ans"
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-22T03:01:22.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   }
-  },
-  {
-   "id": "n1kjojyk",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc1d0SnQ1aHdHaUtES2ozc1ZpaDFKRVNHYWpvbThZenYtYkk2QzVOQ1RmUHpXdUk3bjFWRGRpUy03eTNMSGRYNkNEQ2VhVHZjNWF6WDZXZXFLVHpGbVVBYVNEVHoyUXItWmEyVlByam5TVFNjby1KQ2w2YVJ4ZFVLVW84ZkpHR0xRQWMxRElDQXhVblR2b19ic2RBeF94TU03aXVpd0tvMTQtdUJ6cV9KbHJBUXFMSS1ldkVz?oc=5",
-   "source": "IndexBox",
-   "publishedAt": "2026-11-22T00:26:04.000Z",
-   "original": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
-    "en": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics"
-   },
-   "summary": {
-    "ar": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics",
-    "en": "Woody Eau de Parfum Market To 2035: Premiumization and Unisex Demand Drive Growth - News and Statistics"
-   }
-  },
-  {
-   "id": "nntdl36",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONHJvNE45TGx6MFZnR0hQeWJTVF9NWFJ6WVVqMVhGd2JUTHdCUk9rSTN1R1gzVFdnSmttV1JQVnhWYmh4dkJ3Vklib0JvWUh5R0RLREhwVkJ1amVsY0JkRVZRelQ0ZjFMQWxsYk1RWkdCeHdoQ183RkY4YnNMSGYtVVhrUzVlRzBGdnFnTnZYbURsb2QzVV9ualVkdk3SAaQBQVVfeXFMT3N2SXptQkhjQWl3dE9VV2toeVpmelJqU2llYi1OYnZyNHBXUEVnenotdWMzX3M4dmdicmhQRGRFbWMxTDRONjFHbUltYkd2OVF6ZG1mVUJrTDdpWHlXUm5ZYTVYYjg1c0dXLTZlR3U2UlB6ZDlLRjlJZ0s0Qms4Zjd2UFJNTzQ2dXRBc1NXWGlBemdLM3VKZktPc3otWEI5M2FaN1E?oc=5",
-   "source": "The Express Tribune",
-   "publishedAt": "2026-11-21T23:20:19.000Z",
-   "original": "Artificial Intelligence makes inroads into perfume industry",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Artificial Intelligence makes inroads into perfume industry",
-    "en": "Artificial Intelligence makes inroads into perfume industry"
-   },
-   "summary": {
-    "ar": "Artificial Intelligence makes inroads into perfume industry",
-    "en": "Artificial Intelligence makes inroads into perfume industry"
-   }
-  },
-  {
-   "id": "n1xhqqp5",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LMGlVUkQ0ams3YzN6VWk0WGhuVHBsZVFhQ0ZuRkRZT01pYlF0QnpsMUpfcUFTUHJVODFIajBreVBTR2J4UEwyai1TSGpwc3ZBYXlkaExpVjUxSzlpdGxTSjctY0VjcmxNcUE?oc=5",
-   "source": "FZINE Singapore",
-   "publishedAt": "2026-11-21T23:00:00.000Z",
-   "original": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
-    "en": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know"
-   },
-   "summary": {
-    "ar": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know",
-    "en": "8 Best Perfume Specialty Stores in Singapore Every Fragrance Lover Should Know"
-   }
-  },
-  {
-   "id": "n1dxgqw0",
-   "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPMWI0c2FDdFNEUkY5ZGtUalpFMnN1M0J6djhxVlpsVUN2X3VxSHhMaUI4clp1MEdOdHZfbkVMY20tbllBTVoyMENQb28zZVAyVXlDNHdWNVV3WWVuUWVuRmVXbW51MElVRUVaaWpadGg2c2tmeTlYYmE1alBOYk5jeGVLSGNXTklTQ216QmVZNktlOWN5SVpFY2E0dF9WS3Nrc1F3bG9waFV6RWZoOUhHWW5GX1p1S2tVYzNtZGJEN2lHejdLaTVzRDNhb2dkRWRldzhVRnJMNWZyNGVDN1Jfd0FMejJ3RTFiRXFJM3Z6SHY1bVdjdVhGb2tGdG52Z3l4X3gycEVFcFc2WXZaMkUyQ1RIV1dNUGVPX2I5azRGcHgwczNDc1gwZzdOdmFNTHMtaTFYMnlzVmU3YzFFYVlVa1JFRkNmdU0wQVo4M2RDNko3TGlvSXowOC1yY25OYlnSAeQCQVVfeXFMTV84eGNkSjN2S1QzbnVHU1VqY1d0VWhVV192OU05NEtXUTdTVTJpQlduVVZBcmE4djFXa1ZLMF9DQk5YdDBhMnlveUNkUDhnR2U5T25xYXFla0didms5TXMtVTdfOHVXczBjRTJKbG1MbE5ubkdJaDY4dVZ6c0JmWEFKR1dsRTZNQ2w0Q1pCRnhuQU9fWjBwOXI2dWkzVzA2WlRpMkVqQU9kMFNlclBiUjg1ZlBVb3kyaUpCRFJLdTdTY2xIaFE3RkREbk5yUmJzMGwxR1A2enN0SnBlWEl2a0FqN09pTTFTOEpocnZqay1CdWJOTGt1QTdFQnZ5SGhtT1ZvdzNZc01MejBrdVZZdmMxMExSb3JySVYxd1ZJMXQ1a216elZpX1JRQ1dZRFFnckptWHYtUUd4M3RtNHFicVJwN1RQclkzN25LbVVLQzBZLXpJQ05UMEFJM1E3aWltZFg5V0M?oc=5",
-   "source": "سكاي نيوز عربية",
-   "publishedAt": "2026-11-21T22:46:18.000Z",
-   "original": "عازف غزي يداوي وجع النزوح بأوتار العود",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
-   },
-   "summary": {
-    "ar": "عازف غزي يداوي وجع النزوح بأوتار العود",
-    "en": "عازف غزي يداوي وجع النزوح بأوتار العود"
-   }
-  },
-  {
-   "id": "n5qw8u4",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZ1JWUnA1SWJDUFBEb1IzQjBKTENWdFdxemR2UkRpbnVJUzQtOUhZSllqbzIyc3YzVFJGVXlaWFlaLVdaVXJ0eXRveHhHUG5VTlBiUjRaTWpKSlFzTFJ0M05pVmVMQnNfVnQtc2ppM1BLV0MyU1RrUkoxQnpxdEJfVEh3d1F5Yk5QUm11WHlhbzJhR2tuWUd2WUpZTlB5ZTBpNTUzQ05pT2w5b2o3anBfazlGeGhiTmVUdFJSelBRU3FmTGZ1RDVvT0h3aUoxQ1hoMVZaMGtCNTBsa1dKcm9jZ21IYmVnSjlIVVE?oc=5",
-   "source": "lanouvellerepublique.fr",
-   "publishedAt": "2026-11-21T18:52:56.000Z",
-   "original": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
-   "lang": "fr",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
-    "en": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers"
-   },
-   "summary": {
-    "ar": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers",
-    "en": "\"Ça fait du bien\" : un parfum de fête sans gaz lacrymo pour le lancement du marché de Noël de Poitiers"
-   }
-  },
-  {
-   "id": "ng4avjd",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSVVUX1ZDcHM2enFLWllhY0dlbGgtTHpXX1V3NVV0eTJUdmtaWEtHTnI1ZjJlZDdlT0lOWGNyeGlqaTRsbFdaanBoWERfOEM4QWsyYklGdHdPMzRtSGEwbXVNaHphdDNUQW5CNC0wMlR5aE4xT3B1ZElQT1E5RnFJdXpDdFhLRmNjMy1iam9ldUhaRWhpWFhGU2pVWUJPRDM4dm4yRmdLemtTU0Q3bHFobHBRdV91RmhqM0JCajNJY1ZITFlEMlRtRDhET2JXdHdEejFfdnR2QlpSMWdRdzhtRjFsQmlQZV9aNmdXWVRVcDJrUmtMQ3c?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-22T06:36:59.000Z",
-   "original": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
-    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
-   },
-   "summary": {
-    "ar": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments",
-    "en": "\"L’odeur, c’est tellement important\" : Adèle Exarchopoulos ne jure que ce parfum de niche qui attire tous les compliments"
-   }
-  },
-  {
-   "id": "n1mv08ii",
-   "url": "https://nstperfume.com/2026/11/21/lazy-weekend-poll-open-thread-latish-november-2026/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-21T17:17:05.000Z",
-   "original": "Lazy weekend poll ~ open thread, latish-November 2026",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Lazy weekend poll ~ open thread, latish-November 2026",
-    "en": "Lazy weekend poll ~ open thread, latish-November 2026"
-   },
-   "summary": {
-    "ar": "It’s almost Thanksgiving and we’re relaxing before the holiday festivities with our usual open thread poll. Talk about anything you like — the fragrance you’re wearing today, any cooking or travel (or perfume shopping? just curling up with a good book?) plans you might have this week, whatever. Or, ask a question about fragrance, then see if anyone else has asked a question that you can answer…",
-    "en": "It’s almost Thanksgiving and we’re relaxing before the holiday festivities with our usual open thread poll. Talk about anything you like — the fragrance you’re wearing today, any cooking or travel (or perfume shopping? just curling up with a good book?) plans you might have this week, whatever. Or, ask a question about fragrance, then see if anyone else has asked a question that you can answer…"
-   }
-  },
-  {
-   "id": "nfn6yir",
-   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE14aEtXeGdBa1NuR3FGRFo0a0V2U1NxSkd5YWJEb2R4dU9HZDdMLUoxRVpjWFEzaHFQRDVOTjZUd2F0VmM?oc=5",
-   "source": "https://inews.ma/",
-   "publishedAt": "2026-11-21T16:03:28.000Z",
-   "original": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
-    "en": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي"
-   },
-   "summary": {
-    "ar": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي",
-    "en": "إسماعيل العود يتصدر أرقام مواجهة فيدجي بأداء استثنائي"
-   }
-  },
-  {
-   "id": "nftnu70",
-   "url": "https://news.google.com/rss/articles/CBMiswRBVV95cUxQc3NOUmpId1VSckRtbUVHdUNrTlAtQ25JX2ZfblVBX3JDbTYxbFNlNm91a1JoT1NHN0RzMldfek5QaTI0NVRvZTFJeGQxM2ZHUkMtRENmelN3UEhHaU41Mk5qTThkbnpkVG54dVVYdllpRTFNU1FlbnkwTTFWMExfRHRMMEJqcUxQMFNVeWhQOW94cHdZYXdwQVNnQnVnWlY3MWRRZnRBb1N5Rk5XR0hUZlZNUEM5SVkxaU9MT3Zsc2lVNE10Z0V0aGJ2bDFiSUVabW5sUzNINkJubmxhcmRtSENNZURQWFpVWHBiMnFNcGI1ek5mZU1sWTJmRWxTdjNiMFhrN2V4bDJUQjJmelhGNW1pdlZWQ2tnYkdzRDNmdVg0MjJNLWFHcHZiVHNzdUo0UGJKbXlrSWZhcDM0WVp6aGw2OGZpaDBmMVNHVUJBdmlQWlZUcWJZM2FvbEFNZmpsWTFCS0JMVGFtb2s1aV9PME5LRTVUSlFyZ0ZkcnFPZzBrQWVsSlg2UzJsbHpUWUVBQ2N6X0s2a2UzVmdBZEZTS19YX2dXcklwaU45QkhSSEpMelRrY1pkQWhpVU9OUklCYXFUOHBzTUFCTkZwbGlEd2VtLVhSWk1ZazhfZkliVWdfc0gtOUh1ZmphT2tCRDBmWDM3VjY0QWhmUHVtSGxlLW13OFdEbjNhSWtmTDUtcUgzVzREQzJrNmgzeG1qZXVfMk5sVkE5SHdtOXpUMXpabEZMSdIBVEFVX3lxTE41cnMtZlZ0NUpFVDB6OFZmd2tjMEJyUnMxNlpoa0M3a1FtNWg5MjQyWkFxcVE3NDk4UXZBTEE3Sm0xelVsbFpUS0sxd0FwaExJbmFMSQ?oc=5",
-   "source": "صحيفة الوطن",
-   "publishedAt": "2026-11-21T14:05:49.000Z",
-   "original": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
-   "lang": "ar",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
-    "en": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري"
-   },
-   "summary": {
-    "ar": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري",
-    "en": "انطلاق معرض الجواهر العربية ومعرض العطور العربية 2026 في 24 نوفمبر الجاري"
-   }
-  },
-  {
-   "id": "nswipvw",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMGxoUzh4S2hNc19KUjNCTXcwTk9mUFphNm9BQTliSGlpOW1KTzVxRXVmcE82TTBzZTU4b2JuNXRJUHRmZk9aOVFhazliODRoUGhCc2lvNmtSZnFJbHV4c21lSThoczVndHFhZEV1b0RBT0FNaFJoczEyN29WeG1CREl4dFVmTlhkRkFZYjI3WjlVRzdSdmhSM050TGRCT2pudi1DUHVBdi13UGJqZTlDeQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-21T12:26:15.000Z",
-   "original": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
-    "en": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026."
-   },
-   "summary": {
-    "ar": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026.",
-    "en": "تقديم البخور للرئيس هو تشي منه قبل حفل افتتاح دورة الألعاب الرياضية الوطنية لعام 2026."
-   }
-  },
-  {
-   "id": "n1pxlwj4",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUkxRazFBa2ZlMWJwMUs4bzRJdEJPMTRLWE9jMjQ1clp0elh5UWhyY19PVFhMQjhOWjg3YmktYjRRYkF6d2dRWW15YTYtNFNlRE9WbTFRdGtSTkg3dHBHcGVSTnhTZ0N6TldMdENlQl81LXh0aWpRb3c3WTcyT25FMEYzOFNGWWVSelVSQm9vUGdOX3dpQldubmo0OHYtTmd0UUdGd2M3RkhudnFPOG41Z1Y5UVFRU3JnSDRJUlI1OUJPc1RKdUlQNnRMMEZwX1lQUG1kVFVldUhHa1FGQTdzVHV5RWhqZDVCdWxyT2VCYlE?oc=5",
-   "source": "Le Parisien",
-   "publishedAt": "2026-11-21T11:39:00.000Z",
-   "original": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
-   "lang": "fr",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
-    "en": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !"
-   },
-   "summary": {
-    "ar": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !",
-    "en": "L’héliotrope, cette note poudrée et gourmande qui séduit les plus grands parfumeurs !"
-   }
-  },
-  {
-   "id": "n1agye4d",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ0IwT3FxY1I0WU8zSG5xZkNlbm1NR1BjUEhoWHd4MmFucG9XaFdZRUNILUZ4RlVwMW5XRkt1QjE5ZHFpTGs4b3dnb3VlaFFscnNFV0NzN29CMkZraXlXZHFVbDgwYi00S0dQS2k1Q0VVYXFmX0Z6ZTdXSVpjSVBwUnN5cnpOdzBlZ2RoMFVfb3VqMVFOQnlsVXRNclRES0M2SHdSWXlpbm0tMEt6OEJ1RmRCdFlCM2VnVlhCZk9uRHVQWUl1MnBrNVJPTUJJMWtwSGtN?oc=5",
-   "source": "magazine GEO",
-   "publishedAt": "2026-11-21T10:53:00.000Z",
-   "original": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
-   "lang": "fr",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
-    "en": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions"
-   },
-   "summary": {
-    "ar": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions",
-    "en": "Une exposition de la Maison Fragonard nous plonge dans l'histoire du parfum et ses étonnantes traditions"
-   }
-  },
-  {
-   "id": "naz9uys",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSGRYQlU4RDNQd3RXWEJYcmFZbGtzbkY4bEVOMXJaeUxQd0FzVDlaZzJqbkFROEtsYkpPVGtPNEZEU2puX0lJQTlHSmhGSG80cWE0RXJPTzgzX2FUS3BSQUtTdHBsbzRrMk9TaElSWFJpR2JscDhneGpsRG41WExtaEh1ZTE1X2JjMWRnMHJuMDJOZEltZ0E?oc=5",
-   "source": "Midi Libre",
-   "publishedAt": "2026-11-21T04:06:00.000Z",
-   "original": "Mireille Pluchard et son \"Parfum d’interdits\"",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Mireille Pluchard et son \"Parfum d’interdits\"",
-    "en": "Mireille Pluchard et son \"Parfum d’interdits\""
-   },
-   "summary": {
-    "ar": "Mireille Pluchard et son \"Parfum d’interdits\"",
-    "en": "Mireille Pluchard et son \"Parfum d’interdits\""
-   }
-  },
-  {
-   "id": "n1p8gue1",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObVBsLUdCUzZ1YU10LS1FTjVjUllYMFZLMHpDUGJua2tSZ1gyZ3VhLVRiOTkxUmlHOC1aWXQ1T2p5OWlZeGtpbDlYOGE0VV9IZVVFSEJjMGxtcXZlX0tvczNvRjctUFBUbHE4VHhkSkhMUm92YXgwc21ka0RpVTNaMkFLR01HNG5ZZEhPNUJDd1JWU2h3UEUtVjJoZjA5MWZUTUxVeEhDTHlSSVp5Qmo5UGxFcnU4MFZ2bUdRd2dWRTczWTBzNlRxb1hpU0NpcEE?oc=5",
-   "source": "Revista Merca2.0",
-   "publishedAt": "2026-11-21T02:39:38.000Z",
-   "original": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
-    "en": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers"
-   },
-   "summary": {
-    "ar": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers",
-    "en": "From chocolate to caramel: Nivea turns dessert-inspired fragrances into a strategy to win over young consumers"
-   }
-  },
-  {
-   "id": "n53l08m",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
-   "source": "Auparfum",
-   "publishedAt": "2026-11-21T00:48:00.000Z",
-   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   },
-   "summary": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
    }
   }
  ]
