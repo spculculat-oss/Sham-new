@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T13:43:26.687Z",
+ "updatedAt": "2026-11-23T00:02:26.671Z",
  "authors": [
   "s.p.culculat@gmail.com"
  ],
@@ -8,10 +8,39 @@
   "test": "success",
   "build": "success",
   "pages": "failure",
-  "at": "2026-11-20T13:43:26.687Z",
-  "sha": "de3a443e794dc8b5d60ef51bbe54562747c6cc3a"
+  "at": "2026-11-23T00:02:26.671Z",
+  "sha": "4ae8ed050f25d84531d2bf6019e987df13de7dd7"
  },
  "commits": [
+  {
+   "sha": "4ae8ed050f25d84531d2bf6019e987df13de7dd7",
+   "date": "2026-11-23T02:00:15+02:00",
+   "title": "feat(community): add WebRTC call signaling and post pinning",
+   "summary": "- Implement WebSocket call signaling server for audio/video calls.",
+   "files": 27,
+   "additions": 6733,
+   "deletions": 485,
+   "added": [
+    "server/community/callSignaling.ts",
+    "src/community/EventsPage.tsx",
+    "src/community/GroupsPage.tsx",
+    "src/community/LiveCallModal.tsx",
+    "src/community/WatchPage.tsx",
+    "src/community/scenes.ts",
+    "src/community/useMessengerCall.ts",
+    "src/utils/formulaReviews.ts"
+   ],
+   "deleted": [],
+   "modified": 19,
+   "flags": [
+    {
+     "level": "info",
+     "kind": "tests",
+     "text": "ضاف/حدّث 2 ملف اختبارات"
+    }
+   ],
+   "verdict": "received"
+  },
   {
    "sha": "de3a443e794dc8b5d60ef51bbe54562747c6cc3a",
    "date": "2026-11-20T15:41:01+02:00",
@@ -1510,6 +1539,7 @@
   }
  ],
  "reviewed": [
+  "4ae8ed050f25d84531d2bf6019e987df13de7dd7",
   "de3a443e794dc8b5d60ef51bbe54562747c6cc3a",
   "04b5f75530efeb0ce1ef0c6097c3e9fdf147cb64",
   "e9c3756dc9891ed0061b6a4c43acd04469a2ce1b",
@@ -1525,5 +1555,5 @@
   "5e3b1f2d2b244e8b3078bedea92d8f09398bd0af",
   "6271a804f4d5242ab1a01cfed2cbd7cb5b300638"
  ],
- "head": "de3a443e794dc8b5d60ef51bbe54562747c6cc3a"
+ "head": "4ae8ed050f25d84531d2bf6019e987df13de7dd7"
 }
