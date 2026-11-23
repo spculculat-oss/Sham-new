@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   UserPlus,
   UserCheck,
-  UserMinus,
   MessageCircle,
   Share2,
   Calendar,
@@ -16,19 +15,20 @@ import {
   Edit3,
   Clock,
   ShieldCheck,
-  CheckCircle2,
   Star,
-  ExternalLink,
+  Camera,
 } from 'lucide-react';
 import {
   cx,
+  resizeImage,
   type AiProfileInsight,
   type Post,
   type PublicUser,
 } from './api';
-import { Avatar, Btn, Card, Empty, Spinner, errorText, timeAgo, tx, useLoad, type Lang } from './ui';
+import { Avatar, Btn, Card, Empty, Sheet, Spinner, errorText, timeAgo, tx, useLoad, type Lang } from './ui';
 import { PostCard, RecipeCard } from './SocialPortal';
-import { pulseNow } from './session';
+import { pulseNow, refreshSession } from './session';
+import { SCENE_CATALOG, resolveSceneSrc } from './scenes';
 
 import heroLuxuryImg from '../assets/images/hero_luxury_perfume_1791692409081.jpg';
 import grasseRoseImg from '../assets/images/grasse_rose_harvest_1791696039244.jpg';
@@ -43,6 +43,7 @@ interface ProfileData {
   relation: 'self' | 'friends' | 'requested' | 'incoming' | 'blocked' | 'none';
   counts: { friends: number; posts: number; recipes: number };
   posts: Post[];
+  friendsList?: PublicUser[];
   recipes: { id: string; title: string; data: Record<string, unknown>; updatedAt: string }[];
 }
 
@@ -75,13 +76,19 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
     [handle, lang]
   );
   const [activeTab, setActiveTab] = useState<'timeline' | 'about' | 'recipes' | 'friends' | 'photos'>('timeline');
+  const [showCoverModal, setShowCoverModal] = useState(false);
+  const [coverDraft, setCoverDraft] = useState('');
+  const [savingCover, setSavingCover] = useState(false);
+  const [pokeBusy, setPokeBusy] = useState(false);
 
   if (loading) return <Spinner />;
   if (error || !data) return <Card><Empty title={errorText(error, lang)} /></Card>;
 
   const u = data.user;
   const isMe = data.relation === 'self';
-  const coverUrl = PRESET_COVERS[u.id] || DEFAULT_COVER;
+  const coverUrl = u.cover ? resolveSceneSrc(u.cover) : PRESET_COVERS[u.id] || DEFAULT_COVER;
+  const friendsList = data.friendsList || [];
+  const postPhotos = data.posts.filter((p) => Boolean(p.image)).map((p) => p.image!);
 
   const act = async (fn: () => Promise<unknown>, done?: string) => {
     try {
@@ -91,6 +98,34 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
       void pulseNow();
     } catch (e) {
       toast(errorText(e, lang));
+    }
+  };
+
+  const saveCover = async () => {
+    if (!coverDraft) return;
+    setSavingCover(true);
+    try {
+      await cx('/community/me', { method: 'PATCH', body: { cover: coverDraft } });
+      setShowCoverModal(false);
+      await reload(true);
+      void refreshSession();
+      toast(t('تم تحديث صورة الغلاف بنجاح ✨', 'Profile cover updated ✨'));
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setSavingCover(false);
+    }
+  };
+
+  const sendPoke = async () => {
+    setPokeBusy(true);
+    try {
+      await cx(`/community/poke/${u.id}`, { body: {} });
+      toast(t(`أرسلت تحية عطرية إلى ${u.name} 👋`, `You waved at ${u.name} 👋`));
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setPokeBusy(false);
     }
   };
 
@@ -123,10 +158,13 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
           {isMe && (
             <button
               type="button"
-              onClick={() => go('me/profile')}
-              className="absolute end-4 bottom-4 flex items-center gap-1.5 rounded-xl bg-white/80 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur shadow hover:bg-white cursor-pointer"
+              onClick={() => {
+                setCoverDraft(u.cover || SCENE_CATALOG[0].key);
+                setShowCoverModal(true);
+              }}
+              className="absolute end-4 bottom-4 flex items-center gap-1.5 rounded-xl bg-white/85 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur shadow hover:bg-white cursor-pointer"
             >
-              <Edit3 className="h-3.5 w-3.5" />
+              <Camera className="h-3.5 w-3.5" />
               {t('تعديل صورة الغلاف', 'Edit cover')}
             </button>
           )}
@@ -232,10 +270,16 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
                 </Btn>
               )}
               {data.relation !== 'self' && data.relation !== 'blocked' && (
-                <Btn variant="dark" onClick={() => void handleMessage()}>
-                  <MessageCircle className="h-4 w-4" />
-                  {t('مراسلة عبر ماسنجر', 'Messenger')}
-                </Btn>
+                <>
+                  <Btn variant="dark" onClick={() => void handleMessage()}>
+                    <MessageCircle className="h-4 w-4" />
+                    {t('مراسلة عبر ماسنجر', 'Messenger')}
+                  </Btn>
+                  <Btn variant="soft" busy={pokeBusy} onClick={() => void sendPoke()}>
+                    <span>👋</span>
+                    {t('تحية', 'Wave')}
+                  </Btn>
+                </>
               )}
               <button
                 type="button"
@@ -347,22 +391,33 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
             <Card className="p-4 space-y-2.5">
               <div className="flex items-center justify-between">
                 <h3 className="font-black text-stone-900 text-xs sm:text-sm">{t('الأصدقاء', 'Friends')}</h3>
-                <span className="text-xs text-stone-500">{data.counts.friends}</span>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('friends')}
+                  className="text-xs font-bold text-amber-800 hover:underline cursor-pointer tabular-nums"
+                >
+                  {data.counts.friends}
+                </button>
               </div>
-              <div className="grid grid-cols-3 gap-2">
-                {['u_dar_sham', 'u_ahmed_shaheen', 'u_nourhan'].map((fid) => (
-                  <div key={fid} className="flex flex-col items-center text-center">
-                    <img
-                      src={PRESET_COVERS[fid] || DEFAULT_COVER}
-                      alt=""
-                      className="h-16 w-full rounded-xl object-cover shadow-sm"
-                    />
-                    <span className="mt-1 truncate text-[10px] font-bold text-stone-800">
-                      {fid === 'u_dar_sham' ? 'دار شام' : fid === 'u_ahmed_shaheen' ? 'أحمد شاهين' : 'نورهان'}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              {!friendsList.length ? (
+                <p className="text-xs text-stone-500">{t('لا يوجد أصدقاء ظاهرون بعد.', 'No friends shown yet.')}</p>
+              ) : (
+                <div className="grid grid-cols-3 gap-2">
+                  {friendsList.slice(0, 6).map((friend) => (
+                    <button
+                      key={friend.id}
+                      type="button"
+                      onClick={() => go(`u/${friend.handle}`)}
+                      className="flex flex-col items-center text-center cursor-pointer group"
+                    >
+                      <Avatar user={friend} size={48} />
+                      <span className="mt-1 w-full truncate text-[10px] font-bold text-stone-800 group-hover:text-amber-800">
+                        {friend.name.split(' ')[0]}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </Card>
           </div>
 
@@ -500,15 +555,14 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
             <span className="text-xs text-stone-400">{t('المتصلون باللون الأخضر', 'Active in green')}</span>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-            {[
-              { id: 'u_dar_sham', name: 'دار شام للعطور', handle: 'dar_sham', avatar: PRESET_COVERS['u_dar_sham'], online: true },
-              { id: 'u_ahmed_shaheen', name: 'الكابتن أحمد شاهين', handle: 'ahmed_shaheen', avatar: PRESET_COVERS['u_ahmed_shaheen'], online: true },
-              { id: 'u_nourhan', name: 'م. نورهان الكردي', handle: 'nourhan_lab', avatar: PRESET_COVERS['u_nourhan'], online: true },
-              { id: 'u_tariq_oud', name: 'الشيخ طارق العتيبي', handle: 'tariq_oud', avatar: PRESET_COVERS['u_tariq_oud'], online: false },
-            ]
-              .filter((f) => f.id !== u.id)
-              .map((friend) => (
+          {!friendsList.length ? (
+            <Empty
+              icon={<Users className="h-10 w-10 text-stone-300" />}
+              title={t('لا يوجد أصدقاء حتى الآن', 'No friends yet')}
+            />
+          ) : (
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+              {friendsList.map((friend) => (
                 <div
                   key={friend.id}
                   className="flex items-center justify-between gap-2.5 rounded-2xl border border-stone-200 bg-stone-50/50 p-3 hover:bg-white transition"
@@ -526,7 +580,7 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
                   </button>
                   <button
                     type="button"
-                    onClick={() => onOpenMessenger ? onOpenMessenger(friend.id) : go('messenger')}
+                    onClick={() => (onOpenMessenger ? onOpenMessenger(friend.id) : go('messenger'))}
                     className="rounded-full bg-white p-2 text-stone-600 shadow-sm hover:bg-amber-100 hover:text-amber-900 cursor-pointer"
                     title={t('مراسلة', 'Message')}
                   >
@@ -534,7 +588,8 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
                   </button>
                 </div>
               ))}
-          </div>
+            </div>
+          )}
         </Card>
       )}
 
@@ -542,18 +597,21 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
       {activeTab === 'photos' && (
         <Card className="p-5 space-y-4">
           <h3 className="font-black text-stone-900">
-            {t('معرض صور المعمل والتجارب العطرية', 'Perfumer Lab Gallery')}
+            {t('معرض صور المعمل والمنشورات', 'Perfumer Lab & Post Gallery')}
           </h3>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
-            {[
-              heroLuxuryImg,
-              labCompoundingImg,
-              grasseRoseImg,
-              nicheRevealImg,
-              botanicalHarvestImg,
-              exhibitionImg,
-              pyramidImg,
-            ].map((img, i) => (
+            {(postPhotos.length > 0
+              ? postPhotos
+              : [
+                  heroLuxuryImg,
+                  labCompoundingImg,
+                  grasseRoseImg,
+                  nicheRevealImg,
+                  botanicalHarvestImg,
+                  exhibitionImg,
+                  pyramidImg,
+                ]
+            ).map((img, i) => (
               <div key={i} className="group relative aspect-square overflow-hidden rounded-2xl bg-stone-100">
                 <img
                   src={img}
@@ -564,6 +622,58 @@ export function ProfilePage({ handle, lang, go, toast, onOpenMessenger }: Props)
             ))}
           </div>
         </Card>
+      )}
+
+      {/* Profile Cover Picker Modal */}
+      {showCoverModal && (
+        <Sheet title={t('تغيير صورة الغلاف الشخصي', 'Update Profile Cover')} onClose={() => setShowCoverModal(false)}>
+          <div className="space-y-4">
+            <div className="h-36 overflow-hidden rounded-2xl bg-stone-900">
+              <img src={resolveSceneSrc(coverDraft)} alt="" className="h-full w-full object-cover" />
+            </div>
+
+            <div className="grid grid-cols-3 gap-2">
+              {SCENE_CATALOG.map((sc) => (
+                <button
+                  key={sc.key}
+                  type="button"
+                  onClick={() => setCoverDraft(sc.key)}
+                  className={`relative overflow-hidden rounded-xl border-2 cursor-pointer ${
+                    coverDraft === sc.key ? 'border-amber-600 ring-2 ring-amber-300' : 'border-transparent'
+                  }`}
+                >
+                  <img src={sc.src} alt="" className="h-16 w-full object-cover" />
+                  <span className="block bg-white/95 py-1 text-[10px] font-bold text-stone-800">
+                    {lang === 'ar' ? sc.ar : sc.en}
+                  </span>
+                </button>
+              ))}
+            </div>
+
+            <label className="inline-flex items-center gap-1.5 rounded-xl border border-stone-200 bg-stone-50 px-3 py-2 text-xs font-bold text-stone-800 cursor-pointer hover:bg-amber-50">
+              <Camera className="h-4 w-4 text-amber-700" />
+              {t('أو اختر صورة غلاف من جهازك', 'Or upload a custom image')}
+              <input
+                type="file"
+                accept="image/*"
+                hidden
+                onChange={async (e) => {
+                  const f = e.target.files?.[0];
+                  if (f) setCoverDraft(await resizeImage(f, 1280));
+                }}
+              />
+            </label>
+
+            <div className="flex justify-end gap-2 pt-2">
+              <Btn variant="ghost" onClick={() => setShowCoverModal(false)}>
+                {t('إلغاء', 'Cancel')}
+              </Btn>
+              <Btn busy={savingCover} onClick={() => void saveCover()}>
+                {t('حفظ الغلاف', 'Save Cover')}
+              </Btn>
+            </div>
+          </div>
+        </Sheet>
       )}
     </div>
   );

@@ -42,24 +42,32 @@ export function audio(value: unknown, maxKb = 1200): string {
 const CRAFT = ['hobbyist', 'perfumer', 'master_lab'];
 const LANG = /^[a-z]{2,3}(-[A-Za-z]{2,4})?$/;
 
+const PRESET_SCENE = /^(scene|cover):[a-z0-9_]{2,32}$/;
+export function sceneOrImage(value: unknown, maxKb = 450): string | null {
+  if (value === undefined || value === null || value === '') return null;
+  const text = String(value);
+  if (PRESET_SCENE.test(text)) return text;
+  return image(text, maxKb, true);
+}
+
 /* ------------------------------------------- shapes ------------------------------------------- */
 
 export interface PublicUser {
-  id: string; handle: string; name: string; avatar: string | null; bio: string; country: string;
+  id: string; handle: string; name: string; avatar: string | null; cover: string | null; bio: string; country: string;
   craftLevel: string; role: string; merchant?: { slug: string; storeName: string } | null; online: boolean; lastSeen: string;
 }
 const ONLINE_MS = 2 * 60_000;
 export function publicUser(row: Row): PublicUser {
   const lastSeen = new Date(row.last_seen || row.created_at || Date.now());
   return {
-    id: row.id, handle: row.handle, name: row.name, avatar: row.avatar || null, bio: row.bio || '', country: row.country || '',
+    id: row.id, handle: row.handle, name: row.name, avatar: row.avatar || null, cover: row.cover || null, bio: row.bio || '', country: row.country || '',
     craftLevel: row.craft_level || 'hobbyist', role: row.role,
     merchant: row.m_slug && row.m_status === 'approved' ? { slug: row.m_slug, storeName: row.m_store } : null,
     online: Date.now() - lastSeen.getTime() < ONLINE_MS, lastSeen: lastSeen.toISOString(),
   };
 }
 /** SELECT list for a user + their approved store (alias u, merchants m). */
-export const USER_COLUMNS = `u.id, u.handle, u.name, u.avatar, u.bio, u.country, u.craft_level, u.role, u.last_seen, u.created_at,
+export const USER_COLUMNS = `u.id, u.handle, u.name, u.avatar, u.cover, u.bio, u.country, u.craft_level, u.role, u.last_seen, u.created_at,
   m.slug AS m_slug, m.status AS m_status, m.store_name AS m_store`;
 export const USER_FROM = `users u LEFT JOIN merchants m ON m.user_id = u.id`;
 
@@ -165,7 +173,7 @@ export async function me(ctx: Ctx, userId: string) {
             (SELECT count(*) FROM posts WHERE author_id = $1 AND status = 'visible')::int AS posts`, [userId]);
   return {
     id: u.id, handle: u.handle, name: u.name, email: ctx.vault.open(u.email_enc), role: u.role, status: u.status,
-    country: u.country, lang: u.lang, craftLevel: u.craft_level, bio: u.bio, avatar: u.avatar || null,
+    country: u.country, lang: u.lang, craftLevel: u.craft_level, bio: u.bio, avatar: u.avatar || null, cover: u.cover || null,
     private: ctx.vault.openJson(u.private_enc, { phone: '', city: '' }), createdAt: iso(u.created_at),
     merchant: m ? { slug: m.slug, storeName: m.store_name, status: m.status, note: m.status === 'approved' ? '' : m.admin_note } : null,
     counts: counts || { recipes: 0, friends: 0, orders: 0, posts: 0 },
@@ -178,6 +186,7 @@ export async function updateProfile(ctx: Ctx, userId: string, input: Record<stri
   if (input.name !== undefined) set('name', required(input.name, 'name', 2, 60));
   if (input.bio !== undefined) set('bio', clean(input.bio, 500));
   if (input.avatar !== undefined) set('avatar', image(input.avatar, 250));
+  if (input.cover !== undefined) set('cover', sceneOrImage(input.cover, 450));
   if (input.country !== undefined) { const c = clean(input.country, 2).toUpperCase(); set('country', isCountry(c) ? c : ''); }
   if (input.lang !== undefined && LANG.test(clean(input.lang, 10))) set('lang', clean(input.lang, 10));
   if (input.craftLevel !== undefined && CRAFT.includes(String(input.craftLevel))) set('craft_level', String(input.craftLevel));

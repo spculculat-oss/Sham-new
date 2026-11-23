@@ -464,3 +464,136 @@ test('community AI, interactive polls, and persistent bookmarks work end-to-end 
   });
 });
 
+test('Facebook features: stories, groups (public/closed privacy), events RSVP, shares/quotes, comment likes & nested replies, location/tags/pin, cover & poke', async () => {
+  await withApi({ SHAM_DATA_KEY: KEY }, async (base) => {
+    const a = await call(base, '/community/auth/register', { body: { name: 'زيد العود', email: email('fb_a'), password: PASSWORD } });
+    const b = await call(base, '/community/auth/register', { body: { name: 'ريم الورد', email: email('fb_b'), password: PASSWORD } });
+    const tokenA = a.data.token as string;
+    const tokenB = b.data.token as string;
+    const userB = b.data.me;
+
+    // 1. Profile cover persistence + Poke / Wave
+    const updatedMe = await call(base, '/community/me', { method: 'PATCH', token: tokenA, body: { cover: 'scene:rose' } });
+    assert.equal(updatedMe.status, 200);
+    assert.equal(updatedMe.data.cover, 'scene:rose');
+    const profA = await call(base, `/community/profile/${a.data.me.handle}`, { token: tokenB });
+    assert.equal(profA.data.user.cover, 'scene:rose');
+
+    const poked = await call(base, `/community/poke/${userB.id}`, { token: tokenA, body: {} });
+    assert.equal(poked.status, 200);
+    const notifsB = await call(base, '/community/notifications', { token: tokenB });
+    assert.ok(notifsB.data.some((n: { kind: string }) => n.kind === 'poke'));
+
+    // 2. Persistent 24h Stories + Reactions + Deletion
+    const storyRes = await call(base, '/community/stories', {
+      token: tokenA,
+      body: { title: 'تعتيق دهن عود هندي', caption: 'اليوم 45 في المختبر', image: 'scene:compounding', scentTag: 'عود' },
+    });
+    assert.equal(storyRes.status, 200);
+    const createdStory = storyRes.data.find((s: { title: string }) => s.title === 'تعتيق دهن عود هندي');
+    assert.ok(createdStory);
+    const storiesList = await call(base, '/community/stories', { token: tokenB });
+    assert.ok(storiesList.data.some((s: { id: string }) => s.id === createdStory.id));
+    const reactedStory = await call(base, `/community/stories/${createdStory.id}/react`, { token: tokenB, body: { reaction: '🔥' } });
+    assert.equal(reactedStory.status, 200);
+    assert.equal(reactedStory.data.myReaction, '🔥');
+    assert.equal(reactedStory.data.views, 1);
+    const delStory = await call(base, `/community/stories/${createdStory.id}`, { method: 'DELETE', token: tokenA });
+    assert.equal(delStory.status, 200);
+
+    // 3. Closed Group privacy enforcement + Group Wall posts
+    const grp = await call(base, '/community/groups', {
+      token: tokenA,
+      body: { name: 'مجموعة تركيبات النيش السرية', description: 'مختبر مغلق', category: 'niche', privacy: 'closed', cover: 'scene:niche' },
+    });
+    assert.equal(grp.status, 200);
+    const lockedDetail = await call(base, `/community/groups/${grp.data.id}`, { token: tokenB });
+    assert.equal(lockedDetail.data.locked, true);
+    const forbiddenPost = await call(base, '/community/posts', {
+      token: tokenB,
+      body: { body: 'تسلل', groupId: grp.data.id },
+    });
+    assert.equal(forbiddenPost.status, 403);
+    assert.equal(forbiddenPost.data.code, 'NOT_GROUP_MEMBER');
+
+    await call(base, `/community/groups/${grp.data.id}/join`, { token: tokenB, body: {} });
+    const memberPost = await call(base, '/community/posts', {
+      token: tokenB,
+      body: { body: 'أهلاً بزملاء النيش في المجموعة المغلقة', groupId: grp.data.id },
+    });
+    assert.equal(memberPost.status, 200);
+    const unlockedDetail = await call(base, `/community/groups/${grp.data.id}`, { token: tokenB });
+    assert.equal(unlockedDetail.data.locked, false);
+    assert.ok(unlockedDetail.data.posts.some((p: { id: string }) => p.id === memberPost.data.id));
+
+    // 4. Events + Going / Interested RSVP
+    const ev = await call(base, '/community/events', {
+      token: tokenA,
+      body: {
+        title: 'ورشة تقطير الورد الدمشقي',
+        description: 'جلسة تطبيقية مباشرة',
+        location: 'دمشق — معمل التقطير',
+        isOnline: false,
+        startsAt: new Date(Date.now() + 86_400_000).toISOString(),
+        cover: 'scene:rose',
+      },
+    });
+    assert.equal(ev.status, 200);
+    const rsvpEv = await call(base, `/community/events/${ev.data.id}/rsvp`, { token: tokenB, body: { status: 'going' } });
+    assert.equal(rsvpEv.status, 200);
+    assert.equal(rsvpEv.data.myRsvp, 'going');
+    assert.equal(rsvpEv.data.goingCount, 2);
+
+    // 5. Location, Colored Background, Tagged Friends, Pin, Share/Quote & Comment Likes/Replies
+    const p1 = await call(base, '/community/posts', {
+      token: tokenA,
+      body: {
+        body: 'جلسة تقييم ثبات العنبر الملكي',
+        location: 'دمشق — معمل التقطير والورد',
+        bgStyle: 'amber',
+        taggedUsers: [userB.id],
+      },
+    });
+    assert.equal(p1.status, 200);
+    assert.equal(p1.data.location, 'دمشق — معمل التقطير والورد');
+    assert.equal(p1.data.bgStyle, 'amber');
+    assert.equal(p1.data.taggedUsers[0].id, userB.id);
+
+    const pinned = await call(base, `/community/posts/${p1.data.id}/pin`, { token: tokenA, body: {} });
+    assert.equal(pinned.status, 200);
+    assert.equal(pinned.data.pinned, true);
+
+    const shared = await call(base, '/community/posts', {
+      token: tokenB,
+      body: { body: 'توصية رائعة تستحق التجربة!', sharedPostId: p1.data.id },
+    });
+    assert.equal(shared.status, 200);
+    assert.equal(shared.data.sharedPost?.id, p1.data.id);
+
+    const rootComment = await call(base, `/community/posts/${p1.data.id}/comments`, {
+      token: tokenB,
+      body: { body: 'ما نسبة المثبت؟' },
+    });
+    assert.equal(rootComment.status, 200);
+    const parentId = rootComment.data[0].id as string;
+    const replyComment = await call(base, `/community/posts/${p1.data.id}/comments`, {
+      token: tokenA,
+      body: { body: '4% أمبروكسان نقي', parentId },
+    });
+    assert.equal(replyComment.status, 200);
+    assert.equal(replyComment.data[1].parentId, parentId);
+
+    const likedComment = await call(base, `/community/comments/${parentId}/like`, { token: tokenA, body: {} });
+    assert.equal(likedComment.status, 200);
+    assert.equal(likedComment.data.likes, 1);
+    assert.equal(likedComment.data.likedByMe, true);
+
+    const notifsAfter = await call(base, '/community/notifications', { token: tokenA });
+    const kindsA = notifsAfter.data.map((n: { kind: string }) => n.kind);
+    assert.ok(kindsA.includes('share'));
+    const notifsBAfter = await call(base, '/community/notifications', { token: tokenB });
+    const kindsB = notifsBAfter.data.map((n: { kind: string }) => n.kind);
+    assert.ok(kindsB.includes('tag') && kindsB.includes('comment_reply') && kindsB.includes('comment_like'));
+  });
+});
+

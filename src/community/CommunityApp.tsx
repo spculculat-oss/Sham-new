@@ -21,6 +21,9 @@ import {
   X,
   ArrowUpRight,
   Compass,
+  Layers,
+  Calendar,
+  Film,
 } from 'lucide-react';
 import HubAuth from './HubAuth';
 import MerchantPortal from './MerchantPortal';
@@ -28,7 +31,12 @@ import Messenger from './Messenger';
 import { FriendsPage, NotificationsPage, SocialFeed } from './SocialPortal';
 import { ProfilePage } from './ProfilePage';
 import { DiscussionsPage } from './DiscussionsPage';
+import { GroupsPage } from './GroupsPage';
+import { EventsPage } from './EventsPage';
+import { WatchPage } from './WatchPage';
 import { FloatingMessengerDock } from './FloatingMessengerDock';
+import { IncomingCallBanner, LiveCallStage } from './LiveCallModal';
+import { useMessengerCall } from './useMessengerCall';
 import { StoreDirectory, StorePage } from './Stores';
 import { GeneralNewsPeriodic } from './GeneralNewsPeriodic';
 import UserPortal from './UserPortal';
@@ -57,6 +65,7 @@ export default function CommunityApp({
   const t = tx(lang);
   const session = useSession();
   const [toast, setToast] = useState('');
+  const call = useMessengerCall(session, lang, setToast);
 
   // AI Smart Omnibar search state
   const [searchQuery, setSearchQuery] = useState('');
@@ -131,6 +140,9 @@ export default function CommunityApp({
 
   const tabs = [
     { id: 'social', label: t('الموجز', 'Feed'), icon: <Home className="h-[18px] w-[18px]" /> },
+    { id: 'watch', label: t('فيديو', 'Watch'), icon: <Film className="h-[18px] w-[18px]" /> },
+    { id: 'groups', label: t('المجموعات', 'Groups'), icon: <Layers className="h-[18px] w-[18px]" /> },
+    { id: 'events', label: t('الفعاليات', 'Events'), icon: <Calendar className="h-[18px] w-[18px]" /> },
     {
       id: 'general-news',
       label: t('الأخبار', 'News'),
@@ -157,6 +169,12 @@ export default function CommunityApp({
   const active =
     !page || page === 'social'
       ? 'social'
+      : page === 'watch'
+      ? 'watch'
+      : page === 'groups'
+      ? 'groups'
+      : page === 'events'
+      ? 'events'
       : page === 'general-news' || page === 'news'
       ? 'general-news'
       : page === 'discussions'
@@ -190,6 +208,12 @@ export default function CommunityApp({
     body = <StoreDirectory lang={lang} go={go} />;
   } else if (page === 'store' && a) {
     body = <StorePage lang={lang} go={go} slug={a} />;
+  } else if (page === 'groups') {
+    body = <GroupsPage lang={lang} session={session} groupId={a} go={go} toast={setToast} onOpenMessenger={openDockChat} />;
+  } else if (page === 'events') {
+    body = <EventsPage lang={lang} session={session} go={go} toast={setToast} />;
+  } else if (page === 'watch') {
+    body = <WatchPage lang={lang} go={go} toast={setToast} />;
   } else if (page === 'general-news' || page === 'news') {
     body = <GeneralNewsPeriodic lang={lang} go={go} toast={setToast} />;
   } else if (page === 'discussions') {
@@ -213,7 +237,7 @@ export default function CommunityApp({
       />
     );
   } else if (page === 'messenger') {
-    body = <Messenger lang={lang} session={session} chatId={a} go={go} toast={setToast} />;
+    body = <Messenger lang={lang} session={session} chatId={a} go={go} toast={setToast} onStartCall={call.startCall} />;
   } else if (page === 'me') {
     body = <UserPortal lang={lang} session={session} section={a} go={go} toast={setToast} />;
   } else if (page === 'merchant') {
@@ -255,7 +279,7 @@ export default function CommunityApp({
             </button>
 
             {/* AI Smart Omnibar Search */}
-            <div className="relative hidden md:block w-60 lg:w-80">
+            <div className="relative hidden md:block w-52 lg:w-60 xl:w-64">
               <Search className="pointer-events-none absolute inset-y-0 start-3 my-auto h-4 w-4 text-stone-400" />
               <input
                 type="text"
@@ -394,14 +418,14 @@ export default function CommunityApp({
                   type="button"
                   title={tab.label}
                   onClick={() => go(tab.id === 'social' ? '' : tab.id)}
-                  className={`relative flex h-10 items-center justify-center gap-1.5 rounded-xl px-2.5 text-xs font-bold transition cursor-pointer whitespace-nowrap shrink-0 sm:px-3.5 ${
+                  className={`relative flex h-10 items-center justify-center gap-1 rounded-xl px-2 text-xs font-bold transition cursor-pointer whitespace-nowrap shrink-0 sm:px-2.5 2xl:px-3 ${
                     isActive
                       ? 'bg-stone-900 text-white shadow-xs'
                       : 'text-stone-600 hover:bg-stone-100 hover:text-stone-900'
                   }`}
                 >
                   {tab.icon}
-                  <span className="hidden lg:inline">{tab.label}</span>
+                  <span className="hidden 2xl:inline">{tab.label}</span>
                   {Boolean(tab.badge) && (
                     <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-rose-600 px-1 text-[9px] font-bold text-white">
                       {tab.badge}
@@ -494,7 +518,30 @@ export default function CommunityApp({
             setDockChatId(null);
             go(`messenger/${cid}`);
           }}
+          onStartCall={(cid, mode, peer) => void call.startCall(cid, mode, peer)}
           toast={setToast}
+        />
+      )}
+
+      {/* Live Messenger Incoming Call Banner */}
+      {call.incomingCall && (
+        <IncomingCallBanner
+          lang={lang}
+          call={call.incomingCall}
+          onAccept={(mode) => void call.acceptIncomingCall(mode)}
+          onDecline={call.declineIncomingCall}
+        />
+      )}
+
+      {/* Active Live Audio / Video Call Stage */}
+      {call.activeCall && (
+        <LiveCallStage
+          lang={lang}
+          call={call.activeCall}
+          onEnd={call.endCall}
+          onToggleMute={call.toggleMute}
+          onToggleCamera={call.toggleCamera}
+          onToggleScreenShare={call.toggleScreenShare}
         />
       )}
 

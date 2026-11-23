@@ -1,10 +1,25 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import test from 'node:test';
 import express from 'express';
+import WebSocket from 'ws';
 import { createMapsRouter } from '../server/maps';
 import { createAiToolsRouter } from '../server/aiTools';
 import { attachLiveVoiceServer } from '../server/liveVoice';
+import { attachMessengerCallServer } from '../server/community/callSignaling';
+import { connectPglite, migrate } from '../server/community/db';
+import { Vault } from '../server/community/crypto';
+import { createCommunity } from '../server/community/router';
+import * as chatSvc from '../server/community/messenger';
+import * as communitySvc from '../server/community/service';
 import { evaluateDesignerTrial, generateSampleTestReport } from '../src/utils/designerSimulationEngine';
+import {
+  addFormulaReview,
+  getAvailableFormulasForReview,
+  getFormulaPositiveReviews,
+  voteFormulaReviewHelpful,
+} from '../src/utils/formulaReviews';
 import type { FormulationState } from '../src/types/perfume';
 
 async function withServer(router: express.Router, run: (baseUrl: string) => Promise<void>) {
@@ -253,3 +268,213 @@ test('generateSampleTestReport forecasts longevity, spatial projection, timeline
   );
   assert.ok(sumLongevityAttrib >= 97 && sumLongevityAttrib <= 103);
 });
+
+test('formulaReviews manages positive reviews, helpful votes, and HomeHub reviews tab wiring', () => {
+  const store = new Map<string, string>();
+  const prevStorage = (globalThis as Record<string, unknown>).localStorage;
+  (globalThis as Record<string, unknown>).localStorage = {
+    getItem: (k: string) => store.get(k) ?? null,
+    setItem: (k: string, v: string) => {
+      store.set(k, String(v));
+    },
+    removeItem: (k: string) => {
+      store.delete(k);
+    },
+    clear: () => store.clear(),
+  };
+
+  try {
+    const initial = getFormulaPositiveReviews();
+    assert.ok(initial.length >= 6);
+    assert.ok(initial.every((r) => r.rating >= 4));
+
+    const formulas = getAvailableFormulasForReview();
+    assert.ok(formulas.length > 0);
+    const first = formulas[0];
+
+    const added = addFormulaReview({
+      formulaId: first.id,
+      formulaTitleAr: first.titleAr,
+      formulaTitleEn: first.titleEn,
+      olfactoryFamily: first.olfactoryFamily,
+      concentrationLabel: first.concentrationLabel,
+      batchCode: first.batchCode,
+      sourceTab: first.sourceTab,
+      reviewerName: 'أمل العتيبي',
+      rating: 5,
+      headline: 'ثبات رائع وفوحان متوازن',
+      comment: 'التجربة ممتازة جداً على القماش والبشرة لأكثر من ١٢ ساعة.',
+      longevityHours: 12,
+      sillageAr: 'فوحان متوازن',
+      sillageEn: 'Balanced projection',
+    });
+
+    const afterAdd = getFormulaPositiveReviews();
+    assert.equal(afterAdd.length, initial.length + 1);
+    assert.ok(afterAdd.some((r) => r.id === added.id));
+
+    assert.equal(voteFormulaReviewHelpful(added.id), true);
+    assert.equal(voteFormulaReviewHelpful(added.id), false);
+    const afterVote = getFormulaPositiveReviews().find((r) => r.id === added.id);
+    assert.equal(afterVote?.helpfulCount, 2);
+
+    const homeHubSource = readFileSync(join(process.cwd(), 'src/components/HomeHub.tsx'), 'utf8');
+    assert.match(homeHubSource, /'perfume_reviews'/);
+    assert.match(homeHubSource, /تقييمات العطور/);
+    assert.match(homeHubSource, /soft-pulse-hover/);
+  } finally {
+    if (prevStorage === undefined) delete (globalThis as Record<string, unknown>).localStorage;
+    else (globalThis as Record<string, unknown>).localStorage = prevStorage;
+  }
+});
+
+function nextWsMessage(ws: WebSocket, predicate: (msg: Record<string, any>) => boolean, timeoutMs = 4000) {
+  return new Promise<Record<string, any>>((resolve, reject) => {
+    const timer = setTimeout(() => {
+      cleanup();
+      reject(new Error('Timed out waiting for WS message'));
+    }, timeoutMs);
+    const onMessage = (raw: WebSocket.RawData) => {
+      let parsed: Record<string, any>;
+      try {
+        parsed = JSON.parse(raw.toString()) as Record<string, any>;
+      } catch {
+        return;
+      }
+      if (predicate(parsed)) {
+        cleanup();
+        resolve(parsed);
+      }
+    };
+    const onError = (err: Error) => {
+      cleanup();
+      reject(err);
+    };
+    const cleanup = () => {
+      clearTimeout(timer);
+      ws.off('message', onMessage);
+      ws.off('error', onError);
+    };
+    ws.on('message', onMessage);
+    ws.on('error', onError);
+  });
+}
+
+test('attachMessengerCallServer authenticates members, relays WebRTC call signals, and logs system call history', async () => {
+  const key = 'test-call-key-0123456789-abcdefghijklmnop';
+  const sql = await connectPglite();
+  await migrate(sql);
+  const community = createCommunity({ sql, env: { SHAM_DATA_KEY: key } });
+  const ctx = (await community.ready())!;
+  assert.ok(ctx);
+
+  const app = express();
+  const server = app.listen(0, '127.0.0.1');
+  await new Promise<void>((resolve) => server.once('listening', resolve));
+  attachMessengerCallServer(server, community);
+
+  const address = server.address();
+  const port = typeof address === 'object' && address ? address.port : 0;
+  const wsUrl = `ws://127.0.0.1:${port}/ws/messenger-calls`;
+
+  const sockets: WebSocket[] = [];
+  try {
+    const alice = await communitySvc.register(ctx, {
+      name: 'أليس الشامية',
+      email: 'alice.calls@example.com',
+      password: 'Password123',
+      country: 'SY',
+    });
+    const bob = await communitySvc.register(ctx, {
+      name: 'بوب العطار',
+      email: 'bob.calls@example.com',
+      password: 'Password123',
+      country: 'SY',
+    });
+
+    const convId = await chatSvc.openDirect(ctx, alice.me.id, bob.me.id);
+
+    // 1. Unauthenticated connection is rejected cleanly with 4401
+    const unauthWs = new WebSocket(`${wsUrl}?token=invalid-token`);
+    sockets.push(unauthWs);
+    const unauthClose = await new Promise<{ code: number }>((resolve) => {
+      unauthWs.once('close', (code) => resolve({ code }));
+    });
+    assert.equal(unauthClose.code, 4401);
+
+    // 2. Connect caller (Alice), callee (Bob), and Bob's secondary tab
+    const aliceWs = new WebSocket(`${wsUrl}?token=${encodeURIComponent(alice.token)}`);
+    const bobWs1 = new WebSocket(`${wsUrl}?token=${encodeURIComponent(bob.token)}`);
+    const bobWs2 = new WebSocket(`${wsUrl}?token=${encodeURIComponent(bob.token)}`);
+    sockets.push(aliceWs, bobWs1, bobWs2);
+
+    await Promise.all([
+      nextWsMessage(aliceWs, (m) => m.type === 'ready'),
+      nextWsMessage(bobWs1, (m) => m.type === 'ready'),
+      nextWsMessage(bobWs2, (m) => m.type === 'ready'),
+    ]);
+
+    // 3. Alice starts a live video call
+    const pCreated = nextWsMessage(aliceWs, (m) => m.type === 'call:created');
+    const pIncoming1 = nextWsMessage(bobWs1, (m) => m.type === 'call:incoming');
+    const pIncoming2 = nextWsMessage(bobWs2, (m) => m.type === 'call:incoming');
+    aliceWs.send(JSON.stringify({ type: 'call:start', conversationId: convId, mode: 'video' }));
+
+    const [created, incoming1, incoming2] = await Promise.all([pCreated, pIncoming1, pIncoming2]);
+    assert.equal(created.conversationId, convId);
+    assert.equal(created.mode, 'video');
+    assert.ok(created.onlinePeerIds.includes(bob.me.id));
+    assert.equal(incoming1.callId, created.callId);
+    assert.equal(incoming2.callId, created.callId);
+    assert.equal(incoming1.caller.id, alice.me.id);
+
+    // 4. Bob accepts on tab 1 -> Alice receives call:accepted and Bob's tab 2 receives call:dismiss
+    const pAccepted = nextWsMessage(aliceWs, (m) => m.type === 'call:accepted');
+    const pDismiss = nextWsMessage(bobWs2, (m) => m.type === 'call:dismiss');
+    bobWs1.send(JSON.stringify({ type: 'call:accept', callId: created.callId, mode: 'video' }));
+
+    const [accepted, dismiss] = await Promise.all([pAccepted, pDismiss]);
+    assert.equal(accepted.callId, created.callId);
+    assert.equal(accepted.peer.id, bob.me.id);
+    assert.equal(dismiss.callId, created.callId);
+
+    // 5. Alice relays WebRTC SDP offer to Bob
+    const pOffer = nextWsMessage(bobWs1, (m) => m.type === 'call:signal' && m.signalType === 'offer');
+    aliceWs.send(
+      JSON.stringify({
+        type: 'call:signal',
+        callId: created.callId,
+        toUserId: bob.me.id,
+        signalType: 'offer',
+        payload: { type: 'offer', sdp: 'v=0\r\no=- 1 2 IN IP4 127.0.0.1' },
+      }),
+    );
+    const offer = await pOffer;
+    assert.equal(offer.fromUserId, alice.me.id);
+    assert.equal(offer.payload.type, 'offer');
+
+    // 6. Alice ends the call -> Bob receives call:ended & SQL records call_started + call_ended
+    const pEndedBob = nextWsMessage(bobWs1, (m) => m.type === 'call:ended');
+    aliceWs.send(JSON.stringify({ type: 'call:end', callId: created.callId }));
+    const endedBob = await pEndedBob;
+    assert.equal(endedBob.callId, created.callId);
+    assert.equal(endedBob.reason, 'hangup');
+    assert.ok(endedBob.durationSec >= 1);
+
+    // Wait briefly for system message write to complete
+    await new Promise((r) => setTimeout(r, 80));
+    const list = await chatSvc.conversations(ctx, bob.me.id);
+    assert.equal(list.length, 1);
+    assert.equal(list[0].last?.kind, 'system');
+    assert.match(list[0].last?.text || '', /^call_ended:\d+$/);
+  } finally {
+    for (const s of sockets) {
+      if (s.readyState === WebSocket.OPEN || s.readyState === WebSocket.CONNECTING) {
+        s.terminate();
+      }
+    }
+    await new Promise<void>((resolve) => server.close(() => resolve()));
+    await sql.close();
+  }
+});
+

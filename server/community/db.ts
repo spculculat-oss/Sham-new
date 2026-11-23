@@ -105,7 +105,7 @@ export async function connectPglite(dataDir?: string): Promise<Sql> {
   return wrap(db);
 }
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export const SCHEMA: string[] = [
   `CREATE TABLE IF NOT EXISTS community_meta (key text PRIMARY KEY, value text NOT NULL)`,
@@ -123,6 +123,7 @@ export const SCHEMA: string[] = [
     craft_level text NOT NULL DEFAULT 'hobbyist',
     bio text NOT NULL DEFAULT '',
     avatar text,
+    cover text,
     private_enc text,
     created_at timestamptz NOT NULL DEFAULT now(),
     last_seen timestamptz NOT NULL DEFAULT now()
@@ -219,6 +220,12 @@ export const SCHEMA: string[] = [
     recipe_id text REFERENCES recipes(id) ON DELETE SET NULL,
     visibility text NOT NULL DEFAULT 'public',
     status text NOT NULL DEFAULT 'visible',
+    group_id text,
+    shared_post_id text,
+    location text NOT NULL DEFAULT '',
+    bg_style text NOT NULL DEFAULT '',
+    tagged_users jsonb NOT NULL DEFAULT '[]',
+    pinned boolean NOT NULL DEFAULT false,
     created_at timestamptz NOT NULL DEFAULT clock_timestamp(),
     edited_at timestamptz
   )`,
@@ -234,6 +241,7 @@ export const SCHEMA: string[] = [
     id text PRIMARY KEY,
     post_id text NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
     author_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    parent_id text,
     body text NOT NULL,
     status text NOT NULL DEFAULT 'visible',
     created_at timestamptz NOT NULL DEFAULT clock_timestamp()
@@ -342,6 +350,81 @@ export const SCHEMA: string[] = [
     PRIMARY KEY (user_id, post_id)
   )`,
   `CREATE INDEX IF NOT EXISTS bookmarks_user ON bookmarks (user_id, created_at DESC)`,
+  /* ---- Schema v3 Facebook social expansion (idempotent ALTERs + new tables) ---- */
+  `ALTER TABLE users ADD COLUMN IF NOT EXISTS cover text`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS group_id text`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS shared_post_id text`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS location text NOT NULL DEFAULT ''`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS bg_style text NOT NULL DEFAULT ''`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS tagged_users jsonb NOT NULL DEFAULT '[]'`,
+  `ALTER TABLE posts ADD COLUMN IF NOT EXISTS pinned boolean NOT NULL DEFAULT false`,
+  `CREATE INDEX IF NOT EXISTS posts_group ON posts (group_id, created_at DESC)`,
+  `CREATE INDEX IF NOT EXISTS posts_shared ON posts (shared_post_id)`,
+  `ALTER TABLE comments ADD COLUMN IF NOT EXISTS parent_id text`,
+  `CREATE TABLE IF NOT EXISTS comment_likes (
+    comment_id text NOT NULL REFERENCES comments(id) ON DELETE CASCADE,
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (comment_id, user_id)
+  )`,
+  `CREATE TABLE IF NOT EXISTS stories (
+    id text PRIMARY KEY,
+    author_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    title text NOT NULL DEFAULT '',
+    caption text NOT NULL DEFAULT '',
+    image text NOT NULL,
+    scent_tag text NOT NULL DEFAULT '',
+    bg_style text NOT NULL DEFAULT '',
+    status text NOT NULL DEFAULT 'visible',
+    created_at timestamptz NOT NULL DEFAULT clock_timestamp(),
+    expires_at timestamptz NOT NULL DEFAULT (now() + interval '24 hours')
+  )`,
+  `CREATE INDEX IF NOT EXISTS stories_active ON stories (expires_at DESC, created_at DESC)`,
+  `CREATE TABLE IF NOT EXISTS story_views (
+    story_id text NOT NULL REFERENCES stories(id) ON DELETE CASCADE,
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    reaction text NOT NULL DEFAULT '',
+    viewed_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (story_id, user_id)
+  )`,
+  `CREATE TABLE IF NOT EXISTS community_groups (
+    id text PRIMARY KEY,
+    name text NOT NULL,
+    description text NOT NULL DEFAULT '',
+    category text NOT NULL DEFAULT 'general',
+    privacy text NOT NULL DEFAULT 'public',
+    cover text,
+    creator_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    created_at timestamptz NOT NULL DEFAULT now()
+  )`,
+  `CREATE TABLE IF NOT EXISTS group_members (
+    group_id text NOT NULL REFERENCES community_groups(id) ON DELETE CASCADE,
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    role text NOT NULL DEFAULT 'member',
+    joined_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (group_id, user_id)
+  )`,
+  `CREATE INDEX IF NOT EXISTS group_members_user ON group_members (user_id)`,
+  `CREATE TABLE IF NOT EXISTS events (
+    id text PRIMARY KEY,
+    creator_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    title text NOT NULL,
+    description text NOT NULL DEFAULT '',
+    location text NOT NULL DEFAULT '',
+    is_online boolean NOT NULL DEFAULT false,
+    starts_at timestamptz NOT NULL,
+    cover text,
+    category text NOT NULL DEFAULT 'workshop',
+    created_at timestamptz NOT NULL DEFAULT now()
+  )`,
+  `CREATE INDEX IF NOT EXISTS events_starts ON events (starts_at ASC)`,
+  `CREATE TABLE IF NOT EXISTS event_rsvps (
+    event_id text NOT NULL REFERENCES events(id) ON DELETE CASCADE,
+    user_id text NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    status text NOT NULL DEFAULT 'interested',
+    updated_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (event_id, user_id)
+  )`,
 ];
 
 /** Creates the tables (idempotent) and records the schema version. */

@@ -4,7 +4,7 @@
  * new ones arrive by light polling (only what changed since the last look).
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, BellOff, Bell, Check, CheckCheck, Copy, FlaskConical, ImagePlus, Languages, Loader2, LogOut, Mic, MoreVertical, Pencil, Plus, Reply, Search, Send, Smile, Sparkles, Square, Trash2, UserPlus, Users, Wand2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BellOff, Bell, Check, CheckCheck, Copy, FlaskConical, ImagePlus, Languages, Loader2, LogOut, Mic, MoreVertical, Pencil, Phone, Plus, Reply, Search, Send, Smile, Sparkles, Square, Trash2, UserPlus, Users, Video, Wand2, X } from 'lucide-react';
 import { blobToDataUrl, cx, resizeImage, type AiReplyAssistResult, type ChatSummary, type ChatView, type Message, type PublicUser } from './api';
 import { pulseNow, setFastPulse, type SessionState } from './session';
 import { RecipeCard, RecipePicker } from './SocialPortal';
@@ -13,9 +13,16 @@ import { Avatar, Badge, Btn, Card, Empty, Sheet, Spinner, clock, errorText, inpu
 const QUICK = ['👍', '❤️', '😂', '😮', '😢', '🙏'];
 const EMOJI = ['😀', '😂', '😍', '🥰', '😎', '🤔', '😅', '😢', '😡', '👍', '👏', '🙏', '💪', '🔥', '🌹', '🌸', '✨', '💯', '🎉', '❤️', '💛', '🤍', '🧴', '🫙', '🌿', '🍋', '🌙', '☕', '👌', '✅'];
 
-interface Props { lang: Lang; session: SessionState; chatId?: string; go: (route: string) => void; toast: (s: string) => void }
+export type StartMessengerCallFn = (
+  conversationId: string,
+  mode: 'audio' | 'video',
+  peer?: PublicUser | null,
+  meta?: { isGroup?: boolean; title?: string },
+) => void;
 
-export default function Messenger({ lang, session, chatId, go, toast }: Props) {
+interface Props { lang: Lang; session: SessionState; chatId?: string; go: (route: string) => void; toast: (s: string) => void; onStartCall?: StartMessengerCallFn }
+
+export default function Messenger({ lang, session, chatId, go, toast, onStartCall }: Props) {
   const t = tx(lang);
   const [chats, setChats] = useState<ChatSummary[] | null>(null);
   const [filter, setFilter] = useState('');
@@ -71,7 +78,7 @@ export default function Messenger({ lang, session, chatId, go, toast }: Props) {
         </div>
       </aside>
       <section className={`min-h-0 ${chatId ? 'flex' : 'hidden md:flex'} flex-col`}>
-        {chatId ? <ChatPane key={chatId} id={chatId} lang={lang} session={session} go={go} toast={toast} onChanged={loadChats} />
+        {chatId ? <ChatPane key={chatId} id={chatId} lang={lang} session={session} go={go} toast={toast} onChanged={loadChats} onStartCall={onStartCall} />
           : <div className="flex flex-1 items-center justify-center"><Empty icon={<Send className="h-12 w-12" />} title={t('اختار محادثة', 'Pick a chat')} body={t('رسائلك مشفّرة على السيرفر ومحدش يشوفها غير المشاركين فيها.', 'Your messages are encrypted on the server — only the people in the chat can read them.')} /></div>}
       </section>
       {newChat && <PeoplePicker lang={lang} title={t('محادثة جديدة', 'New chat')} single onClose={() => setNewChat(false)}
@@ -86,7 +93,7 @@ function lastPreview(c: ChatSummary, lang: Lang) {
   const t = tx(lang);
   if (!c.last) return t('محادثة جديدة', 'New chat');
   if (c.last.deleted) return t('🚫 تم حذف الرسالة', '🚫 Message deleted');
-  const prefix = c.last.mine ? t('أنت: ', 'You: ') : '';
+  const prefix = c.last.mine && c.last.kind !== 'system' ? t('أنت: ', 'You: ') : '';
   const body = c.last.kind === 'image' ? t('📷 صورة', '📷 Photo') : c.last.kind === 'voice' ? t('🎤 رسالة صوتية', '🎤 Voice note') : c.last.kind === 'recipe' ? t('🧪 تركيبة', '🧪 Recipe')
     : c.last.kind === 'system' ? systemText(c.last.text, [], lang) : c.last.text;
   return prefix + body;
@@ -110,12 +117,23 @@ function systemText(text: string, members: PublicUser[], lang: Lang) {
   if (text === 'left') return t('غادر المجموعة', 'left the group');
   if (text.startsWith('renamed:')) return t(`غيّر اسم المجموعة إلى «${text.slice(8)}»`, `renamed the group to “${text.slice(8)}”`);
   if (text.startsWith('added:')) return t(`أضاف ${name(text.slice(6))}`, `added ${name(text.slice(6))}`);
+  if (text === 'call_started:audio') return t('📞 بدأ مكالمة صوتية مباشرة', '📞 Started a live voice call');
+  if (text === 'call_started:video') return t('📹 بدأ مكالمة فيديو مباشرة', '📹 Started a live video call');
+  if (text === 'call_missed') return t('📵 مكالمة فائتة', '📵 Missed call');
+  if (text === 'call_declined') return t('📵 تم رفض المكالمة', '📵 Call declined');
+  if (text.startsWith('call_ended:')) {
+    const secs = Number(text.slice(11)) || 0;
+    const mins = Math.floor(secs / 60);
+    const rem = secs % 60;
+    const dur = mins > 0 ? `${mins}:${String(rem).padStart(2, '0')}` : `${rem}s`;
+    return t(`📞 انتهت المكالمة (${dur})`, `📞 Call ended (${dur})`);
+  }
   return text;
 }
 
 /* ------------------------------------------------ chat pane ------------------------------------------------ */
 
-function ChatPane({ id, lang, session, go, toast, onChanged }: { id: string; lang: Lang; session: SessionState; go: (r: string) => void; toast: (s: string) => void; onChanged: () => void }) {
+function ChatPane({ id, lang, session, go, toast, onChanged, onStartCall }: { id: string; lang: Lang; session: SessionState; go: (r: string) => void; toast: (s: string) => void; onChanged: () => void; onStartCall?: StartMessengerCallFn }) {
   const t = tx(lang);
   const Back = lang === 'ar' ? ArrowRight : ArrowLeft;
   const [view, setView] = useState<ChatView | null>(null);
@@ -221,6 +239,26 @@ function ChatPane({ id, lang, session, go, toast, onChanged }: { id: string; lan
           <span className="min-w-0"><span className="block truncate font-bold text-stone-900">{direct ? other?.name : view.conversation.title}</span>
             <span className={`block truncate text-xs ${typing.length ? 'text-emerald-600' : 'text-stone-500'}`}>{status}</span></span>
         </button>
+        {onStartCall && (
+          <div className="flex items-center gap-1 shrink-0">
+            <button
+              type="button"
+              onClick={() => onStartCall(id, 'audio', other, { isGroup: !direct, title: view.conversation.title })}
+              title={t('مكالمة صوتية مباشرة', 'Start live voice call')}
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 transition cursor-pointer"
+            >
+              <Phone className="h-4.5 w-4.5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => onStartCall(id, 'video', other, { isGroup: !direct, title: view.conversation.title })}
+              title={t('مكالمة فيديو مباشرة', 'Start live video call')}
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-amber-300 hover:bg-amber-900 hover:text-white transition cursor-pointer"
+            >
+              <Video className="h-4.5 w-4.5" />
+            </button>
+          </div>
+        )}
         <div className="relative">
           <button type="button" onClick={() => setHeaderMenu((m) => !m)} className="rounded-full p-2 text-stone-600 hover:bg-stone-100 cursor-pointer"><MoreVertical className="h-5 w-5" /></button>
           {headerMenu && (

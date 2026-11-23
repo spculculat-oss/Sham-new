@@ -46,7 +46,7 @@ export async function conversations(ctx: Ctx, userId: string) {
   const now = Date.now();
   return rows.map((r) => {
     const others = people.filter((p) => p.conversation_id === r.id);
-    const preview = r.lm_id ? (r.lm_deleted ? '' : r.lm_kind === 'text' ? ctx.vault.open(r.lm_body).slice(0, 120) : '') : '';
+    const preview = r.lm_id ? (r.lm_deleted ? '' : (r.lm_kind === 'text' || r.lm_kind === 'system') ? ctx.vault.open(r.lm_body).slice(0, 120) : '') : '';
     return {
       id: r.id, kind: r.kind, title: r.kind === 'group' ? r.title : others[0]?.name || '', muted: r.muted, unread: r.unread, lastAt: iso(r.last_at),
       members: others.map(publicUser),

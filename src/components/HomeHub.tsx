@@ -56,9 +56,21 @@ import {
   Gift,
   Scan,
   LayoutGrid,
+  Star,
+  ThumbsUp,
+  MessageSquarePlus,
 } from 'lucide-react';
 import { HomeARPortals, type ARPortalItem } from './HomeARPortals';
 import { LuxuryPortalIcon } from './LuxuryPortalIcon';
+import {
+  getFormulaPositiveReviews,
+  addFormulaReview,
+  voteFormulaReviewHelpful,
+  getHelpfulVotedIds,
+  getAvailableFormulasForReview,
+  type FormulaReviewItem,
+  type FormulaFamilyFilter,
+} from '../utils/formulaReviews';
 
 import heroImg from '../assets/images/hero_luxury_perfume_1791692409081.jpg';
 import labImg from '../assets/images/perfume_lab_compounding_1791692420116.jpg';
@@ -152,6 +164,22 @@ const S = {
   view_ar_both: { ar: 'الواقع المعزز + النوافذ', en: 'AR + Portals', fr: 'RA + Portails', es: 'RA + Portales', it: 'AR + Portali', de: 'AR + Portale', ru: 'AR + Порталы', zh: 'AR + 门户', tr: 'AR + Portallar', fa: 'AR + درگاه‌ها' },
   view_ar_only: { ar: 'الواقع المعزز فقط', en: 'AR 3D Only', fr: 'RA 3D seul', es: 'Solo RA 3D', it: 'Solo AR 3D', de: 'Nur AR 3D', ru: 'Только AR 3D', zh: '仅 AR 3D', tr: 'Yalnızca AR 3D', fa: 'فقط AR سه‌بعدی' },
   view_grid_only: { ar: 'النوافذ فقط', en: 'Cards Only', fr: 'Cartes seules', es: 'Solo tarjetas', it: 'Solo schede', de: 'Nur Karten', ru: 'Только карточки', zh: '仅卡片', tr: 'Yalnızca Kartlar', fa: 'فقط کارت‌ها' },
+  cat_reviews: { ar: 'تقييمات العطور', en: 'Perfume Reviews', fr: 'Avis Parfums', es: 'Reseñas de Perfumes', it: 'Recensioni Profumi', de: 'Parfümbewertungen', ru: 'Отзывы об ароматах', zh: '香水评价', tr: 'Parfüm Yorumları', fa: 'نظرات عطرها' },
+  reviews_title: { ar: 'تقييمات العطور الإيجابية للتركيبات', en: 'Latest Positive Formula Reviews', fr: 'Derniers avis positifs sur les formules', es: 'Últimas reseñas positivas de fórmulas', it: 'Ultime recensioni positive delle formule', de: 'Neueste positive Formelbewertungen', ru: 'Последние положительные отзывы о формулах', zh: '最新香水配方好评', tr: 'En son olumlu formül yorumları', fa: 'آخرین ارزیابی‌های مثبت ترکیب‌ها' },
+  reviews_sub: { ar: 'آراء وتجارب صنّاع العطور والعملاء على أحدث التركيبات المختبرة في المعمل (4★ إلى 5★)', en: 'Verified evaluations from perfumers and collectors on tested atelier formulations (4★–5★)', fr: 'Évaluations vérifiées des parfumeurs et amateurs sur nos formules testées (4★–5★)', es: 'Evaluaciones verificadas de perfumistas y clientes en fórmulas probadas (4★–5★)', it: 'Valutazioni verificate di profumieri e clienti sulle formule testate (4★–5★)', de: 'Verifizierte Bewertungen von Parfümeuren und Kunden zu getesteten Formeln (4★–5★)', ru: 'Проверенные отзывы парфюмеров и ценителей об испытанных формулах (4★–5★)', zh: '调香师与收藏者对实验室测试配方的真实好评（4★–5★）', tr: 'Test edilen formüller hakkında parfümör ve kullanıcıların doğrulanmış olumlu yorumları (4★–5★)', fa: 'ارزیابی‌های واقعی عطرسازان و مشتریان درباره فرمول‌های آزمایش‌شده (۴★ تا ۵★)' },
+  reviews_add_btn: { ar: 'أضف تقييماً لتركيبة', en: 'Add Formula Review', fr: 'Ajouter un avis', es: 'Añadir reseña', it: 'Aggiungi recensione', de: 'Bewertung hinzufügen', ru: 'Добавить отзыв', zh: '添加配方评价', tr: 'Yorum ekle', fa: 'افزودن نظر جدید' },
+  reviews_all_pos: { ar: 'كل الإيجابية (4★–5★)', en: 'All Positive (4★–5★)', fr: 'Tous positifs (4★–5★)', es: 'Todas positivas (4★–5★)', it: 'Tutte positive (4★–5★)', de: 'Alle positiven (4★–5★)', ru: 'Все положительные (4★–5★)', zh: '全部好评 (4★–5★)', tr: 'Tüm olumlular (4★–5★)', fa: 'همه نظرات مثبت (۴★–۵★)' },
+  reviews_only_5: { ar: '5 نجوم فقط', en: '5 Stars Only', fr: '5 étoiles seulement', es: 'Solo 5 estrellas', it: 'Solo 5 stelle', de: 'Nur 5 Sterne', ru: 'Только 5 звёзд', zh: '仅限五星', tr: 'Sadece 5 Yıldız', fa: 'فقط ۵ ستاره' },
+  reviews_helpful_btn: { ar: 'مفيد', en: 'Helpful', fr: 'Utile', es: 'Útil', it: 'Utile', de: 'Hilfreich', ru: 'Полезно', zh: '有用', tr: 'Faydalı', fa: 'مفید' },
+  reviews_open_formula: { ar: 'فتح التركيبة', en: 'Open Formula', fr: 'Ouvrir la formule', es: 'Abrir fórmula', it: 'Apri formula', de: 'Formel öffnen', ru: 'Открыть формулу', zh: '查看配方', tr: 'Formülü aç', fa: 'مشاهده فرمول' },
+  reviews_longevity_unit: { ar: 'ساعة ثبات', en: 'h longevity', fr: 'h de tenue', es: 'h de duración', it: 'h di durata', de: 'Std. Haltbarkeit', ru: 'ч стойкости', zh: '小时留香', tr: 'saat kalıcılık', fa: 'ساعت ماندگاری' },
+  reviews_submit_btn: { ar: 'نشر التقييم الإيجابي', en: 'Publish Review', fr: 'Publier l’avis', es: 'Publicar reseña', it: 'Pubblica recensione', de: 'Bewertung veröffentlichen', ru: 'Опубликовать отзыв', zh: '发布评价', tr: 'Yorumu Yayınla', fa: 'ثبت ارزیابی' },
+  reviews_cancel_btn: { ar: 'إلغاء', en: 'Cancel', fr: 'Annuler', es: 'Cancelar', it: 'Annulla', de: 'Abbrechen', ru: 'Отмена', zh: '取消', tr: 'İptal', fa: 'لغو' },
+  reviews_select_formula: { ar: 'اختر التركيبة العطرية', en: 'Select Fragrance Formula', fr: 'Choisir la formule', es: 'Seleccionar fórmula', it: 'Seleziona formula', de: 'Formel auswählen', ru: 'Выберите формулу', zh: '选择香水配方', tr: 'Formül seçin', fa: 'انتخاب فرمول عطر' },
+  reviews_your_name: { ar: 'اسمك أو صفتك', en: 'Your Name', fr: 'Votre nom', es: 'Tu nombre', it: 'Il tuo nome', de: 'Ihr Name', ru: 'Ваше имя', zh: '您的称呼', tr: 'Adınız', fa: 'نام شما' },
+  reviews_headline_ph: { ar: 'عنوان مختصر للتجربة (مثال: ثبات مذهل بعد التعتيق)', en: 'Short headline (e.g., Remarkable longevity after aging)', fr: 'Titre court', es: 'Título breve', it: 'Titolo breve', de: 'Kurztitel', ru: 'Короткий заголовок', zh: '简短标题', tr: 'Kısa başlık', fa: 'عنوان کوتاه' },
+  reviews_comment_ph: { ar: 'اكتب انطباعك عن الفوحان والتدرج العطري…', en: 'Share your notes on projection, trail, and drydown…', fr: 'Partagez votre avis sur le sillage et la tenue…', es: 'Comparte tu opinión sobre proyección y evolución…', it: 'Condividi le tue note su scia e persistenza…', de: 'Teilen Sie Ihre Eindrücke zu Sillage und Haltbarkeit…', ru: 'Поделитесь впечатлением о шлейфе и стойкости…', zh: '分享留香与扩散体验…', tr: 'Yayılım ve kalıcılık hakkındaki düşünceleriniz…', fa: 'تجربه خود از پخش بو و ماندگاری را بنویسید…' },
+  reviews_avg_lbl: { ar: 'متوسط التقييم', en: 'Average Rating', fr: 'Note moyenne', es: 'Valoración media', it: 'Valutazione media', de: 'Durchschnitt', ru: 'Средний рейтинг', zh: '平均评分', tr: 'Ortalama Puan', fa: 'میانگین امتیاز' },
 } satisfies Record<string, LText>;
 
 interface HomeHubProps {
@@ -286,9 +314,76 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
   // Global state for auto-rotation & AR portal view mode
   const [isAutoCycling, setIsAutoCycling] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'lab' | 'knowledge' | 'business' | 'ai_news'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'lab' | 'knowledge' | 'business' | 'ai_news' | 'perfume_reviews'>('all');
   const [portalViewMode, setPortalViewMode] = useState<'both' | 'ar' | 'grid'>('both');
-  
+
+  // Formula positive reviews state for the 'تقييمات العطور' homepage tab
+  const [formulaReviews, setFormulaReviews] = useState<FormulaReviewItem[]>(() => getFormulaPositiveReviews());
+  const [votedReviewIds, setVotedReviewIds] = useState<string[]>(() => getHelpfulVotedIds());
+  const [reviewStarFilter, setReviewStarFilter] = useState<'all' | '5'>('all');
+  const [reviewFamilyFilter, setReviewFamilyFilter] = useState<FormulaFamilyFilter>('all');
+  const [showReviewComposer, setShowReviewComposer] = useState(false);
+  const availableFormulaOptions = getAvailableFormulasForReview(savedFormulas);
+  const [draftFormulaId, setDraftFormulaId] = useState(() => availableFormulaOptions[0]?.id || 'formula-royal-oud');
+  const [draftReviewerName, setDraftReviewerName] = useState(currentUser?.name || '');
+  const [draftRating, setDraftRating] = useState<4 | 5>(5);
+  const [draftHeadline, setDraftHeadline] = useState('');
+  const [draftComment, setDraftComment] = useState('');
+  const [draftLongevity, setDraftLongevity] = useState(12);
+
+  useEffect(() => {
+    const refreshReviews = () => {
+      setFormulaReviews(getFormulaPositiveReviews());
+      setVotedReviewIds(getHelpfulVotedIds());
+    };
+    window.addEventListener('sham-formula-review-added', refreshReviews);
+    return () => window.removeEventListener('sham-formula-review-added', refreshReviews);
+  }, []);
+
+  const handleVoteFormulaHelpful = (reviewId: string) => {
+    if (voteFormulaReviewHelpful(reviewId)) {
+      setFormulaReviews(getFormulaPositiveReviews());
+      setVotedReviewIds(getHelpfulVotedIds());
+    }
+  };
+
+  const handleSubmitFormulaReview = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!draftComment.trim()) return;
+    const picked = availableFormulaOptions.find((f) => f.id === draftFormulaId) || availableFormulaOptions[0];
+    if (!picked) return;
+    addFormulaReview({
+      formulaId: picked.id,
+      formulaTitleAr: picked.titleAr,
+      formulaTitleEn: picked.titleEn,
+      olfactoryFamily: picked.olfactoryFamily,
+      concentrationLabel: picked.concentrationLabel,
+      batchCode: picked.batchCode,
+      sourceTab: picked.sourceTab,
+      reviewerName: draftReviewerName || currentUser?.name || (isRtl ? 'عاشق العطور' : 'Perfume Lover'),
+      rating: draftRating,
+      headline: draftHeadline,
+      comment: draftComment,
+      longevityHours: draftLongevity,
+      sillageAr: draftLongevity >= 14 ? 'فوحان قوي وممتد' : 'فوحان متوازن أنيق',
+      sillageEn: draftLongevity >= 14 ? 'Strong lasting sillage' : 'Balanced refined trail',
+    });
+    setFormulaReviews(getFormulaPositiveReviews());
+    setDraftHeadline('');
+    setDraftComment('');
+    setShowReviewComposer(false);
+  };
+
+  const visibleFormulaReviews = formulaReviews.filter((r) => {
+    if (reviewStarFilter === '5' && r.rating < 5) return false;
+    if (reviewFamilyFilter !== 'all' && r.olfactoryFamily !== reviewFamilyFilter) return false;
+    return true;
+  });
+
+  const avgFormulaRating = formulaReviews.length
+    ? (formulaReviews.reduce((acc, r) => acc + r.rating, 0) / formulaReviews.length).toFixed(2)
+    : '5.00';
+
   // Per-portal active news item and icon index
   const [portalIndexes, setPortalIndexes] = useState<Record<string, number>>({});
   // Animate pulse on index change
@@ -1382,17 +1477,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
               { id: 'knowledge', label: L('cat_knowledge') },
               { id: 'business', label: L('cat_business') },
               { id: 'ai_news', label: L('cat_ai') },
+              { id: 'perfume_reviews', label: `${L('cat_reviews')} (${formulaReviews.length})` },
             ].map((cat) => (
               <button
                 key={cat.id}
-                onClick={() => setSelectedCategory(cat.id as any)}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+                type="button"
+                onClick={() => setSelectedCategory(cat.id as typeof selectedCategory)}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap shrink-0 cursor-pointer flex items-center gap-1.5 ${
                   selectedCategory === cat.id
                     ? 'bg-white text-stone-900 shadow-xs'
                     : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/50'
                 }`}
               >
-                {cat.label}
+                {cat.id === 'perfume_reviews' && <Star className="w-3.5 h-3.5 text-amber-600 fill-amber-500" />}
+                <span>{cat.label}</span>
               </button>
             ))}
           </div>
@@ -1400,18 +1498,309 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       </div>
 
       {/* ===================== ZONE 3B: AUGMENTED REALITY 3D PORTALS STAGE ===================== */}
-      {portalViewMode !== 'grid' && (
+      {selectedCategory !== 'perfume_reviews' && portalViewMode !== 'grid' && (
         <HomeARPortals currentLang={currentLang} portals={arPortals} />
       )}
 
+      {/* ===================== ZONE 4A: PERFUME REVIEWS TAB («تقييمات العطور») ===================== */}
+      {selectedCategory === 'perfume_reviews' && (
+        <section className="space-y-6 animate-in fade-in duration-300">
+          {/* Summary & Interactive Controls Bar */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 rounded-2xl border border-amber-900/15 bg-gradient-to-br from-[#fffdf8] via-white to-[#f8f3ea] p-5 sm:p-6 shadow-xs">
+            <div className="space-y-1">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <Star className="w-5 h-5 text-amber-600 fill-amber-500 shrink-0" />
+                <h3 className="text-lg sm:text-xl font-bold font-serif-luxury text-stone-950">
+                  {L('reviews_title')}
+                </h3>
+                <span className="text-xs font-mono tabular-nums font-bold text-amber-900">
+                  · {avgFormulaRating} / 5 ({formulaReviews.length})
+                </span>
+              </div>
+              <p className="text-xs text-stone-600 max-w-2xl">
+                {L('reviews_sub')}
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+              <div className="flex items-center gap-1 p-1 bg-stone-100 rounded-xl border border-stone-200/80">
+                <button
+                  type="button"
+                  onClick={() => setReviewStarFilter('all')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors whitespace-nowrap cursor-pointer ${
+                    reviewStarFilter === 'all' ? 'bg-white text-stone-900 shadow-xs' : 'text-stone-600 hover:text-stone-900'
+                  }`}
+                >
+                  {L('reviews_all_pos')}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setReviewStarFilter('5')}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors whitespace-nowrap cursor-pointer ${
+                    reviewStarFilter === '5' ? 'bg-white text-stone-900 shadow-xs' : 'text-stone-600 hover:text-stone-900'
+                  }`}
+                >
+                  {L('reviews_only_5')}
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setShowReviewComposer((prev) => !prev)}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-900 hover:bg-amber-900 text-amber-100 text-xs font-bold transition-colors whitespace-nowrap cursor-pointer"
+              >
+                <MessageSquarePlus className="w-4 h-4 text-amber-400" />
+                <span>{L('reviews_add_btn')}</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Family Filter Row */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+            {(
+              [
+                { id: 'all', label: isRtl ? 'جميع العائلات' : 'All Families' },
+                { id: 'oriental', label: isRtl ? 'شرقي وعود' : 'Oriental & Oud' },
+                { id: 'floral', label: isRtl ? 'زهري' : 'Floral' },
+                { id: 'woody', label: isRtl ? 'خشبي' : 'Woody' },
+                { id: 'citrus', label: isRtl ? 'حمضي وأروماتيك' : 'Citrus & Aromatic' },
+                { id: 'gourmand', label: isRtl ? 'جورماند' : 'Gourmand' },
+              ] as Array<{ id: FormulaFamilyFilter; label: string }>
+            ).map((fam) => (
+              <button
+                key={fam.id}
+                type="button"
+                onClick={() => setReviewFamilyFilter(fam.id)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap shrink-0 cursor-pointer border ${
+                  reviewFamilyFilter === fam.id
+                    ? 'bg-amber-800 text-white border-amber-800'
+                    : 'bg-white text-stone-700 border-stone-200 hover:border-amber-400'
+                }`}
+              >
+                {fam.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Add Positive Review Form */}
+          {showReviewComposer && (
+            <form
+              onSubmit={handleSubmitFormulaReview}
+              className="rounded-2xl border border-amber-500/35 bg-[#fffdf8] p-5 sm:p-6 space-y-4 shadow-sm"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <label className="block space-y-1">
+                  <span className="text-xs font-bold text-stone-700">{L('reviews_select_formula')}</span>
+                  <select
+                    value={draftFormulaId}
+                    onChange={(e) => setDraftFormulaId(e.target.value)}
+                    className="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600"
+                  >
+                    {availableFormulaOptions.map((opt) => (
+                      <option key={opt.id} value={opt.id}>
+                        {isRtl ? opt.titleAr : opt.titleEn} ({opt.concentrationLabel})
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="block space-y-1">
+                  <span className="text-xs font-bold text-stone-700">{L('reviews_your_name')}</span>
+                  <input
+                    type="text"
+                    value={draftReviewerName}
+                    onChange={(e) => setDraftReviewerName(e.target.value)}
+                    placeholder={isRtl ? 'مثال: م. سارة الحسن' : 'e.g. Eng. Sara'}
+                    className="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600"
+                  />
+                </label>
+
+                <div className="space-y-1">
+                  <span className="block text-xs font-bold text-stone-700">{L('reviews_avg_lbl')}</span>
+                  <div className="flex items-center gap-2">
+                    {([5, 4] as const).map((stars) => (
+                      <button
+                        key={stars}
+                        type="button"
+                        onClick={() => setDraftRating(stars)}
+                        className={`flex items-center gap-1 px-3 py-2 rounded-xl border text-xs font-bold cursor-pointer ${
+                          draftRating === stars
+                            ? 'border-amber-600 bg-amber-50 text-amber-900'
+                            : 'border-stone-200 bg-white text-stone-600'
+                        }`}
+                      >
+                        <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                        <span className="font-mono tabular-nums">{stars}.0</span>
+                      </button>
+                    ))}
+                    <label className="flex items-center gap-1.5 ms-auto text-xs text-stone-700">
+                      <input
+                        type="number"
+                        min={2}
+                        max={36}
+                        value={draftLongevity}
+                        onChange={(e) => setDraftLongevity(Number(e.target.value) || 8)}
+                        className="w-16 rounded-xl border border-stone-200 bg-white px-2 py-1.5 text-xs font-mono tabular-nums text-stone-900"
+                      />
+                      <span>{L('reviews_longevity_unit')}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                value={draftHeadline}
+                onChange={(e) => setDraftHeadline(e.target.value)}
+                placeholder={L('reviews_headline_ph')}
+                className="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600"
+              />
+
+              <textarea
+                rows={3}
+                required
+                value={draftComment}
+                onChange={(e) => setDraftComment(e.target.value)}
+                placeholder={L('reviews_comment_ph')}
+                className="w-full rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs text-stone-900 outline-none focus:border-amber-600"
+              />
+
+              <div className="flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShowReviewComposer(false)}
+                  className="px-4 py-2 rounded-xl border border-stone-200 bg-white text-xs font-semibold text-stone-600 hover:bg-stone-50 cursor-pointer"
+                >
+                  {L('reviews_cancel_btn')}
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold cursor-pointer"
+                >
+                  {L('reviews_submit_btn')}
+                </button>
+              </div>
+            </form>
+          )}
+
+          {/* Positive Reviews Grid with soft-pulse-hover */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {visibleFormulaReviews.map((rev) => {
+              const hasVoted = votedReviewIds.includes(rev.id);
+              return (
+                <article
+                  key={rev.id}
+                  className="soft-pulse-hover group relative flex flex-col justify-between bg-gradient-to-b from-[#fffdf8] via-white to-[#f8f3ea] rounded-2xl border border-amber-900/15 shadow-[0_8px_26px_-14px_rgba(68,42,16,0.16)] transition-all duration-300 hover:shadow-[0_18px_38px_-14px_rgba(180,83,9,0.24)] hover:border-amber-600/50 overflow-hidden"
+                >
+                  {/* Top Gilded Accent Ribbon */}
+                  <div
+                    aria-hidden="true"
+                    className="h-[3px] w-full shrink-0 opacity-85 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-amber-600 via-amber-400 to-amber-700"
+                  />
+
+                  {/* Inner Coffer Double-Hairline Frame */}
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-[6px] rounded-[12px] border border-amber-600/15 group-hover:border-amber-500/35 transition-colors"
+                  />
+
+                  <div className="relative z-10 p-5 space-y-3">
+                    {/* Star Score + Clean Unboxed Metadata */}
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-0.5" aria-label={`${rev.rating} / 5`}>
+                        {[1, 2, 3, 4, 5].map((s) => (
+                          <Star
+                            key={s}
+                            className={`w-4 h-4 ${
+                              s <= rev.rating ? 'text-amber-500 fill-amber-500' : 'text-stone-300'
+                            }`}
+                          />
+                        ))}
+                        <span className="ms-1.5 text-xs font-mono tabular-nums font-bold text-amber-950">
+                          {rev.rating.toFixed(1)}
+                        </span>
+                      </div>
+
+                      <div className="text-[11px] font-mono tabular-nums text-stone-500">
+                        <span>{rev.concentrationLabel}</span>
+                        <span className="mx-1" aria-hidden="true">·</span>
+                        <span>{rev.date}</span>
+                      </div>
+                    </div>
+
+                    {/* Formula Title & Review Headline */}
+                    <div className="space-y-1">
+                      <p className="text-[11px] font-bold text-amber-800 truncate">
+                        {isRtl ? rev.formulaTitleAr : rev.formulaTitleEn}
+                      </p>
+                      <h4 className="text-sm sm:text-base font-bold font-serif-luxury text-stone-950 leading-snug">
+                        {isRtl ? rev.headlineAr : rev.headlineEn}
+                      </h4>
+                    </div>
+
+                    {/* Scent Blotter Evaluation Pane */}
+                    <div className="rounded-xl p-3.5 border border-stone-200/90 border-s-2 border-s-amber-600 bg-gradient-to-br from-[#faf6ee] via-white/95 to-amber-50/35 space-y-2">
+                      <p className="text-xs text-stone-700 leading-relaxed">
+                        {isRtl ? rev.commentAr : rev.commentEn}
+                      </p>
+                      <div className="pt-2 border-t border-amber-900/10 flex items-center justify-between text-[11px] text-stone-600 font-mono tabular-nums">
+                        <span>{rev.longevityHours} {L('reviews_longevity_unit')}</span>
+                        <span aria-hidden="true">·</span>
+                        <span className="truncate">{isRtl ? rev.sillageAr : rev.sillageEn}</span>
+                      </div>
+                    </div>
+
+                    {/* Reviewer Attribution */}
+                    <div className="text-xs text-stone-600 flex items-center justify-between gap-2 pt-1">
+                      <span className="font-bold text-stone-900 truncate">
+                        {isRtl ? rev.reviewerNameAr : rev.reviewerNameEn}
+                      </span>
+                      <span className="text-[11px] text-stone-500 truncate">
+                        {isRtl ? rev.reviewerRoleAr : rev.reviewerRoleEn}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Card Footer Actions */}
+                  <div className="relative z-10 px-5 py-3 flex items-center justify-between border-t border-amber-900/10 bg-[#faf5ec]/75">
+                    <button
+                      type="button"
+                      onClick={() => handleVoteFormulaHelpful(rev.id)}
+                      disabled={hasVoted}
+                      className={`inline-flex items-center gap-1.5 text-xs font-semibold transition-colors cursor-pointer disabled:cursor-default ${
+                        hasVoted ? 'text-emerald-700' : 'text-stone-600 hover:text-amber-900'
+                      }`}
+                    >
+                      <ThumbsUp className={`w-3.5 h-3.5 ${hasVoted ? 'fill-emerald-600 text-emerald-600' : ''}`} />
+                      <span>{L('reviews_helpful_btn')}</span>
+                      <span className="font-mono tabular-nums">({rev.helpfulCount})</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => onNavigate(rev.sourceTab)}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 cursor-pointer"
+                    >
+                      <span>{L('reviews_open_formula')}</span>
+                      {isRtl ? <ArrowLeft className="w-3.5 h-3.5" /> : <ArrowRight className="w-3.5 h-3.5" />}
+                    </button>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* ===================== ZONE 4: THE 12 DYNAMIC PORTAL WINDOWS ===================== */}
-      {portalViewMode !== 'ar' && (
+      {selectedCategory !== 'perfume_reviews' && portalViewMode !== 'ar' && (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredPortals.map((portal) => {
           const currentNewsIdx = portalIndexes[portal.id] || 0;
           const rawNews = portal.news[currentNewsIdx] || portal.news[0];
           const currentNews = localizePortalNews(portal.id, rawNews) || rawNews;
           const statsBadge = localizedStatsBadge(portal.id, portal.statsBadge);
+          const accordPalette = PORTAL_AR_PALETTE[portal.id] || { hex: 0xf59e0b, css: '#d97706' };
           
           // Current changing icon index
           const iconIdx = currentNewsIdx % portal.icons.length;
@@ -1422,12 +1811,38 @@ export const HomeHub: React.FC<HomeHubProps> = ({
             <div
               key={portal.id}
               onClick={() => handleCardClick(portal)}
-              className={`group relative flex flex-col justify-between bg-white rounded-2xl border border-stone-200/90 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 overflow-hidden cursor-pointer ${portal.borderGlow}`}
+              className={`soft-pulse-hover group relative flex flex-col justify-between bg-gradient-to-b from-[#fffdf8] via-white to-[#f8f3ea] rounded-2xl border border-amber-900/15 shadow-[0_8px_26px_-14px_rgba(68,42,16,0.16)] transition-all duration-300 hover:shadow-[0_18px_38px_-14px_rgba(180,83,9,0.24)] hover:border-amber-600/50 overflow-hidden cursor-pointer ${portal.borderGlow}`}
             >
-              
+              {/* Top Signature Scent Accord Crest Bar */}
+              <div
+                aria-hidden="true"
+                className="h-[3px] w-full shrink-0 opacity-85 group-hover:opacity-100 transition-opacity"
+                style={{
+                  background: `linear-gradient(90deg, ${accordPalette.css}, #d97706 50%, ${accordPalette.css})`,
+                }}
+              />
+
+              {/* Inner Coffer Double-Hairline Border */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-[6px] rounded-[12px] border border-amber-600/15 group-hover:border-amber-500/35 transition-colors"
+              />
+
+              {/* Subtle Engraved Flacon & Damask Arch Watermark */}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 120 140"
+                className="pointer-events-none absolute -top-2 ltr:right-2 rtl:left-2 w-24 h-28 text-amber-800 opacity-[0.045] group-hover:opacity-[0.085] transition-opacity duration-500"
+                fill="none"
+              >
+                <rect x="46" y="10" width="28" height="16" rx="3" stroke="currentColor" strokeWidth="1.6" />
+                <path d="M52 26h16v10c0 6 18 10 18 24v56a12 12 0 0 1-12 12H46a12 12 0 0 1-12-12V60c0-14 18-18 18-24V26z" stroke="currentColor" strokeWidth="1.6" />
+                <circle cx="60" cy="84" r="16" stroke="currentColor" strokeWidth="1.1" strokeDasharray="3 3" />
+              </svg>
+
               {/* Top Card Header */}
-              <div className="p-5 pb-3">
-                <div className="flex items-start justify-between gap-3 mb-3">
+              <div className="relative z-10 p-5 pb-3">
+                <div className="flex items-start justify-between gap-3 mb-3.5">
                   
                   {/* Bespoke Luxury Medallion Emblem + Dynamic Orbital Sub-Badge */}
                   <div className="relative">
@@ -1440,7 +1855,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
                     {/* Rotating Micro-Emblem Orbital Crest */}
                     <span
-                      className={`absolute -bottom-1 -right-1 w-6 h-6 rounded-lg bg-stone-900 border border-amber-400/60 shadow-md flex items-center justify-center transition-transform duration-500 ${
+                      className={`absolute -bottom-1 -right-1 w-6 h-6 rounded-lg bg-stone-950 border border-amber-400/70 shadow-md flex items-center justify-center transition-transform duration-500 ${
                         isAnimating ? 'rotate-45 scale-110' : 'rotate-0 scale-100'
                       }`}
                     >
@@ -1448,13 +1863,13 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                     </span>
                   </div>
 
-                  {/* Top Stats Tag & Portal Number */}
-                  <div className="flex flex-col items-end gap-1">
-                    <span className="text-[10px] font-bold text-stone-500 bg-stone-100 px-2 py-0.5 rounded-md border border-stone-200">
+                  {/* Clean Unboxed Atelier Metadata */}
+                  <div className="flex flex-col items-end gap-1 text-end">
+                    <span className="text-[11px] font-mono tabular-nums font-bold text-stone-700 tracking-tight">
                       {statsBadge}
                     </span>
-                    <span className="text-[10px] text-amber-700 font-semibold flex items-center gap-1">
-                      <Radio className="w-2.5 h-2.5 text-emerald-500" />
+                    <span className="text-[10px] text-amber-800/90 font-semibold flex items-center gap-1">
+                      <Radio className="w-2.5 h-2.5 text-emerald-600" />
                       <span>{L('live_sync')}</span>
                     </span>
                   </div>
@@ -1462,35 +1877,36 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
                 {/* Portal Title & Subtitle */}
                 <div>
-                  <h3 className="text-base sm:text-lg font-bold font-serif-luxury text-stone-900 group-hover:text-amber-800 transition-colors">
+                  <h3 className="text-base sm:text-lg font-bold font-serif-luxury text-stone-950 group-hover:text-amber-900 transition-colors">
                     {localizedPortalTitle(portal.id, portal.titleAr, portal.titleEn)}
                   </h3>
-                  <p className="text-[11px] text-stone-500 line-clamp-1 mt-0.5 font-light">
+                  <p className="text-[11px] text-stone-600 line-clamp-1 mt-0.5 font-normal">
                     {localizedPortalSubtitle(portal.id, portal.subtitleAr)}
                   </p>
                 </div>
               </div>
 
-              {/* Dynamic News Window (نافذة المحتوى المتجدد كأنه خبر مستمر عن المنفذ) */}
-              <div className="px-5 py-3">
+              {/* Dynamic Artisan Scent-Blotter Dispatch Pane */}
+              <div className="relative z-10 px-5 py-2.5">
                 <div
-                  className={`rounded-xl p-3.5 border transition-all duration-300 relative overflow-hidden bg-stone-50/90 border-stone-200/90 group-hover:border-amber-300/80 group-hover:bg-amber-50/40 ${
-                    isAnimating ? 'ring-2 ring-amber-400/40 bg-amber-50/70' : ''
+                  className={`rounded-xl p-3.5 border border-stone-200/90 border-s-2 transition-all duration-300 relative overflow-hidden bg-gradient-to-br from-[#faf6ee] via-white/95 to-amber-50/35 group-hover:border-amber-400/70 ${
+                    isAnimating ? 'ring-2 ring-amber-400/35 bg-amber-50/70' : ''
                   }`}
+                  style={{ borderInlineStartColor: accordPalette.css }}
                 >
                   
-                  {/* Subtle Top Indicator: News Badge & Timing */}
+                  {/* Unboxed Journal Metadata Row */}
                   <div className="flex items-center justify-between gap-2 mb-2 text-[10px]">
-                    <span className="font-bold text-amber-800 flex items-center gap-1">
-                      <Flame className="w-3 h-3 text-amber-600" />
-                      <span>{currentNews.badge}</span>
+                    <span className="font-bold text-amber-900 flex items-center gap-1 min-w-0 truncate">
+                      <Flame className="w-3 h-3 text-amber-600 shrink-0" />
+                      <span className="truncate">{currentNews.badge}</span>
                     </span>
-                    <span className="text-stone-400 font-medium">{currentNews.timestamp}</span>
+                    <span className="text-stone-500 font-mono tabular-nums shrink-0">{currentNews.timestamp}</span>
                   </div>
 
                   {/* News Title & Detailed Content */}
-                  <div className="space-y-1.5 min-h-[72px]">
-                    <h4 className="text-xs font-bold text-stone-900 leading-snug line-clamp-2">
+                  <div className="space-y-1.5 min-h-[70px]">
+                    <h4 className="text-xs font-bold text-stone-950 leading-snug line-clamp-2">
                       {currentNews.title}
                     </h4>
                     <p className="text-[11px] text-stone-600 leading-relaxed line-clamp-2 font-normal">
@@ -1498,31 +1914,34 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                     </p>
                   </div>
 
-                  {/* News Metric Kicker & Navigation Controls */}
-                  <div className="pt-2.5 mt-2 border-t border-stone-200/70 flex items-center justify-between text-[10px]">
-                    <span className="font-semibold text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded-md border border-emerald-300/50">
+                  {/* Metric Readout & Tactile Brass Steppers */}
+                  <div className="pt-2.5 mt-2 border-t border-amber-900/10 flex items-center justify-between gap-2 text-[10px]">
+                    <span className="font-mono tabular-nums font-semibold text-emerald-900 truncate">
                       {currentNews.metric}
                     </span>
 
-                    {/* Manual Prev / Next arrows to flick through news inside window */}
-                    <div className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
+                    {/* Manual Prev / Next arrows */}
+                    <div className="flex items-center gap-1 shrink-0" onClick={(e) => e.stopPropagation()}>
                       <button
+                        type="button"
                         onClick={(e) => handlePortalStep(portal.id, 'prev', e)}
-                        className="w-5 h-5 rounded-md bg-stone-200/70 hover:bg-stone-300 text-stone-700 flex items-center justify-center transition-colors cursor-pointer"
+                        className="w-6 h-6 rounded-md bg-white border border-stone-200 hover:border-amber-400 hover:bg-amber-50 text-stone-700 flex items-center justify-center transition-colors cursor-pointer"
                         title={L('prev_update')}
+                        aria-label={L('prev_update')}
                       >
                         {isRtl ? <ChevronRight className="w-3 h-3" /> : <ChevronLeft className="w-3 h-3" />}
                       </button>
 
-                      {/* Dots indicator for current news */}
-                      <span className="text-[9px] text-stone-400 font-mono px-1">
+                      <span className="text-[10px] text-stone-500 font-mono tabular-nums px-1">
                         {currentNewsIdx + 1}/{portal.news.length}
                       </span>
 
                       <button
+                        type="button"
                         onClick={(e) => handlePortalStep(portal.id, 'next', e)}
-                        className="w-5 h-5 rounded-md bg-stone-200/70 hover:bg-stone-300 text-stone-700 flex items-center justify-center transition-colors cursor-pointer"
+                        className="w-6 h-6 rounded-md bg-white border border-stone-200 hover:border-amber-400 hover:bg-amber-50 text-stone-700 flex items-center justify-center transition-colors cursor-pointer"
                         title={L('next_update')}
+                        aria-label={L('next_update')}
                       >
                         {isRtl ? <ChevronLeft className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
                       </button>
@@ -1531,13 +1950,13 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                 </div>
               </div>
 
-              {/* Bottom Action Footer */}
-              <div className="p-5 pt-2 flex items-center justify-between border-t border-stone-100 bg-stone-50/50 mt-1">
-                <span className="text-[11px] font-semibold text-stone-500 group-hover:text-amber-800 transition-colors flex items-center gap-1">
-                  <span>{currentNews.actionHint}</span>
+              {/* Bottom Atelier Footer Strip */}
+              <div className="relative z-10 px-5 py-3.5 flex items-center justify-between border-t border-amber-900/10 bg-[#faf5ec]/75 mt-1">
+                <span className="text-[11px] font-semibold text-stone-600 group-hover:text-amber-900 transition-colors truncate max-w-[60%]">
+                  {currentNews.actionHint}
                 </span>
 
-                <div className="flex items-center gap-1.5 text-xs font-bold text-amber-700 group-hover:text-amber-900 group-hover:translate-x-[-3px] transition-transform">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-amber-800 group-hover:text-amber-950 transition-transform rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 shrink-0">
                   <span>{L('enter_portal')}</span>
                   {isRtl ? <ArrowLeft className="w-3.5 h-3.5" /> : <ArrowRight className="w-3.5 h-3.5" />}
                 </div>

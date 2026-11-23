@@ -48,6 +48,16 @@ import {
   Plus,
   Loader2,
   Lightbulb,
+  MapPin,
+  Pin,
+  Calendar,
+  Film,
+  Heart,
+  CornerDownRight,
+  Copy,
+  Repeat2,
+  Clock,
+  Tag,
 } from 'lucide-react';
 import {
   cx,
@@ -57,6 +67,7 @@ import {
   type AiPostAnalysis,
   type AiReplyAssistResult,
   type Comment,
+  type CommunityEvent,
   type Notification,
   type Post,
   type PublicUser,
@@ -67,6 +78,7 @@ import { Avatar, Btn, Card, Empty, Sheet, Spinner, errorText, inputClass, timeAg
 import { StoriesBar } from './StoriesBar';
 import { GeneralNewsPeriodic } from './GeneralNewsPeriodic';
 import { ImageCropperModal } from './ImageCropperModal';
+import { CURATED_LOCATIONS, POST_BG_STYLES, resolveSceneSrc } from './scenes';
 
 import labHarvestImg from '../assets/images/botanical_harvest_raw_1791968832488.jpg';
 import labCompoundingImg from '../assets/images/perfume_lab_compounding_1791692420116.jpg';
@@ -152,7 +164,7 @@ function smartPostScore(p: Post): number {
 
 export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props) {
   const t = tx(lang);
-  const [scope, setScope] = useState<'all' | 'smart' | 'friends' | 'recipes' | 'polls' | 'trending' | 'bookmarks' | 'general-news'>('all');
+  const [scope, setScope] = useState<'all' | 'smart' | 'friends' | 'recipes' | 'polls' | 'trending' | 'bookmarks' | 'memories' | 'media' | 'general-news'>('all');
   const [circle, setCircle] = useState<'all' | 'oud' | 'floral' | 'lab' | 'niche'>('all');
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
@@ -165,7 +177,16 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
     if (scope === 'general-news') return;
     setLoading(true);
     try {
-      const queryScope = scope === 'friends' ? 'friends' : scope === 'bookmarks' ? 'bookmarks' : 'all';
+      const queryScope =
+        scope === 'friends'
+          ? 'friends'
+          : scope === 'bookmarks'
+          ? 'bookmarks'
+          : scope === 'memories'
+          ? 'memories'
+          : scope === 'media'
+          ? 'media'
+          : 'all';
       const list = await cx<Post[]>(
         `/community/feed?scope=${queryScope}${before ? `&before=${encodeURIComponent(before)}` : ''}`
       );
@@ -191,12 +212,15 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
       list = list.filter((p) => Boolean(extractPollBlock(p.body).poll));
     } else if (scope === 'bookmarks') {
       list = list.filter((p) => Boolean(p.bookmarked));
+    } else if (scope === 'media') {
+      list = list.filter((p) => Boolean(p.image));
     } else if (scope === 'trending') {
       list.sort(
         (a, b) =>
           Object.values(b.reactions).reduce((s, n) => s + n, 0) +
-          b.comments -
-          (Object.values(a.reactions).reduce((s, n) => s + n, 0) + a.comments)
+          b.comments +
+          (b.shareCount || 0) -
+          (Object.values(a.reactions).reduce((s, n) => s + n, 0) + a.comments + (a.shareCount || 0))
       );
     } else if (scope === 'smart') {
       list.sort((a, b) => smartPostScore(b) - smartPostScore(a));
@@ -261,6 +285,39 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
 
           <button
             type="button"
+            onClick={() => go('groups')}
+            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer"
+          >
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-sky-100 text-sky-800 shrink-0">
+              <Users className="h-4 w-4" />
+            </span>
+            <span className="flex-1 text-start">{t('المجموعات العطرية', 'Groups')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => go('events')}
+            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer"
+          >
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-rose-100 text-rose-700 shrink-0">
+              <Calendar className="h-4 w-4" />
+            </span>
+            <span className="flex-1 text-start">{t('الفعاليات والورش', 'Events')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => go('watch')}
+            className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer"
+          >
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-100 text-indigo-800 shrink-0">
+              <Film className="h-4 w-4" />
+            </span>
+            <span className="flex-1 text-start">{t('فيديو وريلز المعمل (Watch)', 'Watch & Reels')}</span>
+          </button>
+
+          <button
+            type="button"
             onClick={() => go('general-news')}
             className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-stone-800 hover:bg-stone-50 transition cursor-pointer"
           >
@@ -293,6 +350,19 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
               <MessageCircle className="h-4 w-4" />
             </span>
             <span className="flex-1 text-start">{t('ماسنجر شام', 'Messenger')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setScope('memories')}
+            className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold cursor-pointer transition ${
+              scope === 'memories' ? 'bg-stone-900 text-amber-300' : 'text-stone-700 hover:bg-stone-50'
+            }`}
+          >
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-100 text-stone-700 shrink-0">
+              <Clock className="h-4 w-4" />
+            </span>
+            <span className="flex-1 text-start">{t('ذكريات شام', 'Memories')}</span>
           </button>
 
           <button
@@ -411,6 +481,7 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
           lang={lang}
           currentUser={me || undefined}
           onOpenMessenger={onOpenMessenger}
+          toast={toast}
         />
 
         <Composer
@@ -429,6 +500,8 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
             { id: 'recipes', label: t('تركيبات المعمل', 'Formulas') },
             { id: 'polls', label: t('استطلاعات الرأي', 'Polls') },
             { id: 'friends', label: t('الأصدقاء', 'Friends') },
+            { id: 'media', label: t('الصور', 'Photos') },
+            { id: 'memories', label: t('الذكريات', 'Memories') },
             { id: 'bookmarks', label: t('المحفوظات', 'Saved') },
             { id: 'trending', label: t('الأكثر تفاعلاً', 'Trending') },
             { id: 'general-news', label: t('أخبار العامة', 'General News') },
@@ -482,6 +555,7 @@ export function SocialFeed({ lang, session, go, toast, onOpenMessenger }: Props)
                 go={go}
                 onChange={replace}
                 onRemove={remove}
+                onCreated={(np) => setPosts((list) => [np, ...list])}
                 toast={toast}
                 onOpenMessenger={onOpenMessenger}
               />
@@ -551,18 +625,22 @@ export const CSS_FILTER_MAP: Record<CssFilterType, string> = {
   bright: 'brightness(120%) contrast(108%) saturate(110%)',
 };
 
-function Composer({
+export function Composer({
   lang,
   session,
   onPosted,
   toast,
   go,
+  groupId,
+  groupName,
 }: {
   lang: Lang;
   session: SessionState;
   onPosted: (p: Post) => void;
   toast: (s: string) => void;
   go: Go;
+  groupId?: string;
+  groupName?: string;
 }) {
   const t = tx(lang);
   const me = session.me;
@@ -585,6 +663,15 @@ function Composer({
   const [busy, setBusy] = useState(false);
   const file = useRef<HTMLInputElement>(null);
 
+  // Facebook Composer Extras: Check-in Location, Tag Friends, Colored Status Theme
+  const [location, setLocation] = useState('');
+  const [showLocationPicker, setShowLocationPicker] = useState(false);
+  const [bgStyle, setBgStyle] = useState<(typeof POST_BG_STYLES)[number]['id']>('');
+  const [showBgPicker, setShowBgPicker] = useState(false);
+  const [taggedFriends, setTaggedFriends] = useState<PublicUser[]>([]);
+  const [showTagPicker, setShowTagPicker] = useState(false);
+  const [friendCandidates, setFriendCandidates] = useState<PublicUser[]>([]);
+
   // AI Studio & Poll Builder state
   const [aiTone, setAiTone] = useState<'luxury' | 'scientific' | 'warm'>('luxury');
   const [aiBusyMode, setAiBusyMode] = useState<string | null>(null);
@@ -592,6 +679,13 @@ function Composer({
   const [showPollBuilder, setShowPollBuilder] = useState(false);
   const [pollQuestion, setPollQuestion] = useState('');
   const [pollOptions, setPollOptions] = useState<string[]>(['', '']);
+
+  useEffect(() => {
+    if (!showTagPicker || !me || friendCandidates.length > 0) return;
+    cx<{ friends: PublicUser[] }>('/community/friends')
+      .then((res) => setFriendCandidates(res.friends || []))
+      .catch(() => {});
+  }, [showTagPicker, me, friendCandidates.length]);
 
   useEffect(() => {
     const applyPrefill = () => {
@@ -795,7 +889,16 @@ function Composer({
       }
       const finalImage = image ? await bakeImageEdits(image) : null;
       const post = await cx<Post>('/community/posts', {
-        body: { body: fullBody, image: finalImage, visibility, recipeId: recipe?.id },
+        body: {
+          body: fullBody,
+          image: finalImage,
+          visibility,
+          recipeId: recipe?.id,
+          groupId: groupId || undefined,
+          location: location.trim() || undefined,
+          bgStyle: !finalImage && !recipe && !hasValidPoll ? bgStyle : '',
+          taggedUsers: taggedFriends.map((u) => u.id),
+        },
       });
       onPosted(post);
       setBody('');
@@ -807,6 +910,12 @@ function Composer({
       setRotation(0);
       setRecipe(null);
       setFeeling(null);
+      setLocation('');
+      setBgStyle('');
+      setTaggedFriends([]);
+      setShowLocationPicker(false);
+      setShowBgPicker(false);
+      setShowTagPicker(false);
       setShowPollBuilder(false);
       setPollQuestion('');
       setPollOptions(['', '']);
@@ -857,6 +966,11 @@ function Composer({
       <div className="flex gap-3 items-start">
         <Avatar user={me} size={44} ring />
         <div className="flex-1 min-w-0">
+          {groupName && (
+            <p className="mb-1.5 text-[11px] font-bold text-amber-800">
+              {t('النشر داخل مجموعة:', 'Posting in group:')} {groupName}
+            </p>
+          )}
           <textarea
             value={body}
             onChange={(e) => setBody(e.target.value)}
@@ -867,19 +981,41 @@ function Composer({
               `بم تفكّر اليوم يا ${me.name.split(' ')[0]}؟ شارك سر تركيبة، تجربة تعتيق، أو صورة معملك…`,
               `What's on your mind, ${me.name.split(' ')[0]}? Share a formula, maceration tip or lab photo…`
             )}
-            className="w-full resize-none rounded-2xl bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none focus:bg-white focus:ring-2 focus:ring-amber-200"
+            className={`w-full resize-none rounded-2xl px-4 py-3 text-sm outline-none transition ${
+              bgStyle && !image && !recipe
+                ? `${POST_BG_STYLES.find((b) => b.id === bgStyle)?.cardClass || ''} min-h-[110px] text-center font-bold placeholder:text-white/75 focus:ring-2 focus:ring-amber-300`
+                : 'bg-stone-50 text-stone-900 focus:bg-white focus:ring-2 focus:ring-amber-200'
+            }`}
           />
 
-          {feeling && (
-            <div className="mt-2 flex items-center justify-between rounded-xl bg-amber-50 px-3 py-1.5 text-xs text-amber-900 font-semibold">
-              <span>{feeling}</span>
-              <button
-                type="button"
-                onClick={() => setFeeling(null)}
-                className="text-stone-400 hover:text-stone-700 cursor-pointer"
-              >
-                <X className="h-3.5 w-3.5" />
-              </button>
+          {(feeling || location || taggedFriends.length > 0) && (
+            <div className="mt-2 flex flex-wrap items-center gap-2 rounded-xl bg-amber-50 px-3 py-1.5 text-xs text-amber-950 font-semibold">
+              {feeling && (
+                <span className="inline-flex items-center gap-1">
+                  {feeling}
+                  <button type="button" onClick={() => setFeeling(null)} className="text-stone-400 hover:text-stone-700 cursor-pointer">
+                    <X className="h-3 w-3" />
+                  </button>
+                </span>
+              )}
+              {location && (
+                <span className="inline-flex items-center gap-1 text-rose-800">
+                  <MapPin className="h-3 w-3" />
+                  {location}
+                  <button type="button" onClick={() => setLocation('')} className="text-stone-400 hover:text-stone-700 cursor-pointer">
+                    <X className="h-3 w-3" />
+                  </button>
+                </span>
+              )}
+              {taggedFriends.length > 0 && (
+                <span className="inline-flex items-center gap-1 text-sky-900">
+                  <Tag className="h-3 w-3" />
+                  {t('مع', 'with')} {taggedFriends.map((f) => f.name.split(' ')[0]).join('، ')}
+                  <button type="button" onClick={() => setTaggedFriends([])} className="text-stone-400 hover:text-stone-700 cursor-pointer">
+                    <X className="h-3 w-3" />
+                  </button>
+                </span>
+              )}
             </div>
           )}
         </div>
@@ -1308,8 +1444,104 @@ function Composer({
         </div>
       )}
 
+      {/* Check-in Location Drawer */}
+      {showLocationPicker && (
+        <div className="mt-3 space-y-2 border-t border-stone-100 pt-3">
+          <div className="flex items-center justify-between text-xs font-bold text-stone-800">
+            <span>{t('تسجيل الموقع أو المعمل (Check-in)', 'Check-in Location')}</span>
+            <button type="button" onClick={() => setShowLocationPicker(false)} className="text-stone-400 hover:text-stone-700 cursor-pointer">
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+          <input
+            type="text"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            placeholder={t('اكتب المدينة أو اسم المعمل…', 'Enter city or atelier…')}
+            className="w-full rounded-xl border border-stone-200 bg-stone-50 px-3 py-1.5 text-xs outline-none focus:border-amber-600 focus:bg-white"
+          />
+          <div className="flex flex-wrap gap-1.5">
+            {CURATED_LOCATIONS.map((loc) => {
+              const label = lang === 'ar' ? loc.ar : loc.en;
+              return (
+                <button
+                  key={loc.en}
+                  type="button"
+                  onClick={() => {
+                    setLocation(label);
+                    setShowLocationPicker(false);
+                  }}
+                  className="rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-[11px] font-semibold text-stone-700 hover:border-amber-500 hover:bg-amber-50 cursor-pointer"
+                >
+                  📍 {label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Tag Friends Drawer */}
+      {showTagPicker && (
+        <div className="mt-3 space-y-2 border-t border-stone-100 pt-3">
+          <div className="flex items-center justify-between text-xs font-bold text-stone-800">
+            <span>{t('الإشارة إلى أصدقاء (Tag Friends)', 'Tag Friends in Post')}</span>
+            <button type="button" onClick={() => setShowTagPicker(false)} className="text-stone-400 hover:text-stone-700 cursor-pointer">
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+          {!friendCandidates.length ? (
+            <p className="text-xs text-stone-500">
+              {t('أضف أصدقاء أولاً لتتمكن من الإشارة إليهم في منشوراتك.', 'Add friends first to tag them in your posts.')}
+            </p>
+          ) : (
+            <div className="flex flex-wrap gap-1.5">
+              {friendCandidates.map((fr) => {
+                const picked = taggedFriends.some((x) => x.id === fr.id);
+                return (
+                  <button
+                    key={fr.id}
+                    type="button"
+                    onClick={() =>
+                      setTaggedFriends((prev) =>
+                        picked ? prev.filter((x) => x.id !== fr.id) : [...prev, fr].slice(0, 8)
+                      )
+                    }
+                    className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-bold transition cursor-pointer ${
+                      picked ? 'border-amber-600 bg-amber-100 text-amber-950' : 'border-stone-200 bg-white text-stone-700 hover:bg-stone-50'
+                    }`}
+                  >
+                    <Avatar user={fr} size={18} />
+                    <span>{fr.name.split(' ')[0]}</span>
+                    {picked && <Check className="h-3 w-3 text-amber-700" />}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Colored Background Card Picker */}
+      {showBgPicker && !image && !recipe && (
+        <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-stone-100 pt-3">
+          <span className="text-[11px] font-bold text-stone-700">{t('خلفية المنشور النصي:', 'Status Card Color:')}</span>
+          {POST_BG_STYLES.map((st) => (
+            <button
+              key={st.id || 'default'}
+              type="button"
+              title={lang === 'ar' ? st.ar : st.en}
+              onClick={() => setBgStyle(st.id)}
+              className={`h-7 w-7 rounded-lg border-2 transition cursor-pointer ${st.swatchClass} ${
+                bgStyle === st.id ? 'ring-2 ring-amber-600 scale-110' : 'opacity-80 hover:opacity-100'
+              }`}
+            />
+          ))}
+        </div>
+      )}
+
       {/* Composer Action Toolbar */}
-      <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-stone-100 pt-3">
+      <div className="mt-3 flex flex-wrap items-center gap-1.5 border-t border-stone-100 pt-3">
         <input
           ref={file}
           type="file"
@@ -1329,7 +1561,7 @@ function Composer({
           className={image ? 'text-emerald-700 bg-emerald-50 border border-emerald-200' : ''}
         >
           <ImagePlus className="h-4 w-4 text-emerald-600" />
-          {image ? t('تغيير الصورة', 'Change Photo') : t('إرفاق صورة', 'Attach Photo')}
+          {image ? t('تغيير الصورة', 'Photo') : t('صورة', 'Photo')}
         </Btn>
 
         <Btn
@@ -1339,7 +1571,7 @@ function Composer({
           className={showSampleGallery ? 'text-amber-800 bg-amber-50' : ''}
         >
           <Camera className="h-4 w-4 text-amber-600" />
-          {t('صور المعمل', 'Lab Photos')}
+          {t('المعمل', 'Lab')}
         </Btn>
 
         <Btn variant="ghost" small onClick={() => setPickRecipe(true)}>
@@ -1364,8 +1596,40 @@ function Composer({
           className={feeling ? 'text-amber-800 bg-amber-50' : ''}
         >
           <Sparkles className="h-4 w-4 text-rose-600" />
-          {t('نوتة اليوم', 'Scent Note')}
+          {t('نوتة', 'Feeling')}
         </Btn>
+
+        <Btn
+          variant="ghost"
+          small
+          onClick={() => setShowLocationPicker((v) => !v)}
+          className={location ? 'text-rose-800 bg-rose-50' : ''}
+        >
+          <MapPin className="h-4 w-4 text-rose-600" />
+          {t('موقع', 'Location')}
+        </Btn>
+
+        <Btn
+          variant="ghost"
+          small
+          onClick={() => setShowTagPicker((v) => !v)}
+          className={taggedFriends.length ? 'text-sky-800 bg-sky-50' : ''}
+        >
+          <Tag className="h-4 w-4 text-sky-600" />
+          {t('إشارة', 'Tag')}
+        </Btn>
+
+        {!image && !recipe && (
+          <Btn
+            variant="ghost"
+            small
+            onClick={() => setShowBgPicker((v) => !v)}
+            className={bgStyle ? 'text-amber-900 bg-amber-50' : ''}
+            title={t('تلوين خلفية المنشور', 'Background color')}
+          >
+            <Palette className="h-4 w-4 text-amber-700" />
+          </Btn>
+        )}
 
         <select
           value={visibility}
@@ -1384,7 +1648,7 @@ function Composer({
           onClick={() => void submit()}
         >
           <Send className="h-3.5 w-3.5" />
-          {t('نشر المنشور', 'Post')}
+          {t('نشر', 'Post')}
         </Btn>
       </div>
 
@@ -1552,6 +1816,7 @@ export function PostCard({
   go,
   onChange,
   onRemove,
+  onCreated,
   toast,
   onOpenMessenger,
 }: {
@@ -1560,6 +1825,7 @@ export function PostCard({
   go: Go;
   onChange: (p: Post) => void;
   onRemove: (id: string) => void;
+  onCreated?: (p: Post) => void;
   toast: (s: string) => void;
   onOpenMessenger?: (userId: string) => void;
 }) {
@@ -1571,6 +1837,11 @@ export function PostCard({
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(post.body);
   const [picker, setPicker] = useState(false);
+  const [shareMenu, setShareMenu] = useState(false);
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [quoteText, setQuoteText] = useState('');
+  const [shareBusy, setShareBusy] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   // AI Olfactory Analysis state
   const [showAnalysis, setShowAnalysis] = useState(false);
@@ -1659,8 +1930,62 @@ export function PostCard({
     }
   };
 
-  const handleShare = () => {
+  const togglePin = async () => {
+    setMenu(false);
+    try {
+      const updated = await cx<Post>(`/community/posts/${post.id}/pin`, { body: {} });
+      onChange(updated);
+      toast(
+        updated.pinned
+          ? t('تم تثبيت المنشور أعلى ملفك الشخصي 📌', 'Post pinned to top of timeline 📌')
+          : t('تم إلغاء تثبيت المنشور', 'Post unpinned')
+      );
+    } catch (e) {
+      toast(errorText(e, lang));
+    }
+  };
+
+  const shareNow = async () => {
+    setShareMenu(false);
+    setShareBusy(true);
+    try {
+      const targetId = post.sharedPost?.id || post.id;
+      const created = await cx<Post>('/community/posts', {
+        body: { body: '', sharedPostId: targetId, visibility: 'public' },
+      });
+      onCreated?.(created);
+      onChange({ ...post, shareCount: (post.shareCount || 0) + 1 });
+      toast(t('تمت مشاركة المنشور على يومياتك 🔄', 'Shared to your timeline 🔄'));
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setShareBusy(false);
+    }
+  };
+
+  const shareWithQuote = async () => {
+    setShareBusy(true);
+    try {
+      const targetId = post.sharedPost?.id || post.id;
+      const created = await cx<Post>('/community/posts', {
+        body: { body: quoteText.trim(), sharedPostId: targetId, visibility: 'public' },
+      });
+      onCreated?.(created);
+      onChange({ ...post, shareCount: (post.shareCount || 0) + 1 });
+      setShowQuoteModal(false);
+      setQuoteText('');
+      toast(t('تم نشر المشاركة مع تعليقك بنجاح ✨', 'Quoted post shared! ✨'));
+    } catch (e) {
+      toast(errorText(e, lang));
+    } finally {
+      setShareBusy(false);
+    }
+  };
+
+  const handleCopyLink = () => {
     navigator.clipboard?.writeText(window.location.href);
+    setShareMenu(false);
+    setMenu(false);
     toast(t('تم نسخ رابط المنشور بنجاح 📋', 'Post link copied! 📋'));
   };
 
@@ -1672,9 +1997,21 @@ export function PostCard({
   const pollTotalVotes = poll
     ? poll.options.reduce((sum, _, idx) => sum + Number(post.pollVotes?.[String(idx)] || 0), 0)
     : 0;
+  const bgTheme =
+    post.bgStyle && !post.image && !post.recipe && !post.sharedPost && !poll && cleanBody
+      ? POST_BG_STYLES.find((b) => b.id === post.bgStyle)
+      : undefined;
 
   return (
     <Card className="overflow-hidden border-stone-200">
+      {/* Pinned Banner */}
+      {post.pinned && (
+        <div className="flex items-center gap-1.5 border-b border-amber-200/70 bg-amber-50/70 px-4 py-1.5 text-[11px] font-bold text-amber-900">
+          <Pin className="h-3 w-3 text-amber-700" />
+          <span>{t('منشور مثبّت أعلى اليوميات', 'Pinned post')}</span>
+        </div>
+      )}
+
       {/* Post Header */}
       <div className="flex items-start gap-3 p-4 pb-2">
         <button
@@ -1693,6 +2030,18 @@ export function PostCard({
             >
               {post.author.name}
             </button>
+            {post.group && (
+              <span className="inline-flex items-center gap-1 text-xs font-semibold text-stone-600">
+                <span>▸</span>
+                <button
+                  type="button"
+                  onClick={() => go(`groups/${post.group!.id}`)}
+                  className="font-bold text-amber-900 hover:underline cursor-pointer"
+                >
+                  {post.group.name}
+                </button>
+              </span>
+            )}
             {post.author.craftLevel === 'master_lab' && (
               <span className="text-[11px] font-bold text-amber-800">
                 · {t('معمل معتمد', 'Master Lab')}
@@ -1701,6 +2050,29 @@ export function PostCard({
             {post.author.merchant && (
               <span className="text-[11px] font-bold text-emerald-800">
                 · {post.author.merchant.storeName}
+              </span>
+            )}
+            {post.taggedUsers && post.taggedUsers.length > 0 && (
+              <span className="text-xs text-stone-500">
+                {t('مع', 'is with')}{' '}
+                {post.taggedUsers.map((tu, i) => (
+                  <span key={tu.id}>
+                    {i > 0 && '، '}
+                    <button
+                      type="button"
+                      onClick={() => go(`u/${tu.handle}`)}
+                      className="font-bold text-stone-800 hover:underline cursor-pointer"
+                    >
+                      {tu.name}
+                    </button>
+                  </span>
+                ))}
+              </span>
+            )}
+            {post.location && (
+              <span className="inline-flex items-center gap-1 text-xs text-stone-500">
+                <MapPin className="h-3 w-3 text-rose-600" />
+                <span className="font-semibold text-stone-700">{post.location}</span>
               </span>
             )}
           </div>
@@ -1756,9 +2128,17 @@ export function PostCard({
               <MoreHorizontal className="h-4.5 w-4.5" />
             </button>
             {menu && (
-              <div className="absolute end-0 z-20 mt-1 w-48 overflow-hidden rounded-2xl border border-stone-200 bg-white text-xs shadow-xl">
+              <div className="absolute end-0 z-20 mt-1 w-56 overflow-hidden rounded-2xl border border-stone-200 bg-white text-xs shadow-xl">
                 {post.mine ? (
                   <>
+                    <button
+                      type="button"
+                      onClick={() => void togglePin()}
+                      className="flex w-full items-center gap-2 px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
+                    >
+                      <Pin className="h-3.5 w-3.5 text-amber-700" />
+                      {post.pinned ? t('إلغاء تثبيت المنشور', 'Unpin post') : t('تثبيت أعلى اليوميات', 'Pin post to top')}
+                    </button>
                     <button
                       type="button"
                       onClick={() => {
@@ -1771,10 +2151,7 @@ export function PostCard({
                     </button>
                     <button
                       type="button"
-                      onClick={() => {
-                        handleShare();
-                        setMenu(false);
-                      }}
+                      onClick={handleCopyLink}
                       className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
                     >
                       {t('نسخ الرابط', 'Copy link')}
@@ -1801,10 +2178,7 @@ export function PostCard({
                   <>
                     <button
                       type="button"
-                      onClick={() => {
-                        handleShare();
-                        setMenu(false);
-                      }}
+                      onClick={handleCopyLink}
                       className="block w-full px-4 py-2.5 text-start hover:bg-stone-50 cursor-pointer font-semibold text-stone-700"
                     >
                       {t('نسخ الرابط', 'Copy link')}
@@ -1846,7 +2220,7 @@ export function PostCard({
         </p>
       )}
 
-      {/* Post Text */}
+      {/* Post Text (supports Colored Facebook Status Backgrounds) */}
       <div className="px-4">
         {editing ? (
           <div className="space-y-2">
@@ -1873,7 +2247,16 @@ export function PostCard({
             </div>
           </div>
         ) : (
-          cleanBody && (
+          cleanBody &&
+          (bgTheme ? (
+            <div
+              className={`mt-1 flex min-h-[160px] items-center justify-center rounded-2xl p-6 text-center shadow-inner ${bgTheme.cardClass}`}
+            >
+              <p className="whitespace-pre-wrap break-words text-lg font-black leading-relaxed sm:text-xl">
+                {cleanBody}
+              </p>
+            </div>
+          ) : (
             <p className="whitespace-pre-wrap break-words text-[14px] leading-relaxed text-stone-800">
               {cleanBody.split(/(#[^\s#]+)/g).map((part, i) =>
                 part.startsWith('#') ? (
@@ -1885,7 +2268,7 @@ export function PostCard({
                 )
               )}
             </p>
-          )
+          ))
         )}
       </div>
 
@@ -2036,9 +2419,58 @@ export function PostCard({
         </div>
       )}
 
-      {/* Attached Image */}
+      {/* Shared / Reposted Quote Card */}
+      {post.sharedPost && (
+        <div className="mx-4 mt-3 overflow-hidden rounded-2xl border border-stone-200 bg-stone-50/70">
+          <div className="flex items-center gap-2.5 border-b border-stone-200/70 bg-white/80 px-3.5 py-2.5">
+            <button
+              type="button"
+              onClick={() => go(`u/${post.sharedPost!.author.handle}`)}
+              className="shrink-0 cursor-pointer"
+            >
+              <Avatar user={post.sharedPost.author} size={32} />
+            </button>
+            <div className="min-w-0 flex-1">
+              <button
+                type="button"
+                onClick={() => go(`u/${post.sharedPost!.author.handle}`)}
+                className="block truncate text-xs font-bold text-stone-900 hover:underline cursor-pointer"
+              >
+                {post.sharedPost.author.name}
+              </button>
+              <p className="text-[10px] text-stone-500">
+                {timeAgo(post.sharedPost.createdAt, lang)}
+                {post.sharedPost.location ? ` · ${post.sharedPost.location}` : ''}
+              </p>
+            </div>
+          </div>
+          {post.sharedPost.body && (
+            <p className="px-3.5 py-2.5 whitespace-pre-wrap text-xs leading-relaxed text-stone-800">
+              {post.sharedPost.body}
+            </p>
+          )}
+          {post.sharedPost.recipe && (
+            <div className="px-3.5 pb-3">
+              <RecipeCard lang={lang} title={post.sharedPost.recipe.title} data={post.sharedPost.recipe.data} />
+            </div>
+          )}
+          {post.sharedPost.image && (
+            <img
+              src={post.sharedPost.image}
+              alt=""
+              loading="lazy"
+              className="max-h-72 w-full object-cover"
+            />
+          )}
+        </div>
+      )}
+
+      {/* Attached Image (opens fullscreen lightbox) */}
       {post.image && (
-        <div className="mt-3 overflow-hidden bg-stone-100">
+        <div
+          onClick={() => setLightboxOpen(true)}
+          className="mt-3 overflow-hidden bg-stone-100 cursor-zoom-in"
+        >
           <img
             src={post.image}
             alt=""
@@ -2048,7 +2480,7 @@ export function PostCard({
         </div>
       )}
 
-      {/* Reactions Summary & Comments Counter */}
+      {/* Reactions Summary & Comments / Shares Counter */}
       <div className="flex items-center justify-between px-4 py-2.5 text-xs text-stone-500 border-b border-stone-100">
         <div className="flex items-center gap-1.5">
           {total > 0 && (
@@ -2068,9 +2500,11 @@ export function PostCard({
               {post.comments} {t('تعليق', 'comments')}
             </button>
           )}
-          <button type="button" onClick={handleShare} className="hover:underline cursor-pointer">
-            {t('مشاركة', 'share')}
-          </button>
+          {(post.shareCount || 0) > 0 && (
+            <span>
+              {post.shareCount} {t('مشاركة', 'shares')}
+            </span>
+          )}
         </div>
       </div>
 
@@ -2120,15 +2554,63 @@ export function PostCard({
           <span>{t('تعليق', 'Comment')}</span>
         </button>
 
-        {/* Share Button */}
-        <button
-          type="button"
-          onClick={handleShare}
-          className="flex items-center justify-center gap-1.5 py-2.5 hover:bg-stone-50 cursor-pointer"
-        >
-          <Share2 className="h-4 w-4" />
-          <span>{t('مشاركة', 'Share')}</span>
-        </button>
+        {/* Facebook Share Menu */}
+        <div className="relative">
+          <button
+            type="button"
+            disabled={shareBusy}
+            onClick={() => setShareMenu((s) => !s)}
+            className="flex w-full items-center justify-center gap-1.5 py-2.5 hover:bg-stone-50 cursor-pointer disabled:opacity-50"
+          >
+            <Share2 className="h-4 w-4" />
+            <span>{t('مشاركة', 'Share')}</span>
+          </button>
+
+          {shareMenu && (
+            <div className="absolute bottom-full end-0 z-30 mb-1 w-60 overflow-hidden rounded-2xl border border-stone-200 bg-white text-xs shadow-2xl">
+              <button
+                type="button"
+                onClick={() => void shareNow()}
+                className="flex w-full items-center gap-2.5 px-4 py-2.5 text-start font-bold text-stone-800 hover:bg-amber-50 cursor-pointer"
+              >
+                <Repeat2 className="h-4 w-4 text-amber-700" />
+                {t('مشاركة الآن على يومياتك', 'Share now to your feed')}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setShareMenu(false);
+                  setShowQuoteModal(true);
+                }}
+                className="flex w-full items-center gap-2.5 px-4 py-2.5 text-start font-semibold text-stone-800 hover:bg-stone-50 cursor-pointer"
+              >
+                <MessageCircle className="h-4 w-4 text-stone-600" />
+                {t('مشاركة مع تعليق (اقتباس)', 'Share with comment')}
+              </button>
+              {onOpenMessenger && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShareMenu(false);
+                    onOpenMessenger(post.author.id);
+                  }}
+                  className="flex w-full items-center gap-2.5 px-4 py-2.5 text-start font-semibold text-stone-800 hover:bg-stone-50 cursor-pointer"
+                >
+                  <Send className="h-4 w-4 text-sky-700" />
+                  {t('إرسال في ماسنجر شام', 'Send in Messenger')}
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className="flex w-full items-center gap-2.5 border-t border-stone-100 px-4 py-2.5 text-start font-semibold text-stone-700 hover:bg-stone-50 cursor-pointer"
+              >
+                <Copy className="h-4 w-4 text-stone-500" />
+                {t('نسخ رابط المنشور', 'Copy post link')}
+              </button>
+            </div>
+          )}
+        </div>
 
         {/* Bookmark Button */}
         <button
@@ -2153,6 +2635,59 @@ export function PostCard({
           prefillComment={commentPrefill}
           onCount={(n) => onChange({ ...post, comments: n })}
         />
+      )}
+
+      {/* Quote Share Modal */}
+      {showQuoteModal && (
+        <Sheet
+          title={t('مشاركة المنشور مع رأيك', 'Share post with your thoughts')}
+          onClose={() => setShowQuoteModal(false)}
+        >
+          <div className="space-y-4">
+            <textarea
+              className={inputClass}
+              rows={3}
+              value={quoteText}
+              onChange={(e) => setQuoteText(e.target.value)}
+              placeholder={t('أضف تعليقك العطري على هذه المشاركة…', 'Say something about this post…')}
+            />
+            <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 text-xs text-stone-700">
+              <p className="font-bold text-stone-900">{post.author.name}</p>
+              <p className="mt-1 line-clamp-3">{cleanBody || post.recipe?.title || t('مشاركة عطرية', 'Fragrance post')}</p>
+            </div>
+            <div className="flex justify-end gap-2">
+              <Btn variant="ghost" onClick={() => setShowQuoteModal(false)}>
+                {t('إلغاء', 'Cancel')}
+              </Btn>
+              <Btn busy={shareBusy} onClick={() => void shareWithQuote()}>
+                <Repeat2 className="h-4 w-4" />
+                {t('نشر المشاركة', 'Share Now')}
+              </Btn>
+            </div>
+          </div>
+        </Sheet>
+      )}
+
+      {/* Photo Lightbox */}
+      {lightboxOpen && post.image && (
+        <div
+          onClick={() => setLightboxOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/92 p-4 backdrop-blur-sm"
+        >
+          <button
+            type="button"
+            onClick={() => setLightboxOpen(false)}
+            className="absolute top-4 end-4 rounded-full bg-white/15 p-2.5 text-white hover:bg-white/25 cursor-pointer"
+          >
+            <X className="h-5 w-5" />
+          </button>
+          <img
+            src={post.image}
+            alt=""
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[90vh] max-w-[94vw] rounded-2xl object-contain shadow-2xl"
+          />
+        </div>
       )}
     </Card>
   );
@@ -2245,6 +2780,7 @@ function Comments({
     [post.id]
   );
   const [body, setBody] = useState(prefillComment || '');
+  const [replyTo, setReplyTo] = useState<{ id: string; name: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [aiReplies, setAiReplies] = useState<string[]>([]);
   const [aiBusy, setAiBusy] = useState(false);
@@ -2277,10 +2813,13 @@ function Comments({
   const add = async () => {
     setBusy(true);
     try {
-      const next = await cx<Comment[]>(`/community/posts/${post.id}/comments`, { body: { body } });
+      const next = await cx<Comment[]>(`/community/posts/${post.id}/comments`, {
+        body: { body, parentId: replyTo?.id },
+      });
       setData(next);
       onCount(next.length);
       setBody('');
+      setReplyTo(null);
     } catch (e) {
       toast(errorText(e, lang));
     } finally {
@@ -2288,10 +2827,23 @@ function Comments({
     }
   };
 
+  const toggleLike = async (commentId: string) => {
+    try {
+      const res = await cx<{ likes: number; likedByMe: boolean }>(`/community/comments/${commentId}/like`, {
+        body: {},
+      });
+      setData((prev) =>
+        (prev || []).map((c) => (c.id === commentId ? { ...c, likes: res.likes, likedByMe: res.likedByMe } : c))
+      );
+    } catch (e) {
+      toast(errorText(e, lang));
+    }
+  };
+
   const del = async (id: string) => {
     try {
       await cx(`/community/comments/${id}`, { method: 'DELETE' });
-      const next = (data || []).filter((c) => c.id !== id);
+      const next = (data || []).filter((c) => c.id !== id && c.parentId !== id);
       setData(next);
       onCount(next.length);
     } catch (e) {
@@ -2299,46 +2851,83 @@ function Comments({
     }
   };
 
+  const allComments = data || [];
+  const rootComments = allComments.filter((c) => !c.parentId);
+  const repliesByParent = new Map<string, Comment[]>();
+  for (const c of allComments) {
+    if (c.parentId) {
+      const arr = repliesByParent.get(c.parentId) || [];
+      arr.push(c);
+      repliesByParent.set(c.parentId, arr);
+    }
+  }
+
+  const renderComment = (c: Comment, isReply = false) => (
+    <div key={c.id} className={`group flex gap-2.5 items-start ${isReply ? 'ms-9 mt-2' : ''}`}>
+      <button
+        type="button"
+        onClick={() => go(`u/${c.author.handle}`)}
+        className="cursor-pointer shrink-0 mt-0.5"
+      >
+        <Avatar user={c.author} size={isReply ? 28 : 34} />
+      </button>
+      <div className="min-w-0 flex-1">
+        <div className="inline-block max-w-full rounded-2xl bg-white border border-stone-200/80 px-3.5 py-2 shadow-2xs">
+          <button
+            type="button"
+            onClick={() => go(`u/${c.author.handle}`)}
+            className="text-xs font-bold text-stone-900 hover:underline cursor-pointer block text-start"
+          >
+            {c.author.name}
+          </button>
+          <p className="whitespace-pre-wrap break-words text-xs leading-relaxed text-stone-800 mt-0.5">
+            {c.body}
+          </p>
+        </div>
+        <div className="mt-1 flex items-center gap-3 px-2 text-[11px] text-stone-500">
+          <span>{timeAgo(c.createdAt, lang)}</span>
+          <button
+            type="button"
+            onClick={() => void toggleLike(c.id)}
+            className={`cursor-pointer font-bold transition ${
+              c.likedByMe ? 'text-amber-800' : 'hover:text-stone-800'
+            }`}
+          >
+            {t('أعجبني', 'Like')}
+            {(c.likes || 0) > 0 && <span className="ms-1 tabular-nums">· ❤️ {c.likes}</span>}
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              setReplyTo({ id: c.parentId || c.id, name: c.author.name })
+            }
+            className="cursor-pointer font-bold hover:text-amber-800"
+          >
+            {t('رد', 'Reply')}
+          </button>
+          {(c.mine || post.mine) && (
+            <button
+              type="button"
+              onClick={() => void del(c.id)}
+              className="hover:text-rose-600 cursor-pointer font-semibold"
+            >
+              {t('حذف', 'Delete')}
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="space-y-3 border-t border-stone-100 bg-[#FBF9F5] p-4">
       {loading ? (
         <Spinner />
       ) : (
-        (data || []).map((c) => (
-          <div key={c.id} className="group flex gap-2.5 items-start">
-            <button
-              type="button"
-              onClick={() => go(`u/${c.author.handle}`)}
-              className="cursor-pointer shrink-0 mt-0.5"
-            >
-              <Avatar user={c.author} size={34} />
-            </button>
-            <div className="min-w-0 flex-1">
-              <div className="inline-block max-w-full rounded-2xl bg-white border border-stone-200/80 px-3.5 py-2 shadow-2xs">
-                <button
-                  type="button"
-                  onClick={() => go(`u/${c.author.handle}`)}
-                  className="text-xs font-bold text-stone-900 hover:underline cursor-pointer block text-start"
-                >
-                  {c.author.name}
-                </button>
-                <p className="whitespace-pre-wrap break-words text-xs leading-relaxed text-stone-800 mt-0.5">
-                  {c.body}
-                </p>
-              </div>
-              <div className="mt-1 flex items-center gap-3 px-2 text-[10px] text-stone-400">
-                <span>{timeAgo(c.createdAt, lang)}</span>
-                {(c.mine || post.mine) && (
-                  <button
-                    type="button"
-                    onClick={() => void del(c.id)}
-                    className="hover:text-rose-600 cursor-pointer font-semibold"
-                  >
-                    {t('حذف', 'Delete')}
-                  </button>
-                )}
-              </div>
-            </div>
+        rootComments.map((root) => (
+          <div key={root.id}>
+            {renderComment(root, false)}
+            {(repliesByParent.get(root.id) || []).map((reply) => renderComment(reply, true))}
           </div>
         ))
       )}
@@ -2373,6 +2962,22 @@ function Comments({
         )}
       </div>
 
+      {replyTo && (
+        <div className="flex items-center justify-between rounded-xl border border-amber-200 bg-amber-50/70 px-3 py-1.5 text-[11px] font-bold text-amber-900">
+          <span className="flex items-center gap-1.5">
+            <CornerDownRight className="h-3.5 w-3.5 text-amber-700" />
+            {t('الرد على:', 'Replying to:')} {replyTo.name}
+          </span>
+          <button
+            type="button"
+            onClick={() => setReplyTo(null)}
+            className="text-stone-500 hover:text-stone-800 cursor-pointer"
+          >
+            <X className="h-3.5 w-3.5" />
+          </button>
+        </div>
+      )}
+
       {/* Comment Input */}
       <form
         className="flex gap-2"
@@ -2386,7 +2991,11 @@ function Comments({
           value={body}
           onChange={(e) => setBody(e.target.value)}
           maxLength={2000}
-          placeholder={t('اكتب تعليقاً أو رأياً عطرياً…', 'Write a comment…')}
+          placeholder={
+            replyTo
+              ? t(`اكتب رداً على ${replyTo.name}…`, `Write a reply to ${replyTo.name}…`)
+              : t('اكتب تعليقاً أو رأياً عطرياً…', 'Write a comment…')
+          }
         />
         <Btn type="submit" small busy={busy} disabled={!body.trim()} className="rounded-full">
           <Send className="h-3.5 w-3.5" />
@@ -2414,6 +3023,7 @@ export function PeoplePanel({
     cx<{ friends: PublicUser[]; incoming: PublicUser[]; outgoing: PublicUser[] }>('/community/friends')
   );
   const suggestions = useLoad(() => cx<PublicUser[]>('/community/people/suggestions'));
+  const upcomingEvents = useLoad(() => cx<CommunityEvent[]>('/community/events'));
   const matchmaking = useLoad(
     () => cx<AiMatchmakingResult>(`/community/ai/matchmaking?lang=${lang}`),
     [lang]
@@ -2561,23 +3171,84 @@ export function PeoplePanel({
                     <p className="truncate text-[10px] text-stone-400">@{u.handle}</p>
                   </div>
                 </div>
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (onOpenMessenger) onOpenMessenger(u.id);
-                    else go('messenger');
-                  }}
-                  className="rounded-full p-1.5 text-stone-400 hover:bg-amber-100 hover:text-amber-900 cursor-pointer"
-                  title={t('محادثة ماسنجر سريعة', 'Instant Chat')}
-                >
-                  <MessageCircle className="h-4 w-4" />
-                </button>
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      void act(
+                        () => cx(`/community/poke/${u.id}`, { body: {} }),
+                        t(`أرسلت تحية عطرية لـ ${u.name} 👋`, `Waved at ${u.name} 👋`)
+                      );
+                    }}
+                    className="rounded-full p-1.5 text-stone-400 hover:bg-amber-100 hover:text-amber-900 cursor-pointer text-xs"
+                    title={t('إرسال تحية (نكز)', 'Wave / Poke')}
+                  >
+                    👋
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (onOpenMessenger) onOpenMessenger(u.id);
+                      else go('messenger');
+                    }}
+                    className="rounded-full p-1.5 text-stone-400 hover:bg-amber-100 hover:text-amber-900 cursor-pointer"
+                    title={t('محادثة ماسنجر سريعة', 'Instant Chat')}
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                  </button>
+                </div>
               </div>
             ))
           )}
         </div>
       </Card>
+
+      {/* Upcoming Community Events Widget */}
+      {Boolean(upcomingEvents.data?.length) && (
+        <Card className="p-4 space-y-2.5">
+          <div className="flex items-center justify-between border-b border-stone-100 pb-2">
+            <h3 className="font-bold text-xs text-stone-900 flex items-center gap-1.5">
+              <Calendar className="h-3.5 w-3.5 text-amber-700" />
+              {t('الفعاليات القادمة', 'Upcoming Events')}
+            </h3>
+            <button
+              type="button"
+              onClick={() => go('events')}
+              className="text-[10px] font-bold text-amber-800 hover:underline cursor-pointer"
+            >
+              {t('كل الفعاليات', 'See all')}
+            </button>
+          </div>
+          <div className="space-y-2">
+            {upcomingEvents.data!.slice(0, 2).map((ev) => (
+              <button
+                key={ev.id}
+                type="button"
+                onClick={() => go('events')}
+                className="flex w-full items-center gap-2.5 rounded-xl border border-stone-100 bg-stone-50/70 p-2 text-start hover:border-amber-300 hover:bg-amber-50/30 transition cursor-pointer"
+              >
+                <div className="flex h-10 w-10 shrink-0 flex-col items-center justify-center rounded-xl bg-amber-900 text-amber-100">
+                  <span className="text-[9px] font-bold uppercase">
+                    {new Date(ev.startsAt).toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-US', { month: 'short' })}
+                  </span>
+                  <span className="text-xs font-black tabular-nums leading-none">
+                    {new Date(ev.startsAt).getDate()}
+                  </span>
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-xs font-bold text-stone-900">{ev.title}</p>
+                  <p className="truncate text-[10px] text-stone-500">
+                    {ev.isOnline ? t('بث مباشر أونلاين', 'Live Online') : ev.location} · {ev.goingCount}{' '}
+                    {t('حاضر', 'going')}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </Card>
+      )}
 
       {/* Friend Requests */}
       {!!friends.data?.incoming.length && (
@@ -2895,6 +3566,14 @@ export function NotificationsPage({ lang, go }: { lang: Lang; go: Go }) {
       friend_accepted: [`${who} قبل طلب صداقتك 🎉`, `${who} accepted your friend request 🎉`, n.actor ? `u/${n.actor.handle}` : 'friends'],
       reaction: [`${who} تفاعل مع منشورك العطري ✨`, `${who} reacted to your post ✨`, ''],
       comment: [`${who} علّق على منشورك 💬`, `${who} commented on your post 💬`, ''],
+      comment_reply: [`${who} ردّ على تعليقك ↩️`, `${who} replied to your comment ↩️`, ''],
+      comment_like: [`أُعجب ${who} بتعليقك ❤️`, `${who} liked your comment ❤️`, ''],
+      share: [`${who} أعاد مشاركة منشورك العطري 🔄`, `${who} shared your post 🔄`, ''],
+      tag: [`أشار ${who} إليك في منشور جديد 🏷️`, `${who} tagged you in a post 🏷️`, ''],
+      poke: [`${who} أرسل لك تحية عطرية سريعة 👋`, `${who} waved at you 👋`, n.actor ? `u/${n.actor.handle}` : ''],
+      story_reaction: [`تفاعل ${who} مع قصتك العطرية ✨`, `${who} reacted to your story ✨`, ''],
+      group_join: [`انضم ${who} إلى مجموعتك في مجتمع شام 👥`, `${who} joined your group 👥`, n.ref ? `groups/${n.ref}` : 'groups'],
+      event_rsvp: [`أكد ${who} حضوره لفعاليتك 📅`, `${who} RSVPed to your event 📅`, 'events'],
       order_paid: ['طلب جديد مدفوع في متجرك 🎉', 'A new paid order in your store 🎉', 'merchant/orders'],
       merchant_approved: ['تمت الموافقة على متجرك — مبروك! 🎉', 'Your store was approved 🎉', 'merchant'],
       merchant_rejected: ['الإدارة طلبت تعديلات على ملف متجرك', 'The administration asked for changes', 'merchant'],

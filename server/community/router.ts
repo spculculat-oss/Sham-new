@@ -237,17 +237,35 @@ export function createCommunityRouter(
   router.get('/community/stores/:slug', open((ctx, req) => svc.storePage(ctx, p(req, 'slug'))));
 
   /* ------------------------------------------------- social ------------------------------------------------- */
-  router.get('/community/feed', optional((ctx, viewerId, req) => social.feed(ctx, viewerId, { before: req.query.before, scope: req.query.scope })));
+  router.get('/community/feed', optional((ctx, viewerId, req) => social.feed(ctx, viewerId, { before: req.query.before, scope: req.query.scope, groupId: req.query.groupId })));
   router.post('/community/posts', member((ctx, u, req) => social.createPost(ctx, u.id, req.body || {})));
   router.get('/community/posts/:id', optional((ctx, viewerId, req) => social.getPost(ctx, viewerId, p(req, 'id'))));
   router.patch('/community/posts/:id', member((ctx, u, req) => social.editPost(ctx, u.id, p(req, 'id'), req.body || {})));
+  router.post('/community/posts/:id/pin', member((ctx, u, req) => social.pinPost(ctx, u.id, p(req, 'id'))));
   router.delete('/community/posts/:id', member(async (ctx, u, req) => { await social.deletePost(ctx, u.id, p(req, 'id')); }));
   router.post('/community/posts/:id/react', member((ctx, u, req) => social.react(ctx, u.id, p(req, 'id'), req.body?.kind ?? null)));
   router.post('/community/posts/:id/vote', member((ctx, u, req) => social.votePoll(ctx, u.id, p(req, 'id'), req.body?.optionIndex)));
   router.post('/community/posts/:id/bookmark', member((ctx, u, req) => social.toggleBookmark(ctx, u.id, p(req, 'id'))));
   router.get('/community/posts/:id/comments', optional((ctx, viewerId, req) => social.comments(ctx, viewerId, p(req, 'id'))));
-  router.post('/community/posts/:id/comments', member((ctx, u, req) => social.addComment(ctx, u.id, p(req, 'id'), req.body?.body)));
+  router.post('/community/posts/:id/comments', member((ctx, u, req) => social.addComment(ctx, u.id, p(req, 'id'), req.body?.body, req.body?.parentId)));
+  router.post('/community/comments/:id/like', member((ctx, u, req) => social.toggleCommentLike(ctx, u.id, p(req, 'id'))));
   router.delete('/community/comments/:id', member(async (ctx, u, req) => { await social.deleteComment(ctx, u.id, p(req, 'id')); }));
+
+  /* -------------------------------------------- stories / groups / events ----------------------------------- */
+  router.get('/community/stories', optional((ctx, viewerId) => social.listStories(ctx, viewerId)));
+  router.post('/community/stories', member((ctx, u, req) => social.createStory(ctx, u.id, req.body || {})));
+  router.post('/community/stories/:id/react', member((ctx, u, req) => social.reactStory(ctx, u.id, p(req, 'id'), req.body?.reaction ?? req.body?.emoji)));
+  router.delete('/community/stories/:id', member(async (ctx, u, req) => { await social.deleteStory(ctx, u.id, p(req, 'id')); }));
+
+  router.get('/community/groups', optional((ctx, viewerId, req) => social.listGroups(ctx, viewerId, { category: req.query.category, mine: req.query.mine })));
+  router.post('/community/groups', member((ctx, u, req) => social.createGroup(ctx, u.id, req.body || {})));
+  router.get('/community/groups/:id', optional((ctx, viewerId, req) => social.getGroup(ctx, viewerId, p(req, 'id'))));
+  router.post('/community/groups/:id/join', member((ctx, u, req) => social.joinGroup(ctx, u.id, p(req, 'id'))));
+  router.delete('/community/groups/:id/join', member((ctx, u, req) => social.leaveGroup(ctx, u.id, p(req, 'id'))));
+
+  router.get('/community/events', optional((ctx, viewerId, req) => social.listEvents(ctx, viewerId, { filter: req.query.filter })));
+  router.post('/community/events', member((ctx, u, req) => social.createEvent(ctx, u.id, req.body || {})));
+  router.post('/community/events/:id/rsvp', member((ctx, u, req) => social.rsvpEvent(ctx, u.id, p(req, 'id'), req.body?.status ?? null)));
 
   /* ---------------------------------------------- community ai --------------------------------------------- */
   router.post('/community/ai/compose', optional(async (_ctx, _v, req) => communityAi.aiCompose(req.body || {}, aiOpts)));
@@ -260,6 +278,7 @@ export function createCommunityRouter(
   router.get('/community/people', optional((ctx, viewerId, req) => social.searchPeople(ctx, viewerId, req.query.q)));
   router.get('/community/people/suggestions', optional((ctx, viewerId) => social.suggestions(ctx, viewerId)));
   router.get('/community/profile/:handle', optional((ctx, viewerId, req) => social.profile(ctx, viewerId, p(req, 'handle'))));
+  router.post('/community/poke/:id', member((ctx, u, req) => social.pokeUser(ctx, u.id, p(req, 'id'))));
   router.get('/community/friends', member((ctx, u) => social.friends(ctx, u.id)));
   router.post('/community/friends/:id', member(async (ctx, u, req) => ({ relation: await social.requestFriend(ctx, u.id, p(req, 'id')) })));
   router.delete('/community/friends/:id', member(async (ctx, u, req) => ({ relation: await social.removeFriend(ctx, u.id, p(req, 'id')) })));

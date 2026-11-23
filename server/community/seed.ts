@@ -4,11 +4,8 @@ import type { Sql } from './db';
 export async function seedCommunity(sql: Sql, vault: Vault): Promise<void> {
   try {
     const [existing] = await sql.query(`SELECT count(*)::int AS count FROM users`);
-    if (existing && existing.count >= 3) {
-      return; // Already seeded
-    }
-
-    console.log('[community] Seeding initial master perfumers, formulas, discussions and posts...');
+    if (!existing || existing.count < 3) {
+      console.log('[community] Seeding initial master perfumers, formulas, discussions and posts...');
 
     const defaultPassHash = await hashPassword('Sham123456');
 
@@ -256,7 +253,205 @@ export async function seedCommunity(sql: Sql, vault: Vault): Promise<void> {
       );
     }
 
-    console.log('[community] Seed complete! Master perfumers, posts, recipes, and comments are ready.');
+    console.log('[community] Seed base users/posts complete!');
+    }
+
+    const [hasSeedUsers] = await sql.query(`SELECT 1 FROM users WHERE id = 'u_dar_sham'`);
+    if (!hasSeedUsers) return;
+
+    // 7. Seed Facebook Stories (if empty)
+    const [stCount] = await sql.query(`SELECT count(*)::int AS count FROM stories WHERE status = 'visible' AND expires_at > now()`);
+    if (!stCount || stCount.count === 0) {
+      const seedStories = [
+        {
+          id: 'st_dar_sham',
+          author_id: 'u_dar_sham',
+          title: 'تعتيق موسم الخريف',
+          caption: 'خلطة العود المعتق مع الباتشولي الملكي بدأت مرحلة التعتيق البارد على 15°م لصناعة اندماج مخملي عميق.',
+          image: 'scene:compounding',
+          scent_tag: 'عود كمبودي · باتشولي',
+        },
+        {
+          id: 'st_nourhan',
+          author_id: 'u_nourhan',
+          title: 'تقطير الورد الدمشقي',
+          caption: 'أول قطرات الزيت العطري الصافي من مقطرة الورد الجوري الطازج بنقاء 100% واستخلاص هادئ بالبخار.',
+          image: 'scene:rose',
+          scent_tag: 'ورد دمشقي نقي',
+        },
+        {
+          id: 'st_ahmed',
+          author_id: 'u_ahmed_shaheen',
+          title: 'هالة الفوحان المتوازن',
+          caption: 'موازنة الـ Hedione بنسبة 6% مع البرغموت الإيطالي لرفع الانتشار العطري إلى 8 ساعات متواصلة.',
+          image: 'scene:niche',
+          scent_tag: 'برغموت · هيديون · مسك',
+        },
+        {
+          id: 'st_tariq',
+          author_id: 'u_tariq_oud',
+          title: 'خشب العود واللبان',
+          caption: 'فرز المواد الراتنجية والأخشاب النادرة قبل التحضير والتعتيق في قوارير زجاجية معتمة.',
+          image: 'scene:harvest',
+          scent_tag: 'عود هندي · لبان عماني',
+        },
+      ];
+      for (const s of seedStories) {
+        await sql.query(
+          `INSERT INTO stories (id, author_id, title, caption, image, scent_tag, expires_at)
+           VALUES ($1,$2,$3,$4,$5,$6, now() + interval '14 days')
+           ON CONFLICT (id) DO UPDATE SET expires_at = now() + interval '14 days', status = 'visible'`,
+          [s.id, s.author_id, s.title, s.caption, s.image, s.scent_tag]
+        );
+      }
+    }
+
+    // 8. Seed Facebook Groups (if empty)
+    const [grpCount] = await sql.query(`SELECT count(*)::int AS count FROM community_groups`);
+    if (!grpCount || grpCount.count === 0) {
+      const seedGroups = [
+        {
+          id: 'grp_oud_council',
+          name: 'مجلس دهن العود والأخشاب النادرة',
+          description: 'تجمع متخصص لعشاق العود الكمبودي والهندي والراتنجات الشرقية، مع مراجعات دورية للنقاء وطرق التعتيق.',
+          category: 'oud',
+          privacy: 'public',
+          cover: 'scene:harvest',
+          creator_id: 'u_tariq_oud',
+        },
+        {
+          id: 'grp_distill_lab',
+          name: 'مختبر التقطير والزيوت النقية',
+          description: 'ورش عمل متبادلة حول التقطير البخاري والمائي لبتلات الورد الدمشقي والياسمين والأعشاب الجبلية.',
+          category: 'floral',
+          privacy: 'public',
+          cover: 'scene:rose',
+          creator_id: 'u_nourhan',
+        },
+        {
+          id: 'grp_niche_atelier',
+          name: 'نادي عطور النيش والتعتيق المخملي',
+          description: 'مختبر مفتوح لتحليل الأهرام العطرية، نسب المثبتات الجزيئية، ومناقشة إصدارات الدار الفاخرة.',
+          category: 'niche',
+          privacy: 'public',
+          cover: 'scene:compounding',
+          creator_id: 'u_dar_sham',
+        },
+        {
+          id: 'grp_raw_trade',
+          name: 'مجموعة المطورين وتبادل الخامات',
+          description: 'مجموعة مخصصة لتبادل العينات المخبرية والتجارب المتقدمة في موازنة القواعد العطرية.',
+          category: 'trade',
+          privacy: 'public',
+          cover: 'scene:niche',
+          creator_id: 'u_ahmed_shaheen',
+        },
+      ];
+      for (const g of seedGroups) {
+        await sql.query(
+          `INSERT INTO community_groups (id, name, description, category, privacy, cover, creator_id)
+           VALUES ($1,$2,$3,$4,$5,$6,$7) ON CONFLICT (id) DO NOTHING`,
+          [g.id, g.name, g.description, g.category, g.privacy, g.cover, g.creator_id]
+        );
+        await sql.query(
+          `INSERT INTO group_members (group_id, user_id, role) VALUES ($1,$2,'admin') ON CONFLICT DO NOTHING`,
+          [g.id, g.creator_id]
+        );
+      }
+      const memberships: [string, string][] = [
+        ['grp_oud_council', 'u_dar_sham'],
+        ['grp_oud_council', 'u_ahmed_shaheen'],
+        ['grp_distill_lab', 'u_dar_sham'],
+        ['grp_distill_lab', 'u_layla_scents'],
+        ['grp_niche_atelier', 'u_ahmed_shaheen'],
+        ['grp_niche_atelier', 'u_nourhan'],
+        ['grp_niche_atelier', 'u_tariq_oud'],
+        ['grp_raw_trade', 'u_dar_sham'],
+      ];
+      for (const [gid, uid] of memberships) {
+        await sql.query(
+          `INSERT INTO group_members (group_id, user_id, role) VALUES ($1,$2,'member') ON CONFLICT DO NOTHING`,
+          [gid, uid]
+        );
+      }
+      await sql.query(
+        `INSERT INTO posts (id, author_id, body, group_id, location, visibility, status, created_at)
+         VALUES ($1,$2,$3,$4,$5,'public','visible', now() - interval '3 hours')
+         ON CONFLICT (id) DO NOTHING`,
+        [
+          'post_grp_1',
+          'u_tariq_oud',
+          'أهلاً بأعضاء مجلس العود! 🪵 ما هي تجربتكم مع مزج دهن العود الكلاكاسي مع نقطة خفيفة من اللبان العماني؟ لاحظت أن التعتيق لـ 30 يوماً يمنع حدة البداية ويبرز حلاوة الراتنج.',
+          'grp_oud_council',
+          'الرياض — مجلس العود',
+        ]
+      );
+      await sql.query(
+        `INSERT INTO posts (id, author_id, body, group_id, location, visibility, status, created_at)
+         VALUES ($1,$2,$3,$4,$5,'public','visible', now() - interval '6 hours')
+         ON CONFLICT (id) DO NOTHING`,
+        [
+          'post_grp_2',
+          'u_nourhan',
+          'ملخص قياسات الضغط ودرجة الحرارة لتقطير 20 كجم ورد دمشقي الصباحي 🌹: الحفاظ على تدفق البخار الهادئ أعطى أعلى نسبة عائد عطري دون احتراق البتلات.',
+          'grp_distill_lab',
+          'دمشق — معمل التقطير',
+        ]
+      );
+    }
+
+    // 9. Seed Facebook Events (if empty)
+    const [evtCount] = await sql.query(`SELECT count(*)::int AS count FROM events`);
+    if (!evtCount || evtCount.count === 0) {
+      const seedEvents = [
+        {
+          id: 'evt_live_pyramid',
+          creator_id: 'u_dar_sham',
+          title: 'ورشة البث المباشر: موازنة الهرم العطري للمبتدئين والمحترفين',
+          description: 'لقاء تفاعلي مباشر عبر صوت وفيديو مجتمع شام نناقش فيه توزيع نسب الافتتاحية والقلب والقاعدة واختيار المثبتات الآمنة.',
+          location: 'بث مباشر — قاعة دار شام الصوتية والمرئية',
+          is_online: true,
+          days: 2,
+          cover: 'scene:compounding',
+          category: 'live',
+        },
+        {
+          id: 'evt_oud_masterclass',
+          creator_id: 'u_tariq_oud',
+          title: 'جلسة تذوق ومقارنة أدهان العود المعتقة (الكمبودي والبورمي)',
+          description: 'اختبار حي للروائح والتمييز بين درجات العود الطبيعي المعتق وكيفية دمجه في عطور النيش الشتوية.',
+          location: 'جدة — صالون العود المعتق',
+          is_online: false,
+          days: 6,
+          cover: 'scene:harvest',
+          category: 'workshop',
+        },
+        {
+          id: 'evt_rose_distillation',
+          creator_id: 'u_nourhan',
+          title: 'مهرجان قطاف وتقطير الورد الدمشقي والزيوت العطرية',
+          description: 'عرض عملي لمراحل القطف الفجري وتشغيل المقطرة النحاسية مع إمكانية طرح الأسئلة للمشتركين عن بُعد.',
+          location: 'دمشق — بساتين الورد الجوري',
+          is_online: true,
+          days: 10,
+          cover: 'scene:rose',
+          category: 'launch',
+        },
+      ];
+      for (const ev of seedEvents) {
+        await sql.query(
+          `INSERT INTO events (id, creator_id, title, description, location, is_online, starts_at, cover, category)
+           VALUES ($1,$2,$3,$4,$5,$6, now() + interval '${ev.days} days', $7, $8)
+           ON CONFLICT (id) DO NOTHING`,
+          [ev.id, ev.creator_id, ev.title, ev.description, ev.location, ev.is_online, ev.cover, ev.category]
+        );
+        await sql.query(
+          `INSERT INTO event_rsvps (event_id, user_id, status) VALUES ($1,$2,'going') ON CONFLICT DO NOTHING`,
+          [ev.id, ev.creator_id]
+        );
+      }
+      await sql.query(`INSERT INTO event_rsvps (event_id, user_id, status) VALUES ('evt_live_pyramid','u_ahmed_shaheen','going'),('evt_live_pyramid','u_nourhan','going'),('evt_live_pyramid','u_layla_scents','interested') ON CONFLICT DO NOTHING`);
+    }
   } catch (error) {
     console.error('[community] Seed error:', error);
   }

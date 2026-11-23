@@ -51,20 +51,93 @@ export async function cx<T>(path: string, init: { method?: string; body?: Body; 
 /* --------------------------------------------- types --------------------------------------------- */
 
 export interface PublicUser {
-  id: string; handle: string; name: string; avatar: string | null; bio: string; country: string; craftLevel: string; role: string;
+  id: string; handle: string; name: string; avatar: string | null; cover?: string | null; bio: string; country: string; craftLevel: string; role: string;
   merchant?: { slug: string; storeName: string } | null; online: boolean; lastSeen: string; mutual?: number;
 }
 export interface Me {
   id: string; handle: string; name: string; email: string; role: 'user' | 'merchant'; status: string; country: string; lang: string;
-  craftLevel: string; bio: string; avatar: string | null; private: { phone?: string; city?: string; address?: string }; createdAt: string;
+  craftLevel: string; bio: string; avatar: string | null; cover?: string | null; private: { phone?: string; city?: string; address?: string }; createdAt: string;
   merchant: { slug: string; storeName: string; status: 'pending' | 'approved' | 'suspended' | 'rejected'; note: string } | null;
   counts: { recipes: number; friends: number; orders: number; posts: number };
 }
+export interface TaggedPerson {
+  id: string;
+  name: string;
+  handle: string;
+}
+export interface SharedPostEmbed {
+  id: string;
+  body: string;
+  image: string | null;
+  location?: string;
+  bgStyle?: string;
+  createdAt: string;
+  author: PublicUser;
+  recipe: { id: string; title: string; data: Record<string, unknown> } | null;
+}
 export interface Post {
   id: string; body: string; image: string | null; visibility: 'public' | 'friends'; createdAt: string; editedAt: string | null;
-  author: PublicUser; mine: boolean; comments: number; reactions: Record<string, number>; myReaction: string | null;
+  author: PublicUser; mine: boolean; comments: number; shareCount?: number;
+  reactions: Record<string, number>; myReaction: string | null;
   pollVotes?: Record<string, number>; myPollVote?: number | null; bookmarked?: boolean;
+  location?: string; bgStyle?: string; pinned?: boolean; taggedUsers?: TaggedPerson[];
+  group?: { id: string; name: string; privacy: 'public' | 'closed' } | null;
+  sharedPostId?: string | null;
+  sharedPost?: SharedPostEmbed | null;
   recipe: { id: string; title: string; data: Record<string, unknown> } | null;
+}
+export interface StoryRecord {
+  id: string;
+  title: string;
+  caption: string;
+  image: string;
+  scentTag: string;
+  bgStyle: string;
+  createdAt: string;
+  expiresAt: string;
+  user: PublicUser;
+  mine: boolean;
+  views: number;
+  viewedByMe: boolean;
+  myReaction: string;
+  reactions: Record<string, number>;
+}
+export interface CommunityGroup {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  privacy: 'public' | 'closed';
+  cover: string;
+  createdAt: string;
+  memberCount: number;
+  postCount: number;
+  joined: boolean;
+  myRole: 'admin' | 'member' | null;
+  mine: boolean;
+  creator: PublicUser | null;
+}
+export interface GroupDetail {
+  group: CommunityGroup;
+  locked: boolean;
+  members: (PublicUser & { groupRole?: string })[];
+  posts: Post[];
+}
+export interface CommunityEvent {
+  id: string;
+  title: string;
+  description: string;
+  location: string;
+  isOnline: boolean;
+  startsAt: string;
+  cover: string;
+  category: string;
+  createdAt: string;
+  goingCount: number;
+  interestedCount: number;
+  myRsvp: 'going' | 'interested' | null;
+  mine: boolean;
+  creator: PublicUser;
 }
 export interface AiComposeResult {
   result: string;
@@ -108,7 +181,16 @@ export interface AiProfileInsight {
   topNotes: string[];
   collabIdea: string;
 }
-export interface Comment { id: string; body: string; createdAt: string; author: PublicUser; mine: boolean }
+export interface Comment {
+  id: string;
+  parentId?: string | null;
+  body: string;
+  createdAt: string;
+  author: PublicUser;
+  mine: boolean;
+  likes?: number;
+  likedByMe?: boolean;
+}
 export interface Notification { id: string; kind: string; ref: string; createdAt: string; read: boolean; actor: PublicUser | null }
 export interface Recipe { id: string; title: string; data: Record<string, any>; notes: string; visibility: 'private' | 'friends' | 'public'; createdAt: string; updatedAt: string }
 export interface Learning { itemId: string; kind: string; title: string; progress: number; updatedAt: string }

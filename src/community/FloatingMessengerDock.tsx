@@ -10,6 +10,8 @@ import {
   Sparkles,
   Loader2,
   Wand2,
+  Phone,
+  Video,
 } from 'lucide-react';
 import { cx, type AiReplyAssistResult, type Message, type PublicUser } from './api';
 import { Avatar, tx, type Lang } from './ui';
@@ -20,6 +22,7 @@ interface Props {
   recipientUser?: PublicUser | null;
   onClose: () => void;
   onExpand: (chatId: string) => void;
+  onStartCall?: (conversationId: string, mode: 'audio' | 'video', peer?: PublicUser | null) => void;
   toast: (s: string) => void;
 }
 
@@ -31,6 +34,7 @@ export function FloatingMessengerDock({
   recipientUser,
   onClose,
   onExpand,
+  onStartCall,
   toast,
 }: Props) {
   const t = tx(lang);
@@ -158,6 +162,26 @@ export function FloatingMessengerDock({
         </div>
 
         <div className="flex items-center gap-1 text-stone-300">
+          {onStartCall && (
+            <>
+              <button
+                type="button"
+                title={t('مكالمة صوتية مباشرة', 'Live voice call')}
+                onClick={() => onStartCall(chatId, 'audio', recipientUser)}
+                className="rounded p-1.5 text-amber-300 hover:bg-white/10 hover:text-amber-200 cursor-pointer"
+              >
+                <Phone className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="button"
+                title={t('مكالمة فيديو مباشرة', 'Live video call')}
+                onClick={() => onStartCall(chatId, 'video', recipientUser)}
+                className="rounded p-1.5 text-amber-300 hover:bg-white/10 hover:text-amber-200 cursor-pointer"
+              >
+                <Video className="h-3.5 w-3.5" />
+              </button>
+            </>
+          )}
           <button
             type="button"
             title={t('تكبير للماسنجر الكامل', 'Expand to full Messenger')}

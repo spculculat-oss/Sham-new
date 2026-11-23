@@ -57,7 +57,7 @@ app.use('/api', createStoreRouter({ repo: shamCore.repo }));
 // «الدفع في متجر شام»: country, Kashier payment sessions and their verified results (server/checkout.ts).
 // «مجتمع شام»: accounts, merchants' and users' portals, «بوابة السوشيال» and the messenger (server/community).
 const communityDevDb = process.env.SHAM_COMMUNITY_DEV_DB || (!process.env.VERCEL && !process.env.SHAM_SERVERLESS && !process.env.DATABASE_URL ? 'memory' : undefined);
-const community = createCommunity({
+export const community = createCommunity({
   env: {
     ...process.env,
     ...(communityDevDb ? { SHAM_COMMUNITY_DEV_DB: communityDevDb } : {}),

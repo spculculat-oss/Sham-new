@@ -94,3 +94,11 @@ body[data-sham-focus] select[data-sham-focused='true'] {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .soft-pulse-hover:hover,
+  .animate-pulse:hover {
+    animation: none;
+    transform: none;
+  }
+}
+
