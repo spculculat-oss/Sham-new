@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-24T13:34:01.721Z",
- "nextUpdateAt": "2026-11-25T01:34:01.721Z",
+ "updatedAt": "2026-11-24T23:51:59.235Z",
+ "nextUpdateAt": "2026-11-25T11:51:59.235Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,16 +10,28 @@
  },
  "sources": [
   {
-   "name": "openPR.com",
-   "count": 3
-  },
-  {
    "name": "Premium Beauty News",
+   "count": 10
+  },
+  {
+   "name": "Now Smell This",
+   "count": 4
+  },
+  {
+   "name": "CaFleureBon",
    "count": 3
   },
   {
-   "name": "Vietnam.vn",
-   "count": 3
+   "name": "Cosmetics Business",
+   "count": 2
+  },
+  {
+   "name": "openPR.com",
+   "count": 2
+  },
+  {
+   "name": "Bois de Jasmin",
+   "count": 1
   },
   {
    "name": "The Malaysian Reserve",
@@ -52,61 +64,369 @@
   {
    "name": "PR Newswire",
    "count": 1
-  },
-  {
-   "name": "Wisevoter",
-   "count": 1
-  },
-  {
-   "name": "Modern Retail",
-   "count": 1
-  },
-  {
-   "name": "موقع ليالينا",
-   "count": 1
-  },
-  {
-   "name": "Prestige Online - Singapore",
-   "count": 1
-  },
-  {
-   "name": "صحيفة الوطن",
-   "count": 1
-  },
-  {
-   "name": "Popbee",
-   "count": 1
-  },
-  {
-   "name": "Phys.org",
-   "count": 1
-  },
-  {
-   "name": "intlbm",
-   "count": 1
-  },
-  {
-   "name": "stupidDOPE",
-   "count": 1
-  },
-  {
-   "name": "CaFleureBon",
-   "count": 1
-  },
-  {
-   "name": "Auparfum",
-   "count": 1
-  },
-  {
-   "name": "France 3 Régions",
-   "count": 1
-  },
-  {
-   "name": "FashionNetwork France",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "nhe59a7",
+   "url": "https://cafleurebon.com/aftelier-perfumes-citrus-cordial-mandy-aftel-2026-plus-sparkling-libation-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=aftelier-perfumes-citrus-cordial-mandy-aftel-2026-plus-sparkling-libation-giveaway",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-24T21:09:55.000Z",
+   "original": "Aftelier Perfumes Citrus Cordial (Mandy Aftel) 2026 + Sparkling Libation Giveaway",
+   "lang": "en",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "Aftelier Perfumes Citrus Cordial (Mandy Aftel) 2026 + Sparkling Libation Giveaway",
+    "en": "Aftelier Perfumes Citrus Cordial (Mandy Aftel) 2026 + Sparkling Libation Giveaway"
+   },
+   "summary": {
+    "ar": "Aftelier Perfumes Citrus Cordial by award-winning natural perfumer Mandy Aftel is a a sparkling nectarous floral perfect for the festive season The post Aftelier Perfumes Citrus Cordial (Mandy Aftel) 2026 + Sparkling Libation Giveaway appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Aftelier Perfumes Citrus Cordial by award-winning natural perfumer Mandy Aftel is a a sparkling nectarous floral perfect for the festive season The post Aftelier Perfumes Citrus Cordial (Mandy Aftel) 2026 + Sparkling Libation Giveaway appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "nascgv6",
+   "url": "https://nstperfume.com/2026/11/24/ds-durga-once-upon-a-time-in-the-red-southwest-new-fragrance/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-24T18:15:19.000Z",
+   "original": "DS & Durga Once Upon A Time In The Red Southwest ~ new fragrance",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "DS & Durga Once Upon A Time In The Red Southwest ~ new fragrance",
+    "en": "DS & Durga Once Upon A Time In The Red Southwest ~ new fragrance"
+   },
+   "summary": {
+    "ar": "Indie brand DS & Durga has launched Once Upon A Time In The Red Southwest, a new limited edition fragrance...",
+    "en": "Indie brand DS & Durga has launched Once Upon A Time In The Red Southwest, a new limited edition fragrance..."
+   }
+  },
+  {
+   "id": "nqnrb72",
+   "url": "https://nstperfume.com/2026/11/24/the-daily-lemming-1975/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-24T16:15:01.000Z",
+   "original": "The daily lemming",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "The daily lemming",
+    "en": "The daily lemming"
+   },
+   "summary": {
+    "ar": "From Weleda, Amber Divine Shower Cream: \"Weleda Amber Divine is a limited-edition body care collection with a warm oriental fragrance of vanilla, amber, labdanum and woody vetiver. It gently cleanses and hydrates the skin, leaving it soft, beautifully scented and well cared for.\" Note that this one does not seem to be distributed in the […]",
+    "en": "From Weleda, Amber Divine Shower Cream: \"Weleda Amber Divine is a limited-edition body care collection with a warm oriental fragrance of vanilla, amber, labdanum and woody vetiver. It gently cleanses and hydrates the skin, leaving it soft, beautifully scented and well cared for.\" Note that this one does not seem to be distributed in the […]"
+   }
+  },
+  {
+   "id": "n1m9y4el",
+   "url": "https://nstperfume.com/2026/11/24/tuesday-scent-of-the-day-11-24-2/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-24T15:00:08.000Z",
+   "original": "Tuesday scent of the day 11/24",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Tuesday scent of the day 11/24",
+    "en": "Tuesday scent of the day 11/24"
+   },
+   "summary": {
+    "ar": "It's Teapot Tuesday plus Evolution Day . Birthdays: Baruch Spinoza , Frances Hodgson Burnett , Henri de Toulouse-Lautrec , Scott Joplin , Arundhati Roy . What fragrance are you wearing? I'm in Tauer Vanilla Flash , because DenishH mentioned it yesterday . Tea at the moment is Chaz's Chai from The Jasmine Pearl Tea Co. Reminder: on 11/27, pick your Black Friday poison...",
+    "en": "It's Teapot Tuesday plus Evolution Day . Birthdays: Baruch Spinoza , Frances Hodgson Burnett , Henri de Toulouse-Lautrec , Scott Joplin , Arundhati Roy . What fragrance are you wearing? I'm in Tauer Vanilla Flash , because DenishH mentioned it yesterday . Tea at the moment is Chaz's Chai from The Jasmine Pearl Tea Co. Reminder: on 11/27, pick your Black Friday poison..."
+   }
+  },
+  {
+   "id": "n1hrar5",
+   "url": "https://nstperfume.com/2026/11/24/i-bow-to-eau-sauvage/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-24T14:40:03.000Z",
+   "original": "I bow to Eau Sauvage",
+   "lang": "en",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "I bow to Eau Sauvage",
+    "en": "I bow to Eau Sauvage"
+   },
+   "summary": {
+    "ar": "Then there are fresh fragrances that last, which is one of the hardest things in our craft. I bow to Eau Sauvage by Christian Dior, again by Roudnitska, and to Eau de Givenchy by Daniel Hoffmann and Daniel Molière. Both are real feats: light and luminous, yet they stay on the skin. And in all […]",
+    "en": "Then there are fresh fragrances that last, which is one of the hardest things in our craft. I bow to Eau Sauvage by Christian Dior, again by Roudnitska, and to Eau de Givenchy by Daniel Hoffmann and Daniel Molière. Both are real feats: light and luminous, yet they stay on the skin. And in all […]"
+   }
+  },
+  {
+   "id": "n13lfvw7",
+   "url": "https://www.premiumbeautynews.com/en/petcare-a-new-frontier-for-the,28592",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T23:14:00.000Z",
+   "original": "Petcare: A new frontier for the beauty industry?",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Petcare: A new frontier for the beauty industry?",
+    "en": "Petcare: A new frontier for the beauty industry?"
+   },
+   "summary": {
+    "ar": "Skincare, dietary supplements, fragrances, spa-inspired treatments — the petcare market is undergoing a transformation as pets take on an increasingly important role in people's lives. While brands are rolling out a growing range of dedicated product lines, this emerging market also presents challenges for manufacturers, who must adapt their expertise. Originating in Asia and the United States, the growing appeal of pet pampering is also gaining ground in Europe, including France, where... - Mar",
+    "en": "Skincare, dietary supplements, fragrances, spa-inspired treatments — the petcare market is undergoing a transformation as pets take on an increasingly important role in people's lives. While brands are rolling out a growing range of dedicated product lines, this emerging market also presents challenges for manufacturers, who must adapt their expertise. Originating in Asia and the United States, the growing appeal of pet pampering is also gaining ground in Europe, including France, where... - Mar"
+   }
+  },
+  {
+   "id": "n1q5e74i",
+   "url": "https://www.premiumbeautynews.com/fr/petcare-un-nouveau-territoire-pour,28591",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T23:03:00.000Z",
+   "original": "Petcare : Un nouveau territoire pour l'industrie de la beauté ?",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Petcare : Un nouveau territoire pour l'industrie de la beauté ?",
+    "en": "Petcare : Un nouveau territoire pour l'industrie de la beauté ?"
+   },
+   "summary": {
+    "ar": "Skinification, compléments alimentaires, parfums, lignes de spa, le marché du pet care est en pleine métamorphose, à mesure que l'animal de compagnie occupe une place croissante au sein des foyers. Si les marques multiplient les lancements de gammes dédiées, la dynamique n'est cependant pas sans contraintes pour les industriels, qui doivent adapter leurs savoir-faire. Venu d'Asie et des États-Unis, l'attrait pour le compagnon à quatre pattes se confirme aussi en Europe, notamment en... - Marchés",
+    "en": "Skinification, compléments alimentaires, parfums, lignes de spa, le marché du pet care est en pleine métamorphose, à mesure que l'animal de compagnie occupe une place croissante au sein des foyers. Si les marques multiplient les lancements de gammes dédiées, la dynamique n'est cependant pas sans contraintes pour les industriels, qui doivent adapter leurs savoir-faire. Venu d'Asie et des États-Unis, l'attrait pour le compagnon à quatre pattes se confirme aussi en Europe, notamment en... - Marchés"
+   }
+  },
+  {
+   "id": "nmw9a0d",
+   "url": "https://cafleurebon.com/2026-sniffapalooza-fall-ball-niche-perfumes-winner/?utm_source=rss&utm_medium=rss&utm_campaign=2026-sniffapalooza-fall-ball-niche-perfumes-winner",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-23T18:50:13.000Z",
+   "original": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
+    "en": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner"
+   },
+   "summary": {
+    "ar": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "nfbsy4a",
+   "url": "https://boisdejasmin.com/2026/11/how-to-smell-understand-and-appreciate-perfume-new-online-masterclass.html",
+   "source": "Bois de Jasmin",
+   "publishedAt": "2026-11-23T16:13:00.000Z",
+   "original": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass",
+    "en": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass"
+   },
+   "summary": {
+    "ar": "Have you ever wondered how professional perfumers smell and evaluate fragrances? How they recognize individual notes, understand the structure of a composition, or describe a scent with precision? I trained at the IFF Perfumery Academy, where I studied with some of the world’s leading perfumers, including Sophia Grojsman. In the new masterclass, I will share […] The post How to Smell, Understand, and Appreciate Perfume : New Online Masterclass appeared first on Bois de Jasmin .",
+    "en": "Have you ever wondered how professional perfumers smell and evaluate fragrances? How they recognize individual notes, understand the structure of a composition, or describe a scent with precision? I trained at the IFF Perfumery Academy, where I studied with some of the world’s leading perfumers, including Sophia Grojsman. In the new masterclass, I will share […] The post How to Smell, Understand, and Appreciate Perfume : New Online Masterclass appeared first on Bois de Jasmin ."
+   }
+  },
+  {
+   "id": "n1s8pwxc",
+   "url": "https://www.premiumbeautynews.com/en/pure-trade-manufactures-a-metal,28590",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T14:07:00.000Z",
+   "original": "Pure Trade manufactures a metal case for the new Diesel women's fragrance",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Pure Trade manufactures a metal case for the new Diesel women's fragrance",
+    "en": "Pure Trade manufactures a metal case for the new Diesel women's fragrance"
+   },
+   "summary": {
+    "ar": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus",
+    "en": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus"
+   }
+  },
+  {
+   "id": "nu05yls",
+   "url": "https://www.premiumbeautynews.com/fr/pure-trade-produit-un-coffret,28589",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T13:51:00.000Z",
+   "original": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
+    "en": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel"
+   },
+   "summary": {
+    "ar": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - ",
+    "en": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - "
+   }
+  },
+  {
+   "id": "nfm6qc2",
+   "url": "https://cosmeticsbusiness.com/as-watson-ai-and-robotics-accelerate-supply-chain",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-23T11:52:00.000Z",
+   "original": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
+    "en": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain"
+   },
+   "summary": {
+    "ar": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally",
+    "en": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally"
+   }
+  },
+  {
+   "id": "nafq3ad",
+   "url": "https://www.premiumbeautynews.com/en/smelody-brings-music-into-the,28588",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T11:12:00.000Z",
+   "original": "Smelody brings music into the perfume bottle with a patented sound device",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Smelody brings music into the perfume bottle with a patented sound device",
+    "en": "Smelody brings music into the perfume bottle with a patented sound device"
+   },
+   "summary": {
+    "ar": "The Grasse-based start-up combines eight fragrances with classical music pieces, played automatically when the bottle is opened through a patented sound device built into the cap. This packaging innovation puts the multisensory experience at the heart of the product. What if a perfume bottle could also play music? This is the concept developed by Smelody, a young company founded in September 2025 in Grasse by Frederick Besson, also the creator of the Perfumist app. Launched in October 2026... - ",
+    "en": "The Grasse-based start-up combines eight fragrances with classical music pieces, played automatically when the bottle is opened through a patented sound device built into the cap. This packaging innovation puts the multisensory experience at the heart of the product. What if a perfume bottle could also play music? This is the concept developed by Smelody, a young company founded in September 2025 in Grasse by Frederick Besson, also the creator of the Perfumist app. Launched in October 2026... - "
+   }
+  },
+  {
+   "id": "n1alkp3t",
+   "url": "https://cosmeticsbusiness.com/rabanne-marks-60th-anniversary-with-the-warehouse-project-club-night",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-23T11:12:00.000Z",
+   "original": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
+   "lang": "en",
+   "category": "regulation",
+   "importance": 2,
+   "title": {
+    "ar": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
+    "en": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'"
+   },
+   "summary": {
+    "ar": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black",
+    "en": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black"
+   }
+  },
+  {
+   "id": "n122qjxw",
+   "url": "https://www.premiumbeautynews.com/fr/smelody-integre-la-musique-au,28587",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T10:56:00.000Z",
+   "original": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté",
+    "en": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté"
+   },
+   "summary": {
+    "ar": "La toute jeune maison grassoise associe huit créations olfactives à des œuvres du répertoire classique, diffusées à l'ouverture du flacon grâce à un dispositif sonore breveté intégré au capot. Une innovation packaging qui place l'expérience multisensorielle au cœur du produit. Et si un flacon de parfum pouvait aussi diffuser de la musique ? C'est le concept développé par Smelody, jeune maison fondée en septembre 2025 à Grasse par Frederick Besson, également créateur de l'application... - Innovat",
+    "en": "La toute jeune maison grassoise associe huit créations olfactives à des œuvres du répertoire classique, diffusées à l'ouverture du flacon grâce à un dispositif sonore breveté intégré au capot. Une innovation packaging qui place l'expérience multisensorielle au cœur du produit. Et si un flacon de parfum pouvait aussi diffuser de la musique ? C'est le concept développé par Smelody, jeune maison fondée en septembre 2025 à Grasse par Frederick Besson, également créateur de l'application... - Innovat"
+   }
+  },
+  {
+   "id": "n1yq65tx",
+   "url": "https://www.premiumbeautynews.com/fr/flosty-lance-iris-un-capot-en,28586",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T09:25:00.000Z",
+   "original": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française",
+    "en": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française"
+   },
+   "summary": {
+    "ar": "Dans un contexte de multiplication des lancements sur le segment du parfum de niche, la demande d'éléments d'emballage différentiants permettant aux marques de se distinguer en rayon ne cesse d'augmenter. Flosty, spécialiste des solutions standards premium, entend contribuer à satisfaire ces nouveaux besoins avec un nouveau capot en résine Surlyn. Conçu pour offrir une clarté optique semblable à celle du verre sans sa fragilité, ce capot à paroi épaisse est d'ores-et-déjà disponible à la... - Br",
+    "en": "Dans un contexte de multiplication des lancements sur le segment du parfum de niche, la demande d'éléments d'emballage différentiants permettant aux marques de se distinguer en rayon ne cesse d'augmenter. Flosty, spécialiste des solutions standards premium, entend contribuer à satisfaire ces nouveaux besoins avec un nouveau capot en résine Surlyn. Conçu pour offrir une clarté optique semblable à celle du verre sans sa fragilité, ce capot à paroi épaisse est d'ores-et-déjà disponible à la... - Br"
+   }
+  },
+  {
+   "id": "n40k82r",
+   "url": "https://www.premiumbeautynews.com/en/flosty-launches-iris-a-french-made,28585",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T09:21:00.000Z",
+   "original": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
+    "en": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap"
+   },
+   "summary": {
+    "ar": "As niche fragrance brands continue to expand their portfolios, demand for distinctive packaging components that help products stand out on the shelf is growing. To address this need, prestige standard packaging supplier Flosty has introduced IRIS, a new fragrance cap made from Surlyn resin. Designed to deliver the optical clarity of glass without its fragility, the thick-wall cap is available for immediate development and customization. Its classic design makes the thick-wall cap suitable... - I",
+    "en": "As niche fragrance brands continue to expand their portfolios, demand for distinctive packaging components that help products stand out on the shelf is growing. To address this need, prestige standard packaging supplier Flosty has introduced IRIS, a new fragrance cap made from Surlyn resin. Designed to deliver the optical clarity of glass without its fragility, the thick-wall cap is available for immediate development and customization. Its classic design makes the thick-wall cap suitable... - I"
+   }
+  },
+  {
+   "id": "n1u8ja2q",
+   "url": "https://cafleurebon.com/providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-22T21:08:24.000Z",
+   "original": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
+    "en": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway"
+   },
+   "summary": {
+    "ar": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "n1ged1c3",
+   "url": "https://www.premiumbeautynews.com/en/in-georgia-niche-fragrances-appeal,28580",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-21T22:44:00.000Z",
+   "original": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
+    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
+   },
+   "summary": {
+    "ar": "In Georgia, as elsewhere, the niche fragrance market is growing rapidly. Rising demand is driving the opening of new, highly selective boutiques, alongside the emergence of local brands that remain relatively under the radar. Meanwhile, the trade in dupes and counterfeit fragrances is also benefiting from this broader enthusiasm. A closer look at the market in Tbilisi. The development of niche perfumery in Georgia, a segment that remains out of reach for most consumers, is closely linked... - Ma",
+    "en": "In Georgia, as elsewhere, the niche fragrance market is growing rapidly. Rising demand is driving the opening of new, highly selective boutiques, alongside the emergence of local brands that remain relatively under the radar. Meanwhile, the trade in dupes and counterfeit fragrances is also benefiting from this broader enthusiasm. A closer look at the market in Tbilisi. The development of niche perfumery in Georgia, a segment that remains out of reach for most consumers, is closely linked... - Ma"
+   }
+  },
+  {
+   "id": "ng83dhm",
+   "url": "https://www.premiumbeautynews.com/fr/en-georgie-les-parfums-de-niche,28579",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-21T22:32:00.000Z",
+   "original": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité",
+    "en": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité"
+   },
+   "summary": {
+    "ar": "En Géorgie comme ailleurs, la part de la parfumerie de niche augmente rapidement. La croissance de la demande s'accompagne de l'ouverture de nouvelles boutiques ultra-sélectives, mais aussi de l'émergence de marques locales encore confidentielles. En parallèle, le commerce des dupes profite lui aussi de l'engouement général. Reportage. En Géorgie, le développement de la parfumerie de niche, un segment qui reste inaccessible à la plupart des consommateurs, est à corréler avec les récents... - Mar",
+    "en": "En Géorgie comme ailleurs, la part de la parfumerie de niche augmente rapidement. La croissance de la demande s'accompagne de l'ouverture de nouvelles boutiques ultra-sélectives, mais aussi de l'émergence de marques locales encore confidentielles. En parallèle, le commerce des dupes profite lui aussi de l'engouement général. Reportage. En Géorgie, le développement de la parfumerie de niche, un segment qui reste inaccessible à la plupart des consommateurs, est à corréler avec les récents... - Mar"
+   }
+  },
   {
    "id": "n17ooxan",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNU9vMWlFRFZlbG9PS29iTmVBUWhGM3RMTW5keXROZVVacE9UZHdWUTlpZXFScTNRWUxpTFdjRl9DNWROSEZtdDJZdXlaY0lpR1N1Q2pHSnFHWHI5ZXJMMnN4YkFmV2lESTBlajJWZENDem9MM2dTYi1rOEJRMFlEZDJXNWFza04wWHJJYU9DY3c1Q3A0QXZZNHRKV0tkWWZrbFE2LV8tVDRydEltckZydkhZOFJmWDF1MmExZmxQXzA1SG5xSUZKRzFXYUdxU1pCUkJoNGw1TGgzNk9sMUhyR255Z01xOVQ4?oc=5",
@@ -285,366 +605,6 @@
    "summary": {
     "ar": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032",
     "en": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032"
-   }
-  },
-  {
-   "id": "n18zzz5m",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOENhUHU5M1E4bU1XTGhzMGVPUzlnYnA0ZXIwVjZWVW9WNHU2S2dkZHViczhyS3ByaEYydTRTY3BmNXJSZDFuRWExTkYyTGFZc2tqeGxWbC00bGZPQkVYN0k1N2Vrc3BUa09NWXZObURHWktFTnVnb3ZQTW5yYzhsaG5VdVVWYndz?oc=5",
-   "source": "Wisevoter",
-   "publishedAt": "2026-11-24T08:32:32.000Z",
-   "original": "Marc Jacobs Beauty Launches Four Violet Daisy Fragrances",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Marc Jacobs Beauty Launches Four Violet Daisy Fragrances",
-    "en": "Marc Jacobs Beauty Launches Four Violet Daisy Fragrances"
-   },
-   "summary": {
-    "ar": "Marc Jacobs Beauty Launches Four Violet Daisy Fragrances",
-    "en": "Marc Jacobs Beauty Launches Four Violet Daisy Fragrances"
-   }
-  },
-  {
-   "id": "n99yuy4",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQLWQ2Q3RSNnpQRk43bzFVS1BERjVIY0gwRXpTVHZSSEo1YVo3OFd5ckJmY3U3QUNDTzYzSjV2S1ltVFJtd2F1V3J4bnZacm83T2FWMUR2VEZZRjQwN3Naa3c0RWFLQmNET1JVMVlUSF91N3F2UUpZN0FxMzZ6N3Q1Z2QzOA?oc=5",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-24T08:29:48.000Z",
-   "original": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
-    "en": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap"
-   },
-   "summary": {
-    "ar": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
-    "en": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap"
-   }
-  },
-  {
-   "id": "n1khsowa",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeWUzYjh0TV9NMWthQ1c1MXpUMGxJa09FZzNRSkEzSnNHd2dhdmJWa0xaYnIza1dYQWZQSFE1bWtUSC1JUW8tcUFzM2V1Qm9tNGtMRnFaTEpTV1pSdkFlS0VaOE1fM3ZFY2N2R0VTaGRIRXhHU1Y3emV6dC1ueXAtNUt0ZTNXY1ZSZ1NyUjNqWWtCZFpOMmhBejZMY2Y0WDNDdUN5OUpxN0ZqNWg5eDZ2azNLQ0lReWc1Wnow?oc=5",
-   "source": "Modern Retail",
-   "publishedAt": "2026-11-24T08:12:25.000Z",
-   "original": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’",
-    "en": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’"
-   },
-   "summary": {
-    "ar": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’",
-    "en": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’"
-   }
-  },
-  {
-   "id": "n1gsu9pk",
-   "url": "https://news.google.com/rss/articles/CBMihwRBVV95cUxOVk80N25HaEdtWGtOS2p2VC1PcDNrTWhNTWJNZ29uZ0FnbjhwZ2tvTi1McGVqSTE4cHBmWGVKZ0JvTkVubHJDQnJFdF9TSFpkSnEzTWZkcy1kX09WRUY2N2xyNjNZQWJvTktrQjJjMXA3MFNqeUx0RGFpak42bDlVZGdfY21kV2JXYWhUdWg2TU1XVENYZVQ2TmcxdDVCR2RVVGdUNk1sTkhIWXkxelBULUd5SUQ3ekxLUkY1blhUMHF1dXE3Yy1qbkliTVljeHFCaGZsVHAzU1ZVdGlJcmdqakdOWU9mVlZPeVhHanFaV0lGcVBvWllDMnlHSjJDd2RqTC1rc1FkNVVEVkwzVWhMT2RyRF9KWHlxc0RXOHB2V0p6SXNWb1gwR1lWc1RvblRHMG9fNWVTUE5aaEpOSTVfd0pjblA0MkFxRE9WdzU5WDdDaUF5WklCWHk2MnczeXJ0ckt0X1BreVVQOVFnSGppbkxlbkRRcnJUdkNxRUFOQ1hqeGprVklkaVFTRmt1WU54RlY5TFBnOThaNDVHSTBCc0VTYzh0YmdkVEpid1JKcnVvTlUyYlVKeGtvblE3anhFX0k3emsyUmExN2xNN3dja1M5cTJYUlJNX1hjTkdJWWd4bHB2dExuMjVkb1R0ZmhBQnA0eWRhaTI5VXNUaDNWc0ZvQkdiMVHSAYwEQVVfeXFMT0VkYmt6S0ZPS0V5V3hDUjd5dkV1NzZyMmU5dGxJOFowdjljS1BaUVZQQUtsRnFmQnFHTllzaEF3UnNZWDBONHEweUE4ZkJ5cHVpZndNRURnOGxhRDBPNUtZUTF3QnRFQU5qZm9Fb3ZpVndKQ202N0NxZ0pjamlhMHpqNTgya1Zzc1RkRm44eVI3aFhEbFl5YWRtaldxUXFDeUdXdWRkNEdvWTh2cmVPbDlhLXNPWW9xU25FY21abU9ZSzVJWkZoU2JTdVpzQlo4SWM3XzdtTVRqcmt6SXNEcWZfTERHWUlPcEpmNnJHVmRRdlhrREcwdVUzX2dvRjh0akRLWXRBRjg2OEdZX2tGYkgxSHVGWjE2RUo0aXZ0ei1GQW5RMzN6Wk51QU1URlp0LUZGYVc2UV9FUS1IdzN6MG9PLXl3V1FyNm1tbGx6MnVOMmYtZlkzb0FsZENFb3MxNTQxdmJwU29TX1VLUVJHdmg0U3Nib2ZRNmlGR1pzWWVPbDBlVFF2VXlpeTVSTnE4YTNIRGRaaXdTSzNHR004TllqMjNKMkM0clhMVkZGblVuWUNDNnJUU0VEdHdzUWtkMEF6OFR5emVONzFmM1JLLTNkZkVLbndJbk5VSlJCUVc4Vnd2RVFIWTdrLXNoZnBwOERETXRlb3c0Y2tjMUxGdkw5cHJ6MzQxUEttdzA?oc=5",
-   "source": "موقع ليالينا",
-   "publishedAt": "2026-11-24T07:31:10.000Z",
-   "original": "روبرت باتينسون مفاجأة جيمس بوند الجديدة: العميل 007 يعود بوجه مختلف",
-   "lang": "ar",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "روبرت باتينسون مفاجأة جيمس بوند الجديدة: العميل 007 يعود بوجه مختلف",
-    "en": "روبرت باتينسون مفاجأة جيمس بوند الجديدة: العميل 007 يعود بوجه مختلف"
-   },
-   "summary": {
-    "ar": "روبرت باتينسون مفاجأة جيمس بوند الجديدة: العميل 007 يعود بوجه مختلف",
-    "en": "روبرت باتينسون مفاجأة جيمس بوند الجديدة: العميل 007 يعود بوجه مختلف"
-   }
-  },
-  {
-   "id": "nj3eihh",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZHVuRU1sZ0J2enRvelZXTC1IVTVjb3JSYmkwZFRyc3o2OWRfRFhzb2tRZVl0VFVfdmNKTDVCY2lvSktoVTMxZHQ3SjIzMmhDQ3IycEFXNGZlMzREN2ZHckNhMENHNEVHSkUtN0wySG5fMVhBX3U2ZFVlRFZQdDIyQkFjNkpCRnRNTWJCMzF5WHlxNElnaHltMUNMNmJwcnNmTmFkQV9IS0poajVZ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-24T06:27:56.000Z",
-   "original": "تنظم بلدية با في احتفالاً لتقديم البخور إحياءً لذكرى وفاة القديس تان فيين سون في عام 2026.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "تنظم بلدية با في احتفالاً لتقديم البخور إحياءً لذكرى وفاة القديس تان فيين سون في عام 2026.",
-    "en": "تنظم بلدية با في احتفالاً لتقديم البخور إحياءً لذكرى وفاة القديس تان فيين سون في عام 2026."
-   },
-   "summary": {
-    "ar": "تنظم بلدية با في احتفالاً لتقديم البخور إحياءً لذكرى وفاة القديس تان فيين سون في عام 2026.",
-    "en": "تنظم بلدية با في احتفالاً لتقديم البخور إحياءً لذكرى وفاة القديس تان فيين سون في عام 2026."
-   }
-  },
-  {
-   "id": "n105r17r",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdW1XR2VNZmF6U25DNkpJbjc3SGRaYUpZM3FNYVctajlubWhyRHB0WWp6djBsSTdqUGcyLWVRaF9VRVdSRC1vcGgtS0V5ZGVVQThvdUhfaDB6NzhJVDRub2ppbFhFYmpDWmxtenZDcVFEOVFNYWZ1Z2V6eFdLdGxGUnFXWU5ISW5MTjZIYVpBc29UMHdBZzI5aURqaE9WbmFxN19vaHdOcVhCdl92VGtZMElfdmdFVzJMU2hVSm1CWQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-24T06:22:38.000Z",
-   "original": "كان بإمكان قادة مدينة ثو تقديم البخور في معبد هونغ كينغ ونصب الرئيس هو تشي منه التذكاري.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "كان بإمكان قادة مدينة ثو تقديم البخور في معبد هونغ كينغ ونصب الرئيس هو تشي منه التذكاري.",
-    "en": "كان بإمكان قادة مدينة ثو تقديم البخور في معبد هونغ كينغ ونصب الرئيس هو تشي منه التذكاري."
-   },
-   "summary": {
-    "ar": "كان بإمكان قادة مدينة ثو تقديم البخور في معبد هونغ كينغ ونصب الرئيس هو تشي منه التذكاري.",
-    "en": "كان بإمكان قادة مدينة ثو تقديم البخور في معبد هونغ كينغ ونصب الرئيس هو تشي منه التذكاري."
-   }
-  },
-  {
-   "id": "n1vrmzgo",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNalhZSnNHUTgydWZZVWY2U0pfeXJaVzA4ZzBnYWtFajFGVlozUmt2VkR0N1Z4Z2NNazQ3MWdOaHVHSVUxUlJNeUVudlM5QkJ5T2hiUm5wM0NZMUphYjliRTJDbjliOHBENzVyaFRHMXdtT0JHWHowd2tXUVAtdGRvaUprejB6eEJOX3J0c1FSSnpqNWxfSWJpZGp2M01pMFBY0gGgAUFVX3lxTE1qWFlKc0dRODJ1ZllVZjZTSl95clpXMDhnMGdha0VqMUZWWjNSa3ZWRHQ3VnhnY01rNDcxZ05odUdJVTFSUk15RW52UzlCQnlPaGJSbnAzQ1kxSmFiOWJFMkNuOWI4cEQ3NXJoVEcxd21PQkdYejB3a1dRUC10ZG9pSmt6MHp4Qk5fcnRzUVJKemo1bF9JYmlkanYzTWkwUFg?oc=5",
-   "source": "Prestige Online - Singapore",
-   "publishedAt": "2026-11-24T01:44:39.000Z",
-   "original": "7 best oud fragrances to try this winter",
-   "lang": "en",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "7 best oud fragrances to try this winter",
-    "en": "7 best oud fragrances to try this winter"
-   },
-   "summary": {
-    "ar": "7 best oud fragrances to try this winter",
-    "en": "7 best oud fragrances to try this winter"
-   }
-  },
-  {
-   "id": "n17svkvf",
-   "url": "https://news.google.com/rss/articles/CBMinwZBVV95cUxPNV9tUEx6ZWRrVzgweTRaRzZHelZoMmRUQl94ZWJUMlAzM1VhdmpCckU3RnpMTnI2c1FuRXlOZUVKOUNTTFdDbnJDX2d4WmExMTRtZ3c2S1dQRHhTOC1NeUdhZWJhTzhNb1Q4RmR3NnUzbEZYS2FqbFh6V09rQTVvdi1sam1mdXFmYlNsbVdUclFoclBxYkNuZm1KZ0hwM3d3MW9NUFJueU1DWXRMMjdvLTVjM09SUnRQT1RhcVlCUi10TS1BeXYwVTJhOXZlZjRMdmoyR192ZUE3TFQ1ZEFqMEJ6U09vdzVoM0FwZVlmQ3NIc2djeng1aS1HRWpNWXlLY3c5LVVpc2hGam9MaktQNEotNS1kbmF0MWRuWTJ0ZGh2Z2VnRlFYMkxWSHVQMkhpWXl6a1c1UGdIYmxZbF8yaVJ3ZG44dGF3X0pKLXhrR0dlaEdERkZycFNydTF0WlpKT1c0UUpaZy16bW9qRTBEUkJsd3JiWHdOaWZITTNGZVRJMmt3ZmNQNVhtVmlkY01ocEk4SFprSXlFV3Z0bzA3eHN1QlMxUG52Q0MyWlhHVUFRdDh2ZURUd3pqSUJDZEo1WUQtLWw1YVlCUFZVdGNpTEdWdGI1Wmc0bGRMUzlEaUNBX3lMR1lxSVBFSFZPWHVlQWpqbkFiS2ZMaGxjS0huZ3hTLTBQVkpueURoOFJMNkVMZUlqeEFMWlc4WlEyWHdsS0NTY2R0bnNSM1JnbWV0RS1rU180eGRxMXYzcklmT0lSYzM2dkhNNWM1QmhkaGNEOWEtbnlSaWE3NFliTFJjUFJPeDMzaGJQMWtSYXdHb2lzdk1lLTRwWUdzRG1DclBGMk9XY1E1UVlnbzlFQkZqYlliTGtLSldBdWw2aF9iTUc3S0hFbWdKWldJb3NBYTRIYlFncnpKTE9NMjVZWDdzR2NhaXdXYW45clBueDc2eXBaRDQ3Wk5Bb1M3TFVjX0g0dnhLVHI1RnVhZ1lvMVluVFNPdllrUHRwdGxiNDgwb0szTDNUX2ZMcmVxM3lqS2M2a3FqRjg2T3EzbTBBd0pN0gFUQVVfeXFMTXZqMXBIZlN1SWlidUVNZ2d1WHpMRmZQTGM0VlhqRnNNUE5hRkdWS2ZkVGdhSWpHM1VoU284UHdNVHFHUWdjNDJHcTVfM0tjS3VSWTc1?oc=5",
-   "source": "صحيفة الوطن",
-   "publishedAt": "2026-11-24T00:57:41.000Z",
-   "original": "تقام تحت رعاية ولي العهد رئيس الوزراء.. البحرين تحتضن اليوم «الجواهر العربية» و«العطور العربية» و«سيتي سكيب 2026»",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "تقام تحت رعاية ولي العهد رئيس الوزراء.. البحرين تحتضن اليوم «الجواهر العربية» و«العطور العربية» و«سيتي سكيب 2026»",
-    "en": "تقام تحت رعاية ولي العهد رئيس الوزراء.. البحرين تحتضن اليوم «الجواهر العربية» و«العطور العربية» و«سيتي سكيب 2026»"
-   },
-   "summary": {
-    "ar": "تقام تحت رعاية ولي العهد رئيس الوزراء.. البحرين تحتضن اليوم «الجواهر العربية» و«العطور العربية» و«سيتي سكيب 2026»",
-    "en": "تقام تحت رعاية ولي العهد رئيس الوزراء.. البحرين تحتضن اليوم «الجواهر العربية» و«العطور العربية» و«سيتي سكيب 2026»"
-   }
-  },
-  {
-   "id": "naszac",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTFhMaTE3OV9WajFUWXp2UXZKelZLbVhIN2FQYmd3eEZDTUdnSEZoRkZLUVZodlR5NnJMdE1tc3VxSWgzUC1ybHgtbklKRVREeEZoSWFMQWU0aDB0ckh1LVNTMnpuTjRHWnVRVWh1SXAzd0VzRnBraVNRZFIwd3loT3c4d1JSZw?oc=5",
-   "source": "Popbee",
-   "publishedAt": "2026-11-24T00:39:49.000Z",
-   "original": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
-    "en": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions"
-   },
-   "summary": {
-    "ar": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
-    "en": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions"
-   }
-  },
-  {
-   "id": "n13lfvw7",
-   "url": "https://www.premiumbeautynews.com/en/petcare-a-new-frontier-for-the,28592",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T23:14:00.000Z",
-   "original": "Petcare: A new frontier for the beauty industry?",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Petcare: A new frontier for the beauty industry?",
-    "en": "Petcare: A new frontier for the beauty industry?"
-   },
-   "summary": {
-    "ar": "Skincare, dietary supplements, fragrances, spa-inspired treatments — the petcare market is undergoing a transformation as pets take on an increasingly important role in people's lives. While brands are rolling out a growing range of dedicated product lines, this emerging market also presents challenges for manufacturers, who must adapt their expertise. Originating in Asia and the United States, the growing appeal of pet pampering is also gaining ground in Europe, including France, where... - Mar",
-    "en": "Skincare, dietary supplements, fragrances, spa-inspired treatments — the petcare market is undergoing a transformation as pets take on an increasingly important role in people's lives. While brands are rolling out a growing range of dedicated product lines, this emerging market also presents challenges for manufacturers, who must adapt their expertise. Originating in Asia and the United States, the growing appeal of pet pampering is also gaining ground in Europe, including France, where... - Mar"
-   }
-  },
-  {
-   "id": "n10sldmz",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LRzl6VzhiWXZxS1pKSTBCQkd6NmMzR2VZYlpDb0paZ0VkbWM1U0E3YnJiN2w0RWZKYko1Q3p3NTVSd0UyUTliRUg5alIybWstLXJMTkZHb0NjcHdOSjhWRlNIYXplcmk5cUh5Vmxn?oc=5",
-   "source": "Phys.org",
-   "publishedAt": "2026-11-23T22:40:02.000Z",
-   "original": "A hidden link between a flower's color and its scent revealed",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "A hidden link between a flower's color and its scent revealed",
-    "en": "A hidden link between a flower's color and its scent revealed"
-   },
-   "summary": {
-    "ar": "A hidden link between a flower's color and its scent revealed",
-    "en": "A hidden link between a flower's color and its scent revealed"
-   }
-  },
-  {
-   "id": "n33gmq1",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOem9SWXhrWDREQ2ZvNzF3MkxrbG5rVEcxSW54aHR2NnRZbGU3VVJrVG05Nl9WWHlfTk9saXlUNWcwV2gtYjhzaGp3NGxhVGc0R0ZsY2s3bUNqT0p3VzlBaWIyMVBjb3ZzNFlrdGFlM1EtbTFISFhqb2xCd1h1b0NrN2JObDQwWWVlZzRwUjBlblcycWxtMmZnaGtXbTZfUQ?oc=5",
-   "source": "openPR.com",
-   "publishedAt": "2026-11-23T22:16:02.000Z",
-   "original": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
-    "en": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation"
-   },
-   "summary": {
-    "ar": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
-    "en": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation"
-   }
-  },
-  {
-   "id": "ncc12or",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaG9uU25WS2xVVlVVakZQMldFTjZqaHQxM1d2MjRYeERfb0dPQ0JPajBwUEtKS0hOVThHTFVFWFRWeHZxSHd5cDB0MUlObWs2ZVAza1JpYWZqRTFleTYyNGtCYk5HcGRocndJV2FMY2lMNndzblNidVoyYUxucXZfT29ZUEkyRkxWRThNeUEzSGZvZw?oc=5",
-   "source": "intlbm",
-   "publishedAt": "2026-11-23T20:58:34.000Z",
-   "original": "Reef Group’s art of curating perfumery gets multiple Awards",
-   "lang": "en",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Reef Group’s art of curating perfumery gets multiple Awards",
-    "en": "Reef Group’s art of curating perfumery gets multiple Awards"
-   },
-   "summary": {
-    "ar": "Reef Group’s art of curating perfumery gets multiple Awards",
-    "en": "Reef Group’s art of curating perfumery gets multiple Awards"
-   }
-  },
-  {
-   "id": "n1mlgcbi",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWh5RF9UOEg3eEJ3Z0xsSkMyOXBac2c3b3hldWhwZUhVM3kzbzJyQW5teS1WQkFLcF9rUHhUeXNTZS1UX2dvQTRJNUZYSWxlMGtCZHE0YXNhUG1MZk12WF9HMU1xMEVWbWdKaFhWV2h2dHJGcmdHbkNRWGU3WThyN1lzQnRURV85RFN1ZVZGWjdiNzVON24wN2hCUnh4OUNHRFJDcg?oc=5",
-   "source": "stupidDOPE",
-   "publishedAt": "2026-11-23T20:22:12.000Z",
-   "original": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
-    "en": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price"
-   },
-   "summary": {
-    "ar": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
-    "en": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price"
-   }
-  },
-  {
-   "id": "n1yefunn",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOc0hnSTFSYXlMdzlQNnJnUmxkT29BbEhlMXJDaVlYUGVTSHBROTJVNkpHMjlZOG82Y05RUDdHSEdhbjFkSFllX2tISUxSVUJGcTE1eW1TXzkzOFRxUU9fcmRNQ3B3aDBwSXZaNDlwdDRQM2UtdGVGbXFyLUxkbVhhSVAyVQ?oc=5",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T19:06:11.000Z",
-   "original": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
-    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
-   },
-   "summary": {
-    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
-    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
-   }
-  },
-  {
-   "id": "nmw9a0d",
-   "url": "https://cafleurebon.com/2026-sniffapalooza-fall-ball-niche-perfumes-winner/?utm_source=rss&utm_medium=rss&utm_campaign=2026-sniffapalooza-fall-ball-niche-perfumes-winner",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-23T18:50:13.000Z",
-   "original": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
-    "en": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner"
-   },
-   "summary": {
-    "ar": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "n53l08m",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
-   "source": "Auparfum",
-   "publishedAt": "2026-11-23T18:35:23.000Z",
-   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   },
-   "summary": {
-    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
-    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
-   }
-  },
-  {
-   "id": "n1srzfw5",
-   "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxPcktxcU5STkQyX0RkNDJiTE9qNFMzNHlfOGk0bnYyRlBiZU1oSzlPV2liODFocHRBdUI3eVJsLXFrem9JeDN2LW4yTW5NMHRCOEpOdUpKTUljMVVGUjhvRlV4ZS1RcDRGUjZkUEw0SmdkNWJpbVB0U0c4aFMyMmZoQzJCbXV4V2RGYkU5eF9IYWE3RDVBZ3BkWEI1T0UzOV8zRjNhUGY1UU12VXFpV3ZienZVd003ZndtbzdQcDZtb1E2YXJ2R3RfMEVucWt0U0NrWE9COUxsM3l2UEFONERsaE91UmpHZnZleEF3cTctQi15bTNvclBWSE1WMGRPRUNuWTBHb3g1ZUhaRE02ODRPYll3LXJPMWI1WnlOcVFfZ0VVSlJPY3ZWaFM0QzNYYTUxNDR1Y2s3Z0g4b0YxRUVNbHVyUU43ZXVvZWd1aVJCX3pNWjlVYVlyWklYVGY0WTl4cFVOYThpamZtbXRuWkgxdzhhbmhaZFhMdTJsZHNEZw?oc=5",
-   "source": "France 3 Régions",
-   "publishedAt": "2026-11-23T17:50:43.000Z",
-   "original": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
-   "lang": "fr",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
-    "en": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création"
-   },
-   "summary": {
-    "ar": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
-    "en": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création"
-   }
-  },
-  {
-   "id": "n1b7m31u",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcENYMXFQQjBfSUQ3WlJxVGlta3lMck1NOUVXSDlKblI5MkcyQUREMV84M3NUS3B2d04wMm1HaHU4cUdVR0VEYWM1TF9vTWR6OEthalpiNlpSaklIcWM0dXAyTkZNaVpvRkNtdmdxMmJla0NBR2gtbHB3T0VyREVoVmwxYmRQaFNEaHp0NDZhN0M0ZTVNdTk0?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-23T17:48:07.000Z",
-   "original": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
-    "en": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\""
-   },
-   "summary": {
-    "ar": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
-    "en": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\""
-   }
-  },
-  {
-   "id": "n16vayo4",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNjFJSEVYWWdoMlgyd2RzSGFmUm5rQm1Jam9MdXVzMV9zN1E3bzBybVAyWVBFRVNINGFyUjllT1l5cjJmVTk5SWNqanJWNWJ1R0ZQX1RBZFdnb3Y5dzk1clJyNjZ6TE1CdFJWekVVRWVWWkJ4OFlkaktkQmpkS0t1eDFKcUpGLVhBdWhSRXczRWdrZGxKQ1RVUm9kR0k0V3NaOWJUTnJZdlFXbzVqdV9pSWtUZFBUSjhGbmlZWDZXdw?oc=5",
-   "source": "FashionNetwork France",
-   "publishedAt": "2026-11-23T16:54:27.000Z",
-   "original": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
-    "en": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté"
-   },
-   "summary": {
-    "ar": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
-    "en": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté"
    }
   }
  ]
