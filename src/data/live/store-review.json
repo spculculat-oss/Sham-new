@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-24T03:03:16.350Z",
+ "updatedAt": "2026-11-24T15:15:36.423Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 491,
-  "warn": 623,
+  "ok": 487,
+  "warn": 627,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-24T03:02:25.645Z",
+  "at": "2026-11-24T15:14:43.871Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -41,7 +41,7 @@
   "prices": {
    "count": 1063,
    "min": 750,
-   "median": 3330,
+   "median": 3320,
    "max": 7835,
    "top": [
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 50731
+  "durationMs": 52578
  },
  "items": [
   {
@@ -5164,11 +5164,45 @@
    "page": "p/hawas-apex-hybrid-by-kenz-de-rasasi-100ml-edp-unisex-926.html"
   },
   {
+   "sku": "KEN-927",
+   "id": 927,
+   "name": "Hawas Apex by Kenz de Rasasi",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/hawas-apex-by-kenz-de-rasasi-927.html"
+  },
+  {
+   "sku": "OSM-928",
+   "id": 928,
+   "name": "Romance by Osma Perfumes 150ml EDP Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/romance-by-osma-perfumes-150ml-edp-women-928.html"
+  },
+  {
+   "sku": "FRE-929",
+   "id": 929,
+   "name": "Liquid Brun French Avenue 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/liquid-brun-french-avenue-100ml-edp-men-929.html"
+  },
+  {
    "sku": "PAR-930",
    "id": 930,
    "name": "Taskeen Caramel Cascade 100ml by Paris Corner",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/taskeen-caramel-cascade-100ml-by-paris-corner-930.html"
@@ -5179,6 +5213,7 @@
    "name": "Daar Al Oud Intense 100ml by Paris Corner",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/daar-al-oud-intense-100ml-by-paris-corner-931.html"
@@ -5189,6 +5224,7 @@
    "name": "Autograph 100ml by Paris Corner",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/autograph-100ml-by-paris-corner-932.html"
@@ -5220,6 +5256,7 @@
    "name": "Vanilla S Amber & Musk 75ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/vanilla-s-amber-and-musk-75ml-edp-935.html"
@@ -5230,6 +5267,7 @@
    "name": "Atomise Intensive Men by Emir Paris Corner 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/atomise-intensive-men-by-emir-paris-corner-100ml-936.html"
@@ -5240,9 +5278,20 @@
    "name": "Obsidian French Avenue Eau De Parfum 100ml Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/obsidian-french-avenue-eau-de-parfum-100ml-unisex-937.html"
+  },
+  {
+   "sku": "PAR-938",
+   "id": 938,
+   "name": "Saviour by Paris Corner Pendora 100ml Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/saviour-by-paris-corner-pendora-100ml-men-938.html"
   },
   {
    "sku": "OSM-939",
@@ -5302,7 +5351,8 @@
    "name": "Amber S Rose Osma 75ml EDP",
    "status": "warn",
    "issues": [
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/amber-s-rose-osma-75ml-edp-944.html"
   },
@@ -5333,7 +5383,8 @@
    "name": "Woody S Mango Leather 75ml EDP",
    "status": "warn",
    "issues": [
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/woody-s-mango-leather-75ml-edp-947.html"
   },

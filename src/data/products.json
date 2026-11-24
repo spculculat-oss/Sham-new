@@ -60467,7 +60467,7 @@
       "nameAr": "Hawas Apex by Kenz de Rasasi",
       "nameEn": "Hawas Apex by Kenz de Rasasi",
       "descriptionAr": "",
-      "descriptionEn": "Hawas Apex by Kenz de Rasasi – Unisex Fragrance\nHawas Apex by Kenz de Rasasi is a 2026 unisex fragrance with a spicy, aromatic and green profile. It opens with mint, mandarin and bergamot for a cool citrus freshness. The heart combines blackcurrant, carrot and jasmine, adding fruity, earthy-powdery and floral facets. In the base, fig, woody notes and amber create a smooth green-woody finish with gentle warmth.\nFragrance Notes:\nTop: Mint, Mandarin, Bergamot\nMiddle: Blackcurrant, Carrot, Jasmine\nBase: Fig, Woody Notes, Amber",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/hawas-apex-by-kenz-de-rasasi-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/hawas-apex-by-kenz-de-rasasi-1.jpg",
@@ -60481,8 +60481,8 @@
       ],
       "category": "مختلط",
       "brand": "Kenz de Rasasi",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 3425.53,
+      "ourPrice": 5140,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60493,32 +60493,21 @@
       "supplierSku": "KENZ-DE-RASASI-HAWAS-APEX",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 260,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/kenz-de-rasasi/hawas-apex-kenz-de-rasasi/",
       "slug": "hawas-apex-by-kenz-de-rasasi-927",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Mint",
-          "Mandarin",
-          "Bergamot"
-        ],
-        "heart": [
-          "Blackcurrant",
-          "Carrot",
-          "Jasmine"
-        ],
-        "base": [
-          "Fig",
-          "Woody Notes",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Spicy",
-        "Aromatic Green"
+        "Fresh",
+        "Aromatic",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -60526,12 +60515,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily",
-        "Casual"
+        "Daily"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 928,
@@ -60539,7 +60531,7 @@
       "nameAr": "Romance by Osma Perfumes 150ml EDP Women",
       "nameEn": "Romance by Osma Perfumes 150ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Romance by Osma Perfumes – 150ml Eau de Parfum for Women\nRomance by Osma Perfumes is a soft fruity-floral fragrance for women with a powdery, musky character. It opens with peach and rose, giving a juicy floral start with gentle sweetness. The heart combines Turkish rose, iris and white flowers for a smooth, elegant and powdery floral feel. In the dry down, musk and sandalwood create a clean, creamy and softly woody finish.\nFragrance Notes:\nTop: Peach, Rose\nMiddle: Turkish Rose, Iris, White Flowers\nBase: Musk, Sandalwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/romance-by-osma-perfumes-150ml-edp-women-4.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/romance-by-osma-perfumes-150ml-edp-women-4.jpg",
@@ -60553,8 +60545,8 @@
       ],
       "category": "نسائي",
       "brand": "Osma",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 2345.17,
+      "ourPrice": 3520,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60564,31 +60556,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "OSMA-ROMANCE-150ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 250,
-      "supplierSalePrice": 178,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 178,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-romance-150-ml/",
       "slug": "romance-by-osma-perfumes-150ml-edp-women-928",
       "sizeMl": 150,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Peach",
-          "Rose"
-        ],
-        "heart": [
-          "Turkish Rose",
-          "Iris",
-          "White Flowers"
-        ],
-        "base": [
-          "Musk",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Fruity"
+        "Fruity",
+        "Floral"
       ],
       "seasonsSource": [
         "Spring",
@@ -60598,12 +60580,15 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Date Night",
-        "Casual"
+        "Evening"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 929,
@@ -60611,7 +60596,7 @@
       "nameAr": "Liquid Brun French Avenue 100ml EDP Men",
       "nameEn": "Liquid Brun French Avenue 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Liquid Brun by French Avenue – 100ml Eau de Parfum for Men\nLiquid Brun by French Avenue is a warm Amber fragrance for men with a rich spicy-sweet profile. It opens with cinnamon, bergamot, cardamom and orange blossom, bringing warm spice together with fresh citrus and soft florals. The heart blends Bourbon vanilla and elemi for a creamy, resinous sweetness. In the dry down, musk, praline, ambroxan and guaiac wood create a smooth, sweet and woody finish with plenty of depth.\nFragrance Notes:\nTop: Cinnamon, Bergamot, Cardamom, Orange Blossom\nMiddle: Bourbon Vanilla, Elemi\nBase: Musk, Praline, Ambroxan, Guaiac Wood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/liquid-brun-french-avenue-100ml-edp-men-6.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/liquid-brun-french-avenue-100ml-edp-men-6.jpg",
@@ -60625,8 +60610,8 @@
       ],
       "category": "رجالي",
       "brand": "French Avenue",
-      "supplierPrice": 3662.68,
-      "ourPrice": 5495,
+      "supplierPrice": 2621.84,
+      "ourPrice": 3935,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60636,33 +60621,20 @@
       "supplierName": "Sham perfume",
       "supplierSku": "FRENCH-AVENUE-LIQUID-BRUN-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 280,
-      "supplierSalePrice": 199,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 199,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/french-avenue/liquid-brun-french-avenue-100ml/",
       "slug": "liquid-brun-french-avenue-100ml-edp-men-929",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Cinnamon",
-          "Bergamot",
-          "Cardamom",
-          "Orange Blossom"
-        ],
-        "heart": [
-          "Bourbon Vanilla",
-          "Elemi"
-        ],
-        "base": [
-          "Musk",
-          "Praline",
-          "Ambroxan",
-          "Guaiac Wood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
+        "Amber",
         "Oriental"
       ],
       "seasonsSource": [
@@ -60671,14 +60643,16 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6290360375694",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 930,
@@ -60686,7 +60660,7 @@
       "nameAr": "Taskeen Caramel Cascade 100ml by Paris Corner",
       "nameEn": "Taskeen Caramel Cascade 100ml by Paris Corner",
       "descriptionAr": "",
-      "descriptionEn": "Taskeen Caramel Cascade 100ml by Paris Corner\nTaskeen Caramel Cascade 100ml by Paris Corner The fragrance opens with caramel, milk, and buttery sweetness before revealing a heart of tonka bean, honey, and white flowers. It settles into a rich base of vanilla, praline, musk, and amber, creating a warm gourmand composition with long-lasting depth.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/taskeen-caramel-cascade-100ml-by-paris-corner-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/taskeen-caramel-cascade-100ml-by-paris-corner-1.jpg",
@@ -60700,8 +60674,8 @@
       ],
       "category": "نسائي",
       "brand": "Paris Corner",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 1251.63,
+      "ourPrice": 1880,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60711,14 +60685,13 @@
       "supplierName": "Sham perfume",
       "supplierSku": "TASKEEN-CARAMEL-CASCADE-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 169,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/taskeen-caramel-cascade-100ml/",
       "slug": "taskeen-caramel-cascade-100ml-by-paris-corner-930",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
@@ -60735,13 +60708,14 @@
       "occasionsSource": [
         "Evening",
         "Special Event",
-        "Daily Wear"
+        "Daily"
       ],
       "barcode": "6292021552253",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -60751,20 +60725,19 @@
       "nameAr": "Daar Al Oud Intense 100ml by Paris Corner",
       "nameEn": "Daar Al Oud Intense 100ml by Paris Corner",
       "descriptionAr": "",
-      "descriptionEn": "Daar Al Oud Intense 100ml by Paris Corner\nDaar Al Oud Intense 100ml by Paris Corner The fragrance opens with saffron, lavender, and nutmeg before revealing a rich heart of oud and patchouli. It settles into a deep base of musk, oud, and patchouli, creating a warm, woody, and long-lasting finish.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-1.jpg",
         "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-2.jpg",
         "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-3.jpg",
         "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-4.jpg",
-        "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/daar-al-oud-intense-100ml-by-paris-corner-3.jpg"
+        "https://www.shamperfume.com/cdn/large/daar-al-oud-intense-100ml-by-paris-corner-5.jpg"
       ],
       "category": "مختلط",
       "brand": "Paris Corner",
-      "supplierPrice": 1949.07,
-      "ourPrice": 2925,
+      "supplierPrice": 1185.76,
+      "ourPrice": 1780,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60774,21 +60747,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "DAAR-AL-OUD-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 149,
-      "supplierSalePrice": 90,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 90,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/daar-al-oud-paris-corner-edp-intense-100ml/",
       "slug": "daar-al-oud-intense-100ml-by-paris-corner-931",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Oriental Woody"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -60797,13 +60771,14 @@
       "occasionsSource": [
         "Evening",
         "Special Event",
-        "Daily Wear"
+        "Daily"
       ],
       "barcode": "6246717622270",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -60813,7 +60788,7 @@
       "nameAr": "Autograph 100ml by Paris Corner",
       "nameEn": "Autograph 100ml by Paris Corner",
       "descriptionAr": "",
-      "descriptionEn": "Autograph 100ml by Paris Corner\nAutograph 100ml by Paris Corner The fragrance opens with bergamot, grapefruit, and black pepper before revealing an aromatic heart of lavender, geranium, and cedarwood. It settles into a rich base of amber, patchouli, vetiver, and musk, creating a woody aromatic signature with long-lasting depth.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-1.jpg",
@@ -60821,13 +60796,12 @@
         "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-3.jpg",
         "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-4.jpg",
         "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-5.jpg",
-        "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-6.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/autograph-100ml-by-paris-corner-1.jpg"
+        "https://www.shamperfume.com/cdn/large/autograph-100ml-by-paris-corner-6.jpg"
       ],
       "category": "رجالي",
       "brand": "Paris Corner",
-      "supplierPrice": 2079.88,
-      "ourPrice": 3120,
+      "supplierPrice": 1304.33,
+      "ourPrice": 1960,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60837,21 +60811,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "AUTOGRAPH-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 159,
-      "supplierSalePrice": 99,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 99,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/autograph-paris-corner-100ml/",
       "slug": "autograph-100ml-by-paris-corner-932",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -60863,13 +60837,14 @@
         "Office",
         "Evening",
         "Special Event",
-        "Daily Wear"
+        "Daily"
       ],
       "barcode": "6298141928749",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -60879,7 +60854,7 @@
       "nameAr": "Rich Santal Emir by Paris Corner 100 ml",
       "nameEn": "Rich Santal Emir by Paris Corner 100 ml",
       "descriptionAr": "",
-      "descriptionEn": "Rich Santal Emir – Eau de Parfum / 100 ml (Unisex)\nRich Santal Emir Factory Edition by Paris Corner merges spicy sophistication with smooth leather warmth in a luxurious unisex fragrance. The scent opens with crisp cardamom, airy violet accords, and rich papyrus. The heart unfolds with elegant iris and glowing amber, while the base settles into deep leather, creamy sandalwood, and refined cedarwood. Perfect for both women and men seeking a distinctive, elegant Clearly structured fragrance.\nFragrance Notes:Top: Cardamom, Violet accords, PapyrusHeart: Iris, AmberBase: Leather, Sandalwood, Cedarwood\nDetails: Eau de Parfum (EDP) · 100 ml · Unisex · Woody-Aromatic",
+      "descriptionEn": "Rich Santal Emir Factory Edition 100 ml EDP – woody-leather unisex fragrance with cardamom, iris & sandalwood. Rich, bold and elegant.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/rich-santal-emir-paris-corner-woody-sandalwood-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/rich-santal-emir-paris-corner-woody-sandalwood-100ml-edp.jpg",
@@ -60893,8 +60868,8 @@
       ],
       "category": "مختلط",
       "brand": "Paris Corner",
-      "supplierPrice": 2092.96,
-      "ourPrice": 3140,
+      "supplierPrice": 2108.02,
+      "ourPrice": 3165,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60905,27 +60880,34 @@
       "supplierSku": "rich-santa-8753",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 160,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/rich-santal-emir/",
       "slug": "rich-santal-emir-by-paris-corner-100-ml-933",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Spicy",
+        "Leather"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6297856875218",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
@@ -60938,7 +60920,7 @@
       "nameAr": "White F Berries & Flowers 75ml EDP",
       "nameEn": "White F Berries & Flowers 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "White F – Berries & Flowers / 75 ml Eau de Parfum\nWhite F by Osma, created by perfumer Jorge Fernandez, is a fragrance full of vitality and emotion. It opens with juicy black currant, leading into a radiant orange blossom heart that captures elegance and freshness. The base of maltol adds soft sweetness, creating a balanced Clearly structured fragrance that blends fruity brightness with floral depth. This 75 ml Eau de Parfum is versatile, refined, and perfectly unisex, ideal for daily wear or special moments.",
+      "descriptionEn": "White F 75 ml EDP Osma – black currant, orange blossom & maltol. A unisex fragrance by Jorge Fernandez, vibrant.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/white-f-perfume-berries-flowers-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/white-f-perfume-berries-flowers-75ml-box-edp.jpg",
@@ -60952,8 +60934,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2877.82,
-      "ourPrice": 4320,
+      "supplierPrice": 2239.77,
+      "ourPrice": 3360,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -60963,28 +60945,33 @@
       "supplierName": "Sham perfume",
       "supplierSku": "white-f-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 220,
-      "supplierSalePrice": 170,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 170,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/white-f/",
       "slug": "white-f-berries-and-flowers-75ml-edp-934",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Fruity"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6287036282004",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -60996,7 +60983,7 @@
       "nameAr": "Vanilla S Amber & Musk 75ml EDP",
       "nameEn": "Vanilla S Amber & Musk 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Vanilla S – Amber & Musk / 75 ml Eau de Parfum\nVanilla S by Osma blends sophistication and charm into a modern unisex Clearly structured fragrance. The opening pairs luminous tuberose musk for a soft, airy lift, leading into a plush heart of amber and vanilla that feels creamy and comforting. The base settles on supple leather, adding depth and elegance for a trail. Balanced between floral brightness, cozy sweetness, and refined warmth, this Eau de Parfum is ideal for both women and men—perfect for day comfort or evening Elegant.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-box-edp.jpg",
@@ -61004,13 +60991,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-bottle-musk-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-women-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-her-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-box-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/vanilla-s-perfume-vanilla-musk-75ml-her-edp.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2603.12,
-      "ourPrice": 3905,
+      "supplierPrice": 2226.59,
+      "ourPrice": 3340,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61020,31 +61006,39 @@
       "supplierName": "Sham perfume",
       "supplierSku": "vanilla-s-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 199,
-      "supplierSalePrice": 169,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 169,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/vanilla-s/",
       "slug": "vanilla-s-amber-and-musk-75ml-edp-935",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Gourmand",
+        "Leather"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6287036282097",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -61054,7 +61048,7 @@
       "nameAr": "Atomise Intensive Men by Emir Paris Corner 100ml",
       "nameEn": "Atomise Intensive Men by Emir Paris Corner 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Atomise Intensive Men by Emir Paris Corner – 100ml Eau de Parfum for Men.\nAtomise Intensive Men by Emir Paris Corner oriental fougère fragrance combining fresh fruit, aromatic herbs, warm spices and a rich vanilla-amber base. It opens with pear, lavender, mint, bergamot and lemon, creating a bright blend of juicy sweetness, cool herbs and crisp citrus. The heart combines cinnamon, clary sage and caraway for a warm, aromatic and spicy character. Black vanilla husk, amber, patchouli and cedar form the base, adding smooth sweetness, earthy depth and warm woods. Suitable for men who enjoy fresh-sweet fragrances with aromatic spice and a deep vanilla finish.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-1.jpg",
@@ -61063,13 +61057,12 @@
         "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-4.jpg",
         "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-5.jpg",
         "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-7.jpg",
-        "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-6.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/atomise-intensive-men-by-emir-paris-corner-100ml-1.jpg"
+        "https://www.shamperfume.com/cdn/large/atomise-intensive-men-by-emir-paris-corner-100ml-6.jpg"
       ],
       "category": "رجالي",
       "brand": "Paris Corner",
-      "supplierPrice": 2171.45,
-      "ourPrice": 3260,
+      "supplierPrice": 1251.63,
+      "ourPrice": 1880,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61079,20 +61072,20 @@
       "supplierName": "Sham perfume",
       "supplierSku": "ATOMISE-INTENSIVE-MEN-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 166,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/atomise-intensive-men-emir/",
       "slug": "atomise-intensive-men-by-emir-paris-corner-100ml-936",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
+        "Amber",
         "Oriental"
       ],
       "seasonsSource": [
@@ -61101,15 +61094,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
         "Special Event",
-        "Casual"
+        "Daily"
       ],
       "barcode": "6423080731369",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -61119,7 +61112,7 @@
       "nameAr": "Obsidian French Avenue Eau De Parfum 100ml Unisex",
       "nameEn": "Obsidian French Avenue Eau De Parfum 100ml Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Obsidian by French Avenue 100ml Eau de Parfum\nObsidian is a unisex Oriental Woody fragrance launched in 2025. It opens with aldehydes, grapefruit and bergamot for a bright, crisp and slightly sparkling start. The heart moves into myrrh, jasmine and labdanum, giving the scent a resinous floral warmth. Vanilla, amber and tonka bean form the base, creating a smooth, sweet and ambery dry down.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/obsidian-eau-de-parfum-100ml-by-french-avenue-6.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/obsidian-eau-de-parfum-100ml-by-french-avenue-6.jpg",
@@ -61133,8 +61126,8 @@
       ],
       "category": "مختلط",
       "brand": "French Avenue",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 2437.39,
+      "ourPrice": 3660,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61144,21 +61137,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "OBSIDIAN-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 260,
-      "supplierSalePrice": 185,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 185,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/french-avenue/obsidian-french-avenue-edp-100ml/",
       "slug": "obsidian-french-avenue-eau-de-parfum-100ml-unisex-937",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (9-10 hours)",
+      "concentration": "EDP",
+      "longevity": "8–12 hours (Strong)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Oriental Woody"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -61170,13 +61163,14 @@
         "Office",
         "Evening",
         "Special Event",
-        "Daily Wear"
+        "Daily"
       ],
       "barcode": "6298042001879",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -61186,7 +61180,7 @@
       "nameAr": "Saviour by Paris Corner Pendora 100ml Men",
       "nameEn": "Saviour by Paris Corner Pendora 100ml Men",
       "descriptionAr": "",
-      "descriptionEn": "Saviour by Paris Corner Pendora Scents – Eau de Parfum 100ml\nSaviour by Paris Corner Pendora Scents is a modern masculine fragrance that fuses freshness with spice and woody depth. It launches with crisp bergamot and a hint of grapefruit, layered with invigorating pepper. The heart features aromatic lavender, warm geranium, pink pepper and earthy vetiver. The base notes round off with elegant cedarwood, rich labdanum and potent ambroxan, lending character and sophistication. Ideal for day or evening wear, this scent expresses confident, modern masculinity.\nFragrance Notes:\nTop: Bergamot, Grapefruit, Pepper\nHeart: Lavender, Pink Pepper, Geranium, Vetiver\nBase: Ambroxan, Cedarwood, Labdanum\nHaruman Lelaki Moden\nSaviour oleh Paris Corner Pendora Scents menggabungkan kesegaran sitrus dengan rempah dan kayu yang dalam. Bermula dengan bergamot dan sedikit grapefruit, kemudian pepper; jantungnya mengandungi lavender, geranium, pink pepper dan vetiver; dan akhirnya cedarwood, labdanum serta ambroxan. Tahan lama dan sesuai untuk lelaki yang menghargai keanggunan moden.",
+      "descriptionEn": "Buy Saviour by Paris Corner 100ml EDP – Men’s fragrance with bergamot, pepper & cedarwood modern scent. Ideal for day or evening wear.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-paris-corner-perfume-lelaki-fresh-spicy-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-paris-corner-perfume-lelaki-fresh-spicy-100ml-edp.jpg",
@@ -61195,13 +61189,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-pejabat-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-grooming-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-klub-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-coffee-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/paris-corner/saviour-pendora-paris-corner-perfume-lelaki-fresh-spicy-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/saviour-pendora-coffee-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Paris Corner",
-      "supplierPrice": 2092.96,
-      "ourPrice": 3140,
+      "supplierPrice": 1212.11,
+      "ourPrice": 1820,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61211,43 +61204,38 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Saviour-Pe-61888",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 160,
-      "supplierSalePrice": 92,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 92,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/saviour-paris/",
       "slug": "saviour-by-paris-corner-pendora-100ml-men-938",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Grapefruit",
-          "Pepper"
-        ],
-        "heart": [
-          "Lavender",
-          "Pink Pepper",
-          "Geranium",
-          "Vetiver"
-        ],
-        "base": [
-          "Ambroxan",
-          "Cedarwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fresh",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6423080723623",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 939,
@@ -61255,7 +61243,7 @@
       "nameAr": "Woody W Bergamot Leather 75ml EDP",
       "nameEn": "Woody W Bergamot Leather 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Woody W – Bergamot & Leather / 75 ml Eau de Parfum\nWoody W by Osma is a bold unisex fragrance, born from the meticulous artistry that created Cotton C. This Eau de Parfum opens with the sparkling freshness of bergamot, blending into a sweet, warm maltol heart. The scent deepens with a rich leather base, giving the perfume strength, depth, and sophistication. Balanced between citrus brightness, subtle sweetness, and bold leather, Woody W creates a distinctive aroma suited for both men and women.\nPerfect for evening wear or when you want to make a confident statement with an elegant, modern fragrance.",
+      "descriptionEn": "Woody W 75ml EDP Osma – bergamot, maltol & leather. A bold unisex fragrance by Osma, modern and confidently distinctive.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-w-perfume-bergamot-leather-box-75ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-w-perfume-bergamot-leather-box-75ml-edp.jpg",
@@ -61269,8 +61257,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2747.01,
-      "ourPrice": 4125,
+      "supplierPrice": 2042.14,
+      "ourPrice": 3065,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61280,19 +61268,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "woody-w-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 210,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 155,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/woody-w/",
       "slug": "woody-w-bergamot-leather-75ml-edp-939",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Leather",
+        "Citrus"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -61300,11 +61290,12 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6287036281946",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61316,7 +61307,7 @@
       "nameAr": "Ghost Spectre by French Avenue 80ml",
       "nameEn": "Ghost Spectre by French Avenue 80ml",
       "descriptionAr": "",
-      "descriptionEn": "Ghost Spectre by French Avenue 80ml\nGhost Spectre by French Avenue 80ml EDP is a woody aromatic fragrance with a fresh spicy opening, an elegant floral heart and a warm woody base. Suitable for day or evening wear.\nThe fragrance opens with a fresh burst of ginger, bergamot, pink pepper, and green citrus — a lively combination that awakens the senses. As the scent unfolds, the heart reveals a unique blend of black currant, cardamom, and Turkish rose, adding depth and a touch of floral spice. In the final layer, a rich base of vanilla, sandalwood, benzoin, cedar, patchouli, amber, and musk creates a warm, comforting finish that leaves a lasting impression.",
+      "descriptionEn": "Ghost spectre by French Avenue 80ml EDP with ginger, bergamot, Turkish rose, vanilla, sandalwood and ambergris.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/spectre-ghost-by-french-avenue-80ml-edp-8.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/spectre-ghost-by-french-avenue-80ml-edp-8.jpg",
@@ -61330,8 +61321,8 @@
       ],
       "category": "مختلط",
       "brand": "French Avenue",
-      "supplierPrice": 3139.44,
-      "ourPrice": 4710,
+      "supplierPrice": 2898.52,
+      "ourPrice": 4350,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61341,20 +61332,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "SPECTRE-GHOST-FRENCH-AVENUE",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 240,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 220,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/french-avenue/spectre-ghost-french-avenue-80ml-edp/",
       "slug": "ghost-spectre-by-french-avenue-80ml-940",
       "sizeMl": 80,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -61362,13 +61354,13 @@
         "Winter"
       ],
       "occasionsSource": [
+        "Evening",
         "Daily",
-        "Office",
-        "Evening"
+        "Office"
       ],
       "barcode": "6290360372723",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
@@ -61381,7 +61373,7 @@
       "nameAr": "Osma S – Pepper & Sandalwood EDP 150 ml",
       "nameEn": "Osma S – Pepper & Sandalwood EDP 150 ml",
       "descriptionAr": "",
-      "descriptionEn": "Osma S – Pepper & Sandalwood / 150 ml Eau de Parfum\nOsma S invites you into a refined, unisex fragrance journey. It opens with zesty pink pepper for an uplifting and spicy introduction, moves into a romantic heart of jasmine sambac, and settles into a smooth, warm sandalwood base. This Eau de Parfum balances sparkle, floral elegance, and woody warmth—ideal for both men and women, day or evening.",
+      "descriptionEn": "Byt Unisex 150ml EDP by Osma bright pink pepper, jasmine and sandalwood, composed by perfumer Hamed Mirati-Kashani. Fine.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-edp-box-perfume.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-edp-box-perfume.jpg",
@@ -61390,13 +61382,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-women-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-edp-box-bottle.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-edp-150ml.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-flower-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/osma-s-pepper-sandalwood-150ml-edp-box-perfume.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-s-pepper-sandalwood-150ml-flower-edp.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 3425.53,
+      "ourPrice": 5140,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61407,27 +61398,34 @@
       "supplierSku": "osma-s-150ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 260,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-s/",
       "slug": "osma-s-pepper-and-sandalwood-edp-150-ml-941",
       "sizeMl": 150,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Spicy",
+        "Floral",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6287036282660",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
@@ -61440,7 +61438,7 @@
       "nameAr": "Fruity D Cherry & Oud 75ml EDP",
       "nameEn": "Fruity D Cherry & Oud 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Fruity D – Vibrant Cherry Notes / 75 ml Eau de Parfum\nFruity D by Osma blends playful fruit and deep woods for a unisex Clearly structured fragrance crafted by Gael Monteiro. It opens with bright, mouth-watering cherry, moving into a velvety rose heart that adds elegance and lift. The base rests on smoky oud, giving warmth, depth, and a memorable trail. Balanced between lively sweetness and dark Elegant, this 75 ml Eau de Parfum suits women and men, from daytime confidence to evening style.",
+      "descriptionEn": "Fruity D 75 ml EDP by Osma — vibrant cherry, elegant rose & smoky oud. Unisex, modern.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/fruity-d-perfume-cherry-rose-oud-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/fruity-d-perfume-cherry-rose-oud-75ml-box-edp.jpg",
@@ -61454,8 +61452,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2747.01,
-      "ourPrice": 4125,
+      "supplierPrice": 2108.02,
+      "ourPrice": 3165,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61465,28 +61463,34 @@
       "supplierName": "Sham perfume",
       "supplierSku": "fruity-d-cherry-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 210,
-      "supplierSalePrice": 160,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 160,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/fruity-d-cherry/",
       "slug": "fruity-d-cherry-and-oud-75ml-edp-942",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Floral",
+        "Oud"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6287036281960",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61498,7 +61502,7 @@
       "nameAr": "Flowers W Osma Sandalwood 75ml",
       "nameEn": "Flowers W Osma Sandalwood 75ml",
       "descriptionAr": "",
-      "descriptionEn": "Flowers W – Ginger & Sandalwood / 75 ml Eau de Parfum\nFlowers W by Osma opens your fragrance journey with a refreshing spark of ginger that energizes everyday style. The heart with soft amber, adding warmth and lift, while the base rests on smooth sandalwood for a calm, creamy finish. This unisex Eau de Parfum balances spice, warmth, and wood to create a modern Clearly structured fragrance that feels clean, elegant, for both women and men.",
+      "descriptionEn": "Flowers W 75 ml Osma EDP – zesty ginger, warm amber and creamy sandalwood. Unisex, modern.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/flowers-w-perfume-edp-unisex-ginger-bsandalwood-75ml.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/flowers-w-perfume-edp-unisex-ginger-bsandalwood-75ml.jpg",
@@ -61512,8 +61516,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2943.23,
-      "ourPrice": 4415,
+      "supplierPrice": 2305.64,
+      "ourPrice": 3460,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61523,29 +61527,34 @@
       "supplierName": "Sham perfume",
       "supplierSku": "flowers-w-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 225,
-      "supplierSalePrice": 175,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 175,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/flowers-w/",
       "slug": "flowers-w-osma-sandalwood-75ml-943",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Spicy",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6287036281984",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61557,23 +61566,23 @@
       "nameAr": "Amber S Rose Osma 75ml EDP",
       "nameEn": "Amber S Rose Osma 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Amber S – Rose Elegant with Amber / 75 ml Eau de Parfum\nAmber S is a captivating unisex perfume by Osma, masterfully crafted by perfumer Gael Monteiro. It opens with a vibrant burst of black currant before unveiling an elegant rose heart. The dry-down settles into amber, warm and comforting, leaving a refined trail that suits both women and men.\nWear it for day or evening when you want an elegant Clearly structured fragrance with modern warmth and soft projection.",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-75ml-man-pos0.jpg",
+      "descriptionEn": "Amber S Perfume 75ml Osma – black currant, rose & amber. A unisex Eau de Parfum crafted by Gael Monteiro. Elegant, warm.",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-75ml-man-pos0.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-75ml-pos1.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-75ml-box-pos2.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-75ml-rose-amber-pos3.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-man-pos4.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-bottle-rose-amber-75ml-pos5.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-osma-pos6.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/495/amber-s-perfume-rose-amber-man-and-women-pos7.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-s-osma-75ml-edp-8.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2616.2,
-      "ourPrice": 3925,
-      "stockStatus": "in_stock",
+      "supplierPrice": 2635.02,
+      "ourPrice": 3955,
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -61583,18 +61592,22 @@
       "supplierSku": "amber-s-75ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 200,
-      "supplierSalePrice": 140,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/amber-s-rose/",
       "slug": "amber-s-rose-osma-75ml-edp-944",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Fruity",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -61602,14 +61615,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6287036281939",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -61618,7 +61633,7 @@
       "nameAr": "Woody F Pineapple & Leather 75ml EDP",
       "nameEn": "Woody F Pineapple & Leather 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Woody F – Pineapple & Leather / 75 ml Eau de Parfum\nWoody F by Osma is a bold unisex fragrance that starts with an energizing burst of pineapple for instant freshness. A textured leather heart adds depth and confidence, while the base settles into glowing amber for warmth and longevity. Balanced between bright fruit and refined woods, this 75 ml Eau de Parfum delivers a modern Clearly structured fragrance for women and men—clean in the opening, powerful at the heart, and elegantly warm in the dry-down.",
+      "descriptionEn": "Woody F 75 ml EDP Osma – fresh pineapple, rich leather & warm amber. Unisex, modern.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-man-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-man-box-edp.jpg",
@@ -61626,13 +61641,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-box-only-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-box-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-bag-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-man-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/woody-f-perfume-leather-amber-75ml-man-box-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-f-perfume-leather-amber-75ml-man-edp.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2747.01,
-      "ourPrice": 4125,
+      "supplierPrice": 2081.67,
+      "ourPrice": 3125,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61642,30 +61656,34 @@
       "supplierName": "Sham perfume",
       "supplierSku": "woody-f-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 210,
-      "supplierSalePrice": 158,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 158,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/woody-f/",
       "slug": "woody-f-pineapple-and-leather-75ml-edp-945",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Leather",
+        "Fruity",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6287036281991",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61677,7 +61695,7 @@
       "nameAr": "Osma Bonjour Oriental Blossoms 150ml EDP",
       "nameEn": "Osma Bonjour Oriental Blossoms 150ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Osma Bonjour – Oriental Blossoms / 150 ml Eau de Parfum\nOsma Bonjour is a sophisticated unisex fragrance designed to embody charm and leave a lasting fragrance style. It opens with the richness of oriental flowers, evoking elegance and warmth, moves into a balanced woody fruity heart that adds depth and vibrancy, and settles on a comforting gourmand base for a sensual finish. This 150 ml Eau de Parfum is perfect for both women and men, offering a harmonious blend that is versatile enough for daytime confidence or evening elegance.",
+      "descriptionEn": "Buy Osma Bonjour 150 ml EDP — oriental flowers, woody fruity heart & gourmand base. A refined unisex fragrance with lasting allure.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/bonjour-perfume-oriental-blossoms-box-150ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/bonjour-perfume-oriental-blossoms-box-150ml-edp.jpg",
@@ -61691,8 +61709,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 3518.79,
-      "ourPrice": 5280,
+      "supplierPrice": 3544.1,
+      "ourPrice": 5320,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61703,17 +61721,22 @@
       "supplierSku": "bonjour-150ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 269,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-bonjour/",
       "slug": "osma-bonjour-oriental-blossoms-150ml-edp-946",
       "sizeMl": 150,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Floral",
+        "Gourmand"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -61721,10 +61744,11 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
@@ -61737,7 +61761,7 @@
       "nameAr": "Woody S Mango Leather 75ml EDP",
       "nameEn": "Woody S Mango Leather 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Woody S – Mango & Leather / 75 ml Eau de Parfum\nWoody S is a bold unisex woody fragrance that opens with juicy mango, evolves into rich leather, and settles on smoky guaiac wood. Crafted for both men and women, this 75 ml EDP is refined, distinctive, and confidently aromatic.",
+      "descriptionEn": "Woody S 75ml EDP Osma Saudi – vibrant mango, bold leather, warm guaiac wood. Unisex woody fragrance, refined and distinctive.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-75ml-bottle-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-75ml-bottle-box-edp.jpg",
@@ -61745,14 +61769,13 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-75ml-box-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-osma-75ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-75ml-bottle-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-osma-perfume-75ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/woody-s-perfume-mango-leather-75ml-bottle-box-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/woody-s-perfume-mango-leather-osma-perfume-75ml-edp.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2747.01,
-      "ourPrice": 4125,
-      "stockStatus": "in_stock",
+      "supplierPrice": 2766.77,
+      "ourPrice": 4155,
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -61762,18 +61785,21 @@
       "supplierSku": "woody-s-75ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 210,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/woody-s-mango/",
       "slug": "woody-s-mango-leather-75ml-edp-947",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Fruity",
+        "Leather"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -61781,14 +61807,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6287036281922",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -61797,7 +61825,7 @@
       "nameAr": "Osma O Tobacco & Pear 150ml EDP",
       "nameEn": "Osma O Tobacco & Pear 150ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Osma O – Tobacco & Pear / 150 ml Eau de Parfum\nOsma O is a captivating unisex fragrance that fuses fruity brightness with smoky warmth. It opens with the crisp sweetness of pear, unfolds into a bold tobacco heart that adds richness and intrigue, and settles into a soft musk base for an elegant, sensual finish. This 150 ml Eau de Parfum balances freshness and depth, making it a versatile Clearly structured fragrance for both men and women. Wear it during the day for a confident edge or at night for a lasting, unforgettable fragrance style.",
+      "descriptionEn": "Buy Osma O 150 ml EDP — fresh pear, warm tobacco & sensual musk. unisex fragrance with depth, elegance allure.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-edp-box.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-edp-box.jpg",
@@ -61805,13 +61833,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-bottle-150ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-set-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-hand-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-edp-box.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-o-perfume-pear-tobacco-musk-150ml-edp.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 3518.79,
-      "ourPrice": 5280,
+      "supplierPrice": 2529.62,
+      "ourPrice": 3795,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61821,29 +61848,35 @@
       "supplierName": "Sham perfume",
       "supplierSku": "osma-o-150ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 269,
-      "supplierSalePrice": 192,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 192,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-o/",
       "slug": "osma-o-tobacco-and-pear-150ml-edp-948",
       "sizeMl": 150,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Fruity"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6287036282653",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61855,7 +61888,7 @@
       "nameAr": "Osma Citrus F 75ml Eau de Parfum - Fruity & Rose",
       "nameEn": "Osma Citrus F 75ml Eau de Parfum - Fruity & Rose",
       "descriptionAr": "",
-      "descriptionEn": "Osma Citrus F – Fruity & Rose Refreshment / 75 ml Eau de Parfum\nOsma Citrus F celebrates brightness and charm in a unisex composition shaped by Mieb Mac Curtain’s distinctive design touch. The scent opens with lively citrus for instant freshness, glides into a delicate rose heart that adds elegance, and settles on clean white musk for a soft, modern trail. Balanced between zesty fruit and airy florals, this 75 ml Eau de Parfum suits women and men—perfect for daily wear, warm days, or anytime you want a crisp, uplifting Clearly structured fragrance.",
+      "descriptionEn": "Osma Citrus F Eau de Parfum 75ml – sparkling citrus, romantic rose & clean white musk. Unisex, bright",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/citrus-f-perfume-citrus-rose-musk-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/citrus-f-perfume-citrus-rose-musk-75ml-box-edp.jpg",
@@ -61865,12 +61898,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/citrus-f-perfume-citrus-rose-musk-75ml-life-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/citrus-f-perfume-citrus-rose-musk-75ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/citrus-f-perfume-citrus-rose-musk-75-edp-75ml.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/506/citrus-f-perfume-bottle-citrus-rose-musk-75ml-edp-pos7.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/osma-citrus-f-75ml-eau-de-parfum-fruity-rose-1.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2812.42,
-      "ourPrice": 4220,
+      "supplierPrice": 2042.14,
+      "ourPrice": 3065,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61880,19 +61913,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "citrus-f-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 215,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 155,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/osma-citrus-f/",
       "slug": "osma-citrus-f-75ml-eau-de-parfum-fruity-and-rose-949",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Citrus",
+        "Fruity",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -61900,11 +61936,12 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6287036282011",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61916,7 +61953,7 @@
       "nameAr": "Floral R Luxurious Rose 75ml EDP",
       "nameEn": "Floral R Luxurious Rose 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Floral R – Luxurious Rose Aroma / 75 ml Eau de Parfum\nFloral R by Osma is a rich fragrance that inspires the soul and expresses elegance without limits. It opens with juicy black currant for brightness, unfolds into a lush rose heart that radiates luxury, and settles on smooth cedarwood for a refined, lasting trail. More than a blend of notes, this unisex Eau de Parfum feels like a journey into beauty and creativity—balanced, modern, and memorable for both women and men.",
+      "descriptionEn": "Floral R 75 ml EDP — black currant, rich rose & smooth cedarwood. Unisex, elegant by Osma.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/floral-r-perfume-rose-cedarwood-malaysia-75ml-edp-box.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/floral-r-perfume-rose-cedarwood-malaysia-75ml-edp-box.jpg",
@@ -61930,8 +61967,8 @@
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2773.17,
-      "ourPrice": 4160,
+      "supplierPrice": 2028.97,
+      "ourPrice": 3045,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -61941,28 +61978,33 @@
       "supplierName": "Sham perfume",
       "supplierSku": "floral-r-75ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 212,
-      "supplierSalePrice": 154,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 154,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/floral-r/",
       "slug": "floral-r-luxurious-rose-75ml-edp-950",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6287036282059",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر"
@@ -61974,7 +62016,7 @@
       "nameAr": "Amber A Amber & Leather 75ml EDP",
       "nameEn": "Amber A Amber & Leather 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Amber A – Amber & Leather in Harmony / 75 ml Eau de Parfum\nAmber A by Osma is a refined unisex perfume crafted by perfumer Gael Monteiro. It opens with juicy black currant, gliding into a romantic rose heart. The dry-down with smooth, golden amber, delivering warmth, elegance, and lasting comfort. Balanced between fruity brightness and amber depth, this Eau de Parfum suits both women and men, from daytime polish to evening Elegant. A modern Clearly structured fragrance that feels timeless and confidently distinctive.",
+      "descriptionEn": "Amber A 75 ml EDP Osma – black currant, rose & warm amber. Unisex, elegant Crafted by perfumer Gael Monteiro.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-box-edp.jpg",
@@ -61983,13 +62025,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-life-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-man-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-labeled-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-edp-100.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/osma/amber-perfume-amber-leather-75ml-box-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/osma/amber-perfume-amber-leather-75ml-edp-100.jpg"
       ],
       "category": "عطور",
       "brand": "Osma",
-      "supplierPrice": 2877.82,
-      "ourPrice": 4320,
+      "supplierPrice": 2898.52,
+      "ourPrice": 4350,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -62000,26 +62041,34 @@
       "supplierSku": "amber-a-75ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 220,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1751,
       "url": "https://www.shamperfume.com/perfumes/osma/amber-a/",
       "slug": "amber-a-amber-and-leather-75ml-edp-951",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Floral",
+        "Leather"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-24T15:15:36.411Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
