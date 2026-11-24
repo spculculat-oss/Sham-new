@@ -1,7 +1,27 @@
 {
  "version": 1,
- "updatedAt": "2026-11-23T12:20:19.019Z",
+ "updatedAt": "2026-11-24T02:09:57.401Z",
  "entries": [
+  {
+   "id": "ar|auto|احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
+   "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
+   "lang": "ar",
+   "style": "auto",
+   "answer": "إجمالي الزيت المطلوب للعطور هو 500 مل (10 زجاجات × 50 مل × 20%) والتكلفة ‏28.50 US$، والكحول المطلوب 2000 مل (80% من حجم الزجاجات) والتكلفة ‏7.50 US$، ويبقى إجمالي التكلفة للمية زجاجة ‏36 US$ يعني تكلفة الزجاجة الواحدة ‏0.36 US$.\n\n```sham-tool\n{\"tools\":[{\"tool\":\"costing\",\"bottleVolumeMl\":50,\"concentrationPercent\":20,\"bottleCount\":100,\"oilPricePerMl\":3,\"alcoholPricePerMl\":0.2}]}\n```",
+   "at": "2026-11-24T02:09:57.401Z",
+   "hits": 0,
+   "source": "probe"
+  },
+  {
+   "id": "en|auto|what fixative works best for a citrus cologne, and at what percentage",
+   "question": "What fixative works best for a citrus cologne, and at what percentage?",
+   "lang": "en",
+   "style": "auto",
+   "answer": "For a citrus cologne, Hedione works great because it blends seamlessly with the bright top notes while adding a subtle, airy floral fullness that extends their presence. Ambrettolide is another solid choice since it’s a clean, transparent macrocyclic musk that anchors the fleeting citrus notes without weighing them down.\n\nTypically, you want to use a fixative or a soft musky base at around **1% to 3%** of the total formula volume. If you push it much higher, it can start to mute the crisp, sparkling energy that defines a good citrus cologne.\n\n```sham-formula\n{\n  \"title\": \"Citrus Cologne Fixative Guide\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 10,\n  \"concentrationType\": \"edc\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 2,\n  \"macerationDays\": 14,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"هيديوني\",\n      \"nameEn\": \"Hedione\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 70\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"أمبريتوليد\",\n      \"nameEn\": \"Ambrettolide\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 30\n    }\n  ]\n}\n```\n\n```sham-tool\n{\n  \"tools\": [\n    {\n      \"tool\": \"guide\"\n    }\n  ]\n}\n```",
+   "at": "2026-11-24T02:09:57.401Z",
+   "hits": 0,
+   "source": "probe"
+  },
   {
    "id": "ar|auto|ليه العطر بيختفي بسرعة علي جلدي؟ وازود الثبات ازاي",
    "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
@@ -38,26 +58,6 @@
    "lang": "ar",
    "style": "auto",
    "answer": "أفضل خلطة شتوية دافية بتعتمد على ذوقك طبعًا، بس لو عايز حاجة كلاسيكية ومحبوبة، أنصحك بتركيبة شرقية خشبية بتجمع بين دفء العود والفانيليا مع لمسة من التوابل.\n\nممكن نجرب التركيبة دي:\n\n*   **مقدمة العطر (Top Notes):** زعفران (Saffron) 5%، قرفة (Cinnamon) 5%\n*   **قلب العطر (Heart Notes):** ورد تركي (Turkish Rose) 20%، خشب الصندل (Sandalwood) 15%\n*   **قاعدة العطر (Base Notes):** عود (Agarwood) 30%، فانيليا (Vanilla) 20%، عنبر (Amber) 5%\n\nالتركيز ده هيكون حوالي 20% زيت عطري (Eau de Parfum) في زجاجة 50 مل.\n\n```sham-formula\n{\"title\":\"خلطة شتوية دافية\",\"author\":\"شاهين — مقترح تجريبي\",\"concentrationPercent\":20,\"concentrationType\":\"edp\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":0,\"macerationDays\":30,\"summary\":\"مقترح يحتاج مراجعة السلامة\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"زعفران\",\"nameEn\":\"Saffron\",\"category\":\"top\",\"percentageOfOil\":5},{\"id\":\"note-2\",\"nameAr\":\"قرفة\",\"nameEn\":\"Cinnamon\",\"category\":\"top\",\"percentageOfOil\":5},{\"id\":\"note-3\",\"nameAr\":\"ورد تركي\",\"nameEn\":\"Turkish Rose\",\"category\":\"heart\",\"percentageOfOil\":20},{\"id\":\"note-4\",\"nameAr\":\"خشب الصندل\",\"nameEn\":\"Sandalwood\",\"category\":\"heart\",\"percentageOfOil\":15},{\"id\":\"note-5\",\"nameAr\":\"عود\",\"nameEn\":\"Agarwood\",\"category\":\"base\",\"percentageOfOil\":30},{\"id\":\"note-6\",\"nameAr\":\"فانيليا\",\"nameEn\":\"Vanilla\",\"category\":\"base\",\"percentageOfOil\":20},{\"id\":\"note-7\",\"nameAr\":\"عنبر\",\"nameEn\":\"Amber\",\"category\":\"base\",\"percentageOfOil\":5}]}\n```\n\nإيه رأيك في التركيبة دي؟ هل تحب نضيف عليها أي نوتات تانية أو نغير حاجة؟",
-   "at": "2026-11-22T21:02:18.715Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "ar|auto|احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-   "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-   "lang": "ar",
-   "style": "auto",
-   "answer": "الزجاجة الواحدة هتحتاج 10 مل زيت (بـ ‏0.56 US$) و40 مل كحول (بـ ‏0.15 US$)، يعني إجمالي تكلفة المكونات للزجاجة الواحدة ‏0.71 US$.\n\nيبقوا 100 زجاجة هيكلفوا ‏71.50 US$.\n\n```sham-tool\n{\"tools\":[{\"tool\":\"costing\"}]}\n```",
-   "at": "2026-11-22T21:02:18.715Z",
-   "hits": 0,
-   "source": "probe"
-  },
-  {
-   "id": "en|auto|what fixative works best for a citrus cologne, and at what percentage",
-   "question": "What fixative works best for a citrus cologne, and at what percentage?",
-   "lang": "en",
-   "style": "auto",
-   "answer": "Ambroxan or Iso E Super works best for citrus colognes because they anchor the volatile citrus top notes without muddying the bright character. Use them at 2 to 5 percent of the total oil volume.\n\n```sham-formula\n{\"title\":\"Citrus Cologne Fixative Guide\",\"author\":\"شاهين — مقترح تجريبي\",\"concentrationPercent\":15,\"concentrationType\":\"edc\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":3,\"macerationDays\":21,\"summary\":\"مقترح يحتاج مراجعة السلامة\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"الليمون\",\"nameEn\":\"Bergamot\",\"category\":\"top\",\"percentageOfOil\":70},{\"id\":\"note-2\",\"nameAr\":\"البرتقال المر\",\"nameEn\":\"Petitgrain\",\"category\":\"heart\",\"percentageOfOil\":25},{\"id\":\"note-3\",\"nameAr\":\"أمبروكسان\",\"nameEn\":\"Ambroxan\",\"category\":\"base\",\"percentageOfOil\":5}]}\n```\n\nWould you like to test Ambroxan or Iso E Super in your formula?",
    "at": "2026-11-22T21:02:18.715Z",
    "hits": 0,
    "source": "probe"
