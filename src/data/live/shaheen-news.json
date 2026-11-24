@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-23T12:19:30.853Z",
- "nextUpdateAt": "2026-11-24T00:19:30.853Z",
+ "updatedAt": "2026-11-24T02:09:03.622Z",
+ "nextUpdateAt": "2026-11-24T14:09:03.622Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -11,15 +11,75 @@
  "sources": [
   {
    "name": "Vietnam.vn",
-   "count": 3
+   "count": 4
   },
   {
-   "name": "Grazia",
+   "name": "Premium Beauty News",
    "count": 3
   },
   {
    "name": "Cosmetics Business",
    "count": 2
+  },
+  {
+   "name": "Popbee",
+   "count": 1
+  },
+  {
+   "name": "Phys.org",
+   "count": 1
+  },
+  {
+   "name": "openPR.com",
+   "count": 1
+  },
+  {
+   "name": "intlbm",
+   "count": 1
+  },
+  {
+   "name": "stupidDOPE",
+   "count": 1
+  },
+  {
+   "name": "CaFleureBon",
+   "count": 1
+  },
+  {
+   "name": "Auparfum",
+   "count": 1
+  },
+  {
+   "name": "France 3 Régions",
+   "count": 1
+  },
+  {
+   "name": "FashionNetwork France",
+   "count": 1
+  },
+  {
+   "name": "City Nomads",
+   "count": 1
+  },
+  {
+   "name": "Paris Capitale",
+   "count": 1
+  },
+  {
+   "name": "Bois de Jasmin",
+   "count": 1
+  },
+  {
+   "name": "ELLE",
+   "count": 1
+  },
+  {
+   "name": "Oui Speak Fashion (OSF)",
+   "count": 1
+  },
+  {
+   "name": "TRBusiness",
+   "count": 1
   },
   {
    "name": "Passionate In Marketing",
@@ -44,73 +104,369 @@
   {
    "name": "الاتحاد الاشتراكي",
    "count": 1
-  },
-  {
-   "name": "Manila Bulletin",
-   "count": 1
-  },
-  {
-   "name": "Happi | Household And Personal Products Industry",
-   "count": 1
-  },
-  {
-   "name": "Beauty Independent",
-   "count": 1
-  },
-  {
-   "name": "Auparfum",
-   "count": 1
-  },
-  {
-   "name": "الأيام البحرينية",
-   "count": 1
-  },
-  {
-   "name": "Popbee",
-   "count": 1
-  },
-  {
-   "name": "CaFleureBon",
-   "count": 1
-  },
-  {
-   "name": "صحيفة المرصد",
-   "count": 1
-  },
-  {
-   "name": "Wisevoter",
-   "count": 1
-  },
-  {
-   "name": "لوسيت أنفو سبور",
-   "count": 1
-  },
-  {
-   "name": "Lepetitjournal.com",
-   "count": 1
-  },
-  {
-   "name": "https://capsulah.com/",
-   "count": 1
-  },
-  {
-   "name": "stupidDOPE",
-   "count": 1
-  },
-  {
-   "name": "femina.fr",
-   "count": 1
-  },
-  {
-   "name": "Harper's Bazaar India",
-   "count": 1
-  },
-  {
-   "name": "هذا اليوم",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "naszac",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTFhMaTE3OV9WajFUWXp2UXZKelZLbVhIN2FQYmd3eEZDTUdnSEZoRkZLUVZodlR5NnJMdE1tc3VxSWgzUC1ybHgtbklKRVREeEZoSWFMQWU0aDB0ckh1LVNTMnpuTjRHWnVRVWh1SXAzd0VzRnBraVNRZFIwd3loT3c4d1JSZw?oc=5",
+   "source": "Popbee",
+   "publishedAt": "2026-11-24T00:39:49.000Z",
+   "original": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
+    "en": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions"
+   },
+   "summary": {
+    "ar": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions",
+    "en": "Classic Daisies Get Neon Petals: Marc Jacobs Daisy Fragrance Launches 4 Limited-Edition Violet Editions"
+   }
+  },
+  {
+   "id": "n10sldmz",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LRzl6VzhiWXZxS1pKSTBCQkd6NmMzR2VZYlpDb0paZ0VkbWM1U0E3YnJiN2w0RWZKYko1Q3p3NTVSd0UyUTliRUg5alIybWstLXJMTkZHb0NjcHdOSjhWRlNIYXplcmk5cUh5Vmxn?oc=5",
+   "source": "Phys.org",
+   "publishedAt": "2026-11-23T22:40:02.000Z",
+   "original": "A hidden link between a flower's color and its scent revealed",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "A hidden link between a flower's color and its scent revealed",
+    "en": "A hidden link between a flower's color and its scent revealed"
+   },
+   "summary": {
+    "ar": "A hidden link between a flower's color and its scent revealed",
+    "en": "A hidden link between a flower's color and its scent revealed"
+   }
+  },
+  {
+   "id": "n33gmq1",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOem9SWXhrWDREQ2ZvNzF3MkxrbG5rVEcxSW54aHR2NnRZbGU3VVJrVG05Nl9WWHlfTk9saXlUNWcwV2gtYjhzaGp3NGxhVGc0R0ZsY2s3bUNqT0p3VzlBaWIyMVBjb3ZzNFlrdGFlM1EtbTFISFhqb2xCd1h1b0NrN2JObDQwWWVlZzRwUjBlblcycWxtMmZnaGtXbTZfUQ?oc=5",
+   "source": "openPR.com",
+   "publishedAt": "2026-11-23T22:16:02.000Z",
+   "original": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
+    "en": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation"
+   },
+   "summary": {
+    "ar": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation",
+    "en": "Selection Guide for Advanced B2B Fragrance Solutions Provider: Lunalith Highlights Cosmoprof Bologna Innovation"
+   }
+  },
+  {
+   "id": "ncc12or",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaG9uU25WS2xVVlVVakZQMldFTjZqaHQxM1d2MjRYeERfb0dPQ0JPajBwUEtKS0hOVThHTFVFWFRWeHZxSHd5cDB0MUlObWs2ZVAza1JpYWZqRTFleTYyNGtCYk5HcGRocndJV2FMY2lMNndzblNidVoyYUxucXZfT29ZUEkyRkxWRThNeUEzSGZvZw?oc=5",
+   "source": "intlbm",
+   "publishedAt": "2026-11-23T20:58:34.000Z",
+   "original": "Reef Group’s art of curating perfumery gets multiple Awards",
+   "lang": "en",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "Reef Group’s art of curating perfumery gets multiple Awards",
+    "en": "Reef Group’s art of curating perfumery gets multiple Awards"
+   },
+   "summary": {
+    "ar": "Reef Group’s art of curating perfumery gets multiple Awards",
+    "en": "Reef Group’s art of curating perfumery gets multiple Awards"
+   }
+  },
+  {
+   "id": "n1mlgcbi",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWh5RF9UOEg3eEJ3Z0xsSkMyOXBac2c3b3hldWhwZUhVM3kzbzJyQW5teS1WQkFLcF9rUHhUeXNTZS1UX2dvQTRJNUZYSWxlMGtCZHE0YXNhUG1MZk12WF9HMU1xMEVWbWdKaFhWV2h2dHJGcmdHbkNRWGU3WThyN1lzQnRURV85RFN1ZVZGWjdiNzVON24wN2hCUnh4OUNHRFJDcg?oc=5",
+   "source": "stupidDOPE",
+   "publishedAt": "2026-11-23T20:22:12.000Z",
+   "original": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
+    "en": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price"
+   },
+   "summary": {
+    "ar": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price",
+    "en": "Marc Jacobs Daisy Violet Perfume Collection: All 4 Scents, Notes and Price"
+   }
+  },
+  {
+   "id": "n1yefunn",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOc0hnSTFSYXlMdzlQNnJnUmxkT29BbEhlMXJDaVlYUGVTSHBROTJVNkpHMjlZOG82Y05RUDdHSEdhbjFkSFllX2tISUxSVUJGcTE1eW1TXzkzOFRxUU9fcmRNQ3B3aDBwSXZaNDlwdDRQM2UtdGVGbXFyLUxkbVhhSVAyVQ?oc=5",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T19:06:11.000Z",
+   "original": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
+    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
+   },
+   "summary": {
+    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
+    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
+   }
+  },
+  {
+   "id": "nmw9a0d",
+   "url": "https://cafleurebon.com/2026-sniffapalooza-fall-ball-niche-perfumes-winner/?utm_source=rss&utm_medium=rss&utm_campaign=2026-sniffapalooza-fall-ball-niche-perfumes-winner",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-23T18:50:13.000Z",
+   "original": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner",
+    "en": "2026 Sniffapalooza Fall Ball Niche Perfumes Winner"
+   },
+   "summary": {
+    "ar": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "A beautiful autumn morning with bright blue skies set the perfect tone for 2026 Sniffapalooza in New York City on Saturday, October 24th The post 2026 Sniffapalooza Fall Ball Niche Perfumes Winner appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "n53l08m",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB2Yk5pMENGVWxEaWVJSF83Z3oyZ2EtbW9wWlV2UTNtMlNkT2M3Ry1qR081N1VKQ3JtVDVmeDBqUGhzdkhpaW9YNmVXdW9JdVRVR2VVV0ZZS2NLbXRPcFVRMlFxS3h6QUo5ZVNqSi1PYw?oc=5",
+   "source": "Auparfum",
+   "publishedAt": "2026-11-23T18:35:23.000Z",
+   "original": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   },
+   "summary": {
+    "ar": "Eau de Narcisse Bleu d’Hermès : critique et avis",
+    "en": "Eau de Narcisse Bleu d’Hermès : critique et avis"
+   }
+  },
+  {
+   "id": "n1srzfw5",
+   "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxPcktxcU5STkQyX0RkNDJiTE9qNFMzNHlfOGk0bnYyRlBiZU1oSzlPV2liODFocHRBdUI3eVJsLXFrem9JeDN2LW4yTW5NMHRCOEpOdUpKTUljMVVGUjhvRlV4ZS1RcDRGUjZkUEw0SmdkNWJpbVB0U0c4aFMyMmZoQzJCbXV4V2RGYkU5eF9IYWE3RDVBZ3BkWEI1T0UzOV8zRjNhUGY1UU12VXFpV3ZienZVd003ZndtbzdQcDZtb1E2YXJ2R3RfMEVucWt0U0NrWE9COUxsM3l2UEFONERsaE91UmpHZnZleEF3cTctQi15bTNvclBWSE1WMGRPRUNuWTBHb3g1ZUhaRE02ODRPYll3LXJPMWI1WnlOcVFfZ0VVSlJPY3ZWaFM0QzNYYTUxNDR1Y2s3Z0g4b0YxRUVNbHVyUU43ZXVvZWd1aVJCX3pNWjlVYVlyWklYVGY0WTl4cFVOYThpamZtbXRuWkgxdzhhbmhaZFhMdTJsZHNEZw?oc=5",
+   "source": "France 3 Régions",
+   "publishedAt": "2026-11-23T17:50:43.000Z",
+   "original": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
+   "lang": "fr",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
+    "en": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création"
+   },
+   "summary": {
+    "ar": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création",
+    "en": "\"Un haut lieu du patrimoine de notre commune\", la municipalité de Vallauris Golfe-Juan veut racheter une ancienne usine de parfum pour en faire un espace muséal et de création"
+   }
+  },
+  {
+   "id": "n1b7m31u",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcENYMXFQQjBfSUQ3WlJxVGlta3lMck1NOUVXSDlKblI5MkcyQUREMV84M3NUS3B2d04wMm1HaHU4cUdVR0VEYWM1TF9vTWR6OEthalpiNlpSaklIcWM0dXAyTkZNaVpvRkNtdmdxMmJla0NBR2gtbHB3T0VyREVoVmwxYmRQaFNEaHp0NDZhN0M0ZTVNdTk0?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-23T17:48:07.000Z",
+   "original": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
+    "en": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\""
+   },
+   "summary": {
+    "ar": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\"",
+    "en": "أبرز الفعاليات الثقافية الوطنية في الأمسية الموسيقية \"أرض العود - أرض الأبراج المشمسة\""
+   }
+  },
+  {
+   "id": "n16vayo4",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNjFJSEVYWWdoMlgyd2RzSGFmUm5rQm1Jam9MdXVzMV9zN1E3bzBybVAyWVBFRVNINGFyUjllT1l5cjJmVTk5SWNqanJWNWJ1R0ZQX1RBZFdnb3Y5dzk1clJyNjZ6TE1CdFJWekVVRWVWWkJ4OFlkaktkQmpkS0t1eDFKcUpGLVhBdWhSRXczRWdrZGxKQ1RVUm9kR0k0V3NaOWJUTnJZdlFXbzVqdV9pSWtUZFBUSjhGbmlZWDZXdw?oc=5",
+   "source": "FashionNetwork France",
+   "publishedAt": "2026-11-23T16:54:27.000Z",
+   "original": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
+    "en": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté"
+   },
+   "summary": {
+    "ar": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté",
+    "en": "Citadium accueille Obvious Parfums et fait ses premiers pas dans la beauté"
+   }
+  },
+  {
+   "id": "n1qpo2qy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSExrc2ZnTkhDeVp4MVBjX2FQLVV2V055LV9RYkFWeDJBSm1HZXB4RGNtTVRoZGIxalRRb0kya09zUHZ5cy1XYURLTnRSYWtfR2dtOEpxTkZ3RjRES3R2ZVV0Tnh0QXJGay1HZlBQeHhwanVoeWN6N1AxSGgzeTNONmFyOWNuQjRsOUl1SC1JbElxR1VQV1NRdmduLVpuR3h3U1R1TEdQUE1tYzFH?oc=5",
+   "source": "City Nomads",
+   "publishedAt": "2026-11-23T16:38:47.000Z",
+   "original": "Where to Buy Essential Oils and Scented Candles in Singapore",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Where to Buy Essential Oils and Scented Candles in Singapore",
+    "en": "Where to Buy Essential Oils and Scented Candles in Singapore"
+   },
+   "summary": {
+    "ar": "Where to Buy Essential Oils and Scented Candles in Singapore",
+    "en": "Where to Buy Essential Oils and Scented Candles in Singapore"
+   }
+  },
+  {
+   "id": "n1v3m3q8",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVDg1UEJWb0JMdGVETG4zNmdHV20yWG85ZFpvWFpyNUlvY0pJeGZjZUVzWjEtUEtURE5OQWV4YkNhTlVRdjlyaEE4Z0hCaG5jaUl6Zk1WTmVXaDJYaENjR1YwWFRXZHZDVFo0T2liS1F3UGRnd0lNOGxxLTNob1BGR2RFcHRVejNmMkRORjV3NThKYVRKTVRYMkRvNVhaeUhxWFE?oc=5",
+   "source": "Paris Capitale",
+   "publishedAt": "2026-11-23T16:14:33.000Z",
+   "original": "Dioriginals, un parfum de renaissance",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Dioriginals, un parfum de renaissance",
+    "en": "Dioriginals, un parfum de renaissance"
+   },
+   "summary": {
+    "ar": "Dioriginals, un parfum de renaissance",
+    "en": "Dioriginals, un parfum de renaissance"
+   }
+  },
+  {
+   "id": "nfbsy4a",
+   "url": "https://boisdejasmin.com/2026/11/how-to-smell-understand-and-appreciate-perfume-new-online-masterclass.html",
+   "source": "Bois de Jasmin",
+   "publishedAt": "2026-11-23T16:13:00.000Z",
+   "original": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass",
+    "en": "How to Smell, Understand, and Appreciate Perfume : New Online Masterclass"
+   },
+   "summary": {
+    "ar": "Have you ever wondered how professional perfumers smell and evaluate fragrances? How they recognize individual notes, understand the structure of a composition, or describe a scent with precision? I trained at the IFF Perfumery Academy, where I studied with some of the world’s leading perfumers, including Sophia Grojsman. In the new masterclass, I will share […] The post How to Smell, Understand, and Appreciate Perfume : New Online Masterclass appeared first on Bois de Jasmin .",
+    "en": "Have you ever wondered how professional perfumers smell and evaluate fragrances? How they recognize individual notes, understand the structure of a composition, or describe a scent with precision? I trained at the IFF Perfumery Academy, where I studied with some of the world’s leading perfumers, including Sophia Grojsman. In the new masterclass, I will share […] The post How to Smell, Understand, and Appreciate Perfume : New Online Masterclass appeared first on Bois de Jasmin ."
+   }
+  },
+  {
+   "id": "nu57sij",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdmRjRE04OWJOTEs3RUY1U0p1MWpjbXBKaWRqYjdNb0E2UTdrbzBydF9zSS1qTnBOTEpUZzBDbXBQNktTZGNmNG1RalQzMWM5bXNicngzbDRCMWJtTS05Y2VnWmFhdnFib0ZaZ19wXzBHSjlyemJ1QkFZLUdHTlVPVA?oc=5",
+   "source": "ELLE",
+   "publishedAt": "2026-11-23T15:55:01.000Z",
+   "original": "This Nostalgic Perfume Is Elegant, Long-Lasting And Always Gets Compliments: Shop It On Sale For Under £20",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "This Nostalgic Perfume Is Elegant, Long-Lasting And Always Gets Compliments: Shop It On Sale For Under £20",
+    "en": "This Nostalgic Perfume Is Elegant, Long-Lasting And Always Gets Compliments: Shop It On Sale For Under £20"
+   },
+   "summary": {
+    "ar": "This Nostalgic Perfume Is Elegant, Long-Lasting And Always Gets Compliments: Shop It On Sale For Under £20",
+    "en": "This Nostalgic Perfume Is Elegant, Long-Lasting And Always Gets Compliments: Shop It On Sale For Under £20"
+   }
+  },
+  {
+   "id": "n1qo4jr2",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZEJWbVdtRUtSMVFMQUtoRlNLNTZKVWkwSDk2ekswLXF3YmFTd0Etam1YNDhUQUgzVnc3N3BJUUtjUjhIMWhmbUZoNmdzYzE0TjgtRkVZMUJfc0dadGU1alBxc2FYd0xhQ0RMaDFQb0lRdFVtOXBsWXZxcFhXUVdOS1lELXVEVXNxYWxsY2VuR0R0V0Ny?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-23T15:36:33.000Z",
+   "original": "حفل تقديم البخور إحياءً للذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمي في داك لاك.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "حفل تقديم البخور إحياءً للذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمي في داك لاك.",
+    "en": "حفل تقديم البخور إحياءً للذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمي في داك لاك."
+   },
+   "summary": {
+    "ar": "حفل تقديم البخور إحياءً للذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمي في داك لاك.",
+    "en": "حفل تقديم البخور إحياءً للذكرى السادسة والثمانين لتأسيس لجنة الحزب الإقليمي في داك لاك."
+   }
+  },
+  {
+   "id": "n1q5tmzn",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmSU5pY3Z4YVU4UjBFY283SVZsYU9PS3l2Yy1rUmVHTVdsdjNkQlVIU0g0M3BPcEZXamNLX3k0U1l2emlXc0Fhd2dBLTYyUDRXVzI4TDZubng4S2REWTZCdktNYVZhUQ?oc=5",
+   "source": "Oui Speak Fashion (OSF)",
+   "publishedAt": "2026-11-23T15:12:19.000Z",
+   "original": "Fragrance Maker Interparfums Expects 6% Sales Growth in 2027",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Fragrance Maker Interparfums Expects 6% Sales Growth in 2027",
+    "en": "Fragrance Maker Interparfums Expects 6% Sales Growth in 2027"
+   },
+   "summary": {
+    "ar": "Fragrance Maker Interparfums Expects 6% Sales Growth in 2027",
+    "en": "Fragrance Maker Interparfums Expects 6% Sales Growth in 2027"
+   }
+  },
+  {
+   "id": "n1gf8hl3",
+   "url": "https://www.premiumbeautynews.com:8443/en/pure-trade-manufactures-a-metal,28590",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T14:07:00.000Z",
+   "original": "Pure Trade manufactures a metal case for the new Diesel women's fragrance",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Pure Trade manufactures a metal case for the new Diesel women's fragrance",
+    "en": "Pure Trade manufactures a metal case for the new Diesel women's fragrance"
+   },
+   "summary": {
+    "ar": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus",
+    "en": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus"
+   }
+  },
+  {
+   "id": "na6kbve",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZUczR3JBS0NBMFR0V1pqZ1l5YlY0dU15LW5OY09uWnNmSzBFc3VmVHpGWEhWci1kYTZDalR5NDE1c2NFR041NzN6MkZJUV9velpLdF9HaC1fN3dqN3ZuUUtmU0w5Rm1wVExtMExlRHR5cHU2U25qQjVfaGMyWmRqd0ZXdU13eS1aaGxacjNjVmN6bF9YR1o2bmlhN0FIdzRUVUd3UWFKS0NQOHdtUWlBN3p2ZU5jV3FjOTg1bzNRNHA?oc=5",
+   "source": "TRBusiness",
+   "publishedAt": "2026-11-23T14:04:00.000Z",
+   "original": "Jivago 24K Gold showcases fragrance collection at MEADFA 2026",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Jivago 24K Gold showcases fragrance collection at MEADFA 2026",
+    "en": "Jivago 24K Gold showcases fragrance collection at MEADFA 2026"
+   },
+   "summary": {
+    "ar": "Jivago 24K Gold showcases fragrance collection at MEADFA 2026",
+    "en": "Jivago 24K Gold showcases fragrance collection at MEADFA 2026"
+   }
+  },
+  {
+   "id": "n16bug4z",
+   "url": "https://www.premiumbeautynews.com:8443/fr/pure-trade-produit-un-coffret,28589",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-23T13:51:00.000Z",
+   "original": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
+    "en": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel"
+   },
+   "summary": {
+    "ar": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - ",
+    "en": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - "
+   }
+  },
   {
    "id": "nfm6qc2",
    "url": "https://cosmeticsbusiness.com/as-watson-ai-and-robotics-accelerate-supply-chain",
@@ -289,366 +645,6 @@
    "summary": {
     "ar": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة",
     "en": "الرباج والعود: طموح المغرب هو التتويج بكأس العالم لأقل من 17 سنة"
-   }
-  },
-  {
-   "id": "n1hckpfw",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmFkeWZwSWljWWJmdkxqWS1jQ2VRdWMzT3cxbXppWlRIdHVrdmZOaDEzdmxjY2FfSU1KYTRqRzhQY1N4MFVkNE55WWw3T1d5MGRIdnNOeWw3VUFSWmsyNzdDcHQ1UTB4Q2FqUzl0Y0Z0elpWdlJLblVEVk5qWDRWQ2ZGSEVXcWtSRHdBNExZSDFOMUk?oc=5",
-   "source": "Manila Bulletin",
-   "publishedAt": "2026-11-23T08:08:02.000Z",
-   "original": "Thai stars Perth and Santa talk fragrance and personal style",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Thai stars Perth and Santa talk fragrance and personal style",
-    "en": "Thai stars Perth and Santa talk fragrance and personal style"
-   },
-   "summary": {
-    "ar": "Thai stars Perth and Santa talk fragrance and personal style",
-    "en": "Thai stars Perth and Santa talk fragrance and personal style"
-   }
-  },
-  {
-   "id": "n1b75jw8",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb0ZMWnpxb1RqdmYtZ28yNWdWOVljSTZVRDdYZ2FabTJzTktTRkhXazFQOTQwZTJLVEI0MzEtalBDX1ZMdG1XTjJsbVdfMWlhZF9mNDhJZ3B2ZEFWNjZGblFJMnl1RUF6VW1paGUtNWRmeWFQTlNiRE5DUzlxV1Rrd3RONE9rVEVnNERPR3FqQVozVTVfajhFcjg4WENlZG9maG5KQ3NIN0FJcXlranVJ?oc=5",
-   "source": "Happi | Household And Personal Products Industry",
-   "publishedAt": "2026-11-23T07:00:00.000Z",
-   "original": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
-    "en": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers"
-   },
-   "summary": {
-    "ar": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers",
-    "en": "Treatment Skincare, Luxury Fragrance Rake in Sales from US Beauty Shoppers"
-   }
-  },
-  {
-   "id": "n1dobik5",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOGg4MFN5UThlRnZGTXBoOW1KaG0yWTNYd2pMVTZZWFNEZmhYYm10OFh1WGJoNmZUU20xYUlXMXJZUjc0cVNPVGw5X3FtV01YQzBoNDFkbVRTWmxNc0hCQ0F4LXJaNnUxai1TbVpqZENxYmFIQ0U1M1dxMUQzUDl0UmxHeldXc29yT3dNdlNFTngzZG9jcy1xLWRqQzlfTVVYOG5oSXh1WEw?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-23T06:38:08.000Z",
-   "original": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
-    "en": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون."
-   },
-   "summary": {
-    "ar": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون.",
-    "en": "قدّم الوفد المركزي البخور في مقبرة الشهداء الوطنيين في ترونغ سون."
-   }
-  },
-  {
-   "id": "n1on7ege",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbmNpM05kOGJiSWgybExYV214RGZHQmI0eDZOaUFwUHQ1OVBPMUxJalJlbFhjUDlDWUYxRFVpaWRKb0ZuTlJFVlFiUzVzMi1xdjdMUS11NVJ1VDhrTUFpUEREWjVZZ3VFUmdORVhzUzdmZFpsNVQtcHhGTXNDVnk2OGtKamVZVi1fVURFSm9nQXlRNFdRWERhLURiSTFkOHRoQk5yYw?oc=5",
-   "source": "Beauty Independent",
-   "publishedAt": "2026-11-23T05:01:38.000Z",
-   "original": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
-   "lang": "en",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
-    "en": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture"
-   },
-   "summary": {
-    "ar": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture",
-    "en": "Savoir Faire’s Chris Classic On Why Fragrance Collecting Is The New Sneaker Culture"
-   }
-  },
-  {
-   "id": "n185e3x8",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBYX21pWnl1WHp6aFRlWUxXY01ORHpvYkdRbnJLUmJ2N2Y1alpBNDRacnVrMjJwT0NKcHRQSHVjc3BJel9WOTkyZ3FjSHBLQVg3OFliTFJOTmwyZkRicWdvSGhubnprOTZSVWVtZHJWZlRZbWY5a2NlN3pn?oc=5",
-   "source": "Auparfum",
-   "publishedAt": "2026-11-23T03:17:44.000Z",
-   "original": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
-    "en": "Passage d'Enfer de L'Artisan parfumeur : critique et avis"
-   },
-   "summary": {
-    "ar": "Passage d'Enfer de L'Artisan parfumeur : critique et avis",
-    "en": "Passage d'Enfer de L'Artisan parfumeur : critique et avis"
-   }
-  },
-  {
-   "id": "n12dou3v",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4tdmRFVlhYcTB6cm94Q20ybzVfZkdXSGxqeTE0VXQ3dWJWRTNOUERKNXZDY19sNzl3cjZNdG9MVDlZdzZIaTR2S0IwVkpzVndMWFgzbDJhME9XWkcydzgxdnUwRQ?oc=5",
-   "source": "الأيام البحرينية",
-   "publishedAt": "2026-11-23T00:00:00.000Z",
-   "original": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
-   "lang": "ar",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
-    "en": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور"
-   },
-   "summary": {
-    "ar": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور",
-    "en": "شرطة الجنوبية و«السياحة» تبحثان استعدادات معرضي الجواهر والعطور"
-   }
-  },
-  {
-   "id": "n10oh2ch",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE50akFYd00xT3R5YmJjcFJ2bVNmc0Nibnp5YV9EcERpREREbUdJQnA5S2VOY0tLOXdUS0xoWEM1TlhTN0ZCNkZHbHZTVWk1OS1JV01EenVsWDFnbV93ZEJNckZScXRnMHpDZE5wR1Uwb3lrU3JYaHpj?oc=5",
-   "source": "Popbee",
-   "publishedAt": "2026-11-22T23:00:51.000Z",
-   "original": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
-    "en": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents"
-   },
-   "summary": {
-    "ar": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents",
-    "en": "Who Can Resist This Purple and Black Charm? hetras. Teams Up With Kuromi to Launch Limited-Edition Scents"
-   }
-  },
-  {
-   "id": "n1u8ja2q",
-   "url": "https://cafleurebon.com/providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-22T21:08:24.000Z",
-   "original": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
-    "en": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway"
-   },
-   "summary": {
-    "ar": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-22T20:12:03.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   }
-  },
-  {
-   "id": "nu4dcj3",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOVWJWMXE3ODUtYzU1WHY0UXhRdFBlMnQ0LUJha2NJUnluLUZDQlI2ZTJTQ2ZqX3VJUEtOMnNEVW5fQmdPOXZrb0VoRUZHd19pb1VJRVVQT3JyM296UW9MSW40bFhLczh5OVN6WmhNTm1HdVNNY1FqOTlsYnNydjBVbmlLUzdvbXk2bzhNLXYxYlUybVpuWDRLaERtWnN2YnlYYU5lSTZEZzFDWEdGdVR0Y1FtUHZwcER3Y1JqUFNTVm9nb0FwN3oxYXpiOHQ0N3B3TkdUQjk5bVhDcm4zaV9oTEd5NEJfTWc4a0wyZENqcFdlUHI4YVlVeUJuOU93aGhBdjYzUlVUZkstQ1ZTcWZ6T2lIZGRjcEphaXRJU1pwQUpMLTA4UHdmOTJaaXVadTQ?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-22T19:58:09.000Z",
-   "original": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
-   },
-   "summary": {
-    "ar": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée",
-    "en": "\"Il a marqué toute une génération de stars et d’anonymes\" : lancé en 1934, cet iconique parfum Caron, adoré par Jane Birkin, revient dans une nouvelle version boisée"
-   }
-  },
-  {
-   "id": "n76kx43",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXJPR0RjNnpYNnlRQVBMcGVWOV82dUY4anFWbWt4dWNkX2ZhSDRTak1jR1dqOWdsbGhQdlBSYXpMd0dDeTJDVlRQRWt1S2Z2UmNiZXZxcXp4OW1PVGRRQ2Q2M2NXYk1IS3lEQzhNN1BWcUxPZEt6aTZYNTNFR2I3NWlwSGNYZEl0UlE3d0syendBaXI5bXFPMl9PaDJ5SU5Zdk9UelVOcXBPcFNxWnBERjZOX192cklZYjRncnBSRlZ4azdSWmtqNmFVTnF4aHVJMlpNV1B5RzhtQ05n?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-22T19:56:09.000Z",
-   "original": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   },
-   "summary": {
-    "ar": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection",
-    "en": "Lancé en 1930, ce parfum Guerlain adoré de nos grands-mères est désormais un objet de collection"
-   }
-  },
-  {
-   "id": "naq5ixe",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0VRQVQ0U0JrRlNXUUFpQ3liZTRzUXVGUmFDVHhfUUlFV3F1eHhOYV9mTENwZjJsaDRSUklJZl9rYUFDX2FQY3ZnaVlzQzZMX0tHUFhCLVFTbXRlMFk3akhiX0YyRU1MRVVieDZhaVVzZVpCNW4yMFdQanNhbnBEMWlLX2RFc1lrazlEbkJVc085cEtp?oc=5",
-   "source": "Wisevoter",
-   "publishedAt": "2026-11-22T19:54:25.000Z",
-   "original": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
-    "en": "DB Ventures Sues Coty Over Beckham Fragrance Sales"
-   },
-   "summary": {
-    "ar": "DB Ventures Sues Coty Over Beckham Fragrance Sales",
-    "en": "DB Ventures Sues Coty Over Beckham Fragrance Sales"
-   }
-  },
-  {
-   "id": "nq4ujyp",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQVkszMkdodTBEbmhSZWN4YkR3SVpZVkw2b2FSdTQtRFVrTkJtUmJiVmlkN0QycVlKYkdVTDhpLVNkaWVhcWtZX1VDYVpUZEhscFlqcFhrU3BpTDNPQ05qVGtsUDA?oc=5",
-   "source": "لوسيت أنفو سبور",
-   "publishedAt": "2026-11-22T17:02:16.000Z",
-   "original": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
-    "en": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم"
-   },
-   "summary": {
-    "ar": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم",
-    "en": "إسماعيل العود: تواجد إبراهيم الرباج معنا في المنتخب المغربي يزيدنا إيمانا بقدرتنا على الفوز بكأس العالم"
-   }
-  },
-  {
-   "id": "npf2lht",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEc5NU9GcndmRUlocmRQT040VWNUeHV4Szd2aDQtWExTTVdDV0JUZ0Y3RnFBMjRDT1ZJeGlfRkEwdHAwS0thVFUtdTI3NE1sbGhvVVN3MkltbFlacGtDSFpVNW5xdzc1VjlzU1RrcUtjZG5OOFM4UHhvRm9JTGR0dzlPdG4zbWhySDhWMnFFWGo5UWsyZHdwVG80RkJvWWRKclAwWFhILVg?oc=5",
-   "source": "Lepetitjournal.com",
-   "publishedAt": "2026-11-22T15:01:36.000Z",
-   "original": "Dora Baghriche : l’art du parfum entre Orient et Occident",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Dora Baghriche : l’art du parfum entre Orient et Occident",
-    "en": "Dora Baghriche : l’art du parfum entre Orient et Occident"
-   },
-   "summary": {
-    "ar": "Dora Baghriche : l’art du parfum entre Orient et Occident",
-    "en": "Dora Baghriche : l’art du parfum entre Orient et Occident"
-   }
-  },
-  {
-   "id": "n181g33g",
-   "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBWT25XR0lIT1RqdDhsdjZNcThVeGJtR3hTaVE2eTNfQ3dGX1R6bzV0ZjdqdUh3SHh0LWhOMmVjY0JIenpT?oc=5",
-   "source": "https://capsulah.com/",
-   "publishedAt": "2026-11-22T14:30:00.000Z",
-   "original": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
-    "en": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة"
-   },
-   "summary": {
-    "ar": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة",
-    "en": "دخان البخور في الأماكن المغلقة.. دراسات تحذر من جسيمات تفوق السجائر وتهدد صحة الرئة"
-   }
-  },
-  {
-   "id": "no3p97q",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRllKM2tIejJRd1MyRmNpN1JFSHlvb2JsQWNBalZId2tWV2lKaXFXTWpkMDNLVWUzUFhwN1h2UjV4Q2xQdlA3ZjNIN3hVWFY0VFVsLWhoVWNnYmVGTlBMazJNN1JJUXlvXzk3ck9VamMzY1RtY0MzOC1VVERMREluc1BtRmxzNUFrcE4tXzZlMUxBVkljY3hpYVBBcHpQbXBvUk9jUnYyaWJYSjRDajdPR3ZZZktTM3FGbTVOYlJfRWRnaHdkNzR5a2hYbXFBUUNsMmRCM3FacW5LZUFlZ1JVdTh4bW43aWs?oc=5",
-   "source": "stupidDOPE",
-   "publishedAt": "2026-11-22T13:45:48.000Z",
-   "original": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
-    "en": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release"
-   },
-   "summary": {
-    "ar": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release",
-    "en": "Louis Vuitton x Keith Haring Fragrance Collection: 3 Scents, January 1, 2027 Release"
-   }
-  },
-  {
-   "id": "n10gk80b",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdUZIZENabGZRVWtkUmRGdlVIdm9VQjRMZHpBaEF4SFlFUG9UaHJYUEhBd25CMWEyUGVab0haSGxRalRVVGhrTnFoeVJQN05RTE1RN2RPTE91TGVTNEZ2YnlJM3NkZGxrOWMxZzE5LXZpWWZEQTlrc3dxN3JkaG1hcUotbjlndDRsajlFTTUtQUM4S1hJbmJXcGdsbU9mSXZUNFQ4RGZuNkRObnEyZm5OSUJ0X0doTjJlV3A5THRSVHQ1aE41cXhn?oc=5",
-   "source": "femina.fr",
-   "publishedAt": "2026-11-22T12:00:13.000Z",
-   "original": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
-    "en": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans"
-   },
-   "summary": {
-    "ar": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans",
-    "en": "La génération Z change les règles du parfum : voici ce qui séduit les 20-30 ans"
-   }
-  },
-  {
-   "id": "n12ppsln",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObE1RUFpEeVdvd2ZsN05MMXduWGRCcS1hb3NpLTQzdzFTVENEdTBPMVBYTFVzTzRxbmZ1MEdXa05uSFFmY09Vd1FST013b2k1dTk0UF9lYU5WUXdVSWM1Xy1fM2xxQ0Zrc3dpTzJoTkJ1VVAtQzgwSVlBaDJnZUxvTndOUThEMHg3S3VpMzZJby1TdWRjbmxZd1RPc2s4c3FZVFJjTk5xREdMTkxEZlFubjdEUHbSAboBQVVfeXFMTmI2R2VGcFJhYlBwYjJLZjByUklJdHAyY0NrZHdpSFlyQTlVU1RFalc2X2oyYy03VWNlTW9yS19QSjZlR3Z0c0RHcy13b1hkNzVuMlRMOEdXdWwyU0xwZnhqWmNRelhEdUszWGgyV3VOSTdtMWlFay1XWkJaeFl1dlZNYzJQb3pRVFYybU0weWdhcVJKUkVDN2NfaDVmZFoyRm95NTlhZWczUW14UHllM2Q5bHZKLWtXLU9R?oc=5",
-   "source": "Harper's Bazaar India",
-   "publishedAt": "2026-11-22T11:42:01.000Z",
-   "original": "The new language of luxury fragrance is experiential",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "The new language of luxury fragrance is experiential",
-    "en": "The new language of luxury fragrance is experiential"
-   },
-   "summary": {
-    "ar": "The new language of luxury fragrance is experiential",
-    "en": "The new language of luxury fragrance is experiential"
-   }
-  },
-  {
-   "id": "n1s4vsc7",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVmdKY3J2R3N4S0RoYkRtQW5Dc3l6X3RTWEdkZUMtVS1sZnJ0UTZBNXJtSnlUSU5MWFZxaG5aUFhTZk9Ya2M1bFU0Q0ctWGV0NGI3TXhfZjQyZE8yYmZPUDNBVlVUOXN6WDFIbkVDeEZPYW1VRzBfalVka1hiY2ZXN0JZWm1kVHdfZmZFTWs2MS0ySDRBd3RaNVhuODZJVE1Mck9WTHU1Q0dsU3BSbVNiWTRsenFOaE13azFZZC1RSy1pUnVpMXNiclJBV05mZ2ItaTB1WFhYZmtPTElYVnVYS09samc5aFVXc25kaUJEYUNySXM?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-22T11:37:35.000Z",
-   "original": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
-    "en": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros"
-   },
-   "summary": {
-    "ar": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros",
-    "en": "\"Un chef d'oeuvre pour les collectionneurs\" : cette bouteille de parfum Guerlain de 1922 se revend plus de 1200 euros"
-   }
-  },
-  {
-   "id": "n1vl8w3f",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85NTEtRTFDT2JRWWdjbktVa2pheFdFWkNVVmxRT29FeDJKV0xoX0dMTjAzMzFCbldMdlZnSGx0ZWVpTEtWOGRXZFVMVDljZDhR0gFKQVVfeXFMUGRRQVBKNjhJUGhVem5uOUU0RDZ3ZllkOG5sTk5rdlA0dFZCSmlaV2RhZWROSUtkQ0Z1S2Y1WTlmek9xcDF3NjMzaXc?oc=5",
-   "source": "هذا اليوم",
-   "publishedAt": "2026-11-22T10:18:59.000Z",
-   "original": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
-    "en": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية"
-   },
-   "summary": {
-    "ar": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية",
-    "en": "فيديو | الموسيقار مصطفى زاير.. من هوية العود الشرقية إلى رحاب الموسيقى العالمية"
    }
   }
  ]
