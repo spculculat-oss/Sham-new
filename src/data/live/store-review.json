@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-23T15:19:33.392Z",
+ "updatedAt": "2026-11-24T03:03:16.350Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 499,
-  "warn": 615,
+  "ok": 491,
+  "warn": 623,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-23T15:18:51.274Z",
+  "at": "2026-11-24T03:02:25.645Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,11 +21,11 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.1765,
+    "rate": 13.1751,
     "rateFrom": "open.er-api.com",
-    "sitemapProducts": 1062,
+    "sitemapProducts": 1063,
     "listingPages": 45,
-    "listingProducts": 1062,
+    "listingProducts": 1063,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -34,14 +34,14 @@
     "failedCount": 0,
     "viaShaheen": 0,
     "deferred": 0,
-    "gone": 1
+    "gone": 0
    }
   ],
-  "rate": 13.1765,
+  "rate": 13.1751,
   "prices": {
-   "count": 983,
+   "count": 1063,
    "min": 750,
-   "median": 3320,
+   "median": 3330,
    "max": 7835,
    "top": [
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 42143
+  "durationMs": 50731
  },
  "items": [
   {
@@ -799,6 +799,7 @@
    "name": "Hawas Atlantis by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-atlantis-by-rasasi-100ml-edp-62.html"
@@ -809,6 +810,7 @@
    "name": "Hawas Private Dulce by Rasasi Extrait de Parfum 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-private-dulce-by-rasasi-extrait-de-parfum-100ml-63.html"
@@ -819,6 +821,7 @@
    "name": "Hawas Gold Digger by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-gold-digger-by-rasasi-100ml-edp-64.html"
@@ -829,6 +832,7 @@
    "name": "Hawas Thunder by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-thunder-by-rasasi-100ml-edp-65.html"
@@ -839,6 +843,7 @@
    "name": "Hawas Viper by Rasasi 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-viper-by-rasasi-100ml-edp-66.html"
@@ -1160,6 +1165,8 @@
    "name": "Opulent Milano by Lattafa 100ml Men",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/opulent-milano-by-lattafa-100ml-men-102.html"
@@ -1170,6 +1177,7 @@
    "name": "Sheikh Al Shuyukh Supreme by Lattafa 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/sheikh-al-shuyukh-supreme-by-lattafa-100ml-103.html"
@@ -1180,6 +1188,7 @@
    "name": "Maharjan Gold by Lattafa Pride 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/maharjan-gold-by-lattafa-pride-100ml-104.html"
@@ -1190,6 +1199,7 @@
    "name": "Ana Abiyedh Leather 60ml by Lattafa Perfumes",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/ana-abiyedh-leather-60ml-by-lattafa-perfumes-105.html"
@@ -1200,6 +1210,7 @@
    "name": "Bayaan Eau De Parfum 100ml by Lattafa",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/bayaan-eau-de-parfum-100ml-by-lattafa-106.html"
@@ -1210,6 +1221,7 @@
    "name": "Khamrah Waha Lattafa Perfumes 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/khamrah-waha-lattafa-perfumes-100ml-edp-107.html"
@@ -1220,9 +1232,21 @@
    "name": "Choco Musk by Al Rehab 50ml EDP Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/choco-musk-by-al-rehab-50ml-edp-unisex-108.html"
+  },
+  {
+   "sku": "LAT-109",
+   "id": 109,
+   "name": "Tamima by Lattafa 100 ml Eau de Parfum",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tamima-by-lattafa-100-ml-eau-de-parfum-109.html"
   },
   {
    "sku": "LAT-110",
@@ -1230,6 +1254,7 @@
    "name": "Ana Abiyedh Poudree by Lattafa 60ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -1241,6 +1266,7 @@
    "name": "Musamam Eau De Parfum 100ml by Lattafa",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/musamam-eau-de-parfum-100ml-by-lattafa-111.html"
@@ -1454,9 +1480,21 @@
    "name": "Mazaaji by Lattafa 100ml EDP for Women",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/mazaaji-by-lattafa-100ml-edp-for-women-172.html"
+  },
+  {
+   "sku": "LAT-173",
+   "id": 173,
+   "name": "Tharwah Silver by Lattafa Pride 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tharwah-silver-by-lattafa-pride-100ml-edp-173.html"
   },
   {
    "sku": "LAT-174",
@@ -1464,9 +1502,21 @@
    "name": "Maahir by Lattafa 100ml EDP for Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/maahir-by-lattafa-100ml-edp-for-men-174.html"
+  },
+  {
+   "sku": "LAT-175",
+   "id": 175,
+   "name": "His Confession by Lattafa Perfume 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/his-confession-by-lattafa-perfume-100ml-175.html"
   },
   {
    "sku": "LAT-176",
@@ -1474,6 +1524,7 @@
    "name": "Ana Abiyedh by Lattafa 60ml EDP Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/ana-abiyedh-by-lattafa-60ml-edp-unisex-176.html"
@@ -5056,6 +5107,61 @@
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-921.html"
+  },
+  {
+   "sku": "KEN-922",
+   "id": 922,
+   "name": "Hawas Apex GT by Kenz de Rasasi 100ml Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/hawas-apex-gt-by-kenz-de-rasasi-100ml-unisex-922.html"
+  },
+  {
+   "sku": "FRE-923",
+   "id": 923,
+   "name": "Vulcan Vox by French Avenue 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/vulcan-vox-by-french-avenue-100ml-edp-unisex-923.html"
+  },
+  {
+   "sku": "PAR-924",
+   "id": 924,
+   "name": "Black Optra by Paris Corner Pendora Scents – 100 ml Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/black-optra-by-paris-corner-pendora-scents-100-ml-women-924.html"
+  },
+  {
+   "sku": "KEN-925",
+   "id": 925,
+   "name": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/hawas-for-him-le-parfum-by-kenz-de-rasasi-100ml-men-925.html"
+  },
+  {
+   "sku": "KEN-926",
+   "id": 926,
+   "name": "Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/hawas-apex-hybrid-by-kenz-de-rasasi-100ml-edp-unisex-926.html"
   },
   {
    "sku": "PAR-930",

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-24T02:09:06.233Z",
- "nextUpdateAt": "2026-11-24T14:09:06.233Z",
+ "updatedAt": "2026-11-24T03:04:23.731Z",
+ "nextUpdateAt": "2026-11-24T15:04:23.731Z",
  "editor": "shaheen",
  "entries": {
   "LAT-001": {
@@ -2023,7 +2023,7 @@
   "RAS-057": {
    "sourceHash": "1qnc0y4",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Reina by Rasasi 100ml EDP",
    "nameEn": "Hawas Reina by Rasasi 100ml EDP",
    "descriptionAr": "عطر Hawas Reina by Rasasi 100ml EDP من Rasasi نسائي بطابع حلو وعنبري وشرقي.",
@@ -2051,7 +2051,7 @@
   "RAS-058": {
    "sourceHash": "nrwi8m",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Chrome For Him by Rasasi 100ml EDP",
    "nameEn": "Hawas Chrome For Him by Rasasi 100ml EDP",
    "descriptionAr": "عطر Hawas Chrome For Him by Rasasi 100ml EDP من Rasasi رجالي بطابع عنبري وشرقي وفواكه.",
@@ -2080,7 +2080,7 @@
   "RAS-059": {
    "sourceHash": "160q5zu",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Venom by Rasasi 100ml EDP",
    "nameEn": "Hawas Venom by Rasasi 100ml EDP",
    "descriptionAr": "عطر Hawas Venom by Rasasi 100ml EDP من Rasasi رجالي بطابع عنبري وخشبي وشرقي.",
@@ -2108,7 +2108,7 @@
   "RAS-060": {
    "sourceHash": "qxrad6",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Nautilus by Rasasi 100ml EDP",
    "nameEn": "Hawas Nautilus by Rasasi 100ml EDP",
    "descriptionAr": "عطر Hawas Nautilus by Rasasi 100ml EDP من Rasasi رجالي بطابع مائي وخشبي.",
@@ -2136,7 +2136,7 @@
   "RAS-061": {
    "sourceHash": "18ur48w",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Private Terra by Rasasi Extrait de Parfum 100ml",
    "nameEn": "Hawas Private Terra by Rasasi Extrait de Parfum 100ml",
    "descriptionAr": "عطر Hawas Private Terra by Rasasi Extrait de Parfum 100ml من Rasasi للجنسين بطابع خشبي وتوابل.",
@@ -2162,32 +2162,23 @@
    "tags": []
   },
   "RAS-062": {
-   "sourceHash": "1lgp2ey",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "هاواس أتلانتس من رصاصي",
+   "sourceHash": "2sa6cw",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Atlantis by Rasasi 100ml EDP",
    "nameEn": "Hawas Atlantis by Rasasi 100ml EDP",
-   "descriptionAr": "عطر رجالي يجمع بين انتعاش البرغموت ولمسات الزنجبيل الحارة مع قاعدة خشبية ساحلية. خيار مثالي لمن يبحث عن الانتعاش البحري العصري.",
-   "descriptionEn": "Bergamot and green galbanum open Hawas Atlantis, with ginger bringing a spicy touch to mineral and salty accords, resting on sandalwood and cedarwood.",
+   "descriptionAr": "عطر Hawas Atlantis by Rasasi 100ml EDP من Rasasi رجالي بطابع منعش ومائي وخشبي.",
+   "descriptionEn": "Hawas Atlantis by Rasasi 100ml EDP by Rasasi for men with a fresh and aquatic and woody character.",
    "gender": "men",
    "families": [
+    "fresh",
     "aquatic",
-    "citrus",
     "woody"
    ],
    "notes": {
-    "top": [
-     "Bergamot",
-     "Galbanum"
-    ],
-    "heart": [
-     "Ginger",
-     "Salt"
-    ],
-    "base": [
-     "Sandalwood",
-     "Cedarwood"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
     "summer",
@@ -2197,208 +2188,123 @@
     "daily",
     "work"
    ],
-   "tags": [
-    "هاواس أتلانتس",
-    "رصاصي",
-    "عطر بحري",
-    "عطر زنزبيل"
-   ]
+   "tags": []
   },
   "RAS-063": {
-   "sourceHash": "1tv9bsa",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "هاواس بريفيت دولسي من رصاصي",
+   "sourceHash": "1oklt26",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Private Dulce by Rasasi Extrait de Parfum 100ml",
    "nameEn": "Hawas Private Dulce by Rasasi Extrait de Parfum 100ml",
-   "descriptionAr": "عطر جورماند فاخر للجنسين يمزج البندق والكاكاو مع لمسات الفواكه الاستوائية والكراميل. تركيبة غنية ومعقدة تأخذك في رحلة عطرية فريدة.",
-   "descriptionEn": "Hawas Private Dulce places hazelnut beside passion fruit and pink pepper, with a heart of cacao and coconut, resting on patchouli, musk and caramel.",
+   "descriptionAr": "عطر Hawas Private Dulce by Rasasi Extrait de Parfum 100ml من Rasasi للجنسين بطابع زهري وحلو وفواكه.",
+   "descriptionEn": "Hawas Private Dulce by Rasasi Extrait de Parfum 100ml by Rasasi for unisex with a floral and gourmand and fruity character.",
    "gender": "unisex",
    "families": [
+    "floral",
     "gourmand",
-    "fruity",
-    "floral"
-   ],
-   "notes": {
-    "top": [
-     "Hazelnut",
-     "Passion fruit",
-     "Pink pepper"
-    ],
-    "heart": [
-     "Cacao",
-     "Jasmine sambac",
-     "Coconut"
-    ],
-    "base": [
-     "Patchouli",
-     "Vetiver",
-     "Musk",
-     "Tonka bean",
-     "Caramel"
-    ]
-   },
-   "seasons": [
-    "autumn",
-    "winter"
-   ],
-   "occasions": [
-    "evening",
-    "special",
-    "gift"
-   ],
-   "tags": [
-    "هاواس دولسي",
-    "رصاصي",
-    "عطر شوكولاتة",
-    "عطر كراميل"
-   ]
-  },
-  "RAS-064": {
-   "sourceHash": "kiqu9n",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "هاواس غولد ديغر من رصاصي",
-   "nameEn": "Hawas Gold Digger by Rasasi 100ml EDP",
-   "descriptionAr": "عطر رجالي يبدأ بانتعاش الكمثرى والنعناع وينتقل إلى قلب عطري دافئ بالقرفة والميرمية. يستقر على قاعدة من الفانيليا والأخشاب ليمنحك دفئاً راقياً.",
-   "descriptionEn": "Pear and mint give Hawas Gold Digger a bright opening, leading to an aromatic middle of cinnamon and sage, over vanilla, amber and cedarwood.",
-   "gender": "men",
-   "families": [
-    "woody",
     "fruity"
    ],
    "notes": {
-    "top": [
-     "Pear",
-     "Mint",
-     "Lavender",
-     "Bergamot"
-    ],
-    "heart": [
-     "Cinnamon",
-     "Sage"
-    ],
-    "base": [
-     "Vanilla",
-     "Amber",
-     "Cedarwood",
-     "Patchouli"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
-    "autumn",
     "winter",
-    "spring"
+    "autumn"
    ],
    "occasions": [
-    "daily",
-    "evening"
+    "evening",
+    "special"
    ],
-   "tags": [
-    "هاواس غولد ديغر",
-    "رصاصي",
-    "عطر فانيليا خشبي",
-    "عطر رجالي دافئ"
-   ]
+   "tags": []
   },
-  "RAS-065": {
-   "sourceHash": "1rflpfn",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "هاواس ثاندر من رصاصي",
-   "nameEn": "Hawas Thunder by Rasasi 100ml EDP",
-   "descriptionAr": "عطر رجالي حيوي يجمع بين التفاح والزنجبيل المنعش مع قلب زهري ونفحات خشبية دافئة. يناسب الأوقات اليومية النشطة والاجتماعات غير الرسمية.",
-   "descriptionEn": "Hawas Thunder begins with apple, bergamot and ginger, leading to a floral heart and a warm base of musk, tonka bean, vanilla and ambergris.",
+  "RAS-064": {
+   "sourceHash": "x3r2m8",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Gold Digger by Rasasi 100ml EDP",
+   "nameEn": "Hawas Gold Digger by Rasasi 100ml EDP",
+   "descriptionAr": "عطر Hawas Gold Digger by Rasasi 100ml EDP من Rasasi رجالي بطابع خشبي.",
+   "descriptionEn": "Hawas Gold Digger by Rasasi 100ml EDP by Rasasi for men with a woody character.",
    "gender": "men",
    "families": [
-    "fruity",
-    "floral",
     "woody"
    ],
    "notes": {
-    "top": [
-     "Apple",
-     "Bergamot",
-     "Ginger",
-     "Cedarwood",
-     "Mandarin"
-    ],
-    "heart": [
-     "Orange blossom",
-     "Peony",
-     "Maté",
-     "Patchouli"
-    ],
-    "base": [
-     "Musk",
-     "Tonka bean",
-     "Vanilla",
-     "Ambergris",
-     "Cedarwood"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
+    "winter",
     "spring",
-    "summer",
     "autumn"
    ],
    "occasions": [
     "daily",
     "evening"
    ],
-   "tags": [
-    "هاواس ثاندر",
-    "رصاصي",
-    "عطر تفاح",
-    "عطر رجالي نشط"
-   ]
+   "tags": []
   },
-  "RAS-066": {
-   "sourceHash": "1vczckj",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "هاواس فايبر من رصاصي",
-   "nameEn": "Hawas Viper by Rasasi 100ml EDP",
-   "descriptionAr": "عطر رجالي جريء يفتتح بنفحات عشبية وتوابل دافئة، ويتوسطه القهوة والقرفة ليمنحك طابعاً مظلماً وجذاباً. خيار رائع للأمسيات الباردة.",
-   "descriptionEn": "Hawas Viper begins with green notes, davana, saffron and thyme, with coffee and cinnamon in the heart, over a warm base of tonka bean, musk and gurjan balsam.",
+  "RAS-065": {
+   "sourceHash": "1fsz7b8",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Thunder by Rasasi 100ml EDP",
+   "nameEn": "Hawas Thunder by Rasasi 100ml EDP",
+   "descriptionAr": "عطر Hawas Thunder by Rasasi 100ml EDP من Rasasi رجالي بطابع زهري وخشبي وفواكه.",
+   "descriptionEn": "Hawas Thunder by Rasasi 100ml EDP by Rasasi for men with a floral and woody and fruity character.",
    "gender": "men",
    "families": [
-    "spicy",
-    "oriental",
-    "gourmand"
+    "floral",
+    "woody",
+    "fruity"
    ],
    "notes": {
-    "top": [
-     "Green notes",
-     "Davana",
-     "Saffron",
-     "Thyme"
-    ],
-    "heart": [
-     "Coffee",
-     "Cinnamon",
-     "Violet",
-     "Raspberry"
-    ],
-    "base": [
-     "Tonka bean",
-     "Musk",
-     "Gurjan balsam"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
-    "autumn",
-    "winter"
+    "summer",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "evening"
+   ],
+   "tags": []
+  },
+  "RAS-066": {
+   "sourceHash": "p5vacc",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Viper by Rasasi 100ml EDP",
+   "nameEn": "Hawas Viper by Rasasi 100ml EDP",
+   "descriptionAr": "عطر Hawas Viper by Rasasi 100ml EDP من Rasasi رجالي بطابع عنبري وخشبي وتوابل.",
+   "descriptionEn": "Hawas Viper by Rasasi 100ml EDP by Rasasi for men with an amber and woody and spicy character.",
+   "gender": "men",
+   "families": [
+    "amber",
+    "woody",
+    "spicy"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "autumn"
    ],
    "occasions": [
     "evening",
     "special"
    ],
-   "tags": [
-    "هاواس فايبر",
-    "رصاصي",
-    "عطر قهوة",
-    "عطر مسائي دافئ"
-   ]
+   "tags": []
   },
   "RAS-067": {
    "sourceHash": "m269lz",
@@ -4062,205 +3968,16 @@
    ]
   },
   "LAT-102": {
-   "sourceHash": "2ws1jx",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "أوبولنت ميلانو لطافة الرجالي",
+   "sourceHash": "wqmq",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Opulent Milano by Lattafa 100ml Men",
    "nameEn": "Opulent Milano by Lattafa 100ml Men",
-   "descriptionAr": "عطر رجالي منعش وأخضر يتميز بتركيبة أنيقة من الحمضيات والزهور العطرية والأخشاب النظيفة، يضفي طابعاً حيوياً ومميزاً.",
-   "descriptionEn": "Opulent Milano by Lattafa has a fresh, green and polished scent profile built around citrus, aromatic florals and clean woods.",
+   "descriptionAr": "عطر Opulent Milano by Lattafa 100ml Men من Lattafa رجالي بطابع زهري وخشبي.",
+   "descriptionEn": "Opulent Milano by Lattafa 100ml Men by Lattafa for men with a floral and woody character.",
    "gender": "men",
    "families": [
-    "fresh",
-    "woody",
-    "floral"
-   ],
-   "notes": {
-    "top": [
-     "Bergamot",
-     "Pink Pepper",
-     "Timur"
-    ],
-    "heart": [
-     "Rose",
-     "Blackcurrant",
-     "Geranium"
-    ],
-    "base": [
-     "Vetiver",
-     "Amberwood",
-     "Cedarwood"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "أوبولنت ميلانو",
-    "عطر رجالي",
-    "عطور منعشة",
-    "لطافة",
-    "عطر خشبي"
-   ]
-  },
-  "LAT-103": {
-   "sourceHash": "1ihjey",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "شيخ الشيوخ سبريم لطافة",
-   "nameEn": "Sheikh Al Shuyukh Supreme by Lattafa 100ml",
-   "descriptionAr": "عطر شرقي خشبي غني بمزيج عميق من العنبر والأخشاب المدخنة والتوابل الدافئة، يناسب أوقات المساء والأجواء الباردة.",
-   "descriptionEn": "Sheikh Al Shuyukh Supreme by Lattafa is a rich oriental-woody fragrance with deep amber, smoky woods and warm spices for evening wear.",
-   "gender": "men",
-   "families": [
-    "oriental",
-    "woody",
-    "spicy"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "شيخ الشيوخ",
-    "عطر رجالي",
-    "عطور شرقية",
-    "لطافة",
-    "عطر خشبي"
-   ]
-  },
-  "LAT-104": {
-   "sourceHash": "j21snf",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "مهرجان جولد لطافة برايد",
-   "nameEn": "Maharjan Gold by Lattafa Pride 100ml",
-   "descriptionAr": "عطر دافئ بالتوابل والأخشاب والزهور العطرية مع لمسات من البخور المدخن وقاعدة عنبرية ناعمة تناسب الجنسين.",
-   "descriptionEn": "Maharjan Gold by Lattafa Pride is a warm, spicy and woody fragrance with aromatic florals, smoky incense and a smooth sweet base.",
-   "gender": "unisex",
-   "families": [
-    "oriental",
-    "woody",
-    "spicy"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "winter",
-    "autumn",
-    "spring"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "مهرجان جولد",
-    "لطافة برايد",
-    "عطر للجنسين",
-    "عطور شرقية",
-    "عطر توابل"
-   ]
-  },
-  "LAT-105": {
-   "sourceHash": "48zrwx",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "أنا الأبيض ليذر لطافة",
-   "nameEn": "Ana Abiyedh Leather 60ml by Lattafa Perfumes",
-   "descriptionAr": "عطر شرقي جلدي فاخر يفتتح بمزيج من التوت والزعفران والزعتر، مع قاعدة عميقة من الجلد والعنبر والأخشاب.",
-   "descriptionEn": "Ana Abiyedh Leather by Lattafa Perfumes opens with raspberry, saffron, and thyme, settling into a rich base of leather and amber.",
-   "gender": "unisex",
-   "families": [
-    "leather",
-    "oriental",
-    "amber"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "أنا الأبيض",
-    "عطر جلدي",
-    "لطافة",
-    "عطر للجنسين",
-    "عطور شرقية"
-   ]
-  },
-  "LAT-106": {
-   "sourceHash": "9a8h7b",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "ببيان لطافة النسائي",
-   "nameEn": "Bayaan Eau De Parfum 100ml by Lattafa",
-   "descriptionAr": "عطر نسائي راقٍ يجمع بين الفواكه والزهور والعود الناعم، يفتتح بنفحات الكشمش والليتشي ويستقر على قاعدة من الفانيليا والمسك.",
-   "descriptionEn": "Bayaan Eau De Parfum by Lattafa opens with cassis, pink pepper, and lychee, unfolding into an elegant heart of rose and praline.",
-   "gender": "women",
-   "families": [
-    "fruity",
     "floral",
-    "oud"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "spring",
-    "autumn"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "ببيان لطافة",
-    "عطر نسائي",
-    "عطور فواكه",
-    "لطافة",
-    "عطر زهري"
-   ]
-  },
-  "LAT-107": {
-   "sourceHash": "1tyhtfz",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "خمرة واحة لطافة",
-   "nameEn": "Khamrah Waha Lattafa Perfumes 100ml EDP",
-   "descriptionAr": "عطر مائي أروماتك منعش ومودرن يفتتح بالبرغموت واليوزو والزنجبيل، مع قلب منعش من السوسن وملح البحر وقاعدة خشبية دافئة.",
-   "descriptionEn": "Khamrah Waha Lattafa Perfumes is an aromatic aquatic fragrance opening with bergamot, juniper, yuzu and ginger, with a warm woody base.",
-   "gender": "unisex",
-   "families": [
-    "aquatic",
-    "fresh",
     "woody"
    ],
    "notes": {
@@ -4270,32 +3987,54 @@
    },
    "seasons": [
     "summer",
-    "spring"
+    "spring",
+    "autumn"
    ],
    "occasions": [
     "daily",
     "work"
    ],
-   "tags": [
-    "خمرة واحة",
-    "عطر مائي",
-    "لطافة",
-    "عطر منعش",
-    "عطور للجنسين"
-   ]
+   "tags": []
   },
-  "ALR-108": {
-   "sourceHash": "jop8zv",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "شوكو مسك الرحاب",
-   "nameEn": "Choco Musk by Al Rehab 50ml EDP Unisex",
-   "descriptionAr": "عطر غورماند دافئ يجمع بين الفانيليا الكريمية والشوكولاتة والمسك الناعم مع لمسة خفيفة من التوابل ليمنحك شعوراً مريحاً وجذاباً.",
-   "descriptionEn": "Choco Musk by Al Rehab is a warm gourmand fragrance combining creamy vanilla, chocolate, soft musk and gentle spice for women and men.",
+  "LAT-103": {
+   "sourceHash": "a9o02i",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Sheikh Al Shuyukh Supreme by Lattafa 100ml",
+   "nameEn": "Sheikh Al Shuyukh Supreme by Lattafa 100ml",
+   "descriptionAr": "عطر Sheikh Al Shuyukh Supreme by Lattafa 100ml من Lattafa رجالي بطابع منعش.",
+   "descriptionEn": "Sheikh Al Shuyukh Supreme by Lattafa 100ml by Lattafa for men with a fresh character.",
+   "gender": "men",
+   "families": [
+    "fresh"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-104": {
+   "sourceHash": "82zk46",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Maharjan Gold by Lattafa Pride 100ml",
+   "nameEn": "Maharjan Gold by Lattafa Pride 100ml",
+   "descriptionAr": "عطر Maharjan Gold by Lattafa Pride 100ml من Lattafa Pride للجنسين بطابع عنبري وشرقي.",
+   "descriptionEn": "Maharjan Gold by Lattafa Pride 100ml by Lattafa Pride for unisex with an amber and oriental character.",
    "gender": "unisex",
    "families": [
-    "gourmand",
-    "musk",
+    "amber",
     "oriental"
    ],
    "notes": {
@@ -4309,105 +4048,25 @@
    ],
    "occasions": [
     "daily",
-    "evening"
+    "work",
+    "evening",
+    "special"
    ],
-   "tags": [
-    "شوكو مسك",
-    "الرحاب",
-    "عطر شوكولاتة",
-    "عطر فانيليا",
-    "عطر للجنسين"
-   ]
+   "tags": []
   },
-  "LAT-109": {
-   "sourceHash": "7gk7na",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "تميمة لطافة",
-   "nameEn": "Tamima by Lattafa 100 ml Eau de Parfum",
-   "descriptionAr": "عطر زهري فواكه مائي منعش يفتتح بمزيج من الكيوي والكشمش الأحمر والراوند، مع قاعدة خشبية مسكية دافئة.",
-   "descriptionEn": "Tamima by Lattafa is a fruity aquatic floral musk fragrance featuring top notes of kiwi and red currant, with a woody musk base.",
+  "LAT-105": {
+   "sourceHash": "3y54hk",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Ana Abiyedh Leather 60ml by Lattafa Perfumes",
+   "nameEn": "Ana Abiyedh Leather 60ml by Lattafa Perfumes",
+   "descriptionAr": "عطر Ana Abiyedh Leather 60ml by Lattafa Perfumes من Lattafa للجنسين بطابع عنبري وشرقي وجلدي.",
+   "descriptionEn": "Ana Abiyedh Leather 60ml by Lattafa Perfumes by Lattafa for unisex with an amber and oriental and leather character.",
    "gender": "unisex",
    "families": [
-    "fruity",
-    "aquatic",
-    "floral"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": [
-     "Musk",
-     "Cedar",
-     "Sandalwood",
-     "Woody Notes"
-    ]
-   },
-   "seasons": [
-    "summer",
-    "spring"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "تميمة لطافة",
-    "عطر فواكه",
-    "عطر منعش",
-    "لطافة",
-    "عطر للجنسين"
-   ]
-  },
-  "LAT-110": {
-   "sourceHash": "1v21hnu",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "أنا الأبيض بودري لطافة",
-   "nameEn": "Ana Abiyedh Poudree by Lattafa 60ml",
-   "descriptionAr": "عطر نسائي أنيق برائحة بودرية زهرية ناعمة، يفتتح ببرعم البرتقال والورد والياسمين مع قاعدة دافئة من الفانيليا والمسك.",
-   "descriptionEn": "Ana Abiyedh Poudree by Lattafa is an elegant floral powdery composition opening with orange blossom, rose, and jasmine.",
-   "gender": "women",
-   "families": [
-    "powdery",
-    "floral",
-    "musk"
-   ],
-   "notes": {
-    "top": [],
-    "heart": [],
-    "base": []
-   },
-   "seasons": [
-    "spring",
-    "autumn",
-    "winter"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "أنا الأبيض بودري",
-    "عطر نسائي",
-    "عطور بودرية",
-    "لطافة",
-    "عطر زهري"
-   ]
-  },
-  "LAT-111": {
-   "sourceHash": "q53in2",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-16T07:24:59.746Z",
-   "nameAr": "مصمم لطافة",
-   "nameEn": "Musamam Eau De Parfum 100ml by Lattafa",
-   "descriptionAr": "عطر خشبي أروماتك فخم يفتتح بالماندرين الإيطالي واللافندر والزعفران، مع قاعدة غنية بالبخور والأخشاب العميقة.",
-   "descriptionEn": "Musamam by Lattafa is a woody aromatic composition opening with Italian mandarin, lavender, and saffron, with a rich incense base.",
-   "gender": "unisex",
-   "families": [
-    "woody",
+    "amber",
     "oriental",
-    "spicy"
+    "leather"
    ],
    "notes": {
     "top": [],
@@ -4419,16 +4078,194 @@
     "autumn"
    ],
    "occasions": [
+    "daily",
     "evening",
     "special"
    ],
-   "tags": [
-    "مصمم لطافة",
-    "عطر خشبي",
-    "عطور شرقية",
-    "لطافة",
-    "عطر للجنسين"
-   ]
+   "tags": []
+  },
+  "LAT-106": {
+   "sourceHash": "1rqdejc",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Bayaan Eau De Parfum 100ml by Lattafa",
+   "nameEn": "Bayaan Eau De Parfum 100ml by Lattafa",
+   "descriptionAr": "عطر Bayaan Eau De Parfum 100ml by Lattafa من Lattafa نسائي بطابع خشبي.",
+   "descriptionEn": "Bayaan Eau De Parfum 100ml by Lattafa by Lattafa for women with a woody character.",
+   "gender": "women",
+   "families": [
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-107": {
+   "sourceHash": "ohw9qm",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Khamrah Waha Lattafa Perfumes 100ml EDP",
+   "nameEn": "Khamrah Waha Lattafa Perfumes 100ml EDP",
+   "descriptionAr": "عطر Khamrah Waha Lattafa Perfumes 100ml EDP من Lattafa للجنسين بطابع منعش ومائي.",
+   "descriptionEn": "Khamrah Waha Lattafa Perfumes 100ml EDP by Lattafa for unisex with a fresh and aquatic character.",
+   "gender": "unisex",
+   "families": [
+    "fresh",
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening"
+   ],
+   "tags": []
+  },
+  "ALR-108": {
+   "sourceHash": "kbhj4a",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Choco Musk by Al Rehab 50ml EDP Unisex",
+   "nameEn": "Choco Musk by Al Rehab 50ml EDP Unisex",
+   "descriptionAr": "عطر Choco Musk by Al Rehab 50ml EDP Unisex من Al Rehab للجنسين بطابع عنبري وشرقي ومسكي.",
+   "descriptionEn": "Choco Musk by Al Rehab 50ml EDP Unisex by Al Rehab for unisex with an amber and oriental and musky character.",
+   "gender": "unisex",
+   "families": [
+    "amber",
+    "oriental",
+    "musk"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "evening"
+   ],
+   "tags": []
+  },
+  "LAT-109": {
+   "sourceHash": "rvx9ei",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Tamima by Lattafa 100 ml Eau de Parfum",
+   "nameEn": "Tamima by Lattafa 100 ml Eau de Parfum",
+   "descriptionAr": "عطر Tamima by Lattafa 100 ml Eau de Parfum من Lattafa للجنسين بطابع زهري وفواكه.",
+   "descriptionEn": "Tamima by Lattafa 100 ml Eau de Parfum by Lattafa for unisex with a floral and fruity character.",
+   "gender": "unisex",
+   "families": [
+    "floral",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-110": {
+   "sourceHash": "ssg7ls",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Ana Abiyedh Poudree by Lattafa 60ml",
+   "nameEn": "Ana Abiyedh Poudree by Lattafa 60ml",
+   "descriptionAr": "عطر Ana Abiyedh Poudree by Lattafa 60ml من Lattafa نسائي بطابع زهري وفواكه وعود.",
+   "descriptionEn": "Ana Abiyedh Poudree by Lattafa 60ml by Lattafa for women with a floral and fruity and oud character.",
+   "gender": "women",
+   "families": [
+    "floral",
+    "fruity",
+    "oud"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-111": {
+   "sourceHash": "1arhpze",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Musamam Eau De Parfum 100ml by Lattafa",
+   "nameEn": "Musamam Eau De Parfum 100ml by Lattafa",
+   "descriptionAr": "عطر Musamam Eau De Parfum 100ml by Lattafa من Lattafa للجنسين بطابع خشبي.",
+   "descriptionEn": "Musamam Eau De Parfum 100ml by Lattafa by Lattafa for unisex with a woody character.",
+   "gender": "unisex",
+   "families": [
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "work",
+    "evening",
+    "special"
+   ],
+   "tags": []
   },
   "LAT-112": {
    "sourceHash": "ibtge9",
@@ -7210,211 +7047,18 @@
    ]
   },
   "LAT-172": {
-   "sourceHash": "1q4rrhk",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T01:12:39.339Z",
-   "nameAr": "مزاجي من لطافة",
+   "sourceHash": "f0yoaw",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Mazaaji by Lattafa 100ml EDP for Women",
    "nameEn": "Mazaaji by Lattafa 100ml EDP for Women",
-   "descriptionAr": "عطر نسائي راقٍ ينبض بنفحات الأزهار البيضاء والورود. يضفي لمسة ساحرة ودافئة بفضل قاعدة الأخشاب والفانيليا.",
-   "descriptionEn": "Mazaaji by Lattafa – 100 ml Eau de Parfum for Women featuring white floral and gourmand woody notes.",
+   "descriptionAr": "عطر Mazaaji by Lattafa 100ml EDP for Women من Lattafa نسائي بطابع زهري وحلو وخشبي.",
+   "descriptionEn": "Mazaaji by Lattafa 100ml EDP for Women by Lattafa for women with a floral and gourmand and woody character.",
    "gender": "women",
    "families": [
     "floral",
-    "woody",
-    "gourmand"
-   ],
-   "notes": {
-    "top": [
-     "Orange Blossom",
-     "Mandarin Orange"
-    ],
-    "heart": [
-     "Bulgarian Rose",
-     "Turkish Rose",
-     "Jasmine"
-    ],
-    "base": [
-     "Patchouli",
-     "Vanilla",
-     "Sandalwood",
-     "Amber"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer",
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "work",
-    "evening"
-   ],
-   "tags": [
-    "مزاجي",
-    "لطافة",
-    "عطر نسائي",
-    "أزهار بيضاء",
-    "فانيليا",
-    "صندل"
-   ]
-  },
-  "LAT-173": {
-   "sourceHash": "1gxib",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T01:12:39.339Z",
-   "nameAr": "ثروة سيلفر من لطافة برايد",
-   "nameEn": "Tharwah Silver by Lattafa Pride 100ml EDP",
-   "descriptionAr": "عطر رجالي منعش يجمع بين نفحات النعناع والبرغموت والأخشاب. يناسب الاستخدام اليومي وأوقات العمل بفضل طابعه الحيوي.",
-   "descriptionEn": "Tharwah Silver by Lattafa Pride – 100ml Eau de Parfum for Men with a fresh woody-aquatic character.",
-   "gender": "men",
-   "families": [
-    "fresh",
-    "aquatic",
+    "gourmand",
     "woody"
-   ],
-   "notes": {
-    "top": [
-     "Mint",
-     "Bergamot"
-    ],
-    "heart": [
-     "Clary Sage",
-     "Lavender"
-    ],
-    "base": [
-     "Cedarwood",
-     "Musk",
-     "Vetiver"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "work"
-   ],
-   "tags": [
-    "ثروة سيلفر",
-    "لطافة برايد",
-    "عطر رجالي",
-    "عطر منعش",
-    "صيفي",
-    "عمل"
-   ]
-  },
-  "LAT-174": {
-   "sourceHash": "14f5imv",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T01:12:39.339Z",
-   "nameAr": "ماهير من لطافة",
-   "nameEn": "Maahir by Lattafa 100ml EDP for Men",
-   "descriptionAr": "عطر رجالي مميز يمزج بين الفواكه المنعشة والزهور والأخشاب الدافئة. يقدم تجربة عطرية متوازنة تناسب مختلف الأوقات.",
-   "descriptionEn": "Maahir by Lattafa – 100 ml Eau de Parfum featuring a fruity, floral, and woody profile.",
-   "gender": "men",
-   "families": [
-    "fruity",
-    "floral",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Red Berries",
-     "Peach",
-     "Bergamot"
-    ],
-    "heart": [
-     "Jasmine",
-     "Peony",
-     "Red Lily"
-    ],
-    "base": [
-     "Sandalwood",
-     "Vanilla Flower",
-     "Musk"
-    ]
-   },
-   "seasons": [
-    "all"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "ماهير",
-    "لطافة",
-    "عطر رجالي",
-    "فواكه",
-    "زهور",
-    "أخشاب"
-   ]
-  },
-  "LAT-175": {
-   "sourceHash": "hsmwxg",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T01:12:39.339Z",
-   "nameAr": "هيز كونفشن من لطافة",
-   "nameEn": "His Confession by Lattafa Perfume 100ml",
-   "descriptionAr": "عطر رجالي فاخر يجمع بين التوابل الدافئة والأخشاب العميقة. يمنحك شعوراً بالجاذبية والأناقة في جميع المناسبات.",
-   "descriptionEn": "His Confession by Lattafa – 100 ml Eau de Parfum for Men with an oriental woody and spicy scent.",
-   "gender": "men",
-   "families": [
-    "oriental",
-    "woody",
-    "spicy"
-   ],
-   "notes": {
-    "top": [
-     "Cinnamon",
-     "Lavender",
-     "Mandarin"
-    ],
-    "heart": [
-     "Iris",
-     "Cypress",
-     "Benzoin"
-    ],
-    "base": [
-     "Vanilla",
-     "Tonka Bean",
-     "Patchouli",
-     "Cedarwood",
-     "Incense",
-     "Amber"
-    ]
-   },
-   "seasons": [
-    "winter",
-    "autumn"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "هيز كونفشن",
-    "لطافة",
-    "عطر رجالي",
-    "توابل",
-    "بخور",
-    "فانيليا"
-   ]
-  },
-  "LAT-176": {
-   "sourceHash": "14jezp0",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T01:12:39.339Z",
-   "nameAr": "أنا الأبيض من لطافة",
-   "nameEn": "Ana Abiyedh by Lattafa 60ml EDP Unisex",
-   "descriptionAr": "عطر للجنسين يتميز بطابعه الفواكهي والمسكي الناعم. يضفي انتعاشاً وبهجة على يومك بنفحاته الساحرة.",
-   "descriptionEn": "Ana Abiyedh by Lattafa – 60 ml Eau de Parfum Unisex with fruity, musky, and sweet notes.",
-   "gender": "unisex",
-   "families": [
-    "fruity",
-    "musk"
    ],
    "notes": {
     "top": [],
@@ -7422,20 +7066,138 @@
     "base": []
    },
    "seasons": [
-    "all"
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-173": {
+   "sourceHash": "15ncsoq",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Tharwah Silver by Lattafa Pride 100ml EDP",
+   "nameEn": "Tharwah Silver by Lattafa Pride 100ml EDP",
+   "descriptionAr": "عطر Tharwah Silver by Lattafa Pride 100ml EDP من Lattafa Pride رجالي بطابع منعش ومائي.",
+   "descriptionEn": "Tharwah Silver by Lattafa Pride 100ml EDP by Lattafa Pride for men with a fresh and aquatic character.",
+   "gender": "men",
+   "families": [
+    "fresh",
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "spring",
+    "autumn"
    ],
    "occasions": [
     "daily",
     "work"
    ],
-   "tags": [
-    "أنا الأبيض",
-    "لطافة",
-    "عطر للجنسين",
-    "مسك",
-    "فواكه",
-    "عطر يومي"
-   ]
+   "tags": []
+  },
+  "LAT-174": {
+   "sourceHash": "yyvrjc",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Maahir by Lattafa 100ml EDP for Men",
+   "nameEn": "Maahir by Lattafa 100ml EDP for Men",
+   "descriptionAr": "عطر Maahir by Lattafa 100ml EDP for Men من Lattafa رجالي بطابع زهري وخشبي وفواكه.",
+   "descriptionEn": "Maahir by Lattafa 100ml EDP for Men by Lattafa for men with a floral and woody and fruity character.",
+   "gender": "men",
+   "families": [
+    "floral",
+    "woody",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-175": {
+   "sourceHash": "1cmvxr6",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "His Confession by Lattafa Perfume 100ml",
+   "nameEn": "His Confession by Lattafa Perfume 100ml",
+   "descriptionAr": "عطر His Confession by Lattafa Perfume 100ml من Lattafa رجالي بطابع عنبري وخشبي وتوابل.",
+   "descriptionEn": "His Confession by Lattafa Perfume 100ml by Lattafa for men with an amber and woody and spicy character.",
+   "gender": "men",
+   "families": [
+    "amber",
+    "woody",
+    "spicy"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "special"
+   ],
+   "tags": []
+  },
+  "LAT-176": {
+   "sourceHash": "znl44q",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Ana Abiyedh by Lattafa 60ml EDP Unisex",
+   "nameEn": "Ana Abiyedh by Lattafa 60ml EDP Unisex",
+   "descriptionAr": "عطر Ana Abiyedh by Lattafa 60ml EDP Unisex من Lattafa للجنسين بطابع حلو ومسكي وفواكه.",
+   "descriptionEn": "Ana Abiyedh by Lattafa 60ml EDP Unisex by Lattafa for unisex with a gourmand and musky and fruity character.",
+   "gender": "unisex",
+   "families": [
+    "gourmand",
+    "musk",
+    "fruity"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "special"
+   ],
+   "tags": []
   },
   "LAT-177": {
    "sourceHash": "u83igh",
@@ -39214,7 +38976,7 @@
   "MAI-877": {
    "sourceHash": "10hhp3a",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Jean Lowe Noir Maison Alhambra 100ml EDP",
    "nameEn": "Jean Lowe Noir Maison Alhambra 100ml EDP",
    "descriptionAr": "عطر Jean Lowe Noir Maison Alhambra 100ml EDP من Maison Alhambra للجنسين بطابع مسكي وعنبري وخشبي.",
@@ -39242,7 +39004,7 @@
   "ZIM-878": {
    "sourceHash": "pbsh4u",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Al Barari Shore by Zimaya 100 ml EDP",
    "nameEn": "Al Barari Shore by Zimaya 100 ml EDP",
    "descriptionAr": "عطر Al Barari Shore by Zimaya 100 ml EDP من Zimaya رجالي بطابع منعش ومائي.",
@@ -39271,7 +39033,7 @@
   "AFN-879": {
    "sourceHash": "duxiov",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Lynked Forever by Afnan 100ml Eau De Parfum",
    "nameEn": "Lynked Forever by Afnan 100ml Eau De Parfum",
    "descriptionAr": "عطر Lynked Forever by Afnan 100ml Eau De Parfum من Afnan نسائي بطابع زهري وخشبي ومسكي.",
@@ -39302,7 +39064,7 @@
   "MAI-880": {
    "sourceHash": "1vgetxu",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
    "nameEn": "La Charmante Eclatant by Maison Alhambra 100ml EDP",
    "descriptionAr": "عطر La Charmante Eclatant by Maison Alhambra 100ml EDP من Maison Alhambra نسائي بطابع عنبري وشرقي.",
@@ -39331,7 +39093,7 @@
   "ALW-881": {
    "sourceHash": "k4cfuv",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
    "nameEn": "Lazuli by Al Wataniah – 100ml Eau De Parfum",
    "descriptionAr": "عطر Lazuli by Al Wataniah – 100ml Eau De Parfum من Al Wataniah للجنسين بطابع عنبري ومنعش وشرقي.",
@@ -39361,7 +39123,7 @@
   "MAI-882": {
    "sourceHash": "1fluqp6",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Rose Origami by Maison Alhambra 100ml",
    "nameEn": "Rose Origami by Maison Alhambra 100ml",
    "descriptionAr": "عطر Rose Origami by Maison Alhambra 100ml من Maison Alhambra نسائي بطابع زهري وخشبي وشرقي.",
@@ -39388,7 +39150,7 @@
   "ZIM-883": {
    "sourceHash": "16zhmxu",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
    "nameEn": "Tiramisu Coco by Zimaya 100 ml EDP Unisex",
    "descriptionAr": "عطر Tiramisu Coco by Zimaya 100 ml EDP Unisex من Zimaya للجنسين بطابع حلو وعنبري وشرقي.",
@@ -39418,7 +39180,7 @@
   "ARD-884": {
    "sourceHash": "8rebd7",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
    "nameEn": "Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP",
    "descriptionAr": "عطر Maraseem Al Malaki by Ard Al Zaafaran 100ml EDP من Ard Al Zaafaran للجنسين بطابع زهري وعنبري وشرقي.",
@@ -39448,7 +39210,7 @@
   "MAI-885": {
    "sourceHash": "t5leew",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
    "nameEn": "Jean Lowe Immortel by Maison Alhambra 100ml EDP Men",
    "descriptionAr": "عطر Jean Lowe Immortel by Maison Alhambra 100ml EDP Men من Maison Alhambra رجالي بطابع عنبري وخشبي وتوابل.",
@@ -39478,7 +39240,7 @@
   "AFN-886": {
    "sourceHash": "1rohwz0",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Afnan Supremacy Not Only Intense Extrait 100ml",
    "nameEn": "Afnan Supremacy Not Only Intense Extrait 100ml",
    "descriptionAr": "عطر Afnan Supremacy Not Only Intense Extrait 100ml من Afnan رجالي بطابع خشبي وفواكه وعنبري.",
@@ -39508,7 +39270,7 @@
   "ALW-887": {
    "sourceHash": "wz7nxa",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Alexandrite Nawal by Al Wataniah 100ml EDP",
    "nameEn": "Alexandrite Nawal by Al Wataniah 100ml EDP",
    "descriptionAr": "عطر Alexandrite Nawal by Al Wataniah 100ml EDP من Al Wataniah رجالي بطابع عنبري وخشبي وتوابل.",
@@ -39534,7 +39296,7 @@
   "ARM-888": {
    "sourceHash": "vcuhl2",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Armaf Odyssey Aqua Edition 100ml EDP Men",
    "nameEn": "Armaf Odyssey Aqua Edition 100ml EDP Men",
    "descriptionAr": "عطر Armaf Odyssey Aqua Edition 100ml EDP Men من Armaf رجالي بطابع منعش وحمضي ومائي.",
@@ -39562,7 +39324,7 @@
   "GRA-889": {
    "sourceHash": "eu9xg",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
    "nameEn": "Midnight Angel Deodorant Body Spray 200mL Grandeur Woman",
    "descriptionAr": "عطر Midnight Angel Deodorant Body Spray 200mL Grandeur Woman من Grandeur نسائي.",
@@ -39581,7 +39343,7 @@
   "VOL-890": {
    "sourceHash": "165wnhb",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Reload Gold by Volare Man – 100 ml for Him",
    "nameEn": "Reload Gold by Volare Man – 100 ml for Him",
    "descriptionAr": "عطر Reload Gold by Volare Man – 100 ml for Him من Volare رجالي بطابع عنبري وخشبي وتوابل.",
@@ -39611,7 +39373,7 @@
   "MAI-891": {
    "sourceHash": "1rakkns",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
    "nameEn": "Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP",
    "descriptionAr": "عطر Sugar Me Dulce de Leche by Maison Alhambra 100ml EDP من Maison Alhambra للجنسين.",
@@ -39636,7 +39398,7 @@
   "LAT-892": {
    "sourceHash": "1bo4n6u",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hayaati Men by Lattafa Perfumes100ml EDP",
    "nameEn": "Hayaati Men by Lattafa Perfumes100ml EDP",
    "descriptionAr": "عطر Hayaati Men by Lattafa Perfumes100ml EDP من Lattafa رجالي بطابع عنبري ومنعش وخشبي.",
@@ -39666,7 +39428,7 @@
   "MAI-893": {
    "sourceHash": "rcctqy",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
    "nameEn": "Kismet Magic by Maison Alhambra 100ml EDP Unisex",
    "descriptionAr": "عطر Kismet Magic by Maison Alhambra 100ml EDP Unisex من Maison Alhambra للجنسين بطابع حلو وعنبري وشرقي.",
@@ -39696,7 +39458,7 @@
   "MAI-894": {
    "sourceHash": "1e7mhyc",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "L'Impressio Pour Femme by Maison Alhambra 100ml",
    "nameEn": "L'Impressio Pour Femme by Maison Alhambra 100ml",
    "descriptionAr": "عطر L'Impressio Pour Femme by Maison Alhambra 100ml من Maison Alhambra نسائي بطابع زهري وفواكه.",
@@ -39724,7 +39486,7 @@
   "MAI-895": {
    "sourceHash": "1qbya4w",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Avant by Maison Alhambra 100ml EDP Men",
    "nameEn": "Avant by Maison Alhambra 100ml EDP Men",
    "descriptionAr": "عطر Avant by Maison Alhambra 100ml EDP Men من Maison Alhambra رجالي بطابع خشبي.",
@@ -39751,7 +39513,7 @@
   "GRA-896": {
    "sourceHash": "1wcp1or",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Avento Perfume Man 100ml EDP Grandeur",
    "nameEn": "Avento Perfume Man 100ml EDP Grandeur",
    "descriptionAr": "عطر Avento Perfume Man 100ml EDP Grandeur من Grandeur رجالي بطابع حمضي وخشبي وفواكه.",
@@ -39780,7 +39542,7 @@
   "GUL-897": {
    "sourceHash": "15xjx8s",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
    "nameEn": "Sham Perfume Woman Gulf Orchid – Her 100 ml",
    "descriptionAr": "عطر Sham Perfume Woman Gulf Orchid – Her 100 ml من Gulf Orchid نسائي بطابع زهري وحلو وفواكه.",
@@ -39809,7 +39571,7 @@
   "VOL-898": {
    "sourceHash": "188rxqw",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Amazon Rainfall by Volare 100ml EDP Men",
    "nameEn": "Amazon Rainfall by Volare 100ml EDP Men",
    "descriptionAr": "عطر Amazon Rainfall by Volare 100ml EDP Men من Volare رجالي بطابع منعش وحمضي ومائي.",
@@ -39839,7 +39601,7 @@
   "MAI-899": {
    "sourceHash": "kl2zre",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Lava by Maison Alhambra 100ml EDP",
    "nameEn": "Lava by Maison Alhambra 100ml EDP",
    "descriptionAr": "عطر Lava by Maison Alhambra 100ml EDP من Maison Alhambra للجنسين بطابع حلو وعنبري وشرقي.",
@@ -39867,7 +39629,7 @@
   "ARM-900": {
    "sourceHash": "1cnlk9o",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
    "nameEn": "Odyssey Mandarin Sky by Armaf 100ml EDP Men",
    "descriptionAr": "عطر Odyssey Mandarin Sky by Armaf 100ml EDP Men من Armaf للجنسين بطابع حمضي وخشبي.",
@@ -39896,7 +39658,7 @@
   "ARM-901": {
    "sourceHash": "10rdwee",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Feroce by Armaf 100ml EDP Women",
    "nameEn": "Feroce by Armaf 100ml EDP Women",
    "descriptionAr": "عطر Feroce by Armaf 100ml EDP Women من Armaf نسائي بطابع زهري وفواكه.",
@@ -39925,7 +39687,7 @@
   "ZIM-902": {
    "sourceHash": "tt2izq",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Brave Heart by Zimaya EDP 100ml Unisex",
    "nameEn": "Brave Heart by Zimaya EDP 100ml Unisex",
    "descriptionAr": "عطر Brave Heart by Zimaya EDP 100ml Unisex من Zimaya للجنسين بطابع عنبري وخشبي وتوابل.",
@@ -39955,7 +39717,7 @@
   "MAI-903": {
    "sourceHash": "enak22",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hercules by Maison Alhambra For Him 100ml",
    "nameEn": "Hercules by Maison Alhambra For Him 100ml",
    "descriptionAr": "عطر Hercules by Maison Alhambra For Him 100ml من Maison Alhambra رجالي بطابع عنبري وخشبي وتوابل.",
@@ -39983,7 +39745,7 @@
   "ALW-904": {
    "sourceHash": "5zd6or",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Tiara by Al Wataniah – 100 ml for Women",
    "nameEn": "Tiara by Al Wataniah – 100 ml for Women",
    "descriptionAr": "عطر Tiara by Al Wataniah – 100 ml for Women من Al Wataniah نسائي بطابع زهري وحلو وفواكه.",
@@ -40012,7 +39774,7 @@
   "MAI-905": {
    "sourceHash": "35vh5c",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Olivia by Maison Alhambra 80ml EDP",
    "nameEn": "Olivia by Maison Alhambra 80ml EDP",
    "descriptionAr": "عطر Olivia by Maison Alhambra 80ml EDP من Maison Alhambra نسائي بطابع زهري وفواكه.",
@@ -40040,7 +39802,7 @@
   "OSM-906": {
    "sourceHash": "ewp95v",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Osma Ambry A Fresh & Fly 75ml EDP",
    "nameEn": "Osma Ambry A Fresh & Fly 75ml EDP",
    "descriptionAr": "عطر Osma Ambry A Fresh & Fly 75ml EDP من Osma بطابع منعش.",
@@ -40067,7 +39829,7 @@
   "TAD-907": {
    "sourceHash": "1sj1ayj",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Dynasty by TADangel 100ml EDP Men",
    "nameEn": "Dynasty by TADangel 100ml EDP Men",
    "descriptionAr": "عطر Dynasty by TADangel 100ml EDP Men من TADangel رجالي بطابع عنبري وتوابل وشرقي.",
@@ -40098,7 +39860,7 @@
   "TAD-908": {
    "sourceHash": "1f6uiyn",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Pathway by TADangel 100ml EDP Men",
    "nameEn": "Pathway by TADangel 100ml EDP Men",
    "descriptionAr": "عطر Pathway by TADangel 100ml EDP Men من TADangel رجالي بطابع توابل وفواكه ومنعش.",
@@ -40128,7 +39890,7 @@
   "TAD-909": {
    "sourceHash": "tyjiac",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Magic Blossom by TADangel 100ml EDP Women",
    "nameEn": "Magic Blossom by TADangel 100ml EDP Women",
    "descriptionAr": "عطر Magic Blossom by TADangel 100ml EDP Women من TADangel نسائي بطابع زهري وحلو وعنبري.",
@@ -40157,7 +39919,7 @@
   "TAD-910": {
    "sourceHash": "r2ti42",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "TADangel Pink Blossom 100ml EDP Women",
    "nameEn": "TADangel Pink Blossom 100ml EDP Women",
    "descriptionAr": "عطر TADangel Pink Blossom 100ml EDP Women من TADangel نسائي بطابع زهري وفواكه ومسكي.",
@@ -40188,7 +39950,7 @@
   "TAD-911": {
    "sourceHash": "153qo95",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Status by TADangel 100ml EDP Men",
    "nameEn": "Status by TADangel 100ml EDP Men",
    "descriptionAr": "عطر Status by TADangel 100ml EDP Men من TADangel رجالي بطابع حمضي وخشبي.",
@@ -40217,7 +39979,7 @@
   "TAD-912": {
    "sourceHash": "lu015x",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Rose Divine by TADangel 100ml EDP Women",
    "nameEn": "Rose Divine by TADangel 100ml EDP Women",
    "descriptionAr": "عطر Rose Divine by TADangel 100ml EDP Women من TADangel نسائي بطابع زهري وحلو ومسكي.",
@@ -40248,7 +40010,7 @@
   "TAD-913": {
    "sourceHash": "1m4r3m",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Fleur Blossom by TADangel 100ml EDP Women",
    "nameEn": "Fleur Blossom by TADangel 100ml EDP Women",
    "descriptionAr": "عطر Fleur Blossom by TADangel 100ml EDP Women من TADangel نسائي بطابع زهري وحلو وحمضي.",
@@ -40279,7 +40041,7 @@
   "TAD-914": {
    "sourceHash": "1gnsb4z",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Intrigue Pour Homme by TADangel 100ml EDP Men",
    "nameEn": "Intrigue Pour Homme by TADangel 100ml EDP Men",
    "descriptionAr": "عطر Intrigue Pour Homme by TADangel 100ml EDP Men من TADangel رجالي بطابع خشبي وتوابل وفواكه.",
@@ -40310,7 +40072,7 @@
   "TAD-915": {
    "sourceHash": "ugvdu1",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Intrigue Aquatic by TADangel 100ml EDP Unisex",
    "nameEn": "Intrigue Aquatic by TADangel 100ml EDP Unisex",
    "descriptionAr": "عطر Intrigue Aquatic by TADangel 100ml EDP Unisex من TADangel للجنسين بطابع منعش وحمضي ومائي.",
@@ -40339,7 +40101,7 @@
   "FRE-916": {
    "sourceHash": "179sbnb",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Arsh Black Ice by French Avenue Man",
    "nameEn": "Arsh Black Ice by French Avenue Man",
    "descriptionAr": "عطر Arsh Black Ice by French Avenue Man من French Avenue رجالي بطابع حمضي وخشبي.",
@@ -40368,7 +40130,7 @@
   "PAR-917": {
    "sourceHash": "l1qxbm",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Qissa Blue by Paris Corner 100ml EDP Unisex",
    "nameEn": "Qissa Blue by Paris Corner 100ml EDP Unisex",
    "descriptionAr": "عطر Qissa Blue by Paris Corner 100ml EDP Unisex من Paris Corner للجنسين بطابع زهري وعنبري وشرقي.",
@@ -40398,7 +40160,7 @@
   "KEN-918": {
    "sourceHash": "11zc4r3",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Desire For Her by Kenz de Rasasi 100ml Women",
    "nameEn": "Hawas Desire For Her by Kenz de Rasasi 100ml Women",
    "descriptionAr": "عطر Hawas Desire For Her by Kenz de Rasasi 100ml Women من Kenz de Rasasi نسائي بطابع حلو.",
@@ -40426,7 +40188,7 @@
   "KEN-919": {
    "sourceHash": "1eplw7l",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Desire First Look by Kenz de Rasasi 100ml",
    "nameEn": "Hawas Desire First Look by Kenz de Rasasi 100ml",
    "descriptionAr": "عطر Hawas Desire First Look by Kenz de Rasasi 100ml من Kenz de Rasasi نسائي بطابع عنبري وحمضي وخشبي.",
@@ -40457,7 +40219,7 @@
   "KEN-920": {
    "sourceHash": "1c095qz",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Desire First Kiss by Kenz de Rasasi 100ml",
    "nameEn": "Hawas Desire First Kiss by Kenz de Rasasi 100ml",
    "descriptionAr": "عطر Hawas Desire First Kiss by Kenz de Rasasi 100ml من Kenz de Rasasi نسائي بطابع عنبري وحمضي وخشبي.",
@@ -40488,7 +40250,7 @@
   "KEN-921": {
    "sourceHash": "25sd3d",
    "editor": "rules",
-   "updatedAt": "2026-11-24T02:09:06.233Z",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
    "nameAr": "Hawas Ice Ultradose by Kenz de Rasasi 100ml Men",
    "nameEn": "Hawas Ice Ultradose by Kenz de Rasasi 100ml Men",
    "descriptionAr": "عطر Hawas Ice Ultradose by Kenz de Rasasi 100ml Men من Kenz de Rasasi رجالي بطابع حمضي وخشبي.",
@@ -40514,173 +40276,22 @@
    "tags": []
   },
   "KEN-922": {
-   "sourceHash": "k03ppm",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "هاواس أبيكس جي تي باي كنز ديه رساسي",
+   "sourceHash": "14fxqa9",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Apex GT by Kenz de Rasasi 100ml Unisex",
    "nameEn": "Hawas Apex GT by Kenz de Rasasi 100ml Unisex",
-   "descriptionAr": "عطر للجنسين يجمع بين البرغموت والأناناس والجريب فروت مع قلب خشبي وأساس من طحلب السنديان والأمبر. يضفي حضوراً متميزاً وحيوياً.",
-   "descriptionEn": "Hawas Apex GT by Kenz de Rasasi is a unisex fragrance with an aromatic, citrus, floral, and woody profile featuring bergamot, pineapple, and oakmoss.",
+   "descriptionAr": "عطر Hawas Apex GT by Kenz de Rasasi 100ml Unisex من Kenz de Rasasi للجنسين بطابع زهري وحمضي.",
+   "descriptionEn": "Hawas Apex GT by Kenz de Rasasi 100ml Unisex by Kenz de Rasasi for unisex with a floral and citrus character.",
    "gender": "unisex",
    "families": [
-    "citrus",
     "floral",
-    "woody"
+    "citrus"
    ],
    "notes": {
-    "top": [
-     "Bergamot",
-     "Pineapple",
-     "Grapefruit"
-    ],
-    "heart": [
-     "Patchouli",
-     "Cedar",
-     "Jasmine"
-    ],
-    "base": [
-     "Oakmoss",
-     "Woody Notes",
-     "Amber"
-    ]
-   },
-   "seasons": [
-    "spring",
-    "summer"
-   ],
-   "occasions": [
-    "daily",
-    "evening"
-   ],
-   "tags": [
-    "هاواس أبيكس",
-    "كنز ديه رساسي",
-    "عطر للجنسين",
-    "عطر فواكه"
-   ]
-  },
-  "FRE-923": {
-   "sourceHash": "1cvza3",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "فولكان فوكس باي فرينش أفنيو",
-   "nameEn": "Vulcan Vox by French Avenue 100ml EDP Unisex",
-   "descriptionAr": "عطر حلو وفاكهي يفتح بنفحات الكرز وينتقل إلى قلب كريمي من اللوز مع قاعدة بودرية بالفانيليا. يمنحك شعوراً دافئاً وجذاباً.",
-   "descriptionEn": "Vulcan Vox by French Avenue is a gourmand fragrance for women and men with a sweet, fruity, cherry, almond, powdery, and vanilla profile.",
-   "gender": "unisex",
-   "families": [
-    "gourmand",
-    "fruity",
-    "powdery"
-   ],
-   "notes": {
-    "top": [
-     "Cherry"
-    ],
-    "heart": [
-     "Almond"
-    ],
-    "base": [
-     "Powdery Notes",
-     "Vanilla"
-    ]
-   },
-   "seasons": [
-    "autumn",
-    "winter"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "فولكان فوكس",
-    "فرينش أفنيو",
-    "عطر جورماند",
-    "عطر فانيليا"
-   ]
-  },
-  "PAR-924": {
-   "sourceHash": "5p2exl",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "بلاك أوبترا باي باريس كورنر بيندورا سنتس",
-   "nameEn": "Black Optra by Paris Corner Pendora Scents – 100 ml Women",
-   "descriptionAr": "عطر نسائي غني بنفحات الكمثرى والقهوة مع لمسات دافئة من الفانيليا والأخشاب. يناسب الأوقات المسائية ويضفي سحراً خاصاً.",
-   "descriptionEn": "Black Optra by Paris Corner Pendora Scents is a gourmand and woody fragrance featuring pear, coffee, bitter almond, vanilla, and cashmere wood.",
-   "gender": "women",
-   "families": [
-    "gourmand",
-    "woody",
-    "floral"
-   ],
-   "notes": {
-    "top": [
-     "Pear",
-     "Pink Pepper",
-     "Orange Blossom"
-    ],
-    "heart": [
-     "Coffee",
-     "Jasmine",
-     "Bitter Almond",
-     "Licorice"
-    ],
-    "base": [
-     "Vanilla",
-     "Patchouli",
-     "Cedar",
-     "Cashmere Wood"
-    ]
-   },
-   "seasons": [
-    "autumn",
-    "winter"
-   ],
-   "occasions": [
-    "evening",
-    "special"
-   ],
-   "tags": [
-    "بلاك أوبترا",
-    "باريس كورنر",
-    "بيندورا سنتس",
-    "عطر نسائي"
-   ]
-  },
-  "KEN-925": {
-   "sourceHash": "zruwgw",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "هاواس فور هيم لي بارفان باي كنز ديه رساسي",
-   "nameEn": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men",
-   "descriptionAr": "عطر رجالي قوي وعميق بطابع بحري وتوابل دافئة. يجمع بين التفاح والقرفة والعنبر الرمادي لثبات وحضور طاغٍ.",
-   "descriptionEn": "Hawas For Him Le Parfum by Kenz de Rasasi is an Aromatic Aquatic fragrance for men featuring apple, bergamot, cinnamon, watery notes, and driftwood.",
-   "gender": "men",
-   "families": [
-    "aquatic",
-    "spicy",
-    "woody"
-   ],
-   "notes": {
-    "top": [
-     "Apple",
-     "Bergamot",
-     "Lemon",
-     "Cinnamon"
-    ],
-    "heart": [
-     "Watery Notes",
-     "Plum",
-     "Orange Blossom",
-     "Cardamon"
-    ],
-    "base": [
-     "Ambergris",
-     "Musk",
-     "Patchouli",
-     "Driftwood"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
     "summer",
@@ -40689,62 +40300,125 @@
    ],
    "occasions": [
     "daily",
-    "evening",
-    "work"
+    "work",
+    "evening"
    ],
-   "tags": [
-    "هاواس لي بارفان",
-    "كنز ديه رساسي",
-    "عطر رجالي",
-    "عطر بحري"
-   ]
+   "tags": []
   },
-  "KEN-926": {
-   "sourceHash": "1trrh72",
-   "editor": "shaheen",
-   "updatedAt": "2026-10-17T14:57:07.595Z",
-   "nameAr": "هاواس أبيكس هايبريد باي كنز ديه رساسي",
-   "nameEn": "Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex",
-   "descriptionAr": "عطر للجنسين منعش وعشبي يرتكز على النعناع والليمون والخزامى. يمنحك طابعاً نظيفاً وحيوياً يناسب الاستخدام اليومي.",
-   "descriptionEn": "Hawas Apex Hybrid by Kenz de Rasasi is an aromatic citrus woody fragrance with mint, lemon, basil, lavender, blackcurrant, and musk.",
+  "FRE-923": {
+   "sourceHash": "mejrfb",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Vulcan Vox by French Avenue 100ml EDP Unisex",
+   "nameEn": "Vulcan Vox by French Avenue 100ml EDP Unisex",
+   "descriptionAr": "عطر Vulcan Vox by French Avenue 100ml EDP Unisex من French Avenue للجنسين بطابع حلو.",
+   "descriptionEn": "Vulcan Vox by French Avenue 100ml EDP Unisex by French Avenue for unisex with a gourmand character.",
    "gender": "unisex",
    "families": [
-    "fresh",
+    "gourmand"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "PAR-924": {
+   "sourceHash": "2cnaj1",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Black Optra by Paris Corner Pendora Scents – 100 ml Women",
+   "nameEn": "Black Optra by Paris Corner Pendora Scents – 100 ml Women",
+   "descriptionAr": "عطر Black Optra by Paris Corner Pendora Scents – 100 ml Women من Paris Corner نسائي بطابع زهري وحلو وخشبي.",
+   "descriptionEn": "Black Optra by Paris Corner Pendora Scents – 100 ml Women by Paris Corner for women with a floral and gourmand and woody character.",
+   "gender": "women",
+   "families": [
+    "floral",
+    "gourmand",
+    "woody"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "winter",
+    "spring",
+    "autumn"
+   ],
+   "occasions": [
+    "special"
+   ],
+   "tags": []
+  },
+  "KEN-925": {
+   "sourceHash": "1sx9v0j",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men",
+   "nameEn": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men",
+   "descriptionAr": "عطر Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men من Kenz de Rasasi رجالي بطابع مائي.",
+   "descriptionEn": "Hawas For Him Le Parfum by Kenz de Rasasi 100ml Men by Kenz de Rasasi for men with an aquatic character.",
+   "gender": "men",
+   "families": [
+    "aquatic"
+   ],
+   "notes": {
+    "top": [],
+    "heart": [],
+    "base": []
+   },
+   "seasons": [
+    "summer",
+    "autumn"
+   ],
+   "occasions": [
+    "daily",
+    "evening",
+    "special"
+   ],
+   "tags": []
+  },
+  "KEN-926": {
+   "sourceHash": "1dot841",
+   "editor": "rules",
+   "updatedAt": "2026-11-24T03:04:23.731Z",
+   "nameAr": "Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex",
+   "nameEn": "Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex",
+   "descriptionAr": "عطر Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex من Kenz de Rasasi للجنسين بطابع حمضي وخشبي.",
+   "descriptionEn": "Hawas Apex Hybrid by Kenz de Rasasi 100ml EDP Unisex by Kenz de Rasasi for unisex with a citrus and woody character.",
+   "gender": "unisex",
+   "families": [
     "citrus",
     "woody"
    ],
    "notes": {
-    "top": [
-     "Mint",
-     "Lemon",
-     "Basil",
-     "Thyme"
-    ],
-    "heart": [
-     "Blackcurrant",
-     "Lavender",
-     "Rosemary",
-     "Jasmine"
-    ],
-    "base": [
-     "Musk",
-     "Verbena"
-    ]
+    "top": [],
+    "heart": [],
+    "base": []
    },
    "seasons": [
+    "summer",
     "spring",
-    "summer"
+    "autumn"
    ],
    "occasions": [
     "daily",
     "work"
    ],
-   "tags": [
-    "هاواس هايبريد",
-    "كنز ديه رساسي",
-    "عطر للجنسين",
-    "عطر عشبي"
-   ]
+   "tags": []
   },
   "KEN-927": {
    "sourceHash": "f96gzm",
@@ -49483,6 +49157,96 @@
     ]
    },
    {
+    "sku": "RAS-062",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "RAS-063",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "RAS-064",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "RAS-065",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "RAS-066",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-102",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-103",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-104",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-105",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-106",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-107",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "ALR-108",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-109",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-110",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-111",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
     "sku": "LAT-145",
     "issues": [
      "الوصف عام ولا يصف الرائحة"
@@ -49496,6 +49260,36 @@
    },
    {
     "sku": "LAT-155",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-172",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-173",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-174",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-175",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "LAT-176",
     "issues": [
      "الوصف عام ولا يصف الرائحة"
     ]
@@ -49838,6 +49632,36 @@
    },
    {
     "sku": "KEN-921",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "KEN-922",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "FRE-923",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "PAR-924",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "KEN-925",
+    "issues": [
+     "الوصف عام ولا يصف الرائحة"
+    ]
+   },
+   {
+    "sku": "KEN-926",
     "issues": [
      "الوصف عام ولا يصف الرائحة"
     ]
