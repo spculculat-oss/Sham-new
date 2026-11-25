@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-24T23:51:59.235Z",
- "nextUpdateAt": "2026-11-25T11:51:59.235Z",
+ "updatedAt": "2026-11-25T12:42:53.741Z",
+ "nextUpdateAt": "2026-11-26T00:42:53.741Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,63 +10,451 @@
  },
  "sources": [
   {
-   "name": "Premium Beauty News",
-   "count": 10
-  },
-  {
    "name": "Now Smell This",
    "count": 4
   },
   {
-   "name": "CaFleureBon",
+   "name": "Who What Wear",
    "count": 3
   },
   {
-   "name": "Cosmetics Business",
+   "name": "Premium Beauty News",
+   "count": 3
+  },
+  {
+   "name": "Vietnam.vn",
    "count": 2
   },
   {
-   "name": "openPR.com",
+   "name": "CaFleureBon",
    "count": 2
+  },
+  {
+   "name": "Revista Merca2.0",
+   "count": 1
+  },
+  {
+   "name": "القاهرة 24",
+   "count": 1
+  },
+  {
+   "name": "TheIndustry.beauty",
+   "count": 1
+  },
+  {
+   "name": "Tuniscope",
+   "count": 1
+  },
+  {
+   "name": "Grazia",
+   "count": 1
+  },
+  {
+   "name": "Petites Affiches",
+   "count": 1
+  },
+  {
+   "name": "SMEStreet",
+   "count": 1
+  },
+  {
+   "name": "الأيام البحرينية",
+   "count": 1
+  },
+  {
+   "name": "جريدة المال",
+   "count": 1
+  },
+  {
+   "name": "جريدة البلاد",
+   "count": 1
+  },
+  {
+   "name": "openPR.com",
+   "count": 1
+  },
+  {
+   "name": "25H",
+   "count": 1
+  },
+  {
+   "name": "NationalWorld",
+   "count": 1
+  },
+  {
+   "name": "شبكة تواصل الإخبارية",
+   "count": 1
+  },
+  {
+   "name": "Popbee",
+   "count": 1
   },
   {
    "name": "Bois de Jasmin",
    "count": 1
-  },
-  {
-   "name": "The Malaysian Reserve",
-   "count": 1
-  },
-  {
-   "name": "Yahoo News UK",
-   "count": 1
-  },
-  {
-   "name": "lanouvellerepublique.fr",
-   "count": 1
-  },
-  {
-   "name": "Who What Wear",
-   "count": 1
-  },
-  {
-   "name": "صحيفة المرصد",
-   "count": 1
-  },
-  {
-   "name": "زهرة الخليج",
-   "count": 1
-  },
-  {
-   "name": "Corse Matin",
-   "count": 1
-  },
-  {
-   "name": "PR Newswire",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "n837veh",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNR0pLTk5lLTNySmFmemFyRVd0M29ad3c4RkhFYkhVcFlramdwR0JRc0o0TFJEazFiT0FVMkxDNUkxbUZ2S3c4SUpZd2Nna0xGX0U3SUpKeFg4Q1hhLUhMOXRNRU5MY3U2MEw2NjRiT0Vqa1RIbVowTE1nZWNWOTZiRFlWMlQ0TmFEQmxfYUR1ZmVfQlJ3ZzlnYjk2czhVSVJQSEZGWXgzc0N4UkplbzBXRFRpb0NLUUU4MEVZNExfY3lmbkVMdURvendPb0JSZ2UxbEVJZjVYcHVQUDYtcndFUnROa1Qxb2RmTzhKaw?oc=5",
+   "source": "Revista Merca2.0",
+   "publishedAt": "2026-11-25T12:17:03.000Z",
+   "original": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
+    "en": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand"
+   },
+   "summary": {
+    "ar": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
+    "en": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand"
+   }
+  },
+  {
+   "id": "n1buy5h3",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaEY5czNsR2cteTZuUVhNcGEybEpFQWFiQ0FoaUtVUmV3UXhIa1ZjOU5ZTGxJWVdOSnNGY0VqUUpNY0xiZW5KTE9RY2s4dUFnMjY2aUlPTTRKUjZLTzFjYVhGVy1ZZnhjM25EbHRDbUNWUk1TUHlmNjB3QmtQanB4YnM5cw?oc=5",
+   "source": "Who What Wear",
+   "publishedAt": "2026-11-25T12:00:00.000Z",
+   "original": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
+    "en": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making"
+   },
+   "summary": {
+    "ar": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
+    "en": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making"
+   }
+  },
+  {
+   "id": "n19j49dn",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMldaOHpQNEJUZ1JDMUk5VWZzdHZ4dnUwdjEwR053R1RaVHgxX29Ib2pXb2lrcTZnWVEzMzBOZ3R0ZkRvU2NkU1B3aVkxNTFQUENjVU9kRlRSNzEzbXN0SlU2RGZjYnlsQ2NEd3c2bTJDMTdDcjQxU3BhNzItRW5iMW9TdVo?oc=5",
+   "source": "Who What Wear",
+   "publishedAt": "2026-11-25T12:00:00.000Z",
+   "original": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
+    "en": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance"
+   },
+   "summary": {
+    "ar": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
+    "en": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance"
+   }
+  },
+  {
+   "id": "n1op2v64",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBXQVpfZEkzemVUOF9mZUJmUjRHbERPc19Oa2FSWDlERjlGeDktN2pkZ3BrZzUzal82dVlwNl9jazFUeVpWWF9kamRFUThFWEhMX3JGa1VWMUpPVFB6MHBSY1g1ZlIzcHZhdkVmQlk4Y0JZM1E1NGpLMmRpVQ?oc=5",
+   "source": "Who What Wear",
+   "publishedAt": "2026-11-25T12:00:00.000Z",
+   "original": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
+    "en": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season"
+   },
+   "summary": {
+    "ar": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
+    "en": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season"
+   }
+  },
+  {
+   "id": "n1lbp81l",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5qY0lRdC1kZl9KY2ZaOUhwMXFDU3l1UHBiU1ZXcE9MdDNnMnRSVlVfSXc0dHNURUdNSUVZRVAzSDBWbTE1THc?oc=5",
+   "source": "القاهرة 24",
+   "publishedAt": "2026-11-25T11:46:29.000Z",
+   "original": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
+    "en": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟"
+   },
+   "summary": {
+    "ar": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
+    "en": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟"
+   }
+  },
+  {
+   "id": "n1uca74q",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWmdyYUNzeDYyanFUSnVmV1dhTlFueG11SjM4b2RFeTFDckdWaXdvTC1BOG94eS1tLVZ5T2FCdHRUU0J3czQzb0Jwall0M0V1cFRhUHJWa1NGejV0cXI1OVE2dGwwbEhYYVRHNGdwQVRmTHl2Ul9xWHBIRDlNdms4ckdJRVhpajNHbkRhOFhIeGhlVzZBRTkxdkhLeHQtQXRL?oc=5",
+   "source": "TheIndustry.beauty",
+   "publishedAt": "2026-11-25T11:42:04.000Z",
+   "original": "Essential Parfums opens first standalone store outside France in London",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Essential Parfums opens first standalone store outside France in London",
+    "en": "Essential Parfums opens first standalone store outside France in London"
+   },
+   "summary": {
+    "ar": "Essential Parfums opens first standalone store outside France in London",
+    "en": "Essential Parfums opens first standalone store outside France in London"
+   }
+  },
+  {
+   "id": "n5srn9p",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzVXbi1SLXdjczFpUktDTWFBQzlnWXlrRlhMX0M3OWs5VG8xR19xbDZpOEtuMDltalo0WGJ1QXppY2l0d2hUUHVOSGJXNmFzbnFSV1FaOFRFaGY2VVg5cXBTeDNFV2YyUGJMaU1xRE1DcXFqNkhzQ0ZpTklfeEJmM1JPbkZ3VTNqcjhwaThHSlVHczNTYkRLTVpR?oc=5",
+   "source": "Tuniscope",
+   "publishedAt": "2026-11-25T11:35:17.000Z",
+   "original": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
+    "en": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?"
+   },
+   "summary": {
+    "ar": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
+    "en": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?"
+   }
+  },
+  {
+   "id": "no5tk2f",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY28waF9WQ1lsd21BTW9Pc2VTVEZ2TU1sdHRYOHFoUWlmeEwtRlJKMUM1UTJqVE5KU0hOU2x1TW5rbVh2ZU00bHBYdWZmRkdyOXVCR1R3VENQaGFvU0JDMVZ1WVZuRElHN1VhbXBtcHlxSk9takVvcUI0WllTVjAzRG5UbDFwSFJPQ3Z0d19ISVlHQWpPdllfMFZpWGRtNnFURTBFaXNmMXRkd3hVQmZFblNWZ0xOb0hiRDBNM2VfajZiQlF3c3A5TzZVZDFiQQ?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-25T11:34:20.000Z",
+   "original": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
+    "en": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France"
+   },
+   "summary": {
+    "ar": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
+    "en": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France"
+   }
+  },
+  {
+   "id": "n2brmmt",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRXZTNllENFJ6VDJQbUhLeWdSOWVYbk5Mcm83Ym5IUjUzZlNWQThvTi1Qb2ZXejBnWG8tMFBXMDJRb254aXVfRk1kbEhjV0tKQ25fNUw3RUZpaWpyTlpIM0JnRDBwRzZJWVZiWEdTTG1Cal95QUFoVEwzMVZhcWdvYmNpNmtLUTM4d2FJUVBNSjNMODJTQ29SdjJTWHNWaDhBQUJKcGxR?oc=5",
+   "source": "Petites Affiches",
+   "publishedAt": "2026-11-25T10:53:16.000Z",
+   "original": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
+    "en": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle"
+   },
+   "summary": {
+    "ar": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
+    "en": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle"
+   }
+  },
+  {
+   "id": "n95vtg1",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORHpWOGcxU1pEUURlMFNhaEZlWDJ4VVRFSUlFUm5meVUxVTN5cl9Cc0pRUlRVWTZvazZ5eUFMZWdscDZrcV9DNHV1VzJ2b3d5SlgxTm1vcmVURnQtMGRCV3RabGhyNTE4V0paMjIwdC1lbUxFY1luRU8xVDlGM0JfTWgwRFdPeVJyN0liMXRPSTNRYi1VNHd0btIBmAFBVV95cUxORHpWOGcxU1pEUURlMFNhaEZlWDJ4VVRFSUlFUm5meVUxVTN5cl9Cc0pRUlRVWTZvazZ5eUFMZWdscDZrcV9DNHV1VzJ2b3d5SlgxTm1vcmVURnQtMGRCV3RabGhyNTE4V0paMjIwdC1lbUxFY1luRU8xVDlGM0JfTWgwRFdPeVJyN0liMXRPSTNRYi1VNHd0bg?oc=5",
+   "source": "SMEStreet",
+   "publishedAt": "2026-11-25T09:38:37.000Z",
+   "original": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
+    "en": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range"
+   },
+   "summary": {
+    "ar": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
+    "en": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range"
+   }
+  },
+  {
+   "id": "njaz4se",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBlY3l5VUNTcXRBUXNpNG9yZDhsM3RQOUlObmpNS3dxdkVqSjA2UkpKbzJOUnVzY0RzbG92Ti1DWVoyb2NRZy1kZ0lyZzMydmx4R0VVd2k2Rnl6TksxU2FiZ3c0NFJwZw?oc=5",
+   "source": "الأيام البحرينية",
+   "publishedAt": "2026-11-25T08:15:00.000Z",
+   "original": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
+    "en": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026"
+   },
+   "summary": {
+    "ar": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
+    "en": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026"
+   }
+  },
+  {
+   "id": "nnk41h5",
+   "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPb25qNHB1dGdZMnVSYUZpYmxJM2FSOUx2VGgwa2NBQW1FMUc2RDI5N3g3S0d1ck9tdjd3djJ6UTFYaFNZNmN6cjhWOGVna3Y5Z0ZPYzF0OUozczc4YldXa0RORW9lSVhYOEtSbWZIaHNvejRnRWtIVmtKVFhjWnFFU1hoekVlTDlFd3kwMmtScW10enRvSzBTZnF6SHQ0Tm5GVlZQZDA4VEg2bm52U1FfWDZjM1dWYkY3ZFZsdFdIT19Xcml1NUdTVzQtOUFDSjJoWmp2dXRUYTVuU2NhRGZFMlBSNVc4RGtQYlZvUmtONEZYRFZqVFBKUVJmZ3hWdkpKTUNVakNzODZ3WFpyMmlSQXVCQkkyRnU1SEJ5a0FQSEREWFRMNGQzREtjUXZ5Q0dxUWxGQWloZmlLX29WYUE?oc=5",
+   "source": "جريدة المال",
+   "publishedAt": "2026-11-25T08:12:28.000Z",
+   "original": "نصير شمه يقود كتيبة بيت العود العربي في ليلة استثنائية بالأوبرا",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "نصير شمه يقود كتيبة بيت العود العربي في ليلة استثنائية بالأوبرا",
+    "en": "نصير شمه يقود كتيبة بيت العود العربي في ليلة استثنائية بالأوبرا"
+   },
+   "summary": {
+    "ar": "نصير شمه يقود كتيبة بيت العود العربي في ليلة استثنائية بالأوبرا",
+    "en": "نصير شمه يقود كتيبة بيت العود العربي في ليلة استثنائية بالأوبرا"
+   }
+  },
+  {
+   "id": "n1dgw6xu",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE91Q1QwY0dXanhkTGI2MXBWNk5tZzRTOTBpVk5yYklqdy1DMndMX1o1am01VEktdXpSR3d4bnlMSUJHdFJGaXlOZGxPTUo1NWhHbUktbWMxMjhBR0RtbkFjTWFrWkJaSmNycXZONmRGZEpTdw?oc=5",
+   "source": "جريدة البلاد",
+   "publishedAt": "2026-11-25T06:43:47.000Z",
+   "original": "وزيرة السياحة: معرض الجواهر العربية ومعرض العطور العربية 2026 يعززان مكانة مملكة البحرين مركزًا إقليميًا رائدًا لصناعة المعارض وسياحة الأعمال",
+   "lang": "ar",
+   "category": "events",
+   "importance": 2,
+   "title": {
+    "ar": "وزيرة السياحة: معرض الجواهر العربية ومعرض العطور العربية 2026 يعززان مكانة مملكة البحرين مركزًا إقليميًا رائدًا لصناعة المعارض وسياحة الأعمال",
+    "en": "وزيرة السياحة: معرض الجواهر العربية ومعرض العطور العربية 2026 يعززان مكانة مملكة البحرين مركزًا إقليميًا رائدًا لصناعة المعارض وسياحة الأعمال"
+   },
+   "summary": {
+    "ar": "وزيرة السياحة: معرض الجواهر العربية ومعرض العطور العربية 2026 يعززان مكانة مملكة البحرين مركزًا إقليميًا رائدًا لصناعة المعارض وسياحة الأعمال",
+    "en": "وزيرة السياحة: معرض الجواهر العربية ومعرض العطور العربية 2026 يعززان مكانة مملكة البحرين مركزًا إقليميًا رائدًا لصناعة المعارض وسياحة الأعمال"
+   }
+  },
+  {
+   "id": "nbiplc0",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV0E5WFYzVTBBOGg0SUdBY011QWdvUlQ4S25aalNlTTN6YTB1cVVBV1d6NVdJb01lei1qb2JQRTFud0Z2RW01Y2dCRmJUUmtzRkJ0YkQ3amZQemJBYmNTQTRvMXRsc2M0a1JIdG5IWkU2N2d1NTZ6cTBNSVJjb2pzQjJYZUNaR085Wmllel9iRHpIUm5F?oc=5",
+   "source": "openPR.com",
+   "publishedAt": "2026-11-25T06:30:37.000Z",
+   "original": "Perfume Market to Reach US$ 83.5 Bn by 2032 at 5.9% CAGR | Persistence Market Research",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Perfume Market to Reach US$ 83.5 Bn by 2032 at 5.9% CAGR | Persistence Market Research",
+    "en": "Perfume Market to Reach US$ 83.5 Bn by 2032 at 5.9% CAGR | Persistence Market Research"
+   },
+   "summary": {
+    "ar": "Perfume Market to Reach US$ 83.5 Bn by 2032 at 5.9% CAGR | Persistence Market Research",
+    "en": "Perfume Market to Reach US$ 83.5 Bn by 2032 at 5.9% CAGR | Persistence Market Research"
+   }
+  },
+  {
+   "id": "ncfq1ei",
+   "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPMzZuaVZoTnBxaEFFemkzX29HSFJYRUZyRG9qNW5FaURWdmtraE1abmF2Znh6VzlpRkFrd3k3a2ZhYkNqa2s1S3BSTFNlSDM4YVV4ZHBmMWV0SXZPVEVBWlJjVEJKSmgxS25DbFN2SElkVjVnZFEzTFJKT1RSaW9COEpXbTE1RW5Lall2Mi1SeHVvazRSWC05SzBzOV91T19HS2JTanZlWV9RMkVKZGw0ejVDOS1qcVNaTms2ajNWdmJVQmxfM19qZkdVVF9oeEM3SVh4OWNiUWdhT0V3TVlsdTdCbXp1YTA5anpjbmUtZW1KLWNheWNIWlY5LXJVb3dyeDA0bXpjdEhia2tWN3VkNllhd2lOX3BxV1VReHQyX2dta2c4Wkx5bkpJMEFENURzWF9aeUFsRGw1ak5WZ3QwSWhnOA?oc=5",
+   "source": "25H",
+   "publishedAt": "2026-11-25T06:22:56.000Z",
+   "original": "“روجا لندن” تستهل عصرًا جديدًا في عالم صناعة العطور الفاخرة في بوتيكها في مسقط",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "“روجا لندن” تستهل عصرًا جديدًا في عالم صناعة العطور الفاخرة في بوتيكها في مسقط",
+    "en": "“روجا لندن” تستهل عصرًا جديدًا في عالم صناعة العطور الفاخرة في بوتيكها في مسقط"
+   },
+   "summary": {
+    "ar": "“روجا لندن” تستهل عصرًا جديدًا في عالم صناعة العطور الفاخرة في بوتيكها في مسقط",
+    "en": "“روجا لندن” تستهل عصرًا جديدًا في عالم صناعة العطور الفاخرة في بوتيكها في مسقط"
+   }
+  },
+  {
+   "id": "n108vnfb",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMXhxeFdBZ1ZMSnBDOVUwUW9yd2hnVEwxZlZQNUh1WEd2dXl3Zy1fa05tSGZrTks0RXp3OElCUnAzekl6U2NsMXNGRnlkZk0zTkpfdy1iUDJCM19zRi1DbnpuMmEyZ1hveUdpVDdLWldSNmN3VXBEYWFIV0RzMWVIMGxSaEg2aFpaMG9V?oc=5",
+   "source": "NationalWorld",
+   "publishedAt": "2026-11-25T06:14:21.000Z",
+   "original": "I’ve found a Black Friday deal with 30% off perfume",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "I’ve found a Black Friday deal with 30% off perfume",
+    "en": "I’ve found a Black Friday deal with 30% off perfume"
+   },
+   "summary": {
+    "ar": "I’ve found a Black Friday deal with 30% off perfume",
+    "en": "I’ve found a Black Friday deal with 30% off perfume"
+   }
+  },
+  {
+   "id": "n1yiwha2",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LWEdUSVFFZF9SNldJc29LejV4Y25PemwzcmRwaDcxVlA1d2ZwUHphOEFPRnJrZFJPdi16UXBGNm5xbGVvZGJuakNXbmF4LWdxWVo0?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "publishedAt": "2026-11-25T05:50:21.000Z",
+   "original": "ليلة شرقية بطعم الإبداع.. تفاصيل حفل نصير شمه وبيت العود العربي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "ليلة شرقية بطعم الإبداع.. تفاصيل حفل نصير شمه وبيت العود العربي",
+    "en": "ليلة شرقية بطعم الإبداع.. تفاصيل حفل نصير شمه وبيت العود العربي"
+   },
+   "summary": {
+    "ar": "ليلة شرقية بطعم الإبداع.. تفاصيل حفل نصير شمه وبيت العود العربي",
+    "en": "ليلة شرقية بطعم الإبداع.. تفاصيل حفل نصير شمه وبيت العود العربي"
+   }
+  },
+  {
+   "id": "nnkmp1e",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRnJUT25ZMmdYaU5hT2cxcVItakRnMVBjWURXM3VFWWNHWGdNeFEwa3NhbFAxWEd3bDA3b2lqRjV6UGRRV0pJR0VQZ21XUmVqOE1ORlg0NmhOWTdhVlJLY0lTczBQazlrV3MyMk9uR29wcDhLVjk4OWlQVXRxWUZWWURXOU96VUh0dG9n?oc=5",
+   "source": "Popbee",
+   "publishedAt": "2026-11-25T04:34:57.000Z",
+   "original": "In search of refreshing fruit scents: Japanese brand frufrais bottles 8 fruits in its Fruity Nectar collection",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "In search of refreshing fruit scents: Japanese brand frufrais bottles 8 fruits in its Fruity Nectar collection",
+    "en": "In search of refreshing fruit scents: Japanese brand frufrais bottles 8 fruits in its Fruity Nectar collection"
+   },
+   "summary": {
+    "ar": "In search of refreshing fruit scents: Japanese brand frufrais bottles 8 fruits in its Fruity Nectar collection",
+    "en": "In search of refreshing fruit scents: Japanese brand frufrais bottles 8 fruits in its Fruity Nectar collection"
+   }
+  },
+  {
+   "id": "n1l569m2",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOXdfOXYwQ1VBSW9BNkxaVkVUSFNwZTVCbWtkOWlRVTdGcFVzVU1lNHgxajB3LTRrSkhITmlHTDA1Mm9EcTZhUXA0VXIwbDI3TTNUWU1KeDZmSXVTSlhpMnU4RXNNcVpEMDNDTHZhVGpxVVNpZTZmQ2R3WEkxYm1ZaHVETVV5ZUs0Wmc?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-25T04:12:48.000Z",
+   "original": "يتعلم شعب تشوت في راو تري كيفية كسب عيشهم من أشجار العود.",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "يتعلم شعب تشوت في راو تري كيفية كسب عيشهم من أشجار العود.",
+    "en": "يتعلم شعب تشوت في راو تري كيفية كسب عيشهم من أشجار العود."
+   },
+   "summary": {
+    "ar": "يتعلم شعب تشوت في راو تري كيفية كسب عيشهم من أشجار العود.",
+    "en": "يتعلم شعب تشوت في راو تري كيفية كسب عيشهم من أشجار العود."
+   }
+  },
+  {
+   "id": "n1xb2y7f",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX3NDSkFqSmJoZFRDeEZoOUlJcDNiSnBRYWxaaXR5Nmc5NEo5dGVhQlVyRExRazZXejJleGdOY2J4dnNZWW00UjhIMV9MLWQzSUxYZHB3Z3lhUDdtRmdpcWEwOGU4TFRQMzFtVmhBS1l4WWliS1VDSWhvT0kwbmRjeHhCTmZQWFVVcUV5aWxkbFdpQXJxaGZZ?oc=5",
+   "source": "Vietnam.vn",
+   "publishedAt": "2026-11-25T02:57:17.000Z",
+   "original": "أصبح للعقار المتميز على طول نهر العطور مالك جديد بعد ما يقرب من 5 سنوات من الإهمال.",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "أصبح للعقار المتميز على طول نهر العطور مالك جديد بعد ما يقرب من 5 سنوات من الإهمال.",
+    "en": "أصبح للعقار المتميز على طول نهر العطور مالك جديد بعد ما يقرب من 5 سنوات من الإهمال."
+   },
+   "summary": {
+    "ar": "أصبح للعقار المتميز على طول نهر العطور مالك جديد بعد ما يقرب من 5 سنوات من الإهمال.",
+    "en": "أصبح للعقار المتميز على طول نهر العطور مالك جديد بعد ما يقرب من 5 سنوات من الإهمال."
+   }
+  },
   {
    "id": "nhe59a7",
    "url": "https://cafleurebon.com/aftelier-perfumes-citrus-cordial-mandy-aftel-2026-plus-sparkling-libation-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=aftelier-perfumes-citrus-cordial-mandy-aftel-2026-plus-sparkling-libation-giveaway",
@@ -245,366 +633,6 @@
    "summary": {
     "ar": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus",
     "en": "Designed by Bureau Tonalli for L'Oréal, this oval tinplate case holds the bottle of Only Desire, the new diesel women's fragrance together with a scented body product. According to Pure Trade, from an industrial point of view, everything rests on the fully rounded contours and on the embossed graphics of the lid, which push the drawing of the metal to its limits in an exact balance between mechanical strength and formability. The slightly curved base makes the cases stackable. A gloss... - Indus"
-   }
-  },
-  {
-   "id": "nu05yls",
-   "url": "https://www.premiumbeautynews.com/fr/pure-trade-produit-un-coffret,28589",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T13:51:00.000Z",
-   "original": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel",
-    "en": "Pure Trade produit un coffret métal pour le nouveau parfum féminin Diesel"
-   },
-   "summary": {
-    "ar": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - ",
-    "en": "Dessiné par Bureau Tonalli pour L'Oréal, ce coffret ovale en fer-blanc accueille le flacon du nouveau parfum féminin Diesel Only Desire et un produit parfumé pour le corps. Du point de vue industriel, tout se joue, selon Pure Trade, dans les contours entièrement arrondis et le graphisme embossé du couvercle repoussant les limites de l'étirement du métal, dans un compromis entre résistance mécanique et capacité de formage. Le fond, légèrement incurvé, rend les coffrets empilables. Un vernis... - "
-   }
-  },
-  {
-   "id": "nfm6qc2",
-   "url": "https://cosmeticsbusiness.com/as-watson-ai-and-robotics-accelerate-supply-chain",
-   "source": "Cosmetics Business",
-   "publishedAt": "2026-11-23T11:52:00.000Z",
-   "original": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain",
-    "en": "AS Watson implements AI and robotics at 55 distribution centres to accelerate global supply chain"
-   },
-   "summary": {
-    "ar": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally",
-    "en": "Superdrug and The Perfume Shop-owner AS Watson is turning to artificial intelligence (AI), robotics and automation to accelerate its supply chain transformation across more than 55 distribution centres globally"
-   }
-  },
-  {
-   "id": "nafq3ad",
-   "url": "https://www.premiumbeautynews.com/en/smelody-brings-music-into-the,28588",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T11:12:00.000Z",
-   "original": "Smelody brings music into the perfume bottle with a patented sound device",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Smelody brings music into the perfume bottle with a patented sound device",
-    "en": "Smelody brings music into the perfume bottle with a patented sound device"
-   },
-   "summary": {
-    "ar": "The Grasse-based start-up combines eight fragrances with classical music pieces, played automatically when the bottle is opened through a patented sound device built into the cap. This packaging innovation puts the multisensory experience at the heart of the product. What if a perfume bottle could also play music? This is the concept developed by Smelody, a young company founded in September 2025 in Grasse by Frederick Besson, also the creator of the Perfumist app. Launched in October 2026... - ",
-    "en": "The Grasse-based start-up combines eight fragrances with classical music pieces, played automatically when the bottle is opened through a patented sound device built into the cap. This packaging innovation puts the multisensory experience at the heart of the product. What if a perfume bottle could also play music? This is the concept developed by Smelody, a young company founded in September 2025 in Grasse by Frederick Besson, also the creator of the Perfumist app. Launched in October 2026... - "
-   }
-  },
-  {
-   "id": "n1alkp3t",
-   "url": "https://cosmeticsbusiness.com/rabanne-marks-60th-anniversary-with-the-warehouse-project-club-night",
-   "source": "Cosmetics Business",
-   "publishedAt": "2026-11-23T11:12:00.000Z",
-   "original": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
-   "lang": "en",
-   "category": "regulation",
-   "importance": 2,
-   "title": {
-    "ar": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'",
-    "en": "Rabanne marks 60th anniversary with The Warehouse Project club night which celebrates its ‘values'"
-   },
-   "summary": {
-    "ar": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black",
-    "en": "The Puig-owned luxury fashion and fragrance brand hosted a rave in Manchester with UK club series The Warehouse Project to celebrate its history of ‘challenging convention’, as well as showcase new night-themed scent, 1 Million Black"
-   }
-  },
-  {
-   "id": "n122qjxw",
-   "url": "https://www.premiumbeautynews.com/fr/smelody-integre-la-musique-au,28587",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T10:56:00.000Z",
-   "original": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté",
-    "en": "Smelody intègre la musique au flacon de parfum grâce à un capot breveté"
-   },
-   "summary": {
-    "ar": "La toute jeune maison grassoise associe huit créations olfactives à des œuvres du répertoire classique, diffusées à l'ouverture du flacon grâce à un dispositif sonore breveté intégré au capot. Une innovation packaging qui place l'expérience multisensorielle au cœur du produit. Et si un flacon de parfum pouvait aussi diffuser de la musique ? C'est le concept développé par Smelody, jeune maison fondée en septembre 2025 à Grasse par Frederick Besson, également créateur de l'application... - Innovat",
-    "en": "La toute jeune maison grassoise associe huit créations olfactives à des œuvres du répertoire classique, diffusées à l'ouverture du flacon grâce à un dispositif sonore breveté intégré au capot. Une innovation packaging qui place l'expérience multisensorielle au cœur du produit. Et si un flacon de parfum pouvait aussi diffuser de la musique ? C'est le concept développé par Smelody, jeune maison fondée en septembre 2025 à Grasse par Frederick Besson, également créateur de l'application... - Innovat"
-   }
-  },
-  {
-   "id": "n1yq65tx",
-   "url": "https://www.premiumbeautynews.com/fr/flosty-lance-iris-un-capot-en,28586",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T09:25:00.000Z",
-   "original": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française",
-    "en": "Flosty lance IRIS, un capot en Surlyn à paroi épaisse de fabrication française"
-   },
-   "summary": {
-    "ar": "Dans un contexte de multiplication des lancements sur le segment du parfum de niche, la demande d'éléments d'emballage différentiants permettant aux marques de se distinguer en rayon ne cesse d'augmenter. Flosty, spécialiste des solutions standards premium, entend contribuer à satisfaire ces nouveaux besoins avec un nouveau capot en résine Surlyn. Conçu pour offrir une clarté optique semblable à celle du verre sans sa fragilité, ce capot à paroi épaisse est d'ores-et-déjà disponible à la... - Br",
-    "en": "Dans un contexte de multiplication des lancements sur le segment du parfum de niche, la demande d'éléments d'emballage différentiants permettant aux marques de se distinguer en rayon ne cesse d'augmenter. Flosty, spécialiste des solutions standards premium, entend contribuer à satisfaire ces nouveaux besoins avec un nouveau capot en résine Surlyn. Conçu pour offrir une clarté optique semblable à celle du verre sans sa fragilité, ce capot à paroi épaisse est d'ores-et-déjà disponible à la... - Br"
-   }
-  },
-  {
-   "id": "n40k82r",
-   "url": "https://www.premiumbeautynews.com/en/flosty-launches-iris-a-french-made,28585",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-23T09:21:00.000Z",
-   "original": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap",
-    "en": "Flosty launches IRIS, a French-made thick-wall Surlyn fragrance cap"
-   },
-   "summary": {
-    "ar": "As niche fragrance brands continue to expand their portfolios, demand for distinctive packaging components that help products stand out on the shelf is growing. To address this need, prestige standard packaging supplier Flosty has introduced IRIS, a new fragrance cap made from Surlyn resin. Designed to deliver the optical clarity of glass without its fragility, the thick-wall cap is available for immediate development and customization. Its classic design makes the thick-wall cap suitable... - I",
-    "en": "As niche fragrance brands continue to expand their portfolios, demand for distinctive packaging components that help products stand out on the shelf is growing. To address this need, prestige standard packaging supplier Flosty has introduced IRIS, a new fragrance cap made from Surlyn resin. Designed to deliver the optical clarity of glass without its fragility, the thick-wall cap is available for immediate development and customization. Its classic design makes the thick-wall cap suitable... - I"
-   }
-  },
-  {
-   "id": "n1u8ja2q",
-   "url": "https://cafleurebon.com/providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=providence-perfume-co-osmanthia-review-charna-ethier-2026-plus-golden-afternoon-giveaway",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-22T21:08:24.000Z",
-   "original": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway",
-    "en": "Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway"
-   },
-   "summary": {
-    "ar": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Providence Perfume Co. Osmanthia evokes Alice in Wonderland’s beloved golden afternoon, and the gilded rays which warm us at summer’s end. The post Providence Perfume Co. Osmanthia Review (Charna Ethier) 2026 + Golden Afternoon Giveaway appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "n1ged1c3",
-   "url": "https://www.premiumbeautynews.com/en/in-georgia-niche-fragrances-appeal,28580",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-21T22:44:00.000Z",
-   "original": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "In Georgia, niche fragrances appeal to consumers seeking exclusivity",
-    "en": "In Georgia, niche fragrances appeal to consumers seeking exclusivity"
-   },
-   "summary": {
-    "ar": "In Georgia, as elsewhere, the niche fragrance market is growing rapidly. Rising demand is driving the opening of new, highly selective boutiques, alongside the emergence of local brands that remain relatively under the radar. Meanwhile, the trade in dupes and counterfeit fragrances is also benefiting from this broader enthusiasm. A closer look at the market in Tbilisi. The development of niche perfumery in Georgia, a segment that remains out of reach for most consumers, is closely linked... - Ma",
-    "en": "In Georgia, as elsewhere, the niche fragrance market is growing rapidly. Rising demand is driving the opening of new, highly selective boutiques, alongside the emergence of local brands that remain relatively under the radar. Meanwhile, the trade in dupes and counterfeit fragrances is also benefiting from this broader enthusiasm. A closer look at the market in Tbilisi. The development of niche perfumery in Georgia, a segment that remains out of reach for most consumers, is closely linked... - Ma"
-   }
-  },
-  {
-   "id": "ng83dhm",
-   "url": "https://www.premiumbeautynews.com/fr/en-georgie-les-parfums-de-niche,28579",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-21T22:32:00.000Z",
-   "original": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité",
-    "en": "En Géorgie, les parfums de niche séduisent une clientèle en quête d'exclusivité"
-   },
-   "summary": {
-    "ar": "En Géorgie comme ailleurs, la part de la parfumerie de niche augmente rapidement. La croissance de la demande s'accompagne de l'ouverture de nouvelles boutiques ultra-sélectives, mais aussi de l'émergence de marques locales encore confidentielles. En parallèle, le commerce des dupes profite lui aussi de l'engouement général. Reportage. En Géorgie, le développement de la parfumerie de niche, un segment qui reste inaccessible à la plupart des consommateurs, est à corréler avec les récents... - Mar",
-    "en": "En Géorgie comme ailleurs, la part de la parfumerie de niche augmente rapidement. La croissance de la demande s'accompagne de l'ouverture de nouvelles boutiques ultra-sélectives, mais aussi de l'émergence de marques locales encore confidentielles. En parallèle, le commerce des dupes profite lui aussi de l'engouement général. Reportage. En Géorgie, le développement de la parfumerie de niche, un segment qui reste inaccessible à la plupart des consommateurs, est à corréler avec les récents... - Mar"
-   }
-  },
-  {
-   "id": "n17ooxan",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNU9vMWlFRFZlbG9PS29iTmVBUWhGM3RMTW5keXROZVVacE9UZHdWUTlpZXFScTNRWUxpTFdjRl9DNWROSEZtdDJZdXlaY0lpR1N1Q2pHSnFHWHI5ZXJMMnN4YkFmV2lESTBlajJWZENDem9MM2dTYi1rOEJRMFlEZDJXNWFza04wWHJJYU9DY3c1Q3A0QXZZNHRKV0tkWWZrbFE2LV8tVDRydEltckZydkhZOFJmWDF1MmExZmxQXzA1SG5xSUZKRzFXYUdxU1pCUkJoNGw1TGgzNk9sMUhyR255Z01xOVQ4?oc=5",
-   "source": "The Malaysian Reserve",
-   "publishedAt": "2026-11-24T12:34:49.000Z",
-   "original": "Royal Visit and Arabian Oud CEO Exchange Highlights the Legacy of Oud, and the Brand's Expanding Global Journey",
-   "lang": "en",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "Royal Visit and Arabian Oud CEO Exchange Highlights the Legacy of Oud, and the Brand's Expanding Global Journey",
-    "en": "Royal Visit and Arabian Oud CEO Exchange Highlights the Legacy of Oud, and the Brand's Expanding Global Journey"
-   },
-   "summary": {
-    "ar": "Royal Visit and Arabian Oud CEO Exchange Highlights the Legacy of Oud, and the Brand's Expanding Global Journey",
-    "en": "Royal Visit and Arabian Oud CEO Exchange Highlights the Legacy of Oud, and the Brand's Expanding Global Journey"
-   }
-  },
-  {
-   "id": "n1jnmvyi",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80V0o0U2xTa2dvcFRKWGd5RURDWHdrNW4tbEhzbW1mbkd5dko3WF91MjlmeUF1MnFjdnRUckVlQVNES1A4ZlF6U0hDb1NtSXBPOFhJQ3hXXzJISWZGNFV5ejlOVmZJUlQ4YS0tVlBqYlVLV3o2bEpBczVkSmU?oc=5",
-   "source": "Yahoo News UK",
-   "publishedAt": "2026-11-24T12:27:14.000Z",
-   "original": "Bristol City launch Ashton Gate soap with scents taken from pitch itself",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Bristol City launch Ashton Gate soap with scents taken from pitch itself",
-    "en": "Bristol City launch Ashton Gate soap with scents taken from pitch itself"
-   },
-   "summary": {
-    "ar": "Bristol City launch Ashton Gate soap with scents taken from pitch itself",
-    "en": "Bristol City launch Ashton Gate soap with scents taken from pitch itself"
-   }
-  },
-  {
-   "id": "ncpa6qm",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTkgxSWtvQm9UWXRpc3ctNF9QSkdoWkhGb2tTbXpzQzdLMXNRaGU3bG8wbS1KTTc2UEgxdXRRdGlENTNmQXIya05zdTlvRzhGMkg4OHJlNWRKeXJhdXAweURRc0FReGRzY1VTQXJkeHJvVE5ZbDJIMDlZRmlrVmRlR2paVDRMZXUxbTFoblZmN0Vmdm5EclhlazJsMkZiN09LWkFfTmQ2ZTdhQ1hjTnZvVEtEdEFiNVU5ZDEtZUpzckM?oc=5",
-   "source": "lanouvellerepublique.fr",
-   "publishedAt": "2026-11-24T12:20:50.000Z",
-   "original": "VIDÉO. Parfum de fêtes avec le lancement du marché de Noël de Poitiers",
-   "lang": "fr",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "VIDÉO. Parfum de fêtes avec le lancement du marché de Noël de Poitiers",
-    "en": "VIDÉO. Parfum de fêtes avec le lancement du marché de Noël de Poitiers"
-   },
-   "summary": {
-    "ar": "VIDÉO. Parfum de fêtes avec le lancement du marché de Noël de Poitiers",
-    "en": "VIDÉO. Parfum de fêtes avec le lancement du marché de Noël de Poitiers"
-   }
-  },
-  {
-   "id": "n1jwkrfu",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5haGpvazBfbVJuTE5vc0s0bU5TVUpZbHlSLUVQUTFKY1pUU0laM3NvREhiUVlBRVB3Slp2dENQNnN0MTBTTW9tNnU0RDdlUTU5WEoybHIwUWNjX0VtTjg2OWs4VENjM1pvUVpKMG1pZEFfdw?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-24T12:00:00.000Z",
-   "original": "This Head-Turning Note Sits Between Skin Musk and Sweetness—11 Fragrances That Nail It",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "This Head-Turning Note Sits Between Skin Musk and Sweetness—11 Fragrances That Nail It",
-    "en": "This Head-Turning Note Sits Between Skin Musk and Sweetness—11 Fragrances That Nail It"
-   },
-   "summary": {
-    "ar": "This Head-Turning Note Sits Between Skin Musk and Sweetness—11 Fragrances That Nail It",
-    "en": "This Head-Turning Note Sits Between Skin Musk and Sweetness—11 Fragrances That Nail It"
-   }
-  },
-  {
-   "id": "n1dpyye0",
-   "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOVVVNQXNWVWRTNVgzbDc0alhhQkVQMG90M0paRHJ3V0VScndObEFWekljN09JdkRUd3B3T2tDRDFOMTVDd2NfRndsNUR5aWUwT2p6WUhGa015dG1OYzZKdGlKdG1Md0Q3aWQyel9CSkJUdmhaZTJnemtnU2c0WGdGWVNqLVlVVkw3RDFZSmQ4QWFRdlladWtHZlotQy1SOUlZSnMwU2J5SkhxcTFWUmFTS1hnNVRhZWN0NGNjZFNocWl1SGl3STR1ZXJRazl6RHNQdmRUT3NkclZmS3RPNlpaMTByUkRuMVdPNE5XZ3l3TDFveWJyeXFtZFpEYUtXcFpIMjN6YWxxUHVYeFQ0QzdaWHR6SENZaWVCWEcwdHpIc2w4WUhzdVJNWlh2cW9CRXpnX0lDU1AwT05sT2xYTTlhMVJqU1BIakd4YjVOM2UwbDBYRW41Z200UEtwYTY4aVNZQjN4Y25wYkRsbkpHd1dQandteW96b2ZMcXFYa2VVd0NBZmtNQmdmRU9hYmc2UHEwdTBkbWl5X1ppNF9MYXplTl82V3dRNTNJek9DS3I1dklqcElkUVpEQmptQUNXRkp2c3BsY0JGQmVNM3FDZzlfVmU5YUo4QkJDOVhhM190bkJYOWhzUkxTb3hBdkdNOGZJOWR6LWhKRkRsa2ZWSm5ZeFFvNnJlT3pPZC1ObWh0bmpUdHljLTgyTGZ5cXMwUnNIWUJ5c1FCZXZPUmJTM1pWVjc3NV9tVmtudC0tbXh2cTdTZ2k4V1RQTU5JLXp6TkZhZWdxMTZfTFh5T1F2ZlZHWVNDS2Z6M0lBclZFb21iRGluMndxczZ4VzlTc0U2VExuV0E3Q1FhLWZNUjgxTmxhSk1EVTN1WUNNVndLV2s3SUFFNkQzbFluZ0RGZWFQNmp0djczbVU4N1VqbkpLN1dUbDlURDJYdGhzcmxacjBpSmc4Qmx1blF4djk2LVZ1ZHE3MUJZb2JlaHFzLTQ?oc=5",
-   "source": "صحيفة المرصد",
-   "publishedAt": "2026-11-24T11:03:58.000Z",
-   "original": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   },
-   "summary": {
-    "ar": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال",
-    "en": "أغلى من الذهب … بالفيديو: مختص يكشف عن أنواع من العود النادر تتجاوز أسعارها مليون ريال"
-   }
-  },
-  {
-   "id": "n1buyeej",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZHlJR1BEUEZ0QVZqYlZVSFQxeWpEZDBGR2tEUjRtVkR3VHNuLWhlSGt6RERCaWc0cFhaTG9ha2Y3OHBPZ2VTM3pMTnZ2QVROek9OSHB6cF82MWhwb3p6d0Z6MDgyU0NLb2ZUQ0JJLW1DUVl5SzRtd19PSlg2Zm01YXVhcVBvMFV0MmFtNkxvTkg?oc=5",
-   "source": "openPR.com",
-   "publishedAt": "2026-11-24T10:46:47.000Z",
-   "original": "Perfume Market to Reach USD 77.8 Billion by 2036 as",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Perfume Market to Reach USD 77.8 Billion by 2036 as",
-    "en": "Perfume Market to Reach USD 77.8 Billion by 2036 as"
-   },
-   "summary": {
-    "ar": "Perfume Market to Reach USD 77.8 Billion by 2036 as",
-    "en": "Perfume Market to Reach USD 77.8 Billion by 2036 as"
-   }
-  },
-  {
-   "id": "n57vkwl",
-   "url": "https://news.google.com/rss/articles/CBMi6wNBVV95cUxPTGpxaDIyWTgtYWZEZU1kTnBvY3dOcGctZ29XTDBaZzIzU3dHODVRSk04ZWo0QkdjbElLNDNkUzZDVEZGLU5Qd2tPTmUzN2FnV1JjNnZnREFHYWdWcmEwNl82ZXM2MVRCSmJuOEJGQmZaV0s1ZzRGaWNsVW92N1dCNV9vRWwxeXM0Ykk5VEhQSzBic2lvM1lCVkY0WVBFcmI3OWdqVmFDS2lKdUJpc08xZDlFVkpsVERLRnFfLV9ieHVTOTl3WmJWY2pVMDllc0tJLVRYNE9DalhPRWQyMWtnZ1ZpNHExTmtiUThzMWx2XzlvbWIxWmFiU1J4UlA4bUNxVExlVFV1cGlydGJCUEpsdkE1NGpyN0VOVW5FLWFkSXVHRlgyR0pfNi13VXY0a0dOLTFzRmpOdWctNnpPS3lCZTFoT0Q3TEZtclJhLWdudE54TXJjam8xdno5cnhYQWNtLVM3ODB4UkwtN3lNVktBT2hpd2dCdXV6WmNwZkVlNXlRZlZ2MlV5RWF4R3pOX2dYcVBpSkZIbjA1c05LNXdwRFJtdm1TdU1IVW9nZG1sZFJzNGdGbnlMVl9qWFF3UUowSzhMM09iT09PYWUwamZlQUZYdm5xcU1RS1c1Vi1Bd2RoNzZwMGlFTjF5WdIB8ANBVV95cUxOR0VCaVZmT2FhMldMTmJSVVYybmxjZnYyTDB4anIyRnU5R1VCRUJ1eE1pQVlHZlJGMnQ0Rmt3X1hlb2pvQXBNc242VXo1RTJhQUNaQ2hJemxrSEhXNlVheXZUZmFaRlBuVFJJRGI3UF96cmVKVkZ5WHVhSXI5N1N5b2U4OFdkNmZHREdBOGdrbGVuckJDcVdRc2daTm5iYkJrVC1oakZfRnBQRzZGdE5LM2dLWEZIdTU5OS1CRWt5RGN4VVNqNWJNaE9STUNJWGRFaFJ5OHlnVnkyV0dCaWI0N1BFYndSV1VZaEdtQXJhQXFaYnl6dkZKRmdHOTg2QndlTWYtRzA0WVR0V1kzbXRnem1jUkxyeHRjWG54WENZbTVwQnRhbm55MDFLZTFVdmtfWGp2NTdTcFFKd0R6ZGlqRXFXY1hxdGpDMFd1VjBfektMYTR3YTQyY3NWanJOb3dUc2ZPVm9EQ2VPTlR2akpHaVp3M2gwMnNMdE0yUkI2S2ZLX05fYXljNms2LUVJZ2FSTVhCczRUMVJJME5TQmczdC1ySkJUNUZfOHNUV2Q2TXlRb0Z2bDNhUV82Z19JbFBpVF9fWjBIQW8ySkNyeEJkZ3d0ZndvclN2RWNMQm81Znd3azNBMDZvcW9lNjVFQkZy?oc=5",
-   "source": "زهرة الخليج",
-   "publishedAt": "2026-11-24T10:13:02.000Z",
-   "original": "من اللؤلؤ إلى العود والعنبر.. كنوز الإمارات في قصر الوطن بأبوظبي",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "من اللؤلؤ إلى العود والعنبر.. كنوز الإمارات في قصر الوطن بأبوظبي",
-    "en": "من اللؤلؤ إلى العود والعنبر.. كنوز الإمارات في قصر الوطن بأبوظبي"
-   },
-   "summary": {
-    "ar": "من اللؤلؤ إلى العود والعنبر.. كنوز الإمارات في قصر الوطن بأبوظبي",
-    "en": "من اللؤلؤ إلى العود والعنبر.. كنوز الإمارات في قصر الوطن بأبوظبي"
-   }
-  },
-  {
-   "id": "n1alfyg5",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUFdseTFYUXpuekp3elZfV0gzeGVZczVXeDI5QUNaQmNSbzZjTHB0Y2pBeEVEQmRsckhET282R1VPdlFGbjlwRHpWckI1cGF5RVNfaFBwVnV5S2VkWlhvMWhQX055a2cxX0d4TW13MTh0bXNJZkNrRlg0dGkyUDF4X3pKUHkwMXVTTjRmZWRVTUtLa2lXbTRVU2lJUncybnRhRnIzWVdvem1TY0ptZkdBM1k0WUp6UlNkZXBqY3lMV0VYQVcwbWk0cGdMT3Y?oc=5",
-   "source": "Corse Matin",
-   "publishedAt": "2026-11-24T10:02:09.000Z",
-   "original": "Black Friday 2026 : ces 10 parfums jusqu'à -50 % chez Parfumdo",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Black Friday 2026 : ces 10 parfums jusqu'à -50 % chez Parfumdo",
-    "en": "Black Friday 2026 : ces 10 parfums jusqu'à -50 % chez Parfumdo"
-   },
-   "summary": {
-    "ar": "Black Friday 2026 : ces 10 parfums jusqu'à -50 % chez Parfumdo",
-    "en": "Black Friday 2026 : ces 10 parfums jusqu'à -50 % chez Parfumdo"
-   }
-  },
-  {
-   "id": "n1biv3ud",
-   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNUkVZRUJ4UW01MWtjLVdKX25jQ3dHd2NIcWJGVFh0a3YzcEFvbEltMF9DV2Z4OGlrMUt4cXJzeDF1a1M0UFpGclBuRlhsc25CenQzR19jdUlBdlB2dGlua0pOdi0zZlR6VEpCWDJfMjN2eVdTVml3Znc4LVEzWnc2bGsyZEhVR241UzFBQ0tKUzZUc0k0UEVrdTktT0RINTgxVTBrYVFqZzQ4Vk04UDIwWUJlc1NZWmJhbmgyc0pxTnJ5c0JGNmh3ZkRxTkUzbzdRS0xHV3BTY3hXWnBjUkRwcjN2MjJCTkM3WW1aTXhqZlJVZDVOeV82LU5CSlh3N0N5Zi1KdmZ5WmFJLWU5NExjeTlkNmhzR1pKTmJkV3E0RHpqU19vZ29Uc193?oc=5",
-   "source": "PR Newswire",
-   "publishedAt": "2026-11-24T10:02:00.000Z",
-   "original": "ملك ماليزيا في ضيافة \"العربية للعود\": زيارة ملكية ودعوة متبادلة تحتفيان بإرث العود ومسيرة الشركة نحو العالمية",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "ملك ماليزيا في ضيافة \"العربية للعود\": زيارة ملكية ودعوة متبادلة تحتفيان بإرث العود ومسيرة الشركة نحو العالمية",
-    "en": "ملك ماليزيا في ضيافة \"العربية للعود\": زيارة ملكية ودعوة متبادلة تحتفيان بإرث العود ومسيرة الشركة نحو العالمية"
-   },
-   "summary": {
-    "ar": "ملك ماليزيا في ضيافة \"العربية للعود\": زيارة ملكية ودعوة متبادلة تحتفيان بإرث العود ومسيرة الشركة نحو العالمية",
-    "en": "ملك ماليزيا في ضيافة \"العربية للعود\": زيارة ملكية ودعوة متبادلة تحتفيان بإرث العود ومسيرة الشركة نحو العالمية"
-   }
-  },
-  {
-   "id": "n1u5kf3y",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZjFzcEZ0c3RGSmY2SzhBRUhOTGw1WXkzU3FycTNsY2dhLUIzcnJaTFJpOS1fcDlTT3Jib1BORmFWSDdIN1E3enptZ1pxVmJRR3h6MGFseThjdmM3dUpHTENVYWhjdG52eDBNV1ZzRFV0MmR1NkFyOExKVElxUmdwNE1hbU1aODdIcmlYS0FuTHZvcHJLTGc?oc=5",
-   "source": "openPR.com",
-   "publishedAt": "2026-11-24T09:17:07.000Z",
-   "original": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032",
-    "en": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032"
-   },
-   "summary": {
-    "ar": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032",
-    "en": "Solid Perfume Balm Market 2026: Emerging Trends, Industry Growth and Future Opportunities Through 2032"
    }
   }
  ]
