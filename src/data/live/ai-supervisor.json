@@ -1,10 +1,10 @@
 {
  "version": 1,
- "updatedAt": "2026-11-25T12:43:34.577Z",
- "nextReviewAt": "2026-11-26T00:43:34.577Z",
+ "updatedAt": "2026-11-25T23:36:16.490Z",
+ "nextReviewAt": "2026-11-26T11:36:16.490Z",
  "intervalHours": 12,
- "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية.",
- "overall": 9.5,
+ "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية، مستشار التسوق «اسأل شاهين» في المتجر.",
+ "overall": 9.2,
  "tools": {
   "shaheen_chat": {
    "nameAr": "شات الخبير شاهين والوكيل البرمجي",
@@ -12,37 +12,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "ليه العطر بيختفي بسرعة على جلدي؟ وأزود الثبات ازاي؟",
-     "excerpt": "البشرة الجافة بتشرب العطر وبتخليه يطير بسرعة، وجلدك يمكن يكون محتاج ترطيب لأن العطر بيمسك في الدهون والزيوت الطبيعية مش على الجلد الناشف.\n\nعلشان تثبّت العطر أكتر، جرب الخطوات دي:\n- رطّب جسمك بكريم مرطب بدون ريحة أو فازلين خفيف قبل ما ترش العطر، ده بيعمل طبقة تحبس الريحة.\n- رش العطر على أماكن النبض ز",
-     "ms": 5416,
+     "excerpt": "السبب الأهم إن جلدك ممكن يكون جاف، لأن البشرة الجافة بتمتص زيوت العطر بسرعة وبتخليها تتبخر من غير ما تفضل ظاهرة. كمان طبيعة العطر نفسه لو تركيزه خفيف أو النوتات اللي فيه طيارة زي الحمضيات والزهور الناعمة بتخليه يطير أسرع.\n\nعشان تزود الثبات بخطوات عملية:\n\n- **رطّب جلدك كويس:** حط مرطب خالي من الريحة ",
+     "ms": 6721,
      "ok": true,
      "findings": []
     },
     {
      "question": "ايه آخر أخبار العطور؟",
-     "excerpt": "آخر أخبار وأحداث عالم العطور النهاردة بتشمل تطورات مهمة في الابتكار والفعاليات العالمية:\n\n* **دخول الذكاء الاصطناعي في الابتكار**: بقى الذكاء الاصطناعي شريك أساسي في ابتكار تركيبات وروائح جديدة وتسريع عملية تطوير العطور، مع التأكيد إن الإبداع والخبرة البشرية هما الأساس.\n* **إصدار فاخر من ديور**: كشف",
-     "ms": 9456,
+     "excerpt": "البحث على الإنترنت ماردّش دلوقتي، جرب كمان شوية علشان أقولك أحدث أخبار وتوسعات دور العطور.",
+     "ms": 11956,
      "ok": true,
      "findings": []
     },
     {
      "question": "What fixative works best for a citrus cologne, and at what percentage?",
-     "excerpt": "For a citrus cologne, high-purity **Benzyl Benzoate** or **Triethyl Citrate** work best because they are odorless and won't alter the bright, crisp profile of citrus notes.\n\nUse them at **1% to 2%** of the total formula. Citrus top notes are extremely volatile, so pairing a light fixative with a str",
-     "ms": 2344,
+     "excerpt": "For a citrus cologne, Hedione or Ethylene Brassylate works best. They soften the sharp citrus opening, blend smoothly with the heart notes, and add a clean, lingering trail without weighing down the freshness. Use them at 1% to 2% of the total formula.",
+     "ms": 2871,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 0
@@ -158,6 +154,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -178,37 +178,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "عايز أكلم حد من فريق شام",
-     "excerpt": "تحت أمرك يا باشا، حولت محادثتك لفريق شام وهيردوا عليك هنا على طول. تقدر تكتب تفاصيل طلبك في النموذج تحت وهيتواصلوا معاك في أسرع وقت.",
-     "ms": 3467,
+     "excerpt": "حوّلت محادثتك لفريق شام 🙋 هيشوفوها ويردوا هنا في نفس المحادثة. ولو حابب يتواصلوا معاك بالتليفون أو الإيميل، املأ الاستمارة.",
+     "ms": 13057,
      "ok": true,
      "findings": []
     },
     {
      "question": "ايه الخدمات اللي عندكم؟",
-     "excerpt": "أهلاً لحضرتك! دي الخدمات المتاحة في منصة شام:\n\n• **المتجر:** لشراء العطور الجاهزة، الزيوت العطرية، المواد الخام، والعبوات مع تتبع الطلب.\n• **أدوات المنصة والحاسبات:** حاسبة التركيز، الهرم العطري، تخفيف الكحول، التكاليف، ومحاكي التعتيق.\n• **تركيب عطر مخصص:** لتصميم عطر خاص حسب ذوقك وميزانيتك مع عرض س",
-     "ms": 1212,
+     "excerpt": "دي خدمات شام المتاحة حالياً:\n• أدوات المنصة والحاسبات — حاسبة التركيز، الهرم العطري، تخفيف الكحول، التكاليف، محاكي التعتيق، المكتبات والأخبار.\n• المتجر: عطور وزيوت ومواد خام — شراء عطور جاهزة وزيوت عطرية ومواد خام وعبوات، مع تتبع الطلب.\n• تركيب عطر مخصص — نصمم لك عطراً خاصاً حسب ذوقك والمناسبة والمي",
+     "ms": 12142,
      "ok": true,
      "findings": []
     },
     {
      "question": "عايز أطلب عطر مخصص باسمي، أعمل ايه؟",
-     "excerpt": "يا هلا بحضرتك! منور منصة شام. عطر مخصص باسمك وبصماتك الفريدة فكرة ممتازة ومميزة جداً.\n\nفي العطر المخصص، بنسألك عن العائلة العطرية اللي بتفضلها، والمناسبة، والحجم، والميزانية. فريق الخبراء عندنا بيجهز مقترح تركيبة وبيبعتلك عرض سعر، وبعد موافقتك بنبدأ التحضير والتعتيق.\n\nكل اللي عليك إنك تملأ الاستمارة",
-     "ms": 2667,
+     "excerpt": "تمام — «تركيب عطر مخصص». نصمم لك عطراً خاصاً حسب ذوقك والمناسبة والميزانية، ونرسل لك عرض سعر قبل التنفيذ.\nاملأ الاستمارة تحت، وبعد الإرسال هتاخد رقم طلب (SH-…) تتابع بيه، وفريق شام هيتواصل معاك.",
+     "ms": 12240,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 8.2
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 10
@@ -324,6 +320,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -344,23 +344,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/news (مقالات اليوم)",
      "excerpt": "## Interparfums ترفع توقعات عام 2026 وتتوقع تسارع النمو في 2027\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية مثل Jimmy Choo وMontblanc عن تعديل طفيف وزيادة في توقعاتها المالية لعام 2026 مع ترقب نمو قوي وقائمة إطلاقات جديدة في 2027.\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية م",
-     "ms": 141,
+     "ms": 421,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 10
@@ -476,6 +472,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -486,7 +486,7 @@
    "autoScore": 6,
    "judged": false,
    "status": "warn",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [
     "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
@@ -495,7 +495,7 @@
    "samples": [
     {
      "question": "آخر نشرة (30 خبر، منذ 0 ساعة)",
-     "excerpt": "- David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand (Revista Merca2.0)\n  David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand\n- I Hav",
+     "excerpt": "- Sine Gloria by Nobile 1942 Winner (CaFleureBon)\n  Sine Gloria by Nobile 1942 channels the grit, the sweat and determination it takes to endure and stand out in an overly saturated market. The post Sine Gloria by Nobile 1942 Winner appeared first on ÇaFleureBon Perfume Blog .\n- Best Perfume Necklac",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -505,10 +505,6 @@
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 6
@@ -624,6 +620,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 6
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 6
     }
    ],
    "lastEvent": "none"
@@ -634,7 +634,7 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
@@ -647,10 +647,6 @@
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 10
@@ -766,6 +762,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -776,30 +776,26 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "صور: agarwood",
      "excerpt": "Agarwood top grade · Highend Agarwood Kyara · Stamp of India Colnect Agarwood Perfume · Infected Agarwood Aquilaria Malaysia",
-     "ms": 589,
+     "ms": 577,
      "ok": true,
      "findings": []
     },
     {
      "question": "خريطة: Grasse, France",
      "excerpt": "Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France (43.6589, 6.92391)",
-     "ms": 592,
+     "ms": 765,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 10
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 10
@@ -915,40 +911,46 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
   },
   "store_advisor": {
    "nameAr": "مستشار التسوق «اسأل شاهين» في المتجر",
-   "score": 10,
-   "autoScore": 10,
+   "score": 7,
+   "autoScore": 8,
    "judged": false,
-   "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "status": "warn",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
-   "issues": [],
+   "issues": [
+    "لم يرشّح أي منتج",
+    "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
+   ],
    "samples": [
     {
      "question": "عود ثابت للسهرات تحت 300 جنيه",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين من متجر شام، أود التوضيح أن أسعار عطورنا تبدأ من أعلى من ‏5.65 US$ (حسب القائمة المتاحة)، ولكن إليك خياراً عودياً رائعاً ومناسباً للسهرات الشتوية بقيمة ممتازة.\n- LAT-052: عطر عودي شرقي خشبي يناسب السهرات والمناسبات في الشتاء بنوتات العود والكراميل.",
-     "ms": 1851,
+     "excerpt": "مش لاقي تطابق دقيق، دي أعلى العطور تقييماً — شاهين بيدوّر لك…",
+     "ms": 22629,
      "ok": true,
-     "findings": []
+     "findings": [
+      "لم يرشّح أي منتج",
+      "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
+     ]
     },
     {
      "question": "عطر منعش للجنسين للاستخدام اليومي",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، وبناءً على تفضيلك لذكاء نظامنا الذكي، اخترت لك عطوراً منعشة للجنسين وممتازة للاستخدام اليومي.\n- IMP-1182: عطر مائي ومنعش يناسب الجنسين والاستخدام اليومي.\n- ARD-474: عطر منعش ومائي يناسب الأجواء اليومية بكل توثيق.",
-     "ms": 1674,
+     "excerpt": "أهلاً بك! بصفتي الخبير شاهين من متجر شام، وبناءً على تحليل الذكاء الاصطناعي لطلبك، اخترت لك أفضل العطور المنعشة والمناسبة للجنسين للاستخدام اليومي من منتجاتنا الموثقة.\n- IMP-1181: عطر ناين إيه إم من أفنان مصمم خصيصاً للجنسين بعائلة عطرية حمضية ومنعشة، ومثالي للاستخدام اليومي طوال العام.\n- ARD-474: ع",
+     "ms": 6207,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 7.6
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 9
@@ -1064,6 +1066,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 7
     }
    ],
    "guidance": {
@@ -1084,15 +1090,15 @@
    "autoScore": 9,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [
     "170 منتج فيها ملاحظات بيانات للتاجر"
    ],
    "samples": [
     {
-     "question": "كتالوج المتجر (964/1114 راجعها شاهين)",
-     "excerpt": "## MAI-365 فلورال بلوم من ميصون الحمراء 100 مل\nعطر نسائي زهري نابض بالحياة يجسد روعة حديقة مزهرة بنفحات الياسمين ومسك الروم.\nالعائلة: floral/fruity — النوتات: jasmine, tuberose, honeysuckle, rangoon creeper, orris root, sandalwood, vanilla\n\n## GUL-366 مونلايت أو دي بارفان 100 مل من جلف أوركيد\nعطر نس",
+     "question": "كتالوج المتجر (939/1114 راجعها شاهين)",
+     "excerpt": "## KHA-773 ستيلر مسك من خدلج\nعطر نقي يعبر عن الصفاء والرقي بنفحات المسك الأبيض واللمسات المنعشة المشرقة. يمتزج القلب البودري الناعم مع عبير الزهور ليرتكز بأمان على خشب دافئ وفانيليا هادئة.\nالعائلة: musk/powdery/floral — النوتات: White Musk, Fresh Notes, Soft Florals, Light Powdery Notes, Vanilla, Wo",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -1101,10 +1107,6 @@
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T05:05:08.677Z",
-     "score": 7.2
-    },
     {
      "at": "2026-10-16T06:10:40.752Z",
      "score": 9
@@ -1220,6 +1222,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 9
     }
    ],
    "guidance": {
@@ -1240,13 +1246,13 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "مستورد شاهين ومراجع الصفحات",
-     "excerpt": "1114 منتج (1063 مستورد): 464 سليم، 650 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nRAY-991 Tiger Cal Cologne by Rayhaan 100ml Eau de Parfum for Men: المورد لم ينشر نوتات العطر\nRAY-992 Crimson by Rayhaan 100ml Eau de Parfum for Men: المورد لم ينشر نوتات العطر\nRAY-993 Pacif",
+     "excerpt": "1114 منتج (1063 مستورد): 459 سليم، 655 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nARD-401 Ameerat Al Arab Princess of Arabia 50ml: المورد لم ينشر نوتات العطر\nMAI-402 Kismet for Women 100ml by Maison Alhambra: وصف المورد قصير، المورد لم ينشر نوتات العطر، غير متوفر عند الم",
      "ms": 0,
      "ok": true,
      "findings": []
@@ -1368,6 +1374,10 @@
     {
      "at": "2026-11-25T12:43:34.577Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -1378,14 +1388,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-25T12:43:34.577Z",
+   "checkedAt": "2026-11-25T23:36:16.490Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/community/status (جاهزية ذكاء المجتمع)",
      "excerpt": "المجتمع مفعّل (postgres)",
-     "ms": 109,
+     "ms": 175,
      "ok": true,
      "findings": []
     }
@@ -1445,6 +1455,10 @@
     },
     {
      "at": "2026-11-25T12:43:34.577Z",
+     "score": 10
+    },
+    {
+     "at": "2026-11-25T23:36:16.490Z",
      "score": 10
     }
    ],
