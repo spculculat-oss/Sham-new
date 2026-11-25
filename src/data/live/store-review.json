@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-25T11:41:36.765Z",
+ "updatedAt": "2026-11-25T21:58:23.732Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 464,
-  "warn": 650,
+  "ok": 459,
+  "warn": 655,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-25T11:40:52.589Z",
+  "at": "2026-11-25T21:57:42.439Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -23,9 +23,9 @@
     "currency": "MYR",
     "rate": 13.1725,
     "rateFrom": "open.er-api.com",
-    "sitemapProducts": 1063,
-    "listingPages": 45,
-    "listingProducts": 1063,
+    "sitemapProducts": 1048,
+    "listingPages": 44,
+    "listingProducts": 1048,
     "listingOnly": 0,
     "listingComplete": true,
     "added": 0,
@@ -34,7 +34,7 @@
     "failedCount": 0,
     "viaShaheen": 0,
     "deferred": 0,
-    "gone": 0
+    "gone": 15
    }
   ],
   "rate": 13.1725,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 44201
+  "durationMs": 41328
  },
  "items": [
   {
@@ -1118,6 +1118,16 @@
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/hawas-for-him-alpha-by-rasasi-100ml-edp-93.html"
+  },
+  {
+   "sku": "LAT-095",
+   "id": 95,
+   "name": "Khamrah Mira by Lattafa",
+   "status": "warn",
+   "issues": [
+    "غير متوفر عند المورد"
+   ],
+   "page": "p/khamrah-mira-by-lattafa-95.html"
   },
   {
    "sku": "LAT-096",
@@ -5050,7 +5060,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/arsh-black-ice-by-french-avenue-man-916.html"
   },
@@ -5071,7 +5082,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-desire-for-her-by-kenz-de-rasasi-100ml-women-918.html"
   },
@@ -5082,7 +5094,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-desire-first-look-by-kenz-de-rasasi-100ml-919.html"
   },
@@ -5093,7 +5106,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-desire-first-kiss-by-kenz-de-rasasi-100ml-920.html"
   },
@@ -5104,7 +5118,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-ice-ultradose-by-kenz-de-rasasi-100ml-men-921.html"
   },
@@ -5115,7 +5130,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-apex-gt-by-kenz-de-rasasi-100ml-unisex-922.html"
   },
@@ -5126,7 +5142,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/vulcan-vox-by-french-avenue-100ml-edp-unisex-923.html"
   },
@@ -5148,7 +5165,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-for-him-le-parfum-by-kenz-de-rasasi-100ml-men-925.html"
   },
@@ -5159,7 +5177,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-apex-hybrid-by-kenz-de-rasasi-100ml-edp-unisex-926.html"
   },
@@ -5170,7 +5189,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/hawas-apex-by-kenz-de-rasasi-927.html"
   },
@@ -5727,7 +5747,8 @@
    "status": "warn",
    "issues": [
     "وصف المورد قصير",
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/sacred-smoke-by-french-avenue-100ml-edp-unisex-979.html"
   },
@@ -5973,6 +5994,7 @@
    "name": "Tropical Vibe by Rayhaan 100ml Eau de Parfum Unisex",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/tropical-vibe-by-rayhaan-100ml-eau-de-parfum-unisex-1002.html"
@@ -5983,9 +6005,20 @@
    "name": "Boss Life by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/boss-life-by-bujairami-100ml-extrait-de-parfum-1003.html"
+  },
+  {
+   "sku": "RAY-1004",
+   "id": 1004,
+   "name": "Pharaoh by Rayhaan 100ml Eau de Parfum Unisex",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/pharaoh-by-rayhaan-100ml-eau-de-parfum-unisex-1004.html"
   },
   {
    "sku": "BUJ-1005",
@@ -5993,6 +6026,7 @@
    "name": "Mafia Boss by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/mafia-boss-by-bujairami-100ml-extrait-de-parfum-1005.html"
@@ -6003,6 +6037,7 @@
    "name": "Breathless by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/breathless-by-bujairami-100ml-extrait-de-parfum-1006.html"
@@ -6013,6 +6048,7 @@
    "name": "Billion Dollar by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/billion-dollar-by-bujairami-100ml-extrait-de-parfum-1007.html"
@@ -6023,6 +6059,7 @@
    "name": "Born Nomad by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/born-nomad-by-bujairami-100ml-extrait-de-parfum-1008.html"
@@ -6033,6 +6070,7 @@
    "name": "Amber Eclipse by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/amber-eclipse-by-bujairami-100ml-extrait-de-parfum-1009.html"
@@ -6043,6 +6081,7 @@
    "name": "Boujee by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/boujee-by-bujairami-100ml-eau-de-parfum-1010.html"
@@ -6053,6 +6092,7 @@
    "name": "World Power by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/world-power-by-bujairami-100ml-extrait-de-parfum-1011.html"
@@ -6063,6 +6103,7 @@
    "name": "Imperial Oud by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/imperial-oud-by-bujairami-100ml-extrait-de-parfum-1012.html"
@@ -6073,6 +6114,7 @@
    "name": "Cartel by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/cartel-by-bujairami-100ml-extrait-de-parfum-1013.html"
@@ -6083,6 +6125,7 @@
    "name": "Sacred Skin by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/sacred-skin-by-bujairami-100ml-extrait-de-parfum-1014.html"
@@ -6093,6 +6136,7 @@
    "name": "Soul Fusion Intense by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/soul-fusion-intense-by-bujairami-100ml-eau-de-parfum-1015.html"
@@ -6103,6 +6147,7 @@
    "name": "Madness by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/madness-by-bujairami-100ml-eau-de-parfum-1016.html"
@@ -6113,6 +6158,7 @@
    "name": "Only Ever by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/only-ever-by-bujairami-100ml-eau-de-parfum-1017.html"
@@ -6123,6 +6169,7 @@
    "name": "Non Stop by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/non-stop-by-bujairami-100ml-extrait-de-parfum-1018.html"
@@ -6133,6 +6180,7 @@
    "name": "New York by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/new-york-by-bujairami-100ml-eau-de-parfum-1019.html"
@@ -6143,6 +6191,7 @@
    "name": "Silent Halo by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/silent-halo-by-bujairami-100ml-extrait-de-parfum-1020.html"
@@ -6153,6 +6202,7 @@
    "name": "Sugar Rush by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/sugar-rush-by-bujairami-100ml-eau-de-parfum-1021.html"
@@ -6163,6 +6213,7 @@
    "name": "Sacred Order by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/sacred-order-by-bujairami-100ml-extrait-de-parfum-1022.html"
@@ -6173,6 +6224,7 @@
    "name": "Freeze by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/freeze-by-bujairami-100ml-eau-de-parfum-1023.html"
@@ -6183,6 +6235,7 @@
    "name": "Mad Love by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/mad-love-by-bujairami-100ml-extrait-de-parfum-1024.html"
@@ -6193,6 +6246,7 @@
    "name": "Lolita by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/lolita-by-bujairami-100ml-extrait-de-parfum-1025.html"
@@ -6203,6 +6257,7 @@
    "name": "Ya Habibi by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/ya-habibi-by-bujairami-100ml-extrait-de-parfum-1026.html"
@@ -6937,6 +6992,36 @@
     "غير متوفر عند المورد"
    ],
    "page": "p/khanjar-by-niche-emarati-85ml-edp-1111.html"
+  },
+  {
+   "sku": "FRE-1112",
+   "id": 1112,
+   "name": "Anatolia Absolus Les Extraits by French Avenue Unisex",
+   "status": "warn",
+   "issues": [
+    "غير متوفر عند المورد"
+   ],
+   "page": "p/anatolia-absolus-les-extraits-by-french-avenue-unisex-1112.html"
+  },
+  {
+   "sku": "FRE-1113",
+   "id": 1113,
+   "name": "Shadow Absolus by French Avenue Extrait Unisex",
+   "status": "warn",
+   "issues": [
+    "غير متوفر عند المورد"
+   ],
+   "page": "p/shadow-absolus-by-french-avenue-extrait-unisex-1113.html"
+  },
+  {
+   "sku": "FRE-1114",
+   "id": 1114,
+   "name": "Unknown Absolus Les Extraits by French Avenue",
+   "status": "warn",
+   "issues": [
+    "غير متوفر عند المورد"
+   ],
+   "page": "p/unknown-absolus-les-extraits-by-french-avenue-1114.html"
   }
  ]
 }

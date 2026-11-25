@@ -3913,7 +3913,7 @@
       "brand": "Lattafa",
       "supplierPrice": 3139.51,
       "ourPrice": 4710,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -3962,7 +3962,10 @@
       ],
       "importedAt": "2026-10-16T07:24:57.489Z",
       "refreshedAt": "2026-10-18T08:58:57.598Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 96,
@@ -59781,7 +59784,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3425.89,
       "ourPrice": 5140,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -59821,7 +59824,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -59909,7 +59913,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 4216.48,
       "ourPrice": 6325,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -59947,7 +59951,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -59970,7 +59975,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 4216.48,
       "ourPrice": 6325,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60012,7 +60017,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60036,7 +60042,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3939.77,
       "ourPrice": 5910,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60078,7 +60084,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60101,7 +60108,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3425.89,
       "ourPrice": 5140,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60140,7 +60147,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60165,7 +60173,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3280.6,
       "ourPrice": 4925,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60206,7 +60214,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60231,7 +60240,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3820.78,
       "ourPrice": 5735,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60269,7 +60278,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60356,7 +60366,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3689.03,
       "ourPrice": 5535,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60395,7 +60405,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60418,7 +60429,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3359.65,
       "ourPrice": 5040,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60458,7 +60469,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -60483,7 +60495,7 @@
       "brand": "Kenz de Rasasi",
       "supplierPrice": 3425.53,
       "ourPrice": 5140,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -60522,7 +60534,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -63826,7 +63839,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3424.85,
       "ourPrice": 5140,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -63867,7 +63880,8 @@
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
-        "المورد لم ينشر نوتات العطر"
+        "المورد لم ينشر نوتات العطر",
+        "غير متوفر عند المورد"
       ]
     },
     {
@@ -65287,7 +65301,7 @@
       "nameAr": "Tropical Vibe by Rayhaan 100ml Eau de Parfum Unisex",
       "nameEn": "Tropical Vibe by Rayhaan 100ml Eau de Parfum Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Tropical Vibe by Rayhaan 100ml Eau de Parfum Unisex\nTropical Vibe by Rayhaan is a 100ml Eau de Parfum for women and men with a tropical fruity aquatic scent profile. It opens with Mango, Pineapple, Coconut, Bergamot, and Rum, moves into Coconut, White Flowers, and Marine Notes, and settles into Musk, Sandalwood, Amber, and Vetiver. It is suited to casual outings, travel, and beach outings.\nFragrance Notes:\nTop: Mango, Pineapple, Coconut, Bergamot, Rum\nMiddle: Coconut, White Flowers, Marine Notes\nBase: Musk, Sandalwood, Amber, Vetiver",
+      "descriptionEn": "Tropical Vibe by Rayhaan 100ml EDP blends Mango, Pineapple, and Coconut into a tropical fruity aquatic fragrance suited to casual outings and travel.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-tropical-vibe-perfume-unisex-fruity-fresh-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-tropical-vibe-perfume-unisex-fruity-fresh-100ml-edp.jpg",
@@ -65301,8 +65315,8 @@
       ],
       "category": "مختلط",
       "brand": "Rayhaan",
-      "supplierPrice": 3257.17,
-      "ourPrice": 4890,
+      "supplierPrice": 3279.95,
+      "ourPrice": 4920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65313,47 +65327,33 @@
       "supplierSku": "rayhaan-tropical-100ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 249,
-      "supplierSalePrice": 152,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-tropical/",
       "slug": "tropical-vibe-by-rayhaan-100ml-eau-de-parfum-unisex-1002",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Mango",
-          "Pineapple",
-          "Coconut",
-          "Bergamot",
-          "Rum"
-        ],
-        "heart": [
-          "Coconut",
-          "White Flowers",
-          "Marine Notes"
-        ],
-        "base": [
-          "Musk",
-          "Sandalwood",
-          "Amber",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fruity Aquatic"
+        "Fresh",
+        "Fruity"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily"
       ],
       "barcode": "6297001571255",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65363,7 +65363,7 @@
       "nameAr": "Boss Life by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Boss Life by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Boss Life by Bujairami 100ml Extrait de Parfum\nBoss Life by Bujairami is a 100ml Extrait de Parfum for men with an amber spicy oud scent profile. Opens with Frankincense, Elemi, and Cardamom, moves into Patchouli, Anise, and Coriander, and settles into Frankincense, Vanilla, and Benzoin. It is suited to evenings, special occasions, and dinners.\nFragrance Notes:\nTop: Frankincense, Elemi, Cardamom, Lemon, Sichuan Pepper, Bergamot\nMiddle: Patchouli, Anise, Coriander, Cumin, Orange Blossom, Saffron, Geranium, Wormwood, Rose\nBase: Frankincense, Vanilla, Benzoin, Amber, Oud, Opoponax, Birch, Ambergris, Maltol, Labdanum, Musk",
+      "descriptionEn": "Boss Life by Bujairami 100ml Extrait blends Frankincense, Elemi, and Cardamom into an amber spicy oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-2.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-2.jpg",
@@ -65371,13 +65371,12 @@
         "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-5.jpg",
         "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-6.jpg",
         "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-1.jpg",
-        "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-7.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/boss-life-by-bujairami-100ml-extrait-de-parfum-7.jpg"
+        "https://www.shamperfume.com/cdn/large/boss-life-by-bujairami-100ml-extrait-de-parfum-7.jpg"
       ],
       "category": "رجالي",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65388,47 +65387,21 @@
       "supplierSku": "BUJAIRAMI-BOSSLIFE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/boss-life-by-bujairami-100ml-extrait-de-parfum/",
       "slug": "boss-life-by-bujairami-100ml-extrait-de-parfum-1003",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Frankincense",
-          "Elemi",
-          "Cardamom",
-          "Lemon",
-          "Sichuan Pepper",
-          "Bergamot"
-        ],
-        "heart": [
-          "Patchouli",
-          "Anise",
-          "Coriander",
-          "Cumin",
-          "Orange Blossom",
-          "Saffron",
-          "Geranium",
-          "Wormwood",
-          "Rose"
-        ],
-        "base": [
-          "Frankincense",
-          "Vanilla",
-          "Benzoin",
-          "Amber",
-          "Oud",
-          "Opoponax",
-          "Birch",
-          "Ambergris",
-          "Maltol",
-          "Labdanum"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Fall",
@@ -65436,15 +65409,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Special Event",
-        "Dinner",
-        "Date Night"
+        "Special Event"
       ],
       "barcode": "9362014000614",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65454,7 +65426,7 @@
       "nameAr": "Pharaoh by Rayhaan 100ml Eau de Parfum Unisex",
       "nameEn": "Pharaoh by Rayhaan 100ml Eau de Parfum Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Pharaoh by Rayhaan 100ml Eau de Parfum Unisex\nPharaoh by Rayhaan is a 100ml Eau de Parfum for women and men with a warm spicy amber scent profile. It opens with Boozy Notes, Saffron, Cardamom, and Cade Oil, moves into Coffee, Benzoin, and Suede, and settles into Guaiac Wood, Tonka Bean, Labdanum, Vanilla, and Amberwood. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Boozy Notes, Saffron, Cardamom, Cade Oil\nMiddle: Coffee, Benzoin, Suede\nBase: Guaiac Wood, Tonka Bean, Labdanum, Vanilla, Amberwood",
+      "descriptionEn": "Pharaoh by Rayhaan 100ml EDP blends Boozy Notes, Saffron, and Cardamom into a warm spicy amber fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/pharaoh-by-rayhaan-100ml-edp-unisex-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/pharaoh-by-rayhaan-100ml-edp-unisex-1.jpg",
@@ -65468,8 +65440,8 @@
       ],
       "category": "مختلط",
       "brand": "Rayhaan",
-      "supplierPrice": 2550.8,
-      "ourPrice": 3830,
+      "supplierPrice": 2094.43,
+      "ourPrice": 3145,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65479,36 +65451,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "RAYHAAN-PHARAOH-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 195,
-      "supplierSalePrice": 159,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 159,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/pharaoh-by-rayhaan/",
       "slug": "pharaoh-by-rayhaan-100ml-eau-de-parfum-unisex-1004",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Boozy Notes",
-          "Saffron",
-          "Cardamom",
-          "Cade Oil"
-        ],
-        "heart": [
-          "Coffee",
-          "Benzoin",
-          "Suede"
-        ],
-        "base": [
-          "Guaiac Wood",
-          "Tonka Bean",
-          "Labdanum",
-          "Vanilla",
-          "Amberwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
@@ -65516,14 +65474,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571354",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 1005,
@@ -65531,7 +65490,7 @@
       "nameAr": "Mafia Boss by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Mafia Boss by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Mafia Boss by Bujairami 100ml Extrait de Parfum\nMafia Boss by Bujairami is a 100ml Extrait de Parfum for women and men with an amber tobacco scent profile. Opens with Rum, Olibanum, and Bitter Orange, moves into Dried Fruits, White Tobacco, and Tuberose, and settles into Tonka Bean, Myrrh, and Vanilla. It is suited to evenings, special occasions, and dinners.\nFragrance Notes:\nTop: Rum, Olibanum, Bitter Orange, Cardamom, Pink Pepper, Ginger, Bergamot, Grapefruit\nMiddle: Dried Fruits, White Tobacco, Tuberose, Sandalwood, Saffron, Osmanthus, Orris, Jasmine\nBase: Tonka Bean, Myrrh, Vanilla, Labdanum, Patchouli, Musk, Cedar, Vetiver",
+      "descriptionEn": "Mafia Boss by Bujairami 100ml Extrait blends Rum, Olibanum, Bitter Orange, and Cardamom into an amber tobacco fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/mafia-boss-by-bujairami-100ml-extrait-de-parfum-8.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/mafia-boss-by-bujairami-100ml-extrait-de-parfum-8.jpg",
@@ -65545,8 +65504,8 @@
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65557,46 +65516,20 @@
       "supplierSku": "BUJAIRAMI-MAFIABOSS-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/mafia-boss-by-bujairami-100ml-extrait-de-parfum/",
       "slug": "mafia-boss-by-bujairami-100ml-extrait-de-parfum-1005",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Rum",
-          "Olibanum",
-          "Bitter Orange",
-          "Cardamom",
-          "Pink Pepper",
-          "Ginger",
-          "Bergamot",
-          "Grapefruit"
-        ],
-        "heart": [
-          "Dried Fruits",
-          "White Tobacco",
-          "Tuberose",
-          "Sandalwood",
-          "Saffron",
-          "Osmanthus",
-          "Orris",
-          "Jasmine"
-        ],
-        "base": [
-          "Tonka Bean",
-          "Myrrh",
-          "Vanilla",
-          "Labdanum",
-          "Patchouli",
-          "Musk",
-          "Cedar",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Tobacco"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -65604,15 +65537,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Special Event",
-        "Dinner",
-        "Date Night"
+        "Special Event"
       ],
       "barcode": "9362014000201",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65622,19 +65554,18 @@
       "nameAr": "Breathless by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Breathless by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Breathless by Bujairami 100ml Extrait de Parfum\nBreathless by Bujairami is a 100ml Extrait de Parfum for women and men with a rose oud scent profile. Opens with Rose and Saffron, moves into Agarwood (Oud), and settles into Ambergris and Black Pepper. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Rose, Saffron\nMiddle: Agarwood (Oud)\nBase: Ambergris, Black Pepper",
+      "descriptionEn": "Breathless by Bujairami 100ml Extrait blends Rose, Saffron, and Agarwood (Oud) into a rose oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-4.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/breathless-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/breathless-by-bujairami-100ml-extrait-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65645,27 +65576,21 @@
       "supplierSku": "BREATHLESS-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/breathless-by-bujairami-100ml-extrait/",
       "slug": "breathless-by-bujairami-100ml-extrait-de-parfum-1006",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Rose",
-          "Saffron"
-        ],
-        "heart": [
-          "Agarwood (Oud)"
-        ],
-        "base": [
-          "Ambergris",
-          "Black Pepper"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Woody Oud"
+        "Floral",
+        "Woody",
+        "Oud"
       ],
       "seasonsSource": [
         "Fall",
@@ -65673,14 +65598,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65690,18 +65614,17 @@
       "nameAr": "Billion Dollar by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Billion Dollar by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Billion Dollar by Bujairami 100ml Extrait de Parfum\nBillion Dollar by Bujairami is a 100ml Extrait de Parfum for women and men with an amber vanilla scent profile. Opens with Orange, Pink Pepper, and Lemon, moves into Rum, Cacao, and Cardamom, and settles into Bourbon Vanilla, Sandalwood, and Patchouli. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Orange, Pink Pepper, Lemon\nMiddle: Rum, Cacao, Cardamom\nBase: Bourbon Vanilla, Sandalwood, Patchouli",
+      "descriptionEn": "Billion Dollar by Bujairami 100ml Extrait blends Orange, Pink Pepper, and Lemon into an amber vanilla fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/billion-dollar-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/billion-dollar-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/billion-dollar-by-bujairami-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/large/billion-dollar-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/billion-dollar-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/billion-dollar-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65712,31 +65635,21 @@
       "supplierSku": "BILLION-DOLLAR-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/billion-dollar-by-bujairami-100ml-extrait/",
       "slug": "billion-dollar-by-bujairami-100ml-extrait-de-parfum-1007",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Orange",
-          "Pink Pepper",
-          "Lemon"
-        ],
-        "heart": [
-          "Rum",
-          "Cacao",
-          "Cardamom"
-        ],
-        "base": [
-          "Bourbon Vanilla",
-          "Sandalwood",
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Vanilla"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
@@ -65744,14 +65657,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65761,18 +65673,17 @@
       "nameAr": "Born Nomad by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Born Nomad by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Born Nomad by Bujairami 100ml Extrait de Parfum\nBorn Nomad by Bujairami is a 100ml Extrait de Parfum for women and men with a fruity spicy scent profile. Opens with Honey, Apricot, and Pomegranate, moves into Cappuccino Accord, Black Tea, and Davana, and settles into Cedarwood, Vanilla, and Vetiver. It is suited to evenings, special occasions, and dinners.\nFragrance Notes:\nTop: Honey, Apricot, Pomegranate, Tangerine, Grapefruit, Mango, Cardamom, Ginger, Pink Pepper\nMiddle: Cappuccino Accord, Black Tea, Davana\nBase: Cedarwood, Vanilla, Vetiver, Tonka Bean, Patchouli, Labdanum, Cypriol",
+      "descriptionEn": "Born Nomad by Bujairami 100ml Extrait blends Honey, Apricot, and Pomegranate into a fruity spicy fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/born-nomad-by-bujairami-100ml-extrait-de-parfum-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/born-nomad-by-bujairami-100ml-extrait-de-parfum-1.jpg",
         "https://www.shamperfume.com/cdn/large/born-nomad-by-bujairami-100ml-extrait-de-parfum-2.jpg",
-        "https://www.shamperfume.com/cdn/large/born-nomad-by-bujairami-100ml-extrait-de-parfum-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/born-nomad-by-bujairami-100ml-extrait-de-parfum-1.jpg"
+        "https://www.shamperfume.com/cdn/large/born-nomad-by-bujairami-100ml-extrait-de-parfum-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65783,41 +65694,20 @@
       "supplierSku": "BUJAIRAMI-BORNNOMAD-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/born-nomad-by-bujairami-100ml-extrait-de-parfum/",
       "slug": "born-nomad-by-bujairami-100ml-extrait-de-parfum-1008",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Honey",
-          "Apricot",
-          "Pomegranate",
-          "Tangerine",
-          "Grapefruit",
-          "Mango",
-          "Cardamom",
-          "Ginger",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Cappuccino Accord",
-          "Black Tea",
-          "Davana"
-        ],
-        "base": [
-          "Cedarwood",
-          "Vanilla",
-          "Vetiver",
-          "Tonka Bean",
-          "Patchouli",
-          "Labdanum",
-          "Cypriol"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fruity Spicy"
+        "Fruity",
+        "Spicy"
       ],
       "seasonsSource": [
         "Fall",
@@ -65825,14 +65715,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Special Event",
-        "Dinner",
-        "Date Night"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65842,19 +65731,18 @@
       "nameAr": "Amber Eclipse by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Amber Eclipse by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Amber Eclipse by Bujairami 100ml Extrait de Parfum\nAmber Eclipse by Bujairami is a 100ml Extrait de Parfum for women and men with an amber spicy scent profile. Opens with Cinnamon and Cardamom, moves into Spicy Notes, and settles into Amber and Musk. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Cinnamon, Cardamom\nMiddle: Spicy Notes\nBase: Amber, Musk",
+      "descriptionEn": "Amber Eclipse by Bujairami 100ml Extrait blends Cinnamon, Cardamom, Spicy Notes, and Amber into an amber spicy fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-4.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/amber-eclipse-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/amber-eclipse-by-bujairami-100ml-extrait-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65865,27 +65753,20 @@
       "supplierSku": "AMBER-ECLIPSE-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/amber-eclipse-by-bujairami-100ml-extrait/",
       "slug": "amber-eclipse-by-bujairami-100ml-extrait-de-parfum-1009",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Cinnamon",
-          "Cardamom"
-        ],
-        "heart": [
-          "Spicy Notes"
-        ],
-        "base": [
-          "Amber",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -65893,14 +65774,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65910,18 +65790,17 @@
       "nameAr": "Boujee by Bujairami 100ml Eau de Parfum",
       "nameEn": "Boujee by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Boujee by Bujairami 100ml Eau de Parfum\nBoujee by Bujairami is a 100ml Eau de Parfum for women with a fruity floral scent profile. Opens with Litchi, Ginger, and Bergamot, moves into Peony, Rose, and Cacao, and settles into Patchouli. It is suited to casual outings, date nights, and special occasions.\nFragrance Notes:\nTop: Litchi, Ginger, Bergamot\nMiddle: Peony, Rose, Cacao\nBase: Patchouli",
+      "descriptionEn": "Boujee by Bujairami 100ml EDP blends Litchi, Ginger, Bergamot, and Peony into a fruity floral fragrance. Explore its fragrance notes and scent character.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/boujee-by-bujairami-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/boujee-by-bujairami-100ml-edp-1.jpg",
         "https://www.shamperfume.com/cdn/large/boujee-by-bujairami-100ml-edp-2.jpg",
-        "https://www.shamperfume.com/cdn/large/boujee-by-bujairami-100ml-edp-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/boujee-by-bujairami-100ml-edp-1.jpg"
+        "https://www.shamperfume.com/cdn/large/boujee-by-bujairami-100ml-edp-3.jpg"
       ],
       "category": "نسائي",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65932,29 +65811,20 @@
       "supplierSku": "BOUJEE-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/boujee-by-bujairami-100ml-edp/",
       "slug": "boujee-by-bujairami-100ml-eau-de-parfum-1010",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Litchi",
-          "Ginger",
-          "Bergamot"
-        ],
-        "heart": [
-          "Peony",
-          "Rose",
-          "Cacao"
-        ],
-        "base": [
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fruity Floral"
+        "Fruity",
+        "Floral"
       ],
       "seasonsSource": [
         "Spring",
@@ -65962,15 +65832,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Casual",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Daily",
+        "Evening",
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65980,18 +65850,17 @@
       "nameAr": "World Power by Bujairami 100ml Extrait de Parfum",
       "nameEn": "World Power by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "World Power by Bujairami 100ml Extrait de Parfum\nWorld Power by Bujairami is a 100ml Extrait de Parfum for women and men with an oud cacao leather scent profile. Opens with Agarwood (Oud) and Cacao (Cocoa), moves into Saffron and Rose, and settles into Leather, Incense (Olibanum), and Patchouli. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Agarwood (Oud), Cacao (Cocoa)\nMiddle: Saffron, Rose\nBase: Leather, Incense (Olibanum), Patchouli, Blackcurrant",
+      "descriptionEn": "World Power by Bujairami 100ml Extrait blends Agarwood (Oud), Cacao (Cocoa), Saffron, and Rose into an oud cacao leather fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/world-power-oud-cacao-leather-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/world-power-oud-cacao-leather-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/world-power-oud-cacao-leather-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/large/world-power-oud-cacao-leather-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/world-power-oud-cacao-leather-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/world-power-oud-cacao-leather-100ml-extrait-2.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4447.54,
-      "ourPrice": 6675,
+      "supplierPrice": 4478.65,
+      "ourPrice": 6720,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66002,30 +65871,21 @@
       "supplierSku": "WORLD-POWER-OUD-CACAO-LEATHER-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 340,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/world-power-oud-cacao-leather-100ml/",
       "slug": "world-power-by-bujairami-100ml-extrait-de-parfum-1011",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Agarwood (Oud)",
-          "Cacao (Cocoa)"
-        ],
-        "heart": [
-          "Saffron",
-          "Rose"
-        ],
-        "base": [
-          "Leather",
-          "Incense (Olibanum)",
-          "Patchouli",
-          "Blackcurrant"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Leather"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -66033,15 +65893,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014011757",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66051,18 +65910,17 @@
       "nameAr": "Imperial Oud by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Imperial Oud by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Imperial Oud by Bujairami 100ml Extrait de Parfum\nImperial Oud by Bujairami is a 100ml Extrait de Parfum for women and men with a woody spicy oud scent profile. Opens with Spices, Frankincense, and Ginger, moves into May Rose, and settles into Licorice, Myrrh, and Tonka Bean. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Spices, Frankincense, Ginger, Bergamot\nMiddle: May Rose\nBase: Licorice, Myrrh, Tonka Bean, Sandalwood, Patchouli, Oud",
+      "descriptionEn": "Imperial Oud by Bujairami 100ml Extrait blends Spices, Frankincense, Ginger, and Bergamot into a woody spicy oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/imperial-oud-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/imperial-oud-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/imperial-oud-by-bujairami-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/large/imperial-oud-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/imperial-oud-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/imperial-oud-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66073,33 +65931,20 @@
       "supplierSku": "IMPERIAL-OUD-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/imperial-oud-by-bujairami-100ml-extrait/",
       "slug": "imperial-oud-by-bujairami-100ml-extrait-de-parfum-1012",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Spices",
-          "Frankincense",
-          "Ginger",
-          "Bergamot"
-        ],
-        "heart": [
-          "May Rose"
-        ],
-        "base": [
-          "Licorice",
-          "Myrrh",
-          "Tonka Bean",
-          "Sandalwood",
-          "Patchouli",
-          "Oud"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Spicy"
+        "Woody",
+        "Spicy"
       ],
       "seasonsSource": [
         "Fall",
@@ -66107,15 +65952,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014001529",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66125,18 +65969,17 @@
       "nameAr": "Cartel by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Cartel by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Cartel by Bujairami 100ml Extrait de Parfum\nCartel by Bujairami is a 100ml Extrait de Parfum for women and men with an oud tobacco scent profile. Opens with Passionfruit, Tobacco Leaf, and Hookah, moves into Saffron and Rose, and settles into Labdanum and Oud. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Passionfruit, Tobacco Leaf, Hookah\nMiddle: Saffron, Rose\nBase: Labdanum, Oud",
+      "descriptionEn": "Cartel by Bujairami 100ml Extrait blends Passionfruit, Tobacco Leaf, and Hookah into an oud tobacco fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/cartel-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/cartel-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/cartel-by-bujairami-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/large/cartel-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/cartel-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/cartel-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66147,29 +65990,19 @@
       "supplierSku": "CARTEL-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/cartel-by-bujairami-100ml-extrait/",
       "slug": "cartel-by-bujairami-100ml-extrait-de-parfum-1013",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Passionfruit",
-          "Tobacco Leaf",
-          "Hookah"
-        ],
-        "heart": [
-          "Saffron",
-          "Rose"
-        ],
-        "base": [
-          "Labdanum",
-          "Oud"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Tobacco"
+        "Floral"
       ],
       "seasonsSource": [
         "Fall",
@@ -66177,14 +66010,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66194,20 +66026,19 @@
       "nameAr": "Sacred Skin by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Sacred Skin by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Sacred Skin by Bujairami 100ml Extrait de Parfum\nSacred Skin by Bujairami is a 100ml Extrait de Parfum for women and men with a warm floral woody scent profile. Opens with Pear, Hazelnut, and Olibanum, moves into Osmanthus, Rose, and Saffron, and settles into Sandalwood, Vanilla, and Akigalawood. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Pear, Hazelnut, Olibanum\nMiddle: Osmanthus, Rose, Saffron, Jasmine Sambac\nBase: Sandalwood, Vanilla, Akigalawood, Ambergris, Labdanum",
+      "descriptionEn": "Sacred Skin by Bujairami 100ml Extrait blends Pear, Hazelnut, Olibanum, and Osmanthus into a warm floral woody fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-3.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-3.jpg",
         "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-1.jpg",
         "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-2.jpg",
         "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-4.jpg",
-        "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/sacred-skin-bujairami-100ml-extrait-unisex-3.jpg"
+        "https://www.shamperfume.com/cdn/large/sacred-skin-bujairami-100ml-extrait-unisex-5.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4709.16,
-      "ourPrice": 7065,
+      "supplierPrice": 4742.1,
+      "ourPrice": 7115,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66218,34 +66049,21 @@
       "supplierSku": "BUJAIRAMI-SACRED-SKIN-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 360,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/sacred-skin-bujairami-100ml-extrait/",
       "slug": "sacred-skin-by-bujairami-100ml-extrait-de-parfum-1014",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Pear",
-          "Hazelnut",
-          "Olibanum"
-        ],
-        "heart": [
-          "Osmanthus",
-          "Rose",
-          "Saffron",
-          "Jasmine Sambac"
-        ],
-        "base": [
-          "Sandalwood",
-          "Vanilla",
-          "Akigalawood",
-          "Ambergris",
-          "Labdanum"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Woody Musk"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
@@ -66253,15 +66071,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014008368",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66271,7 +66088,7 @@
       "nameAr": "Soul Fusion Intense by Bujairami 100ml Eau de Parfum",
       "nameEn": "Soul Fusion Intense by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Soul Fusion Intense by Bujairami 100ml Eau de Parfum\nSoul Fusion Intense by Bujairami is a 100ml Eau de Parfum for women and men with a floral woody amber scent profile. Opens with Rose Water, Pear, and Hazelnut, moves into Rose, Osmanthus, and Saffron, and settles into Sandalwood, Akigalawood, and Vanilla. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Rose Water, Pear, Hazelnut, Bitter Almond, Frankincense, Pink Pepper\nMiddle: Rose, Osmanthus, Saffron, Jasmine Sambac\nBase: Sandalwood, Akigalawood, Vanilla, Ambrette, Georgywood, Ambergris, Labdanum, Cypriol",
+      "descriptionEn": "Soul Fusion Intense by Bujairami 100ml EDP blends Rose Water, Pear, Hazelnut, and Bitter Almond into a floral woody amber fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/soul-fusion-intense-bujairami-100ml-edp-9.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/soul-fusion-intense-bujairami-100ml-edp-9.jpg",
@@ -66285,8 +66102,8 @@
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3793.49,
-      "ourPrice": 5695,
+      "supplierPrice": 3820.02,
+      "ourPrice": 5735,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66297,40 +66114,20 @@
       "supplierSku": "BUJAIRAMI-SOUL-FUSION-INTENSE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 290,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/soul-fusion-intense-bujairami-100ml/",
       "slug": "soul-fusion-intense-by-bujairami-100ml-eau-de-parfum-1015",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Rose Water",
-          "Pear",
-          "Hazelnut",
-          "Bitter Almond",
-          "Frankincense",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Rose",
-          "Osmanthus",
-          "Saffron",
-          "Jasmine Sambac"
-        ],
-        "base": [
-          "Sandalwood",
-          "Akigalawood",
-          "Vanilla",
-          "Ambrette",
-          "Georgywood",
-          "Ambergris",
-          "Labdanum",
-          "Cypriol"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Woody Musk"
+        "Floral",
+        "Aquatic"
       ],
       "seasonsSource": [
         "Spring",
@@ -66339,15 +66136,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014008924",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66357,19 +66153,18 @@
       "nameAr": "Madness by Bujairami 100ml Eau de Parfum",
       "nameEn": "Madness by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Madness by Bujairami 100ml Eau de Parfum\nMadness by Bujairami is a 100ml Eau de Parfum for women and men with a smoky oud scent profile. Opens with Agarwood (Oud) and Incense, moves into Rose, Raspberry, and Birch, and settles into Benzoin, Amberwood, and Geranium. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Agarwood (Oud), Incense\nMiddle: Rose, Raspberry, Birch, Saffron\nBase: Benzoin, Amberwood, Geranium",
+      "descriptionEn": "Madness by Bujairami 100ml EDP blends Agarwood (Oud), Incense, Rose, and Raspberry into a smoky oud fragrance. Explore its fragrance notes and scent character.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-3.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-3.jpg",
         "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-2.jpg",
         "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-1.jpg",
-        "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-4.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/madness-by-bujairami-100ml-edp-3.jpg"
+        "https://www.shamperfume.com/cdn/large/madness-by-bujairami-100ml-edp-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66380,31 +66175,21 @@
       "supplierSku": "MADNESS-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/madness-by-bujairami-100ml-edp/",
       "slug": "madness-by-bujairami-100ml-eau-de-parfum-1016",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Agarwood (Oud)",
-          "Incense"
-        ],
-        "heart": [
-          "Rose",
-          "Raspberry",
-          "Birch",
-          "Saffron"
-        ],
-        "base": [
-          "Benzoin",
-          "Amberwood",
-          "Geranium"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Woody"
+        "Amber",
+        "Oriental",
+        "Woody"
       ],
       "seasonsSource": [
         "Fall",
@@ -66412,14 +66197,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66429,7 +66213,7 @@
       "nameAr": "Only Ever by Bujairami 100ml Eau de Parfum",
       "nameEn": "Only Ever by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Only Ever by Bujairami 100ml Eau de Parfum\nOnly Ever by Bujairami is a 100ml Eau de Parfum for women and men with a fruity vanilla scent profile. Opens with Passionfruit, Bitter Orange, and Lemon, moves into Solar Notes and Frangipani, and settles into Madagascar Vanilla, Benzoin, and Labdanum. It is suited to casual outings, evenings, and date nights.\nFragrance Notes:\nTop: Passionfruit, Bitter Orange, Lemon\nMiddle: Solar Notes, Frangipani\nBase: Madagascar Vanilla, Benzoin, Labdanum",
+      "descriptionEn": "Only Ever by Bujairami 100ml EDP blends Passionfruit, Bitter Orange, Lemon, and Solar Notes into a fruity vanilla fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-1.jpg",
@@ -66437,13 +66221,12 @@
         "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-3.jpg",
         "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-4.jpg",
         "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-5.jpg",
-        "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-6.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/only-ever-by-bujairami-100ml-edp-1.jpg"
+        "https://www.shamperfume.com/cdn/large/only-ever-by-bujairami-100ml-edp-6.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66454,30 +66237,21 @@
       "supplierSku": "ONLY-EVER-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/only-ever-by-bujairami-100ml-edp/",
       "slug": "only-ever-by-bujairami-100ml-eau-de-parfum-1017",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Passionfruit",
-          "Bitter Orange",
-          "Lemon"
-        ],
-        "heart": [
-          "Solar Notes",
-          "Frangipani"
-        ],
-        "base": [
-          "Madagascar Vanilla",
-          "Benzoin",
-          "Labdanum"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Vanilla"
+        "Amber",
+        "Oriental",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Spring",
@@ -66485,16 +66259,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual",
+        "Daily",
         "Evening",
-        "Date Night",
         "Special Event"
       ],
       "barcode": "9362014002014",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66504,20 +66278,19 @@
       "nameAr": "Non Stop by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Non Stop by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Non Stop by Bujairami 100ml Extrait de Parfum\nNon Stop by Bujairami is a 100ml Extrait de Parfum for women and men with a fruity aromatic scent profile. Opens with Orange, Green Lemon, and Mint, moves into Apricot, Basil, and Aqueous Accord, and settles into Dates, Fig, and Moss. It is suited to everyday wear, work, and casual outings.\nFragrance Notes:\nTop: Orange, Green Lemon, Mint, Black Currant\nMiddle: Apricot, Basil, Aqueous Accord, May Rose\nBase: Dates, Fig, Moss, Ambergris",
+      "descriptionEn": "Non Stop by Bujairami 100ml Extrait blends Orange, Green Lemon, Mint, and Black Currant into a fruity aromatic fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-4.jpg",
         "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/non-stop-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/non-stop-by-bujairami-100ml-extrait-5.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66528,34 +66301,20 @@
       "supplierSku": "NON-STOP-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/non-stop-by-bujairami-100ml-extrait/",
       "slug": "non-stop-by-bujairami-100ml-extrait-de-parfum-1018",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Orange",
-          "Green Lemon",
-          "Mint",
-          "Black Currant"
-        ],
-        "heart": [
-          "Apricot",
-          "Basil",
-          "Aqueous Accord",
-          "May Rose"
-        ],
-        "base": [
-          "Dates",
-          "Fig",
-          "Moss",
-          "Ambergris"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fruity Aromatic"
+        "Fruity",
+        "Aromatic"
       ],
       "seasonsSource": [
         "Spring",
@@ -66563,15 +66322,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Office",
-        "Casual"
+        "Daily",
+        "Office"
       ],
       "barcode": "9362014011498",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66581,18 +66340,17 @@
       "nameAr": "New York by Bujairami 100ml Eau de Parfum",
       "nameEn": "New York by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "New York by Bujairami 100ml Eau de Parfum\nNew York by Bujairami is a 100ml Eau de Parfum for women and men with an amber vanilla scent profile. Opens with Bergamot and Coriander, moves into Apple, Ambroxan, and Vanilla, and settles into Ambergris, Tonka Bean, and Woody Notes. It is suited to work, casual outings, and evenings.\nFragrance Notes:\nTop: Bergamot, Coriander\nMiddle: Apple, Ambroxan, Vanilla\nBase: Ambergris, Tonka Bean, Woody Notes",
+      "descriptionEn": "New York by Bujairami 100ml EDP blends Bergamot, Coriander, and Apple into an amber vanilla fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/new-york-by-bujairami-eau-de-parfum-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/new-york-by-bujairami-eau-de-parfum-100ml-1.jpg",
         "https://www.shamperfume.com/cdn/large/new-york-by-bujairami-eau-de-parfum-100ml-2.jpg",
-        "https://www.shamperfume.com/cdn/large/new-york-by-bujairami-eau-de-parfum-100ml-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/new-york-by-bujairami-eau-de-parfum-100ml-1.jpg"
+        "https://www.shamperfume.com/cdn/large/new-york-by-bujairami-eau-de-parfum-100ml-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 3293.13,
+      "ourPrice": 4940,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66603,29 +66361,18 @@
       "supplierSku": "NEW-YORK-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 250,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/new-york-by-bujairami-extrait-de-parfum-100ml/",
       "slug": "new-york-by-bujairami-100ml-eau-de-parfum-1019",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Coriander"
-        ],
-        "heart": [
-          "Apple",
-          "Ambroxan",
-          "Vanilla"
-        ],
-        "base": [
-          "Ambergris",
-          "Tonka Bean",
-          "Woody Notes"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Vanilla"
+        "Fresh"
       ],
       "seasonsSource": [
         "Spring",
@@ -66634,15 +66381,15 @@
       ],
       "occasionsSource": [
         "Office",
-        "Casual",
-        "Evening",
-        "Dinner"
+        "Daily",
+        "Evening"
       ],
       "barcode": "9362014000232",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66652,18 +66399,17 @@
       "nameAr": "Silent Halo by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Silent Halo by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Silent Halo by Bujairami 100ml Extrait de Parfum\nSilent Halo by Bujairami is a 100ml Extrait de Parfum for women and men with a woody aromatic scent profile. Opens with Citron, Bergamot, and Juniper, moves into Lavender, Geranium, and Nutmeg, and settles into Ambrox Super, Patchouli, and Sandalwood. It is suited to everyday wear, work, and casual outings.\nFragrance Notes:\nTop: Citron, Bergamot, Juniper\nMiddle: Lavender, Geranium, Nutmeg, Cypress\nBase: Ambrox Super, Patchouli, Sandalwood",
+      "descriptionEn": "Silent Halo by Bujairami 100ml Extrait blends Citron, Bergamot, and Juniper into a woody aromatic fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/silent-halo-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/silent-halo-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/silent-halo-by-bujairami-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/large/silent-halo-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/silent-halo-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/silent-halo-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66674,32 +66420,20 @@
       "supplierSku": "SILENT-HALO-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/silent-halo-by-bujairami-100ml-extrait/",
       "slug": "silent-halo-by-bujairami-100ml-extrait-de-parfum-1020",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Citron",
-          "Bergamot",
-          "Juniper"
-        ],
-        "heart": [
-          "Lavender",
-          "Geranium",
-          "Nutmeg",
-          "Cypress"
-        ],
-        "base": [
-          "Ambrox Super",
-          "Patchouli",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -66707,15 +66441,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Office",
-        "Casual"
+        "Daily",
+        "Office"
       ],
       "barcode": "9362014000973",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66725,19 +66459,18 @@
       "nameAr": "Sugar Rush by Bujairami 100ml Eau de Parfum",
       "nameEn": "Sugar Rush by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Sugar Rush by Bujairami 100ml Eau de Parfum\nSugar Rush by Bujairami is a 100ml Eau de Parfum for women and men with a sweet gourmand scent profile. Opens with Freesia, Italian Lemon, and Nectarine Blossom, moves into Marshmallow, Strawberry, and Coconut, and settles into Whipped Cream, Sugar, and Vanilla. It is suited to casual outings, evenings, and date nights.\nFragrance Notes:\nTop: Freesia, Italian Lemon, Nectarine Blossom, Apple\nMiddle: Marshmallow, Strawberry, Coconut, Orange Blossom\nBase: Whipped Cream, Sugar, Vanilla, Musk, Raspberry, Ambroxan",
+      "descriptionEn": "Sugar Rush by Bujairami 100ml EDP blends Freesia, Italian Lemon, Nectarine Blossom, and Apple into a sweet gourmand fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-1.jpg",
         "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-4.jpg",
         "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-2.jpg",
-        "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/sugar-rush-by-bujairami-eau-de-parfum-100ml-1.jpg"
+        "https://www.shamperfume.com/cdn/large/sugar-rush-by-bujairami-eau-de-parfum-100ml-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 3293.13,
+      "ourPrice": 4940,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66748,51 +66481,33 @@
       "supplierSku": "SUGAR-RUSH-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 250,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/sugar-rush-by-bujairami-extrait-de-parfum-100ml/",
       "slug": "sugar-rush-by-bujairami-100ml-eau-de-parfum-1021",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Freesia",
-          "Italian Lemon",
-          "Nectarine Blossom",
-          "Apple"
-        ],
-        "heart": [
-          "Marshmallow",
-          "Strawberry",
-          "Coconut",
-          "Orange Blossom"
-        ],
-        "base": [
-          "Whipped Cream",
-          "Sugar",
-          "Vanilla",
-          "Musk",
-          "Raspberry",
-          "Ambroxan"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Gourmand"
+        "Fresh"
       ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
-        "Casual",
-        "Evening",
-        "Date Night",
-        "Dinner"
+        "Daily",
+        "Evening"
       ],
       "barcode": "9362014000355",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66802,19 +66517,18 @@
       "nameAr": "Sacred Order by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Sacred Order by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Sacred Order by Bujairami 100ml Extrait de Parfum\nSacred Order by Bujairami is a 100ml Extrait de Parfum for women and men with a fruity floral oud scent profile. Opens with Lychee, Raspberry, and Saffron, moves into Rose, Osmanthus, and Tonka Bean, and settles into Oud, Leather, and Ambery Woods. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Lychee, Raspberry, Saffron\nMiddle: Rose, Osmanthus, Tonka Bean\nBase: Oud, Leather, Ambery Woods",
+      "descriptionEn": "Sacred Order by Bujairami 100ml Extrait blends Lychee, Raspberry, and Saffron into a fruity floral oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-4.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/sacred-order-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/sacred-order-by-bujairami-100ml-extrait-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66825,31 +66539,21 @@
       "supplierSku": "SACRED-ORDER-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/sacred-order-by-bujairami-100ml-extrait/",
       "slug": "sacred-order-by-bujairami-100ml-extrait-de-parfum-1022",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Lychee",
-          "Raspberry",
-          "Saffron"
-        ],
-        "heart": [
-          "Rose",
-          "Osmanthus",
-          "Tonka Bean"
-        ],
-        "base": [
-          "Oud",
-          "Leather",
-          "Ambery Woods"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Woody Oud"
+        "Floral",
+        "Woody",
+        "Oud"
       ],
       "seasonsSource": [
         "Fall",
@@ -66857,14 +66561,13 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66874,18 +66577,17 @@
       "nameAr": "Freeze by Bujairami 100ml Eau de Parfum",
       "nameEn": "Freeze by Bujairami 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Freeze by Bujairami 100ml Eau de Parfum\nFreeze by Bujairami is a 100ml Eau de Parfum for women and men with a fresh mint scent profile. Opens with Fresh Iced Mint and Ice, moves into Living Mint (Ourika Mint), Mint Tea, and Crisp Blue Sage, and settles into Ambroxan and Indonesian Patchouli. It is suited to everyday wear, casual outings, and workouts.\nFragrance Notes:\nTop: Fresh Iced Mint, Ice\nMiddle: Living Mint (Ourika Mint), Mint Tea, Crisp Blue Sage\nBase: Ambroxan, Indonesian Patchouli",
+      "descriptionEn": "Freeze by Bujairami 100ml EDP blends Fresh Iced Mint, Ice, Living Mint (Ourika Mint), and Mint Tea into a fresh mint fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/freeze-by-bujairami-100ml-edp-2.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/freeze-by-bujairami-100ml-edp-2.jpg",
         "https://www.shamperfume.com/cdn/large/freeze-by-bujairami-100ml-edp-1.jpg",
-        "https://www.shamperfume.com/cdn/large/freeze-by-bujairami-100ml-edp-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/freeze-by-bujairami-100ml-edp-2.jpg"
+        "https://www.shamperfume.com/cdn/large/freeze-by-bujairami-100ml-edp-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3924.3,
-      "ourPrice": 5890,
+      "supplierPrice": 3951.75,
+      "ourPrice": 5930,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66896,43 +66598,34 @@
       "supplierSku": "FREEZE-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 300,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/freeze-by-bujairami-100ml-edp/",
       "slug": "freeze-by-bujairami-100ml-eau-de-parfum-1023",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Fresh Iced Mint",
-          "Ice"
-        ],
-        "heart": [
-          "Living Mint (Ourika Mint)",
-          "Mint Tea",
-          "Crisp Blue Sage"
-        ],
-        "base": [
-          "Ambroxan",
-          "Indonesian Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Aromatic Green"
+        "Aromatic",
+        "Fresh"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Casual"
+        "Daily"
       ],
       "barcode": "9362014002168",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -66942,7 +66635,7 @@
       "nameAr": "Mad Love by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Mad Love by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Mad Love by Bujairami 100ml Extrait de Parfum\nMad Love by Bujairami is a 100ml Extrait de Parfum for women and men with a woody oud scent profile. Opens with Raspberry, Saffron, and Geranium, moves into Rose, Birch Wood, and Suede Leather, and settles into Oud Wood, Benzoin Balm, and Amberwood. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Raspberry, Saffron, Geranium\nMiddle: Rose, Birch Wood, Suede Leather, Incense\nBase: Oud Wood, Benzoin Balm, Amberwood, Musk",
+      "descriptionEn": "Mad Love by Bujairami 100ml Extrait blends Raspberry, Saffron, Geranium, and Rose into a woody oud fragrance. Explore its fragrance notes and scent character.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/mad-love-bujairami-100ml-extrait-unisex-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/mad-love-bujairami-100ml-extrait-unisex-1.jpg",
@@ -66956,8 +66649,8 @@
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4709.16,
-      "ourPrice": 7065,
+      "supplierPrice": 4742.1,
+      "ourPrice": 7115,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -66968,33 +66661,21 @@
       "supplierSku": "BUJAIRAMI-MAD-LOVE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 360,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/mad-love-bujairami-100ml-extrait/",
       "slug": "mad-love-by-bujairami-100ml-extrait-de-parfum-1024",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Raspberry",
-          "Saffron",
-          "Geranium"
-        ],
-        "heart": [
-          "Rose",
-          "Birch Wood",
-          "Suede Leather",
-          "Incense"
-        ],
-        "base": [
-          "Oud Wood",
-          "Benzoin Balm",
-          "Amberwood",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Woody"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -67002,15 +66683,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014012051",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -67020,19 +66700,18 @@
       "nameAr": "Lolita by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Lolita by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Lolita by Bujairami 100ml Extrait de Parfum\nLolita by Bujairami is a 100ml Extrait de Parfum for women and men with a fruity woody scent profile. Opens with Fig Leaf, Bergamot, and Mandarin, moves into Fig, Ylang-Ylang, and Salt, and settles into Muscovado Sugar, Liquorice, and Patchouli. It is suited to everyday wear, casual outings, and evenings.\nFragrance Notes:\nTop: Fig Leaf, Bergamot, Mandarin, Pink Pepper\nMiddle: Fig, Ylang-Ylang, Salt\nBase: Muscovado Sugar, Liquorice, Patchouli, Vetiver",
+      "descriptionEn": "Lolita by Bujairami 100ml Extrait blends Fig Leaf, Bergamot, and Mandarin into a fruity woody fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-2.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-3.jpg",
         "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-4.jpg",
-        "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/lolita-fruity-woody-100ml-extrait-2.jpg"
+        "https://www.shamperfume.com/cdn/large/lolita-fruity-woody-100ml-extrait-5.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4709.16,
-      "ourPrice": 7065,
+      "supplierPrice": 4742.1,
+      "ourPrice": 7115,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -67043,33 +66722,20 @@
       "supplierSku": "LOLITA-FRUITY-WOODY-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 360,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/lolita-fruity-woody-100ml/",
       "slug": "lolita-by-bujairami-100ml-extrait-de-parfum-1025",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Fig Leaf",
-          "Bergamot",
-          "Mandarin",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Fig",
-          "Ylang-Ylang",
-          "Salt"
-        ],
-        "base": [
-          "Muscovado Sugar",
-          "Liquorice",
-          "Patchouli",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Fruity Woody"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -67077,16 +66743,15 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Casual",
-        "Evening",
-        "Date Night"
+        "Daily",
+        "Evening"
       ],
       "barcode": "9362014011603",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -67096,18 +66761,17 @@
       "nameAr": "Ya Habibi by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Ya Habibi by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Ya Habibi by Bujairami 100ml Extrait de Parfum\nYa Habibi by Bujairami is a 100ml Extrait de Parfum for women and men with a woody amber oud scent profile. Opens with Mandarin and Cinnamon, moves into White Pepper and Incense, and settles into Labdanum, Oud Wood, and Ambergris. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Mandarin, Cinnamon\nMiddle: White Pepper, Incense\nBase: Labdanum, Oud Wood, Ambergris, Ambrette",
+      "descriptionEn": "Ya Habibi by Bujairami 100ml Extrait blends Mandarin, Cinnamon, White Pepper, and Incense into a woody amber oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/ya-habibi-by-bujairami-100ml-extrait-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/ya-habibi-by-bujairami-100ml-extrait-1.jpg",
         "https://www.shamperfume.com/cdn/large/ya-habibi-by-bujairami-100ml-extrait-2.jpg",
-        "https://www.shamperfume.com/cdn/large/ya-habibi-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/ya-habibi-by-bujairami-100ml-extrait-1.jpg"
+        "https://www.shamperfume.com/cdn/large/ya-habibi-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -67118,30 +66782,21 @@
       "supplierSku": "YA-HABIBI-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/ya-habibi-by-bujairami-100ml-extrait/",
       "slug": "ya-habibi-by-bujairami-100ml-extrait-de-parfum-1026",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Mandarin",
-          "Cinnamon"
-        ],
-        "heart": [
-          "White Pepper",
-          "Incense"
-        ],
-        "base": [
-          "Labdanum",
-          "Oud Wood",
-          "Ambergris",
-          "Ambrette"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Woody"
+        "Amber",
+        "Oriental",
+        "Woody"
       ],
       "seasonsSource": [
         "Fall",
@@ -67149,15 +66804,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014011597",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T21:58:23.718Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -72957,7 +72611,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3401.06,
       "ourPrice": 5105,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -73003,7 +72657,10 @@
       ],
       "importedAt": "2026-10-16T21:01:18.681Z",
       "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 1113,
@@ -73027,7 +72684,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3401.06,
       "ourPrice": 5105,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -73076,7 +72733,10 @@
       ],
       "importedAt": "2026-10-16T21:01:18.681Z",
       "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "غير متوفر عند المورد"
+      ]
     },
     {
       "id": 1114,
@@ -73100,7 +72760,7 @@
       "brand": "French Avenue",
       "supplierPrice": 3401.06,
       "ourPrice": 5105,
-      "stockStatus": "in_stock",
+      "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -73149,7 +72809,10 @@
       ],
       "importedAt": "2026-10-16T21:01:18.681Z",
       "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "غير متوفر عند المورد"
+      ]
     }
   ]
 }
