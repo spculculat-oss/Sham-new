@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-24T15:15:36.423Z",
+ "updatedAt": "2026-11-25T01:03:42.620Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 487,
-  "warn": 627,
+  "ok": 478,
+  "warn": 636,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-24T15:14:43.871Z",
+  "at": "2026-11-25T01:02:53.011Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,7 +21,7 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.1751,
+    "rate": 13.1725,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1063,
     "listingPages": 45,
@@ -37,7 +37,7 @@
     "gone": 0
    }
   ],
-  "rate": 13.1751,
+  "rate": 13.1725,
   "prices": {
    "count": 1063,
    "min": 750,
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 52578
+  "durationMs": 49641
  },
  "items": [
   {
@@ -5445,6 +5445,7 @@
    "name": "Rose P Berry & Rose 75ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/rose-p-berry-and-rose-75ml-edp-953.html"
@@ -5510,15 +5511,100 @@
    "page": "p/osma-floral-a-ginger-blossom-75ml-959.html"
   },
   {
+   "sku": "PAR-960",
+   "id": 960,
+   "name": "Qissa Delicious by Paris Corner – 100 ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/qissa-delicious-by-paris-corner-100-ml-for-women-960.html"
+  },
+  {
+   "sku": "FRE-961",
+   "id": 961,
+   "name": "Vulcan Feu by French Avenue 100 ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/vulcan-feu-by-french-avenue-100-ml-edp-961.html"
+  },
+  {
+   "sku": "PAR-962",
+   "id": 962,
+   "name": "Marshmallow Blush by Paris Corner for Her 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/marshmallow-blush-by-paris-corner-for-her-100ml-962.html"
+  },
+  {
+   "sku": "PAR-963",
+   "id": 963,
+   "name": "Saviour Elixir by Paris Corner EDP 100 ml",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/saviour-elixir-by-paris-corner-edp-100-ml-963.html"
+  },
+  {
    "sku": "FRE-964",
    "id": 964,
    "name": "Axis by French Avenue 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/axis-by-french-avenue-100ml-964.html"
+  },
+  {
+   "sku": "PAR-965",
+   "id": 965,
+   "name": "Khair Fusion by Paris Corner 100ml",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/khair-fusion-by-paris-corner-100ml-965.html"
+  },
+  {
+   "sku": "PAR-966",
+   "id": 966,
+   "name": "Super Crush Emir by Paris Corner 100 ml",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/super-crush-emir-by-paris-corner-100-ml-966.html"
+  },
+  {
+   "sku": "PAR-967",
+   "id": 967,
+   "name": "Satin Luxe by Paris Corner Pendora Scents 100 ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/satin-luxe-by-paris-corner-pendora-scents-100-ml-967.html"
+  },
+  {
+   "sku": "PAR-968",
+   "id": 968,
+   "name": "Miss Dona by Paris Corner 100ml Women",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/miss-dona-by-paris-corner-100ml-women-968.html"
   },
   {
    "sku": "OSM-969",
@@ -5526,9 +5612,21 @@
    "name": "Osma M Pineapple & Vanilla 150ml EDP",
    "status": "warn",
    "issues": [
-    "المورد لم ينشر نوتات العطر"
+    "المورد لم ينشر نوتات العطر",
+    "غير متوفر عند المورد"
    ],
    "page": "p/osma-m-pineapple-and-vanilla-150ml-edp-969.html"
+  },
+  {
+   "sku": "PAR-970",
+   "id": 970,
+   "name": "Dream Catcher by Paris Corner Pendora 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/dream-catcher-by-paris-corner-pendora-100ml-edp-970.html"
   },
   {
    "sku": "FRE-971",
@@ -5536,6 +5634,8 @@
    "name": "Aromatix Magnetiq by French Avenue 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/aromatix-magnetiq-by-french-avenue-100ml-971.html"
@@ -5546,6 +5646,8 @@
    "name": "Aromatix Teas Me by French Avenue 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/aromatix-teas-me-by-french-avenue-100ml-972.html"
@@ -5556,6 +5658,8 @@
    "name": "Imperial Ocean French Avenue 100ml for Men",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/imperial-ocean-french-avenue-100ml-for-men-973.html"
@@ -5566,6 +5670,8 @@
    "name": "Khair Pistachio by Paris Corner 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/khair-pistachio-by-paris-corner-100ml-edp-974.html"
@@ -5576,7 +5682,8 @@
    "name": "The Blue by Paris Corner 100ml EDP Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/the-blue-by-paris-corner-100ml-edp-men-975.html"
   },
@@ -5586,6 +5693,8 @@
    "name": "Lueur D Espoir Ambre by Emir Paris Corner 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/lueur-d-espoir-ambre-by-emir-paris-corner-100ml-976.html"
