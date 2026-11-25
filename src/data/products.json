@@ -63685,7 +63685,7 @@
       "nameAr": "Paudree F Roses & Musk 75ml EDP",
       "nameEn": "Paudree F Roses & Musk 75ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Paudree F – Roses & Musk / 75 ml Eau de Parfum\nPaudree F by Osma stands out in a world of mass-produced fragrances with its unique, human touch. Crafted to celebrate depth and elegance, it opens with luminous jasmine for brightness, unfolds into a romantic rose heart, and finishes on a soft musk base that lingers with subtle sophistication. This 75 ml Eau de Parfum balances florals with powdery warmth, making it versatile for women and men. A Clearly structured fragrance that feels timeless, elegant, and confidently unisex.",
+      "descriptionEn": "Paudree F 75 ml EDP – jasmine, rose & soft musk. A refined unisex fragrance by Osma, elegant.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/osma/paudree-f-perfume-roses-musk-75ml-box-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/osma/paudree-f-perfume-roses-musk-75ml-box-edp.jpg",
@@ -63699,9 +63699,9 @@
       ],
       "category": "مختلط",
       "brand": "Osma",
-      "supplierPrice": 2851.66,
-      "ourPrice": 4280,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 2871.61,
+      "ourPrice": 4310,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -63711,11 +63711,11 @@
       "supplierSku": "paudree-f-75ml",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 218,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/osma/paudree-f/",
       "slug": "paudree-f-roses-and-musk-75ml-edp-977",
       "sizeMl": 75,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
         "top": [],
         "heart": [],
@@ -63727,14 +63727,16 @@
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6287036282035",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "المورد لم ينشر نوتات العطر",
-        "غير متوفر عند المورد"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -63743,7 +63745,7 @@
       "nameAr": "Qissa Pink by Paris Corner 100ml for Women",
       "nameEn": "Qissa Pink by Paris Corner 100ml for Women",
       "descriptionAr": "",
-      "descriptionEn": "Qissa Pink by Paris Corner – 100 ml Eau de Parfum for Women\nFragrance Family: Fruity • Floral • Gourmand • Woody\nTop Notes: Apple, Coconut\nMiddle Notes: Violet, Jasmine, Rose, Heliotrope\nBase Notes: Vanilla, Sugar, Sandalwood, Cedarwood, Patchouli, Cashmeran",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/qissa-pink-paris-corner-perfume-wanita-floral-sweet-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/qissa-pink-paris-corner-perfume-wanita-floral-sweet-100ml-edp.jpg",
@@ -63757,8 +63759,8 @@
       ],
       "category": "نسائي",
       "brand": "Paris Corner",
-      "supplierPrice": 2341.5,
-      "ourPrice": 3515,
+      "supplierPrice": 1422.63,
+      "ourPrice": 2135,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -63768,38 +63770,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "qissah-pink-7420",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 179,
-      "supplierSalePrice": 108,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 108,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/qissah-pink/",
       "slug": "qissa-pink-by-paris-corner-100ml-for-women-978",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Apple",
-          "Coconut"
-        ],
-        "heart": [
-          "Violet",
-          "Jasmine",
-          "Rose",
-          "Heliotrope"
-        ],
-        "base": [
-          "Vanilla",
-          "Sugar",
-          "Sandalwood",
-          "Cedarwood",
-          "Patchouli",
-          "Cashmeran"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Fruity",
         "Floral",
-        "Gourmand",
-        "Woody"
+        "Gourmand"
       ],
       "seasonsSource": [
         "Spring",
@@ -63807,12 +63792,17 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6298463856485",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 979,
@@ -63820,7 +63810,7 @@
       "nameAr": "Sacred Smoke by French Avenue 100ml EDP Unisex",
       "nameEn": "Sacred Smoke by French Avenue 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Sacred Smoke by French Avenue – 100ml Eau de Parfum Unisex\nSacred Smoke by French Avenue is a 2026 unisex Eau de Parfum with a spicy, aromatic and amber character. For this listing, the scent profile follows cardamom, bergamot and pink pepper in the opening, frankincense, myrrh and juniper berries in the heart, and vanilla, cedarwood and patchouli in the dry down.\nFragrance Notes:\nTop: Cardamom, Bergamot, Pink Pepper\nMiddle: Frankincense, Myrrh, Juniper Berries\nBase: Vanilla, Cedarwood, Patchouli",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/sacred-smoke-by-french-avenue-100ml-edp-unisex-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/sacred-smoke-by-french-avenue-100ml-edp-unisex-1.jpg",
@@ -63834,8 +63824,8 @@
       ],
       "category": "مختلط",
       "brand": "French Avenue",
-      "supplierPrice": 3401.06,
-      "ourPrice": 5105,
+      "supplierPrice": 3424.85,
+      "ourPrice": 5140,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -63846,33 +63836,22 @@
       "supplierSku": "FRENCH-AVENUE-SACRED-SMOKE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 260,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/french-avenue/sacred-smoke-french-avenue/",
       "slug": "sacred-smoke-by-french-avenue-100ml-edp-unisex-979",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Cardamom",
-          "Bergamot",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Frankincense",
-          "Myrrh",
-          "Juniper Berries"
-        ],
-        "base": [
-          "Vanilla",
-          "Cedarwood",
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Spicy",
         "Aromatic",
-        "Amber"
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -63881,13 +63860,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 980,
@@ -63895,7 +63876,7 @@
       "nameAr": "Fayora Paris Corner EDP 100ml Women",
       "nameEn": "Fayora Paris Corner EDP 100ml Women",
       "descriptionAr": "",
-      "descriptionEn": "Fayora by Paris Corner – Eau de Parfum 100ml\nFayora by Paris Corner is an elegant women’s fragrance that blends floral sweetness with sensual warmth. The scent opens with refreshing pear and bergamot, followed by a romantic heart of jasmine, rose, and vanilla orchid. The base reveals smooth amber, musk, and tonka bean, creating a and sophisticated aroma. Perfect for women who love luxury, elegance, and timeless beauty.\nFragrance Notes:\nTop: Pear, Bergamot\nHeart: Jasmine, Rose, Vanilla Orchid\nBase: Amber, Musk, Tonka Bean\nHaruman Wanita Eksklusif\nFayora oleh Paris Corner ialah minyak wangi wanita yang menggabungkan aroma bunga yang manis dengan kehangatan sensual. Ia bermula dengan pear dan bergamot, diikuti oleh jasmine, rose dan vanilla orchid. Akhirnya disempurnakan dengan amber, musk dan tonka bean yang tahan lama.",
+      "descriptionEn": "Buy Fayora Paris Corner 100ml EDP – Elegant women’s perfume with jasmine, rose & vanilla floral scent. base reveals smooth amber, musk.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-perfume-wanita-floral-sweet-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-perfume-wanita-floral-sweet-100ml-edp.jpg",
@@ -63903,14 +63884,13 @@
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-perfume-sweet-musky-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-women-fragrance-fruity-musky-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-wangian-wanita-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-wangian-wanita-bottle-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/paris-corner/fayora-paris-corner-perfume-wanita-floral-sweet-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/fayora-paris-corner-wangian-wanita-bottle-100ml-edp.jpg"
       ],
       "category": "نسائي",
       "brand": "Paris Corner",
-      "supplierPrice": 2747.01,
-      "ourPrice": 4125,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 2041.74,
+      "ourPrice": 3065,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -63919,41 +63899,36 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Fayora-100ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 210,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 155,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/fayora-paris-corner/",
       "slug": "fayora-paris-corner-edp-100ml-women-980",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Pear",
-          "Bergamot"
-        ],
-        "heart": [
-          "Jasmine",
-          "Rose",
-          "Vanilla Orchid"
-        ],
-        "base": [
-          "Amber",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event"
+      ],
       "barcode": "6299933581876",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -63962,7 +63937,7 @@
       "nameAr": "Beyond Pour Homme by Paris Corner 100ml EDP for Men",
       "nameEn": "Beyond Pour Homme by Paris Corner 100ml EDP for Men",
       "descriptionAr": "",
-      "descriptionEn": "Beyond Pour Homme by Paris Corner – 100 ml Eau de Parfum for Men\nFragrance Family: Woody • Aromatic • Fruity\nTop Notes: Bergamot, Pineapple, Blackcurrant\nMiddle Notes: Birch, Patchouli, Jasmine\nBase Notes: Oakmoss, Ambergris, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/perfume-lelaki-beyond-original-paris-corner-malaysia-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/perfume-lelaki-beyond-original-paris-corner-malaysia-100ml-edp.jpg",
@@ -63971,13 +63946,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/haruman-lelaki-beyond-paris-corner-malaysia-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/beyond-homme-reflection-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/paris-corner-beyond-pour-homme-woody-aromatic-perfume-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/perfume-lelaki-beyond-haruman-fresh-dan-maskulin-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/paris-corner/perfume-lelaki-beyond-original-paris-corner-malaysia-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/perfume-lelaki-beyond-haruman-fresh-dan-maskulin-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Paris Corner",
-      "supplierPrice": 1556.64,
-      "ourPrice": 2335,
+      "supplierPrice": 1172.35,
+      "ourPrice": 1760,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -63987,34 +63961,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Beyond-Pour-Homme-00001A",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 119,
-      "supplierSalePrice": 89,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 89,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/beyond-pour/",
       "slug": "beyond-pour-homme-by-paris-corner-100ml-edp-for-men-981",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Pineapple",
-          "Blackcurrant"
-        ],
-        "heart": [
-          "Birch",
-          "Patchouli",
-          "Jasmine"
-        ],
-        "base": [
-          "Oakmoss",
-          "Ambergris",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody",
+        "Fruity",
         "Aromatic",
-        "Fruity"
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -64022,12 +63983,17 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6423080719084",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 982,
@@ -64035,7 +64001,7 @@
       "nameAr": "Rifaaqat Adorn by Paris Corner 85ml EDP",
       "nameEn": "Rifaaqat Adorn by Paris Corner 85ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Rifaaqat Adorn by Paris Corner – 85 ml Eau de Parfum Unisex\nFragrance Notes:\nTop: Bergamot, Lemon\nHeart: Patchouli, Cedarwood, Oakmoss\nBase: Amber, Musk, Sandalwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/rifaaqat-adorn-paris-corner-perfume-wanita-floral-sweet-85ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/rifaaqat-adorn-paris-corner-perfume-wanita-floral-sweet-85ml-edp.jpg",
@@ -64049,8 +64015,8 @@
       ],
       "category": "مختلط",
       "brand": "Paris Corner",
-      "supplierPrice": 2419.99,
-      "ourPrice": 3630,
+      "supplierPrice": 1448.98,
+      "ourPrice": 2175,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64060,30 +64026,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "rifaaqat-adorn-85ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 185,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/rifaaqat-adorn/",
       "slug": "rifaaqat-adorn-by-paris-corner-85ml-edp-982",
       "sizeMl": 85,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Lemon"
-        ],
-        "heart": [
-          "Patchouli",
-          "Cedarwood",
-          "Oakmoss"
-        ],
-        "base": [
-          "Amber",
-          "Musk",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -64091,12 +64049,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291112131445",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 983,
@@ -64104,7 +64067,7 @@
       "nameAr": "Night of the Man by Pendora Scents Paris 100ml",
       "nameEn": "Night of the Man by Pendora Scents Paris 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Night of the Man by Pendora Scents – 100 ml Eau de Parfum for Men\nFragrance Family: Spicy • Woody • Oriental\nTop Notes: Grapefruit, Cardamom\nHeart Notes: Sage, Leather, Lavender\nBase Notes: Patchouli, Sandalwood, Goldenrod, Tonka Bean",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/night-man-pendora-perfume-lelaki-warm-spicy-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/night-man-pendora-perfume-lelaki-warm-spicy-100ml-edp.jpg",
@@ -64113,13 +64076,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/nightman-klcc-marblehall-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/nightman-oneutama-garden-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/nightman-setiacity-night-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/nightman-avenuek-atrium-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/paris-corner/night-man-pendora-perfume-lelaki-warm-spicy-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/nightman-avenuek-atrium-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Paris Corner",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 1580.7,
+      "ourPrice": 2375,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64129,34 +64091,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Night-of-the-61",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 169,
-      "supplierSalePrice": 120,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 120,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/night-of-the-man/",
       "slug": "night-of-the-man-by-pendora-scents-paris-100ml-983",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "grapefruit",
-          "cardamom"
-        ],
-        "heart": [
-          "sage",
-          "leather",
-          "lavender"
-        ],
-        "base": [
-          "patchouli",
-          "sandalwood",
-          "goldenrod",
-          "tonka bean"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Spicy",
         "Woody",
-        "Oriental"
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -64164,11 +64114,18 @@
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6423080724989",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 984,
@@ -64176,7 +64133,7 @@
       "nameAr": "Just Bergamot Emir Factory Edition 100ml EDP",
       "nameEn": "Just Bergamot Emir Factory Edition 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Just Bergamot Emir Factory Edition by Paris Corner – 100ml Eau de Parfum for Women and Men.\nJust Bergamot Emir Factory Edition A fresh woody aromatic fragrance built around bright citrus, clean vetiver and soft musky woods. It opens with bergamot, vetiver and grapefruit, creating a crisp blend of zesty citrus, green freshness and gentle earthy depth. The heart combines nutmeg, orange blossom, aspic, petitgrain and amber for an aromatic, floral and lightly spicy character. Musk, cedar and vanilla form the base, adding clean softness, dry woods and a smooth hint of sweetness. Suitable for women and men who enjoy uplifting citrus fragrances for daily wear and warm weather.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-1.jpg",
@@ -64184,13 +64141,12 @@
         "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-3.jpg",
         "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-4.jpg",
         "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-6.jpg",
-        "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/just-bergamot-emir-factory-edition-100ml-edp-1.jpg"
+        "https://www.shamperfume.com/cdn/large/just-bergamot-emir-factory-edition-100ml-edp-5.jpg"
       ],
       "category": "مختلط",
       "brand": "Paris Corner",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 2226.15,
+      "ourPrice": 3340,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64201,19 +64157,20 @@
       "supplierSku": "JUST-BERGAMOT-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 169,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/just-bergamot-emir-factory-edition-100ml-edp/",
       "slug": "just-bergamot-emir-factory-edition-100ml-edp-984",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -64221,14 +64178,14 @@
       ],
       "occasionsSource": [
         "Daily",
-        "Office",
-        "Casual"
+        "Office"
       ],
       "barcode": "6297856878516",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
@@ -64239,7 +64196,7 @@
       "nameAr": "Eshal Vanilla by Paris Corner EDP 100ml",
       "nameEn": "Eshal Vanilla by Paris Corner EDP 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Eshal Vanilla – Eau de Parfum 100ml by Paris Corner\nEshal Vanilla by Paris Corner is a charming feminine fragrance that blends sweetness, elegance, and warmth. The perfume opens with creamy vanilla and soft floral notes, leading into a heart of amber and white musk. The result is a smooth scent that feels both comforting and sophisticated — perfect for daily wear or romantic evenings.\nHaruman Wanita Mewah Dari Paris Corner\nEshal Vanilla ialah minyak wangi wanita yang lembut dan elegan. Ia bermula dengan aroma vanilla yang manis bersama bunga halus, diikuti oleh amber dan musk putih yang memberi keharuman tahan lama. Haruman ini sesuai untuk wanita moden yang suka gaya anggun dan memikat, dengan sentuhan mewah dari Dubai.\nFragrance Notes:\nTop: Vanilla, Floral Notes\nHeart: Amber, White Musk\nBase: Sweet Woods, Musk",
+      "descriptionEn": "Buy Eshal Vanilla 100ml by Paris Corner – Elegant women’s perfume with vanilla, amber & musk Dubai scent. perfect for daily wear or romantic.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/eshal-vanilla-paris-corner-perfume-vanilla-sweet-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/paris-corner/eshal-vanilla-paris-corner-perfume-vanilla-sweet-100ml-edp.jpg",
@@ -64253,8 +64210,8 @@
       ],
       "category": "نسائي",
       "brand": "Paris Corner",
-      "supplierPrice": 2877.82,
-      "ourPrice": 4320,
+      "supplierPrice": 1962.7,
+      "ourPrice": 2945,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64264,39 +64221,39 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Eshal-Vanilla-100",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 220,
-      "supplierSalePrice": 149,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 149,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/paris-corner/eshal-vanilla/",
       "slug": "eshal-vanilla-by-paris-corner-edp-100ml-985",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Vanilla",
-          "Floral Notes"
-        ],
-        "heart": [
-          "Amber",
-          "White Musk"
-        ],
-        "base": [
-          "Sweet Woods",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Gourmand"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6290474886192",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 986,
@@ -64304,18 +64261,17 @@
       "nameAr": "Oud Money by Bujairami 100ml Extrait de Parfum",
       "nameEn": "Oud Money by Bujairami 100ml Extrait de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Oud Money by Bujairami 100ml Extrait de Parfum\nOud Money by Bujairami is a 100ml Extrait de Parfum for women and men with a woody oud scent profile. Its documented notes include Agarwood (Oud), Brazilian Rosewood, Cardamom, Sandalwood, and Vanilla. It is suited to work, evenings, and special occasions.\nFragrance Notes: Agarwood (Oud), Brazilian Rosewood, Cardamom, Sandalwood, Vanilla, Vetiver, Tonka Bean, Amber",
+      "descriptionEn": "Oud Money by Bujairami 100ml Extrait blends Agarwood (Oud), Brazilian Rosewood, Cardamom, and Sandalwood into a woody oud fragrance.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/oud-money-by-bujairami-100ml-extrait-2.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/oud-money-by-bujairami-100ml-extrait-2.jpg",
         "https://www.shamperfume.com/cdn/large/oud-money-by-bujairami-100ml-extrait-1.jpg",
-        "https://www.shamperfume.com/cdn/large/oud-money-by-bujairami-100ml-extrait-3.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/oud-money-by-bujairami-100ml-extrait-2.jpg"
+        "https://www.shamperfume.com/cdn/large/oud-money-by-bujairami-100ml-extrait-3.jpg"
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4578.35,
-      "ourPrice": 6870,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64326,19 +64282,20 @@
       "supplierSku": "OUD-MONEY-BUJAIRAMI",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 350,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/oud-money-by-bujairami-100ml-extrait/",
       "slug": "oud-money-by-bujairami-100ml-extrait-de-parfum-986",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Spicy"
+        "Fresh",
+        "Citrus"
       ],
       "seasonsSource": [
         "Fall",
@@ -64347,12 +64304,11 @@
       "occasionsSource": [
         "Office",
         "Evening",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "9362014011504",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "المورد لم ينشر نوتات العطر",
@@ -64365,7 +64321,7 @@
       "nameAr": "Sougha by Asdaaf 100ml EDP Women",
       "nameEn": "Sougha by Asdaaf 100ml EDP Women",
       "descriptionAr": "",
-      "descriptionEn": "Sougha by Asdaaf – 100ml Eau de Parfum for Women\nSougha by Asdaaf is a rich floral-woody fragrance for women with fruity, nutty, spicy and creamy facets. It opens with rose water, pear, hazelnut, bitter almond, frankincense and pink pepper. The heart blends rose, osmanthus, saffron and jasmine sambac for a warm floral character. In the dry down, sandalwood, akigalawood, vanilla, ambrette, ambergris, labdanum, georgywood and cypriol create a deep, creamy and woody finish.\nFragrance Notes:\nTop: Rose Water, Pear, Hazelnut, Bitter Almond, Frankincense, Pink Pepper\nMiddle: Rose, Osmanthus, Saffron, Jasmine Sambac\nBase: Sandalwood, Akigalawood, Vanilla, Ambrette, Ambergris, Labdanum, Georgywood, Cypriol",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/sougha-by-asdaaf-100ml-edp-women-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/sougha-by-asdaaf-100ml-edp-women-1.jpg",
@@ -64379,8 +64335,8 @@
       ],
       "category": "نسائي",
       "brand": "Asdaaf",
-      "supplierPrice": 2419.99,
-      "ourPrice": 3630,
+      "supplierPrice": 2436.91,
+      "ourPrice": 3660,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64391,40 +64347,20 @@
       "supplierSku": "ASDAAF-SOUGHA-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 185,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/asdaaf/sougha-by-asdaaf-100ml/",
       "slug": "sougha-by-asdaaf-100ml-edp-women-987",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Rose Water",
-          "Pear",
-          "Hazelnut",
-          "Bitter Almond",
-          "Frankincense",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Rose",
-          "Osmanthus",
-          "Saffron",
-          "Jasmine Sambac"
-        ],
-        "base": [
-          "Sandalwood",
-          "Akigalawood",
-          "Vanilla",
-          "Ambrette",
-          "Ambergris",
-          "Labdanum",
-          "Georgywood",
-          "Cypriol"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Floral Woody"
+        "Floral",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -64433,15 +64369,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6290362349747",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -64451,7 +64387,7 @@
       "nameAr": "Dead Serious Bujairami 100ml Extrait Perfume Unisex",
       "nameEn": "Dead Serious Bujairami 100ml Extrait Perfume Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Dead Serious by Bujairami 100ml Extrait Perfume\nDead Serious by Bujairami is a 100ml Extrait unisex perfume with a soft woody-floral, musky character and an Oriental fragrance profile. It opens with sapodilla and ambrette, creating a smooth fruity-musky first impression. The heart combines magnolia, violet and sandalwood for a creamy, floral and powdery feel. In the dry down, musk, amber and cedarwood give the fragrance a clean, warm and softly woody finish.\nFragrance Notes\nTop notes: Sapodilla, Ambrette\nMiddle notes: Magnolia, Violet, Sandalwood\nBase notes: Musk, Amber, Cedarwood\nProduct Details\nBrand: Bujairami Fragrance: Dead Serious Perfumer: Adam Bujairami Size: 100mlConcentration: Extrait Gender: Unisex Fragrance family: Oriental Longevity: Long-lasting Launch year: 2026",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/dead-serious-by-bujairami-100ml-extrait-unisex-3.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/dead-serious-by-bujairami-100ml-extrait-unisex-3.jpg",
@@ -64465,8 +64401,8 @@
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 4447.54,
-      "ourPrice": 6675,
+      "supplierPrice": 4610.38,
+      "ourPrice": 6920,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64476,26 +64412,20 @@
       "supplierName": "Sham perfume",
       "supplierSku": "BUJAIRAMI-DEAD-SERIOUS-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 340,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 350,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/dead-serious-by-bujairami-100ml/",
       "slug": "dead-serious-bujairami-100ml-extrait-perfume-unisex-988",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Sapodilla",
-          "Ambrette"
-        ],
-        "heart": [
-          "Magnolia",
-          "Violet",
-          "Sandalwood"
-        ],
+        "top": [],
+        "heart": [],
         "base": []
       },
       "families": [
+        "Amber",
         "Oriental"
       ],
       "seasonsSource": [
@@ -64506,13 +64436,14 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Evening",
-        "Date Night"
+        "Evening"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -64522,7 +64453,7 @@
       "nameAr": "Tempted Bujairami 100ml Extrait Perfume Unisex",
       "nameEn": "Tempted Bujairami 100ml Extrait Perfume Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Tempted by Bujairami 100ml Extrait Perfume\nTempted by Bujairami is a 100ml Extrait unisex perfume with a floral-fresh, fruity and spicy opening over a warm woody oriental base. Spicy ginger, pink pepper and dark berries create a lively first impression, followed by fresh rose and rich jasmine in the heart. As it settles, warm woods, musk and amber give the fragrance a smooth, warm and deeper dry down.\nFragrance Notes\nTop notes: Spicy Ginger, Pink Pepper, Dark Berries\nMiddle notes: Fresh Rose, Rich Jasmine\nBase notes: Warm Woods, Musk, Amber\nProduct Details\nBrand: Bujairami Fragrance: Tempted Size: 100mlConcentration: Extrait Gender: Unisex Fragrance family: Woody Oriental Longevity: Long-lasting",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/tempted-bujairami-100ml-extrait-perfume-unisex-7.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/tempted-bujairami-100ml-extrait-perfume-unisex-7.jpg",
@@ -64536,8 +64467,8 @@
       ],
       "category": "مختلط",
       "brand": "Bujairami",
-      "supplierPrice": 3793.49,
-      "ourPrice": 5695,
+      "supplierPrice": 3820.02,
+      "ourPrice": 5735,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64548,26 +64479,21 @@
       "supplierSku": "BUJAIRAMI-TEMPTED-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 290,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/bujairami/tempted-bujairami/",
       "slug": "tempted-bujairami-100ml-extrait-perfume-unisex-989",
       "sizeMl": 100,
-      "concentration": "Extrait de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "Extrait",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Spicy Ginger",
-          "Pink Pepper",
-          "Dark Berries"
-        ],
-        "heart": [
-          "Fresh Rose",
-          "Rich Jasmine"
-        ],
+        "top": [],
+        "heart": [],
         "base": []
       },
       "families": [
-        "Woody"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -64576,13 +64502,15 @@
       ],
       "occasionsSource": [
         "Daily",
-        "Evening",
-        "Date Night",
-        "Dinner"
+        "Evening"
       ],
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 990,
@@ -64590,7 +64518,7 @@
       "nameAr": "Corium by Rayhaan 100ml EDP",
       "nameEn": "Corium by Rayhaan 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Corium by Rayhaan 100ml Eau de Parfum\nCorium by Rayhaan is a 100ml Eau de Parfum for men with a rich leather, oud and woody character. It opens with chestnut, spices and elemi, moves into sage and lavendin, then settles into vanilla, oud accord, guaiac wood and leather. The profile is warm, deep and confident, making it well suited to evenings, special occasions and cooler weather.\nFragrance Notes:Top: Chesnut, Spices, ElemiMiddle: Sage, LavendinBase: Vanilla, Oud Accord, Guaic Wood, Leather",
+      "descriptionEn": "Corium by Rayhaan 100ml EDP blends chestnut, spices and elemi with sage, lavendin, vanilla, oud accord, guaiac wood and leather.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaanleathercollection100mledpcoriumdarkleathercordova3.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaanleathercollection100mledpcoriumdarkleathercordova3.jpg",
@@ -64604,8 +64532,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2223.77,
-      "ourPrice": 3340,
+      "supplierPrice": 1541.18,
+      "ourPrice": 2315,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64615,23 +64543,17 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Corium-Ray-4697",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 170,
-      "supplierSalePrice": 117,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 117,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-leather/",
       "slug": "corium-by-rayhaan-100ml-edp-990",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
-        "base": [
-          "Vanilla",
-          "Oud Accord",
-          "Guaic Wood",
-          "Leather"
-        ]
+        "base": []
       },
       "families": [
         "Leather"
@@ -64643,13 +64565,15 @@
       "occasionsSource": [
         "Office",
         "Evening",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6298044138603",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 991,
@@ -64657,7 +64581,7 @@
       "nameAr": "Tiger Cal Cologne by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Tiger Cal Cologne by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Tiger Cal Cologne by Rayhaan 100ml Eau de Parfum for Men\nTiger Cal Cologne by Rayhaan is a 100ml Eau de Parfum for men with a warm spicy amber scent profile. It opens with Nutmeg, Clove, and Lemon, moves into Rose, Davana, Milk, and Lactonic Notes, and settles into Labdanum, Patchouli, Frankincense, and Amber. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Nutmeg, Clove, Lemon\nMiddle: Rose, Davana, Milk, Lactonic Notes\nBase: Labdanum, Patchouli, Frankincense, Amber",
+      "descriptionEn": "Tiger Cal Cologne by Rayhaan 100ml EDP blends Nutmeg, Clove, and Lemon into a warm spicy amber fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-perfume-lelaki-fresh-sporty-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-perfume-lelaki-fresh-sporty-100ml-edp.jpg",
@@ -64665,13 +64589,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-perfume-sporty-clean-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-men-fragrance-citrus-fresh-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-box-bottle-sporty-clean-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-minyak-wangi-lelaki-citrus-woody-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/rayhaan/tiger-cal-cologne-rayhaan-perfume-lelaki-fresh-sporty-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/tiger-cal-cologne-rayhaan-minyak-wangi-lelaki-citrus-woody-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 2002.22,
+      "ourPrice": 3005,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64681,34 +64604,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Rayhaan-Ti-463",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 250,
-      "supplierSalePrice": 152,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 152,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/tiger-cal/",
       "slug": "tiger-cal-cologne-by-rayhaan-100ml-eau-de-parfum-for-men-991",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Nutmeg",
-          "Clove",
-          "Lemon"
-        ],
-        "heart": [
-          "Rose",
-          "Davana",
-          "Milk",
-          "Lactonic Notes"
-        ],
-        "base": [
-          "Labdanum",
-          "Patchouli",
-          "Frankincense",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Amber",
+        "Oriental",
+        "Spicy"
       ],
       "seasonsSource": [
         "Fall",
@@ -64716,14 +64626,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571040",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 992,
@@ -64731,7 +64642,7 @@
       "nameAr": "Crimson by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Crimson by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Crimson by Rayhaan 100ml Eau de Parfum for Men\nCrimson by Rayhaan is a 100ml Eau de Parfum for men with a warm spicy vanilla scent profile. It opens with Cinnamon, Cardamom, and Pink Pepper, moves into Patchouli and Heliotropin, and settles into Benzoin, Vanilla, and Tonka Bean. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Cinnamon, Cardamom, Pink Pepper\nMiddle: Patchouli, Heliotropin\nBase: Benzoin, Vanilla, Tonka Bean",
+      "descriptionEn": "Crimson by Rayhaan 100ml EDP blends Cinnamon, Cardamom, and Pink Pepper into a warm spicy vanilla fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-crimson-100ml-edp-men-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-crimson-100ml-edp-men-malaysia.jpg",
@@ -64745,8 +64656,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 3662.68,
-      "ourPrice": 5495,
+      "supplierPrice": 3688.3,
+      "ourPrice": 5535,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64757,30 +64668,22 @@
       "supplierSku": "Rayhaan-Red-29",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 280,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-crimson/",
       "slug": "crimson-by-rayhaan-100ml-eau-de-parfum-for-men-992",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Cinnamon",
-          "Cardamom",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Patchouli",
-          "Heliotropin"
-        ],
-        "base": [
-          "Benzoin",
-          "Vanilla",
-          "Tonka Bean"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Amber",
+        "Oriental",
+        "Spicy",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
@@ -64788,14 +64691,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571057",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 993,
@@ -64803,7 +64707,7 @@
       "nameAr": "Pacific Aura by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Pacific Aura by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Pacific Aura by Rayhaan 100ml Eau de Parfum for Men\nPacific Aura by Rayhaan is a 100ml Eau de Parfum for men with a fresh citrus aromatic scent profile. It opens with Citron, Mint, Orange, Lemon, Black Currant, and Coriander, moves into Apricot, Basil, Carrot Seeds, and May Rose, and settles into Fig, Dates, and Ambrette. It is suited to everyday wear, casual outings, and travel.\nFragrance Notes:Top: Citron, Mint, Orange, Lemon, Black Currant, CorianderMiddle: Apricot, Basil, Carrot Seeds, May RoseBase: Fig, Dates, Ambrette",
+      "descriptionEn": "Pacific Aura by Rayhaan 100ml EDP blends Citron, Mint, and Orange into a fresh citrus aromatic fragrance suited to everyday wear and casual outings.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-pacific-aura-perfume-lelaki-fresh-aquatic-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-pacific-aura-perfume-lelaki-fresh-aquatic-100ml-edp.jpg",
@@ -64817,8 +64721,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 3531.87,
-      "ourPrice": 5300,
+      "supplierPrice": 2173.46,
+      "ourPrice": 3265,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64828,38 +64732,36 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Pacific-Aura-100ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 270,
-      "supplierSalePrice": 165,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 165,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-pacific-aura/",
       "slug": "pacific-aura-by-rayhaan-100ml-eau-de-parfum-for-men-993",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Moderate",
+      "concentration": "EDP",
+      "longevity": "3–5 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
-        "base": [
-          "Fig",
-          "Dates",
-          "Ambrette"
-        ]
+        "base": []
       },
       "families": [
-        "Citrus Aromatic"
+        "Citrus",
+        "Aromatic"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Casual"
+        "Daily"
       ],
       "barcode": "6297001571170",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 994,
@@ -64867,7 +64769,7 @@
       "nameAr": "Wood Noir by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Wood Noir by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Wood Noir by Rayhaan 100ml Eau de Parfum for Men\nWood Noir by Rayhaan is a 100ml Eau de Parfum for men with a woody spicy scent profile. It opens with Rosewood, Cardamom, and Chinese Pepper, moves into Oud, Sandalwood, and Vetiver, and settles into Tonka Bean, Vanilla, and Amber. It is suited to work, evenings, and special occasions.\nFragrance Notes:\nTop: Rosewood, Cardamom, Chinese Pepper\nMiddle: Oud, Sandalwood, Vetiver\nBase: Tonka Bean, Vanilla, Amber",
+      "descriptionEn": "Wood Noir by Rayhaan 100ml EDP blends Rosewood, Cardamom, and Chinese Pepper into a woody spicy fragrance suited to work and evenings.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/rayhaan-woody-noir-eau-de-parfum-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/rayhaan-woody-noir-eau-de-parfum-100ml-1.jpg",
@@ -64881,8 +64783,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2354.58,
-      "ourPrice": 3535,
+      "supplierPrice": 2371.05,
+      "ourPrice": 3560,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64893,31 +64795,20 @@
       "supplierSku": "RAYHAAN-WOODY-NOIR-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 180,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-woody-noir-edp-100ml/",
       "slug": "wood-noir-by-rayhaan-100ml-eau-de-parfum-for-men-994",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Rosewood",
-          "Cardamom",
-          "Chinese Pepper"
-        ],
-        "heart": [
-          "Oud",
-          "Sandalwood",
-          "Vetiver"
-        ],
-        "base": [
-          "Tonka Bean",
-          "Vanilla",
-          "Amber"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Spicy"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Fall",
@@ -64926,14 +64817,14 @@
       "occasionsSource": [
         "Office",
         "Evening",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6298044138573",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -64943,7 +64834,7 @@
       "nameAr": "Wolf by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Wolf by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Wolf by Rayhaan 100ml Eau de Parfum for Men\nWolf by Rayhaan is a 100ml Eau de Parfum for men with a warm sweet amber gourmand scent profile. It opens with Cardamom, moves into Toffee, and settles into Amberwood. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Cardamom\nMiddle: Toffee\nBase: Amberwood",
+      "descriptionEn": "Wolf by Rayhaan 100ml EDP blends Cardamom and Toffee into a warm sweet amber gourmand fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/wolf-by-rayhaan-100ml-edp-for-men-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/wolf-by-rayhaan-100ml-edp-for-men-1.jpg",
@@ -64957,8 +64848,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2485.39,
-      "ourPrice": 3730,
+      "supplierPrice": 2502.78,
+      "ourPrice": 3755,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -64969,25 +64860,20 @@
       "supplierSku": "RAYHAAN-WOLF-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 190,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/wolf-by-rayhaan/",
       "slug": "wolf-by-rayhaan-100ml-eau-de-parfum-for-men-995",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Cardamom"
-        ],
-        "heart": [
-          "Toffee"
-        ],
-        "base": [
-          "Amberwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Gourmand"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -64995,15 +64881,14 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571378",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65013,7 +64898,7 @@
       "nameAr": "Adonis Icarus by Rayhaan 100ml Eau de Parfum",
       "nameEn": "Adonis Icarus by Rayhaan 100ml Eau de Parfum",
       "descriptionAr": "",
-      "descriptionEn": "Adonis Icarus by Rayhaan 100ml Eau de Parfum\nAdonis Icarus by Rayhaan is a 100ml Eau de Parfum for women and men with a woody aromatic scent profile. It opens with Citrus and Aromatic Notes, moves into Floral Notes and Spices, and settles into Amber, Woody Notes, and Musk. It is suited to everyday wear, work, and casual outings.\nFragrance Notes:\nTop: Citrus, Aromatic Notes\nMiddle: Floral Notes, Spices\nBase: Amber, Woody Notes, Musk",
+      "descriptionEn": "Adonis Icarus by Rayhaan 100ml EDP blends Citrus, Aromatic Notes, and Floral Notes into a woody aromatic fragrance suited to everyday wear and work.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/adonis-icarus-rayhaan-perfume-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/adonis-icarus-rayhaan-perfume-100ml-1.jpg",
@@ -65027,8 +64912,8 @@
       ],
       "category": "مختلط",
       "brand": "Rayhaan",
-      "supplierPrice": 2472.31,
-      "ourPrice": 3710,
+      "supplierPrice": 2489.6,
+      "ourPrice": 3735,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65039,28 +64924,20 @@
       "supplierSku": "RAYHAAN-ADONIS-ICARUS-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 189,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/adonis-icarus-100ml/",
       "slug": "adonis-icarus-by-rayhaan-100ml-eau-de-parfum-996",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Citrus",
-          "Aromatic Notes"
-        ],
-        "heart": [
-          "Floral Notes",
-          "Spices"
-        ],
-        "base": [
-          "Amber",
-          "Woody Notes",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -65068,16 +64945,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Daily Wear",
+        "Daily",
         "Office",
-        "Casual",
         "Evening"
       ],
       "barcode": "6297001571194",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65087,7 +64964,7 @@
       "nameAr": "Imperia by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Imperia by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Imperia by Rayhaan 100ml Eau de Parfum for Men\nImperia by Rayhaan is a 100ml Eau de Parfum for men with a fresh woody chypre scent profile. It opens with Bergamot Italy, Apple, Mint, and Elemi Philippines, moves into Jasmine, Rose, Patchouli Indonesia, and Sandalwood, and settles into Oakmoss, Musk, Amber, and Cedar Virginia. It is suited to everyday wear, work, and casual outings.\nFragrance Notes:\nTop: Bergamot Italy, Apple, Mint, Elemi Philippines\nMiddle: Jasmine, Rose, Patchouli Indonesia, Sandalwood\nBase: Oakmoss, Musk, Amber, Cedar Virginia",
+      "descriptionEn": "Imperia by Rayhaan 100ml EDP blends Bergamot Italy, Apple, and Mint into a fresh woody chypre fragrance suited to everyday wear and work.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-imperia-perfume-malaysia6-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-imperia-perfume-malaysia6-100ml-edp.jpg",
@@ -65101,8 +64978,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2223.77,
-      "ourPrice": 3340,
+      "supplierPrice": 2239.32,
+      "ourPrice": 3360,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65113,33 +64990,20 @@
       "supplierSku": "Rayhaan-Im-5754",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 170,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-imperia/",
       "slug": "imperia-by-rayhaan-100ml-eau-de-parfum-for-men-997",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot Italy",
-          "Apple",
-          "Mint",
-          "Elemi Philippines"
-        ],
-        "heart": [
-          "Jasmine",
-          "Rose",
-          "Patchouli Indonesia",
-          "Sandalwood"
-        ],
-        "base": [
-          "Oakmoss",
-          "Musk",
-          "Amber",
-          "Cedar Virginia"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Chypre"
+        "Citrus",
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -65147,16 +65011,16 @@
         "Fall"
       ],
       "occasionsSource": [
-        "Daily Wear",
+        "Daily",
         "Office",
-        "Casual",
         "Special Event"
       ],
       "barcode": "6298044138719",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65166,7 +65030,7 @@
       "nameAr": "Pacific by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Pacific by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Pacific by Rayhaan 100ml Eau de Parfum for Men\nPacific by Rayhaan is a 100ml Eau de Parfum for men with a fresh citrus woody scent profile. It opens with Bergamot, Lemon, Tangerine, and Cardamom, moves into Lavender, Laurel, and Cypress, and settles into Woody, Marine, Amber, and Musky. It is suited to everyday wear, work, and casual outings.\nFragrance Notes:\nTop: Bergamot, Lemon, Tangerine, Cardamom\nMiddle: Lavender, Laurel, Cypress\nBase: Woody, Marine, Amber, Musky",
+      "descriptionEn": "Pacific by Rayhaan 100ml EDP blends Bergamot, Lemon, and Tangerine into a fresh citrus woody fragrance suited to everyday wear and work.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-perfume-aqua-collection-malaysia5-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-perfume-aqua-collection-malaysia5-100ml-edp.jpg",
@@ -65180,8 +65044,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2158.36,
-      "ourPrice": 3240,
+      "supplierPrice": 2173.46,
+      "ourPrice": 3265,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65192,47 +65056,35 @@
       "supplierSku": "Pacific-1200",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 165,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-pacific/",
       "slug": "pacific-by-rayhaan-100ml-eau-de-parfum-for-men-998",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Lemon",
-          "Tangerine",
-          "Cardamom"
-        ],
-        "heart": [
-          "Lavender",
-          "Laurel",
-          "Cypress"
-        ],
-        "base": [
-          "Woody",
-          "Marine",
-          "Amber",
-          "Musky"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Citrus Woody Aromatic"
+        "Citrus",
+        "Aromatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Daily Wear",
-        "Office",
-        "Casual"
+        "Daily",
+        "Office"
       ],
       "barcode": "6298044138740",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -65242,7 +65094,7 @@
       "nameAr": "Lion by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Lion by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Lion by Rayhaan 100ml Eau de Parfum for Men\nLion by Rayhaan is a 100ml Eau de Parfum for men with a warm spicy vanilla scent profile. It opens with Pear, Lavender, Mint, and Bergamot, moves into Cinnamon, Clary Sage, and Cumin, and settles into Vanilla, Amber, Patchouli, and Cedar. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Pear, Lavender, Mint, Bergamot\nMiddle: Cinnamon, Clary Sage, Cumin\nBase: Vanilla, Amber, Patchouli, Cedar",
+      "descriptionEn": "Lion by Rayhaan 100ml EDP blends Pear, Lavender, and Mint into a warm spicy vanilla fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-lion-edp-malaysia-minyak-wangi7-100ml.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-lion-edp-malaysia-minyak-wangi7-100ml.jpg",
@@ -65256,8 +65108,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 2877.82,
-      "ourPrice": 4320,
+      "supplierPrice": 1896.84,
+      "ourPrice": 2850,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65267,34 +65119,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Rayhaan-Lion-100ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 220,
-      "supplierSalePrice": 144,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 144,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-lion/",
       "slug": "lion-by-rayhaan-100ml-eau-de-parfum-for-men-999",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Pear",
-          "Lavender",
-          "Mint",
-          "Bergamot"
-        ],
-        "heart": [
-          "Cinnamon",
-          "Clary Sage",
-          "Cumin"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Patchouli",
-          "Cedar"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Amber Spicy"
+        "Aromatic",
+        "Spicy",
+        "Gourmand"
       ],
       "seasonsSource": [
         "Fall",
@@ -65302,14 +65141,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571033",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 1000,
@@ -65317,7 +65157,7 @@
       "nameAr": "Nocturno by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Nocturno by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Nocturno by Rayhaan 100ml Eau de Parfum for Men\nNocturno by Rayhaan is a 100ml Eau de Parfum for men with a fresh spicy woody scent profile. It opens with Bergamot, Mint, and Pepper, moves into Lavender, Geranium, and Pink Pepper, and settles into Amberwood and Cedar. It is suited to everyday wear, work, and evenings.\nFragrance Notes:\nTop: Bergamot, Mint, Pepper\nMiddle: Lavender, Geranium, Pink Pepper\nBase: Amberwood, Cedar",
+      "descriptionEn": "Nocturno by Rayhaan 100ml EDP blends Bergamot, Mint, and Pepper into a fresh spicy woody fragrance suited to everyday wear and work.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/nocturno-rayhaan-perfume-lelaki-woody-amber-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/nocturno-rayhaan-perfume-lelaki-woody-amber-100ml-edp.jpg",
@@ -65331,8 +65171,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 3662.68,
-      "ourPrice": 5495,
+      "supplierPrice": 1857.32,
+      "ourPrice": 2790,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65342,31 +65182,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Nocturno-P-7",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 280,
-      "supplierSalePrice": 141,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 141,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/nocturno/",
       "slug": "nocturno-by-rayhaan-100ml-eau-de-parfum-for-men-1000",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Mint",
-          "Pepper"
-        ],
-        "heart": [
-          "Lavender",
-          "Geranium",
-          "Pink Pepper"
-        ],
-        "base": [
-          "Amberwood",
-          "Cedar"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Woody Aromatic"
+        "Fresh",
+        "Woody",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -65374,15 +65204,18 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Daily Wear",
+        "Daily",
         "Office",
         "Evening",
         "Special Event"
       ],
       "barcode": "6297001571125",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 1001,
@@ -65390,7 +65223,7 @@
       "nameAr": "Elixir by Rayhaan 100ml Eau de Parfum for Men",
       "nameEn": "Elixir by Rayhaan 100ml Eau de Parfum for Men",
       "descriptionAr": "",
-      "descriptionEn": "Elixir by Rayhaan 100ml Eau de Parfum for Men\nElixir by Rayhaan is a 100ml Eau de Parfum for men with a aromatic amber woody scent profile. It opens with Bergamot and Armoise, moves into Lavender and Benzoin, and settles into Vanilla and Tonka. It is suited to evenings, date nights, and special occasions.\nFragrance Notes:\nTop: Bergamot, Armoise\nMiddle: Lavender, Benzoin\nBase: Vanilla, Tonka",
+      "descriptionEn": "Elixir by Rayhaan 100ml EDP blends Bergamot, Armoise, and Lavender into a aromatic amber woody fragrance suited to evenings and date nights.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-elixir-100ml-edp-men-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/rayhaan/rayhaan-elixir-100ml-edp-men-malaysia.jpg",
@@ -65404,8 +65237,8 @@
       ],
       "category": "رجالي",
       "brand": "Rayhaan",
-      "supplierPrice": 3270.25,
-      "ourPrice": 4910,
+      "supplierPrice": 1844.15,
+      "ourPrice": 2770,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -65415,29 +65248,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Rayhaan-Elixir-100ml",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 250,
-      "supplierSalePrice": 140,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 140,
+      "exchangeRate": 13.1725,
       "url": "https://www.shamperfume.com/perfumes/rayhaan/rayhaan-elixir/",
       "slug": "elixir-by-rayhaan-100ml-eau-de-parfum-for-men-1001",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Armoise"
-        ],
-        "heart": [
-          "Lavender",
-          "Benzoin"
-        ],
-        "base": [
-          "Vanilla",
-          "Tonka"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Aromatic Amber Woody"
+        "Aromatic",
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Fall",
@@ -65445,14 +65271,15 @@
       ],
       "occasionsSource": [
         "Evening",
-        "Date Night",
-        "Special Event",
-        "Dinner"
+        "Special Event"
       ],
       "barcode": "6297001571002",
       "importedAt": "2026-10-16T15:06:39.969Z",
-      "refreshedAt": "2026-10-16T15:06:39.969Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-25T11:41:36.752Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 1002,

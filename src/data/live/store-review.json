@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-25T01:03:42.620Z",
+ "updatedAt": "2026-11-25T11:41:36.765Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 478,
-  "warn": 636,
+  "ok": 464,
+  "warn": 650,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-25T01:02:53.011Z",
+  "at": "2026-11-25T11:40:52.589Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 49641
+  "durationMs": 44201
  },
  "items": [
   {
@@ -5705,10 +5705,31 @@
    "name": "Paudree F Roses & Musk 75ml EDP",
    "status": "warn",
    "issues": [
-    "المورد لم ينشر نوتات العطر",
-    "غير متوفر عند المورد"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/paudree-f-roses-and-musk-75ml-edp-977.html"
+  },
+  {
+   "sku": "PAR-978",
+   "id": 978,
+   "name": "Qissa Pink by Paris Corner 100ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/qissa-pink-by-paris-corner-100ml-for-women-978.html"
+  },
+  {
+   "sku": "FRE-979",
+   "id": 979,
+   "name": "Sacred Smoke by French Avenue 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/sacred-smoke-by-french-avenue-100ml-edp-unisex-979.html"
   },
   {
    "sku": "PAR-980",
@@ -5716,9 +5737,42 @@
    "name": "Fayora Paris Corner EDP 100ml Women",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/fayora-paris-corner-edp-100ml-women-980.html"
+  },
+  {
+   "sku": "PAR-981",
+   "id": 981,
+   "name": "Beyond Pour Homme by Paris Corner 100ml EDP for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/beyond-pour-homme-by-paris-corner-100ml-edp-for-men-981.html"
+  },
+  {
+   "sku": "PAR-982",
+   "id": 982,
+   "name": "Rifaaqat Adorn by Paris Corner 85ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/rifaaqat-adorn-by-paris-corner-85ml-edp-982.html"
+  },
+  {
+   "sku": "PAR-983",
+   "id": 983,
+   "name": "Night of the Man by Pendora Scents Paris 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/night-of-the-man-by-pendora-scents-paris-100ml-983.html"
   },
   {
    "sku": "PAR-984",
@@ -5726,10 +5780,21 @@
    "name": "Just Bergamot Emir Factory Edition 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/just-bergamot-emir-factory-edition-100ml-edp-984.html"
+  },
+  {
+   "sku": "PAR-985",
+   "id": 985,
+   "name": "Eshal Vanilla by Paris Corner EDP 100ml",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/eshal-vanilla-by-paris-corner-edp-100ml-985.html"
   },
   {
    "sku": "BUJ-986",
@@ -5748,6 +5813,8 @@
    "name": "Sougha by Asdaaf 100ml EDP Women",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/sougha-by-asdaaf-100ml-edp-women-987.html"
@@ -5758,9 +5825,62 @@
    "name": "Dead Serious Bujairami 100ml Extrait Perfume Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/dead-serious-bujairami-100ml-extrait-perfume-unisex-988.html"
+  },
+  {
+   "sku": "BUJ-989",
+   "id": 989,
+   "name": "Tempted Bujairami 100ml Extrait Perfume Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tempted-bujairami-100ml-extrait-perfume-unisex-989.html"
+  },
+  {
+   "sku": "RAY-990",
+   "id": 990,
+   "name": "Corium by Rayhaan 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/corium-by-rayhaan-100ml-edp-990.html"
+  },
+  {
+   "sku": "RAY-991",
+   "id": 991,
+   "name": "Tiger Cal Cologne by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tiger-cal-cologne-by-rayhaan-100ml-eau-de-parfum-for-men-991.html"
+  },
+  {
+   "sku": "RAY-992",
+   "id": 992,
+   "name": "Crimson by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/crimson-by-rayhaan-100ml-eau-de-parfum-for-men-992.html"
+  },
+  {
+   "sku": "RAY-993",
+   "id": 993,
+   "name": "Pacific Aura by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/pacific-aura-by-rayhaan-100ml-eau-de-parfum-for-men-993.html"
   },
   {
    "sku": "RAY-994",
@@ -5768,6 +5888,7 @@
    "name": "Wood Noir by Rayhaan 100ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/wood-noir-by-rayhaan-100ml-eau-de-parfum-for-men-994.html"
@@ -5778,6 +5899,7 @@
    "name": "Wolf by Rayhaan 100ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/wolf-by-rayhaan-100ml-eau-de-parfum-for-men-995.html"
@@ -5788,6 +5910,7 @@
    "name": "Adonis Icarus by Rayhaan 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/adonis-icarus-by-rayhaan-100ml-eau-de-parfum-996.html"
@@ -5798,6 +5921,7 @@
    "name": "Imperia by Rayhaan 100ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/imperia-by-rayhaan-100ml-eau-de-parfum-for-men-997.html"
@@ -5808,9 +5932,40 @@
    "name": "Pacific by Rayhaan 100ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/pacific-by-rayhaan-100ml-eau-de-parfum-for-men-998.html"
+  },
+  {
+   "sku": "RAY-999",
+   "id": 999,
+   "name": "Lion by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/lion-by-rayhaan-100ml-eau-de-parfum-for-men-999.html"
+  },
+  {
+   "sku": "RAY-1000",
+   "id": 1000,
+   "name": "Nocturno by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/nocturno-by-rayhaan-100ml-eau-de-parfum-for-men-1000.html"
+  },
+  {
+   "sku": "RAY-1001",
+   "id": 1001,
+   "name": "Elixir by Rayhaan 100ml Eau de Parfum for Men",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/elixir-by-rayhaan-100ml-eau-de-parfum-for-men-1001.html"
   },
   {
    "sku": "RAY-1002",
