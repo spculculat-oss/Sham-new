@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-26T14:24:28.437Z",
+ "updatedAt": "2026-11-26T23:17:11.838Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 456,
-  "warn": 658,
+  "ok": 439,
+  "warn": 675,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-26T14:23:31.241Z",
+  "at": "2026-11-26T23:16:22.966Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -41,7 +41,7 @@
   "prices": {
    "count": 1063,
    "min": 750,
-   "median": 3320,
+   "median": 3315,
    "max": 7835,
    "top": [
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 57236
+  "durationMs": 48897
  },
  "items": [
   {
@@ -1599,14 +1599,135 @@
    "page": "p/teriaq-intense-by-lattafa-100ml-eau-de-parfum-181.html"
   },
   {
+   "sku": "MOO-182",
+   "id": 182,
+   "name": "Mood Velvet For Her 100 ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/mood-velvet-for-her-100-ml-edp-182.html"
+  },
+  {
+   "sku": "MAI-183",
+   "id": 183,
+   "name": "Coral Blush by Maison Alhambra 80ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/coral-blush-by-maison-alhambra-80ml-edp-183.html"
+  },
+  {
+   "sku": "GUL-184",
+   "id": 184,
+   "name": "Tahara Vanilla Body Mist by Gulf Orchid 250ml Woman",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tahara-vanilla-body-mist-by-gulf-orchid-250ml-woman-184.html"
+  },
+  {
    "sku": "GRA-185",
    "id": 185,
    "name": "Blush Amber 100ml by Grandeur",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/blush-amber-100ml-by-grandeur-185.html"
+  },
+  {
+   "sku": "MAI-186",
+   "id": 186,
+   "name": "Luxe Emerald Perfume Maison Alhambra 100ml Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/luxe-emerald-perfume-maison-alhambra-100ml-unisex-186.html"
+  },
+  {
+   "sku": "GRA-187",
+   "id": 187,
+   "name": "Ultra Famous by Grandeur Elite – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ultra-famous-by-grandeur-elite-100-ml-for-men-187.html"
+  },
+  {
+   "sku": "VOL-188",
+   "id": 188,
+   "name": "Reload Intense by Volare Man – 100 ml for Him",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/reload-intense-by-volare-man-100-ml-for-him-188.html"
+  },
+  {
+   "sku": "ARD-189",
+   "id": 189,
+   "name": "Dar Al Hae by Ard Al Zaafaran – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/dar-al-hae-by-ard-al-zaafaran-100-ml-for-men-189.html"
+  },
+  {
+   "sku": "MAI-190",
+   "id": 190,
+   "name": "Never Forget Me by Maison Asrar 90ml EDP Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/never-forget-me-by-maison-asrar-90ml-edp-women-190.html"
+  },
+  {
+   "sku": "MAI-191",
+   "id": 191,
+   "name": "Majesty by Maison Asrar 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/majesty-by-maison-asrar-100ml-edp-unisex-191.html"
+  },
+  {
+   "sku": "MAI-192",
+   "id": 192,
+   "name": "La Vita Maison Alhambra 100ml EDP Women",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/la-vita-maison-alhambra-100ml-edp-women-192.html"
+  },
+  {
+   "sku": "VOL-193",
+   "id": 193,
+   "name": "Darlene Pour Femme by Volare – 100 ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/darlene-pour-femme-by-volare-100-ml-for-women-193.html"
   },
   {
    "sku": "MAI-194",
@@ -1614,6 +1735,7 @@
    "name": "B.A.D. Femme by Maison Alhambra 100 ml",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/b-a-d-femme-by-maison-alhambra-100-ml-194.html"
@@ -1624,9 +1746,20 @@
    "name": "Oud Elixir by Grandeur Elite – 100 ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/oud-elixir-by-grandeur-elite-100-ml-eau-de-parfum-for-men-195.html"
+  },
+  {
+   "sku": "VOL-196",
+   "id": 196,
+   "name": "Moroccan Dream by Volare – 100 ml for Her",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/moroccan-dream-by-volare-100-ml-for-her-196.html"
   },
   {
    "sku": "ARD-197",
@@ -1634,9 +1767,21 @@
    "name": "Oud 24 Hours Ard Al Zaafaran 100ml EDP",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/oud-24-hours-ard-al-zaafaran-100ml-edp-197.html"
+  },
+  {
+   "sku": "ARD-198",
+   "id": 198,
+   "name": "Mousuf by Ard Al Zaafaran EDP 100 ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/mousuf-by-ard-al-zaafaran-edp-100-ml-198.html"
   },
   {
    "sku": "ARD-199",
@@ -1644,9 +1789,32 @@
    "name": "Arabian Night – 100 ml Eau de Parfum for Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/arabian-night-100-ml-eau-de-parfum-for-men-199.html"
+  },
+  {
+   "sku": "ALW-200",
+   "id": 200,
+   "name": "Ameerati by Al Wataniah 100ml EDP for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ameerati-by-al-wataniah-100ml-edp-for-women-200.html"
+  },
+  {
+   "sku": "ZIM-201",
+   "id": 201,
+   "name": "Royal Leather by Zimaya EDP 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/royal-leather-by-zimaya-edp-100ml-201.html"
   },
   {
    "sku": "ZIM-211",
@@ -6790,9 +6958,21 @@
    "name": "Aroma Mood 100ml EDP Unisex",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/aroma-mood-100ml-edp-unisex-1072.html"
+  },
+  {
+   "sku": "GRA-1073",
+   "id": 1073,
+   "name": "Codice Profumo Man by Grandeur Elite – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/codice-profumo-man-by-grandeur-elite-100-ml-for-men-1073.html"
   },
   {
    "sku": "VEL-1074",
@@ -6800,6 +6980,7 @@
    "name": "Velixir Athena 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6811,10 +6992,22 @@
    "name": "Velixir Poseidon 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/velixir-poseidon-100ml-edp-1075.html"
+  },
+  {
+   "sku": "ASD-1076",
+   "id": 1076,
+   "name": "Sa'ud by Asdaaf 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/sa-ud-by-asdaaf-100ml-edp-unisex-1076.html"
   },
   {
    "sku": "VEL-1079",
