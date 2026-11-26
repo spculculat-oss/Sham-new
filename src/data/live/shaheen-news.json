@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-26T12:17:07.292Z",
- "nextUpdateAt": "2026-11-27T00:17:07.292Z",
+ "updatedAt": "2026-11-26T23:47:47.036Z",
+ "nextUpdateAt": "2026-11-27T11:47:47.036Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -9,6 +9,50 @@
   "en": "The fragrance industry sees major infrastructure investments led by Mane in Grasse, alongside expansions from DSM-Firmenich and Symrise focused on innovation and sustainable ingredients. Master perfumers Aurélien Guichard and Bertrand Duchaufour debut new niche creations, while dedicated fragrance clubs, cultural museums, and tobacco and spice notes shape current market trends."
  },
  "sources": [
+  {
+   "name": "IndexBox",
+   "count": 4
+  },
+  {
+   "name": "Paris Select Book",
+   "count": 4
+  },
+  {
+   "name": "Premium Beauty News",
+   "count": 4
+  },
+  {
+   "name": "عدن الغد",
+   "count": 1
+  },
+  {
+   "name": "selecta bisso",
+   "count": 1
+  },
+  {
+   "name": "Robinhood",
+   "count": 1
+  },
+  {
+   "name": "Dealroom",
+   "count": 1
+  },
+  {
+   "name": "Grazia",
+   "count": 1
+  },
+  {
+   "name": "Numéro Magazine",
+   "count": 1
+  },
+  {
+   "name": "Le Figaro",
+   "count": 1
+  },
+  {
+   "name": "EIN News",
+   "count": 1
+  },
   {
    "name": "Cosmetics Business",
    "count": 1
@@ -48,89 +92,369 @@
   {
    "name": "Preview.ph",
    "count": 1
-  },
-  {
-   "name": "BeautyMatter",
-   "count": 1
-  },
-  {
-   "name": "Beauty Independent",
-   "count": 1
-  },
-  {
-   "name": "Doctissimo",
-   "count": 1
-  },
-  {
-   "name": "الاستاد الرياضي",
-   "count": 1
-  },
-  {
-   "name": "الإمارات اليوم",
-   "count": 1
-  },
-  {
-   "name": "The Detroit News",
-   "count": 1
-  },
-  {
-   "name": "سواليف - والهرج للجميع",
-   "count": 1
-  },
-  {
-   "name": "Actu.fr",
-   "count": 1
-  },
-  {
-   "name": "Bénin Web TV",
-   "count": 1
-  },
-  {
-   "name": "Popbee",
-   "count": 1
-  },
-  {
-   "name": "CaFleureBon",
-   "count": 1
-  },
-  {
-   "name": "NewBeauty",
-   "count": 1
-  },
-  {
-   "name": "Trend Hunter",
-   "count": 1
-  },
-  {
-   "name": "AFR",
-   "count": 1
-  },
-  {
-   "name": "Tuniscope",
-   "count": 1
-  },
-  {
-   "name": "Vietnam.vn",
-   "count": 1
-  },
-  {
-   "name": "الخلاصة نت",
-   "count": 1
-  },
-  {
-   "name": "Zonebourse Suisse",
-   "count": 1
-  },
-  {
-   "name": "الشرق الأوسط",
-   "count": 1
-  },
-  {
-   "name": "Bourse Direct",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "ni64mnl",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTWtsb2t6R2lZRmczc1NqS2FOb2xMcko1bVhnSGdnMFg5cXBmb01hQkF4M25mOHBGTGw3SDNyVkdjMzV6RVFOZVNnb3ljLVFZX0YyYWNDNV8wWEZWeHViTnRfdGhDVjJTOXBuWWhRQ3hHTF9ORDhfWGg1MEFZNGVMd3VpRDlwTXEwYTZxalRBZldjdXY5ZWhIMzE2dDlGZTBHdzNEbVRIcUVSN1VZN2Z6T2JGZWdpSUU?oc=5",
+   "source": "IndexBox",
+   "publishedAt": "2026-11-26T22:46:05.000Z",
+   "original": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
+    "en": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics"
+   },
+   "summary": {
+    "ar": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
+    "en": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics"
+   }
+  },
+  {
+   "id": "n19agrql",
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5OTHJhaExOdlQzMko3YzJRdGpNcGFlWi1zckRybEhVUWxhUjRiM3J6aE4tU2gyUVBiaklMS1VRRG1PMllDZ0RkM3pB?oc=5",
+   "source": "عدن الغد",
+   "publishedAt": "2026-11-26T22:42:00.000Z",
+   "original": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
+    "en": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك"
+   },
+   "summary": {
+    "ar": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
+    "en": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك"
+   }
+  },
+  {
+   "id": "n5w62vw",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOW84SEdRY25DQzJIcmlaY2dmZXg5cEJkNzhpQlNBWDhQbFlQWnFQSG5YTktiYk9MUXRqbi03QmxtU3U3a2R2LU1tWlFLOTYxSlZqampaa3VvcWNXUjBFNmxrSm5QOFNKRHp6UTlBbEZpZHRuZUx4MlBYS2M2MGdCZElScDViSm9fNXpLeEthNHZXRktMWE5qQWlFLTVxa1FkcVQ3cU9MVDdyWVhJQmxMQTBPNA?oc=5",
+   "source": "selecta bisso",
+   "publishedAt": "2026-11-26T22:00:54.000Z",
+   "original": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
+    "en": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne"
+   },
+   "summary": {
+    "ar": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
+    "en": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne"
+   }
+  },
+  {
+   "id": "n1vidqvx",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZ0YzRE5qalFwdE1lQmxhbHBCYkZraWZSVlpKMWJnSF8tbnQzbGUxRWNOUGZZV1VvQV92Q2VvV0pKSzZOYmpGNUdDT21rZks4NU45T3JtQjVxdjRhS0xBcUtlRTJrTWJDVHd6emo0TVJZdEcyRVNNbWdMTWRpR2JQeWZLakZaajdGbVlDWjFDcXFGOXp4Uk1VNWMzMU5SUU8wM2ZnSHBkS0NwcXN3OXA3WHJPRGl4OXQtRkY2LTBQMXQ4Zw?oc=5",
+   "source": "Robinhood",
+   "publishedAt": "2026-11-26T21:39:21.000Z",
+   "original": "November 28, 2026: Majees Titans vs Mustafa Fragrance House Strikers Cricket Prediction Market",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "November 28, 2026: Majees Titans vs Mustafa Fragrance House Strikers Cricket Prediction Market",
+    "en": "November 28, 2026: Majees Titans vs Mustafa Fragrance House Strikers Cricket Prediction Market"
+   },
+   "summary": {
+    "ar": "November 28, 2026: Majees Titans vs Mustafa Fragrance House Strikers Cricket Prediction Market",
+    "en": "November 28, 2026: Majees Titans vs Mustafa Fragrance House Strikers Cricket Prediction Market"
+   }
+  },
+  {
+   "id": "n1dbfwqo",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTl9vM3VhWmFROXRReUpaRmlDdmpiUU9KbmpsOFc4Q2ZxT3BNV0ZWc2RXQ19ucHNKSVVUc1VNRTVOZ0Znb21JNldISEN2NzJhSkdRRTBwZVdsMkVJTG1DT3d3OE5BNDR2R056MDZlSTFWWFJ4cU1hSnBUNnpEbWRjNWZfVWVGTE15NWJtWVlEd1pLN2t5ZEFseS1YTTAyTk1PNUdQejQ1b0hHRXp3eFgyZFk0VlN1dzlsRGtoUk5WNXdKek0?oc=5",
+   "source": "IndexBox",
+   "publishedAt": "2026-11-26T21:01:06.000Z",
+   "original": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
+    "en": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics"
+   },
+   "summary": {
+    "ar": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
+    "en": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics"
+   }
+  },
+  {
+   "id": "n60q4nb",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNUYyejBGd2xmZllMUGdWX3VWNkZ1d1cwRXFWSlJucWJ0dmNZck5kQ3B3V05WQ3JQbzZVaUV1V3pUZTdUZGZseEgxNGZ3WmEyajM1OWtTTTFCQzE0eExFN2ZscXQ0blVNMDkyeFEzNWxOQVZyUEM2TjVEU3lKWGVISXMxd1VuYUNNZTg1WEtQN0xRWF8xdFpobVMtYWdBSW5qM29IR1U1OWN1d2lMSVNF?oc=5",
+   "source": "Paris Select Book",
+   "publishedAt": "2026-11-26T20:57:09.000Z",
+   "original": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
+    "en": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël"
+   },
+   "summary": {
+    "ar": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
+    "en": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël"
+   }
+  },
+  {
+   "id": "n1owkzr2",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFdpOGdnTnpuR3BpWlFZek9obWYxdWVoVjZSY3BlQUd3RkxNZHhoVjZIOUFZV3hRd0lyN2FuejVfb1BOM1RkbHNFZVdpUE5fQzJvMmd4a0tXNEVWWWwySW1GRnlMTTQxNjV2LS1RTGQxeDR1aUVMSjRMbGVtWmhwaDVBZ2VVaHdpVDBoZUpxZFF2empHbWMzQXZVT3ljb1llbnBsUE1VcEhyV2VBMWtGSXV4YjlaWncyWlBCWU9VUG0?oc=5",
+   "source": "IndexBox",
+   "publishedAt": "2026-11-26T20:56:05.000Z",
+   "original": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
+   "lang": "ar",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
+    "en": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات"
+   },
+   "summary": {
+    "ar": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
+    "en": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات"
+   }
+  },
+  {
+   "id": "nuxqq9i",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN2ZTVk5GYXNkM1U0ZkJNQWdCQmJudXNBUVdfNHNOb2ZBbkJuems4SW1NMFNJNmpHQ2ZpNXFZSFhRdEp0aUtBbUE5R2RXZXlGMGgxYU1XOHVHR2FhWnpjNE1QOFRpT2dSb2hiNnZ1eUdRY1o3cGxmWmdHMGRJMi04M2VVaWREdlg4VkE3b3RBUG03OEFQSkFEMF9GSUE5aWpoQ0JvQnQ1WlNoT0tSMEkyZ2tuTGk0cnVmX3dJMk9ENG9seTRwenM3LUVQT0NOX1FMYloxcnYzZUU4UXc?oc=5",
+   "source": "IndexBox",
+   "publishedAt": "2026-11-26T20:31:04.000Z",
+   "original": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
+    "en": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics"
+   },
+   "summary": {
+    "ar": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
+    "en": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics"
+   }
+  },
+  {
+   "id": "n1xtei1k",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNjdLNU5GaGtUUFhJTExLUURkZmtHb1VXZlhJLTlOWGQ5SHg0QXBqVDB3TFd2ZmgyUHQ3blZnd1F3UVBZWi1sUFBBVDlmZm1GOHdCNkUyX0lNQTIwc1JUbVV6OElrSHhjY3FRRldfaGNkTXI3bkMtOFFfWURQSXhXZnhZajh2c21NZ1pfeXJkMnhCMkNwRmU3d1hKYlY4T0NnTzZWdFRXUQ?oc=5",
+   "source": "Dealroom",
+   "publishedAt": "2026-11-26T19:50:26.000Z",
+   "original": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
+    "en": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand"
+   },
+   "summary": {
+    "ar": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
+    "en": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand"
+   }
+  },
+  {
+   "id": "nebz707",
+   "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPUEFIbFoxc1J0dkFRT2hUalY5ckVDMmg1ODRoZkRKTlpZZ3Q4czFFNGtrMm9IM0FxOHFNNGUwR1hmcnZOVjI0bm01MjlfQ1NJTWpfOHBad3NtY0F2V0QyWlU1YWpLTVhKR21sZmxib2FLcTNRMG0xRjd2VmNleFMyRVdkenhsWjctWXAwYkgyYWxMMWJnLW52Zy1VTnhqWXJqcUN2NExfLWc2OUdLYjhIV05ZNnNkZE9tdFZGY2tZTGcyVXJ4S1lKMzItOG90OVU1Q0ZLQkFsWUhPQ2NsZGlFdVlPUGNNeE4tYjZrRVh1aklOcXBpeXJMMmFpLTFQODFZX3ctR1IxTTZMYjdfZ2xaaWlmaGgteVhSWFp2blJraw?oc=5",
+   "source": "Grazia",
+   "publishedAt": "2026-11-26T19:30:51.000Z",
+   "original": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
+    "en": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération"
+   },
+   "summary": {
+    "ar": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
+    "en": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération"
+   }
+  },
+  {
+   "id": "ndx0z9z",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSWl3R2JtZFhJNmZNeGZ1c3UzN3VBZGl6dVo4RzZFWS1fOUZONG80dl8zNjRuQ21RZmZYRG1QT3ZYc2ljdmxaX1JJcktsRDhTUG5lOE9DZDRZaURnTjNLWTJ4Z3JwdmJIeFhYRmNzbzB5dGEwYkpTcFRVYTc0NkVHUkphNHV4TFE?oc=5",
+   "source": "Numéro Magazine",
+   "publishedAt": "2026-11-26T19:25:09.000Z",
+   "original": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
+   "lang": "fr",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
+    "en": "L'Artisan Parfumeur dévoile son premier talent show Le Nez"
+   },
+   "summary": {
+    "ar": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
+    "en": "L'Artisan Parfumeur dévoile son premier talent show Le Nez"
+   }
+  },
+  {
+   "id": "nfgj9fk",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWtvbW5HRHRpNUJ5aFd5MHh4RWwtYTZFVjBsMmZzS1VhcFVCZTdoUWRHck42M3FrZEY4WXdFWXhCbERBa0pZYV9BNS1feWhRVWxfZjVyd1h3cHc0VTgwN2ZsWmJYWDF2X0tXdWcxZjRPQnNSaHlGaEgzaU9SMGxEdVJTRQ?oc=5",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-26T19:19:33.000Z",
+   "original": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
+    "en": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange"
+   },
+   "summary": {
+    "ar": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
+    "en": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange"
+   }
+  },
+  {
+   "id": "n5vxn1e",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRkJyU0RHbURlLU1ZNndEVERPbmtLb3d4UGZWcTdxMllUcXVoU0MzU2ZJZEh1b0V2QWhvOHRTdFpwUTRWSHFsUmRsS3Y4cG15eTBGdHQxYTdqZERPWnAwVkhqYkF2VGIwMVpZMHI3N21mYmtuRmFnaTVUdkhhMC1zQlR3?oc=5",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-26T18:26:24.000Z",
+   "original": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
+    "en": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange"
+   },
+   "summary": {
+    "ar": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
+    "en": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange"
+   }
+  },
+  {
+   "id": "n1uuxqu0",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTEtKZy1TN2l1ZnRZSUdDdlBaamRiZzRhQWtQSzF6c1FMVHJUeGtlbzhGYTloRUlTd0NmRnIzRW80ajdKbmlqdmVMOE1SeWNNcnFzNndZb3cxeHpNRFREVWhfbzkydDRvdTRLYUNTVklpUjljbFdqSTlqWUVMSmZJT3NKSjNKRU1LU1Rpd3A0OUlVT0ZLbDFBeVB3T2RreVduUkJLMWU5bC1HVFl2TGZ5dk52N2IzY1U?oc=5",
+   "source": "Paris Select Book",
+   "publishedAt": "2026-11-26T18:10:36.000Z",
+   "original": "The Art of Perfume: The Most Precious Collections to Give at Christmas",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "The Art of Perfume: The Most Precious Collections to Give at Christmas",
+    "en": "The Art of Perfume: The Most Precious Collections to Give at Christmas"
+   },
+   "summary": {
+    "ar": "The Art of Perfume: The Most Precious Collections to Give at Christmas",
+    "en": "The Art of Perfume: The Most Precious Collections to Give at Christmas"
+   }
+  },
+  {
+   "id": "njbkzxe",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbHFQeHE4ZldMWVU4YXpLbnFQcDZuOGpTcm50bHNJeXdvbFIycTdwYjB6TEpMTEdaRDRfRnRYckR6QlhWdWNSeGV4bUZTdmQ3amJBZlFyNlJyNXNTbDNma1VLS051MTVUUlFKVGRKMlpGbVBhaHYtbVNaVzNDaUt1NlU5dVVqR2ZYaUh5QzB2ZWc2MnRpWmRHX1pGMDMydXRKVk5BellDUjdjNjduYjZmVWtQaw?oc=5",
+   "source": "Le Figaro",
+   "publishedAt": "2026-11-26T18:00:00.000Z",
+   "original": "Comment les parfums Amouage sont devenus les meilleurs ambassadeurs d’Oman",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Comment les parfums Amouage sont devenus les meilleurs ambassadeurs d’Oman",
+    "en": "Comment les parfums Amouage sont devenus les meilleurs ambassadeurs d’Oman"
+   },
+   "summary": {
+    "ar": "Comment les parfums Amouage sont devenus les meilleurs ambassadeurs d’Oman",
+    "en": "Comment les parfums Amouage sont devenus les meilleurs ambassadeurs d’Oman"
+   }
+  },
+  {
+   "id": "nwx5aa2",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVk01Vkt6b1Jzb3RRLTlfMHFZMEVlZ2VQQzVqLTBzbDZFNGRGWFktb0lwWEtweEpHa2lEUlpBY1V5QmRlTzlDMnhpYUJRb1ZTUUZmOE9VMkVqWk5mWF9kTXZOSXhoNy05YTRSa3NMY2M3QldEWDNVSE5VSTZWRzBJOEtfWnQ4d2dteUpoNEU4UUdjaHNGYWhTclBGeGQ5MmprVnhISW9mcGlFdlgtXzNMSFUxanREQVFsZ1Q1dExvSTJCeU84SUtyZkxR?oc=5",
+   "source": "Paris Select Book",
+   "publishedAt": "2026-11-26T17:26:37.000Z",
+   "original": "Top des belles bougies à offrir à Noël pour embaumer la maison de doux parfums de fête",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Top des belles bougies à offrir à Noël pour embaumer la maison de doux parfums de fête",
+    "en": "Top des belles bougies à offrir à Noël pour embaumer la maison de doux parfums de fête"
+   },
+   "summary": {
+    "ar": "Top des belles bougies à offrir à Noël pour embaumer la maison de doux parfums de fête",
+    "en": "Top des belles bougies à offrir à Noël pour embaumer la maison de doux parfums de fête"
+   }
+  },
+  {
+   "id": "n1qp6vyn",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYkY1VlRpTThLbU5hVzZpbFNZemRqMTV0bWJIMGI5X0wyeXBEeVBQenZpcEYzV1RraHNNLWx1TDl5U0FqZmVDYkd3eVZ0WmNmZzU2Sm1yek9hZ1ctcTJDN1Y5VmhsS1dSRktzeFNUanZ6T0hZSUFhZXFlS1Uwc2F1TXNBdGZrVi16OVNqWm52Q1lhMFBidVg5NzNTd1BleFBvSHZBVFFRMmxEcjdBMk5zeU9kTXVwNl82WGEzb25CeVNiMk1hYVpxQlRRRmFzS3lGYlE?oc=5",
+   "source": "EIN News",
+   "publishedAt": "2026-11-26T17:00:00.000Z",
+   "original": "Fragrance Ingredients Market Forecast To Hit $24.06 Billion By 2030 Amid Strong Industry Growth",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "Fragrance Ingredients Market Forecast To Hit $24.06 Billion By 2030 Amid Strong Industry Growth",
+    "en": "Fragrance Ingredients Market Forecast To Hit $24.06 Billion By 2030 Amid Strong Industry Growth"
+   },
+   "summary": {
+    "ar": "Fragrance Ingredients Market Forecast To Hit $24.06 Billion By 2030 Amid Strong Industry Growth",
+    "en": "Fragrance Ingredients Market Forecast To Hit $24.06 Billion By 2030 Amid Strong Industry Growth"
+   }
+  },
+  {
+   "id": "n5qvnjm",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQY1AzbEpmTWZ6MUhfMWdueWlpUHlDV1BJd2NpLVFVRVU0T04wVnNIWVNLNnhZWVBTd2NaRUtZVDZHY3drUEJ1SnhOUEx6b1pMUmg1RXFlNE1FdHpjUndiNWNWNU9QaTdUWVlRd1doYTJqOGZiVWNSeFBfR3M4TU1INEJiOWp4MVNpaEd0Z3RZMHZ2S3F6SHYtZjUyNWNGUzA3QjU1LUtIdnRWcldhRTRseXhlbkxrallpVE5WYWVWaUtZMGtRcEdYMGRMalQzelF4elZvMGx0aXljSXAwNXc?oc=5",
+   "source": "Paris Select Book",
+   "publishedAt": "2026-11-26T16:51:37.000Z",
+   "original": "Signée René Lalique en 1922, cette bouteille de parfum Guerlain a été adjugée 1 200 euros aux enchères",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Signée René Lalique en 1922, cette bouteille de parfum Guerlain a été adjugée 1 200 euros aux enchères",
+    "en": "Signée René Lalique en 1922, cette bouteille de parfum Guerlain a été adjugée 1 200 euros aux enchères"
+   },
+   "summary": {
+    "ar": "Signée René Lalique en 1922, cette bouteille de parfum Guerlain a été adjugée 1 200 euros aux enchères",
+    "en": "Signée René Lalique en 1922, cette bouteille de parfum Guerlain a été adjugée 1 200 euros aux enchères"
+   }
+  },
+  {
+   "id": "nl1kets",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOY1czTDFhZ29OQkFEVC14dXpiMUxMTmUwdW1MdDVWd1pHYkRpRnR2UTJ6SURmRXZVVW9fQWJQby1ac2YtalVaalJ1MFNOcDYxUGJpcFhYYk9EejdDYW5veGYxSWN4Z3FaT2lhQVZDTGgzeTZLVkticXJtOEtrY05CLWRQOA?oc=5",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-26T16:49:59.000Z",
+   "original": "Competition: EU and UK fine leading fragrance firms for international cartel",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Competition: EU and UK fine leading fragrance firms for international cartel",
+    "en": "Competition: EU and UK fine leading fragrance firms for international cartel"
+   },
+   "summary": {
+    "ar": "Competition: EU and UK fine leading fragrance firms for international cartel",
+    "en": "Competition: EU and UK fine leading fragrance firms for international cartel"
+   }
+  },
+  {
+   "id": "nv2stz3",
+   "url": "https://www.premiumbeautynews.com/fr/concurrence-l-ue-et-londres,28600",
+   "source": "Premium Beauty News",
+   "publishedAt": "2026-11-26T16:45:36.000Z",
+   "original": "Concurrence : L'UE et Londres sanctionnent un \"cartel du parfum\"",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Concurrence : L'UE et Londres sanctionnent un \"cartel du parfum\"",
+    "en": "Concurrence : L'UE et Londres sanctionnent un \"cartel du parfum\""
+   },
+   "summary": {
+    "ar": "L'Union européenne et le Royaume-Uni ont infligé mercredi 25 novembre près de 600 millions d'euros d'amendes aux trois plus grands industriels mondiaux de la parfumerie, les groupes suisses Firmenich et Givaudan ainsi que l'américain International Flavors and Fragrances (IFF), pour avoir formé un \"cartel international des parfums\" qui leur a permis d'imposer des prix plus élevés. La Commission européenne a annoncé un total de 471,9 millions d'euros d'amendes et l'autorité britannique de la... - ",
+    "en": "L'Union européenne et le Royaume-Uni ont infligé mercredi 25 novembre près de 600 millions d'euros d'amendes aux trois plus grands industriels mondiaux de la parfumerie, les groupes suisses Firmenich et Givaudan ainsi que l'américain International Flavors and Fragrances (IFF), pour avoir formé un \"cartel international des parfums\" qui leur a permis d'imposer des prix plus élevés. La Commission européenne a annoncé un total de 471,9 millions d'euros d'amendes et l'autorité britannique de la... - "
+   }
+  },
   {
    "id": "n19bqe5s",
    "url": "https://cosmeticsbusiness.com/joonbyrd-conquered-advanced-body-care-can-it-crack-hair-care",
@@ -309,366 +633,6 @@
    "summary": {
     "ar": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient",
     "en": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient"
-   }
-  },
-  {
-   "id": "n1n6p3nb",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd1YyYVU2MnBzMDBnUFBVTHBCeklJYmFDalZLaDk2S2JUVGhOQ1p2TWFvbUdpTnRGUmswR2dHSUktYnE5NW5qLU1XbmtneU1GNmhZdXlkZkFYZFlUbFljOVdWWXdwNlB6U1puLUlSQWROdHcxZUp3cFBhTzljMDRGS0lhaDVHZXlzX1E?oc=5",
-   "source": "BeautyMatter",
-   "publishedAt": "2026-11-26T08:10:51.000Z",
-   "original": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
-    "en": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market"
-   },
-   "summary": {
-    "ar": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
-    "en": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market"
-   }
-  },
-  {
-   "id": "n1y5yodu",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOX1llRGl6NEFnbWR5bEFTYnp3b3JiRHBvTzdtMXVYUDd6LUtDOFJSTFhjM2VaUE0xcW8xeXpJUmhjeGVWb2x0OE5FZ1BfSWstTnA5Q2xwMzY1OVhlRDd1N0I5d0NoOUFFMXJR?oc=5",
-   "source": "Beauty Independent",
-   "publishedAt": "2026-11-26T08:07:47.000Z",
-   "original": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
-    "en": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets"
-   },
-   "summary": {
-    "ar": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
-    "en": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets"
-   }
-  },
-  {
-   "id": "n1gztx5r",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYWNNQlRTT2U5WEpZLXdhd0VpRGwwVmR5VnJuTndIN2JMa1hPN0VUaksyT2N3TW9VckRXeXdKS0NNd09qYmZJRUttUXd1aU5GUHZvem1Cbzk4SnB1aHVDWlJWa3dFT3lsZVFqNlVDNXlWUHlzMEp4dWh6dHdpU0N0Vld4cURuT3B0cjhXb00zVWRnaWdxNWV1SmZNd2std2dpalIyaXdQZC16di1hNmttSTZ4WWZVRy1HeEdObXFCeE1SN0JRNFZWUk4zenBYVTRzSjNIelhYT0R3c05tMnBidkFn?oc=5",
-   "source": "Doctissimo",
-   "publishedAt": "2026-11-26T07:31:11.000Z",
-   "original": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
-    "en": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies"
-   },
-   "summary": {
-    "ar": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
-    "en": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies"
-   }
-  },
-  {
-   "id": "n12r0cc0",
-   "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNSE9aN1VjNXdCTHFOWFdDVngwZmZyOW9MdVIzelhwVWZ2LVBWYnFyaGE0Z1RTM193MVBmLXpqSllUOG4ycHg1T0VLdlJGVnBTWGtlcEl6MDkycHFURkZnSWs1a3psV253UlVzMlF0c3dYQzJFY3RiM2htZHhSaTlOdmVXeU5rbkUxM3Z1X0RPbkZqV2EzOTE5ZVlEVGJOM0RWZGdkUHlmQzdtN2EwaHRLY3NNemlIbDI1M1hYZ291U1loUlpYeDVaVlVSS1I2WFQ1U0t6VzNXQ05EeURhZkotb094WG5LUjRaMVQyTGZ6d3NZWll3Wi10M3R3NWhOenl3Z2NGUzdnWTVQbFRNSzUwRHA2TVUtNHJOTm1oRWxXcm81X1hSTmtIOFozOHZyNW4wcm1LRmIzZTQ1UHltMHk1MjdCcEhMTUMyRm5LWDNkNA?oc=5",
-   "source": "الاستاد الرياضي",
-   "publishedAt": "2026-11-26T07:25:18.000Z",
-   "original": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
-    "en": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم"
-   },
-   "summary": {
-    "ar": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
-    "en": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم"
-   }
-  },
-  {
-   "id": "nwchvkn",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XOHpFaGFaRlhiZlU2SE5vb09aT2xYcDJ5czFJTW44S2dqa29iZ0pBaGhFT1N6cFJYNHJVbVdZbkdMWWdpbzhDdTEtMS05MjZHMkRnZVVRLUh4NTQ2eWJzeEJlT2RJZ21wY3RVWF91QnFXTEthaHRYb0dlUFQ?oc=5",
-   "source": "الإمارات اليوم",
-   "publishedAt": "2026-11-26T07:21:35.000Z",
-   "original": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
-    "en": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة"
-   },
-   "summary": {
-    "ar": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
-    "en": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة"
-   }
-  },
-  {
-   "id": "n19wfhl3",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPWWdTWU8zVEZXN0MzdG9sMkF3VlFQX255NjE3OTcyVXYxZWVYbldPN1M1UjltV3pEbG1XQ3ROazM0M0pTM3hTdDZuWmhWSzgyNWpWckwwWjVSYUZCTG53MHNkR1pyTzZWQm1tYy1wM0Z3bGl0SUFGckx0N2g2bzY4U1hXLUtMamtWeEFFU09mQVVBd3hUeHpYX1k3WjdGdjFQNnlKWXpRWlRTUTRQYlZDOVd3WjhoRHItZXd4SnFwMjg0T1pvSjhEX0lYSTdiQmxvZTItZGpQcEEwV0F4ekdPUHVWT2VBSzRNem9PR05taVhxTlJONEV0djJSckt3T3dQ?oc=5",
-   "source": "The Detroit News",
-   "publishedAt": "2026-11-26T07:02:04.000Z",
-   "original": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
-    "en": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop"
-   },
-   "summary": {
-    "ar": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
-    "en": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop"
-   }
-  },
-  {
-   "id": "n12dzq20",
-   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQZkFXV3BhcVZ4LUZ4enFkM1hLZTZWSlVoQzh4Wl9YZ2s2cmJRYVMzMjlnQlI4QlNIV204TnhyTkZ3M2JhZEwyRHVjZXhZWEZXRDg2NnRKS20xOTdJVW5HLUpjNUhZQ2tna0ZoemdpeHdHTTYyQlZFU1kySnd3MEVlUGdYUThBOGJNUnlOcTR2enJVYV9jRmI0YWhSTzhCUUYzZ0VvcXJKTE5MVDE4ak9VeHZwWk0xQlFzX3pGYUphVVUtY1JrYk1XQmdnbVRoRnczUVNhcVd4QmVjZk9mZTNPRVhoM2R0WkNZakdEYlBlZDJYRmluNV9NX3c2OEFENElvRzkxakdIOHVjQUNLNUFhckZVYS0wdjA1VTF4TV95UDY3Q3FtY3dPVUZVbGhPaHFQRmNrczJvd1BiV2N4T2pUNUltQnJOVFRPQkN3?oc=5",
-   "source": "سواليف - والهرج للجميع",
-   "publishedAt": "2026-11-26T05:36:15.000Z",
-   "original": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
-   "lang": "ar",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
-    "en": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية"
-   },
-   "summary": {
-    "ar": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
-    "en": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية"
-   }
-  },
-  {
-   "id": "n10dea4l",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZE9lYVpiZUYwcktwelNNbEJOd3BuVTMzY0RzdXNRdE9VaVVyZXF4X2h0MDgza1FXdjM3c1hfUXJhRWVtNmhqZlJ3VThtSlFDZDlic0tHNXZ4alJLd3JPWGZYaGZxNUZrX2xFVmx3eUN5QkpUZk9ZaWMzNndMdHpJZHhmUmdTUmQzQURSLVlzamlfXzh5cnZsdHFTTnAzRkp3WVFZTE02dFRoUEhyWTNNR0JSbzZNU0NrMU5uQ2w1VkYzQkVHa3RaSWdkbWpjNndKemtGMXRpbng3VEMyQzF4R0N4aEZtUQ?oc=5",
-   "source": "Actu.fr",
-   "publishedAt": "2026-11-26T05:36:01.000Z",
-   "original": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
-    "en": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?"
-   },
-   "summary": {
-    "ar": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
-    "en": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?"
-   }
-  },
-  {
-   "id": "n1t7eybp",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcUd6SEhkb3I4SjZkdERKTDdwd3JXZ1lJZVQ5U2R4MmRwaW5NVm8xOFl6SVlIVlJKRktfRkFIMXRjSVFHcnFJempCVVBJSExGbnk2S0MyVzJTWnlZbjllVExERUJyVUp1dTVMTDhNdVVxUkh3aTJSWVViUklBcHBNdEZzZWRCdzVYOFlJLXFBOFdIZEQtb0FCNVZ6WFBnbzRDR251bE1R?oc=5",
-   "source": "Bénin Web TV",
-   "publishedAt": "2026-11-26T04:23:19.000Z",
-   "original": "Fragrance industry: Brussels and London sanction three companies for collusion",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Fragrance industry: Brussels and London sanction three companies for collusion",
-    "en": "Fragrance industry: Brussels and London sanction three companies for collusion"
-   },
-   "summary": {
-    "ar": "Fragrance industry: Brussels and London sanction three companies for collusion",
-    "en": "Fragrance industry: Brussels and London sanction three companies for collusion"
-   }
-  },
-  {
-   "id": "n1mwh4el",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbF9wSlBFR3pkcE45clJYNXZ4MG91STNEWXhhSmRqcFdfTlRnLVRSajB2NzRqXzdxR1dkdUlETDk3dkJsTDFrd3QxZjk4RmFKQTBFVGR1OFhGWnNzVzVNQWlQX3JpWVREWkExdGJTQUZETkhzYWp2Y1l2ejJpM1JYREZWVDFrQlNCSldxYlRxUFRLUUZNQlB1Q0p4cU5hNktFdXBQakxFY1Noa29O?oc=5",
-   "source": "Popbee",
-   "publishedAt": "2026-11-26T04:00:44.000Z",
-   "original": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
-    "en": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!"
-   },
-   "summary": {
-    "ar": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
-    "en": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!"
-   }
-  },
-  {
-   "id": "n46iex6",
-   "url": "https://cafleurebon.com/sine-gloria-by-nobile-1942-winner/?utm_source=rss&utm_medium=rss&utm_campaign=sine-gloria-by-nobile-1942-winner",
-   "source": "CaFleureBon",
-   "publishedAt": "2026-11-25T20:33:22.000Z",
-   "original": "Sine Gloria by Nobile 1942 Winner",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Sine Gloria by Nobile 1942 Winner",
-    "en": "Sine Gloria by Nobile 1942 Winner"
-   },
-   "summary": {
-    "ar": "Sine Gloria by Nobile 1942 channels the grit, the sweat and determination it takes to endure and stand out in an overly saturated market. The post Sine Gloria by Nobile 1942 Winner appeared first on ÇaFleureBon Perfume Blog .",
-    "en": "Sine Gloria by Nobile 1942 channels the grit, the sweat and determination it takes to endure and stand out in an overly saturated market. The post Sine Gloria by Nobile 1942 Winner appeared first on ÇaFleureBon Perfume Blog ."
-   }
-  },
-  {
-   "id": "n1q6kl8k",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xWWFtZFBlWTcwT2VLZDJyZzRVQUNsWFNiRGxqRUltc0tRTERSVHJaQU1kZW92SWpyenJSejVlVzFKSERTbXo5MFNIc1paY2hCUE51SXZUaHZEdnNHdTRtUWJDOA?oc=5",
-   "source": "NewBeauty",
-   "publishedAt": "2026-11-25T19:46:56.000Z",
-   "original": "Best Perfume Necklaces: 10 Fragrance Jewelry Styles Worth It",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Best Perfume Necklaces: 10 Fragrance Jewelry Styles Worth It",
-    "en": "Best Perfume Necklaces: 10 Fragrance Jewelry Styles Worth It"
-   },
-   "summary": {
-    "ar": "Best Perfume Necklaces: 10 Fragrance Jewelry Styles Worth It",
-    "en": "Best Perfume Necklaces: 10 Fragrance Jewelry Styles Worth It"
-   }
-  },
-  {
-   "id": "nqd6f89",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxUEpSTUNpTnhRSFVZX0NBWWFrRlk0MDFGaUR1QXV1VEM2TjlsQU9hRklRSUZZRzd2cHZmZmdIY251MVJvVU0wakEwSHpnOElTejdpQU81UHpIR1EybzJZZjR2WTZ6aUgy?oc=5",
-   "source": "Trend Hunter",
-   "publishedAt": "2026-11-25T18:56:49.000Z",
-   "original": "Luxury Hair Fragrances: Cécred Transforms Its Signature Scent into a Hair Perfume",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Luxury Hair Fragrances: Cécred Transforms Its Signature Scent into a Hair Perfume",
-    "en": "Luxury Hair Fragrances: Cécred Transforms Its Signature Scent into a Hair Perfume"
-   },
-   "summary": {
-    "ar": "Luxury Hair Fragrances: Cécred Transforms Its Signature Scent into a Hair Perfume",
-    "en": "Luxury Hair Fragrances: Cécred Transforms Its Signature Scent into a Hair Perfume"
-   }
-  },
-  {
-   "id": "n1l5suxt",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWEttaWEzaDVIVEVqNkZ1cHFTOGozQ3ZPZGxJb1NvekZCZlRiX0R3Q3NobEM2bUhCQ1lQR01FSlFmWGNIbXNIU1hBUVFtSFlKRXUwaTU1LTBKdHBpMi0tVGcwX01lZHRIdWRyb2FSU2g0bzNZd3lpSzBqbFlKcUp1Q25UdUFfaGg2NU55NmE2ZzNRNER5SnhnSG44aUtTQmpLY1lBOVhjTzBSc3FkY3N2S3NsbDUyWTVQRFZwRndhQVJzUQ?oc=5",
-   "source": "AFR",
-   "publishedAt": "2026-11-25T18:00:00.000Z",
-   "original": "How this Aussie fragrance business conquered the world",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "How this Aussie fragrance business conquered the world",
-    "en": "How this Aussie fragrance business conquered the world"
-   },
-   "summary": {
-    "ar": "How this Aussie fragrance business conquered the world",
-    "en": "How this Aussie fragrance business conquered the world"
-   }
-  },
-  {
-   "id": "n1r5b0p0",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV1dBX3BKNVBTV2lXSnJLZ2tpZml2MWZwdUJlcDBaUUlYWTYxYnoySFU2RVVVRDBzdHVDd0NpdjZwc2h5ZFQ3Y3NObW03RDJkWWc0V3hlSlZIdEJFME9kX0Q1ZzloSEljeEtjZmlDRm1DMDk5dS15TEVGTDE5eHRMOFZhTGU2bVdoZmNMLWZaTkRXTWdhc0thYTdUaDZUQQ?oc=5",
-   "source": "Tuniscope",
-   "publishedAt": "2026-11-25T17:34:19.000Z",
-   "original": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
-    "en": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?"
-   },
-   "summary": {
-    "ar": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?",
-    "en": "L'intelligence artificielle s'invite dans la parfumerie : les parfums seront-ils bientôt créés par des algorithmes ?"
-   }
-  },
-  {
-   "id": "n1ze147",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcnBaeVBNZ1VmRXNmaXpER3pDVUVIRWJOcElRcXhlb0J0RmViZHJ2dHFqamZCc1dTcUMzQ2I5a2hhbnU3RVk4cFJSeHFlOWJOVEtxd0x5Wmg5V1VScnlFblpoTHBDc3NzSE9ISkpyLTJzVE9NamJUdk5JM3I3a0ZDal9Wa05FMGNmLTllYkxSSQ?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-25T17:32:34.000Z",
-   "original": "\"أغنية عازف العود للونغ ثانه\" وقصة الأزياء المفعمة بالروح الفيتنامية.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "\"أغنية عازف العود للونغ ثانه\" وقصة الأزياء المفعمة بالروح الفيتنامية.",
-    "en": "\"أغنية عازف العود للونغ ثانه\" وقصة الأزياء المفعمة بالروح الفيتنامية."
-   },
-   "summary": {
-    "ar": "\"أغنية عازف العود للونغ ثانه\" وقصة الأزياء المفعمة بالروح الفيتنامية.",
-    "en": "\"أغنية عازف العود للونغ ثانه\" وقصة الأزياء المفعمة بالروح الفيتنامية."
-   }
-  },
-  {
-   "id": "nbf7mf3",
-   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9RUFltV25mR1F3RHhrc1JrZHFBNFZzOEp1bTdEWXJvNFhWOGNuQU9kUkVjY1lPWk9qNFRkeVVZQXo5akNTX2c?oc=5",
-   "source": "الخلاصة نت",
-   "publishedAt": "2026-11-25T17:04:09.000Z",
-   "original": "كنوز حميرية في الضالع على وشك الزوال.. نبش القبور والهدم يهددان مدينة جيشان العود بالاندثار",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "كنوز حميرية في الضالع على وشك الزوال.. نبش القبور والهدم يهددان مدينة جيشان العود بالاندثار",
-    "en": "كنوز حميرية في الضالع على وشك الزوال.. نبش القبور والهدم يهددان مدينة جيشان العود بالاندثار"
-   },
-   "summary": {
-    "ar": "كنوز حميرية في الضالع على وشك الزوال.. نبش القبور والهدم يهددان مدينة جيشان العود بالاندثار",
-    "en": "كنوز حميرية في الضالع على وشك الزوال.. نبش القبور والهدم يهددان مدينة جيشان العود بالاندثار"
-   }
-  },
-  {
-   "id": "nk958q",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNHdjOGNZVTk3TlBPODJ3ZEk3cU9aUjJnRVdKZTFsNjROS283amtjbnBPNmdpLVpQN3BPem5iUW53blpsX2xBaXlrUmVoMlMxOWFNZ05QQUpDTGJuMDREaXlENVdQQTNfdHhMQjBRSjV4RVY4TmQ0ei1PVUhJTEd0dHFuN0dfR2FlcTFWZjJmWjk0M2llaFJZbVF1bEFxZ05tYVdxdm1MNUQ0ampDa1VlTFE2bGQyWnJqQmpkV3ppUGU?oc=5",
-   "source": "Zonebourse Suisse",
-   "publishedAt": "2026-11-25T17:02:30.000Z",
-   "original": "Givaudan adopte un train de mesures après le cartel des parfums",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Givaudan adopte un train de mesures après le cartel des parfums",
-    "en": "Givaudan adopte un train de mesures après le cartel des parfums"
-   },
-   "summary": {
-    "ar": "Givaudan adopte un train de mesures après le cartel des parfums",
-    "en": "Givaudan adopte un train de mesures après le cartel des parfums"
-   }
-  },
-  {
-   "id": "n1ic6jnp",
-   "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxOV1BnQmZ1Sk5SUVhuaERnYnRkanRKMFhvaEFzNkZKMkdlZWFlSHJGVU5hcUxGbVlTc0Rka0s5TUhDT1BJY0RlRi1EYmJ0UzdJcHpUNndFNzRjVDNXcUZZcUducjM4VDg2STJtbkZ3WkFzRXVFWVNwdDBZbGJjT3NwQUdIMVVFTHpHenctRndmWkpOMWhxckRsbThnVHN0TEcyNnA1M2FoaHlZdE04NU5vQXF6dXNzVFZXbDhxT0I3NFlBcDJScnd0Y3RlbU0zTV9LbkQ2RVZtQ2VTTnlVOG9sWnV1THF6b0pvbk0wX3k1LS1FRWRPMVRCdXZ0T2wzR1Q2VGV1MDBxakdBYUZsbjdLY3o4UVl2OWZEdnd6aXhpRHYyd2cxa0phN2F1SG8xZXpjalZnRExtdURBdTF3YVRvcVBHRGstVk9CODFvbXh1MHJTTEJrc2NpZndGaG5yWlVSUWNaTG5jc2lvLU9UZ3ZqaXdmRmxvWDFhRjFDQS1YaXJpek9MWkhrbk1ZOW9BVHFhNnQwYWMzeHRUYjQyUXp6QUpEVy13UF80VmY3M0pSSWVpam11Z1d6ZDZORHM5THNVY2RsMlZaNHUtUnZ0d1hIbTNZeGgyVS1YSjBZLW5R?oc=5",
-   "source": "الشرق الأوسط",
-   "publishedAt": "2026-11-25T17:00:12.000Z",
-   "original": "«بيت العود» يحتفي بأول دفعة من خريجيه في السعودية",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "«بيت العود» يحتفي بأول دفعة من خريجيه في السعودية",
-    "en": "«بيت العود» يحتفي بأول دفعة من خريجيه في السعودية"
-   },
-   "summary": {
-    "ar": "«بيت العود» يحتفي بأول دفعة من خريجيه في السعودية",
-    "en": "«بيت العود» يحتفي بأول دفعة من خريجيه في السعودية"
-   }
-  },
-  {
-   "id": "n1uxjgtz",
-   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOVDFpcGR1MmNJbVpwOElNRGdjM2ZjWEE0NUZZajZaRUVaV0ljYnc3ZWVhRU5pd3hXWERwV29BUHd2enNPVkxLbi1iVXFIQnJoR0lDVGNXRmp0T3ZpS1BqSHpsS3MxWUp4dF9sRDdFbnJmMm1TYlNLSzVDbnpMbmVvSG5wYU1ORzV4VVhZUFljYWRCQ3Ewem1fU200Q3FwMm5PSW0zNU9xWmFiLVdUVGFuUVhWdFpDR2szc1h4N2hwZGxGYmRhS19VcEFaMTgydTFMb1EzNXlBclM5Wlo4Y2ozeHJhTDFZV3p6aVBDYjk5RWJ3V3NCWGxuc3hEb3NoU0VTLXFDaG0wRXpVY21KdFJhTUU1Sng5WjZrSHRucktNczV1cHN3dGFtRFJn?oc=5",
-   "source": "Bourse Direct",
-   "publishedAt": "2026-11-25T16:56:00.000Z",
-   "original": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels",
-    "en": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels"
-   },
-   "summary": {
-    "ar": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels",
-    "en": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels"
    }
   }
  ]
