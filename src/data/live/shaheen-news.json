@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-25T23:35:41.235Z",
- "nextUpdateAt": "2026-11-26T11:35:41.235Z",
+ "updatedAt": "2026-11-26T12:17:07.292Z",
+ "nextUpdateAt": "2026-11-27T00:17:07.292Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,8 +10,84 @@
  },
  "sources": [
   {
-   "name": "Who What Wear",
-   "count": 3
+   "name": "Cosmetics Business",
+   "count": 1
+  },
+  {
+   "name": "EIN Presswire",
+   "count": 1
+  },
+  {
+   "name": "صحيفة النهار السعودية",
+   "count": 1
+  },
+  {
+   "name": "Economie Matin",
+   "count": 1
+  },
+  {
+   "name": "Jagran",
+   "count": 1
+  },
+  {
+   "name": "NDTV Profit",
+   "count": 1
+  },
+  {
+   "name": "The National Law Review",
+   "count": 1
+  },
+  {
+   "name": "Bollywood Mascot",
+   "count": 1
+  },
+  {
+   "name": "Heatworld",
+   "count": 1
+  },
+  {
+   "name": "Preview.ph",
+   "count": 1
+  },
+  {
+   "name": "BeautyMatter",
+   "count": 1
+  },
+  {
+   "name": "Beauty Independent",
+   "count": 1
+  },
+  {
+   "name": "Doctissimo",
+   "count": 1
+  },
+  {
+   "name": "الاستاد الرياضي",
+   "count": 1
+  },
+  {
+   "name": "الإمارات اليوم",
+   "count": 1
+  },
+  {
+   "name": "The Detroit News",
+   "count": 1
+  },
+  {
+   "name": "سواليف - والهرج للجميع",
+   "count": 1
+  },
+  {
+   "name": "Actu.fr",
+   "count": 1
+  },
+  {
+   "name": "Bénin Web TV",
+   "count": 1
+  },
+  {
+   "name": "Popbee",
+   "count": 1
   },
   {
    "name": "CaFleureBon",
@@ -52,77 +128,369 @@
   {
    "name": "Bourse Direct",
    "count": 1
-  },
-  {
-   "name": "CNews",
-   "count": 1
-  },
-  {
-   "name": "FashionNetwork India",
-   "count": 1
-  },
-  {
-   "name": "الأمناء نت",
-   "count": 1
-  },
-  {
-   "name": "HamHigh",
-   "count": 1
-  },
-  {
-   "name": "Sortir à Paris",
-   "count": 1
-  },
-  {
-   "name": "L'essentiel",
-   "count": 1
-  },
-  {
-   "name": "BFM",
-   "count": 1
-  },
-  {
-   "name": "The Economic Times",
-   "count": 1
-  },
-  {
-   "name": "Le Monde.fr",
-   "count": 1
-  },
-  {
-   "name": "Now Smell This",
-   "count": 1
-  },
-  {
-   "name": "Revista Merca2.0",
-   "count": 1
-  },
-  {
-   "name": "القاهرة 24",
-   "count": 1
-  },
-  {
-   "name": "TheIndustry.beauty",
-   "count": 1
-  },
-  {
-   "name": "Grazia",
-   "count": 1
-  },
-  {
-   "name": "Petites Affiches",
-   "count": 1
-  },
-  {
-   "name": "SMEStreet",
-   "count": 1
-  },
-  {
-   "name": "الأيام البحرينية",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "n19bqe5s",
+   "url": "https://cosmeticsbusiness.com/joonbyrd-conquered-advanced-body-care-can-it-crack-hair-care",
+   "source": "Cosmetics Business",
+   "publishedAt": "2026-11-26T11:57:00.000Z",
+   "original": "Joonbyrd conquered advanced body care, but can it crack the hair care market?",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Joonbyrd conquered advanced body care, but can it crack the hair care market?",
+    "en": "Joonbyrd conquered advanced body care, but can it crack the hair care market?"
+   },
+   "summary": {
+    "ar": "After reporting a ‘stellar’ 100% year-on-year ecommerce growth, Joonbyrd – the body care brand founded by dermatologist Dr Alexis Granite, powered by clinically proven actives and mood-supportive scents – will enter the hair care category in 2027 with scalp health-focused products, as well as expand its US reach",
+    "en": "After reporting a ‘stellar’ 100% year-on-year ecommerce growth, Joonbyrd – the body care brand founded by dermatologist Dr Alexis Granite, powered by clinically proven actives and mood-supportive scents – will enter the hair care category in 2027 with scalp health-focused products, as well as expand its US reach"
+   }
+  },
+  {
+   "id": "n1rj1r6h",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPc3lpS3hUWVlVeXA4dzFMOERYb21xZjVmM0hEZGJnMzlid2xNdUhKSXhNWlVLRnR6M042aEN3NVg3S0VfTGxWdXZUZmpGa3VhcGlfYWx1Qnl2RFRKV3J2bXF2N2NpY0Y5T3Q3cHdTMXNtUG5oRmFLSkZfalRjNmtjM2tVVzV1eVNDX0RNWVQzSDF6YWJyTWRTY1FZNnBCa2RMeWNsN2J3LUF6UHVrVFE5bDF1M29QMGhlZEZxSDFBNndsVkcyOXNuRUR5WHppOEphSWFYNXBn?oc=5",
+   "source": "EIN Presswire",
+   "publishedAt": "2026-11-26T11:38:00.000Z",
+   "original": "Two Fragrance Houses, One Shared Ambition: Middle Eastern Perfumery Builds Its Global Identity",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Two Fragrance Houses, One Shared Ambition: Middle Eastern Perfumery Builds Its Global Identity",
+    "en": "Two Fragrance Houses, One Shared Ambition: Middle Eastern Perfumery Builds Its Global Identity"
+   },
+   "summary": {
+    "ar": "Two Fragrance Houses, One Shared Ambition: Middle Eastern Perfumery Builds Its Global Identity",
+    "en": "Two Fragrance Houses, One Shared Ambition: Middle Eastern Perfumery Builds Its Global Identity"
+   }
+  },
+  {
+   "id": "n1v5xv7q",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45VzF6RDctRm1qTE1WSzF3eGNlZF80RDdNbHlzbXpkMDFxc3VOZ0tGWVZ6ZXJNTk9VLUhJcUpzTWtZd015RVJiSDdLMzNRU0FNa0IweQ?oc=5",
+   "source": "صحيفة النهار السعودية",
+   "publishedAt": "2026-11-26T11:30:26.000Z",
+   "original": "من المبخرة السعودية إلى الشاي الصيني.. حكاية العود في هاينان",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "من المبخرة السعودية إلى الشاي الصيني.. حكاية العود في هاينان",
+    "en": "من المبخرة السعودية إلى الشاي الصيني.. حكاية العود في هاينان"
+   },
+   "summary": {
+    "ar": "من المبخرة السعودية إلى الشاي الصيني.. حكاية العود في هاينان",
+    "en": "من المبخرة السعودية إلى الشاي الصيني.. حكاية العود في هاينان"
+   }
+  },
+  {
+   "id": "n1100hde",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBfWWkyUEVxSFNVczFZNEpHTUpMOWJPRTZka3c5clAwUUdfNl9JTTY1UER5MUxJX3NER3NTenRhRXpfYVVWb2pWZGNmeWdXczc4MWNkdnJMZVBCLWJyLUQzQ3pOTW15UXJwQ2NHZVhac0duZ3VaQ0lxOGV3?oc=5",
+   "source": "Economie Matin",
+   "publishedAt": "2026-11-26T10:58:02.000Z",
+   "original": "Cartel des parfums : comment vos produits ont été surfacturés",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Cartel des parfums : comment vos produits ont été surfacturés",
+    "en": "Cartel des parfums : comment vos produits ont été surfacturés"
+   },
+   "summary": {
+    "ar": "Cartel des parfums : comment vos produits ont été surfacturés",
+    "en": "Cartel des parfums : comment vos produits ont été surfacturés"
+   }
+  },
+  {
+   "id": "n1ieyv5k",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQ2FER3VuUXlFUFF1bVBXSnVucFhlNkVSSGYyS2dQWUJaSnRPZkdyUTYxdU5tWTM2V1ItdHlBNUNXN1ltQUROWVVpLWVpY2I5MzMxcmNkNVI5UEtyQ1l2UUdWMHFaTmpFdVJuYWpscjM0VFFybE9KRUZhQ1hNR25vNFlWMHo4T1BZem5hbHY2UmFldDk1VmJGQXBJMXdoUHk5WHpOR0ZPN2UzbV8ySlNRT09jZXg4cm1zYnJlOUpUa1llZFVtMXVJclhTX05DUQ?oc=5",
+   "source": "Jagran",
+   "publishedAt": "2026-11-26T10:31:52.000Z",
+   "original": "Royal Oman Stallions vs Mustafa Fragrance House Strikers",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Royal Oman Stallions vs Mustafa Fragrance House Strikers",
+    "en": "Royal Oman Stallions vs Mustafa Fragrance House Strikers"
+   },
+   "summary": {
+    "ar": "Royal Oman Stallions vs Mustafa Fragrance House Strikers",
+    "en": "Royal Oman Stallions vs Mustafa Fragrance House Strikers"
+   }
+  },
+  {
+   "id": "nuygg2m",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcXYwWmsxZDQ1NFJpYXRESzNDeTBGVm1QZUVQaTcyQ3JGSklQQ1M3cnJZSW5ydWlBVlI4cDRJLTNlcXVPeW1Nai1qQVI3bDFJS1JHQ0VLN2JXQzAtZ3Q5M0ptVHljNmI2R3dWTDNpT0YyV1plU1VJSnhSV3F3ME1Sb3dkRzdKRlpMUTJrNUhpUTlKME5aelJ2NVJwRG1MUUlURndhSDdmbVh0T2IwWlkxOXhJNFJqNzVmQTV0Smd5MVdoTl9WRXBLcUlQZy1JbjFnbUHSAdoBQVVfeXFMUFhnOXZOV0xOTEFUYW80WHZfU2JDTjN6U2F6T21iLXE5aHhOYkpta3l2QmRmZHhhV3FhRXJGZUtMaWFoNExOTVNyMmwzazIyRmJwclp3UFJNdGRxeWFzMTFsTmZVUW8weDJ1cHJITXBKZFBRSEZ1QU1xSTZIZnZ4SkFOWFRTeW1ITE1xUG5GaW9fM2lOekw5MjhkeU5qeFE0clNoQXM4NFZxQUcwbW9UaVpCd3BERVRWNmpzaXl1dnUxUGRacTdFUk1odms5Um9DQzlpbW92clVlWWc?oc=5",
+   "source": "NDTV Profit",
+   "publishedAt": "2026-11-26T09:38:05.000Z",
+   "original": "Titan Sharpens Premium Fragrance Play With SKINN, Fastrack; Bets On Smaller Cities For Growth",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Titan Sharpens Premium Fragrance Play With SKINN, Fastrack; Bets On Smaller Cities For Growth",
+    "en": "Titan Sharpens Premium Fragrance Play With SKINN, Fastrack; Bets On Smaller Cities For Growth"
+   },
+   "summary": {
+    "ar": "Titan Sharpens Premium Fragrance Play With SKINN, Fastrack; Bets On Smaller Cities For Growth",
+    "en": "Titan Sharpens Premium Fragrance Play With SKINN, Fastrack; Bets On Smaller Cities For Growth"
+   }
+  },
+  {
+   "id": "n1gfyrd4",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZ1FKaUNLU2gwNzEwcEVnYTMtZER3R0FpeUdaUGs2Zzh1VE1hRDVBeUxSUU5yRTlwRVdEWGVZNzdYbWFnSjR1VE1leUYwc2VWTUpfdnF4LWxrZXZ1OVhMLWZPVFpzOGRGdG5nWFVQX2g2eUluRW85azgtVWJPbW9mTTkwT1VsMGhTQXRZRXZZS0syTFFEcjFSclVWUUh2eUxpeHk2MmZiX1RIRjEtdmU2LWhNX2tVVlk?oc=5",
+   "source": "The National Law Review",
+   "publishedAt": "2026-11-26T09:12:11.000Z",
+   "original": "UAE-Born Fragrance House Ahmed Al Maghribi Celebrates 55 Years of UAE Unity and Progress",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "UAE-Born Fragrance House Ahmed Al Maghribi Celebrates 55 Years of UAE Unity and Progress",
+    "en": "UAE-Born Fragrance House Ahmed Al Maghribi Celebrates 55 Years of UAE Unity and Progress"
+   },
+   "summary": {
+    "ar": "UAE-Born Fragrance House Ahmed Al Maghribi Celebrates 55 Years of UAE Unity and Progress",
+    "en": "UAE-Born Fragrance House Ahmed Al Maghribi Celebrates 55 Years of UAE Unity and Progress"
+   }
+  },
+  {
+   "id": "ncnhpwi",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZWcwT09JNmlRemZlSHhKZ1A1MnphSjZVbE9oVFBBbkpZaDRLbUxPYzRjaHRZSFNkMDZuQjZJNkpVTUZ1S1dIeDBGM1FCaEhGSzZKZDZ6N0h2b1NwSXF4Q3Rud2loTldPMTZmLVJIMXB5VVFXcHVtX3h2VHE3YWpWSUo4ZE5YU28tc1JLYkdlMDM2WW0xNHJRdERrSkV4aEIxb3p3YlhuSnJOVlRWOVJsODVSUFpvTzlhUlNsdEZDM1A?oc=5",
+   "source": "Bollywood Mascot",
+   "publishedAt": "2026-11-26T09:07:07.000Z",
+   "original": "Ranveer Singh to Nora Fatehi: Why Middle Eastern Perfume Brands Want Indian Stars",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Ranveer Singh to Nora Fatehi: Why Middle Eastern Perfume Brands Want Indian Stars",
+    "en": "Ranveer Singh to Nora Fatehi: Why Middle Eastern Perfume Brands Want Indian Stars"
+   },
+   "summary": {
+    "ar": "Ranveer Singh to Nora Fatehi: Why Middle Eastern Perfume Brands Want Indian Stars",
+    "en": "Ranveer Singh to Nora Fatehi: Why Middle Eastern Perfume Brands Want Indian Stars"
+   }
+  },
+  {
+   "id": "nnqgnj1",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wWkpiS3FlLUVJaERXSXItQlNCa1o4QldvNk9iLXVNT1VieS1SeXBZR0JLUF9RdzJnZDJaRVBCV1FNMF9yMHhFUUdid2tmbVMtbTF6bkRuSUNxc19keVV4dURDLUdJRUVJOEE?oc=5",
+   "source": "Heatworld",
+   "publishedAt": "2026-11-26T09:00:00.000Z",
+   "original": "From Rihanna to Paris Hilton: the celebrity perfume empires worth billions",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "From Rihanna to Paris Hilton: the celebrity perfume empires worth billions",
+    "en": "From Rihanna to Paris Hilton: the celebrity perfume empires worth billions"
+   },
+   "summary": {
+    "ar": "From Rihanna to Paris Hilton: the celebrity perfume empires worth billions",
+    "en": "From Rihanna to Paris Hilton: the celebrity perfume empires worth billions"
+   }
+  },
+  {
+   "id": "n1siism2",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUDJmclpBLW1KNXBWUzVRTkQwSjFKOXAtTHMzR3lWa3hBeHFsYXJ4NDhjY0VoekpnVlFDSUZyQjJrX3Q0eXRpV0t6NEwzOHJmdTItdHJ0dlhhakZsUzFTNDc2V1lvdmxHMmFMM0JCRVE3VVBScmVqUloxUUFqOXRnUkx2bElibUVxSW92a3phYjc0UnoxUnc?oc=5",
+   "source": "Preview.ph",
+   "publishedAt": "2026-11-26T08:26:39.000Z",
+   "original": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient",
+   "lang": "en",
+   "category": "ingredients",
+   "importance": 2,
+   "title": {
+    "ar": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient",
+    "en": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient"
+   },
+   "summary": {
+    "ar": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient",
+    "en": "This Filipino Perfume Is Winning International Awards with a Locally Sourced Ingredient"
+   }
+  },
+  {
+   "id": "n1n6p3nb",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd1YyYVU2MnBzMDBnUFBVTHBCeklJYmFDalZLaDk2S2JUVGhOQ1p2TWFvbUdpTnRGUmswR2dHSUktYnE5NW5qLU1XbmtneU1GNmhZdXlkZkFYZFlUbFljOVdWWXdwNlB6U1puLUlSQWROdHcxZUp3cFBhTzljMDRGS0lhaDVHZXlzX1E?oc=5",
+   "source": "BeautyMatter",
+   "publishedAt": "2026-11-26T08:10:51.000Z",
+   "original": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
+    "en": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market"
+   },
+   "summary": {
+    "ar": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market",
+    "en": "How OJAR Is Bringing Omani Fragrance Heritage to the Global Luxury Perfume Market"
+   }
+  },
+  {
+   "id": "n1y5yodu",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOX1llRGl6NEFnbWR5bEFTYnp3b3JiRHBvTzdtMXVYUDd6LUtDOFJSTFhjM2VaUE0xcW8xeXpJUmhjeGVWb2x0OE5FZ1BfSWstTnA5Q2xwMzY1OVhlRDd1N0I5d0NoOUFFMXJR?oc=5",
+   "source": "Beauty Independent",
+   "publishedAt": "2026-11-26T08:07:47.000Z",
+   "original": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
+    "en": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets"
+   },
+   "summary": {
+    "ar": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets",
+    "en": "Luckyscent Hires First CEO As It Takes Scent Bar Into New Markets"
+   }
+  },
+  {
+   "id": "n1gztx5r",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYWNNQlRTT2U5WEpZLXdhd0VpRGwwVmR5VnJuTndIN2JMa1hPN0VUaksyT2N3TW9VckRXeXdKS0NNd09qYmZJRUttUXd1aU5GUHZvem1Cbzk4SnB1aHVDWlJWa3dFT3lsZVFqNlVDNXlWUHlzMEp4dWh6dHdpU0N0Vld4cURuT3B0cjhXb00zVWRnaWdxNWV1SmZNd2std2dpalIyaXdQZC16di1hNmttSTZ4WWZVRy1HeEdObXFCeE1SN0JRNFZWUk4zenBYVTRzSjNIelhYT0R3c05tMnBidkFn?oc=5",
+   "source": "Doctissimo",
+   "publishedAt": "2026-11-26T07:31:11.000Z",
+   "original": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
+    "en": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies"
+   },
+   "summary": {
+    "ar": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies",
+    "en": "Adopt Parfums : parmi ses 3 calendriers de l’Avent 2026, ce coffret femme cache 186 € d’économies"
+   }
+  },
+  {
+   "id": "n12r0cc0",
+   "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNSE9aN1VjNXdCTHFOWFdDVngwZmZyOW9MdVIzelhwVWZ2LVBWYnFyaGE0Z1RTM193MVBmLXpqSllUOG4ycHg1T0VLdlJGVnBTWGtlcEl6MDkycHFURkZnSWs1a3psV253UlVzMlF0c3dYQzJFY3RiM2htZHhSaTlOdmVXeU5rbkUxM3Z1X0RPbkZqV2EzOTE5ZVlEVGJOM0RWZGdkUHlmQzdtN2EwaHRLY3NNemlIbDI1M1hYZ291U1loUlpYeDVaVlVSS1I2WFQ1U0t6VzNXQ05EeURhZkotb094WG5LUjRaMVQyTGZ6d3NZWll3Wi10M3R3NWhOenl3Z2NGUzdnWTVQbFRNSzUwRHA2TVUtNHJOTm1oRWxXcm81X1hSTmtIOFozOHZyNW4wcm1LRmIzZTQ1UHltMHk1MjdCcEhMTUMyRm5LWDNkNA?oc=5",
+   "source": "الاستاد الرياضي",
+   "publishedAt": "2026-11-26T07:25:18.000Z",
+   "original": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
+    "en": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم"
+   },
+   "summary": {
+    "ar": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم",
+    "en": "بيت الهراوي يستضيف حفلاً لعازف العود ماريو سعيد وفرقتهم"
+   }
+  },
+  {
+   "id": "nwchvkn",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XOHpFaGFaRlhiZlU2SE5vb09aT2xYcDJ5czFJTW44S2dqa29iZ0pBaGhFT1N6cFJYNHJVbVdZbkdMWWdpbzhDdTEtMS05MjZHMkRnZVVRLUh4NTQ2eWJzeEJlT2RJZ21wY3RVWF91QnFXTEthaHRYb0dlUFQ?oc=5",
+   "source": "الإمارات اليوم",
+   "publishedAt": "2026-11-26T07:21:35.000Z",
+   "original": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
+    "en": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة"
+   },
+   "summary": {
+    "ar": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة",
+    "en": "بسعر 50 ألف يورو.. “ديور” تكشف عن قارورة عطر مرصّعة بـ2,100 ماسة"
+   }
+  },
+  {
+   "id": "n19wfhl3",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPWWdTWU8zVEZXN0MzdG9sMkF3VlFQX255NjE3OTcyVXYxZWVYbldPN1M1UjltV3pEbG1XQ3ROazM0M0pTM3hTdDZuWmhWSzgyNWpWckwwWjVSYUZCTG53MHNkR1pyTzZWQm1tYy1wM0Z3bGl0SUFGckx0N2g2bzY4U1hXLUtMamtWeEFFU09mQVVBd3hUeHpYX1k3WjdGdjFQNnlKWXpRWlRTUTRQYlZDOVd3WjhoRHItZXd4SnFwMjg0T1pvSjhEX0lYSTdiQmxvZTItZGpQcEEwV0F4ekdPUHVWT2VBSzRNem9PR05taVhxTlJONEV0djJSckt3T3dQ?oc=5",
+   "source": "The Detroit News",
+   "publishedAt": "2026-11-26T07:02:04.000Z",
+   "original": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
+    "en": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop"
+   },
+   "summary": {
+    "ar": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop",
+    "en": "Korean Fragrance Brand Pleuvoir Enters U.S. Market with Limited-Edition Holiday Collection on Amazon and TikTok Shop"
+   }
+  },
+  {
+   "id": "n12dzq20",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQZkFXV3BhcVZ4LUZ4enFkM1hLZTZWSlVoQzh4Wl9YZ2s2cmJRYVMzMjlnQlI4QlNIV204TnhyTkZ3M2JhZEwyRHVjZXhZWEZXRDg2NnRKS20xOTdJVW5HLUpjNUhZQ2tna0ZoemdpeHdHTTYyQlZFU1kySnd3MEVlUGdYUThBOGJNUnlOcTR2enJVYV9jRmI0YWhSTzhCUUYzZ0VvcXJKTE5MVDE4ak9VeHZwWk0xQlFzX3pGYUphVVUtY1JrYk1XQmdnbVRoRnczUVNhcVd4QmVjZk9mZTNPRVhoM2R0WkNZakdEYlBlZDJYRmluNV9NX3c2OEFENElvRzkxakdIOHVjQUNLNUFhckZVYS0wdjA1VTF4TV95UDY3Q3FtY3dPVUZVbGhPaHFQRmNrczJvd1BiV2N4T2pUNUltQnJOVFRPQkN3?oc=5",
+   "source": "سواليف - والهرج للجميع",
+   "publishedAt": "2026-11-26T05:36:15.000Z",
+   "original": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
+   "lang": "ar",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
+    "en": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية"
+   },
+   "summary": {
+    "ar": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية",
+    "en": "إرسال الروائح عبر الإنترنت.. تقنية جديدة تحول العطور إلى بيانات رقمية"
+   }
+  },
+  {
+   "id": "n10dea4l",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZE9lYVpiZUYwcktwelNNbEJOd3BuVTMzY0RzdXNRdE9VaVVyZXF4X2h0MDgza1FXdjM3c1hfUXJhRWVtNmhqZlJ3VThtSlFDZDlic0tHNXZ4alJLd3JPWGZYaGZxNUZrX2xFVmx3eUN5QkpUZk9ZaWMzNndMdHpJZHhmUmdTUmQzQURSLVlzamlfXzh5cnZsdHFTTnAzRkp3WVFZTE02dFRoUEhyWTNNR0JSbzZNU0NrMU5uQ2w1VkYzQkVHa3RaSWdkbWpjNndKemtGMXRpbng3VEMyQzF4R0N4aEZtUQ?oc=5",
+   "source": "Actu.fr",
+   "publishedAt": "2026-11-26T05:36:01.000Z",
+   "original": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
+    "en": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?"
+   },
+   "summary": {
+    "ar": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?",
+    "en": "Comment cette discrète PME de l'Eure est-elle devenue indispensable aux géants mondiaux du parfum ?"
+   }
+  },
+  {
+   "id": "n1t7eybp",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcUd6SEhkb3I4SjZkdERKTDdwd3JXZ1lJZVQ5U2R4MmRwaW5NVm8xOFl6SVlIVlJKRktfRkFIMXRjSVFHcnFJempCVVBJSExGbnk2S0MyVzJTWnlZbjllVExERUJyVUp1dTVMTDhNdVVxUkh3aTJSWVViUklBcHBNdEZzZWRCdzVYOFlJLXFBOFdIZEQtb0FCNVZ6WFBnbzRDR251bE1R?oc=5",
+   "source": "Bénin Web TV",
+   "publishedAt": "2026-11-26T04:23:19.000Z",
+   "original": "Fragrance industry: Brussels and London sanction three companies for collusion",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Fragrance industry: Brussels and London sanction three companies for collusion",
+    "en": "Fragrance industry: Brussels and London sanction three companies for collusion"
+   },
+   "summary": {
+    "ar": "Fragrance industry: Brussels and London sanction three companies for collusion",
+    "en": "Fragrance industry: Brussels and London sanction three companies for collusion"
+   }
+  },
+  {
+   "id": "n1mwh4el",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbF9wSlBFR3pkcE45clJYNXZ4MG91STNEWXhhSmRqcFdfTlRnLVRSajB2NzRqXzdxR1dkdUlETDk3dkJsTDFrd3QxZjk4RmFKQTBFVGR1OFhGWnNzVzVNQWlQX3JpWVREWkExdGJTQUZETkhzYWp2Y1l2ejJpM1JYREZWVDFrQlNCSldxYlRxUFRLUUZNQlB1Q0p4cU5hNktFdXBQakxFY1Noa29O?oc=5",
+   "source": "Popbee",
+   "publishedAt": "2026-11-26T04:00:44.000Z",
+   "original": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
+    "en": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!"
+   },
+   "summary": {
+    "ar": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!",
+    "en": "Milk Tea Lovers Will Be Smitten: Japanese Fragrance Brand AROMA BLEND Bar Launches DIY \"Milk Tea Perfume\"!"
+   }
+  },
   {
    "id": "n46iex6",
    "url": "https://cafleurebon.com/sine-gloria-by-nobile-1942-winner/?utm_source=rss&utm_medium=rss&utm_campaign=sine-gloria-by-nobile-1942-winner",
@@ -301,366 +669,6 @@
    "summary": {
     "ar": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels",
     "en": "\"Cartel des parfums\" : l'UE et Londres infligent près de 600 millions d'euros d'amendes à trois industriels"
-   }
-  },
-  {
-   "id": "nfpm7ff",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR3I1bEtKelFaTVIxeTdrTVNMT2t1c19TSmlwUnZ2UUdYNlpQNkkwTXB2eTV4T2lOQS1SM1JyM0d3eU1Hb1hWdkNiODJTMUZQR2N4VmZqeW8weW1CLXJja2VRQzctcjhKTVVMLUJpb09hajZNUTlvUFVIcC01TExSYnJBTTR5ZFg0eWFVTFBOeC1qbUtaMHJhNkRfRmVhaU14MVIzQ0xxcVVrUExVRDl3UlhkUXM?oc=5",
-   "source": "CNews",
-   "publishedAt": "2026-11-25T16:47:37.000Z",
-   "original": "«Cartel des parfums» : amende d'un demi-milliard d'euros, prix gonflés... Ce qu'il faut savoir sur ce scandale qui ébranle l'Europe",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "«Cartel des parfums» : amende d'un demi-milliard d'euros, prix gonflés... Ce qu'il faut savoir sur ce scandale qui ébranle l'Europe",
-    "en": "«Cartel des parfums» : amende d'un demi-milliard d'euros, prix gonflés... Ce qu'il faut savoir sur ce scandale qui ébranle l'Europe"
-   },
-   "summary": {
-    "ar": "«Cartel des parfums» : amende d'un demi-milliard d'euros, prix gonflés... Ce qu'il faut savoir sur ce scandale qui ébranle l'Europe",
-    "en": "«Cartel des parfums» : amende d'un demi-milliard d'euros, prix gonflés... Ce qu'il faut savoir sur ce scandale qui ébranle l'Europe"
-   }
-  },
-  {
-   "id": "nh469pi",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYWEzLVdZNTRMRFBodWZ3VnhQN1c1Z0Y5OHdlUnhic1hkRTBfS0htam01RDcyRGFtbDFGRkZZLWJtX2h1VjYzaXg4MVNFZ3hRQ01HanNlcUYzSUs0dzg2M0NoaFRsZkxQLVN2c0JxSkliRVAtN3NibV9kc1R3LWtDbkRSdHFZc0xBZTRXYVNvaVJrR01ZVkw4OW0teWI4LWN1UkFySnpoRE1DTXFZSHd0cmtmOFNTQmdBMTFJdTJ3aw?oc=5",
-   "source": "FashionNetwork India",
-   "publishedAt": "2026-11-25T16:24:55.000Z",
-   "original": "EU, UK fine fragrance firms over 570 million euros for international cartel",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "EU, UK fine fragrance firms over 570 million euros for international cartel",
-    "en": "EU, UK fine fragrance firms over 570 million euros for international cartel"
-   },
-   "summary": {
-    "ar": "EU, UK fine fragrance firms over 570 million euros for international cartel",
-    "en": "EU, UK fine fragrance firms over 570 million euros for international cartel"
-   }
-  },
-  {
-   "id": "nfjgq2i",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE95Z1ltUzg0R0VOWEtQNXFiY3REN1FjQ25tejl2LTM1c3oxbkVPXzViNEl1NGhzTHh1Nm1yZmhYTEdKUUJmcFh0TmhMems?oc=5",
-   "source": "الأمناء نت",
-   "publishedAt": "2026-11-25T16:14:18.000Z",
-   "original": "تقرير خاص : جيشان العود.. حضارة حميرية تقاوم النسيان وتستغيث لإنقاذ ما تبقى منها ..",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "تقرير خاص : جيشان العود.. حضارة حميرية تقاوم النسيان وتستغيث لإنقاذ ما تبقى منها ..",
-    "en": "تقرير خاص : جيشان العود.. حضارة حميرية تقاوم النسيان وتستغيث لإنقاذ ما تبقى منها .."
-   },
-   "summary": {
-    "ar": "تقرير خاص : جيشان العود.. حضارة حميرية تقاوم النسيان وتستغيث لإنقاذ ما تبقى منها ..",
-    "en": "تقرير خاص : جيشان العود.. حضارة حميرية تقاوم النسيان وتستغيث لإنقاذ ما تبقى منها .."
-   }
-  },
-  {
-   "id": "n1gtla65",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa19wMEJQWDNYRjdiRUJoenlkS0duQlhaY0JiRm01cmVELTl0VlIxU01ld0FWVzcwZDhtd3pDZi1McHRHVEdaUkFSY2hKNHo2TTZUTjVhczBtckhoaWp3NWJDbklvQW83ZWZtWHE0U3JSLVpkdmw3dHl5Q24yeHYxTEgtckpwWHdfaEkwR0xLSGxvdmV2NVZOaEJsaGdMcGtuZzNpMVhISnJENnpTNDRnekJvSjg?oc=5",
-   "source": "HamHigh",
-   "publishedAt": "2026-11-25T15:51:46.000Z",
-   "original": "Three global fragrance suppliers fined millions for colluding over prices",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Three global fragrance suppliers fined millions for colluding over prices",
-    "en": "Three global fragrance suppliers fined millions for colluding over prices"
-   },
-   "summary": {
-    "ar": "Three global fragrance suppliers fined millions for colluding over prices",
-    "en": "Three global fragrance suppliers fined millions for colluding over prices"
-   }
-  },
-  {
-   "id": "n13o76ez",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRGZiYlhvSUpLQnU3dWZ4U2NzbWUtRXNwOEE2NXdocHc2ZjVwMndWbjJ0RUU4blhONGpVSzlyR0sweXEzYUcwZlVNMEdwRnI1YlM0OEtycDg5bVcyYVE2NjNuUjhZamJOWXRsa1FsdWVUT05tMnZDTWRlS3o4UTJNYkxyQllpLUV4VWlzUWk3US11RlUzQU1xcVdiRkl4LVlfUmM2WGNuU2NhajZEaEZId3A2blNscXFZSmhmTFFRM0llb3BjRE80?oc=5",
-   "source": "Sortir à Paris",
-   "publishedAt": "2026-11-25T15:40:09.000Z",
-   "original": "Liquids: The Rare Perfume Bar in Paris",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Liquids: The Rare Perfume Bar in Paris",
-    "en": "Liquids: The Rare Perfume Bar in Paris"
-   },
-   "summary": {
-    "ar": "Liquids: The Rare Perfume Bar in Paris",
-    "en": "Liquids: The Rare Perfume Bar in Paris"
-   }
-  },
-  {
-   "id": "n1y5nqb6",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNC1yU2R5NWVuZGxOcXpJOW93ampGUXcyaEUtc1U2RnFqT2p3ckZ6YVUzN2JxZU5VTVBGTExlenVNeDlJbzVWdWtEcXFVRWZBeE5VTzlfZWlRSFNhVXc1SjVUdUhmLXJ4NmhBSnVZWE9tQkpkZXVUeWpzZ2twNTYtQ0cyTERyR285MDIxUU9hLWNiMnRlTDhQanNxSG02eElGNUxCQUYwalZ3dXM?oc=5",
-   "source": "L'essentiel",
-   "publishedAt": "2026-11-25T15:34:10.000Z",
-   "original": "L’UE inflige une énorme amende à trois géants du parfum",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "L’UE inflige une énorme amende à trois géants du parfum",
-    "en": "L’UE inflige une énorme amende à trois géants du parfum"
-   },
-   "summary": {
-    "ar": "L’UE inflige une énorme amende à trois géants du parfum",
-    "en": "L’UE inflige une énorme amende à trois géants du parfum"
-   }
-  },
-  {
-   "id": "nfr1ix6",
-   "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxPbmEyTWZLV0o3YjZxTklDbk0xY2xhTkkzNVBaZEZUdFhwbmFJbmZGNEp4RnhhRVRMVkpDZ1lUMEFxYmNTbWFZczlWcG82RS11Uy1aN3U1RWhaWkFFMDRRVVgzZ01FbUwzdTFpSkRRZThIX05QWUJ1dUdmdHNEQXlzV0VtU0NkSzJlTy1lYWZhRHIxOWpETWRLM1JSdDZUbEJkSlg1bjhIaV9YOG5MRUN3SkpHTHZ0UWphNERxcFdla3cwMjhFa2dYX1h4WF8tN1p3UlBaS2hiaERLZ1pKS0NMbkdyWDZTaW1xT2c2OUZ1b3pXaFQ1Tkp6cV9oMTdzeGFIQkFsRWFTUl8xUjQxbUdIcURVWklYNEZmYThFdFEwVkJzMnFlb3h4d1RfNnF3ZTN1RFc4Sm5TaGtmMjUyeUVxQXdOUUM5amt2WXRaUzROMG9lNHp2N0lQVW5vV1Z1UkE3OENSNDExYXRrMngtSWVNbmVOOVg0Zw?oc=5",
-   "source": "BFM",
-   "publishedAt": "2026-11-25T15:30:06.000Z",
-   "original": "\"Un cartel international des parfums\": l'UE inflige 471 millions d’euros d’amendes à trois géants accusés d'échanges secrets et de hausses de prix, au détriment des consommateurs",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"Un cartel international des parfums\": l'UE inflige 471 millions d’euros d’amendes à trois géants accusés d'échanges secrets et de hausses de prix, au détriment des consommateurs",
-    "en": "\"Un cartel international des parfums\": l'UE inflige 471 millions d’euros d’amendes à trois géants accusés d'échanges secrets et de hausses de prix, au détriment des consommateurs"
-   },
-   "summary": {
-    "ar": "\"Un cartel international des parfums\": l'UE inflige 471 millions d’euros d’amendes à trois géants accusés d'échanges secrets et de hausses de prix, au détriment des consommateurs",
-    "en": "\"Un cartel international des parfums\": l'UE inflige 471 millions d’euros d’amendes à trois géants accusés d'échanges secrets et de hausses de prix, au détriment des consommateurs"
-   }
-  },
-  {
-   "id": "n1x96eyy",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQWVRSZnRrTWxZZHZSLWllWVVDa3djTXF3TzlaQk9IQkViazVMUjIwemFpQXRQSmZPMWdYSUthY1VPY3h6QU50clVYQlNuOUh6eFdoeWFscE10MGpxd0VpYzEtMnZORkZEX3ZqMFBENFRMRE56QXo4R29UdXdCV0pfQW5TalJiT19NQjIwZ1dGSGtBbVBoZFRTNVRDa1ljMGd1S3dGVE9ndk1paEVaQTFVa3RlVHBYT01qYm40cExfY1V5QndxSUluQ0RMQ01Ra0tXTlRNbFB1R2Z2R3lVanFhdTdmRWbSAeoBQVVfeXFMTWFEc0p5WDdhenE3MWhZNEZ5bGhkbUw1QXduMUxJdHQ4eFlQbVdkOEtCX3M1Vk5ZNnlWTFJiZ09hTTZMVlE1ekJwdko5aXBxZGhUQ0ZXLVJIRjY3Sm1EckZUdkhFb0g4dmVxSUlLTVRLMmdKU1FkSmkyejF6SjNHZHFOMWl1REF3dFNiSG90Um8tNnh1Mjd6SUhTc2ZZU3o3UU5CSkVOTEVRSTB0SkhXLTZudm5KbVBxeENPZ0tUQ1JIb1ZYZVAwTXNsX1ZVT2tQQ1d0RGVMdDZFM3EzNXlQQzdNck5zWU5DWEpB?oc=5",
-   "source": "The Economic Times",
-   "publishedAt": "2026-11-25T15:29:24.000Z",
-   "original": "EU slaps 471.9-million-euro fine over international fragrance cartel",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "EU slaps 471.9-million-euro fine over international fragrance cartel",
-    "en": "EU slaps 471.9-million-euro fine over international fragrance cartel"
-   },
-   "summary": {
-    "ar": "EU slaps 471.9-million-euro fine over international fragrance cartel",
-    "en": "EU slaps 471.9-million-euro fine over international fragrance cartel"
-   }
-  },
-  {
-   "id": "nq0o3mh",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPT0lXTWFleVl0VUtqY3YyUE91QlpUejFPbnNxa2FUNzRUSWZHU2RBMkxTZTEybEFuWDVLaDkyQ3FTNHZVRk83VU5IOGIxcmNrT2RJQy0wN1FVY2NBdDJsLWFLU2dxLWNPX0FseUdQc0VTVmc5cUM4bHFFMTA2SVZfcW5Qb285Q1Zlem1kdjVGYk1zSzhnUkYwLTE0SktUTUp5Y013bC1JU09qVUFBS0M4dFdSTE9DZVZvZ0xfdjVfMXFGb0VyazYyNmFadUZEZkVlQ0RTZm1CeXhtejBPeWhmWEp1N0lzbFQ5OUFMSW9xT3J5TkkxNlFVeFRDOG9JUlh1VWxR?oc=5",
-   "source": "Le Monde.fr",
-   "publishedAt": "2026-11-25T15:26:00.000Z",
-   "original": "« Cartel des parfums » : l’UE inflige près d’un demi-milliard d’euros d’amendes à trois industriels du secteur",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "« Cartel des parfums » : l’UE inflige près d’un demi-milliard d’euros d’amendes à trois industriels du secteur",
-    "en": "« Cartel des parfums » : l’UE inflige près d’un demi-milliard d’euros d’amendes à trois industriels du secteur"
-   },
-   "summary": {
-    "ar": "« Cartel des parfums » : l’UE inflige près d’un demi-milliard d’euros d’amendes à trois industriels du secteur",
-    "en": "« Cartel des parfums » : l’UE inflige près d’un demi-milliard d’euros d’amendes à trois industriels du secteur"
-   }
-  },
-  {
-   "id": "n9jr7ky",
-   "url": "https://nstperfume.com/2026/11/25/the-daily-lemming-1976/",
-   "source": "Now Smell This",
-   "publishedAt": "2026-11-25T15:19:28.000Z",
-   "original": "The daily lemming",
-   "lang": "en",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "The daily lemming",
-    "en": "The daily lemming"
-   },
-   "summary": {
-    "ar": "From Aedes de Venustas, Bois d'Kyoto Traditional Royal Incense: \"The distinctive character of hinoki wood unfolds with a clean, aromatic freshness, softened by the warmth of smooth, polished timber. Delicate woody nuances lend depth and texture, evoking the natural beauty of finely crafted Japanese architecture. The fragrance is luminous yet grounding, balancing the freshness of […]",
-    "en": "From Aedes de Venustas, Bois d'Kyoto Traditional Royal Incense: \"The distinctive character of hinoki wood unfolds with a clean, aromatic freshness, softened by the warmth of smooth, polished timber. Delicate woody nuances lend depth and texture, evoking the natural beauty of finely crafted Japanese architecture. The fragrance is luminous yet grounding, balancing the freshness of […]"
-   }
-  },
-  {
-   "id": "n837veh",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNR0pLTk5lLTNySmFmemFyRVd0M29ad3c4RkhFYkhVcFlramdwR0JRc0o0TFJEazFiT0FVMkxDNUkxbUZ2S3c4SUpZd2Nna0xGX0U3SUpKeFg4Q1hhLUhMOXRNRU5MY3U2MEw2NjRiT0Vqa1RIbVowTE1nZWNWOTZiRFlWMlQ0TmFEQmxfYUR1ZmVfQlJ3ZzlnYjk2czhVSVJQSEZGWXgzc0N4UkplbzBXRFRpb0NLUUU4MEVZNExfY3lmbkVMdURvendPb0JSZ2UxbEVJZjVYcHVQUDYtcndFUnROa1Qxb2RmTzhKaw?oc=5",
-   "source": "Revista Merca2.0",
-   "publishedAt": "2026-11-25T12:17:03.000Z",
-   "original": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
-    "en": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand"
-   },
-   "summary": {
-    "ar": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand",
-    "en": "David Beckham is suing Coty for selling his fragrances at gas stations and is now seeking $41 million in damages for harm to his brand"
-   }
-  },
-  {
-   "id": "n1buy5h3",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaEY5czNsR2cteTZuUVhNcGEybEpFQWFiQ0FoaUtVUmV3UXhIa1ZjOU5ZTGxJWVdOSnNGY0VqUUpNY0xiZW5KTE9RY2s4dUFnMjY2aUlPTTRKUjZLTzFjYVhGVy1ZZnhjM25EbHRDbUNWUk1TUHlmNjB3QmtQanB4YnM5cw?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-25T12:00:00.000Z",
-   "original": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
-    "en": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making"
-   },
-   "summary": {
-    "ar": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making",
-    "en": "I Have a Knack for Spotting Perfumes Before They're Buzzy—Trust Me, These Are Icons in the Making"
-   }
-  },
-  {
-   "id": "n19j49dn",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMldaOHpQNEJUZ1JDMUk5VWZzdHZ4dnUwdjEwR053R1RaVHgxX29Ib2pXb2lrcTZnWVEzMzBOZ3R0ZkRvU2NkU1B3aVkxNTFQUENjVU9kRlRSNzEzbXN0SlU2RGZjYnlsQ2NEd3c2bTJDMTdDcjQxU3BhNzItRW5iMW9TdVo?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-25T12:00:00.000Z",
-   "original": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
-    "en": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance"
-   },
-   "summary": {
-    "ar": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance",
-    "en": "The Gen Z Status Symbol Isn't a Designer Handbag—It's a $400+ Fragrance"
-   }
-  },
-  {
-   "id": "n1op2v64",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBXQVpfZEkzemVUOF9mZUJmUjRHbERPc19Oa2FSWDlERjlGeDktN2pkZ3BrZzUzal82dVlwNl9jazFUeVpWWF9kamRFUThFWEhMX3JGa1VWMUpPVFB6MHBSY1g1ZlIzcHZhdkVmQlk4Y0JZM1E1NGpLMmRpVQ?oc=5",
-   "source": "Who What Wear",
-   "publishedAt": "2026-11-25T12:00:00.000Z",
-   "original": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
-    "en": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season"
-   },
-   "summary": {
-    "ar": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season",
-    "en": "I Asked 3 Perfumers What Winter 2026 Will Smell Like—the Trends Poised to Dominate the Season"
-   }
-  },
-  {
-   "id": "n1lbp81l",
-   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5qY0lRdC1kZl9KY2ZaOUhwMXFDU3l1UHBiU1ZXcE9MdDNnMnRSVlVfSXc0dHNURUdNSUVZRVAzSDBWbTE1THc?oc=5",
-   "source": "القاهرة 24",
-   "publishedAt": "2026-11-25T11:46:29.000Z",
-   "original": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
-   "lang": "ar",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
-    "en": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟"
-   },
-   "summary": {
-    "ar": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟",
-    "en": "ديور تحول قارورة عطر إلى قطعة مجوهرات فاخرة بسعر 55 ألف دولار.. ما القصة؟"
-   }
-  },
-  {
-   "id": "n1uca74q",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWmdyYUNzeDYyanFUSnVmV1dhTlFueG11SjM4b2RFeTFDckdWaXdvTC1BOG94eS1tLVZ5T2FCdHRUU0J3czQzb0Jwall0M0V1cFRhUHJWa1NGejV0cXI1OVE2dGwwbEhYYVRHNGdwQVRmTHl2Ul9xWHBIRDlNdms4ckdJRVhpajNHbkRhOFhIeGhlVzZBRTkxdkhLeHQtQXRL?oc=5",
-   "source": "TheIndustry.beauty",
-   "publishedAt": "2026-11-25T11:42:04.000Z",
-   "original": "Essential Parfums opens first standalone store outside France in London",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Essential Parfums opens first standalone store outside France in London",
-    "en": "Essential Parfums opens first standalone store outside France in London"
-   },
-   "summary": {
-    "ar": "Essential Parfums opens first standalone store outside France in London",
-    "en": "Essential Parfums opens first standalone store outside France in London"
-   }
-  },
-  {
-   "id": "no5tk2f",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY28waF9WQ1lsd21BTW9Pc2VTVEZ2TU1sdHRYOHFoUWlmeEwtRlJKMUM1UTJqVE5KU0hOU2x1TW5rbVh2ZU00bHBYdWZmRkdyOXVCR1R3VENQaGFvU0JDMVZ1WVZuRElHN1VhbXBtcHlxSk9takVvcUI0WllTVjAzRG5UbDFwSFJPQ3Z0d19ISVlHQWpPdllfMFZpWGRtNnFURTBFaXNmMXRkd3hVQmZFblNWZ0xOb0hiRDBNM2VfajZiQlF3c3A5TzZVZDFiQQ?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-25T11:34:20.000Z",
-   "original": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
-    "en": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France"
-   },
-   "summary": {
-    "ar": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France",
-    "en": "Sold out en moins de 24h en Corée, ce parfum de niche est encore disponible en France"
-   }
-  },
-  {
-   "id": "n2brmmt",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRXZTNllENFJ6VDJQbUhLeWdSOWVYbk5Mcm83Ym5IUjUzZlNWQThvTi1Qb2ZXejBnWG8tMFBXMDJRb254aXVfRk1kbEhjV0tKQ25fNUw3RUZpaWpyTlpIM0JnRDBwRzZJWVZiWEdTTG1Cal95QUFoVEwzMVZhcWdvYmNpNmtLUTM4d2FJUVBNSjNMODJTQ29SdjJTWHNWaDhBQUJKcGxR?oc=5",
-   "source": "Petites Affiches",
-   "publishedAt": "2026-11-25T10:53:16.000Z",
-   "original": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
-    "en": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle"
-   },
-   "summary": {
-    "ar": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle",
-    "en": "Economie - MANE ouvre un nouveau chapitre de la parfumerie à l’heure de l’intelligence artificielle"
-   }
-  },
-  {
-   "id": "n95vtg1",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORHpWOGcxU1pEUURlMFNhaEZlWDJ4VVRFSUlFUm5meVUxVTN5cl9Cc0pRUlRVWTZvazZ5eUFMZWdscDZrcV9DNHV1VzJ2b3d5SlgxTm1vcmVURnQtMGRCV3RabGhyNTE4V0paMjIwdC1lbUxFY1luRU8xVDlGM0JfTWgwRFdPeVJyN0liMXRPSTNRYi1VNHd0btIBmAFBVV95cUxORHpWOGcxU1pEUURlMFNhaEZlWDJ4VVRFSUlFUm5meVUxVTN5cl9Cc0pRUlRVWTZvazZ5eUFMZWdscDZrcV9DNHV1VzJ2b3d5SlgxTm1vcmVURnQtMGRCV3RabGhyNTE4V0paMjIwdC1lbUxFY1luRU8xVDlGM0JfTWgwRFdPeVJyN0liMXRPSTNRYi1VNHd0bg?oc=5",
-   "source": "SMEStreet",
-   "publishedAt": "2026-11-25T09:38:37.000Z",
-   "original": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
-    "en": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range"
-   },
-   "summary": {
-    "ar": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range",
-    "en": "Bla Bli Blu Launches Fruit-Inspired Unisex Parfum Range"
-   }
-  },
-  {
-   "id": "njaz4se",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBlY3l5VUNTcXRBUXNpNG9yZDhsM3RQOUlObmpNS3dxdkVqSjA2UkpKbzJOUnVzY0RzbG92Ti1DWVoyb2NRZy1kZ0lyZzMydmx4R0VVd2k2Rnl6TksxU2FiZ3c0NFJwZw?oc=5",
-   "source": "الأيام البحرينية",
-   "publishedAt": "2026-11-25T08:15:00.000Z",
-   "original": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
-   "lang": "ar",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
-    "en": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026"
-   },
-   "summary": {
-    "ar": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026",
-    "en": "جنيد تستعرض إرثها العطري وإبداعاتها الجديدة في معرض العطور العربية 2026"
    }
   }
  ]
