@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-26T04:22:20.309Z",
+ "updatedAt": "2026-11-26T14:24:28.437Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 459,
-  "warn": 655,
+  "ok": 456,
+  "warn": 658,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-26T04:21:34.554Z",
+  "at": "2026-11-26T14:23:31.241Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,7 +21,7 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.1725,
+    "rate": 13.2489,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1048,
     "listingPages": 44,
@@ -37,7 +37,7 @@
     "gone": 15
    }
   ],
-  "rate": 13.1725,
+  "rate": 13.2489,
   "prices": {
    "count": 1063,
    "min": 750,
@@ -66,22 +66,22 @@
      "sizeMl": 105
     },
     {
+     "sku": "BUJ-1054",
+     "name": "Too Damn Clean by Bujairami 100ml Extrait de Parfum",
+     "price": 7555,
+     "supplierEgp": 5034.58,
+     "sizeMl": 100
+    },
+    {
      "sku": "BUJ-1027",
      "name": "Too Damn Good by Bujairami 100ml Extrait de Parfum",
      "price": 7510,
      "supplierEgp": 5005.55,
      "sizeMl": 100
-    },
-    {
-     "sku": "BUJ-1054",
-     "name": "Too Damn Clean by Bujairami 100ml Extrait de Parfum",
-     "price": 7460,
-     "supplierEgp": 4970.78,
-     "sizeMl": 100
     }
    ]
   },
-  "durationMs": 45781
+  "durationMs": 57236
  },
  "items": [
   {
@@ -1540,11 +1540,24 @@
    "page": "p/ana-abiyedh-by-lattafa-60ml-edp-unisex-176.html"
   },
   {
+   "sku": "LAT-177",
+   "id": 177,
+   "name": "Ana Abiyedh Scarlet by Lattafa 60ml EDP Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ana-abiyedh-scarlet-by-lattafa-60ml-edp-women-177.html"
+  },
+  {
    "sku": "LAT-178",
    "id": 178,
    "name": "Raghba for Men Lattafa 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/raghba-for-men-lattafa-100ml-edp-178.html"
@@ -1555,6 +1568,8 @@
    "name": "Queen Of Arabia by Lattafa Pride 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/queen-of-arabia-by-lattafa-pride-100ml-edp-179.html"
@@ -1565,6 +1580,8 @@
    "name": "Atheeri by Lattafa – 100 ml for Women",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/atheeri-by-lattafa-100-ml-for-women-180.html"
@@ -1575,6 +1592,8 @@
    "name": "Teriaq Intense by Lattafa 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/teriaq-intense-by-lattafa-100ml-eau-de-parfum-181.html"
@@ -6543,6 +6562,7 @@
    "name": "The Rock Intensely by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/the-rock-intensely-by-bujairami-100ml-eau-de-parfum-1052.html"
@@ -6553,6 +6573,7 @@
    "name": "Sovereign by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/sovereign-by-bujairami-100ml-eau-de-parfum-1053.html"
@@ -6563,6 +6584,7 @@
    "name": "Too Damn Clean by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/too-damn-clean-by-bujairami-100ml-extrait-de-parfum-1054.html"
@@ -6584,6 +6606,7 @@
    "name": "Red Static by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/red-static-by-bujairami-100ml-eau-de-parfum-1056.html"
@@ -6605,6 +6628,7 @@
    "name": "Enforcer by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/enforcer-by-bujairami-100ml-eau-de-parfum-1058.html"
@@ -6615,6 +6639,7 @@
    "name": "Red Eclipse by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/red-eclipse-by-bujairami-100ml-eau-de-parfum-1059.html"
@@ -6625,6 +6650,7 @@
    "name": "Drip by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/drip-by-bujairami-100ml-extrait-de-parfum-1060.html"
@@ -6635,9 +6661,21 @@
    "name": "Destined Red 100ml by Pendora Scents",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/destined-red-100ml-by-pendora-scents-1061.html"
+  },
+  {
+   "sku": "ASD-1062",
+   "id": 1062,
+   "name": "Ameerat Al Arab by Lattafa Women 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ameerat-al-arab-by-lattafa-women-100ml-1062.html"
   },
   {
    "sku": "VEL-1063",
@@ -6645,10 +6683,22 @@
    "name": "Velixir Concordia 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/velixir-concordia-100ml-edp-1063.html"
+  },
+  {
+   "sku": "RAV-1064",
+   "id": 1064,
+   "name": "Now Women Rave Perfumes 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/now-women-rave-perfumes-100ml-1064.html"
   },
   {
    "sku": "VEL-1065",
@@ -6656,6 +6706,7 @@
    "name": "Velixir Persephone 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6667,6 +6718,7 @@
    "name": "Velixir Orion 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6678,6 +6730,7 @@
    "name": "Velixir Hera 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6689,6 +6742,7 @@
    "name": "Velixir Morpheus 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6700,6 +6754,7 @@
    "name": "Velixir Artemis 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6711,6 +6766,7 @@
    "name": "Velixir Uranus 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -6722,6 +6778,7 @@
    "name": "Velixir Icarus 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
