@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-25T21:58:23.732Z",
+ "updatedAt": "2026-11-26T04:22:20.309Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
@@ -12,7 +12,7 @@
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-25T21:57:42.439Z",
+  "at": "2026-11-26T04:21:34.554Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -66,22 +66,22 @@
      "sizeMl": 105
     },
     {
+     "sku": "BUJ-1027",
+     "name": "Too Damn Good by Bujairami 100ml Extrait de Parfum",
+     "price": 7510,
+     "supplierEgp": 5005.55,
+     "sizeMl": 100
+    },
+    {
      "sku": "BUJ-1054",
      "name": "Too Damn Clean by Bujairami 100ml Extrait de Parfum",
      "price": 7460,
      "supplierEgp": 4970.78,
      "sizeMl": 100
-    },
-    {
-     "sku": "AFN-824",
-     "name": "Supremacy Incense by Afnan Perfumes – 100 ml (Unisex)",
-     "price": 7245,
-     "supplierEgp": 4829.47,
-     "sizeMl": 100
     }
    ]
   },
-  "durationMs": 41328
+  "durationMs": 45781
  },
  "items": [
   {
@@ -6268,6 +6268,7 @@
    "name": "Too Damn Good by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/too-damn-good-by-bujairami-100ml-extrait-de-parfum-1027.html"
@@ -6278,6 +6279,7 @@
    "name": "Legacy by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/legacy-by-bujairami-100ml-extrait-de-parfum-1028.html"
@@ -6288,6 +6290,7 @@
    "name": "Vanilla Dream by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/vanilla-dream-by-bujairami-100ml-eau-de-parfum-1029.html"
@@ -6298,6 +6301,7 @@
    "name": "Vibration by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/vibration-by-bujairami-100ml-extrait-de-parfum-1030.html"
@@ -6308,6 +6312,7 @@
    "name": "Chroma by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/chroma-by-bujairami-100ml-eau-de-parfum-1031.html"
@@ -6318,6 +6323,7 @@
    "name": "Kingsman by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/kingsman-by-bujairami-100ml-extrait-de-parfum-1032.html"
@@ -6328,6 +6334,7 @@
    "name": "Executor by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/executor-by-bujairami-100ml-extrait-de-parfum-1033.html"
@@ -6338,6 +6345,7 @@
    "name": "Ibiza by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/ibiza-by-bujairami-100ml-extrait-de-parfum-1034.html"
@@ -6348,6 +6356,7 @@
    "name": "Hectic by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/hectic-by-bujairami-100ml-extrait-de-parfum-1035.html"
@@ -6358,6 +6367,7 @@
    "name": "Next Level by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/next-level-by-bujairami-100ml-extrait-de-parfum-1036.html"
@@ -6368,6 +6378,7 @@
    "name": "No Limit by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/no-limit-by-bujairami-100ml-eau-de-parfum-1037.html"
@@ -6378,6 +6389,7 @@
    "name": "Emperor by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/emperor-by-bujairami-100ml-eau-de-parfum-1038.html"
@@ -6388,6 +6400,7 @@
    "name": "Houdini by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/houdini-by-bujairami-100ml-extrait-de-parfum-1039.html"
@@ -6398,6 +6411,7 @@
    "name": "First Class by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/first-class-by-bujairami-100ml-extrait-de-parfum-1040.html"
@@ -6408,6 +6422,7 @@
    "name": "Shadow Script by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/shadow-script-by-bujairami-100ml-extrait-de-parfum-1041.html"
@@ -6418,6 +6433,7 @@
    "name": "Resolution by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/resolution-by-bujairami-100ml-eau-de-parfum-1042.html"
@@ -6428,6 +6444,7 @@
    "name": "Ghost by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/ghost-by-bujairami-100ml-eau-de-parfum-1043.html"
@@ -6438,6 +6455,7 @@
    "name": "Real Deal by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/real-deal-by-bujairami-100ml-extrait-de-parfum-1044.html"
@@ -6459,6 +6477,7 @@
    "name": "Perfect Life by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/perfect-life-by-bujairami-100ml-eau-de-parfum-1046.html"
@@ -6469,6 +6488,7 @@
    "name": "Pulse Fiction by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/pulse-fiction-by-bujairami-100ml-eau-de-parfum-1047.html"
@@ -6479,6 +6499,7 @@
    "name": "Drip No. 7 by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/drip-no-7-by-bujairami-100ml-eau-de-parfum-1048.html"
@@ -6489,6 +6510,7 @@
    "name": "Rizz by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/rizz-by-bujairami-100ml-extrait-de-parfum-1049.html"
@@ -6499,6 +6521,7 @@
    "name": "Woodlands by Bujairami 100ml Extrait de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/woodlands-by-bujairami-100ml-extrait-de-parfum-1050.html"
@@ -6509,6 +6532,7 @@
    "name": "Blush by Bujairami 100ml Eau de Parfum",
    "status": "warn",
    "issues": [
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/blush-by-bujairami-100ml-eau-de-parfum-1051.html"
