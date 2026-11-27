@@ -1,10 +1,10 @@
 {
  "version": 1,
- "updatedAt": "2026-11-27T12:05:05.997Z",
- "nextReviewAt": "2026-11-28T00:05:05.997Z",
+ "updatedAt": "2026-11-27T23:25:02.944Z",
+ "nextReviewAt": "2026-11-28T11:25:02.944Z",
  "intervalHours": 12,
- "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية، مستشار التسوق «اسأل شاهين» في المتجر.",
- "overall": 9.2,
+ "summaryAr": "كل الأدوات المفحوصة سليمة.",
+ "overall": 9.8,
  "tools": {
   "shaheen_chat": {
    "nameAr": "شات الخبير شاهين والوكيل البرمجي",
@@ -12,37 +12,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "What fixative works best for a citrus cologne, and at what percentage?",
-     "excerpt": "For a bright citrus cologne, **ambrette seed** or **hedione** work best as fixatives. They anchor the fleeting citrus notes without weighing down the fresh profile.\n\nUse ambrette seed at 1% to 2% of the total formula for a natural, subtle muskiness, or hedione up to 5% to boost radiance and diffusio",
-     "ms": 4657,
+     "excerpt": "Citrus colognes evaporate quickly because citrus oils are top notes, so adding a fixative helps anchor the scent without muddying its crisp profile. **Ambroxan** or **Ethylene Brassylate** work best for this, usually used at around **2% to 4%** of the total oil concentrate.\n\nHere is an experimental ",
+     "ms": 1988,
      "ok": true,
      "findings": []
     },
     {
      "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
-     "excerpt": "تكلفة الـ 100 زجاجة بتتقسم على حساب الزيت والكحول لكل زجاجة وبعدين نضرب في العدد الكلي.\n\nإليك الحسابات بالتفصيل:\n- كمية الزيت لكل زجاجة = 50 × 20 ÷ 100 = 10 مل\n- كمية الكحول لكل زجاجة = 50 × 80 ÷ 100 = 40 مل\n- تكلفة زيت الزجاجة الواحدة = 10 مل × ‏0.06 US$ = ‏0.56 US$\n- تكلفة كحول الزجاجة الواحدة = 4",
-     "ms": 1252,
+     "excerpt": "حساب تكلفة الـ 100 زجاجة بيعتمد على كمية الزيت والكحول المطلوبة لكل زجاجة وبعدين ضربها في العدد الإجمالي.\n\nلكل زجاجة (50 مل بتركيز 20%):\n- كمية الزيت = 50 × 20 ÷ 100 = 10 مل\n- كمية الكحول = 50 × 80 ÷ 100 = 40 مل\n\nتكلفة الزجاجة الواحدة:\n- تكلفة الزيت = 10 × 3 = ‏0.56 US$\n- تكلفة الكحول = 40 × 0.2 = ‏",
+     "ms": 1192,
      "ok": true,
      "findings": []
     },
     {
      "question": "ايه أفضل خلطة شتوية دافية؟",
-     "excerpt": "بالنسبة لخلطة شتوية دافية، فيه كذا اتجاه ممكن نمشي فيه، بس عشان أقدر أساعدك صح، محتاج أعرف شوية حاجات:\n\n1.  **لمن العطر ده؟** (رجالي، نسائي، ولا ينفع للجنسين؟)\n2.  **إيه نوع الدفا اللي بتحبه؟** يعني بتحب الروائح الخشبية الثقيلة، ولا التوابل الدافية، ولا يمكن حاجة فيها فانيليا أو عنبر؟\n\nلما أعرف دول،",
-     "ms": 1463,
+     "excerpt": "الخلطة الشتوية المضبوطة بتقوم على أساس من العود الدافئ والتبغ المعسّل مع لمسة عنبر غنية، عشان تدّيك حضور قوي وإحساس بالدفا في الجو البارد.\n\nالنسب بتاعتها لزجاجة حجمها 50 مل بتركيز او دو بارفان بنسبة 20 بالمئة:\n\n- كمية العطر المركزة = 10 مل\n- كمية الكحول 96 بالمئة = 40 مل\n\n| المكون | الفئة | النسبة م",
+     "ms": 2500,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 10
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9.4
@@ -158,6 +154,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -178,37 +178,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "عندكم عطور عود؟",
      "excerpt": "من كتالوج المتجر (بنشحن لأي دولة، والسعر بيظهرلك بعملة بلدك في صفحة الدفع):\n• دهن العود أبييض (Afnan Perfumes) — ‏16.50 US$\n• باريس عود (Afnan Perfumes) — ‏21 US$\n• أبييض مخلط (Afnan Perfumes) — ‏21 US$\n• بديع العود 50 مل (Ard Al Zaafaran) — 50 ml — ‏22 US$\nدوس «افتح الصفحة» تحت تشوف التفاصيل والصور",
-     "ms": 12967,
+     "ms": 13171,
      "ok": true,
      "findings": []
     },
     {
      "question": "ايه الفرق بين EDP و EDT؟",
-     "excerpt": "من قاعدة معرفة شام:\n• فروق تراكيز العطور: البارفان، أو دي بارفان، وتواليت وكولونيا: ثم (Eau de Toilette - EDT) بتركيز بين 5% إلى 15% وثبات يتراوح بين 4 إلى 6 ساعات. وأخيراً (Eau de Cologne - EDC) بتركيز خفيف بين 2% إلى 4% وثبات قصير لا يتعدى ساعتين إلى 3 ساعات. هذه النسب تعتبر مؤشرات معيارية عامة ول",
-     "ms": 12153,
+     "excerpt": "أهلاً بحضرتك يا فندم! \n\nالفرق الأساسي بين **EDP** (أو دي بارفان) و**EDT** (أو دي تواليت) هو نسبة الزيت العطري داخل الزجاجة وثبات العطر على الجلد أو الهدوم:\n\n* **EDP (Eau de Parfum):** تركيزه أعلى (بيكون مناسب أكتر للخروجات الطويلة والمناسبات، وثباته أقوى).\n* **EDT (Eau de Toilette):** تركيزه أخف، بي",
+     "ms": 4509,
      "ok": true,
      "findings": []
     },
     {
      "question": "How can I track my order?",
-     "excerpt": "From the store catalogue (we ship worldwide; prices show in your currency at checkout):\n• Sacred Order by Bujairami 100ml Extrait de Parfum (Bujairami) — 100 ml — US$130 — out of stock\nPress “Open page” below for details and photos, and to add to the cart.\nBuying and payment happen on the store page",
-     "ms": 12154,
+     "excerpt": "To track your order, simply open the order tracking box or your account page on the store, and enter your **SH reference** along with the email or phone number used at checkout. \n\nIf your order is delayed or you need further assistance with shipping, the team is here to help!",
+     "ms": 892,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 8.8
@@ -324,6 +320,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -344,23 +344,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/news (مقالات اليوم)",
      "excerpt": "## Interparfums ترفع توقعات عام 2026 وتتوقع تسارع النمو في 2027\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية مثل Jimmy Choo وMontblanc عن تعديل طفيف وزيادة في توقعاتها المالية لعام 2026 مع ترقب نمو قوي وقائمة إطلاقات جديدة في 2027.\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية م",
-     "ms": 240,
+     "ms": 164,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9.4
@@ -476,39 +472,37 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
   },
   "news_bulletin": {
    "nameAr": "نشرة شاهين للأخبار الحقيقية",
-   "score": 6,
-   "autoScore": 6,
+   "score": 9,
+   "autoScore": 9,
    "judged": false,
-   "status": "warn",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "status": "ok",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [
-    "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
-    "الرد ليس بالعربية رغم أن السؤال بالعربية"
+    "آخر نشرة بلا ملخصات شاهين (عناوين فقط)"
    ],
    "samples": [
     {
      "question": "آخر نشرة (30 خبر، منذ 0 ساعة)",
-     "excerpt": "- Fresh Perfume Gift Set Market in Italy: Size, Trends and Forecast to 2035 (IndexBox)\n  Fresh Perfume Gift Set Market in Italy: Size, Trends and Forecast to 2035\n- État Libre D'Orange acquired by Weinberg Capital Partners opening ‘new chapter’ for niche fragrance brand (Cosmetics Business)\n  État L",
+     "excerpt": "- رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي (المشهد اليمني)\n  رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي\n- العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا (جريدة العدد الاول)\n  العود العربي ",
      "ms": 0,
      "ok": true,
      "findings": [
-      "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
-      "الرد ليس بالعربية رغم أن السؤال بالعربية"
+      "آخر نشرة بلا ملخصات شاهين (عناوين فقط)"
      ]
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 10
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9.4
@@ -624,6 +618,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 6
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 9
     }
    ],
    "lastEvent": "none"
@@ -634,7 +632,7 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
@@ -647,10 +645,6 @@
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 10
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9.4
@@ -766,6 +760,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -776,30 +774,26 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "صور: agarwood",
      "excerpt": "Agarwood top grade · Highend Agarwood Kyara · Stamp of India Colnect Agarwood Perfume · Infected Agarwood Aquilaria Malaysia",
-     "ms": 492,
+     "ms": 482,
      "ok": true,
      "findings": []
     },
     {
      "question": "خريطة: Grasse, France",
      "excerpt": "Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France (43.6589, 6.92391)",
-     "ms": 586,
+     "ms": 653,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 10
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 10
@@ -915,46 +909,40 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
   },
   "store_advisor": {
    "nameAr": "مستشار التسوق «اسأل شاهين» في المتجر",
-   "score": 7,
-   "autoScore": 8,
+   "score": 10,
+   "autoScore": 10,
    "judged": false,
-   "status": "warn",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "status": "ok",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
-   "issues": [
-    "لم يرشّح أي منتج",
-    "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
-   ],
+   "issues": [],
    "samples": [
     {
      "question": "عود ثابت للسهرات تحت 300 جنيه",
-     "excerpt": "مش لاقي تطابق دقيق، دي أعلى العطور تقييماً — شاهين بيدوّر لك…",
-     "ms": 22681,
+     "excerpt": "أهلاً بك يا زائرنا الكريم في متجر شام! بصفتي الخبير شاهين (مستشارك العطري المدعوم بالذكاء الاصطناعي)، أود الإفصاح بأن أسعار عطور العود تبدأ لدينا من نطاق أعلى بقليل من ميزانيتك (حوالي ‏46.50 US$)، لكن اخترت لك أفضل عطور العود المناسبة للسهرات لضمان أعلى جودة وأقرب تطابق لطلبك.\n- LAT-131: عود نجدية م",
+     "ms": 1639,
      "ok": true,
-     "findings": [
-      "لم يرشّح أي منتج",
-      "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
-     ]
+     "findings": []
     },
     {
      "question": "عطر منعش للجنسين للاستخدام اليومي",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، يسعدني مساعدتك في اختيار أفضل العطور المنعشة والمناسبة للجنسين للاستخدام اليومي من متجر شام.\n- IMP-1181: عطر ناين إيه إم من أفنان يتميز بعائلة عطرية حمضية ومنعشة، وهو مثالي للاستخدام اليومي للجنسين.\n- ARD-474: عطر أرض الزعفران نجدية يقدم مزيجاً مائياً ومنعشاً يناسب الأج",
-     "ms": 3592,
+     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، استخدمت نظام الذكاء الاصطناعي في متجر شام لأختار لك أفضل العطور المنعشة والمناسبة للجنسين للاستخدام اليومي بناءً على بيانات المنتجات الموثقة.\n- IMP-1182: عطر مائي ومنعش وحمضي للجنسين، مثالي للاستخدام اليومي في أجواء الصيف والربيع.\n- ARD-474: عطر منعش ومائي وحمضي، مصمم خ",
+     "ms": 1373,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 8.8
@@ -1070,6 +1058,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 7
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -1090,27 +1082,23 @@
    "autoScore": 9,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [
-    "231 منتج فيها ملاحظات بيانات للتاجر"
+    "252 منتج فيها ملاحظات بيانات للتاجر"
    ],
    "samples": [
     {
-     "question": "كتالوج المتجر (839/1114 راجعها شاهين)",
-     "excerpt": "## ZIM-586 زيمايا غراندور\nعطر يجمع بين الأناقة العصرية والعمق الفاخر، يفتتح ببريق الحمضيات والزهور البيضاء الناعمة. ينتقل إلى قلب غني بالأخشاب الكريمية والتوابل الخفيفة، ويستقر على قاعدة غشائية دافئة من العنبر والمسك وخشب الصندل.\nالعائلة: amber/woody/fresh — النوتات: Citrus, Soft White Florals, Crea",
+     "question": "كتالوج المتجر (814/1114 راجعها شاهين)",
+     "excerpt": "## LAT-231 ارتيزان إثنيك من لطافة برايد\nعطر فاخر يمزج بين التوابل المنعشة والأخشاب العنبرية الدافئة بطابع شرقي راقٍ. يترك أثراً دخانياً خشبياً دافئاً يدوم طويلاً.\nالعائلة: spicy/woody/oriental — النوتات: Spicy Notes, Citrus, Amber Woods, Aromatic Notes, Smoky Woods, Leather, Amber, Vanilla\n\n## LAT-2",
      "ms": 0,
      "ok": true,
      "findings": [
-      "231 منتج فيها ملاحظات بيانات للتاجر"
+      "252 منتج فيها ملاحظات بيانات للتاجر"
      ]
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 7.2
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9
@@ -1226,6 +1214,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 9
     }
    ],
    "guidance": {
@@ -1246,23 +1238,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "مستورد شاهين ومراجع الصفحات",
-     "excerpt": "1114 منتج (1063 مستورد): 432 سليم، 682 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nBUJ-1012 Imperial Oud by Bujairami 100ml Extrait de Parfum: المورد لم ينشر نوتات العطر، غير متوفر عند المورد\nBUJ-1013 Cartel by Bujairami 100ml Extrait de Parfum: المورد لم ينشر نوتات العطر",
+     "excerpt": "1114 منتج (1063 مستورد): 419 سليم، 695 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nMAI-463 Philos Pura by Maison Alhambra 100ml EDP Man: غير متوفر عند المورد\nMAI-464 Opera Noir by Maison Alhambra 100ml EDP: غير متوفر عند المورد\nVOL-466 Savour Blast Extreme by Volare 100ml",
      "ms": 0,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:33:31.312Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T10:46:45.896Z",
      "score": 9.4
@@ -1378,6 +1366,10 @@
     {
      "at": "2026-11-27T12:05:05.997Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -1388,14 +1380,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-27T12:05:05.997Z",
+   "checkedAt": "2026-11-27T23:25:02.944Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/community/status (جاهزية ذكاء المجتمع)",
      "excerpt": "المجتمع مفعّل (postgres)",
-     "ms": 175,
+     "ms": 32,
      "ok": true,
      "findings": []
     }
@@ -1471,6 +1463,10 @@
     },
     {
      "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
+    },
+    {
+     "at": "2026-11-27T23:25:02.944Z",
      "score": 10
     }
    ],

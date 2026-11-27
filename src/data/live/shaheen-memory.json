@@ -1,14 +1,14 @@
 {
  "version": 1,
- "updatedAt": "2026-11-27T12:05:05.997Z",
+ "updatedAt": "2026-11-27T23:25:02.944Z",
  "entries": [
   {
    "id": "en|auto|what fixative works best for a citrus cologne, and at what percentage",
    "question": "What fixative works best for a citrus cologne, and at what percentage?",
    "lang": "en",
    "style": "auto",
-   "answer": "For a bright citrus cologne, **ambrette seed** or **hedione** work best as fixatives. They anchor the fleeting citrus notes without weighing down the fresh profile.\n\nUse ambrette seed at 1% to 2% of the total formula for a natural, subtle muskiness, or hedione up to 5% to boost radiance and diffusion.\n\n```sham-formula\n{\n  \"title\": \"Citrus Cologne\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 15,\n  \"concentrationType\": \"edc\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 3,\n  \"macerationDays\": 21,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"برتقال برغموت\",\n      \"nameEn\": \"Bergamot\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 50\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"ليمون\",\n      \"nameEn\": \"Lemon\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 30\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"هيديوني\",\n      \"nameEn\": \"Hedione\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 18\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"بذور الأمبريت\",\n      \"nameEn\": \"Ambrette Seed\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 2\n    }\n  ]\n}\n```\n\n```sham-tool\n{\"tools\":[{\"tool\":\"concentration\",\"bottleVolumeMl\":50,\"concentrationPercent\":15,\"concentrationType\":\"edc\",\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":3}]}\n```",
-   "at": "2026-11-27T12:05:05.997Z",
+   "answer": "Citrus colognes evaporate quickly because citrus oils are top notes, so adding a fixative helps anchor the scent without muddying its crisp profile. **Ambroxan** or **Ethylene Brassylate** work best for this, usually used at around **2% to 4%** of the total oil concentrate.\n\nHere is an experimental 50 ml Citrus Cologne formula using Ambroxan as the fixative at an Eau de Parfum concentration (20% oil, 96% alcohol):\n\n```sham-formula\n{\"title\":\"Citrus Cologne with Ambroxan\",\"author\":\"شاهين — مقترح تجريبي\",\"concentrationPercent\":20,\"concentrationType\":\"edp\",\"bottleVolumeMl\":50,\"alcoholPercentage\":96,\"waterPercent\":0,\"fixativePercent\":0,\"macerationDays\":30,\"summary\":\"مقترح يحتاج مراجعة السلامة\",\"pyramidNotes\":[{\"id\":\"note-1\",\"nameAr\":\"امبروكسان\",\"nameEn\":\"Ambroxan\",\"category\":\"base\",\"percentageOfOil\":10},{\"id\":\"note-2\",\"nameAr\":\"برغموت\",\"nameEn\":\"Bergamot Oil\",\"category\":\"top\",\"percentageOfOil\":50},{\"id\":\"note-3\",\"nameAr\":\"ليمن\",\"nameEn\":\"Lemon Oil\",\"category\":\"top\",\"percentageOfOil\":30},{\"id\":\"note-4\",\"nameAr\":\"بتيتجرين\",\"nameEn\":\"Petitgrain Oil\",\"category\":\"heart\",\"percentageOfOil\":10}]}\n```\n\nWould you like to adjust the ratio of the citrus notes to lean more floral or woody?",
+   "at": "2026-11-27T23:25:02.944Z",
    "hits": 0,
    "source": "probe"
   },
@@ -17,8 +17,8 @@
    "question": "ايه أفضل خلطة شتوية دافية؟",
    "lang": "ar",
    "style": "auto",
-   "answer": "بالنسبة لخلطة شتوية دافية، فيه كذا اتجاه ممكن نمشي فيه، بس عشان أقدر أساعدك صح، محتاج أعرف شوية حاجات:\n\n1.  **لمن العطر ده؟** (رجالي، نسائي، ولا ينفع للجنسين؟)\n2.  **إيه نوع الدفا اللي بتحبه؟** يعني بتحب الروائح الخشبية الثقيلة، ولا التوابل الدافية، ولا يمكن حاجة فيها فانيليا أو عنبر؟\n\nلما أعرف دول، هقدر أقدملك اقتراح مظبوط ومناسب لذوقك.",
-   "at": "2026-11-27T12:05:05.997Z",
+   "answer": "الخلطة الشتوية المضبوطة بتقوم على أساس من العود الدافئ والتبغ المعسّل مع لمسة عنبر غنية، عشان تدّيك حضور قوي وإحساس بالدفا في الجو البارد.\n\nالنسب بتاعتها لزجاجة حجمها 50 مل بتركيز او دو بارفان بنسبة 20 بالمئة:\n\n- كمية العطر المركزة = 10 مل\n- كمية الكحول 96 بالمئة = 40 مل\n\n| المكون | الفئة | النسبة من الزيت |\n|:--- |:--- |:--- |\n| عود هندي | قاعدة | 40 بالمئة |\n| تبغ معسّل | قلب | 35 بالمئة |\n| عنبر أبيض | قلب | 15 بالمئة |\n| فانيليا مدخنة | قمة | 10 بالمئة |\n\n```sham-formula\n{\n  \"title\": \"شتوية دافية\",\n  \"author\": \"شاهين — مقترح تجريبي\",\n  \"concentrationPercent\": 20,\n  \"concentrationType\": \"edp\",\n  \"bottleVolumeMl\": 50,\n  \"alcoholPercentage\": 96,\n  \"waterPercent\": 0,\n  \"fixativePercent\": 0,\n  \"macerationDays\": 30,\n  \"summary\": \"مقترح يحتاج مراجعة السلامة\",\n  \"pyramidNotes\": [\n    {\n      \"id\": \"note-1\",\n      \"nameAr\": \"عود هندي\",\n      \"nameEn\": \"Indian Agarwood\",\n      \"category\": \"base\",\n      \"percentageOfOil\": 40\n    },\n    {\n      \"id\": \"note-2\",\n      \"nameAr\": \"تبغ معسّل\",\n      \"nameEn\": \"Sweet Tobacco\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 35\n    },\n    {\n      \"id\": \"note-3\",\n      \"nameAr\": \"عنبر أبيض\",\n      \"nameEn\": \"White Amber\",\n      \"category\": \"heart\",\n      \"percentageOfOil\": 15\n    },\n    {\n      \"id\": \"note-4\",\n      \"nameAr\": \"فانيليا مدخنة\",\n      \"nameEn\": \"Smoked Vanilla\",\n      \"category\": \"top\",\n      \"percentageOfOil\": 10\n    }\n  ]\n}\n```\n\nتفضل نزود لمسة توابل حارة زي القرفة ولا نخليها على النوتات الخشبية والمدخنة دي؟\n\n```sham-tool\n{\n  \"tools\": [\n    {\n      \"tool\": \"concentration\",\n      \"bottleVolumeMl\": 50,\n      \"concentrationPercent\": 20,\n      \"concentrationType\": \"edp\",\n      \"alcoholPercentage\": 96,\n      \"waterPercent\": 0,\n      \"fixativePercent\": 0\n    },\n    {\n      \"tool\": \"maceration\",\n      \"macerationDays\": 30\n    }\n  ]\n}\n```",
+   "at": "2026-11-27T23:25:02.944Z",
    "hits": 0,
    "source": "probe"
   },
@@ -27,8 +27,8 @@
    "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
    "lang": "ar",
    "style": "auto",
-   "answer": "تكلفة الـ 100 زجاجة بتتقسم على حساب الزيت والكحول لكل زجاجة وبعدين نضرب في العدد الكلي.\n\nإليك الحسابات بالتفصيل:\n- كمية الزيت لكل زجاجة = 50 × 20 ÷ 100 = 10 مل\n- كمية الكحول لكل زجاجة = 50 × 80 ÷ 100 = 40 مل\n- تكلفة زيت الزجاجة الواحدة = 10 مل × ‏0.06 US$ = ‏0.56 US$\n- تكلفة كحول الزجاجة الواحدة = 40 مل × ‏0 US$ = ‏0.15 US$\n- إجمالي تكلفة الزجاجة الواحدة = 30 + 8 = ‏0.71 US$\n- إجمالي تكلفة الـ 100 زجاجة = 38 × 100 = ‏71.50 US$\n\nيعني إجمالي التكلفة هيكون ‏71.50 US$. تحب نضيف حاجة تانية للحسابات زي تكلفة الزجاجات الفاضية نفسها؟",
-   "at": "2026-11-27T12:05:05.997Z",
+   "answer": "حساب تكلفة الـ 100 زجاجة بيعتمد على كمية الزيت والكحول المطلوبة لكل زجاجة وبعدين ضربها في العدد الإجمالي.\n\nلكل زجاجة (50 مل بتركيز 20%):\n- كمية الزيت = 50 × 20 ÷ 100 = 10 مل\n- كمية الكحول = 50 × 80 ÷ 100 = 40 مل\n\nتكلفة الزجاجة الواحدة:\n- تكلفة الزيت = 10 × 3 = ‏0.56 US$\n- تكلفة الكحول = 40 × 0.2 = ‏0.15 US$\n- إجمالي تكلفة الزجاجة الواحدة = 30 + 8 = ‏0.71 US$\n\nتكلفة الـ 100 زجاجة:\n- الإجمالي = 38 × 100 = ‏71.50 US$\n\nحببني أحسب لك تكلفة إضافية للزجاجات نفسها لو حابب تضيفها للحسبة؟",
+   "at": "2026-11-27T23:25:02.944Z",
    "hits": 0,
    "source": "probe"
   },
