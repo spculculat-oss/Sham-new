@@ -1,10 +1,10 @@
 {
  "version": 1,
- "updatedAt": "2026-11-26T23:48:20.175Z",
- "nextReviewAt": "2026-11-27T11:48:20.175Z",
+ "updatedAt": "2026-11-27T12:05:05.997Z",
+ "nextReviewAt": "2026-11-28T00:05:05.997Z",
  "intervalHours": 12,
- "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية.",
- "overall": 9.5,
+ "summaryAr": "أدوات تحتاج متابعة: نشرة شاهين للأخبار الحقيقية، مستشار التسوق «اسأل شاهين» في المتجر.",
+ "overall": 9.2,
  "tools": {
   "shaheen_chat": {
    "nameAr": "شات الخبير شاهين والوكيل البرمجي",
@@ -12,37 +12,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
-     "question": "عايز أخفف كحول 96% إلى 80% وأعمل منه 500 مل، أحط كام مية؟",
-     "excerpt": "تحط 166.7 مل مية على 333.3 مل من الكحول.",
-     "ms": 6818,
+     "question": "What fixative works best for a citrus cologne, and at what percentage?",
+     "excerpt": "For a bright citrus cologne, **ambrette seed** or **hedione** work best as fixatives. They anchor the fleeting citrus notes without weighing down the fresh profile.\n\nUse ambrette seed at 1% to 2% of the total formula for a natural, subtle muskiness, or hedione up to 5% to boost radiance and diffusio",
+     "ms": 4657,
      "ok": true,
      "findings": []
     },
     {
-     "question": "كم يوم أعتق عطر فيه مسك وعنبر وعود؟",
-     "excerpt": "التعتيق المناسب للتركيبة دي هو 6 أسابيع (42 يوم)، عشان النوتات الثقيلة زي العود والعنبر تندمج كويس مع المسك والكحول وريحتها تهدى وتبقى ناعمة.",
-     "ms": 5685,
+     "question": "احسب تكلفة 100 زجاجة 50 مل تركيز 20% لو الزيت 3 جنيه للمل والكحول 0.2 جنيه للمل",
+     "excerpt": "تكلفة الـ 100 زجاجة بتتقسم على حساب الزيت والكحول لكل زجاجة وبعدين نضرب في العدد الكلي.\n\nإليك الحسابات بالتفصيل:\n- كمية الزيت لكل زجاجة = 50 × 20 ÷ 100 = 10 مل\n- كمية الكحول لكل زجاجة = 50 × 80 ÷ 100 = 40 مل\n- تكلفة زيت الزجاجة الواحدة = 10 مل × ‏0.06 US$ = ‏0.56 US$\n- تكلفة كحول الزجاجة الواحدة = 4",
+     "ms": 1252,
      "ok": true,
      "findings": []
     },
     {
-     "question": "ايه الفرق بين EDP و EDT و Parfum في نسبة الزيت والثبات؟",
-     "excerpt": "الفرق بين EDP و EDT و Parfum بيعتمد أساسًا على نسبة الزيوت العطرية اللي في العطر، وده اللي بيحدد قوة العطر، ثباته، وانتشاره.\n\nإليك مقارنة بسيطة بينهم:\n\n| الفئة | نسبة الزيت العطري | مدة الثبات المتوقعة | الانتشار (الفوحان) |\n|:---------------- |:----------------: |:----------------: |:--------------",
-     "ms": 5544,
+     "question": "ايه أفضل خلطة شتوية دافية؟",
+     "excerpt": "بالنسبة لخلطة شتوية دافية، فيه كذا اتجاه ممكن نمشي فيه، بس عشان أقدر أساعدك صح، محتاج أعرف شوية حاجات:\n\n1.  **لمن العطر ده؟** (رجالي، نسائي، ولا ينفع للجنسين؟)\n2.  **إيه نوع الدفا اللي بتحبه؟** يعني بتحب الروائح الخشبية الثقيلة، ولا التوابل الدافية، ولا يمكن حاجة فيها فانيليا أو عنبر؟\n\nلما أعرف دول،",
+     "ms": 1463,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 8.1
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 10
@@ -158,6 +154,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -178,37 +178,33 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
+     "question": "عندكم عطور عود؟",
+     "excerpt": "من كتالوج المتجر (بنشحن لأي دولة، والسعر بيظهرلك بعملة بلدك في صفحة الدفع):\n• دهن العود أبييض (Afnan Perfumes) — ‏16.50 US$\n• باريس عود (Afnan Perfumes) — ‏21 US$\n• أبييض مخلط (Afnan Perfumes) — ‏21 US$\n• بديع العود 50 مل (Ard Al Zaafaran) — 50 ml — ‏22 US$\nدوس «افتح الصفحة» تحت تشوف التفاصيل والصور",
+     "ms": 12967,
+     "ok": true,
+     "findings": []
+    },
+    {
+     "question": "ايه الفرق بين EDP و EDT؟",
+     "excerpt": "من قاعدة معرفة شام:\n• فروق تراكيز العطور: البارفان، أو دي بارفان، وتواليت وكولونيا: ثم (Eau de Toilette - EDT) بتركيز بين 5% إلى 15% وثبات يتراوح بين 4 إلى 6 ساعات. وأخيراً (Eau de Cologne - EDC) بتركيز خفيف بين 2% إلى 4% وثبات قصير لا يتعدى ساعتين إلى 3 ساعات. هذه النسب تعتبر مؤشرات معيارية عامة ول",
+     "ms": 12153,
+     "ok": true,
+     "findings": []
+    },
+    {
      "question": "How can I track my order?",
-     "excerpt": "To protect your data, enter your SH- reference and the phone or email used in the request below.",
-     "ms": 1109,
-     "ok": true,
-     "findings": []
-    },
-    {
-     "question": "ايه آخر أخبار العطور؟",
-     "excerpt": "أهلاً بحضرتك يا فندم! \n\nنشرة أخبار وصيحات عالم العطور بيجمعها «الخبير شاهين» من مصادر عامة مع ذكر المصدر، وبتتعرض في واجهة مجلة شام مع العناوين الرئيسية وأحدث الصيحات. \n\nتقدر تتصفح «نشرة شام للأخبار» من الرئيسية وتفتح أي تقرير لنقل مكوّن للهرم العطري أو تجربة الأكورد في حاسبة التركيز. \n\nتحب أفتحلك ص",
-     "ms": 8286,
-     "ok": true,
-     "findings": []
-    },
-    {
-     "question": "عايز أكلم حد من فريق شام",
-     "excerpt": "عينيا اتفضل، حوّلت محادثتك لفريق شام 🙋 وهيردوا عليك هنا على طول في نفس المحادثة. \n\nولو تحب يرجعوا يكلموك بتليفون أو إيميل، تقدر تملأ استمارة الدعم اللي ظهرت قدامك. تؤمر بحاجة تانية؟",
-     "ms": 1905,
+     "excerpt": "From the store catalogue (we ship worldwide; prices show in your currency at checkout):\n• Sacred Order by Bujairami 100ml Extrait de Parfum (Bujairami) — 100 ml — US$130 — out of stock\nPress “Open page” below for details and photos, and to add to the cart.\nBuying and payment happen on the store page",
+     "ms": 12154,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 9.4
@@ -324,6 +320,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "guidance": {
@@ -344,23 +344,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/news (مقالات اليوم)",
      "excerpt": "## Interparfums ترفع توقعات عام 2026 وتتوقع تسارع النمو في 2027\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية مثل Jimmy Choo وMontblanc عن تعديل طفيف وزيادة في توقعاتها المالية لعام 2026 مع ترقب نمو قوي وقائمة إطلاقات جديدة في 2027.\nأعلنت مجموعة Interparfums المالكة لتراخيص علامات عالمية م",
-     "ms": 169,
+     "ms": 240,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 9.4
@@ -476,6 +472,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -486,7 +486,7 @@
    "autoScore": 6,
    "judged": false,
    "status": "warn",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [
     "آخر نشرة بلا ملخصات شاهين (عناوين فقط)",
@@ -495,7 +495,7 @@
    "samples": [
     {
      "question": "آخر نشرة (30 خبر، منذ 0 ساعة)",
-     "excerpt": "- Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics (IndexBox)\n  Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics\n- أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك (عدن الغد",
+     "excerpt": "- Fresh Perfume Gift Set Market in Italy: Size, Trends and Forecast to 2035 (IndexBox)\n  Fresh Perfume Gift Set Market in Italy: Size, Trends and Forecast to 2035\n- État Libre D'Orange acquired by Weinberg Capital Partners opening ‘new chapter’ for niche fragrance brand (Cosmetics Business)\n  État L",
      "ms": 0,
      "ok": true,
      "findings": [
@@ -505,10 +505,6 @@
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 10
@@ -624,6 +620,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 6
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 6
     }
    ],
    "lastEvent": "none"
@@ -634,23 +634,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "أحدث الدروس (22 درس)",
-     "excerpt": "## فن تجربة العطور واختبارها\nأهلاً بك يا زميلي. لتجربة عطرية صحيحة، نبدأ برش العطر على ورق الاختبار (المجفف) لنشم النوتات العليا المباشرة. بعد دقيقة، يتطاير الكحول وتظهر الهوية الحقيقية للعطر. الخطوة الأهم هي التجربة على الجلد في نقطة نبض مثل المعصم، دون فرك العطر حتى لا تكسر جزيئاته. انتظر من 15 إل",
+     "excerpt": "## دليل البخور والمعمول والعود الخشب\nدرْساً سريعاً عن البخور يا مساعد: العود الخشب هو كسر خشب العود الطبيعي أو الممحسن ويُستخدم بوضعها مباشرة على جمر حار هادئ. البخور المعجون (المعمول) هو فتات العود الممزوج بزيوت عطرية وعطور ودهن عود ومثبتات، ويُفضل وضعه على جمر أقل حرارة كي لا يحترق بسرعة فتتغير را",
      "ms": 0,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 10
@@ -766,6 +762,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -776,30 +776,26 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "صور: agarwood",
      "excerpt": "Agarwood top grade · Highend Agarwood Kyara · Stamp of India Colnect Agarwood Perfume · Infected Agarwood Aquilaria Malaysia",
-     "ms": 482,
+     "ms": 492,
      "ok": true,
      "findings": []
     },
     {
      "question": "خريطة: Grasse, France",
      "excerpt": "Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France (43.6589, 6.92391)",
-     "ms": 617,
+     "ms": 586,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 10
@@ -915,40 +911,46 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
   },
   "store_advisor": {
    "nameAr": "مستشار التسوق «اسأل شاهين» في المتجر",
-   "score": 10,
-   "autoScore": 10,
+   "score": 7,
+   "autoScore": 8,
    "judged": false,
-   "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "status": "warn",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
-   "issues": [],
+   "issues": [
+    "لم يرشّح أي منتج",
+    "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
+   ],
    "samples": [
     {
-     "question": "ارخص عطر عندكم",
-     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، يسعدني مساعدتك في العثور على الخيار الأوفر في متجر شام. إليك أرخص العطور المتوفرة لدينا:\n- AFN-1186: عطر أبييض مسك من أفنان هو أحد أقل العطور سعراً في المتجر (‏16.50 US$)، ويتميز بنوتات مسكية وشرحية مناسبة للاستخدام اليومي.\n- AFN-1187: دهن العود أبييض متوفر بسعر 875 ج، ",
-     "ms": 3033,
+     "question": "عود ثابت للسهرات تحت 300 جنيه",
+     "excerpt": "مش لاقي تطابق دقيق، دي أعلى العطور تقييماً — شاهين بيدوّر لك…",
+     "ms": 22681,
      "ok": true,
-     "findings": []
+     "findings": [
+      "لم يرشّح أي منتج",
+      "الرد من الفلتر المحلي فقط (المحركات لم ترد)"
+     ]
     },
     {
-     "question": "عطر مسك ناعم للبنات",
-     "excerpt": "أهلاً بك في متجر شام! بصفتي الخبير شاهين، يسعدني أن أقدم لك أفضل ترشيحات العطور التي تتميز بالمسك الناعم المناسب للبنات بناءً على خياراتنا المتاحة.\n- AFN-1134: عطر بيور مسك من أفنان يقدم رائحة مسكية وزهرية ناعمة تناسب الاستخدام اليومي والعمل بكل طابع أنيق.\n- KHA-773: عطر ستيلار مسك من خادلاج يجمع بي",
-     "ms": 2029,
+     "question": "عطر منعش للجنسين للاستخدام اليومي",
+     "excerpt": "أهلاً بك! بصفتي الخبير شاهين، يسعدني مساعدتك في اختيار أفضل العطور المنعشة والمناسبة للجنسين للاستخدام اليومي من متجر شام.\n- IMP-1181: عطر ناين إيه إم من أفنان يتميز بعائلة عطرية حمضية ومنعشة، وهو مثالي للاستخدام اليومي للجنسين.\n- ARD-474: عطر أرض الزعفران نجدية يقدم مزيجاً مائياً ومنعشاً يناسب الأج",
+     "ms": 3592,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 9.4
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 9.4
@@ -1064,6 +1066,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 7
     }
    ],
    "guidance": {
@@ -1084,27 +1090,23 @@
    "autoScore": 9,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [
-    "208 منتج فيها ملاحظات بيانات للتاجر"
+    "231 منتج فيها ملاحظات بيانات للتاجر"
    ],
    "samples": [
     {
-     "question": "كتالوج المتجر (864/1114 راجعها شاهين)",
-     "excerpt": "## ARM-336 اومبر فريش باي أرماف\nعطر اومبر فريش من أرماف هو عطر خشبي عطري يتميز بافتتاحية حمضية منعشة وقاعدة دافئة من الفانيليا والخشب. يفتتح باليوسفي الأخضر ليمنح بداية مشرقة ومليئة بالحيوية.\nالعائلة: woody/fresh/citrus — النوتات: Green Mandarin, Lavender, Cardamom, Vanilla, Woody Notes\n\n## ARM-337 ",
+     "question": "كتالوج المتجر (839/1114 راجعها شاهين)",
+     "excerpt": "## ZIM-586 زيمايا غراندور\nعطر يجمع بين الأناقة العصرية والعمق الفاخر، يفتتح ببريق الحمضيات والزهور البيضاء الناعمة. ينتقل إلى قلب غني بالأخشاب الكريمية والتوابل الخفيفة، ويستقر على قاعدة غشائية دافئة من العنبر والمسك وخشب الصندل.\nالعائلة: amber/woody/fresh — النوتات: Citrus, Soft White Florals, Crea",
      "ms": 0,
      "ok": true,
      "findings": [
-      "208 منتج فيها ملاحظات بيانات للتاجر"
+      "231 منتج فيها ملاحظات بيانات للتاجر"
      ]
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 7.2
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 7.2
@@ -1220,6 +1222,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 9
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 9
     }
    ],
    "guidance": {
@@ -1240,23 +1246,19 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "مستورد شاهين ومراجع الصفحات",
-     "excerpt": "1114 منتج (1063 مستورد): 439 سليم، 675 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nPAR-930 Taskeen Caramel Cascade 100ml by Paris Corner: وصف المورد قصير، المورد لم ينشر نوتات العطر\nPAR-931 Daar Al Oud Intense 100ml by Paris Corner: وصف المورد قصير، المورد لم ينشر نوتات ا",
+     "excerpt": "1114 منتج (1063 مستورد): 432 سليم، 682 بملاحظات، 0 مخفي.\nshamperfume: +0 جديد، 25 محدّث، 0 تعذر، 0 قرأها شاهين\nBUJ-1012 Imperial Oud by Bujairami 100ml Extrait de Parfum: المورد لم ينشر نوتات العطر، غير متوفر عند المورد\nBUJ-1013 Cartel by Bujairami 100ml Extrait de Parfum: المورد لم ينشر نوتات العطر",
      "ms": 0,
      "ok": true,
      "findings": []
     }
    ],
    "history": [
-    {
-     "at": "2026-10-16T08:13:24.802Z",
-     "score": 8.8
-    },
     {
      "at": "2026-10-16T08:33:31.312Z",
      "score": 9.4
@@ -1372,6 +1374,10 @@
     {
      "at": "2026-11-26T23:48:20.175Z",
      "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
+     "score": 10
     }
    ],
    "lastEvent": "none"
@@ -1382,14 +1388,14 @@
    "autoScore": 10,
    "judged": false,
    "status": "ok",
-   "checkedAt": "2026-11-26T23:48:20.175Z",
+   "checkedAt": "2026-11-27T12:05:05.997Z",
    "strengths": [],
    "issues": [],
    "samples": [
     {
      "question": "GET /api/community/status (جاهزية ذكاء المجتمع)",
      "excerpt": "المجتمع مفعّل (postgres)",
-     "ms": 151,
+     "ms": 175,
      "ok": true,
      "findings": []
     }
@@ -1461,6 +1467,10 @@
     },
     {
      "at": "2026-11-26T23:48:20.175Z",
+     "score": 10
+    },
+    {
+     "at": "2026-11-27T12:05:05.997Z",
      "score": 10
     }
    ],
