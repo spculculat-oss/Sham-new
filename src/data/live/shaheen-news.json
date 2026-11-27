@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updatedAt": "2026-11-27T12:04:18.865Z",
- "nextUpdateAt": "2026-11-28T00:04:18.865Z",
+ "updatedAt": "2026-11-27T23:24:28.227Z",
+ "nextUpdateAt": "2026-11-28T11:24:28.227Z",
  "intervalHours": 12,
  "editor": "feeds",
  "digest": {
@@ -10,24 +10,92 @@
  },
  "sources": [
   {
-   "name": "IndexBox",
-   "count": 5
-  },
-  {
    "name": "Cosmetics Business",
    "count": 3
   },
   {
-   "name": "Vietnam.vn",
-   "count": 2
+   "name": "المشهد اليمني",
+   "count": 1
   },
   {
-   "name": "selecta bisso",
-   "count": 2
+   "name": "جريدة العدد الاول",
+   "count": 1
   },
   {
-   "name": "Premium Beauty News",
-   "count": 2
+   "name": "صحيفة الخليج",
+   "count": 1
+  },
+  {
+   "name": "Fugues",
+   "count": 1
+  },
+  {
+   "name": "CaFleureBon",
+   "count": 1
+  },
+  {
+   "name": "The Business of Fashion",
+   "count": 1
+  },
+  {
+   "name": "Wisevoter",
+   "count": 1
+  },
+  {
+   "name": "2M.ma",
+   "count": 1
+  },
+  {
+   "name": "NEWS.am STYLE",
+   "count": 1
+  },
+  {
+   "name": "التلفزيون العربي",
+   "count": 1
+  },
+  {
+   "name": "JAMnews",
+   "count": 1
+  },
+  {
+   "name": "قناة الغد",
+   "count": 1
+  },
+  {
+   "name": "El Watan",
+   "count": 1
+  },
+  {
+   "name": "Morning Ag Clips",
+   "count": 1
+  },
+  {
+   "name": "العربي الجديد",
+   "count": 1
+  },
+  {
+   "name": "Liverpool Echo",
+   "count": 1
+  },
+  {
+   "name": "صحيفة الأيام عدن",
+   "count": 1
+  },
+  {
+   "name": "العربية",
+   "count": 1
+  },
+  {
+   "name": "annahar.com",
+   "count": 1
+  },
+  {
+   "name": "Now Smell This",
+   "count": 1
+  },
+  {
+   "name": "IndexBox",
+   "count": 1
   },
   {
    "name": "Jagran",
@@ -52,49 +120,369 @@
   {
    "name": "Il Mattino",
    "count": 1
-  },
-  {
-   "name": "Gala",
-   "count": 1
-  },
-  {
-   "name": "ANI News",
-   "count": 1
-  },
-  {
-   "name": "Retail Technology Innovation Hub",
-   "count": 1
-  },
-  {
-   "name": "Andlil",
-   "count": 1
-  },
-  {
-   "name": "الأيام البحرينية",
-   "count": 1
-  },
-  {
-   "name": "عدن الغد",
-   "count": 1
-  },
-  {
-   "name": "Paris Select Book",
-   "count": 1
-  },
-  {
-   "name": "Dealroom",
-   "count": 1
-  },
-  {
-   "name": "Grazia",
-   "count": 1
-  },
-  {
-   "name": "Numéro Magazine",
-   "count": 1
   }
  ],
  "items": [
+  {
+   "id": "npaij3y",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5emo0cGdtNzltTmFBZTN0VVJoS1d1eWxOenZmOHl5QjhteFN0MnNRNHVhSXlvZnZUT29oNWNTdzZoN2RSemdzcHU3ZjlKWTQ?oc=5",
+   "source": "المشهد اليمني",
+   "publishedAt": "2026-11-27T22:55:47.000Z",
+   "original": "رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي",
+    "en": "رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي"
+   },
+   "summary": {
+    "ar": "رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي",
+    "en": "رئيس الوزراء الهندي ناريندرا مودي يلتقي وكيل وزارة الخارجية اليمني أوسان العود في نيودلهي"
+   }
+  },
+  {
+   "id": "n1vz8nvy",
+   "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOUmxOZ21hOFR6VWEyc1R6aVRaZ2EyV0J0RzNhbkVycHFNLXZwTjVtUkJzY052cDZrTHJhRWhWWWdGWXVPWFNfUEhFbS1hcHB1bEJjZExRT01NclVaanhacFExZjdfXzJ2YnV6RVJldmV2bVpvbHFQTFM5M1NwQ0RWTnlXTHBIZE9SQTFmSW9EMGZGdDJRSEE0UXB3VUNKM1dDZTF1TmlwWWZWMUlneEtqaVgtakIxLXhpbmdJc0pjNGlyWUJTYTJBZ0RNMjhUYlQwTEVuYk5LN3pyTkJDV2djQ0RFMkVtNzliU1BZY2dHTlNONEdzZFZXSDVZNlI4OEpRTEU1TUx2cVlMQjN1cVZGS2NhRE4wdE9WU1dFR1ZWZjRjYXhRdG1aa3pmTHluUFY3WVVKMWdLRlBhMEF6TWdEUFR5cjJTNlZSazl2U1VmcVF0MThrcWc?oc=5",
+   "source": "جريدة العدد الاول",
+   "publishedAt": "2026-11-27T22:10:40.000Z",
+   "original": "العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا",
+    "en": "العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا"
+   },
+   "summary": {
+    "ar": "العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا",
+    "en": "العود العربي على أعتاب اليونسكو.. و16 دولة تسعى لتسجيله تراثًا"
+   }
+  },
+  {
+   "id": "nq50iwp",
+   "url": "https://news.google.com/rss/articles/CBMi2wRBVV95cUxQWGtLQW9ucWRoeGlDVVZEM3prWWMzb1FKSDFvYTFJWHVqVkF4eHF0NEM5M3ZuVEZaVS0tSjgtM1dpS2dfd0V5SEk2ZU9DSW5qSTJpVU45Q2Zkei0zNldnNXZoX01rbDlMaEpGaW83NUxwVTBjSzNzcGtDQVQ4NFZYdFowX0xOWGNKaUpEZzhUNm5aNlRvX3RSUm1aYlNvSFlSbDl5M1p6ZC1GREVGWklkNGpnemh0bVowNDVkYUNXWWJzeTNFNmVmNVJDcWRON2otZndwd0dadlpPT0xVbW1vMVZOOFJlaENTenhnempsN2pETU4tN1pEd1o3WlhDYTZTNGt2WmVSeER6ZXN3MjBJTldUV3Z6RkVGS2djTVp2MzB4UjNyd1Q2RlhfajVCVjlMOENMMVp4WTdzdlpFZTVnWmRYQS1NOTFTSzh4Z2o4bWRLOFU5SHBGeE9nV0I1Y1poYkJpRXlNWk5RWm9oNGE0U1hac0oyQkdyU2Q4Q0F1TE9QSlVnN3NoSlppdmowYS13d1NUTm5yOF9BZmJxeFFvMGl5bzVvLVhPUWx4M2ZvOGVSSnFUWG9uY0RjQVR4NUw2MGVsSzQzc3Y4cUk5djJpYko1T2tmck9JV1FGcTdVMFpleDVPSU96aTNOOG1NTGxNWERlUzBjWWpwSWlwcEJwSHl2MUdHeVpIMC10VVI0R216b3NabFJPcG5uRktvMUFqTFhoU3N2LWVuNVl2SzhEOW81R2Y4ZTQ1WDVZVFFBQlBxV19QWkc5NFdKLUJWN0NmVzRVc2VydDRpVHM?oc=5",
+   "source": "صحيفة الخليج",
+   "publishedAt": "2026-11-27T21:45:10.000Z",
+   "original": "«اليونسكو» تستعد لإدراج العود العربي على قائمة التراث غير المادي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "«اليونسكو» تستعد لإدراج العود العربي على قائمة التراث غير المادي",
+    "en": "«اليونسكو» تستعد لإدراج العود العربي على قائمة التراث غير المادي"
+   },
+   "summary": {
+    "ar": "«اليونسكو» تستعد لإدراج العود العربي على قائمة التراث غير المادي",
+    "en": "«اليونسكو» تستعد لإدراج العود العربي على قائمة التراث غير المادي"
+   }
+  },
+  {
+   "id": "n1icnbpc",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYzVOaVJsSjJHX1JWU2pfZ0JMRmhKTnVqVDFGbTY0aDhMV3BJUTJKZWRGOGRWNFBkSzJycVFxX0FkQjlMYXh6NkpVV2VxS29XVURsNGZSZ1Z5TVJsUWtzc0R3ZUEzRDhfeHFUdm1CcjFlLWVjWGNBRzNYeXNtd3JXcUZiaGFjNVJJVEMxYnFOZkY1dXVkdTZZQlY3WUJIQTZzVlpKMV9fbWxQNXBjYmJnamJWc2VRR01GRE1BeW1B?oc=5",
+   "source": "Fugues",
+   "publishedAt": "2026-11-27T21:38:05.000Z",
+   "original": "Le couturier gai des papes crée des parfums inspirés du sacré, de la mémoire et du sexe",
+   "lang": "fr",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Le couturier gai des papes crée des parfums inspirés du sacré, de la mémoire et du sexe",
+    "en": "Le couturier gai des papes crée des parfums inspirés du sacré, de la mémoire et du sexe"
+   },
+   "summary": {
+    "ar": "Le couturier gai des papes crée des parfums inspirés du sacré, de la mémoire et du sexe",
+    "en": "Le couturier gai des papes crée des parfums inspirés du sacré, de la mémoire et du sexe"
+   }
+  },
+  {
+   "id": "n72rvog",
+   "url": "https://cafleurebon.com/kajal-v-review-sidonie-grandperret-2026-plus-a-transformative-giveaway/?utm_source=rss&utm_medium=rss&utm_campaign=kajal-v-review-sidonie-grandperret-2026-plus-a-transformative-giveaway",
+   "source": "CaFleureBon",
+   "publishedAt": "2026-11-27T21:07:44.000Z",
+   "original": "KAJAL V Review (Sidonie Grandperret) 2026 + A Transformative Giveaway",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "KAJAL V Review (Sidonie Grandperret) 2026 + A Transformative Giveaway",
+    "en": "KAJAL V Review (Sidonie Grandperret) 2026 + A Transformative Giveaway"
+   },
+   "summary": {
+    "ar": "Kajal V is an oud to kick-start a transformation. Its fruity dark sweetness is beautifully balanced by bold leather. The post KAJAL V Review (Sidonie Grandperret) 2026 + A Transformative Giveaway appeared first on ÇaFleureBon Perfume Blog .",
+    "en": "Kajal V is an oud to kick-start a transformation. Its fruity dark sweetness is beautifully balanced by bold leather. The post KAJAL V Review (Sidonie Grandperret) 2026 + A Transformative Giveaway appeared first on ÇaFleureBon Perfume Blog ."
+   }
+  },
+  {
+   "id": "n19dnxjn",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYnhVcW9QYnJDZkRZQXJUTkpOVEdVSzlWc0dIWnVfellaN3hGeXNsWUtmSU9PYklwLVp3S3RMUVo1d3Z5dXFfYUw2OEZHYzd5RzBWNi13N2VUZTBRZTE5MlpRdFlZa1E3VTBuMlVxUzI4MDYtLW40T0F0WFI4Yk1VV09QeHYxWmpfXzZDTWdEZ2hKSzQwU19tYXRWLTZOR3docEdWQlYxZjF0TkJVQWFwS1RwMFVaTWRNdzE4SGhQYzIzQmJQTUpGSEk2TQ?oc=5",
+   "source": "The Business of Fashion",
+   "publishedAt": "2026-11-27T20:35:43.000Z",
+   "original": "Puig Agrees to Acquire Parfums de Marly and Initio Parfums Privés for €1.2 Billion",
+   "lang": "en",
+   "category": "market",
+   "importance": 2,
+   "title": {
+    "ar": "Puig Agrees to Acquire Parfums de Marly and Initio Parfums Privés for €1.2 Billion",
+    "en": "Puig Agrees to Acquire Parfums de Marly and Initio Parfums Privés for €1.2 Billion"
+   },
+   "summary": {
+    "ar": "Puig Agrees to Acquire Parfums de Marly and Initio Parfums Privés for €1.2 Billion",
+    "en": "Puig Agrees to Acquire Parfums de Marly and Initio Parfums Privés for €1.2 Billion"
+   }
+  },
+  {
+   "id": "n13136i1",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYnZGaEh1OXpMa3RucGVNeGVVTHZ1bDczcjBFTXFaY2daM1dEMEJrMEVoc1VBeUhMTEszeXY3N3Rpd2J1dVRSZ0pjOXlPYzZteDhxQlVUcWtLY19URm54dXBEZ0dMejhHZ3ZtbXF0a0F1UnFvQUdzNTc4eTJSbWxvRjFMcmdkaWpCbl9DNkVqMFFIck02b0pkOXBn?oc=5",
+   "source": "Wisevoter",
+   "publishedAt": "2026-11-27T19:48:59.000Z",
+   "original": "Zabar's Launches Deli-Scented Candles With Literie",
+   "lang": "en",
+   "category": "launch",
+   "importance": 2,
+   "title": {
+    "ar": "Zabar's Launches Deli-Scented Candles With Literie",
+    "en": "Zabar's Launches Deli-Scented Candles With Literie"
+   },
+   "summary": {
+    "ar": "Zabar's Launches Deli-Scented Candles With Literie",
+    "en": "Zabar's Launches Deli-Scented Candles With Literie"
+   }
+  },
+  {
+   "id": "ngelm9f",
+   "url": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPck9mZFpoSldyZWdhWUttNFFBUmozME41Zkk4eUVQZlR0aUtaU1FIWXZzRDBBa3FrdnJ1SWpYQVlubkFNLU9tbllfRVhmbUlXT2pIbjN0dkotU0c3TlpKZWp5dkQ5XzNnRTZMNmFremVYVXRjQTZaVzRSS181dVBIdm5wM2RtVkMta1k0UEVSS25pbXFJNEhaejlrX0NINmMzUkJPVElUc3ZxTXlfN28yRVdDbHRCYldKb1UyVUVrY2lnaWY4ZVNMczFDemF5YnNjdGt1c1B6VXJ0SmpacnFyeElkeU9VZlZSTFp6SzFpblZEX2w1WnJxU29pbkNuY1h4cWMtdmdGUk1taG1UY0phUGVPX2oxNUxJdE1CZHY2emlIcjFtemc5ZzUwNmRJczJQTzhhekR2NE05aEl6amhKbDlCczJTTDI0V01rWVh4Y0NfRHhvcEwwYnlnUVB0VDZraDlrWXlDNWVDQk9zRHdBR3FQYmx3ODE4SHpQSjhjTVJlbFJvMkJ0ZXRFMmJqVWNKeHNKNUl6M1BRVXBHM0ZLVXlVZmlqaWxHT3VUaV8zX19hWV9NS3RpcGR2TWtxZ2lsb2ZNV0Z3ZEJ2SUhOTi1IYVlaYWYxdktGcl9jb1BrZEI2OVZBUkQyYWtKVGd5bTkzdVlDRzRkTFVSZU0?oc=5",
+   "source": "2M.ma",
+   "publishedAt": "2026-11-27T19:23:00.000Z",
+   "original": "حسن برما يصدر ديوان \"أزهارٌ بعطر الندم\" ويتناول فيه الفقد والخذلان وقضايا الوطن",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "حسن برما يصدر ديوان \"أزهارٌ بعطر الندم\" ويتناول فيه الفقد والخذلان وقضايا الوطن",
+    "en": "حسن برما يصدر ديوان \"أزهارٌ بعطر الندم\" ويتناول فيه الفقد والخذلان وقضايا الوطن"
+   },
+   "summary": {
+    "ar": "حسن برما يصدر ديوان \"أزهارٌ بعطر الندم\" ويتناول فيه الفقد والخذلان وقضايا الوطن",
+    "en": "حسن برما يصدر ديوان \"أزهارٌ بعطر الندم\" ويتناول فيه الفقد والخذلان وقضايا الوطن"
+   }
+  },
+  {
+   "id": "nhlcebl",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWlFOd0dkc1pQUTZiWlFFNm4xZUIzOFI4Wmsyb0xTZTBMaDVKR1lpNFpYOUppUDV1WlVSMGRSRE1qeFRsN0F5NEtqbVFISkR6dmotWWhuY3F1azZIeEVpVnBxbDhNNFZURTR3NmdtTjhXTDN5WkxXNmRJY3ByTlFna3Z6T0I3YVo5V3Z2aGhsRFl2UFlUZzEtN0k5c1oxTTl4SjlXQlREbFJ2QVh5REdyd0lMTlAyUVFGblNTb0F3U3NTLTdXRTJXOXFNdUtiUnRqODZaQUh5RTR0RlE4bXE1alRGT3VrS1RvMWF0OE45VQ?oc=5",
+   "source": "NEWS.am STYLE",
+   "publishedAt": "2026-11-27T19:01:00.000Z",
+   "original": "Neymar Swaps the Football Pitch for the Fragrance Business: Brazilian Star to Create a Perfume for Dubai-Based Brand",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Neymar Swaps the Football Pitch for the Fragrance Business: Brazilian Star to Create a Perfume for Dubai-Based Brand",
+    "en": "Neymar Swaps the Football Pitch for the Fragrance Business: Brazilian Star to Create a Perfume for Dubai-Based Brand"
+   },
+   "summary": {
+    "ar": "Neymar Swaps the Football Pitch for the Fragrance Business: Brazilian Star to Create a Perfume for Dubai-Based Brand",
+    "en": "Neymar Swaps the Football Pitch for the Fragrance Business: Brazilian Star to Create a Perfume for Dubai-Based Brand"
+   }
+  },
+  {
+   "id": "nt4c3gr",
+   "url": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxQenNPd0xHOHE3MWJFemtXNFlST05TdFV1aENlYWE5Z2lTZGNSX3RjWkRjMDNOdDdiS3lFWmZFemp6aWMzcmhOMWJfcFp6cElBSUFESm1rM0Z0TWdyU1EtNFA1S1QtdWw1Q056UjBZUnppWU5wbmJMd3JSajJtTTB3aWxwVnZQWHJGUkVVTGtkMk1EVHFJMXYzVU5VVEdIZlprVmlGZTNTZkp5eWI5RGxyWnJxMWRCZHFhaUU3NkxiWU5HYUdyYWdEcUgwMWxjclJidTl5Z25fWWVyWThkanFCUUJDNENuY2tDWXZ4OTFkWklsWmUyQ1Z5dmNURGlhblc3czE1Ml92TG8xSE1ZTTFjdl93WVdjQlJ3bUhYTnIyNnF3WXJwLXJMcTh1akVjaWNzQkU2VFA3Zzl0a2Ryem9nMlI0YnoyZHhqMk1qUjNMV0NodXF4dGFnSWxlYjRicVlkR3h0Y1dGVFlya2FQMkZSaFF0UVJab3ZkbGpzU1ZDSU03VS1oWkZaUzltS2hSc3VONlQxaGM5eUxNYjFZazJWUjRUTWhFYVR5Mk42LUI4YlVzM01Fak9CdzZJQ1Y3QVhkMG9wMkVmQ3VwRGl4ZXhfUnlwaGptT2RRMnU2OUdPLXVlbW5lS25oQ09PV29IUmxraEpickFvcjFTbXYyTGZScGxybDVpZGJYZ2040gGQBEFVX3lxTFBMNVJ3RjEzVUxDaFpqWm1SUUlVaGV2V3dnYWJGR2hPVl9sWEpNM2tJNkY1enJYVzh5TVBnXzJ5d3FvZ014SVBlbTlxZWJtRFkwUlhJamNVM251Q3VCVmxrby1FR20yUFc3MzV0cjdFQWdCT1dyRVlmOUZKR0JhM0x0VEtPektodXMwdW54d0FENE9SYmZsbkdMN3pMM3U4ZTBieXZoZTQ1aFl3X3kzUjhmbm9QWks1eHBneVlpMU5RWWJCcXQwbUxVLUJ3TEdkTU1DdTZtVkRzZjA2RnZWVGJUNHlZTWZCVEZyNFM1QWxqODFFOU14dnl1THd0TDdtZk10RmN6bjloempja2FxWjNOcUVPaF9mdWF2d2NoUE5naTNCMjAydEpQR28wVTV2cFV6cjdoYnFabmNYNWdsV2ZYejNLZWFsZDBpdUNCazFxeGxXOVBCVlBvNFBVcFJtdDBNeFJsa3Z1elNQREc3YmNycTcyLW1FaGVqLTFGSDBROE4yNVpHSENCQWp4ek1hU18ydXFRR2hFcTFlSEJiQlUzTkdmMU5PcUFIODZtS2RVNTlJOFQxMjY4Uzc2eG9DMjdUblF4TkcyWEVtd0NvZksxQ3lNWVpsZ0g5RGNubWFKWFlLaUhRTEZFdmJSVlp0QmNtRnVlbzBzemhVOUNkNF9wM2hqc0I1VDIxWGxGRjJmOQ?oc=5",
+   "source": "التلفزيون العربي",
+   "publishedAt": "2026-11-27T18:57:17.000Z",
+   "original": "بينها العود العربي وكعك القدس.. اليونسكو تدرس إدراج 62 عنصرًا تراثيًا | التلفزيون العربي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "بينها العود العربي وكعك القدس.. اليونسكو تدرس إدراج 62 عنصرًا تراثيًا | التلفزيون العربي",
+    "en": "بينها العود العربي وكعك القدس.. اليونسكو تدرس إدراج 62 عنصرًا تراثيًا | التلفزيون العربي"
+   },
+   "summary": {
+    "ar": "بينها العود العربي وكعك القدس.. اليونسكو تدرس إدراج 62 عنصرًا تراثيًا | التلفزيون العربي",
+    "en": "بينها العود العربي وكعك القدس.. اليونسكو تدرس إدراج 62 عنصرًا تراثيًا | التلفزيون العربي"
+   }
+  },
+  {
+   "id": "nufomfa",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObkJ4dnBuc3NSZHVHenhVX21JTHlvSTF3a1RuSVFtVVlFNTlKWG5nOElFNVl4akFVR2hpb2lUQVh4RXBnTi1weWhOQXNwM1pxbHZVakxkNUk4eU1RNDcxby05aGpmWUF4TGVTLUNDN3Z1Q0lMZkNOM0o0QkhOWlFrcVFxbUZnUlFfUkl2X0tkTnc1dlg5Vl90VW9fQS1NY0E?oc=5",
+   "source": "JAMnews",
+   "publishedAt": "2026-11-27T18:38:55.000Z",
+   "original": "How man who knew nothing about fine fragrances became perfumer: a video story",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "How man who knew nothing about fine fragrances became perfumer: a video story",
+    "en": "How man who knew nothing about fine fragrances became perfumer: a video story"
+   },
+   "summary": {
+    "ar": "How man who knew nothing about fine fragrances became perfumer: a video story",
+    "en": "How man who knew nothing about fine fragrances became perfumer: a video story"
+   }
+  },
+  {
+   "id": "n1kd58nq",
+   "url": "https://news.google.com/rss/articles/CBMirwRBVV95cUxPY05qTnExZHprZVNkeGlwWDN5RU9ZVjVBZFV3MUNjbWNjcTlQRU1oNXpjSFZadTY0SWZtS2VYMm01QTlSUFdUQ2k1TTRPUGVFajBWeTY1NXQwTGdxNVNsZ3U4dDhES0U3em44RUc2RVQwUHNvQXZmOHpFbE52NGpBRlVIQnBwaV9XaEFkTWlPZzJSNW1OTXZic2hPOGt3M3JRamVmTmNUaXVCaVVXLTVqRDhQbC1aenZuUE9ncGdfZ0JEX1ZuTllkS0l3QkRzVkh5Q2dXS19INDdXZjBNU2VSR3psb2hOSmVKQXlWXzNrSWlHaC14THFTeFBKUHMyN28tRklabFdXamVXRFNYN0RaRGdraHcxX3BUX1QzbHAxSnl6c2pwMWt2ZU1aVFBNeWNIdDRyd2xSajItVkV6aUsxcU43NzVuTGRWZldRQm1GNUVlMFA3cHpjZllkeGhVV2wxMU5uLTF6U2ppQUVuQlFrcWRpQ0NpY241azJlbWJycmdGUTAwMEo2YXZLNWNkZG1NNVdHZExZdzFVc3diODJtcDlrOWNsbS1SN2tyY1o1MHEySUJRdm91N3c4TTBXNy1MNzNQbVJ1dkh6NndVelMxVldlaW0tV3FscXh3VERYWGQ0a1o5T1kwb2YxaFZaZ25KWXVaVVdUamw0VUYxZkhQXy1uN2VIYzhGQTFwYmlTQXFFSjJ0WWFUWGhocUR5bC1HYVNIWU95SzgxMTNCSHQ4?oc=5",
+   "source": "قناة الغد",
+   "publishedAt": "2026-11-27T18:30:51.000Z",
+   "original": "اليونسكو تبحث إدراج العود العربي وكعك القدس على قائمة التراث",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "اليونسكو تبحث إدراج العود العربي وكعك القدس على قائمة التراث",
+    "en": "اليونسكو تبحث إدراج العود العربي وكعك القدس على قائمة التراث"
+   },
+   "summary": {
+    "ar": "اليونسكو تبحث إدراج العود العربي وكعك القدس على قائمة التراث",
+    "en": "اليونسكو تبحث إدراج العود العربي وكعك القدس على قائمة التراث"
+   }
+  },
+  {
+   "id": "nwgcpuj",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdTBHckoyaENyalY5clZyUUlYQ3NGRGswSS0wLUd4UzFkQjRIVjBjbndFck8zOERINXBhaTlNMUI4ZS1BaFNDXzRyaVNKTjFrb1JUMmo0aVlTbUlTRGRPUng1UG5obXhBa1ZaZVlibV8xRnFiSWZsNm9EcFpuLVBvOE5BbFljRVdyTlo4cTk2enplcmxBYWh4QlVFNEJGVVlJRkJ3OXdR?oc=5",
+   "source": "El Watan",
+   "publishedAt": "2026-11-27T17:51:43.000Z",
+   "original": "Patrimoine immatériel de l’Unesco : l’oud arabe en route vers une consécration mondiale",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "Patrimoine immatériel de l’Unesco : l’oud arabe en route vers une consécration mondiale",
+    "en": "Patrimoine immatériel de l’Unesco : l’oud arabe en route vers une consécration mondiale"
+   },
+   "summary": {
+    "ar": "Patrimoine immatériel de l’Unesco : l’oud arabe en route vers une consécration mondiale",
+    "en": "Patrimoine immatériel de l’Unesco : l’oud arabe en route vers une consécration mondiale"
+   }
+  },
+  {
+   "id": "n1k4p0c9",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMUxSUUlUZzQ2S2FxVnlUMEJHeF9jeDFpTlN6MkZJamVrR3dCZXJjOXZZSXRWeHQ4Z1hGTmQ0LThlb2dtcnJwRFN4S2k1MVByc3o3TkY3N2dRTzBBSFRzNVFBT3lwQ1ptQW43VVlJaHdXX3pHSVdvMThTaG1BRWRsM0xuSTlfRjB6d3prcDdR?oc=5",
+   "source": "Morning Ag Clips",
+   "publishedAt": "2026-11-27T17:39:53.000Z",
+   "original": "The Hidden Link Between a Flower’s Color and Its Scent",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "The Hidden Link Between a Flower’s Color and Its Scent",
+    "en": "The Hidden Link Between a Flower’s Color and Its Scent"
+   },
+   "summary": {
+    "ar": "The Hidden Link Between a Flower’s Color and Its Scent",
+    "en": "The Hidden Link Between a Flower’s Color and Its Scent"
+   }
+  },
+  {
+   "id": "n6na7ax",
+   "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQOU5KdmgwRExYVHBGdUQ0UFZPQzFHUWc5bVlFNlBlQW95dVk5Z2NERGVxaEpSTEU0YkpRY1ctaTJGcFJaNThkaHBxcWpBOFBkOG5XSThITl9WenpOUDdtYy1yQU1valhvcmZVRTA2Qi1yWjk1TFJlZ3RFYjROdXhZbUFCa2VrTVlKRXFsV0FPVThSTFNyMDItT2JsQnp0OVdvNVR6LW84TnNCRkZWMFpjMXpoX3RVTjdfSkFONkotdEJIZDlVY3MtUkswOHBrTndzc2YyX1lWNHVWTzJWYkVNOF9jaHkzbmJjWXVGUnA3ZjJBdDdJYmNDU3prZFdIdU9lMkh3ZDRKV1pDUEVnTzFnMzhoYXBkdFJweFQxU0tCc2VnQXJIMi1fQk0taVpwa0hBNVY1RzM1bk5DRURwc2tYRzFZNkVWTkpYNS1jeHBzeDRjVTlET0RTcS00ODlsRVlMSS1JXzd1NnBxNVBH0gH3AkFVX3lxTE1fR3A3RmVEcndFSUR6aGNlLVIyVjNKRExQNUE2TFpRMWQ1TTdVTERlY0dHM2M4TVBlNExYLTdRMDdfckpJOUdVUkcta2w2ajZ2eVFUVmRmUnlGcWVEM0NfRFRtZ184SzB2YkJSd0o4Q3dVTkVqMUZFMEhIYlBWMGlOUHhxd2xzdGFVMkJZUkJobk1XcUZNc2trTGk1aFRPZlFKajNiQmR2SnZrZ0VmWlhVbHpZNlhOQUVmZDF3ejBoTWd3cUI0ZTg1bFFmOS1KUzR4UUhzSzlxNFluVEo4SVFhRi1wem91c1lLQURZdVd3TGJEM0dLUUdlaHgzZ05fWWJNdHhPdDNDSGJWZzRmb0NERTFGeXZHMGl6RFltdXJORzNrVzRXV05zTjBuWE5RNzlSY0s0enp5bERoLTYxWjJQTi1LQXFEV1Q1Q2VycUE2a3BpdjJVelI0NjJneGZSY3pWUjZISll3ZFVhcEFrR3U4UU0yRkZ5dw?oc=5",
+   "source": "العربي الجديد",
+   "publishedAt": "2026-11-27T16:44:05.000Z",
+   "original": "من عطر إشبيلية إلى غبار أغمات في مرآة الزمان",
+   "lang": "ar",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "من عطر إشبيلية إلى غبار أغمات في مرآة الزمان",
+    "en": "من عطر إشبيلية إلى غبار أغمات في مرآة الزمان"
+   },
+   "summary": {
+    "ar": "من عطر إشبيلية إلى غبار أغمات في مرآة الزمان",
+    "en": "من عطر إشبيلية إلى غبار أغمات في مرآة الزمان"
+   }
+  },
+  {
+   "id": "n1kzs44m",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMXp6bXdNUEFOVzZXaEE5cDRRQUZ3akc1SEdzNVhKY1dMT0NJQm1VRUJ6QW16endaNWl5THFTVnFEdFJNNWliYjY2R2JZcE5kZWF1a19vRzBsUmF3TFRmMlJGTTN2Q200R1UybGY5QzZmX3VxZkFIc1dsVHk3YUpJU2VzSGpCQzhwVGdLTzV1bnAtN0ZxOGVLQ9IBmAFBVV95cUxNMXp6bXdNUEFOVzZXaEE5cDRRQUZ3akc1SEdzNVhKY1dMT0NJQm1VRUJ6QW16endaNWl5THFTVnFEdFJNNWliYjY2R2JZcE5kZWF1a19vRzBsUmF3TFRmMlJGTTN2Q200R1UybGY5QzZmX3VxZkFIc1dsVHk3YUpJU2VzSGpCQzhwVGdLTzV1bnAtN0ZxOGVLQw?oc=5",
+   "source": "Liverpool Echo",
+   "publishedAt": "2026-11-27T16:33:00.000Z",
+   "original": "'Favourite ever' £78 Moschino perfume that 'gets compliments at work' drops to £25",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "'Favourite ever' £78 Moschino perfume that 'gets compliments at work' drops to £25",
+    "en": "'Favourite ever' £78 Moschino perfume that 'gets compliments at work' drops to £25"
+   },
+   "summary": {
+    "ar": "'Favourite ever' £78 Moschino perfume that 'gets compliments at work' drops to £25",
+    "en": "'Favourite ever' £78 Moschino perfume that 'gets compliments at work' drops to £25"
+   }
+  },
+  {
+   "id": "n778afp",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNa0FwNERPYTRJOGJoVWxBYllOVW5HTE9HV21oREpxbGZFVzd3bkdpQlNpdmxpOTJZa3hRaGp0M2gwLUMzZzVKdGpsUmNUZWN0ZlVpYXJkVUp3Yll0ZnZZ?oc=5",
+   "source": "صحيفة الأيام عدن",
+   "publishedAt": "2026-11-27T16:14:15.000Z",
+   "original": "أوسان العود يلتقي رئيس الوزراء الهندي ناريندرا مودي في نيودلهي ضمن اجتماع رابطة دول المحيط الهندي",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "أوسان العود يلتقي رئيس الوزراء الهندي ناريندرا مودي في نيودلهي ضمن اجتماع رابطة دول المحيط الهندي",
+    "en": "أوسان العود يلتقي رئيس الوزراء الهندي ناريندرا مودي في نيودلهي ضمن اجتماع رابطة دول المحيط الهندي"
+   },
+   "summary": {
+    "ar": "أوسان العود يلتقي رئيس الوزراء الهندي ناريندرا مودي في نيودلهي ضمن اجتماع رابطة دول المحيط الهندي",
+    "en": "أوسان العود يلتقي رئيس الوزراء الهندي ناريندرا مودي في نيودلهي ضمن اجتماع رابطة دول المحيط الهندي"
+   }
+  },
+  {
+   "id": "n1bg9ptc",
+   "url": "https://news.google.com/rss/articles/CBMi6gNBVV95cUxNVm1xcEFoZUNvQTZZN1BOZGJOREZIY3VlWVc1enFIakdHc1JmN3h2QkYzY1JKdXUxb0dVM1NFY3Q4elFuRzk4OWh0eTdaM005V3lOX2sxWUhQSWJ6bFprUGRabnVaanhyNkZVSzJ0VExqUkR6bzVSdkZpLXdLclhTSlBQRG83c0tudVA2ZFZfRk1XckhhZVhwNFNlbE9sV3ZXM0ozMHJkWnU5am9zMXpWLW0tTGdkMkRmMVlqOGxWVE0xZkUyVHp0dEVlMl8yRFNVTEtNbmdGNGVoVUh3YTR4Y3RmN1B0UFZkaUE0MWcwa2FQUVdKcmlLNGtFQy1kOUtLZEIzSGFaUHpmN0dRUzZLZjVOT3BvUzNQWEJELVBhaVliWkJ1a0t1djZSTkt0NUZxamtQNk5mcmRsZTZWMlNsWHdPdUV5MlMzalhObHZXVHAxcmtnNlFBMG8xS21RTV9jb1pUQnEzblpuZDVpbmdFM3ltVHlVZjFQU1h5a1BmQnVXYXVnNE1rUVFXaGdRcW9ZaUFuRGRtZDc0UnljX3BseTVXaE10aU9WTkFZSGRMUDhYM2tGbU1pMEc5MUI2MGdvNFBQTDRQVGQwWlVZZ1E3NFV2REtaNF9oNlpYa3lQeXZvN0doYlAtcWxB0gHqA0FVX3lxTE1WbXFwQWhlQ29BNlk3UE5kYk5ERkhjdWVZVzV6cUhqR0dzUmY3eHZCRjNjUkp1dTFvR1UzU0VjdDh6UW5HOTg5aHR5N1ozTTlXeU5fazFZSFBJYnpsWmtQZFpudVpqeHI2RlVLMnRUTGpSRHpvNVJ2Rmktd0tyWFNKUFBEbzdzS251UDZkVl9GTVdySGFlWHA0U2VsT2xXdlczSjMwcmRadTlqb3MxelYtbS1MZ2QyRGYxWWo4bFZUTTFmRTJUenR0RWUyXzJEU1VMS01uZ0Y0ZWhVSHdhNHhjdGY3UHRQVmRpQTQxZzBrYVBRV0pyaUs0a0VDLWQ5S0tkQjNIYVpQemY3R1FTNktmNU5PcG9TM1BYQkQtUGFpWWJaQnVrS3V2NlJOS3Q1RnFqa1A2TmZyZGxlNlYyU2xYd091RXkyUzNqWE5sdldUcDFya2c2UUEwbzFLbVFNX2NvWlRCcTNuWm5kNWluZ0UzeW1UeVVmMVBTWHlrUGZCdVdhdWc0TWtRUVdoZ1Fxb1lpQW5EZG1kNzRSeWNfcGx5NVdoTXRpT1ZOQVlIZExQOFgza0ZtTWkwRzkxQjYwZ280UFBMNFBUZDBaVVlnUTc0VXZES1o0X2g2WlhreVB5dm83R2hiUC1xbEE?oc=5",
+   "source": "العربية",
+   "publishedAt": "2026-11-27T16:11:00.000Z",
+   "original": "العود العربي والمطبخ الصيني يقتربان من دخول قائمة تراث اليونسكو",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "العود العربي والمطبخ الصيني يقتربان من دخول قائمة تراث اليونسكو",
+    "en": "العود العربي والمطبخ الصيني يقتربان من دخول قائمة تراث اليونسكو"
+   },
+   "summary": {
+    "ar": "العود العربي والمطبخ الصيني يقتربان من دخول قائمة تراث اليونسكو",
+    "en": "العود العربي والمطبخ الصيني يقتربان من دخول قائمة تراث اليونسكو"
+   }
+  },
+  {
+   "id": "n1xcbvds",
+   "url": "https://news.google.com/rss/articles/CBMivARBVV95cUxQZ2xaSlc1Y2NMREt5TTlsa05CNzgzRlZqb3A0U3lVVWZ4TW5haHNwVnRoYmY5N0J0Y2dhVndtN0duVGUtdlJoZ1ZFeU9fM3R1cGVUSzdLeXI1T0oxSFhyRjBxajc4NGhyZFlrcGVaZXg0TXpzLXJZeUcwRFRUVU1nSVdkeWlNVXVwV3Rlc0hsZkRsMVlhcVE1RVZ5RGxqVmdtOS01SHdUV2hueWg5ZlZlQm1DS0xkU0lVbXFxREZjQU8wNzlHSnYzdG1ZeHFtcWVFSmdPXzdKa3ppaVdpTWwwSGphbDNZd2NZd19WdWdQbUI0cGM4ZTZPQkJzVjUtVHdMTVBfWmRNSzJmZzNENWdfcmY0RjZnUGN5V1lGQTRlMjVPdjR1VVRBQUUtMHFxdjdmSUZteEtTMm4yVVJraDBQVmFWNkdTd1BrVmFHUm53Y1ZmSjhkWlhMYWdFS1p0cjhBNzhtelNBSmh0YU9uUldUc29LSnlSbUxpaDRFeUtxWXNuVUNQTXpqaE55bVFCUTc0SjhfVXBPMUFsTFlhM3cyVlNsTXZMaFNwMndCYjFsdzVZQWYwV1Y5bzNPRWFNQ2J2QXJKT21nZGRMN00weVhJMHV1ejBIUUdEaXgzRjNJNm1zWVRaWDBDbWlFVzZVbm9ELW9UaVE0bVVoQzVQYnhkLTlGZGxZb3lCb0dlZzVOOGVKNHBHUXB1dW4xb2RWaVR3Qi1DQ2RTMU1HSTJsTHplS2FDZkhORURFOGJnTQ?oc=5",
+   "source": "annahar.com",
+   "publishedAt": "2026-11-27T16:02:00.000Z",
+   "original": "اليونسكو تدرس إدراج العود العربي والمطبخ الصيني في التراث",
+   "lang": "ar",
+   "category": "culture",
+   "importance": 2,
+   "title": {
+    "ar": "اليونسكو تدرس إدراج العود العربي والمطبخ الصيني في التراث",
+    "en": "اليونسكو تدرس إدراج العود العربي والمطبخ الصيني في التراث"
+   },
+   "summary": {
+    "ar": "اليونسكو تدرس إدراج العود العربي والمطبخ الصيني في التراث",
+    "en": "اليونسكو تدرس إدراج العود العربي والمطبخ الصيني في التراث"
+   }
+  },
+  {
+   "id": "n1slqhs2",
+   "url": "https://nstperfume.com/2026/11/27/friday-scent-of-the-day-11-27-2/",
+   "source": "Now Smell This",
+   "publishedAt": "2026-11-27T15:54:22.000Z",
+   "original": "Friday scent of the day 11/27",
+   "lang": "en",
+   "category": "industry",
+   "importance": 2,
+   "title": {
+    "ar": "Friday scent of the day 11/27",
+    "en": "Friday scent of the day 11/27"
+   },
+   "summary": {
+    "ar": "It's Black Friday and Native American Heritage Day . Birthdays: James Agee , Jimi Hendrix , Bill Nye . Our community project for today: pick your Black Friday poison...wear the last fragrance you bought, wear a cheap thrill, or wear a fragrance you love but refuse to buy in a full size because it's too expensive. (We've done this project several times.) What fragrance did you pick? As always, do chime in with your scent of the day even if you’re not participating in the community project. I took",
+    "en": "It's Black Friday and Native American Heritage Day . Birthdays: James Agee , Jimi Hendrix , Bill Nye . Our community project for today: pick your Black Friday poison...wear the last fragrance you bought, wear a cheap thrill, or wear a fragrance you love but refuse to buy in a full size because it's too expensive. (We've done this project several times.) What fragrance did you pick? As always, do chime in with your scent of the day even if you’re not participating in the community project. I took"
+   }
+  },
   {
    "id": "n1vivu2b",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOazlvbjNELUNiX3VuNWNkc195NGppSl9QS0JobDRxcmRvRThNMWkzMUV2M1FYZEp1bWdWakJjMFRHcXNoMHFpWmYySXZvTEQ0YmF1THlZM3FDSEVQMi01LURHUGV0LW1BVWNVR2hNSTg3Q3cwb3phUGdIMk9rU2ZXcTJ5S2kxTWREUlNYNkhLc3didUVaUExlQVBWTVVqdkhYb1B1S3d4RzU1aGVyRDVFRTdQbFlRR0U?oc=5",
@@ -273,366 +661,6 @@
    "summary": {
     "ar": "Notes de lune : musique et parfum à Naples",
     "en": "Notes de lune : musique et parfum à Naples"
-   }
-  },
-  {
-   "id": "nc92e0b",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNNlFleU9ZOGl0Sy1KV09JX2RXWm9YUXVXaTFJREkxQzc3VUhMY2Vmdl92UFlrbF9UT1hpcDIwX2pXT0E4Snd1eTBScUxyWmNxUlhlV0N5Z2xqV2R3Z3A1T2drRHYzX2wydjNOYkdMa2NSS3BweW1LMy1FcnhKdTJqVjZSd3B0bllYaHlleHpxbzAtOG9xd2RmRlJxTUJ4alJjcEJMU2VCVzJ1R2VxZFE0SGhhRHRUTUw3Mzd5ZmdESVkyd1hsRVdPTEZRdUVaRGtPaWsyYThiSmxqOFVkN2JuWFk4LUwwUQ?oc=5",
-   "source": "Gala",
-   "publishedAt": "2026-11-27T08:01:00.000Z",
-   "original": "Noël 2026 : Byredo, Prada, Lancôme… Ces parfums à offrir vont faire tourner les têtes pendant les fêtes",
-   "lang": "fr",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Noël 2026 : Byredo, Prada, Lancôme… Ces parfums à offrir vont faire tourner les têtes pendant les fêtes",
-    "en": "Noël 2026 : Byredo, Prada, Lancôme… Ces parfums à offrir vont faire tourner les têtes pendant les fêtes"
-   },
-   "summary": {
-    "ar": "Noël 2026 : Byredo, Prada, Lancôme… Ces parfums à offrir vont faire tourner les têtes pendant les fêtes",
-    "en": "Noël 2026 : Byredo, Prada, Lancôme… Ces parfums à offrir vont faire tourner les têtes pendant les fêtes"
-   }
-  },
-  {
-   "id": "nh88swq",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdFprMGN6V1pXRWdWQ2tKSVAwS3l3WGVIbEdOMEREZEdvT1NZd3dIQWh3c245eDZIRWw3MG9EYnNkUG1UTWdneWp2U0tfU29UcnVXR19OMDR0RmR2Q3R3NDMxb09qVHZLQkt5TUxfR0Fac2JWdTZ5djdHOTV0YWRKVGlxWEdYajFuTmhUaUk4R0NDY1g4MzVuQ3VuOGhGREMtNmZ0ckxMSWlneXJuYlRUNUw4ZUJEOEs1ZHZESG5ucWctbmVJNERqZzN6RHA2MjdZQkhCWjQ3d2FXTjMwNHg1NXlBT0tFRXI5aEVuTmFVZjhIX0k?oc=5",
-   "source": "ANI News",
-   "publishedAt": "2026-11-27T07:05:00.000Z",
-   "original": "Dubai-based perfume brand Sifar introduces its unique Arabic-French fragrance experience to India at IITF 2026",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "Dubai-based perfume brand Sifar introduces its unique Arabic-French fragrance experience to India at IITF 2026",
-    "en": "Dubai-based perfume brand Sifar introduces its unique Arabic-French fragrance experience to India at IITF 2026"
-   },
-   "summary": {
-    "ar": "Dubai-based perfume brand Sifar introduces its unique Arabic-French fragrance experience to India at IITF 2026",
-    "en": "Dubai-based perfume brand Sifar introduces its unique Arabic-French fragrance experience to India at IITF 2026"
-   }
-  },
-  {
-   "id": "ndxu92w",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaV9CNkV4dlJqY3JXTVdYOXVudDJ1dU1XX1NRYU01b3JMSDR0elBudjI3VVlhaGRzV1VQSkdPZzVLd0lVMnZNVURHdjRxZU9lY0JZMTBpWlB6Zm1SLUhEQVRka1FEOTNIcmZMZkVaOVZrSEF4Y1hyQXRoUXNJdVNzeS1oWHJUMzZuT1RKemtVZ090X2loWVgzT1FWdjI5eUY4LXNSR1VQQ3lvUlFQRUh3aVA5OVBPbGFGWHNMU0gtQjA5ZXJ2T1VVa1FJWTh3YkdyUEVMNTFmYUtTSXF3VmtNOXRVc0FzTzQ?oc=5",
-   "source": "Retail Technology Innovation Hub",
-   "publishedAt": "2026-11-27T06:50:07.000Z",
-   "original": "UK retailer The Fragrance Shop launches online with Affirm and preps go live across store estate",
-   "lang": "en",
-   "category": "launch",
-   "importance": 2,
-   "title": {
-    "ar": "UK retailer The Fragrance Shop launches online with Affirm and preps go live across store estate",
-    "en": "UK retailer The Fragrance Shop launches online with Affirm and preps go live across store estate"
-   },
-   "summary": {
-    "ar": "UK retailer The Fragrance Shop launches online with Affirm and preps go live across store estate",
-    "en": "UK retailer The Fragrance Shop launches online with Affirm and preps go live across store estate"
-   }
-  },
-  {
-   "id": "n15nzk3w",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRXIxVjYwS0tXc0ZJNU5SRE1iQ1A4TmpDLWhxLVpxMFpYSVJpUXllWno2YnFLckxJLXhMU3RVdDJaSlg2OHpFa2lNRHhZUmR4OHdfcExNaVIxYlJsNEFHdXhzSF93OEF1Y0pzNm9MZmtINDBPcndlVk9oaWdvU0J4TE01MGFiVFl6UVpIanY5amNPNmtO?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-27T05:15:50.000Z",
-   "original": "قدم وفد الجيش النسائي البخور تكريماً في منطقة قاعدة دينه هوا الثورية.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "قدم وفد الجيش النسائي البخور تكريماً في منطقة قاعدة دينه هوا الثورية.",
-    "en": "قدم وفد الجيش النسائي البخور تكريماً في منطقة قاعدة دينه هوا الثورية."
-   },
-   "summary": {
-    "ar": "قدم وفد الجيش النسائي البخور تكريماً في منطقة قاعدة دينه هوا الثورية.",
-    "en": "قدم وفد الجيش النسائي البخور تكريماً في منطقة قاعدة دينه هوا الثورية."
-   }
-  },
-  {
-   "id": "nckm2nz",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1rY0xXZy0wbkxBSndkMU5TcUpSVDliczBidEpKUVk3UDM2UkNGd1FXTS1RcF90UHFjUHVhckZYY29keWZMbno1aEEySGJwb1UxV3FZcm8tamNMYmNDN2xzSFA5TVdRWG84RnZDY0lsSF85YkpTZm1sYThn?oc=5",
-   "source": "Vietnam.vn",
-   "publishedAt": "2026-11-27T03:35:00.000Z",
-   "original": "يزرع شعب تشوت أشجار العود على تلال راو تري.",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "يزرع شعب تشوت أشجار العود على تلال راو تري.",
-    "en": "يزرع شعب تشوت أشجار العود على تلال راو تري."
-   },
-   "summary": {
-    "ar": "يزرع شعب تشوت أشجار العود على تلال راو تري.",
-    "en": "يزرع شعب تشوت أشجار العود على تلال راو تري."
-   }
-  },
-  {
-   "id": "ndnj1o3",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBNQnRiU1BPZkN4UlZsRENGZlBWYkt4QUoxMGVNRnR4MVQ0U3dtOU54TnQzdWo4UHdwRzBZUkxjZldQbjRzLWYyS2FTcW9pN1VFNnhiMzBjQ1hHRTVnb1RXZlo2dw?oc=5",
-   "source": "Andlil",
-   "publishedAt": "2026-11-27T03:10:30.000Z",
-   "original": "Grasse, capitale du parfum : plantes, savoir-faire, Unesco",
-   "lang": "fr",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "Grasse, capitale du parfum : plantes, savoir-faire, Unesco",
-    "en": "Grasse, capitale du parfum : plantes, savoir-faire, Unesco"
-   },
-   "summary": {
-    "ar": "Grasse, capitale du parfum : plantes, savoir-faire, Unesco",
-    "en": "Grasse, capitale du parfum : plantes, savoir-faire, Unesco"
-   }
-  },
-  {
-   "id": "n1p21jld",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNLVBqeFJ1MV9jeTJyWDJocDRKUXhXbkg5WnZ6YlFEb2tNaVJnSDZoRlNnbm15bDl5VHNQR3AwdTNBNDRJa29Zdm1QRWlmdlN5cTA3aFR2LTBtcE5DMENVZTBfS1pzY1BQTVo5VHBscEoyYk4zUVNHakZnR05pekJNZTBUNk1HTFBIRm1VY2tydGszWkhod1RneklUay02azdiZG5jMmNFaUVJc0lDaUFqLXNmckJ4RXVWdlBkTWZpNDl4aXQ2bzhiRlM2TzNwZG5lWmN0Xzl3?oc=5",
-   "source": "selecta bisso",
-   "publishedAt": "2026-11-27T00:36:15.000Z",
-   "original": "Neymar Jr. becomes an ambassador for Armaf: the Dubai-based perfume company is betting on the Brazilian star",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Neymar Jr. becomes an ambassador for Armaf: the Dubai-based perfume company is betting on the Brazilian star",
-    "en": "Neymar Jr. becomes an ambassador for Armaf: the Dubai-based perfume company is betting on the Brazilian star"
-   },
-   "summary": {
-    "ar": "Neymar Jr. becomes an ambassador for Armaf: the Dubai-based perfume company is betting on the Brazilian star",
-    "en": "Neymar Jr. becomes an ambassador for Armaf: the Dubai-based perfume company is betting on the Brazilian star"
-   }
-  },
-  {
-   "id": "n1810sm2",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14SFFJdkNHOWJ2dEczZnBNMWJDRndqNUJMM1ZycXJzeEk4Y2RDRDNtNUlmeUtYMm9ZT2s5b2Q2RVVnTHRiRFg1NDNxYWgtS3BBX0VIZlZsQ0NEcDl0cEM5dGZHSQ?oc=5",
-   "source": "الأيام البحرينية",
-   "publishedAt": "2026-11-26T22:59:26.000Z",
-   "original": "إقبال بحريني وخليجي واسع على معرضَي الجواهر والعطور العربية",
-   "lang": "ar",
-   "category": "events",
-   "importance": 2,
-   "title": {
-    "ar": "إقبال بحريني وخليجي واسع على معرضَي الجواهر والعطور العربية",
-    "en": "إقبال بحريني وخليجي واسع على معرضَي الجواهر والعطور العربية"
-   },
-   "summary": {
-    "ar": "إقبال بحريني وخليجي واسع على معرضَي الجواهر والعطور العربية",
-    "en": "إقبال بحريني وخليجي واسع على معرضَي الجواهر والعطور العربية"
-   }
-  },
-  {
-   "id": "ni64mnl",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTWtsb2t6R2lZRmczc1NqS2FOb2xMcko1bVhnSGdnMFg5cXBmb01hQkF4M25mOHBGTGw3SDNyVkdjMzV6RVFOZVNnb3ljLVFZX0YyYWNDNV8wWEZWeHViTnRfdGhDVjJTOXBuWWhRQ3hHTF9ORDhfWGg1MEFZNGVMd3VpRDlwTXEwYTZxalRBZldjdXY5ZWhIMzE2dDlGZTBHdzNEbVRIcUVSN1VZN2Z6T2JGZWdpSUU?oc=5",
-   "source": "IndexBox",
-   "publishedAt": "2026-11-26T22:46:05.000Z",
-   "original": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
-    "en": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics"
-   },
-   "summary": {
-    "ar": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics",
-    "en": "Cologne Kit Market To 2035: Premiumization and DTC Channels Fuel Expansion - News and Statistics"
-   }
-  },
-  {
-   "id": "n19agrql",
-   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5OTHJhaExOdlQzMko3YzJRdGpNcGFlWi1zckRybEhVUWxhUjRiM3J6aE4tU2gyUVBiaklMS1VRRG1PMllDZ0RkM3pB?oc=5",
-   "source": "عدن الغد",
-   "publishedAt": "2026-11-26T22:42:00.000Z",
-   "original": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
-   "lang": "ar",
-   "category": "culture",
-   "importance": 2,
-   "title": {
-    "ar": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
-    "en": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك"
-   },
-   "summary": {
-    "ar": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك",
-    "en": "أخبار وتقارير - العود يبحث مع وكيلة وزارة الخارجية الهندي تعزيز التعاون المشترك"
-   }
-  },
-  {
-   "id": "n5w62vw",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOW84SEdRY25DQzJIcmlaY2dmZXg5cEJkNzhpQlNBWDhQbFlQWnFQSG5YTktiYk9MUXRqbi03QmxtU3U3a2R2LU1tWlFLOTYxSlZqampaa3VvcWNXUjBFNmxrSm5QOFNKRHp6UTlBbEZpZHRuZUx4MlBYS2M2MGdCZElScDViSm9fNXpLeEthNHZXRktMWE5qQWlFLTVxa1FkcVQ3cU9MVDdyWVhJQmxMQTBPNA?oc=5",
-   "source": "selecta bisso",
-   "publishedAt": "2026-11-26T22:00:54.000Z",
-   "original": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
-    "en": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne"
-   },
-   "summary": {
-    "ar": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne",
-    "en": "Neymar Jr. devient ambassadeur d'Armaf : le parfumeur de Dubaï mise sur la star brésilienne"
-   }
-  },
-  {
-   "id": "n1dbfwqo",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTl9vM3VhWmFROXRReUpaRmlDdmpiUU9KbmpsOFc4Q2ZxT3BNV0ZWc2RXQ19ucHNKSVVUc1VNRTVOZ0Znb21JNldISEN2NzJhSkdRRTBwZVdsMkVJTG1DT3d3OE5BNDR2R056MDZlSTFWWFJ4cU1hSnBUNnpEbWRjNWZfVWVGTE15NWJtWVlEd1pLN2t5ZEFseS1YTTAyTk1PNUdQejQ1b0hHRXp3eFgyZFk0VlN1dzlsRGtoUk5WNXdKek0?oc=5",
-   "source": "IndexBox",
-   "publishedAt": "2026-11-26T21:01:06.000Z",
-   "original": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
-    "en": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics"
-   },
-   "summary": {
-    "ar": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics",
-    "en": "Woody Solid Perfume Market To 2035: Sustainability and Portability Drive Growth - News and Statistics"
-   }
-  },
-  {
-   "id": "n60q4nb",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNUYyejBGd2xmZllMUGdWX3VWNkZ1d1cwRXFWSlJucWJ0dmNZck5kQ3B3V05WQ3JQbzZVaUV1V3pUZTdUZGZseEgxNGZ3WmEyajM1OWtTTTFCQzE0eExFN2ZscXQ0blVNMDkyeFEzNWxOQVZyUEM2TjVEU3lKWGVISXMxd1VuYUNNZTg1WEtQN0xRWF8xdFpobVMtYWdBSW5qM29IR1U1OWN1d2lMSVNF?oc=5",
-   "source": "Paris Select Book",
-   "publishedAt": "2026-11-26T20:57:09.000Z",
-   "original": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
-    "en": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël"
-   },
-   "summary": {
-    "ar": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël",
-    "en": "L’art du parfum : le Top des collections de fragrances les plus précieuses à offrir à Noël"
-   }
-  },
-  {
-   "id": "n1owkzr2",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFdpOGdnTnpuR3BpWlFZek9obWYxdWVoVjZSY3BlQUd3RkxNZHhoVjZIOUFZV3hRd0lyN2FuejVfb1BOM1RkbHNFZVdpUE5fQzJvMmd4a0tXNEVWWWwySW1GRnlMTTQxNjV2LS1RTGQxeDR1aUVMSjRMbGVtWmhwaDVBZ2VVaHdpVDBoZUpxZFF2empHbWMzQXZVT3ljb1llbnBsUE1VcEhyV2VBMWtGSXV4YjlaWncyWlBCWU9VUG0?oc=5",
-   "source": "IndexBox",
-   "publishedAt": "2026-11-26T20:56:05.000Z",
-   "original": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
-   "lang": "ar",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
-    "en": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات"
-   },
-   "summary": {
-    "ar": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات",
-    "en": "سوق العطور الزهرية الفاخرة حتى 2035: الارتقاء إلى الفئات الأعلى والتجارة الإلكترونية يقودان النمو - الأخبار والإحصاءات"
-   }
-  },
-  {
-   "id": "nuxqq9i",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN2ZTVk5GYXNkM1U0ZkJNQWdCQmJudXNBUVdfNHNOb2ZBbkJuems4SW1NMFNJNmpHQ2ZpNXFZSFhRdEp0aUtBbUE5R2RXZXlGMGgxYU1XOHVHR2FhWnpjNE1QOFRpT2dSb2hiNnZ1eUdRY1o3cGxmWmdHMGRJMi04M2VVaWREdlg4VkE3b3RBUG03OEFQSkFEMF9GSUE5aWpoQ0JvQnQ1WlNoT0tSMEkyZ2tuTGk0cnVmX3dJMk9ENG9seTRwenM3LUVQT0NOX1FMYloxcnYzZUU4UXc?oc=5",
-   "source": "IndexBox",
-   "publishedAt": "2026-11-26T20:31:04.000Z",
-   "original": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
-   "lang": "en",
-   "category": "ingredients",
-   "importance": 2,
-   "title": {
-    "ar": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
-    "en": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics"
-   },
-   "summary": {
-    "ar": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics",
-    "en": "Fresh Eau de Toilette Market To 2035: Daily Wellness and Office-Safe Scents Drive Growth - News and Statistics"
-   }
-  },
-  {
-   "id": "n1xtei1k",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNjdLNU5GaGtUUFhJTExLUURkZmtHb1VXZlhJLTlOWGQ5SHg0QXBqVDB3TFd2ZmgyUHQ3blZnd1F3UVBZWi1sUFBBVDlmZm1GOHdCNkUyX0lNQTIwc1JUbVV6OElrSHhjY3FRRldfaGNkTXI3bkMtOFFfWURQSXhXZnhZajh2c21NZ1pfeXJkMnhCMkNwRmU3d1hKYlY4T0NnTzZWdFRXUQ?oc=5",
-   "source": "Dealroom",
-   "publishedAt": "2026-11-26T19:50:26.000Z",
-   "original": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
-   "lang": "en",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
-    "en": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand"
-   },
-   "summary": {
-    "ar": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand",
-    "en": "Weinberg buys niche perfumer Etat Libre d'Orange, eyeing $50M-plus brand"
-   }
-  },
-  {
-   "id": "nebz707",
-   "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPUEFIbFoxc1J0dkFRT2hUalY5ckVDMmg1ODRoZkRKTlpZZ3Q4czFFNGtrMm9IM0FxOHFNNGUwR1hmcnZOVjI0bm01MjlfQ1NJTWpfOHBad3NtY0F2V0QyWlU1YWpLTVhKR21sZmxib2FLcTNRMG0xRjd2VmNleFMyRVdkenhsWjctWXAwYkgyYWxMMWJnLW52Zy1VTnhqWXJqcUN2NExfLWc2OUdLYjhIV05ZNnNkZE9tdFZGY2tZTGcyVXJ4S1lKMzItOG90OVU1Q0ZLQkFsWUhPQ2NsZGlFdVlPUGNNeE4tYjZrRVh1aklOcXBpeXJMMmFpLTFQODFZX3ctR1IxTTZMYjdfZ2xaaWlmaGgteVhSWFp2blJraw?oc=5",
-   "source": "Grazia",
-   "publishedAt": "2026-11-26T19:30:51.000Z",
-   "original": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
-    "en": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération"
-   },
-   "summary": {
-    "ar": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération",
-    "en": "\"L'odeur reste sur les vêtements même après le lavage\" : puissant et unique, ce parfum de la marque Parfums de Marly a déjà marqué toute une génération"
-   }
-  },
-  {
-   "id": "ndx0z9z",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSWl3R2JtZFhJNmZNeGZ1c3UzN3VBZGl6dVo4RzZFWS1fOUZONG80dl8zNjRuQ21RZmZYRG1QT3ZYc2ljdmxaX1JJcktsRDhTUG5lOE9DZDRZaURnTjNLWTJ4Z3JwdmJIeFhYRmNzbzB5dGEwYkpTcFRVYTc0NkVHUkphNHV4TFE?oc=5",
-   "source": "Numéro Magazine",
-   "publishedAt": "2026-11-26T19:25:09.000Z",
-   "original": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
-   "lang": "fr",
-   "category": "ingredients",
-   "importance": 2,
-   "title": {
-    "ar": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
-    "en": "L'Artisan Parfumeur dévoile son premier talent show Le Nez"
-   },
-   "summary": {
-    "ar": "L'Artisan Parfumeur dévoile son premier talent show Le Nez",
-    "en": "L'Artisan Parfumeur dévoile son premier talent show Le Nez"
-   }
-  },
-  {
-   "id": "nfgj9fk",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWtvbW5HRHRpNUJ5aFd5MHh4RWwtYTZFVjBsMmZzS1VhcFVCZTdoUWRHck42M3FrZEY4WXdFWXhCbERBa0pZYV9BNS1feWhRVWxfZjVyd1h3cHc0VTgwN2ZsWmJYWDF2X0tXdWcxZjRPQnNSaHlGaEgzaU9SMGxEdVJTRQ?oc=5",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-26T19:19:33.000Z",
-   "original": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
-   "lang": "en",
-   "category": "market",
-   "importance": 2,
-   "title": {
-    "ar": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
-    "en": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange"
-   },
-   "summary": {
-    "ar": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange",
-    "en": "Weinberg Capital Partners acquires niche perfume house Etat Libre d’Orange"
-   }
-  },
-  {
-   "id": "n5vxn1e",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRkJyU0RHbURlLU1ZNndEVERPbmtLb3d4UGZWcTdxMllUcXVoU0MzU2ZJZEh1b0V2QWhvOHRTdFpwUTRWSHFsUmRsS3Y4cG15eTBGdHQxYTdqZERPWnAwVkhqYkF2VGIwMVpZMHI3N21mYmtuRmFnaTVUdkhhMC1zQlR3?oc=5",
-   "source": "Premium Beauty News",
-   "publishedAt": "2026-11-26T18:26:24.000Z",
-   "original": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
-   "lang": "fr",
-   "category": "industry",
-   "importance": 2,
-   "title": {
-    "ar": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
-    "en": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange"
-   },
-   "summary": {
-    "ar": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange",
-    "en": "Weinberg Capital Partners s’offre les parfums État Libre d’Orange"
    }
   }
  ]
