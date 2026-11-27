@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-26T23:17:11.838Z",
+ "updatedAt": "2026-11-27T09:02:19.987Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 439,
-  "warn": 675,
+  "ok": 432,
+  "warn": 682,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-26T23:16:22.966Z",
+  "at": "2026-11-27T09:01:34.790Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -21,7 +21,7 @@
    {
     "id": "shamperfume",
     "currency": "MYR",
-    "rate": 13.2489,
+    "rate": 13.3135,
     "rateFrom": "open.er-api.com",
     "sitemapProducts": 1048,
     "listingPages": 44,
@@ -37,11 +37,11 @@
     "gone": 15
    }
   ],
-  "rate": 13.2489,
+  "rate": 13.3135,
   "prices": {
    "count": 1063,
    "min": 750,
-   "median": 3315,
+   "median": 3300,
    "max": 7835,
    "top": [
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 48897
+  "durationMs": 45216
  },
  "items": [
   {
@@ -7010,15 +7010,49 @@
    "page": "p/sa-ud-by-asdaaf-100ml-edp-unisex-1076.html"
   },
   {
+   "sku": "PEN-1077",
+   "id": 1077,
+   "name": "One Pendora Scents For Him – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/one-pendora-scents-for-him-100-ml-for-men-1077.html"
+  },
+  {
+   "sku": "PEN-1078",
+   "id": 1078,
+   "name": "Club Intense 100ml EDP Men Paris Corner Pendora",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/club-intense-100ml-edp-men-paris-corner-pendora-1078.html"
+  },
+  {
    "sku": "VEL-1079",
    "id": 1079,
    "name": "Velixir Adonis 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/velixir-adonis-100ml-edp-1079.html"
+  },
+  {
+   "sku": "PEN-1080",
+   "id": 1080,
+   "name": "Noir En Leather by Pendora Scents 100 ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/noir-en-leather-by-pendora-scents-100-ml-1080.html"
   },
   {
    "sku": "ASD-1081",
@@ -7048,6 +7082,8 @@
    "name": "Pure Desire Gold by Rave 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/pure-desire-gold-by-rave-100ml-edp-1083.html"
@@ -7058,9 +7094,44 @@
    "name": "Ameerat Al Arab Prive Rose by Lattafa 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/ameerat-al-arab-prive-rose-by-lattafa-100ml-1084.html"
+  },
+  {
+   "sku": "RAV-1085",
+   "id": 1085,
+   "name": "Now by Rave Perfume Lattafa 100ml For Man",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/now-by-rave-perfume-lattafa-100ml-for-man-1085.html"
+  },
+  {
+   "sku": "ASD-1086",
+   "id": 1086,
+   "name": "Ameer Al Arab by Asdaaf 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ameer-al-arab-by-asdaaf-100ml-edp-men-1086.html"
+  },
+  {
+   "sku": "ASD-1087",
+   "id": 1087,
+   "name": "Golden Oud by Lattafa Asdaaf 100 ml Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/golden-oud-by-lattafa-asdaaf-100-ml-unisex-1087.html"
   },
   {
    "sku": "VEL-1088",
@@ -7068,10 +7139,22 @@
    "name": "Velixir Asteria 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/velixir-asteria-100ml-edp-1088.html"
+  },
+  {
+   "sku": "ASD-1089",
+   "id": 1089,
+   "name": "Ameer Al Arab Imperium by Asdaaf 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ameer-al-arab-imperium-by-asdaaf-100ml-edp-men-1089.html"
   },
   {
    "sku": "VEL-1090",
@@ -7079,6 +7162,7 @@
    "name": "Velixir Himeros 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7090,6 +7174,7 @@
    "name": "Velixir Galatea 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7101,6 +7186,7 @@
    "name": "Velixir Apollo 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7112,6 +7198,7 @@
    "name": "Velixir Helios 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7123,6 +7210,7 @@
    "name": "Velixir Paladin 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7134,6 +7222,7 @@
    "name": "Ultra Marine 100ml by Pendora Scents",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7145,6 +7234,7 @@
    "name": "Nyx Velixir Parfums 100ml for Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7156,6 +7246,7 @@
    "name": "Velixir Ares 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7167,6 +7258,7 @@
    "name": "Velixir Aphrodite 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7178,6 +7270,7 @@
    "name": "Majd Al Sultan by Asdaaf 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/majd-al-sultan-by-asdaaf-100ml-edp-1099.html"
@@ -7188,6 +7281,7 @@
    "name": "Selene Velixir Parfums 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7199,6 +7293,7 @@
    "name": "Velixir Narcisus 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
