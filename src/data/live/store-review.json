@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-27T09:02:19.987Z",
+ "updatedAt": "2026-11-27T19:39:24.506Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 432,
-  "warn": 682,
+  "ok": 419,
+  "warn": 695,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-27T09:01:34.790Z",
+  "at": "2026-11-27T19:38:33.823Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -41,21 +41,21 @@
   "prices": {
    "count": 1063,
    "min": 750,
-   "median": 3300,
-   "max": 7835,
+   "median": 3295,
+   "max": 7970,
    "top": [
+    {
+     "sku": "AFN-214",
+     "name": "Lynked Freedom by Afnan 100ml Eau De Parfum",
+     "price": 7970,
+     "supplierEgp": 5312.09,
+     "sizeMl": 100
+    },
     {
      "sku": "AFN-879",
      "name": "Lynked Forever by Afnan 100ml Eau De Parfum",
      "price": 7835,
      "supplierEgp": 5221.07,
-     "sizeMl": 100
-    },
-    {
-     "sku": "AFN-214",
-     "name": "Lynked Freedom by Afnan 100ml Eau De Parfum",
-     "price": 7830,
-     "supplierEgp": 5219.32,
      "sizeMl": 100
     },
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 45216
+  "durationMs": 50712
  },
  "items": [
   {
@@ -1817,11 +1817,111 @@
    "page": "p/royal-leather-by-zimaya-edp-100ml-201.html"
   },
   {
+   "sku": "MAI-202",
+   "id": 202,
+   "name": "Luxe Gold by Maison Alhambra – 100 ml Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/luxe-gold-by-maison-alhambra-100-ml-unisex-202.html"
+  },
+  {
+   "sku": "VOL-203",
+   "id": 203,
+   "name": "Rise & Shine by Volare – 100 ml Unisex",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/rise-and-shine-by-volare-100-ml-unisex-203.html"
+  },
+  {
+   "sku": "MOO-204",
+   "id": 204,
+   "name": "Mood Pretty For Her 100 ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/mood-pretty-for-her-100-ml-edp-204.html"
+  },
+  {
+   "sku": "MAI-205",
+   "id": 205,
+   "name": "Man Black Edition Maison Alhambra 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/man-black-edition-maison-alhambra-100ml-edp-205.html"
+  },
+  {
+   "sku": "ARD-206",
+   "id": 206,
+   "name": "Rihanna by Ard Al Zaafaran – 100 ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/rihanna-by-ard-al-zaafaran-100-ml-for-women-206.html"
+  },
+  {
+   "sku": "ALW-207",
+   "id": 207,
+   "name": "Tiara Pink by Al Wataniah – 100 ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/tiara-pink-by-al-wataniah-100-ml-for-women-207.html"
+  },
+  {
+   "sku": "ALW-208",
+   "id": 208,
+   "name": "Sophia by Al Wataniah – 100 ml for Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/sophia-by-al-wataniah-100-ml-for-women-208.html"
+  },
+  {
+   "sku": "MAI-209",
+   "id": 209,
+   "name": "Imperial by Maison Asrar 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/imperial-by-maison-asrar-100ml-edp-unisex-209.html"
+  },
+  {
+   "sku": "ALW-210",
+   "id": 210,
+   "name": "Qahir Man by Al Wataniah 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/qahir-man-by-al-wataniah-100ml-edp-men-210.html"
+  },
+  {
    "sku": "ZIM-211",
    "id": 211,
    "name": "Reverie Aqua by Zimaya 100ml EDP Men",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/reverie-aqua-by-zimaya-100ml-edp-men-211.html"
@@ -1832,6 +1932,8 @@
    "name": "Treasure by Maison Asrar 100ml EDP Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/treasure-by-maison-asrar-100ml-edp-unisex-212.html"
@@ -1842,6 +1944,7 @@
    "name": "Megara 50ml by Maison Alhambra",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -1864,6 +1967,8 @@
    "name": "Encode By Maison Alhambra 100ml for Man",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/encode-by-maison-alhambra-100ml-for-man-215.html"
@@ -1874,6 +1979,8 @@
    "name": "Supremacy Collector’s Edition by Afnan 100ml Men",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/supremacy-collector-s-edition-by-afnan-100ml-men-216.html"
@@ -7305,6 +7412,8 @@
    "name": "Now Intense by Rave 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/now-intense-by-rave-100ml-edp-1102.html"
@@ -7315,6 +7424,7 @@
    "name": "Now Rouge Perfume EDP 100ml by RAVE",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/now-rouge-perfume-edp-100ml-by-rave-1103.html"
@@ -7325,6 +7435,7 @@
    "name": "Harmonia Velixir Parfums 100ml for Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7336,6 +7447,7 @@
    "name": "Velixir Demeter 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -7353,11 +7465,56 @@
    "page": "p/au-soleil-by-rave-100ml-edp-1106.html"
   },
   {
+   "sku": "ASD-1107",
+   "id": 1107,
+   "name": "Shaghaf Man by Asdaaf (Lattafa) – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/shaghaf-man-by-asdaaf-lattafa-100-ml-for-men-1107.html"
+  },
+  {
+   "sku": "AHM-1108",
+   "id": 1108,
+   "name": "Rose Noir by Ahmed Al Maghribi EDP Women",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/rose-noir-by-ahmed-al-maghribi-edp-women-1108.html"
+  },
+  {
+   "sku": "NAF-1109",
+   "id": 1109,
+   "name": "Oud Maluky by Nafahat 100ml Unisex",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/oud-maluky-by-nafahat-100ml-unisex-1109.html"
+  },
+  {
+   "sku": "MAH-1110",
+   "id": 1110,
+   "name": "Oud Al Khalifah by Mahabub Perfumes – 100 ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/oud-al-khalifah-by-mahabub-perfumes-100-ml-1110.html"
+  },
+  {
    "sku": "NIC-1111",
    "id": 1111,
    "name": "Khanjar by Niche Emarati 85ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/khanjar-by-niche-emarati-85ml-edp-1111.html"
