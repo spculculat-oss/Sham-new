@@ -1,18 +1,18 @@
 {
  "version": 1,
- "updatedAt": "2026-11-28T02:57:32.303Z",
+ "updatedAt": "2026-11-28T13:34:13.000Z",
  "reviewer": "مراجع الصفحات",
  "summary": {
   "total": 1114,
   "imported": 1063,
-  "ok": 409,
-  "warn": 705,
+  "ok": 395,
+  "warn": 719,
   "hidden": 0,
   "imagesChecked": 80,
   "brokenImages": 0
  },
  "import": {
-  "at": "2026-11-28T02:56:41.609Z",
+  "at": "2026-11-28T13:33:20.353Z",
   "markup": 1.5,
   "pricing": {
    "markup": 1.5
@@ -41,7 +41,7 @@
   "prices": {
    "count": 1063,
    "min": 700,
-   "median": 3265,
+   "median": 3260,
    "max": 7970,
    "top": [
     {
@@ -81,7 +81,7 @@
     }
    ]
   },
-  "durationMs": 50720
+  "durationMs": 52674
  },
  "items": [
   {
@@ -2266,14 +2266,90 @@
    "page": "p/sapphire-blue-by-lattafa-pride-100ml-edp-241.html"
   },
   {
+   "sku": "LAT-242",
+   "id": 242,
+   "name": "Najdia by Lattafa – 100 ml for Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/najdia-by-lattafa-100-ml-for-men-242.html"
+  },
+  {
+   "sku": "LAT-243",
+   "id": 243,
+   "name": "Opulent Musk by Lattafa 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/opulent-musk-by-lattafa-100ml-edp-unisex-243.html"
+  },
+  {
+   "sku": "LAT-244",
+   "id": 244,
+   "name": "Teriaq by Lattafa 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/teriaq-by-lattafa-100ml-edp-unisex-244.html"
+  },
+  {
    "sku": "LAT-245",
    "id": 245,
    "name": "Oudain by Lattafa Perfumes 100ml EDP for Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/oudain-by-lattafa-perfumes-100ml-edp-for-men-245.html"
+  },
+  {
+   "sku": "LAT-246",
+   "id": 246,
+   "name": "Qasaed Al Sultan Lattafa 100ml EDP Men",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/qasaed-al-sultan-lattafa-100ml-edp-men-246.html"
+  },
+  {
+   "sku": "LAT-247",
+   "id": 247,
+   "name": "Opulent Oud Black Lattafa 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/opulent-oud-black-lattafa-100ml-edp-unisex-247.html"
+  },
+  {
+   "sku": "LAT-248",
+   "id": 248,
+   "name": "Badee Al Oud Sublime by Lattafa 100ml EDP Unisex",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/badee-al-oud-sublime-by-lattafa-100ml-edp-unisex-248.html"
+  },
+  {
+   "sku": "LAT-249",
+   "id": 249,
+   "name": "Mayar Natural Intense by Lattafa 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/mayar-natural-intense-by-lattafa-100ml-edp-249.html"
   },
   {
    "sku": "LAT-250",
@@ -2281,6 +2357,7 @@
    "name": "Musk Al Aroos by Lattafa 80ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -2292,6 +2369,7 @@
    "name": "Aura by Lattafa 60ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/aura-by-lattafa-60ml-edp-251.html"
@@ -2302,9 +2380,21 @@
    "name": "Lattafa Qimmah Eau De Parfum for Men 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/lattafa-qimmah-eau-de-parfum-for-men-100ml-252.html"
+  },
+  {
+   "sku": "LAT-253",
+   "id": 253,
+   "name": "The Kingdom Women by Lattafa 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/the-kingdom-women-by-lattafa-100ml-edp-253.html"
   },
   {
    "sku": "LAT-254",
@@ -2324,6 +2414,7 @@
    "name": "Musamam Black Intense 100ml by Lattafa",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
     "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
@@ -2335,9 +2426,42 @@
    "name": "Maharjan Silver by Lattafa Pride 100ml EDP",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/maharjan-silver-by-lattafa-pride-100ml-edp-256.html"
+  },
+  {
+   "sku": "LAT-257",
+   "id": 257,
+   "name": "Eternal Oud by Lattafa Pride 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/eternal-oud-by-lattafa-pride-100ml-edp-257.html"
+  },
+  {
+   "sku": "LAT-258",
+   "id": 258,
+   "name": "Al Azal by Lattafa EDP 100ml For Him",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/al-azal-by-lattafa-edp-100ml-for-him-258.html"
+  },
+  {
+   "sku": "LAT-259",
+   "id": 259,
+   "name": "Ajayeb Dubai by Lattafa EDP 100ml",
+   "status": "warn",
+   "issues": [
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ajayeb-dubai-by-lattafa-edp-100ml-259.html"
   },
   {
    "sku": "LAT-260",
@@ -2345,9 +2469,33 @@
    "name": "La Collection d'Antiquites 1910 (Bike) by Lattafa Pride 100ml",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/la-collection-d-antiquites-1910-bike-by-lattafa-pride-100ml-260.html"
+  },
+  {
+   "sku": "LAT-261",
+   "id": 261,
+   "name": "Mayar Cherry Intense Lattafa 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/mayar-cherry-intense-lattafa-100ml-edp-261.html"
+  },
+  {
+   "sku": "LAT-262",
+   "id": 262,
+   "name": "Badee Al Oud Honor Glory by Lattafa 100ml",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/badee-al-oud-honor-glory-by-lattafa-100ml-262.html"
   },
   {
    "sku": "LAT-263",
@@ -2355,9 +2503,22 @@
    "name": "Fire On Ice by Lattafa 100ml EDP Unisex",
    "status": "warn",
    "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر",
     "غير متوفر عند المورد"
    ],
    "page": "p/fire-on-ice-by-lattafa-100ml-edp-unisex-263.html"
+  },
+  {
+   "sku": "LAT-264",
+   "id": 264,
+   "name": "Ramz Gold Lattafa Woman 100ml EDP",
+   "status": "warn",
+   "issues": [
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
+   ],
+   "page": "p/ramz-gold-lattafa-woman-100ml-edp-264.html"
   },
   {
    "sku": "LAT-265",
@@ -2376,7 +2537,8 @@
    "name": "Ejaazi by Lattafa Perfume 100 ml for Men",
    "status": "warn",
    "issues": [
-    "غير متوفر عند المورد"
+    "وصف المورد قصير",
+    "المورد لم ينشر نوتات العطر"
    ],
    "page": "p/ejaazi-by-lattafa-perfume-100-ml-for-men-266.html"
   },

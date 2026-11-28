@@ -13767,7 +13767,7 @@
       "nameAr": "Najdia by Lattafa – 100 ml for Men",
       "nameEn": "Najdia by Lattafa – 100 ml for Men",
       "descriptionAr": "",
-      "descriptionEn": "Najdia by Lattafa – 100 ml Eau de Parfum for Men\nFragrance Family: Fresh • Woody • Aquatic\nTop Notes: Bergamot, Lemon, Pineapple\nMiddle Notes: Lavender, Rosemary, Aquatic Notes\nBase Notes: Amber, Cedarwood, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/najdia-lattafa-100ml-edp-men-perfume-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/najdia-lattafa-100ml-edp-men-perfume-malaysia.jpg",
@@ -13775,12 +13775,14 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/minyak-wangi-lelaki-najdia-tahan-lama-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/perfume-lelaki-najdia-haruman-segar-maskulin-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/lattafa-najdia-fresh-woody-aquatic-perfume-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/najdia-lattafa-100ml-edp-men-perfume-malaysia.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/beli-perfume-najdia-original-malaysia-100ml-edp.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/haruman-maskulin-najdia-lattafa-malaysia-100ml-edp.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/lattafa-najdia-perfume-men-malaysia-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1635.13,
-      "ourPrice": 2455,
+      "supplierPrice": 1077.21,
+      "ourPrice": 1620,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -13790,34 +13792,21 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Najdia-wan",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 125,
-      "supplierSalePrice": 81,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 81,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/najdia/",
       "slug": "najdia-by-lattafa-100-ml-for-men-242",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Lemon",
-          "Pineapple"
-        ],
-        "heart": [
-          "Lavender",
-          "Rosemary",
-          "Aquatic Notes"
-        ],
-        "base": [
-          "Amber",
-          "Cedarwood",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Fresh",
-        "Woody",
-        "Aquatic"
+        "Aquatic",
+        "Woody"
       ],
       "seasonsSource": [
         "Spring",
@@ -13826,12 +13815,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Daily",
+        "Special Event"
       ],
       "barcode": "6291106063233",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 243,
@@ -13839,7 +13833,7 @@
       "nameAr": "Opulent Musk by Lattafa 100ml EDP Unisex",
       "nameEn": "Opulent Musk by Lattafa 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Opulent Musk by Lattafa – 100 ml Eau de Parfum Unisex\nFragrance Family: Musk • Amber • Woody\nTop Notes: White Musk, Saffron, Lemon\nMiddle Notes: Jasmine, Amber, Cedarwood\nBase Notes: Musk, Resin, Patchouli",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-musk-lattafa-wangian-white-musk-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-musk-lattafa-wangian-white-musk-100ml-edp.jpg",
@@ -13853,8 +13847,8 @@
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
+      "supplierPrice": 1263.4,
+      "ourPrice": 1900,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -13864,34 +13858,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Opulent-Musk",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 135,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/opulent-musk/",
       "slug": "opulent-musk-by-lattafa-100ml-edp-unisex-243",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "White Musk",
-          "Saffron",
-          "Lemon"
-        ],
-        "heart": [
-          "Jasmine",
-          "Amber",
-          "Cedarwood"
-        ],
-        "base": [
-          "Musk",
-          "Resin",
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Musk",
+        "Woody",
         "Amber",
-        "Woody"
+        "Oriental",
+        "Musky"
       ],
       "seasonsSource": [
         "Spring",
@@ -13899,11 +13881,18 @@
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6291107450445",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 244,
@@ -13911,22 +13900,22 @@
       "nameAr": "Teriaq by Lattafa 100ml EDP Unisex",
       "nameEn": "Teriaq by Lattafa 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Teriaq by Lattafa – 100 ml Eau de Parfum\nTop Notes: Bergamot, Pink Pepper\nHeart Notes: Incense, Cedarwood\nBase Notes: Amber, Musk, Patchouli",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/products/migrated/353/teriaq-lattafa-perfume-unisex-sweet-caramel-amber-pos0.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-by-lattafa-100ml-edp-unisex-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/products/migrated/353/teriaq-lattafa-perfume-unisex-sweet-caramel-amber-pos0.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/353/teriaq-lattafa-botol-wangian-unisex-caramel-smoky-malaysia-pos1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-by-lattafa-100ml-edp-unisex-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-by-lattafa-100ml-edp-unisex-2.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-lattafa-perfume-unisex-tahan-lama-boozy-amber-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/353/kotak-teriaq-lattafa-perfume-original-edp-gourmand-smoky-pos3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-by-lattafa-100ml-edp-unisex-3.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-lattafa-hijabi-malaysia-lifestyle-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-lattafa-suria-klcc-indoor-mall-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-lattafa-mrt-trx-modern-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/products/migrated/353/teriaq-lattafa-midvalley-cafe-pos7.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/teriaq-by-lattafa-100ml-edp-unisex-4.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 2419.99,
-      "ourPrice": 3630,
+      "supplierPrice": 2114.53,
+      "ourPrice": 3175,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -13936,29 +13925,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Teriaq-Lat-63",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 185,
-      "supplierSalePrice": 159,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 159,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/teriaq/",
       "slug": "teriaq-by-lattafa-100ml-edp-unisex-244",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Pink Pepper"
-        ],
-        "heart": [
-          "Incense",
-          "Cedarwood"
-        ],
-        "base": [
-          "Amber",
-          "Musk",
-          "Patchouli"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Spicy",
+        "Aromatic",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -13966,12 +13948,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6290360595764",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 245,
@@ -13979,7 +13966,7 @@
       "nameAr": "Oudain by Lattafa Perfumes 100ml EDP for Men",
       "nameEn": "Oudain by Lattafa Perfumes 100ml EDP for Men",
       "descriptionAr": "",
-      "descriptionEn": "Oudain by Lattafa Perfumes 100ml EDP for Men\nOudain by Lattafa Perfumes is a sophisticated and masculine fragrance that blends freshness with warmth. It opens with vibrant cardamom, mint, and bergamot, leading to a spicy heart of cumin, cinnamon, lavender, and orange blossom. The base of vanilla, tonka bean, sandalwood, cedar, and ambergris creates a rich finish. Perfect for men who appreciate refined oriental-woody scents with a touch of sweetness and strength.\nFragrance Notes:\nTop Notes: Cardamom, Mint, Bergamot\nHeart Notes: Woody Notes, Spicy Notes, Cumin, Cinnamon, Lavender, Orange Blossom\nBase Notes: Vanilla, Tonka Bean, Sandalwood, Cedar, Ambergris",
+      "descriptionEn": "Buy Oudain by Lattafa Perfumes 100 ml – a bold, woody, and spicy men’s fragrance with cardamom, vanilla, and ambergris. Elegant.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/oudain-lattafa-perfume-lelaki-woody-smoky-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/oudain-lattafa-perfume-lelaki-woody-smoky-100ml-edp.jpg",
@@ -13993,9 +13980,9 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 1462.88,
+      "ourPrice": 2195,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -14004,36 +13991,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Oudain",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 135,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/oudain/",
       "slug": "oudain-by-lattafa-perfumes-100ml-edp-for-men-245",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Cardamom",
-          "Mint",
-          "Bergamot"
-        ],
-        "heart": [
-          "Woody Notes",
-          "Spicy Notes",
-          "Cumin",
-          "Cinnamon",
-          "Lavender",
-          "Orange Blossom"
-        ],
-        "base": [
-          "Vanilla",
-          "Tonka Bean",
-          "Sandalwood",
-          "Cedar",
-          "Ambergris"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Aromatic",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -14041,14 +14014,15 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291108733219",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
@@ -14057,7 +14031,7 @@
       "nameAr": "Qasaed Al Sultan Lattafa 100ml EDP Men",
       "nameEn": "Qasaed Al Sultan Lattafa 100ml EDP Men",
       "descriptionAr": "",
-      "descriptionEn": "Qasaed Al Sultan by Lattafa Perfumes – 100 ml Eau De Parfum for Men (Arabian)\nFragrance Notes:\nTop: Amber, Spices\nHeart: Oud, Sandalwood\nBase: Musk, Vanilla",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/qasaed-al-sultan-lattafa-perfumes-malaysia3-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/qasaed-al-sultan-lattafa-perfumes-malaysia3-100ml-edp.jpg",
@@ -14071,8 +14045,8 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
+      "supplierPrice": 1462.88,
+      "ourPrice": 2195,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14082,28 +14056,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Qasaed-Al-Sultan-00001A",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 135,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/qasaed-al-sultan/",
       "slug": "qasaed-al-sultan-lattafa-100ml-edp-men-246",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Amber",
-          "Spices"
-        ],
-        "heart": [
-          "Oud",
-          "Sandalwood"
-        ],
-        "base": [
-          "Musk",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Oud",
+        "Woody",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -14111,12 +14080,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291108737958",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 247,
@@ -14124,19 +14098,18 @@
       "nameAr": "Opulent Oud Black Lattafa 100ml EDP Unisex",
       "nameEn": "Opulent Oud Black Lattafa 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Opulent Oud Black by Lattafa – 100 ml Eau de Parfum Unisex\nFragrance Notes:\nTop Notes: Saffron, Cinnamon, Nutmeg\nHeart Notes: Amber, Oud, Patchouli\nBase Notes: Vanilla, Musk, Sandalwood",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438618.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438618.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438386.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438417.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438557.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438618.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/opulent-oud-black-by-lattafa-unisex-perfume-100-ml-edp-sham-perfume-store-edp-perfume-59438557.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 1765.94,
-      "ourPrice": 2650,
+      "supplierPrice": 1263.4,
+      "ourPrice": 1900,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14146,40 +14119,38 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Opulent-Oud-1692",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 135,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/opulent-oud/",
       "slug": "opulent-oud-black-lattafa-100ml-edp-unisex-247",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Saffron",
-          "Cinnamon",
-          "Nutmeg"
-        ],
-        "heart": [
-          "Amber",
-          "Oud",
-          "Patchouli"
-        ],
-        "base": [
-          "Vanilla",
-          "Musk",
-          "Sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Oud",
+        "Woody",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event"
+      ],
       "barcode": "6291107450438",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 248,
@@ -14187,7 +14158,7 @@
       "nameAr": "Badee Al Oud Sublime by Lattafa 100ml EDP Unisex",
       "nameEn": "Badee Al Oud Sublime by Lattafa 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Badee Al Oud Sublime by Lattafa – 100 ml Eau de Parfum for Men & Women\nTop Notes: Pear, Pink Pepper, Jasmine\nHeart Notes: Rose, Caramel, Tuberose\nBase Notes: Vanilla, Amber, Oud",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-sublime-perfume-100ml-edp-lattafa.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-sublime-perfume-100ml-edp-lattafa.jpg",
@@ -14201,8 +14172,8 @@
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 2197.61,
-      "ourPrice": 3300,
+      "supplierPrice": 1582.57,
+      "ourPrice": 2375,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14212,42 +14183,40 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Badee-Al-O-56",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 168,
-      "supplierSalePrice": 119,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 119,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/badee-al-oud-sublime/",
       "slug": "badee-al-oud-sublime-by-lattafa-100ml-edp-unisex-248",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Pear",
-          "Pink Pepper",
-          "Jasmine"
-        ],
-        "heart": [
-          "Rose",
-          "Caramel",
-          "Tuberose"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Oud"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Floral",
+        "Oud"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event"
+      ],
       "barcode": "6290360593142",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 249,
@@ -14255,18 +14224,17 @@
       "nameAr": "Mayar Natural Intense by Lattafa 100ml EDP",
       "nameEn": "Mayar Natural Intense by Lattafa 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Mayar Natural Intense by Lattafa – Eau de Parfum 100 ml\nMayar Natural Intense by Lattafa Perfumes is a fresh-fruity floral fragrance for women, launched in 2024. It opens with bright and refreshing top notes of tangerine, fig, melon, and breezy coconut water, creating an uplifting and modern beginning.\nThe heart reveals elegant aquatic-white florals: water lily, lotus, and jasmine, blending softly to form a feminine and balanced core. The base settles with warm, creamy accords of vanilla, sandalwood, musk, and ambroxan, leaving a fragrance style of subtle sophistication and freshness.\nThis fragrance is perfect for women who appreciate modern, clean, and elegant scents. Ideal for spring and summer days, daily wear, or relaxed evenings when you want to feel effortlessly beautiful.\nFragrance Notes:\nTop: Tangerine, Fig, Melon, Coconut Water\nHeart: Water Lily, Lotus, Jasmine\nBase: Vanilla, Sandalwood, Musk, Ambroxan\nMade in U.A.E. | 100 ml Eau de Parfum Natural Spray\nHaruman Eksklusif dari Dubai (Bahasa Melayu)\nMayar Natural Intense oleh Lattafa Perfumes ialah haruman wanita moden yang segar dan elegan. Ia dibuka dengan nota tangerine, fig, melon dan coconut water yang memberikan kesegaran segera dan suasana ringan. Di tengahnya muncul water lily, lotus dan jasmine yang lembut dan menawan. Asasnya diwarnai oleh vanilla, sandalwood, musk dan ambroxan yang memberi sentuhan kemewahan serta keanggunan berpanjangan.\nSesuai untuk wanita yang menghargai aroma segar, moden dan feminin — i",
+      "descriptionEn": "Buy Mayar Natural Intense by Lattafa 100ml EDP – fresh green tangerine, fig & aquatic florals. Modern women’s fragrance from UAE.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/68f50d0bbd5341760890123-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/68f50d0bbd5341760890123-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/68f50d0c3c19d1760890124-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/68f50d0c77cd31760890124-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/68f50d0bbd5341760890123-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/68f50d0c77cd31760890124-100ml-edp.jpg"
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 2092.96,
-      "ourPrice": 3140,
+      "supplierPrice": 1662.36,
+      "ourPrice": 2495,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14276,44 +14244,37 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Mayar-Natural-271",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 160,
-      "supplierSalePrice": 125,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 125,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/mayar-natural/",
       "slug": "mayar-natural-intense-by-lattafa-100ml-edp-249",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Tangerine",
-          "Fig",
-          "Melon",
-          "Coconut Water"
-        ],
-        "heart": [
-          "Water Lily",
-          "Lotus",
-          "Jasmine"
-        ],
-        "base": [
-          "Vanilla",
-          "Sandalwood",
-          "Musk",
-          "Ambroxan Made in U"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Fresh",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6290360598970",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 250,
@@ -14321,7 +14282,7 @@
       "nameAr": "Musk Al Aroos by Lattafa 80ml EDP",
       "nameEn": "Musk Al Aroos by Lattafa 80ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Musk Al Aroos by Lattafa – 80ml Eau de Parfum.\nA refined, velvety-soft white musk fragrance that opens with a light, fresh burst of lemons and warm ambroxan. At its heart, a bright bouquet of delicate floral notes blends gracefully with creamy sandalwood and clean white musk. The scent settles into a comforting, sensual base of warm cedar, powdery vanilla, and golden amber. Full of pure, clean elegance, it is a versatile signature scent perfect for daily wear, office environments, and casual occasions.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/musk-al-aroos-by-lattafa-80ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/musk-al-aroos-by-lattafa-80ml-edp-1.jpg",
@@ -14335,8 +14296,8 @@
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 2092.96,
-      "ourPrice": 3140,
+      "supplierPrice": 2127.82,
+      "ourPrice": 3195,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14347,19 +14308,19 @@
       "supplierSku": "MUSK-AL-AROOS-LATTAFA",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 160,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/musk-al-aroos-lattafa/",
       "slug": "musk-al-aroos-by-lattafa-80ml-edp-250",
       "sizeMl": 80,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Musk"
+        "Musky"
       ],
       "seasonsSource": [
         "Spring",
@@ -14368,14 +14329,14 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Date Night",
-        "Casual"
+        "Evening"
       ],
       "barcode": "6291107456188",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
@@ -14386,7 +14347,7 @@
       "nameAr": "Aura by Lattafa 60ml EDP",
       "nameEn": "Aura by Lattafa 60ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Aura by Lattafa – 60ml Eau de Parfum.\nAura by Lattafa 60ml EDP A rich, magnetic oriental-woody fragrance that effortlessly blends exotic spices with luminous florals and deep earthy undertones. It opens with the warm, luxurious aroma of saffron. The heart unfolds with resinous balsam fir and sweet jasmine, before settling into a sophisticated base of ambergris, musk, cashmeran, moss, and rich cedarwood. Sophisticated and versatile, it is suitable for both day and night wear.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/aura-by-lattafa-60ml-edp-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/aura-by-lattafa-60ml-edp-1.jpg",
@@ -14400,8 +14361,8 @@
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 2158.36,
-      "ourPrice": 3240,
+      "supplierPrice": 1529.37,
+      "ourPrice": 2295,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14411,37 +14372,41 @@
       "supplierName": "Sham perfume",
       "supplierSku": "AURA-LATTAFA-60ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 165,
-      "supplierSalePrice": 115,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 115,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/aura-lattafa/",
       "slug": "aura-by-lattafa-60ml-edp-251",
       "sizeMl": 60,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Fall",
         "Winter"
       ],
       "occasionsSource": [
+        "Evening",
         "Daily",
         "Office",
-        "Evening",
-        "Special Event",
-        "Casual"
+        "Special Event"
       ],
       "barcode": "6291108737873",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:01:18.681Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -14451,7 +14416,7 @@
       "nameAr": "Lattafa Qimmah Eau De Parfum for Men 100ml",
       "nameEn": "Lattafa Qimmah Eau De Parfum for Men 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Lattafa Qimmah Eau De Parfum for Men 100ml\nLattafa Qimmah Eau De Parfum for Men 100ml The fragrance opens with lavender, cedarwood and saffron before revealing a heart of myrrh and aromatic herbs. It settles into a warm base of oud, cedarwood and amber, creating a refined oriental woody signature with lasting depth.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/lattafa-qimmah-eau-de-parfum-for-men-100ml-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/lattafa-qimmah-eau-de-parfum-for-men-100ml-1.jpg",
@@ -14465,8 +14430,8 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1700.53,
-      "ourPrice": 2555,
+      "supplierPrice": 1263.4,
+      "ourPrice": 1900,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14476,21 +14441,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "QIMMAH-MEN-100ML",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 130,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/lattafa-qimmah-men-edp-100ml/",
       "slug": "lattafa-qimmah-eau-de-parfum-for-men-100ml-252",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Oriental Woody"
+        "Woody",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -14504,9 +14470,10 @@
       ],
       "barcode": "6291107450582",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر"
       ]
     },
@@ -14516,22 +14483,22 @@
       "nameAr": "The Kingdom Women by Lattafa 100ml EDP",
       "nameEn": "The Kingdom Women by Lattafa 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "The Kingdom Women by Lattafa 100ml EDP\nThe Kingdom Women ni bau dia sweet, floral dan creamy—elegant, lembut dan tahan lama. Perfume Arab feminin sesuai untuk daily & special occasions.\nTop Notes: Sweet Notes, Soft Florals\nMiddle Notes: Amber, Floral Notes, Woody Notes\nBase Notes: Musk, Vanilla, Creamy Woods",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/263c59de-408f-42f6-6aa1-a7c448119f00.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/263c59de-408f-42f6-6aa1-a7c448119f00.jpg",
-        "https://www.shamperfume.com/cdn/large/55f8e6aa-903b-4c2f-7461-23df988ec300.jpg",
-        "https://www.shamperfume.com/cdn/large/066a2641-11d0-470f-58bd-fc54d5759200.jpg",
-        "https://www.shamperfume.com/cdn/large/55a05fb8-60b6-4037-ac3e-21d130e78b00.jpg",
-        "https://www.shamperfume.com/cdn/large/7c27ee1b-852f-4558-caa0-432979a0b800.jpg",
-        "https://www.shamperfume.com/cdn/large/798ee2a5-3683-40ee-5025-612f6c8cce00.jpg",
-        "https://www.shamperfume.com/cdn/large/84e90350-7446-40fe-09a9-dcd470caeb00.jpg",
-        "https://www.shamperfume.com/cdn/large/d3ac7df8-fa53-45a2-0aa6-14449d92a200.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/the-kingdom-women-by-lattafa-100ml-edp-8.jpg"
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 2210.69,
-      "ourPrice": 3320,
+      "supplierPrice": 1728.86,
+      "ourPrice": 2595,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14541,32 +14508,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "KINGDOM-WOMEN",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 169,
-      "supplierSalePrice": 130,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 130,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/the-kingdom-women/",
       "slug": "the-kingdom-women-by-lattafa-100ml-edp-253",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Sweet Notes",
-          "Soft Florals"
-        ],
-        "heart": [
-          "Amber",
-          "Floral Notes",
-          "Woody Notes"
-        ],
-        "base": [
-          "Musk",
-          "Vanilla",
-          "Creamy Woods"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
-        "Oriental Floral"
+        "Floral",
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -14576,13 +14533,16 @@
       "occasionsSource": [
         "Daily",
         "Evening",
-        "Special Event",
-        "Casual"
+        "Special Event"
       ],
       "barcode": "6290360598352",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 254,
@@ -14590,22 +14550,22 @@
       "nameAr": "Vintage Radio by Lattafa Pride 100ml EDP",
       "nameEn": "Vintage Radio by Lattafa Pride 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Vintage Radio by Lattafa Pride 100ml EDP",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/b3508309-541d-4d10-68ed-22b97fda4e00.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/b3508309-541d-4d10-68ed-22b97fda4e00.jpg",
-        "https://www.shamperfume.com/cdn/large/9f45954c-932d-4b17-3eb1-fb58e03cd400.jpg",
-        "https://www.shamperfume.com/cdn/large/b2a35335-fa58-4bf3-e1da-d1111085ab00.jpg",
-        "https://www.shamperfume.com/cdn/large/f07b0254-556d-48bd-236b-3de31a04b000.jpg",
-        "https://www.shamperfume.com/cdn/large/3cfac18e-e351-4d27-1539-ba4aa296b400.jpg",
-        "https://www.shamperfume.com/cdn/large/baae364b-7074-4ec2-f936-3d1c827ddf00.jpg",
-        "https://www.shamperfume.com/cdn/large/be791354-b1f7-43cf-5fe8-bb227931c100.jpg",
-        "https://www.shamperfume.com/cdn/large/041bcc8c-0ea2-4792-bcfa-27c5cb77fd00.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/vintage-radio-by-lattafa-pride-100ml-edp-8.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa Pride",
-      "supplierPrice": 3636.52,
-      "ourPrice": 5455,
+      "supplierPrice": 3697.09,
+      "ourPrice": 5550,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14616,18 +14576,21 @@
       "supplierSku": "VINTAGE-RADIO",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 278,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa-pride/vintage-radio/",
       "slug": "vintage-radio-by-lattafa-pride-100ml-edp-254",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Aromatic",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -14636,12 +14599,11 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Evening",
-        "Casual"
+        "Evening"
       ],
       "barcode": "6290360592909",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
@@ -14655,7 +14617,7 @@
       "nameAr": "Musamam Black Intense 100ml by Lattafa",
       "nameEn": "Musamam Black Intense 100ml by Lattafa",
       "descriptionAr": "",
-      "descriptionEn": "Musamam Black Intense 100ml by Lattafa\nMusamam Black Intense 100ml by Lattafa The fragrance opens with bergamot, mandarin, and black pepper before revealing a rich heart of saffron, lavender, and cedarwood. It settles into a deep base of incense, amber, patchouli, sandalwood, and musk, creating a bold woody spicy composition with exceptional longevity.",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/musamam-black-intense-100ml-by-lattafa-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/musamam-black-intense-100ml-by-lattafa-1.jpg",
@@ -14669,8 +14631,8 @@
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 3793.49,
-      "ourPrice": 5695,
+      "supplierPrice": 3856.68,
+      "ourPrice": 5790,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14681,19 +14643,20 @@
       "supplierSku": "MUSAMAM-BLACK-INTENSE-100ML",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 290,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/musamam-black-intense-100ml/",
       "slug": "musamam-black-intense-100ml-by-lattafa-255",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
       "families": [
-        "Woody Spicy"
+        "Woody",
+        "Spicy"
       ],
       "seasonsSource": [
         "Spring",
@@ -14704,13 +14667,14 @@
         "Office",
         "Evening",
         "Special Event",
-        "Daily Wear"
+        "Daily"
       ],
       "barcode": "6290362345527",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
         "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
@@ -14721,21 +14685,20 @@
       "nameAr": "Maharjan Silver by Lattafa Pride 100ml EDP",
       "nameEn": "Maharjan Silver by Lattafa Pride 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Maharjan Silver by Lattafa Pride – 100 ml Eau de Parfum.\nMaharjan Silver ni bau dia fresh woody oriental—citrus segar, aromatics bersih dan amber woods lembut yang tahan lama. Perfume Arab moden, elegant dan sesuai dipakai harian.\nTop Notes: Citrus, Light Spices\nMiddle Notes: Aromatic Notes, Amber Woods\nBase Notes: Musk, Woody Notes, Vanilla",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/39f8e337-7fc7-45b9-2cea-5d066bac9a00.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/39f8e337-7fc7-45b9-2cea-5d066bac9a00.jpg",
-        "https://www.shamperfume.com/cdn/large/ac177fcc-3a51-4f36-8ca8-b970ae421900.jpg",
-        "https://www.shamperfume.com/cdn/large/ec7b70ed-37b0-4037-ae65-49583e0ba200.jpg",
-        "https://www.shamperfume.com/cdn/large/91c7f97b-a6b7-4d9f-d94c-2085df1cce00.jpg",
-        "https://www.shamperfume.com/cdn/large/43138630-51ff-41f6-3222-ec8286378800.jpg",
-        "https://www.shamperfume.com/cdn/large/501fd0b3-82d8-440e-6df7-92ad0d726200.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/39f8e337-7fc7-45b9-2cea-5d066bac9a00.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/maharjan-silver-by-lattafa-pride-100ml-edp-6.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa Pride",
-      "supplierPrice": 3126.36,
-      "ourPrice": 4690,
+      "supplierPrice": 3178.44,
+      "ourPrice": 4770,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14746,28 +14709,23 @@
       "supplierSku": "MAHARJAN-SILVER",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 239,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa-pride/maharjan-silver/",
       "slug": "maharjan-silver-by-lattafa-pride-100ml-edp-256",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Citrus",
-          "Light Spices"
-        ],
-        "heart": [
-          "Aromatic Notes",
-          "Amber Woods"
-        ],
-        "base": [
-          "Musk",
-          "Woody Notes",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Citrus",
+        "Woody"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -14776,14 +14734,15 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Evening",
-        "Casual"
+        "Evening"
       ],
       "barcode": "6291108738306",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -14793,22 +14752,22 @@
       "nameAr": "Eternal Oud by Lattafa Pride 100ml EDP",
       "nameEn": "Eternal Oud by Lattafa Pride 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Eternal Oud by Lattafa Pride – 100 ml Eau de Parfum.\nEternal Oud ni bau dia pekat, smoky dan penuh karakter—ada oud berat, amber creamy, vanilla warm dan sentuhan leather yang tahan lama. Perfume Arab premium untuk peminat bau kuat, bold dan mewah.\nTop Notes: Spicy Notes, Woody Notes\nMiddle Notes: Oud, Amber\nBase Notes: Smoky Woods, Leather, Vanilla, Resinous Notes",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/2665f59d-63c7-415c-df0c-54fe3c40e000.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/2665f59d-63c7-415c-df0c-54fe3c40e000.jpg",
-        "https://www.shamperfume.com/cdn/large/92019926-8735-430c-bbde-8ef544470800.jpg",
-        "https://www.shamperfume.com/cdn/large/5ae2e119-0354-4d72-2487-c4600219ff00.jpg",
-        "https://www.shamperfume.com/cdn/large/a84b3545-2277-4e11-5108-e725e4fea500.jpg",
-        "https://www.shamperfume.com/cdn/large/d9fb725f-a67b-492f-a9c6-2ee29e994600.jpg",
-        "https://www.shamperfume.com/cdn/large/9dc859bf-0ad4-4cda-41c7-8e9f58669600.jpg",
-        "https://www.shamperfume.com/cdn/large/779766b4-bbf9-4087-2474-3a0299395400.jpg",
-        "https://www.shamperfume.com/cdn/large/5ce6eea6-0649-48c8-6e8d-d803e0877e00.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/eternal-oud-by-lattafa-pride-100ml-edp-8.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa Pride",
-      "supplierPrice": 2943.23,
-      "ourPrice": 4415,
+      "supplierPrice": 2061.33,
+      "ourPrice": 3095,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14818,31 +14777,24 @@
       "supplierName": "Sham perfume",
       "supplierSku": "ETERNAL-OUD",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 225,
-      "supplierSalePrice": 155,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 155,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa-pride/eternal-oud/",
       "slug": "eternal-oud-by-lattafa-pride-100ml-edp-257",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Spicy Notes",
-          "Woody Notes"
-        ],
-        "heart": [
-          "Oud",
-          "Amber"
-        ],
-        "base": [
-          "Smoky Woods",
-          "Leather",
-          "Vanilla",
-          "Resinous Notes"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Oud",
+        "Amber",
+        "Oriental",
+        "Leather"
+      ],
       "seasonsSource": [
         "Spring",
         "Fall",
@@ -14851,12 +14803,16 @@
       "occasionsSource": [
         "Evening",
         "Special Event",
-        "Casual"
+        "Daily"
       ],
       "barcode": "6291108738115",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 258,
@@ -14864,7 +14820,7 @@
       "nameAr": "Al Azal by Lattafa EDP 100ml For Him",
       "nameEn": "Al Azal by Lattafa EDP 100ml For Him",
       "descriptionAr": "",
-      "descriptionEn": "Al Azal by Lattafa – Eau de Parfum 100 ml\nAl Azal by Lattafa is a refined men’s fragrance with a modern woody-leather profile. It opens bright and aromatic with bergamot, sage and warm spices, moves to a distinctive heart of iris with herbal facets, and settles into a base of leather, smooth woody notes, patchouli and a touch of vanilla. Versatile for day or evening, it projects clean sophistication and confident depth.\nFragrance Notes\nTop: Spices, Sage, Bergamot\nHeart: Iris, Caraway\nBase: Leather, Woody Notes, Patchouli, Vanilla\nHaruman Lelaki Woody-Leather\nAl Azal menampilkan pembukaan sitrus-aromatik dengan rempah dan sage, jantung iris yang elegan, dan asas leather, kayu, patchouli serta vanilla yang tahan lama. Sesuai untuk siang atau malam.",
+      "descriptionEn": "Buy Al Azal by Lattafa 100 ml EDP – woody leather men’s scent with iris, bergamot, patchouli & vanilla and refined. Versatile for day or evening.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/al-azal-lattafa-perfume-lelaki-woody-amber-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/al-azal-lattafa-perfume-lelaki-woody-amber-100ml-edp.jpg",
@@ -14878,8 +14834,8 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1556.64,
-      "ourPrice": 2335,
+      "supplierPrice": 1263.4,
+      "ourPrice": 1900,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14889,34 +14845,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Al-Azal-PE-7045",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 119,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/al-azal/",
       "slug": "al-azal-by-lattafa-edp-100ml-for-him-258",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Spices",
-          "Sage",
-          "Bergamot"
-        ],
-        "heart": [
-          "Iris",
-          "Caraway"
-        ],
-        "base": [
-          "Leather",
-          "Woody Notes",
-          "Patchouli",
-          "jantung iris yang elegan",
-          "dan asas leather",
-          "kayu",
-          "patchouli serta vanilla yang tahan lama"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Leather",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -14924,12 +14868,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291107457086",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 259,
@@ -14937,7 +14885,7 @@
       "nameAr": "Ajayeb Dubai by Lattafa EDP 100ml",
       "nameEn": "Ajayeb Dubai by Lattafa EDP 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Ajayeb Dubai by Lattafa – Eau de Parfum 100 ml\nAjayeb Dubai by Lattafa is a bold, gourmand-woody fragrance crafted for men who favor depth and warmth. It opens with rich saffron and sweet pineapple, transitions into a hearty heart of coffee arabica and violet leaves, and dries down on a base of creamy butterscotch, smooth vanilla and warm sandalwood and charismatic, it’s ideal for evening wear or colder weather.\nFragrance Notes:\nTop: Saffron, Pineapple\nHeart: Coffee Arabica, Violet Leaves\nBase: Butterscotch, Vanilla, Sandalwood\nHaruman Lelaki Mewah & Tahan Lama\nAjayeb Dubai oleh Lattafa bermula dengan saffron dan nanas, kemudian ke jantung kopi arabica dan daun violet, dan akhirnya asas penuh dengan butterscotch, vanilla dan sandalwood. Haruman maskulin yang tahan lama dan sesuai untuk malam atau cuaca sejuk.",
+      "descriptionEn": "Buy Lattafa Ajayeb Dubai 100 ml EDP – saffron & butterscotch in a bold men’s luxury scent performance. coffee arabica and violet leaves.",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dubai-lattafa-perfume-unisex-amber-sweet-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dubai-lattafa-perfume-unisex-amber-sweet-100ml-edp.jpg",
@@ -14946,13 +14894,12 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dxb-pavilion-center-court-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dxb-car-night-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dxb-aeon-japanese-garden-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dxb-trx-premium-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/ajayeb-dubai-lattafa-perfume-unisex-amber-sweet-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ajayeb-dxb-trx-premium-100ml-edp.jpg"
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1687.45,
-      "ourPrice": 2535,
+      "supplierPrice": 1303.29,
+      "ourPrice": 1955,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -14962,38 +14909,37 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Ajayeb-Lat-207",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 129,
-      "supplierSalePrice": 98,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 98,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/ajayeb-dubai/",
       "slug": "ajayeb-dubai-by-lattafa-edp-100ml-259",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Saffron",
-          "Pineapple"
-        ],
-        "heart": [
-          "Coffee Arabica",
-          "Violet Leaves"
-        ],
-        "base": [
-          "Butterscotch",
-          "Vanilla",
-          "vanilla dan sandalwood"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Gourmand",
+        "Woody",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Daily",
+        "Special Event"
+      ],
       "barcode": "6290360591551",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 260,
@@ -15001,20 +14947,22 @@
       "nameAr": "La Collection d'Antiquites 1910 (Bike) by Lattafa Pride 100ml",
       "nameEn": "La Collection d'Antiquites 1910 (Bike) by Lattafa Pride 100ml",
       "descriptionAr": "",
-      "descriptionEn": "La Collection d'Antiquites 1910 (Bike) by Lattafa Pride – 100 ml Eau de Parfum.\nLa Collection d'Antiquites 1910 (Bike) by Lattafa Pride, This fragrance blends sophisticated woody, spicy, and oriental nuances. It opens with warm spices and aromatic brightness, develops into an amber-woody heart with smooth resins, and finishes with smoky woods, leather, and soft vanilla tones for depth.",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/799b4ae6-8de7-4176-922b-2eba84ccb900.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/799b4ae6-8de7-4176-922b-2eba84ccb900.jpg",
-        "https://www.shamperfume.com/cdn/large/4e762268-d6f8-4646-ca95-868089f55900.jpg",
-        "https://www.shamperfume.com/cdn/large/79f30443-e623-4f18-1009-bbd7e000cb00.jpg",
-        "https://www.shamperfume.com/cdn/large/46f0c98b-816c-4a07-266d-537c5d258300.jpg",
-        "https://www.shamperfume.com/cdn/large/17042bbd-d327-4edf-f883-a1bbdba4b800.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/799b4ae6-8de7-4176-922b-2eba84ccb900.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa-pride/la-collection-dantiquites-1910-bike-by-lattafa-pride-100ml-8.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa Pride",
-      "supplierPrice": 3871.98,
-      "ourPrice": 5810,
+      "supplierPrice": 3936.47,
+      "ourPrice": 5905,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15025,29 +14973,23 @@
       "supplierSku": "ANTIQUITES-1910-BIKE",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 296,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa-pride/la-collection-d-antiquites-1910-bike/",
       "slug": "la-collection-d-antiquites-1910-bike-by-lattafa-pride-100ml-260",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
-        "top": [
-          "Warm Spices",
-          "Aromatic Notes"
-        ],
-        "heart": [
-          "Amber",
-          "Resinous Notes",
-          "Woody Notes"
-        ],
-        "base": [
-          "Smoky Woods",
-          "Leather",
-          "Vanilla"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Woody",
+        "Amber",
+        "Oriental",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Fall",
@@ -15056,13 +14998,15 @@
       "occasionsSource": [
         "Evening",
         "Special Event",
-        "Casual"
+        "Daily"
       ],
       "barcode": "6290360591957",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -15072,7 +15016,7 @@
       "nameAr": "Mayar Cherry Intense Lattafa 100ml EDP",
       "nameEn": "Mayar Cherry Intense Lattafa 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Mayar Cherry Intense by Lattafa – 100 ml Eau De Parfum for Women\nFragrance Notes:\nTop: Black Cherry, Raspberry\nHeart: Jasmine, Rose\nBase: Vanilla, Amber, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-1.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-1.jpg",
@@ -15080,12 +15024,14 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-3.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-4.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-1.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/mayar-cherry-intense-lattafa-100ml-edp-woman-perfume-malaysia-9.jpg"
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 2158.36,
-      "ourPrice": 3240,
+      "supplierPrice": 1529.37,
+      "ourPrice": 2295,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15095,40 +15041,39 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Cherry-Int-1185",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 165,
-      "supplierSalePrice": 115,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 115,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/mayar-cherry/",
       "slug": "mayar-cherry-intense-lattafa-100ml-edp-261",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Black Cherry",
-          "Raspberry"
-        ],
-        "heart": [
-          "Jasmine",
-          "Rose"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Floral"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6290360598963",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 262,
@@ -15136,7 +15081,7 @@
       "nameAr": "Badee Al Oud Honor Glory by Lattafa 100ml",
       "nameEn": "Badee Al Oud Honor Glory by Lattafa 100ml",
       "descriptionAr": "",
-      "descriptionEn": "Badee Al Oud Honor & Glory by Lattafa – 100 ml Eau De Parfum Unisex\nFragrance Notes:\nTop: Pineapple, Spices\nHeart: Vanilla, Oud, Benzoin\nBase: Amber, Saffron, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-lattafa-perfume-unisex-sweet-woody-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-lattafa-perfume-unisex-sweet-woody-100ml-edp.jpg",
@@ -15144,12 +15089,14 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-lattafa-perfume-unisex-tahan-lama-sweet-oud-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-pavilion-kl-luxe-malaysia-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-sunway-pyramid-malaysia-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/badee-al-oud-honor-glory-lattafa-perfume-unisex-sweet-woody-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-trx-exchange-malaysia-100ml-edp.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-midvalley-mall-malaysia-100ml-edp.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/badee-al-oud-honor-glory-klcc-esplanade-malaysia-100ml-edp.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 1949.07,
-      "ourPrice": 2925,
+      "supplierPrice": 1622.47,
+      "ourPrice": 2435,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15159,39 +15106,39 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Badee-Al--649",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 149,
-      "supplierSalePrice": 122,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 122,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/badee-al-oud-honor/",
       "slug": "badee-al-oud-honor-glory-by-lattafa-100ml-262",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Pineapple",
-          "Spices"
-        ],
-        "heart": [
-          "Vanilla",
-          "Oud",
-          "Benzoin"
-        ],
-        "base": [
-          "Amber",
-          "Saffron",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Oud",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Fall",
         "Winter"
       ],
-      "occasionsSource": [],
+      "occasionsSource": [
+        "Special Event",
+        "Daily"
+      ],
       "barcode": "6290360593135",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 263,
@@ -15199,7 +15146,7 @@
       "nameAr": "Fire On Ice by Lattafa 100ml EDP Unisex",
       "nameEn": "Fire On Ice by Lattafa 100ml EDP Unisex",
       "descriptionAr": "",
-      "descriptionEn": "Fire On Ice by Lattafa – 100 ml Eau de Parfum for Men & Women\nTop Notes: Whiskey, Cinnamon\nHeart Notes: Amber, Vanilla\nBase Notes: Tonka Bean, Smoky Woods",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/fire-ice-lattafa-perfume-unisex-fresh-spicy-100ml-edp.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/fire-ice-lattafa-perfume-unisex-fresh-spicy-100ml-edp.jpg",
@@ -15207,12 +15154,14 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/fire-ice-lattafa-perfume-fresh-cool-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/fireonice-putrajayaboulevard-100ml-edp.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/fireonice-ecopark-100ml-edp.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/fire-ice-lattafa-perfume-unisex-fresh-spicy-100ml-edp.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/lattafa-fire-ice-edp-110-ml-100ml.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/lattafa-fire-ice-unisex-110ml-100ml-edp.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/lattafa-fire-ice-edp-100ml.jpg"
       ],
       "category": "مختلط",
       "brand": "Lattafa",
-      "supplierPrice": 3518.79,
-      "ourPrice": 5280,
+      "supplierPrice": 3577.4,
+      "ourPrice": 5370,
       "stockStatus": "out_of_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15223,26 +15172,21 @@
       "supplierSku": "lattafa-fire-on-ice",
       "supplierCurrency": "MYR",
       "supplierPriceOriginal": 269,
-      "exchangeRate": 13.081,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/fire-on-ice/",
       "slug": "fire-on-ice-by-lattafa-100ml-edp-unisex-263",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Whiskey",
-          "Cinnamon"
-        ],
-        "heart": [
-          "Amber",
-          "Vanilla"
-        ],
-        "base": [
-          "Tonka Bean",
-          "Smoky Woods"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Amber",
+        "Oriental",
+        "Spicy"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -15250,13 +15194,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6290360598901",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر",
         "غير متوفر عند المورد"
       ]
     },
@@ -15266,7 +15213,7 @@
       "nameAr": "Ramz Gold Lattafa Woman 100ml EDP",
       "nameEn": "Ramz Gold Lattafa Woman 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Ramz Gold by Lattafa Perfumes – 100 ml Eau De Parfum for Women (Arabian)\nFragrance Notes:\nTop: Orange Blossom, Bergamot\nHeart: Jasmine, Praline, Sandalwood\nBase: Vanilla, Amber, Musk",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes.jpg",
@@ -15274,12 +15221,14 @@
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes-6.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes-2.jpg",
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes-5.jpg",
-        "https://www.shamperfume.com/cdn/OGImage/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes-22.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-by-lattafa-perfumes.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ramz-gold-100ml-edp-men-by-lattafa-perfumes-4.jpg"
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 1896.75,
-      "ourPrice": 2850,
+      "supplierPrice": 1263.4,
+      "ourPrice": 1900,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15289,30 +15238,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Ramz-lattafa",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 145,
-      "supplierSalePrice": 95,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 95,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/ramz-gold/",
       "slug": "ramz-gold-lattafa-woman-100ml-edp-264",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Orange Blossom",
-          "Bergamot"
-        ],
-        "heart": [
-          "Jasmine",
-          "Praline",
-          "Sandalwood"
-        ],
-        "base": [
-          "Vanilla",
-          "Amber",
-          "Musk"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
-      "families": [],
+      "families": [
+        "Floral",
+        "Woody",
+        "Amber",
+        "Oriental"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer",
@@ -15320,12 +15262,17 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291106066715",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
-      "importedVia": "json-ld"
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
+      "importedVia": "json-ld",
+      "reviewIssues": [
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
+      ]
     },
     {
       "id": 265,
@@ -15333,22 +15280,22 @@
       "nameAr": "Victoria by Lattafa 100ml EDP",
       "nameEn": "Victoria by Lattafa 100ml EDP",
       "descriptionAr": "",
-      "descriptionEn": "Victoria by Lattafa 100ml EDP",
-      "imageUrl": "https://www.shamperfume.com/cdn/large/3ca79b97-0b51-4ca2-a9b0-9747aed5b400.jpg",
+      "descriptionEn": "",
+      "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-1.jpg",
       "images": [
-        "https://www.shamperfume.com/cdn/large/3ca79b97-0b51-4ca2-a9b0-9747aed5b400.jpg",
-        "https://www.shamperfume.com/cdn/large/4e8400c1-f37b-45bf-8a9e-4188ad20b200.jpg",
-        "https://www.shamperfume.com/cdn/large/1aef8cf1-73b9-45a8-af9a-1422e2eeb700.jpg",
-        "https://www.shamperfume.com/cdn/large/0cb675c2-3604-4c4c-b9a0-87841c139300.jpg",
-        "https://www.shamperfume.com/cdn/large/74e1f5b9-40e4-4ae4-d3dc-83979a712100.jpg",
-        "https://www.shamperfume.com/cdn/large/f9b506c9-8935-4af8-67ed-9e5c4ea7d400.jpg",
-        "https://www.shamperfume.com/cdn/large/1bce1c2f-2355-463e-6ef3-69e1afa70700.jpg",
-        "https://www.shamperfume.com/cdn/large/460f5786-a361-4e3f-edb1-a8ecf8c4f300.jpg"
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-1.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-2.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-3.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-4.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-5.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-6.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-7.jpg",
+        "https://www.shamperfume.com/cdn/large/perfumes/lattafa/victoria-by-lattafa-100ml-edp-8.jpg"
       ],
       "category": "نسائي",
       "brand": "Lattafa",
-      "supplierPrice": 2158.36,
-      "ourPrice": 3240,
+      "supplierPrice": 1994.84,
+      "ourPrice": 2995,
       "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
@@ -15358,20 +15305,23 @@
       "supplierName": "Sham perfume",
       "supplierSku": "VICTORIA",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 165,
-      "supplierSalePrice": 150,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 150,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/victoria/",
       "slug": "victoria-by-lattafa-100ml-edp-265",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
-      "longevity": "Lasting (6-8 hours)",
+      "concentration": "EDP",
+      "longevity": "5–8 hours (Moderate)",
       "notes": {
         "top": [],
         "heart": [],
         "base": []
       },
-      "families": [],
+      "families": [
+        "Fruity",
+        "Floral",
+        "Gourmand"
+      ],
       "seasonsSource": [
         "Spring",
         "Summer"
@@ -15379,11 +15329,11 @@
       "occasionsSource": [
         "Daily",
         "Office",
-        "Casual"
+        "Evening"
       ],
       "barcode": "6290360598789",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
         "وصف المورد قصير",
@@ -15396,7 +15346,7 @@
       "nameAr": "Ejaazi by Lattafa Perfume 100 ml for Men",
       "nameEn": "Ejaazi by Lattafa Perfume 100 ml for Men",
       "descriptionAr": "",
-      "descriptionEn": "Ejaazi by Lattafa – 100 ml Eau de Parfum for Men\nFragrance Family: Aromatic • Woody • Amber\nTop Notes: Bergamot, Orange, Lavender, Cardamom\nMiddle Notes: Pepper, Patchouli, Cinnamon Leaf\nBase Notes: Amber, Cedarwood, Oakmoss, Vetiver",
+      "descriptionEn": "",
       "imageUrl": "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ejaazi-by-lattafa-100ml-edp-perfume-men-malaysia.jpg",
       "images": [
         "https://www.shamperfume.com/cdn/large/perfumes/lattafa/ejaazi-by-lattafa-100ml-edp-perfume-men-malaysia.jpg",
@@ -15410,9 +15360,9 @@
       ],
       "category": "رجالي",
       "brand": "Lattafa",
-      "supplierPrice": 1818.26,
-      "ourPrice": 2730,
-      "stockStatus": "out_of_stock",
+      "supplierPrice": 1462.88,
+      "ourPrice": 2195,
+      "stockStatus": "in_stock",
       "isFeatured": false,
       "isNew": true,
       "reviewCount": 0,
@@ -15421,36 +15371,22 @@
       "supplierName": "Sham perfume",
       "supplierSku": "Ejaazi-min-41",
       "supplierCurrency": "MYR",
-      "supplierPriceOriginal": 139,
-      "supplierSalePrice": 110,
-      "exchangeRate": 13.081,
+      "supplierPriceOriginal": 110,
+      "exchangeRate": 13.2989,
       "url": "https://www.shamperfume.com/perfumes/lattafa/ejaazi/",
       "slug": "ejaazi-by-lattafa-perfume-100-ml-for-men-266",
       "sizeMl": 100,
-      "concentration": "Eau de Parfum",
+      "concentration": "EDP",
       "notes": {
-        "top": [
-          "Bergamot",
-          "Orange",
-          "Lavender",
-          "Cardamom"
-        ],
-        "heart": [
-          "Pepper",
-          "Patchouli",
-          "Cinnamon Leaf"
-        ],
-        "base": [
-          "Amber",
-          "Cedarwood",
-          "Oakmoss",
-          "Vetiver"
-        ]
+        "top": [],
+        "heart": [],
+        "base": []
       },
       "families": [
         "Aromatic",
         "Woody",
-        "Amber"
+        "Amber",
+        "Oriental"
       ],
       "seasonsSource": [
         "Spring",
@@ -15459,14 +15395,16 @@
         "Winter"
       ],
       "occasionsSource": [
-        "Casual"
+        "Special Event",
+        "Daily"
       ],
       "barcode": "6291106069020",
       "importedAt": "2026-10-16T09:17:51.478Z",
-      "refreshedAt": "2026-10-16T21:29:10.880Z",
+      "refreshedAt": "2026-11-28T13:34:12.986Z",
       "importedVia": "json-ld",
       "reviewIssues": [
-        "غير متوفر عند المورد"
+        "وصف المورد قصير",
+        "المورد لم ينشر نوتات العطر"
       ]
     },
     {
